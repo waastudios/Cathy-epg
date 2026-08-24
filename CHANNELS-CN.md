@@ -1,14 +1,45 @@
 # 已发布频道清单
 
-本清单由当前已发布的 `data/current_week.jsonl` 自动生成，并与 `data/epg.xml.gz` 校验一致。它仅列出 XMLTV 中实际已发布的频道；每个显示名称均为 XMLTV 实际发布的 `display-name`。
+本清单直接由当前发布的 `data/epg.xml` 生成。每一行均为实际 XMLTV `<channel>` 节点：**tvg-id** 对应 `channel/@id`，**tvg-name** 对应 `display-name`。
 
-当前快照生成时间为 `2026-08-24T19:13:20Z`，包含 **120 个频道** 与 **15368 条节目记录**。其 gzip 文件解压后与 `data/epg.xml` 完全一致。
+当前 XMLTV 输出包含 **120 个频道**。
 
-## Astro：仅发布体育频道
+## 塞尔维亚 SBB
 
-所有非体育 Astro 频道均已排除。以下为当前保留的 22 条官方服务。
+| tvg-id | tvg-name |
+| --- | --- |
+| `Eurosport.4K` | Eurosport 4K |
 
-| XMLTV ID | 官方显示名称 |
+## 挪威 Allente
+
+| tvg-id | tvg-name |
+| --- | --- |
+| `allente_no.euron` | Eurosport Norge |
+| `allente_no.fem` | FEM |
+| `allente_no.rex` | REX |
+| `allente_no.tvn` | TV Norge |
+
+## 瑞典 Allente
+
+| tvg-id | tvg-name |
+| --- | --- |
+| `allente_se.v1` | V Sport 1 |
+| `allente_se.vextra` | V Sport Extra |
+| `allente_se.vfoot` | V Sport Football |
+| `allente_se.vgolf` | V Sport Golf |
+| `allente_se.vl1` | V Sport Live 1 |
+| `allente_se.vl2` | V Sport Live 2 |
+| `allente_se.vl3` | V Sport Live 3 |
+| `allente_se.vl4` | V Sport Live 4 |
+| `allente_se.vl5` | V Sport Live 5 |
+| `allente_se.vmotor` | V Sport Motor |
+| `allente_se.vpre` | V Sport Premium |
+| `allente_se.vultra` | V Sport UltraHD |
+| `allente_se.vvin` | V Sport Vinter |
+
+## Astro
+
+| tvg-id | tvg-name |
 | --- | --- |
 | `astro.801` | Astro Arena |
 | `astro.802` | Stadium Astro |
@@ -33,11 +64,65 @@
 | `astro.832` | CricBuzz |
 | `astro.833` | Premier Sports |
 
-## NOW TV 香港：仅发布体育频道
+## 罗马尼亚 Digi
 
-所有非体育 NOW TV 频道均已排除，包括 `now_hk.138`（Now爆谷星影台）。以下为当前保留的 37 条官方服务。
+| tvg-id | tvg-name |
+| --- | --- |
+| `digi4k_ro` | Digi 4K |
 
-| XMLTV ID | 官方显示名称 |
+## 英国 EE TV Player
+
+| tvg-id | tvg-name |
+| --- | --- |
+| `ee_uk.1` | BBC One London |
+| `ee_uk.2` | BBC Two |
+| `ee_uk.3` | ITV1 London |
+| `ee_uk.4` | Channel 4 |
+| `ee_uk.6` | ITV2 |
+| `ee_uk.9` | BBC Four |
+| `ee_uk.10` | ITV3 |
+| `ee_uk.11` | Sky Mix |
+| `ee_uk.23` | BBC Three |
+| `ee_uk.26` | ITV4 |
+| `ee_uk.36` | Sky Arts |
+| `ee_uk.231` | BBC News |
+| `ee_uk.232` | BBC Parliament |
+| `ee_uk.341` | Sky Witness |
+| `ee_uk.342` | Sky Atlantic |
+| `ee_uk.346` | Sky One |
+| `ee_uk.347` | Sky Comedy |
+| `ee_uk.348` | Sky Sci-Fi |
+| `ee_uk.349` | Sky Crime |
+| `ee_uk.352` | Sky Documentaries |
+| `ee_uk.353` | Sky History |
+| `ee_uk.354` | Sky Nature |
+| `ee_uk.408` | TNT Sports 1 |
+| `ee_uk.409` | TNT Sports 2 |
+| `ee_uk.410` | TNT Sports 3 |
+| `ee_uk.411` | TNT Sports 4 |
+| `ee_uk.418` | Sky Sports News |
+| `ee_uk.419` | Sky Sports Main Event |
+| `ee_uk.420` | Sky Sports Premier League |
+| `ee_uk.421` | Sky Sports Football |
+| `ee_uk.422` | Sky Sports Cricket |
+| `ee_uk.423` | Sky Sports Golf |
+| `ee_uk.424` | Sky Sports F1 |
+| `ee_uk.425` | Sky Sports Tennis |
+| `ee_uk.426` | Sky Sports Action |
+| `ee_uk.427` | Sky Sports + |
+| `ee_uk.428` | Sky Sports Racing |
+| `ee_uk.429` | Sky Sports Mix |
+
+## 土耳其 TV+
+
+| tvg-id | tvg-name |
+| --- | --- |
+| `eurosport.1` | Eurosport 1 |
+| `eurosport.2` | Eurosport 2 |
+
+## 香港 NOW TV
+
+| tvg-id | tvg-name |
 | --- | --- |
 | `now_hk.611` | Now Sports 4K 1 |
 | `now_hk.612` | Now Sports 4K 2 |
@@ -77,52 +162,9 @@
 | `now_hk.683` | Now Golf 2 |
 | `now_hk.684` | Now Golf 3 |
 
-## EE TV Player：指定 Sky 娱乐频道
+## 英国 Virgin Media
 
-下表列出当前 XMLTV 实际发布的 EE Sky 娱乐频道。
-
-| XMLTV ID | 官方显示名称 |
+| tvg-id | tvg-name |
 | --- | --- |
-| `ee_uk.11` | Sky Mix |
-| `ee_uk.36` | Sky Arts |
-| `ee_uk.341` | Sky Witness |
-| `ee_uk.342` | Sky Atlantic |
-| `ee_uk.346` | Sky One |
-| `ee_uk.347` | Sky Comedy |
-| `ee_uk.348` | Sky Sci-Fi |
-| `ee_uk.349` | Sky Crime |
-| `ee_uk.352` | Sky Documentaries |
-| `ee_uk.353` | Sky History |
-| `ee_uk.354` | Sky Nature |
-
-## SBB Public EPG：Eurosport 4K
-
-| XMLTV ID | 官方显示名称 |
-| --- | --- |
-| `sbb_rs.1082` | Eurosport 4K IPTV |
-
-## 未发布服务
-
-| 用户请求的服务 | 发布结论 | 原因 |
-| --- | --- | --- |
-| ESPN / ESPN2 / ESPNEWS / ESPNU | 未添加 | 目前没有合规的匿名授权服务商来源提供可复用的逐节目开始与结束时间。如日后加入，ID 将带服务商前缀，例如 `directv_espn`。 |
-
-## 当前来源总计
-
-| 来源 | 频道数 | 节目记录数 |
-| --- | ---: | ---: |
-| `allente_no` | 4 | 704 |
-| `allente_se` | 13 | 896 |
-| `astro` | 22 | 2499 |
-| `digi4k_ro` | 1 | 115 |
-| `ee_uk` | 38 | 6442 |
-| `now_hk` | 37 | 4526 |
-| `sbb_rs` | 1 | 67 |
-| `tvplus_tr` | 2 | 34 |
-| `virgin_uk` | 2 | 85 |
-
-## 来源与使用规则
-
-所有数据仅来自节目运营商官网或授权电视服务商的正常公开节目表。项目不使用第三方 EPG 聚合网站、IPTV 播放列表、账户访问、会话重放、地域绕过，也不创建空占位频道。
-
-订阅地址保持不变：`https://raw.githubusercontent.com/waastudios/Cathy-epg/master/data/epg.xml.gz`。
+| `virgin_uk.2258` | Sky Sports Ultra HD 1 |
+| `virgin_uk.2265` | Sky Sports Ultra HD 2 |

@@ -1,14 +1,45 @@
-# Published channels
+# Published channel list
 
-This inventory is generated from the currently published `data/current_week.jsonl` and verified against `data/epg.xml.gz`. It lists channels that are actually published in the XMLTV output; each displayed name is the actual XMLTV `display-name`.
+This inventory is generated directly from the currently published `data/epg.xml`. Every row is an actual XMLTV `<channel>` node: **tvg-id** is `channel/@id` and **tvg-name** is `display-name`.
 
-The snapshot generated at `2026-08-24T19:13:20Z` contains **120 channels** and **15368 programmes**. Its gzip file expands byte-for-byte to `data/epg.xml`.
+The current XMLTV output contains **120 channels**.
 
-## Astro — sports-only published channels
+## SBB Serbia
 
-All non-sports Astro channels are excluded. The following 22 current official services remain.
+| tvg-id | tvg-name |
+| --- | --- |
+| `Eurosport.4K` | Eurosport 4K |
 
-| XMLTV ID | Official display name |
+## Allente Norway
+
+| tvg-id | tvg-name |
+| --- | --- |
+| `allente_no.euron` | Eurosport Norge |
+| `allente_no.fem` | FEM |
+| `allente_no.rex` | REX |
+| `allente_no.tvn` | TV Norge |
+
+## Allente Sweden
+
+| tvg-id | tvg-name |
+| --- | --- |
+| `allente_se.v1` | V Sport 1 |
+| `allente_se.vextra` | V Sport Extra |
+| `allente_se.vfoot` | V Sport Football |
+| `allente_se.vgolf` | V Sport Golf |
+| `allente_se.vl1` | V Sport Live 1 |
+| `allente_se.vl2` | V Sport Live 2 |
+| `allente_se.vl3` | V Sport Live 3 |
+| `allente_se.vl4` | V Sport Live 4 |
+| `allente_se.vl5` | V Sport Live 5 |
+| `allente_se.vmotor` | V Sport Motor |
+| `allente_se.vpre` | V Sport Premium |
+| `allente_se.vultra` | V Sport UltraHD |
+| `allente_se.vvin` | V Sport Vinter |
+
+## Astro
+
+| tvg-id | tvg-name |
 | --- | --- |
 | `astro.801` | Astro Arena |
 | `astro.802` | Stadium Astro |
@@ -33,11 +64,65 @@ All non-sports Astro channels are excluded. The following 22 current official se
 | `astro.832` | CricBuzz |
 | `astro.833` | Premier Sports |
 
-## NOW TV Hong Kong — sports-only published channels
+## Digi Romania
 
-All non-sports NOW TV channels are excluded, including `now_hk.138` (Now爆谷星影台). The following 37 current official services remain.
+| tvg-id | tvg-name |
+| --- | --- |
+| `digi4k_ro` | Digi 4K |
 
-| XMLTV ID | Official display name |
+## EE TV Player
+
+| tvg-id | tvg-name |
+| --- | --- |
+| `ee_uk.1` | BBC One London |
+| `ee_uk.2` | BBC Two |
+| `ee_uk.3` | ITV1 London |
+| `ee_uk.4` | Channel 4 |
+| `ee_uk.6` | ITV2 |
+| `ee_uk.9` | BBC Four |
+| `ee_uk.10` | ITV3 |
+| `ee_uk.11` | Sky Mix |
+| `ee_uk.23` | BBC Three |
+| `ee_uk.26` | ITV4 |
+| `ee_uk.36` | Sky Arts |
+| `ee_uk.231` | BBC News |
+| `ee_uk.232` | BBC Parliament |
+| `ee_uk.341` | Sky Witness |
+| `ee_uk.342` | Sky Atlantic |
+| `ee_uk.346` | Sky One |
+| `ee_uk.347` | Sky Comedy |
+| `ee_uk.348` | Sky Sci-Fi |
+| `ee_uk.349` | Sky Crime |
+| `ee_uk.352` | Sky Documentaries |
+| `ee_uk.353` | Sky History |
+| `ee_uk.354` | Sky Nature |
+| `ee_uk.408` | TNT Sports 1 |
+| `ee_uk.409` | TNT Sports 2 |
+| `ee_uk.410` | TNT Sports 3 |
+| `ee_uk.411` | TNT Sports 4 |
+| `ee_uk.418` | Sky Sports News |
+| `ee_uk.419` | Sky Sports Main Event |
+| `ee_uk.420` | Sky Sports Premier League |
+| `ee_uk.421` | Sky Sports Football |
+| `ee_uk.422` | Sky Sports Cricket |
+| `ee_uk.423` | Sky Sports Golf |
+| `ee_uk.424` | Sky Sports F1 |
+| `ee_uk.425` | Sky Sports Tennis |
+| `ee_uk.426` | Sky Sports Action |
+| `ee_uk.427` | Sky Sports + |
+| `ee_uk.428` | Sky Sports Racing |
+| `ee_uk.429` | Sky Sports Mix |
+
+## TV+ Türkiye
+
+| tvg-id | tvg-name |
+| --- | --- |
+| `eurosport.1` | Eurosport 1 |
+| `eurosport.2` | Eurosport 2 |
+
+## NOW TV Hong Kong
+
+| tvg-id | tvg-name |
 | --- | --- |
 | `now_hk.611` | Now Sports 4K 1 |
 | `now_hk.612` | Now Sports 4K 2 |
@@ -77,52 +162,9 @@ All non-sports NOW TV channels are excluded, including `now_hk.138` (Now爆谷�
 | `now_hk.683` | Now Golf 2 |
 | `now_hk.684` | Now Golf 3 |
 
-## EE TV Player — requested Sky Entertainment channels
+## Virgin Media UK
 
-This table lists the EE Sky Entertainment services actually published in the current XMLTV output.
-
-| XMLTV ID | Official display name |
+| tvg-id | tvg-name |
 | --- | --- |
-| `ee_uk.11` | Sky Mix |
-| `ee_uk.36` | Sky Arts |
-| `ee_uk.341` | Sky Witness |
-| `ee_uk.342` | Sky Atlantic |
-| `ee_uk.346` | Sky One |
-| `ee_uk.347` | Sky Comedy |
-| `ee_uk.348` | Sky Sci-Fi |
-| `ee_uk.349` | Sky Crime |
-| `ee_uk.352` | Sky Documentaries |
-| `ee_uk.353` | Sky History |
-| `ee_uk.354` | Sky Nature |
-
-## SBB Public EPG — Eurosport 4K
-
-| XMLTV ID | Official display name |
-| --- | --- |
-| `sbb_rs.1082` | Eurosport 4K IPTV |
-
-## Not published
-
-| Requested service | Publication decision | Reason |
-| --- | --- | --- |
-| ESPN / ESPN2 / ESPNEWS / ESPNU | Not added | No compliant anonymous authorised-provider source currently provides reusable per-event start and stop timing. If added later, IDs will carry the provider prefix (for example, `directv_espn`). |
-
-## Current provider totals
-
-| Provider | Channels | Programme records |
-| --- | ---: | ---: |
-| `allente_no` | 4 | 704 |
-| `allente_se` | 13 | 896 |
-| `astro` | 22 | 2499 |
-| `digi4k_ro` | 1 | 115 |
-| `ee_uk` | 38 | 6442 |
-| `now_hk` | 37 | 4526 |
-| `sbb_rs` | 1 | 67 |
-| `tvplus_tr` | 2 | 34 |
-| `virgin_uk` | 2 | 85 |
-
-## Source and policy
-
-All data is obtained only from broadcaster websites or normal public guides of authorised TV providers. The project does not use third-party EPG aggregators, IPTV playlists, account access, session replay, geographical bypasses, or empty placeholder channels.
-
-The subscription file remains: `https://raw.githubusercontent.com/waastudios/Cathy-epg/master/data/epg.xml.gz`.
+| `virgin_uk.2258` | Sky Sports Ultra HD 1 |
+| `virgin_uk.2265` | Sky Sports Ultra HD 2 |
