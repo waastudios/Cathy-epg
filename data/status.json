@@ -1,0 +1,17 @@
+{
+  "astro": {
+    "status": "ok",
+    "records": 29157
+  },
+  "now_hk": {
+    "status": "ok",
+    "records": 23035
+  },
+  "starhub": {
+    "status": "requires_user_authorization",
+    "records": 0,
+    "message": "StarHub 官方指南在当前访客环境不可读取；本工具不会尝试登录或规避访问限制。"
+  },
+  "generated_at": "2026-08-24T12:02:30Z",
+  "total_records": 52192
+}
