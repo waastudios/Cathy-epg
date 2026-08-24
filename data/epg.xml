@@ -468,6 +468,10 @@
     <display-name>Now Golf 3</display-name>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </channel>
+  <channel id="sbb_rs.1082">
+    <display-name>Eurosport 4K IPTV</display-name>
+    <url>https://epg.sbb.rs/</url>
+  </channel>
   <channel id="virgin_uk.2258">
     <display-name>Sky Sports Ultra HD 1</display-name>
     <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
@@ -476,6 +480,10 @@
     <display-name>Sky Sports Ultra HD 2</display-name>
     <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
   </channel>
+  <programme start="20260824002000 +0200" channel="allente_no.tvn" stop="20260824030500 +0200">
+    <title>Jack Reacher</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
   <programme start="20260824002446 +0200" channel="allente_no.tvn" stop="20260824030749 +0200">
     <title>Jack Reacher</title>
     <url>https://www.allente.no/tv-guide/</url>
@@ -1940,7 +1948,7 @@
     <title>Field Day</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260823220000 +0200" channel="allente_no.rex" stop="20260824022348 +0200">
+  <programme start="20260823220000 +0200" channel="allente_no.rex" stop="20260824022000 +0200">
     <title>Ringenes herre: Atter en konge</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
@@ -2830,6 +2838,10 @@
   </programme>
   <programme start="20260830220000 +0200" channel="allente_no.rex" stop="20260831002000 +0200">
     <title>Horrible Bosses 2</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260823235500 +0200" channel="allente_no.euron" stop="20260824030000 +0200">
+    <title>PGA Tour: FedEx St. Jude Championship: 23.08.2026 23:55.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260823235655 +0200" channel="allente_no.euron" stop="20260824030000 +0200">
@@ -10070,10 +10082,6 @@
   </programme>
   <programme start="20260831054500 +0800" channel="astro.806" stop="20260831060000 +0800">
     <title>Fifa World Cup Unseen Ep34</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260825023000 +0800" channel="astro.810" stop="20260825025000 +0800">
-    <title>UFC Main Event 318: Holloway vs Poirier 3</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
   <programme start="20260825025000 +0800" channel="astro.810" stop="20260825050000 +0800">
@@ -40480,6 +40488,14 @@
     <title>Sky Sports Breakfast</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
+  <programme start="20260825100000 +0100" channel="ee_uk.428" stop="20260825103000 +0100">
+    <title>Unbridled On Tour</title>
+    <url>https://player.ee.co.uk/#/livetv/schedule</url>
+  </programme>
+  <programme start="20260825103000 +0100" channel="ee_uk.428" stop="20260825110000 +0100">
+    <title>For the Love of the Racehorse</title>
+    <url>https://player.ee.co.uk/#/livetv/schedule</url>
+  </programme>
   <programme start="20260825110000 +0100" channel="ee_uk.428" stop="20260825140000 +0100">
     <title>International Raceday Live</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
@@ -40496,8 +40512,12 @@
     <title>For the Love of the Racehorse</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260825223000 +0100" channel="ee_uk.428" stop="20260825230000 +0100">
-    <title>Unbridled On Tour</title>
+  <programme start="20260825223000 +0100" channel="ee_uk.428" stop="20260825224500 +0100">
+    <title>Eddie Greatrex: Comeback Kid</title>
+    <url>https://player.ee.co.uk/#/livetv/schedule</url>
+  </programme>
+  <programme start="20260825224500 +0100" channel="ee_uk.428" stop="20260825230000 +0100">
+    <title>British Racing: Welfare Commitment</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20260825230000 +0100" channel="ee_uk.428" stop="20260826020000 +0100">
@@ -40516,15 +40536,19 @@
     <title>Sky Sports Breakfast</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260826100000 +0100" channel="ee_uk.428" stop="20260826104500 +0100">
-    <title>The Enduring Race</title>
+  <programme start="20260826100000 +0100" channel="ee_uk.428" stop="20260826103000 +0100">
+    <title>Unbridled On Tour</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260826104500 +0100" channel="ee_uk.428" stop="20260826140000 +0100">
+  <programme start="20260826103000 +0100" channel="ee_uk.428" stop="20260826104500 +0100">
+    <title>Eddie Greatrex: Comeback Kid</title>
+    <url>https://player.ee.co.uk/#/livetv/schedule</url>
+  </programme>
+  <programme start="20260826104500 +0100" channel="ee_uk.428" stop="20260826134500 +0100">
     <title>International Raceday Live</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260826140000 +0100" channel="ee_uk.428" stop="20260826200000 +0100">
+  <programme start="20260826134500 +0100" channel="ee_uk.428" stop="20260826200000 +0100">
     <title>Raceday Live</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
@@ -40533,7 +40557,7 @@
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20260826223000 +0100" channel="ee_uk.428" stop="20260826230000 +0100">
-    <title>Lilly Pinchin: I Love What I Do</title>
+    <title>For the Love of the Racehorse</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20260826230000 +0100" channel="ee_uk.428" stop="20260827020000 +0100">
@@ -43080,10 +43104,6 @@
     <title>The Essex Murders: Who Killed...</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260825020000 +0800" channel="now_hk.611" stop="20260825030000 +0800">
-    <title>請留意下場播映賽事</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260825030000 +0800" channel="now_hk.611" stop="20260825040000 +0800">
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -44400,10 +44420,6 @@
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260825020000 +0800" channel="now_hk.620" stop="20260825030000 +0800">
-    <title>英超賽日直播 -賽日前瞻 0825[直播]</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260825030000 +0800" channel="now_hk.620" stop="20260825050000 +0800">
     <title>英超賽日直播 -富咸 對 車路士[直播]</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -45330,14 +45346,6 @@
   </programme>
   <programme start="20260831230000 +0800" channel="now_hk.620" stop="20260901000000 +0800">
     <title>英超週末總結</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260825020000 +0800" channel="now_hk.621" stop="20260825021500 +0800">
-    <title>英超Online 第3集</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260825021500 +0800" channel="now_hk.621" stop="20260825025000 +0800">
-    <title>英超故事26/27 -高雲地利</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260825025000 +0800" channel="now_hk.621" stop="20260825050000 +0800">
@@ -47080,14 +47088,6 @@
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260825000000 +0800" channel="now_hk.630" stop="20260825023000 +0800">
-    <title>中國桌球公開賽 2026 -32強 - 沙比 對 龐俊旭</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260825023000 +0800" channel="now_hk.630" stop="20260825030000 +0800">
-    <title>羽毛球無界限 第43集</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260825030000 +0800" channel="now_hk.630" stop="20260825033000 +0800">
     <title>WTA全接觸 第4集</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -48054,10 +48054,6 @@
   </programme>
   <programme start="20260831233000 +0800" channel="now_hk.630" stop="20260901103000 +0800">
     <title>2026美國網球公開賽 (A. Ashe) -第2天第1圈(A)[直播]</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260825020000 +0800" channel="now_hk.631" stop="20260825030000 +0800">
-    <title>PGA巡迴賽精華2026 -路易斯維爾高爾夫球錦標賽</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260825030000 +0800" channel="now_hk.631" stop="20260825050000 +0800">
@@ -49054,18 +49050,6 @@
   </programme>
   <programme start="20260831223000 +0800" channel="now_hk.632" stop="20260901003000 +0800">
     <title>2026/27 西班牙甲組足球聯賽 -皇家馬德里 對 馬拉加</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260825013000 +0800" channel="now_hk.633" stop="20260825021500 +0800">
-    <title>世界羽聯巡迴賽 2026 台北公開賽 -混雙決賽</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260825021500 +0800" channel="now_hk.633" stop="20260825023000 +0800">
-    <title>羽毛球一周 第168集</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260825023000 +0800" channel="now_hk.633" stop="20260825030000 +0800">
-    <title>Monster Jam 第4集</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260825030000 +0800" channel="now_hk.633" stop="20260825071500 +0800">
@@ -52504,10 +52488,6 @@
     <title>中國桌球公開賽 2026 -準決賽(1) - 沙安簡 對 周躍龍</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260825002300 +0800" channel="now_hk.638" stop="20260825023800 +0800">
-    <title>2026/27 意大利甲組足球聯賽 第9集 -博洛尼亞 對 拉素[直播]</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260825023800 +0800" channel="now_hk.638" stop="20260825044500 +0800">
     <title>2026/27 意大利甲組足球聯賽 第10集 -羅馬 對 費倫天拿[直播]</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -53046,10 +53026,6 @@
   </programme>
   <programme start="20260831230000 +0800" channel="now_hk.638" stop="20260901000000 +0800">
     <title>2026 FIA 世界耐力錦標賽精華 第4集 -巴西聖保羅6小時耐力賽</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260825014000 +0800" channel="now_hk.639" stop="20260825024500 +0800">
-    <title>世界馬術錦標賽2026 -盛裝舞步賽</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260825024500 +0800" channel="now_hk.639" stop="20260825031500 +0800">
@@ -54880,10 +54856,6 @@
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260825013000 +0800" channel="now_hk.642" stop="20260825023000 +0800">
-    <title>WNBA攻守時間 -今夜賽事</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260825023000 +0800" channel="now_hk.642" stop="20260825043000 +0800">
     <title>NBA精彩重溫 -奧克拉荷馬雷霆 對 奧蘭多魔術</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -55326,10 +55298,6 @@
   </programme>
   <programme start="20260831110000 +0800" channel="now_hk.642" stop="20260831220000 +0800">
     <title>籃球聯盟</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260825003000 +0800" channel="now_hk.643" stop="20260825023000 +0800">
-    <title>歐洲聯賽冠軍盃 第1集 -索菲亞利夫斯基 對 AEK雅典 (附加賽首回合)</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260825023000 +0800" channel="now_hk.643" stop="20260825043000 +0800">
@@ -57372,10 +57340,6 @@
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260825013000 +0800" channel="now_hk.668" stop="20260825021000 +0800">
-    <title>賽事重溫 第77集</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260825021000 +0800" channel="now_hk.668" stop="20260825040000 +0800">
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -58572,10 +58536,6 @@
     <title>帶你遊馬房 -「競駿輝煌」</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260825013700 +0800" channel="now_hk.674" stop="20260825025900 +0800">
-    <title>Pakistan tour of West Indies, 2026 -Highlights: WI vs PAK, 2nd Test</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260825025900 +0800" channel="now_hk.674" stop="20260825032500 +0800">
     <title>TATA IPL 2026 -Highlights: M3: RR vs CSK</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -59182,22 +59142,6 @@
   </programme>
   <programme start="20260831175800 +0800" channel="now_hk.674" stop="20260901010000 +0800">
     <title>Pakistan tour of England, 2026 -LIVE: ENG vs PAK, 2nd Test, Day 5[直播]</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260825015000 +0800" channel="now_hk.679" stop="20260825020500 +0800">
-    <title>AFLW Highlights -Geelong v St Kilda</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260825020500 +0800" channel="now_hk.679" stop="20260825022000 +0800">
-    <title>AFLW Highlights -Brisbane v North Melbourne</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260825022000 +0800" channel="now_hk.679" stop="20260825023500 +0800">
-    <title>AFLW Highlights -Collingwood v Fremantle</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260825023500 +0800" channel="now_hk.679" stop="20260825025000 +0800">
-    <title>AFLW Highlights -Melbourne v GWS Giants</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260825025000 +0800" channel="now_hk.679" stop="20260825030500 +0800">
@@ -59822,18 +59766,6 @@
   </programme>
   <programme start="20260831232000 +0800" channel="now_hk.679" stop="20260901011000 +0800">
     <title>SANZAAR International Tour Serie -Argentina v Australia</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260825013000 +0800" channel="now_hk.680" stop="20260825021500 +0800">
-    <title>世界羽聯巡迴賽 2026 台北公開賽 -混雙決賽</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260825021500 +0800" channel="now_hk.680" stop="20260825023000 +0800">
-    <title>羽毛球一周 第168集</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260825023000 +0800" channel="now_hk.680" stop="20260825030000 +0800">
-    <title>Monster Jam 第4集</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260825030000 +0800" channel="now_hk.680" stop="20260825071500 +0800">
@@ -61275,6 +61207,274 @@
   <programme start="20260831180000 +0800" channel="now_hk.684" stop="20260901050000 +0800">
     <title>PGA巡迴賽2026 高爾夫球巡迴錦標賽 -第4天</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
+  </programme>
+  <programme start="20260824001900 +0200" channel="sbb_rs.1082" stop="20260824015200 +0200">
+    <title>Snooker - Wuhan Open: Round 2</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260824015200 +0200" channel="sbb_rs.1082" stop="20260824031400 +0200">
+    <title>Cycling - La Vuelta (Men): Stage 2</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260824031400 +0200" channel="sbb_rs.1082" stop="20260824040900 +0200">
+    <title>Formula E: Sao Paulo, Highlights</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260824040900 +0200" channel="sbb_rs.1082" stop="20260824050000 +0200">
+    <title>Formula E: Mexico City, Highlights</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260824050000 +0200" channel="sbb_rs.1082" stop="20260824050400 +0200">
+    <title>Cycling - La Vuelta (Men): Stage 2</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260824050400 +0200" channel="sbb_rs.1082" stop="20260824070000 +0200">
+    <title>Magazine: Cycling Show</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260824070000 +0200" channel="sbb_rs.1082" stop="20260824080000 +0200">
+    <title>Snooker - Wuhan Open: Round 2</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260824080000 +0200" channel="sbb_rs.1082" stop="20260824105900 +0200">
+    <title>Snooker - Wuhan Open: Round 2</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260824105900 +0200" channel="sbb_rs.1082" stop="20260824115800 +0200">
+    <title>Formula E: Sao Paulo, Highlights</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260824115800 +0200" channel="sbb_rs.1082" stop="20260824125900 +0200">
+    <title>Formula E: Mexico City, Highlights</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260824125900 +0200" channel="sbb_rs.1082" stop="20260824132900 +0200">
+    <title>Mountain Biking - World Cup, Haute Savoie (Men): XC Olympic</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260824132900 +0200" channel="sbb_rs.1082" stop="20260824144300 +0200">
+    <title>Cycling - La Vuelta (Men): Stage 2</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260824144300 +0200" channel="sbb_rs.1082" stop="20260824144500 +0200">
+    <title>Cycling - La Vuelta (Men): Stage 3</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260824144500 +0200" channel="sbb_rs.1082" stop="20260824180000 +0200">
+    <title>Cycling - La Vuelta (Men): Stage 3</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260824180000 +0200" channel="sbb_rs.1082" stop="20260824190000 +0200">
+    <title>UEC BMX Racing European Championship - Highlights</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260824190000 +0200" channel="sbb_rs.1082" stop="20260824195900 +0200">
+    <title>UEC BMX Racing European Championship - Highlights</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260824195900 +0200" channel="sbb_rs.1082" stop="20260824200600 +0200">
+    <title>Snooker - Wuhan Open: Round 3</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260824200600 +0200" channel="sbb_rs.1082" stop="20260824215300 +0200">
+    <title>Snooker - Wuhan Open: Round 3</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260824215300 +0200" channel="sbb_rs.1082" stop="20260824235300 +0200">
+    <title>Cycling - La Vuelta (Men): Stage 3</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260824235300 +0200" channel="sbb_rs.1082" stop="20260825012700 +0200">
+    <title>Snooker - Wuhan Open: Round 3</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260825012700 +0200" channel="sbb_rs.1082" stop="20260825025300 +0200">
+    <title>Cycling - La Vuelta (Men): Stage 3</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260825025300 +0200" channel="sbb_rs.1082" stop="20260825034700 +0200">
+    <title>Triathlon: PTO Tour, Miami - Highlights</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260825034700 +0200" channel="sbb_rs.1082" stop="20260825043500 +0200">
+    <title>Formula E: World Championship Jeddah Highlights</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260825043500 +0200" channel="sbb_rs.1082" stop="20260825050000 +0200">
+    <title>Mountain Biking - World Cup, Haute Savoie (Men): XC Olympic</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260825050000 +0200" channel="sbb_rs.1082" stop="20260825070000 +0200">
+    <title>Cycling - La Vuelta (Men): Stage 3</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260825070000 +0200" channel="sbb_rs.1082" stop="20260825080000 +0200">
+    <title>Snooker - Wuhan Open: Round 3</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260825080000 +0200" channel="sbb_rs.1082" stop="20260825110000 +0200">
+    <title>Snooker - Wuhan Open: Round 3</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260825110000 +0200" channel="sbb_rs.1082" stop="20260825120000 +0200">
+    <title>Triathlon: PTO Tour, Miami - Highlights</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260825120000 +0200" channel="sbb_rs.1082" stop="20260825130000 +0200">
+    <title>Formula E: World Championship Jeddah Highlights</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260825130000 +0200" channel="sbb_rs.1082" stop="20260825133000 +0200">
+    <title>Mountain Biking - World Cup, Haute Savoie (Women): Downhill, Elite</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260825133000 +0200" channel="sbb_rs.1082" stop="20260825143000 +0200">
+    <title>Cycling - La Vuelta (Men): Stage 3</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260825143000 +0200" channel="sbb_rs.1082" stop="20260825180000 +0200">
+    <title>Cycling - La Vuelta (Men): Stage 4</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260825180000 +0200" channel="sbb_rs.1082" stop="20260825190000 +0200">
+    <title>Tennis - US Open: Doubles</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260825190000 +0200" channel="sbb_rs.1082" stop="20260825200000 +0200">
+    <title>Tennis - US Open: Doubles</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260825200000 +0200" channel="sbb_rs.1082" stop="20260825210000 +0200">
+    <title>Tennis - US Open: Doubles</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260825210000 +0200" channel="sbb_rs.1082" stop="20260825220000 +0200">
+    <title>Tennis - US Open</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260825220000 +0200" channel="sbb_rs.1082" stop="20260825230000 +0200">
+    <title>Tennis - US Open</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260825230000 +0200" channel="sbb_rs.1082" stop="20260826000000 +0200">
+    <title>Cycling - La Vuelta (Men): Stage 4</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260826000000 +0200" channel="sbb_rs.1082" stop="20260826013000 +0200">
+    <title>Snooker - Wuhan Open: Round 3</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260826013000 +0200" channel="sbb_rs.1082" stop="20260826030000 +0200">
+    <title>Cycling - La Vuelta (Men): Stage 4</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260826030000 +0200" channel="sbb_rs.1082" stop="20260826040000 +0200">
+    <title>Formula E: World Championship - Madrid: Highlights</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260826040000 +0200" channel="sbb_rs.1082" stop="20260826050000 +0200">
+    <title>Formula E: World Championship - Berlin</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260826050000 +0200" channel="sbb_rs.1082" stop="20260826070000 +0200">
+    <title>Cycling - La Vuelta (Men): Stage 4</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260826070000 +0200" channel="sbb_rs.1082" stop="20260826080000 +0200">
+    <title>Snooker - Wuhan Open: Round 3</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260826080000 +0200" channel="sbb_rs.1082" stop="20260826110000 +0200">
+    <title>Snooker - Wuhan Open: Round 4</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260826110000 +0200" channel="sbb_rs.1082" stop="20260826120000 +0200">
+    <title>Formula E: World Championship - Madrid: Highlights</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260826120000 +0200" channel="sbb_rs.1082" stop="20260826130000 +0200">
+    <title>Formula E: World Championship - Berlin: Highlights</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260826130000 +0200" channel="sbb_rs.1082" stop="20260826140000 +0200">
+    <title>Cycling - Tour of Portugal, Highlights</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260826140000 +0200" channel="sbb_rs.1082" stop="20260826144500 +0200">
+    <title>Cycling - La Vuelta (Men): Stage 4</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260826144500 +0200" channel="sbb_rs.1082" stop="20260826180000 +0200">
+    <title>Cycling - La Vuelta (Men): Stage 5</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260826180000 +0200" channel="sbb_rs.1082" stop="20260826190000 +0200">
+    <title>Mountain Biking - World Cup, Haute Savoie (Men): XC Olympic</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260826190000 +0200" channel="sbb_rs.1082" stop="20260826200000 +0200">
+    <title>Sailing: Sassnitz</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260826200000 +0200" channel="sbb_rs.1082" stop="20260826220000 +0200">
+    <title>Snooker - Wuhan Open: Round 4</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260826220000 +0200" channel="sbb_rs.1082" stop="20260827000000 +0200">
+    <title>Cycling - La Vuelta (Men): Stage 5</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260827000000 +0200" channel="sbb_rs.1082" stop="20260827010000 +0200">
+    <title>Tennis - US Open: Doubles</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260827010000 +0200" channel="sbb_rs.1082" stop="20260827020000 +0200">
+    <title>Tennis - US Open: Doubles, Mixed, Semi-finals</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260827020000 +0200" channel="sbb_rs.1082" stop="20260827030000 +0200">
+    <title>Tennis - US Open: Doubles, Mixed, Semi-finals</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260827030000 +0200" channel="sbb_rs.1082" stop="20260827033000 +0200">
+    <title>Tennis - US Open: Doubles, Mixed, Semi-finals</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260827033000 +0200" channel="sbb_rs.1082" stop="20260827053000 +0200">
+    <title>Tennis - US Open: Doubles, Mixed, Final</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260827053000 +0200" channel="sbb_rs.1082" stop="20260827070000 +0200">
+    <title>Cycling - La Vuelta (Men): Stage 5</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260827070000 +0200" channel="sbb_rs.1082" stop="20260827080000 +0200">
+    <title>Snooker - Wuhan Open: Round 4</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260827080000 +0200" channel="sbb_rs.1082" stop="20260827110000 +0200">
+    <title>Snooker - Wuhan Open: Quarter-finals</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260827110000 +0200" channel="sbb_rs.1082" stop="20260827113000 +0200">
+    <title>Discovery Golf</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260827113000 +0200" channel="sbb_rs.1082" stop="20260827123000 +0200">
+    <title>Sailing: Sassnitz</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260827123000 +0200" channel="sbb_rs.1082" stop="20260827133000 +0200">
+    <title>NFL Hard Knocks</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260827133000 +0200" channel="sbb_rs.1082" stop="20260827144500 +0200">
+    <title>Cycling - La Vuelta (Men): Stage 5</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260827144500 +0200" channel="sbb_rs.1082" stop="20260827174500 +0200">
+    <title>Cycling - La Vuelta (Men): Stage 6</title>
+    <url>https://epg.sbb.rs/</url>
   </programme>
   <programme start="20260824010000 +0300" channel="eurosport.2" stop="20260824023000 +0300">
     <title>La Vuelta a España, Stage 2</title>
