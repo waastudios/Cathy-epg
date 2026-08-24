@@ -1,53 +1,55 @@
 # Cathy-epg
 
-**Cathy-epg** 是一个仅从节目运营商官网或官方电视提供商页面收集节目元数据的 XMLTV 工具。它不读取 EPGshare、epg.pw、IPTV 播放列表、第三方节目表镜像或未经授权的数据接口。
+Cathy-epg is an **official-source-only** XMLTV collector and local search utility. It gathers programme metadata solely from broadcaster websites and official TV-provider guides. It does **not** use EPGshare, epg.pw, IPTV playlists, third-party EPG mirrors, or unauthorised data interfaces.
 
-> 仓库只保存频道与节目元数据快照，不包含视频流、播放地址、账号信息、会话 Cookie 或规避访问控制的代码。
+> The repository contains only channel and programme metadata snapshots. It does not include streams, playback URLs, user accounts, session cookies, or access-control bypasses.
 
-## 覆盖来源与边界
+Chinese documentation is available in [README-CN.md](README-CN.md).
 
-| 市场 | 频道或服务 | 官方来源 | 当前覆盖 | 语言 |
+## Coverage and source boundaries
+
+| Market | Channel or service | Official source | Current coverage | Language |
 | --- | --- | --- | --- | --- |
-| 马来西亚 | Astro | [Astro Content Guide](https://www.astro.com.my/content/channels) | 完整七日线性节目表 | 来源原文 |
-| 香港 | NOW TV | [NOW TV Guide](https://nowplayer.now.com/tvguide) 与[中文频道页](https://nowplayer.now.com/channels?lang=zh&filterType=all) | 完整七日线性节目表；显示名取官方中文名 | 中文为主 |
-| 瑞典 | 完整 V Sport 体育频道组合 | [Allente TV Guide](https://www.allente.se/tv-guide/) | 13 条 V Sport 频道的完整七日节目表 | 来源原文 |
-| 英国 | NOW Sports 可观看的 Sky Sports 活动 | [Sky Sports live schedule](https://www.sky.com/watch/channel/sky-sports) | Sky 官方公开直播活动、开播时间与频道；并非英国 NOW 全频道的全天 EPG | 英文 |
-| 罗马尼亚 | Digi 4K | [Digi 4K](https://www.digi4k.ro/) | 官网公开的连续七日节目表 | 罗马尼亚语 |
-| 土耳其 | Eurosport 1、Eurosport 2 | [TV+ Eurosport 1](https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77) 与 [TV+ Eurosport 2](https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106) | TV+ 官方页公开的完整当日节目表 | 土耳其语 |
+| Malaysia | Astro | [Astro Content Guide](https://www.astro.com.my/content/channels) | Full seven-day linear schedule | Source language |
+| Hong Kong | NOW TV | [NOW TV Guide](https://nowplayer.now.com/tvguide) and the [Chinese channel directory](https://nowplayer.now.com/channels?lang=zh&filterType=all) | Full seven-day linear schedule; official Chinese channel display names | Primarily Chinese |
+| Sweden | V Sport portfolio | [Allente TV Guide](https://www.allente.se/tv-guide/) | Full seven-day schedule for 13 V Sport channels | Source language |
+| United Kingdom | NOW Sports / Sky Sports | [Sky Sports live schedule](https://www.sky.com/watch/channel/sky-sports) | Official live-event listings, channel names, and start times; not a full linear EPG | English |
+| Romania | Digi 4K | [Digi 4K](https://www.digi4k.ro/) | Public seven-day schedule | Romanian |
+| Türkiye | Eurosport 1 and Eurosport 2 | [TV+ Eurosport 1](https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77) and [TV+ Eurosport 2](https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106) | Public full-day schedule shown by the official TV provider | Turkish |
 
-HBO Max 土耳其英文页明确说明 Eurosport 1 与 Eurosport 2 及直播活动在当地方案中提供；该页并不公开逐频道时刻表，因此实际节目条目使用其官方电视提供商 TV+ 的公开节目页，而不是第三方聚合数据。[1]
+The Swedish portfolio comprises **V sport extra HD, premium HD, football HD, vinter HD, motor HD, V sport 1 HD, ultra HD, golf HD, and V sport live 1–5**. Allente’s stable channel IDs are retained in the XMLTV output.
 
-英国 NOW TV 的官方网站不公开全量线性频道的七日 XMLTV 时刻表。为维持“只用官方来源”的边界，项目仅纳入 Sky 官方页面明确列出的、NOW Sports 所覆盖的 Sky Sports 直播活动；官方页面未给出结束时间时，XMLTV 中会省略 `stop` 属性，而不会推断时长。
+The official UK NOW TV website does not publicly expose a complete seven-day, linear XMLTV guide. To preserve the official-source-only scope, Cathy-epg includes only Sky Sports live events explicitly published by Sky, with the listed channel and start time. Where no end time is published, the XMLTV programme omits `stop` rather than inferring a duration.
 
-## XMLTV 文件与订阅
+The English HBO Max Türkiye site confirms the local availability of Eurosport 1, Eurosport 2, and live sports. It does not publish a channel-by-channel schedule, so programme items are sourced from the official Turkish TV+ provider guide instead.[1]
 
-| 文件 | 说明 |
+## XMLTV data and subscription
+
+| File | Purpose |
 | --- | --- |
-| `data/epg.xml.gz` | 可直接订阅的 gzip 压缩 XMLTV 文件。 |
-| `data/epg.xml` | 未压缩 XMLTV 文件，便于审计与调试。 |
-| `data/current_week.jsonl` | 标准化原始快照，每行一条节目记录。 |
-| `data/status.json` | 本次刷新中每个来源的状态、记录数与总量。 |
+| `data/epg.xml.gz` | Gzip-compressed XMLTV file for clients that support XMLTV subscriptions. |
+| `data/epg.xml` | Uncompressed XMLTV output for inspection and debugging. |
+| `data/current_week.jsonl` | Normalised source snapshot, with one programme record per line. |
+| `data/status.json` | Collection status, record count, and output totals for each source. |
 
-瑞典集合包括 **V sport extra HD、premium HD、football HD、vinter HD、motor HD、V sport 1 HD、ultra HD、golf HD 与 V sport live 1–5**，保留 Allente 官方的稳定频道 ID。
-
-订阅地址如下：
+### Subscription URL
 
 ```text
 https://raw.githubusercontent.com/waastudios/Cathy-epg/master/data/epg.xml.gz
 ```
 
-频道标识稳定使用 `<provider>.<channel-id>`。例如，香港 NOW TV 的频道 ID **`now_hk.138`** 保持不变，显示名已由通用 `CH 138` 改为官网中文名 **`Now爆谷星影台`**。
+Channel IDs use the stable `<provider>.<channel-id>` form. For example, Hong Kong NOW TV channel ID **`now_hk.138`** is unchanged while its display name is normalised to the official Chinese name **Now爆谷星影台**.
 
-## 本地运行
+## Run locally
 
-项目需要 Python 3.11 或更高版本。以下命令刷新可取得的官方节目表并写出 JSONL、XMLTV 和 gzip 文件。
+Python 3.11 or newer is required. The following commands collect the available official schedules and generate JSONL, XMLTV, and gzip outputs.
 
 ```bash
 python -m pip install -e .
 epg collect --days 7
 ```
 
-本地搜索只读取已生成的 JSONL 快照：
+Local search reads only the generated JSONL snapshot.
 
 ```bash
 epg search "Premier League"
@@ -55,9 +57,9 @@ epg search "Now爆谷" --provider now_hk --channel 138
 epg search "Eurosport" --provider tvplus_tr
 ```
 
-节目排期会临时变更；建议每日执行一次刷新，以维持“当天起未来七天”的滚动窗口。每日运行前应复核相关网站条款、控制访问频率，并在来源不可用时查看 `data/status.json`，而非使用第三方替代数据。
+Schedules can change at short notice. Run a daily refresh to maintain a rolling seven-day window. Before automating a refresh, review the relevant provider terms, limit request frequency, and inspect `data/status.json` if a source is unavailable rather than substituting third-party data.
 
-## 参考资料
+## References
 
 [1]: https://www.hbomax.com/tr/en "HBO Max Türkiye — English site"
 [2]: https://content.astro.com.my/channels "Astro Content Guide — Channel guide"
