@@ -18,6 +18,27 @@ _TVPLUS_EUROSPORT_XMLTV_IDS = {
     "77": "eurosport.1",
     "106": "eurosport.2",
 }
+_ALLENTE_SE_XMLTV_IDS = {
+    "20092": "allente_se.vextra",
+    "50048": "allente_se.vmotor",
+    "50049": "allente_se.vvin",
+    "50056": "allente_se.vfoot",
+    "50077": "allente_se.vgolf",
+    "50078": "allente_se.vpre",
+    "50079": "allente_se.v1",
+    "50105": "allente_se.vultra",
+    "50125": "allente_se.vl1",
+    "50126": "allente_se.vl2",
+    "50127": "allente_se.vl3",
+    "50128": "allente_se.vl4",
+    "50129": "allente_se.vl5",
+}
+_ALLENTE_NO_XMLTV_IDS = {
+    "10009": "allente_no.tvn",
+    "10010": "allente_no.fem",
+    "10011": "allente_no.rex",
+    "10022": "allente_no.euron",
+}
 
 
 def _xmltv_channel_id(record: Programme) -> str:
@@ -28,6 +49,14 @@ def _xmltv_channel_id(record: Programme) -> str:
     """
     if record.provider == "tvplus_tr":
         configured_id = _TVPLUS_EUROSPORT_XMLTV_IDS.get(record.channel_id)
+        if configured_id:
+            return configured_id
+    if record.provider == "allente_se":
+        configured_id = _ALLENTE_SE_XMLTV_IDS.get(record.channel_id)
+        if configured_id:
+            return configured_id
+    if record.provider == "allente_no":
+        configured_id = _ALLENTE_NO_XMLTV_IDS.get(record.channel_id)
         if configured_id:
             return configured_id
     return record.provider if not record.channel_number else f"{record.provider}.{record.channel_number}"

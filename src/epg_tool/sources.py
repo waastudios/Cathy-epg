@@ -27,11 +27,35 @@ NOW_HK_EPG = "https://nowplayer.now.com/tvguide/epglist"
 NOW_HK_SPORT_CHANNEL_NUMBERS = frozenset({"611", "612", "613", "620", "621", "622", "623", "624", "625", "626", "627", "630", "631", "632", "633", "634", "635", "636", "637", "638", "639", "640", "641", "642", "643", "644", "645", "646", "647", "651", "652", "668", "674", "679", "680", "683", "684"})
 ALLENTE_GUIDE = "https://www.allente.se/tv-guide/"
 ALLENTE_EPG = "https://www.allente.se/api/epg/refetch-epg-data"
-ALLENTE_V_SPORT_IDS = frozenset({"20092", "50048", "50049", "50056", "50077", "50078", "50079", "50105", "50125", "50126", "50127", "50128", "50129"})
+# 用户确认的 Allente Sweden V Sport 显示名及 XMLTV ID 后缀。内部频道 ID 仍只用于
+# 官方接口匹配；导出的显示名和 XMLTV ID 严格采用此映射，不保留 HD 或 (S)。
+ALLENTE_V_SPORT_CHANNELS: dict[str, tuple[str, str]] = {
+    "20092": ("V Sport Extra", "vextra"),
+    "50048": ("V Sport Motor", "vmotor"),
+    "50049": ("V Sport Vinter", "vvin"),
+    "50056": ("V Sport Football", "vfoot"),
+    "50077": ("V Sport Golf", "vgolf"),
+    "50078": ("V Sport Premium", "vpre"),
+    "50079": ("V Sport 1", "v1"),
+    "50105": ("V Sport UltraHD", "vultra"),
+    "50125": ("V Sport Live 1", "vl1"),
+    "50126": ("V Sport Live 2", "vl2"),
+    "50127": ("V Sport Live 3", "vl3"),
+    "50128": ("V Sport Live 4", "vl4"),
+    "50129": ("V Sport Live 5", "vl5"),
+}
+ALLENTE_V_SPORT_IDS = frozenset(ALLENTE_V_SPORT_CHANNELS)
 ALLENTE_NO_GUIDE = "https://www.allente.no/tv-guide/"
 ALLENTE_NO_EPG = "https://www.allente.no/api/epg/refetch-epg-data"
-# Allente Norway 官方 TV Guide 的标准频道；不收录同节目流的字幕／音频描述镜像。
-ALLENTE_NO_CHANNEL_IDS = frozenset({"10009", "10010", "10011", "10022"})
+# 用户确认的 Allente Norway 标准频道显示名及 XMLTV ID 后缀；不收录同节目流的
+# 字幕／音频描述镜像。
+ALLENTE_NO_CHANNELS: dict[str, tuple[str, str]] = {
+    "10009": ("TV Norge", "tvn"),
+    "10010": ("FEM", "fem"),
+    "10011": ("REX", "rex"),
+    "10022": ("Eurosport Norge", "euron"),
+}
+ALLENTE_NO_CHANNEL_IDS = frozenset(ALLENTE_NO_CHANNELS)
 EE_TV_PLAYER_GUIDE = "https://player.ee.co.uk/#/livetv/schedule"
 EE_TV_SCHEDULE = "https://api.youview.tv/metadata/linear/v2/schedule/by-servicelocator"
 # 以下映射来自 EE TV Player 匿名公开的线性频道目录；仅保留每个实际频道的 SD 行。
@@ -63,7 +87,6 @@ EE_UK_CHANNELS: tuple[tuple[str, str, str], ...] = (
     ("10", "ITV3", "dvb://233a..2066"),
     ("23", "BBC Three", "dvb://233a..10c0"),
     ("26", "ITV4", "dvb://233a..208a"),
-    ("28", "ITV Quiz", "dvb://233a..2094"),
     ("231", "BBC News", "dvb://233a..1100"),
     ("232", "BBC Parliament", "dvb://233a..1280"),
     # Sky 娱乐：优先采用官方 EE 电视（DVB）版；其余仅收录 SD 主 IP 版并排除 HD 镜像。
@@ -266,7 +289,7 @@ def collect_allente_v_sport(days: int = 7, pause_seconds: float = 0.25) -> list[
             raise SourceUnavailable("Allente 官方 EPG 响应中未找到任何预期的 V Sport 体育频道。")
         for channel in channels:
             channel_id = str(channel.get("id"))
-            channel_name = (channel.get("name") or f"V sport {channel_id}").strip()
+            channel_name = ALLENTE_V_SPORT_CHANNELS[channel_id][0]
             for item in channel.get("programs", []):
                 title = (item.get("title") or "").strip()
                 start = item.get("eventStart")
@@ -317,9 +340,7 @@ def collect_allente_no(days: int = 7, pause_seconds: float = 0.25) -> list[Progr
             raise SourceUnavailable("Allente Norway 官方 EPG 响应中未找到预期的 TVNorge、REX、FEM 或 Eurosport Norge。")
         for channel in channels:
             channel_id = str(channel.get("id"))
-            channel_name = (channel.get("name") or "").strip()
-            if not channel_name:
-                continue
+            channel_name = ALLENTE_NO_CHANNELS[channel_id][0]
             for item in channel.get("programs", []):
                 title = (item.get("title") or "").strip()
                 start = item.get("eventStart")
