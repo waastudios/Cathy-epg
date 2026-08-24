@@ -48,7 +48,7 @@ The EE scope includes **Sky Mix, Sky Arts, Sky Witness, Sky Atlantic, Sky One, S
 
 The United States scope is intentionally restricted to potential future coverage for **ESPN, ESPN2, ESPNEWS, and ESPNU**. ABC, CBS, NBC, FOX, USA Network, and every other US network are excluded. DIRECTV’s public guide confirms the four ESPN services but exposes only current-programme information; Spectrum’s detailed guide requires account and service-address access; and ESPN’s direct schedule does not offer stable per-channel end times. Consequently, **no ESPN records are currently published**. If a compliant guide becomes available, IDs will be provider-prefixed, for example `directv_espn`.
 
-**Eurosport 4K** is published from SBB’s normal anonymous Public EPG as `Eurosport.4K`. The source provides a channel directory plus programme titles, start times, and end times. Each source title is converted through strict deterministic Serbian-to-English rules; an unrecognised title fails the SBB source rather than being guessed or published untranslated.
+**Eurosport 4K** is published from SBB’s normal anonymous Public EPG as `eurosport.4k`. The source provides a channel directory plus programme titles, start times, and end times. Each source title is converted through strict deterministic Serbian-to-English rules; an unrecognised title fails the SBB source rather than being guessed or published untranslated.
 
 ## Refresh and validation
 

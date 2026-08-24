@@ -48,7 +48,7 @@ EE 范围包含 **Sky Mix、Sky Arts、Sky Witness、Sky Atlantic、Sky One、Sk
 
 美国范围刻意限制为未来可能加入的 **ESPN、ESPN2、ESPNEWS、ESPNU**。ABC、CBS、NBC、FOX、USA Network 和其他所有美国频道都已排除。DIRECTV 公开指南确认四个 ESPN 频道，但只提供当前节目；Spectrum 的详细节目表需要账户与服务地址；ESPN 官网排期没有稳定的逐频道结束时间。因此，**当前不发布任何 ESPN 记录**。如日后出现合规节目表，ID 会使用服务商前缀，例如 `directv_espn`。
 
-**Eurosport 4K** 已通过 SBB 的正常匿名 Public EPG 发布，XMLTV ID 为 `Eurosport.4K`。该来源提供频道目录、节目标题、开始时间和结束时间。每条原始塞尔维亚语标题均通过严格的确定性规则转换成英文；如果标题无法被可靠识别，SBB 来源会失败，而不是猜测翻译或发布未翻译标题。
+**Eurosport 4K** 已通过 SBB 的正常匿名 Public EPG 发布，XMLTV ID 为 `eurosport.4k`。该来源提供频道目录、节目标题、开始时间和结束时间。每条原始塞尔维亚语标题均通过严格的确定性规则转换成英文；如果标题无法被可靠识别，SBB 来源会失败，而不是猜测翻译或发布未翻译标题。
 
 ## 自动刷新与校验
 

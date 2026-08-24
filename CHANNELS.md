@@ -134,7 +134,7 @@ The current XMLTV output contains **121 channels**.
 | --- | --- |
 | `eurosport.1` | Eurosport 1 |
 | `eurosport.2` | Eurosport 2 |
-| `Eurosport.4K` | Eurosport 4K |
+| `eurosport.4k` | Eurosport 4K |
 
 ## Digi 4K
 

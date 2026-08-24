@@ -46,7 +46,7 @@ _EE_XMLTV_IDS = {
     "sky-doc": "ee_uk.352",
 }
 _SBB_XMLTV_IDS = {
-    "1082": "Eurosport.4K",
+    "1082": "eurosport.4k",
 }
 
 
