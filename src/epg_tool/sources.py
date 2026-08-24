@@ -7,6 +7,7 @@ import json
 import re
 import time
 from typing import Any
+import xml.etree.ElementTree as ET
 from zoneinfo import ZoneInfo
 
 from bs4 import BeautifulSoup
@@ -23,11 +24,15 @@ NOW_HK_EPG = "https://nowplayer.now.com/tvguide/epglist"
 ALLENTE_GUIDE = "https://www.allente.se/tv-guide/"
 ALLENTE_EPG = "https://www.allente.se/api/epg/refetch-epg-data"
 ALLENTE_V_SPORT_IDS = frozenset({"20092", "50048", "50049", "50056", "50077", "50078", "50079", "50105", "50125", "50126", "50127", "50128", "50129"})
+ALLENTE_NO_GUIDE = "https://www.allente.no/tv-guide/"
+ALLENTE_NO_EPG = "https://www.allente.no/api/epg/refetch-epg-data"
+# Allente Norway 官方 TV Guide 的标准频道；不收录同节目流的字幕／音频描述镜像。
+ALLENTE_NO_CHANNEL_IDS = frozenset({"10009", "10010", "10011", "10022"})
 EE_TV_PLAYER_GUIDE = "https://player.ee.co.uk/#/livetv/schedule"
 EE_TV_SCHEDULE = "https://api.youview.tv/metadata/linear/v2/schedule/by-servicelocator"
 # 以下映射来自 EE TV Player 匿名公开的线性频道目录；仅保留每个实际频道的 SD 行。
-# 同一节目流的 HD 镜像（TNT 430–432/434、Sky 438–449）明确排除，防止重复频道。
-EE_UK_SPORT_CHANNELS: tuple[tuple[str, str, str], ...] = (
+# 同一节目流的 HD、+1、字幕／音频描述镜像明确排除，防止跨馈源重复频道。
+EE_UK_CHANNELS: tuple[tuple[str, str, str], ...] = (
     ("408", "TNT Sports 1", "http://bds.tv/services/BT_763997"),
     ("409", "TNT Sports 2", "http://bds.tv/services/BT_764001"),
     ("410", "TNT Sports 3", "http://bds.tv/services/BT_768612"),
@@ -44,6 +49,31 @@ EE_UK_SPORT_CHANNELS: tuple[tuple[str, str, str], ...] = (
     ("427", "Sky Sports +", "http://bds.tv/services/BT_771051_3839_SD"),
     ("428", "Sky Sports Racing", "http://bds.tv/services/BT_751621_1354_SD"),
     ("429", "Sky Sports Mix", "http://bds.tv/services/BT_770332_4091_SD"),
+    # BBC、ITV、Channel 4 与 Sky 娱乐频道：频道名和逻辑频道号均来自 EE Player 公开目录。
+    ("1", "BBC One London", "dvb://233a..1044"),
+    ("2", "BBC Two", "dvb://233a..10bf"),
+    ("3", "ITV1 London", "dvb://233a..2045"),
+    ("4", "Channel 4", "dvb://233a..20c0"),
+    ("6", "ITV2", "dvb://233a..2085"),
+    ("9", "BBC Four", "dvb://233a..11c0"),
+    ("10", "ITV3", "dvb://233a..2066"),
+    ("23", "BBC Three", "dvb://233a..10c0"),
+    ("26", "ITV4", "dvb://233a..208a"),
+    ("28", "ITV Quiz", "dvb://233a..2094"),
+    ("231", "BBC News", "dvb://233a..1100"),
+    ("232", "BBC Parliament", "dvb://233a..1280"),
+    ("342", "Sky Atlantic", "http://bds.tv/services/BT_759409_1412_SD"),
+    ("346", "Sky One", "http://bds.tv/services/BT_255_1402_SD"),
+    ("349", "Sky Crime", "http://bds.tv/services/BT_753644_1212_SD"),
+)
+USA_NETWORK_GUIDE = "https://www.usanetwork.com/schedule"
+# USA Network 自身公开网页正常加载的 USA-East XMLTV 地址；不添加用户未要求的 USA-West 时移馈源。
+USA_NETWORK_EAST_EPG = (
+    "https://usanetwork-cached.api.viewlift.com/v4/content/epg/"
+    "669090af-a232-4270-9bd2-8fdc30fdc224/tv.xml?meta="
+    "eyJmb3JtYXQiOiJHUkFDRU5PVEVfSlNPTiIsInNvdXJjZVVybCI6Imh0dHBzOi8v"
+    "ZGF0YS50bXNhcGkuY29tL3YxLjEvc3RhdGlvbnMvNTg0NTIvYWlyaW5ncz9hcGlfa2V5"
+    "PThqN3lzYWh6czdtNXFtd25zOTlkdG4yciJ9"
 )
 DIGI4K_GUIDE = "https://www.digi4k.ro/"
 TVPLUS_EUROSPORT_1_GUIDE = "https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77"
@@ -243,6 +273,54 @@ def collect_allente_v_sport_ultrahd(days: int = 7, pause_seconds: float = 0.25) 
     return [record for record in collect_allente_v_sport(days, pause_seconds) if record.channel_id == "50105"]
 
 
+def collect_allente_no(days: int = 7, pause_seconds: float = 0.25) -> list[Programme]:
+    """读取 Allente Norway 官方 TV Guide 的 TVNorge、REX、FEM 与 Eurosport Norge。
+
+    仅使用非字幕／非音频描述的标准频道。节目页公开提供精确开始与结束时间。
+    """
+    session = _session()
+    zone = ZoneInfo("Europe/Oslo")
+    today = datetime.now(zone).date()
+    retrieved_at = utc_now_iso()
+    records: list[Programme] = []
+
+    for day_offset in range(days):
+        response = session.get(ALLENTE_NO_EPG, params={"Start": (today + timedelta(days=day_offset)).isoformat()}, timeout=60)
+        response.raise_for_status()
+        payload = response.json()
+        channels = [item for item in payload.get("channels", []) if str(item.get("id")) in ALLENTE_NO_CHANNEL_IDS]
+        if not channels:
+            raise SourceUnavailable("Allente Norway 官方 EPG 响应中未找到预期的 TVNorge、REX、FEM 或 Eurosport Norge。")
+        for channel in channels:
+            channel_id = str(channel.get("id"))
+            channel_name = (channel.get("name") or "").strip()
+            if not channel_name:
+                continue
+            for item in channel.get("programs", []):
+                title = (item.get("title") or "").strip()
+                start = item.get("eventStart")
+                end = item.get("eventEnd")
+                if not (title and start and end):
+                    continue
+                records.append(
+                    Programme(
+                        provider="allente_no",
+                        country="NO",
+                        timezone="Europe/Oslo",
+                        channel_id=channel_id,
+                        channel_number=channel_id,
+                        channel_name=channel_name,
+                        title=title,
+                        start_at=_to_local_iso(start, zone),
+                        end_at=_to_local_iso(end, zone),
+                        source_url=ALLENTE_NO_GUIDE,
+                        retrieved_at=retrieved_at,
+                    )
+                )
+        time.sleep(pause_seconds)
+    return _deduplicate(records)
+
+
 def _ee_interval_starts(today: date, days: int, zone: ZoneInfo) -> list[datetime]:
     """返回覆盖本地连续日期的 EE Player 六小时时间窗起点（统一换算为 UTC）。"""
     intervals: list[datetime] = []
@@ -253,12 +331,12 @@ def _ee_interval_starts(today: date, days: int, zone: ZoneInfo) -> list[datetime
     return intervals
 
 
-def collect_ee_uk_sports(days: int = 7, pause_seconds: float = 0.02) -> list[Programme]:
-    """读取 EE TV Player 匿名公开的 Sky Sports 与 TNT Sports 标准清晰度节目表。
+def collect_ee_uk_channels(days: int = 7, pause_seconds: float = 0.02) -> list[Programme]:
+    """读取 EE TV Player 匿名公开的目标英国标准清晰度频道节目表。
 
     EE 的 Live TV Schedule 正常加载 YouView 官方节目端点，公开返回单频道的
     ``publishedStartTime`` 与 ``publishedDuration``。频道列表只使用 EE 的 SD
-    逻辑频道号，特意排除同一线性流的 HD 镜像，以避免 NOW/EE 或 SD/HD 的重复。
+    逻辑频道号，特意排除同一线性流的 HD、+1 及辅助服务镜像，避免重复。
     """
     if days not in range(1, 8):
         raise ValueError("EE TV Player 采集天数必须为 1–7。")
@@ -269,7 +347,7 @@ def collect_ee_uk_sports(days: int = 7, pause_seconds: float = 0.02) -> list[Pro
     intervals = _ee_interval_starts(today, days, zone)
     records: list[Programme] = []
 
-    for channel_number, channel_name, service_locator in EE_UK_SPORT_CHANNELS:
+    for channel_number, channel_name, service_locator in EE_UK_CHANNELS:
         channel_records = 0
         for interval_start in intervals:
             interval_token = interval_start.strftime("%Y-%m-%dT%HZ/PT6H")
@@ -323,6 +401,62 @@ def collect_ee_uk_sports(days: int = 7, pause_seconds: float = 0.02) -> list[Pro
         if not channel_records:
             raise SourceUnavailable(f"EE TV Player 未返回 {channel_name}（CH {channel_number}）的公开节目条目。")
 
+    return _deduplicate(records)
+
+
+def _parse_xmltv_timestamp(value: str, zone: ZoneInfo) -> str | None:
+    """解析官方 XMLTV `YYYYMMDDHHMMSS ±ZZZZ` 时间，不对缺失字段做推测。"""
+    try:
+        return datetime.strptime(value.strip(), "%Y%m%d%H%M%S %z").astimezone(zone).isoformat()
+    except ValueError:
+        return None
+
+
+def collect_usa_network(days: int = 7) -> list[Programme]:
+    """读取 USA Network 官方网页公开调用的 USA-East XMLTV 节目表。
+
+    频道网页同时公布东／西时移馈源；用户仅请求 USA Network，因此只保留 USA-East，
+    不以重复的 USA-West 时移表扩展频道数量。
+    """
+    session = _session()
+    response = session.get(USA_NETWORK_EAST_EPG, timeout=60)
+    response.raise_for_status()
+    try:
+        root = ET.fromstring(response.content)
+    except ET.ParseError as exc:
+        raise SourceUnavailable("USA Network 官方页面的公开 EPG 未返回有效 XMLTV。") from exc
+
+    zone = ZoneInfo("America/New_York")
+    retrieved_at = utc_now_iso()
+    today = datetime.now(zone).date()
+    last_day = today + timedelta(days=days)
+    records: list[Programme] = []
+    for programme in root.findall("programme"):
+        title = (programme.findtext("title") or "").strip()
+        start = _parse_xmltv_timestamp(programme.get("start", ""), zone)
+        end = _parse_xmltv_timestamp(programme.get("stop", ""), zone)
+        if not (title and start and end):
+            continue
+        start_date = datetime.fromisoformat(start).date()
+        if not (today <= start_date < last_day):
+            continue
+        records.append(
+            Programme(
+                provider="usa_network_us",
+                country="US",
+                timezone="America/New_York",
+                channel_id="usa-east",
+                channel_number="usa-east",
+                channel_name="USA Network",
+                title=title,
+                start_at=start,
+                end_at=end,
+                source_url=USA_NETWORK_GUIDE,
+                retrieved_at=retrieved_at,
+            )
+        )
+    if not records:
+        raise SourceUnavailable("USA Network 官方公开 EPG 未返回目标日期范围内的节目记录。")
     return _deduplicate(records)
 
 

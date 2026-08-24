@@ -11,15 +11,23 @@
 | 马来西亚 | Astro | [Astro Content Guide](https://www.astro.com.my/content/channels) | 完整七日线性节目表 | 来源原文 |
 | 香港 | NOW TV | [NOW TV Guide](https://nowplayer.now.com/tvguide) 与[中文频道页](https://nowplayer.now.com/channels?lang=zh&filterType=all) | 完整七日线性节目表；显示名取官方中文名 | 中文为主 |
 | 瑞典 | 完整 V Sport 体育频道组合 | [Allente TV Guide](https://www.allente.se/tv-guide/) | 13 条 V Sport 频道的完整七日节目表 | 来源原文 |
-| 英国 | Sky Sports 与 TNT Sports 1–4 | [EE TV Player Live TV Schedule](https://player.ee.co.uk/#/livetv/schedule) | 16 条去重后的标准清晰度体育频道，提供完整七日频道级节目表、官方频道名与开始/结束时间 | 英文 |
+| 挪威 | TVNorge HD、REX HD、FEM HD、Eurosport Norge HD | [Allente Norway TV Guide](https://www.allente.no/tv-guide/) | 完整七日频道级节目表；排除字幕与音频描述镜像 | 挪威语／来源原文 |
+| 英国 | Sky Sports、TNT Sports 1–4、BBC、ITV、Channel 4 与指定 Sky 娱乐频道 | [EE TV Player Live TV Schedule](https://player.ee.co.uk/#/livetv/schedule) | 31 条去重后的标准清晰度频道，提供完整七日频道级节目表、官方频道名与开始/结束时间 | 英文 |
+| 美国 | USA Network | [USA Network schedule](https://www.usanetwork.com/schedule) | 仅使用公开 USA-East 馈源的滚动七日节目表 | 英文 |
 | 罗马尼亚 | Digi 4K | [Digi 4K](https://www.digi4k.ro/) | 官网公开的连续七日节目表 | 罗马尼亚语 |
 | 土耳其 | Eurosport 1、Eurosport 2 | [TV+ Eurosport 1](https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77) 与 [TV+ Eurosport 2](https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106) | TV+ 官方页公开的完整当日节目表 | 土耳其语 |
 
 HBO Max 土耳其英文页明确说明 Eurosport 1 与 Eurosport 2 及直播活动在当地方案中提供；该页并不公开逐频道时刻表，因此实际节目条目使用其官方电视提供商 TV+ 的公开节目页，而不是第三方聚合数据。[1]
 
-英国节目表改用 **EE TV Player 匿名公开显示的 Live TV Schedule**。覆盖 TNT Sports 1–4（EE 频道 408–411），以及 Sky Sports News、Main Event、Premier League、Football、Cricket、Golf、F1、Tennis、Action、+、Racing 和 Mix（418–429）。XMLTV 的显示名严格使用 EE Player 官方频道目录返回的名称；节目开始时间与时长来自该页面正常加载的公开节目表请求。[2]
+英国节目表使用 **EE TV Player 匿名公开显示的 Live TV Schedule**。覆盖 TNT Sports 1–4（EE 频道 408–411），Sky Sports News、Main Event、Premier League、Football、Cricket、Golf、F1、Tennis、Action、+、Racing 和 Mix（418–429）；BBC One London、BBC Two、BBC Three、BBC Four、BBC News、BBC Parliament；ITV1 London、ITV2、ITV3、ITV4、ITV Quiz；Channel 4；以及不含电影频道的 Sky Atlantic、Sky One、Sky Crime。XMLTV 的显示名严格使用 EE Player 官方频道目录返回的名称；节目开始时间与时长来自该页面正常加载的公开节目表请求。[2]
 
-为筛除同名实际频道，数据集对每条真实线性频道只保留一个标准清晰度 EE 条目。已明确排除对应的 HD 镜像（TNT 430–432/434，Sky 438–449）、旧的 NOW/Sky 活动型来源，以及 TNT Sports Ultimate、TNT Sports 5 和临时频道；不会把来自不同平台的同名行合并为重复条目。英国频道稳定使用 `ee_uk.<EE频道号>` 作为 XMLTV ID。
+为筛除同名实际频道，数据集对每条真实线性频道只保留一个标准清晰度 EE 条目。已明确排除 HD 镜像、+1 服务、辅助服务镜像、旧的 NOW/Sky 活动型来源、Sky Cinema 等电影频道，以及 TNT Sports Ultimate、TNT Sports 5 和临时频道；不会把来自不同平台的同名行合并为重复条目。英国频道稳定使用 `ee_uk.<EE频道号>` 作为 XMLTV ID。
+
+挪威来源使用匿名公开的 Allente Norway TV Guide，保留其标准频道官方名称 **TVNorge HD**、**REX HD**、**FEM HD** 和 **Eurosport Norge HD**，并排除与其并行的字幕及音频描述频道。[9]
+
+USA Network 官方节目页正常加载东／西时移馈源的 XMLTV。由于用户只要求 USA Network，仓库仅收录 **USA Network** 的东部馈源，不以 USA-West 的时移表重复同一频道。[10]
+
+若官网仅能确认频道存在、却没有可公开复用的频道级节目数据，项目不会创建空频道。因此，目前未发布纽约 ABC/NBC/CBS/FOX、FS1/FS2、TBS/truTV、France 2–5、波兰 Eurosport 1–4 与 Eurosport 4K。NHK 国内频道的官方文字节目表还明确规定，节目数据除私人使用外须取得 NHK 许可；公开发布 XMLTV 不属于私人使用，故未收录 NHK G、E、BS、BSP4K、BS8K 的节目条目。
 
 ## XMLTV 文件与订阅
 
@@ -56,6 +64,9 @@ epg search "Premier League"
 epg search "Now爆谷" --provider now_hk --channel 138
 epg search "Eurosport" --provider tvplus_tr
 epg search "TNT Sports" --provider ee_uk
+epg search "BBC" --provider ee_uk
+epg search "Eurosport" --provider allente_no
+epg search "Law & Order" --provider usa_network_us
 ```
 
 节目排期会临时变更；建议每日执行一次刷新，以维持“当天起未来七天”的滚动窗口。每日运行前应复核相关网站条款、控制访问频率，并在来源不可用时查看 `data/status.json`，而非使用第三方替代数据。
@@ -70,3 +81,5 @@ epg search "TNT Sports" --provider ee_uk
 [6]: https://www.digi4k.ro/ "Digi 4K România"
 [7]: https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77 "TV+ — Eurosport 1 schedule"
 [8]: https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106 "TV+ — Eurosport 2 schedule"
+[9]: https://www.allente.no/tv-guide/ "Allente Norway — TV Guide"
+[10]: https://www.usanetwork.com/schedule "USA Network — public schedule"

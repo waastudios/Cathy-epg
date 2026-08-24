@@ -13,15 +13,23 @@ Chinese documentation is available in [README-CN.md](README-CN.md).
 | Malaysia | Astro | [Astro Content Guide](https://www.astro.com.my/content/channels) | Full seven-day linear schedule | Source language |
 | Hong Kong | NOW TV | [NOW TV Guide](https://nowplayer.now.com/tvguide) and the [Chinese channel directory](https://nowplayer.now.com/channels?lang=zh&filterType=all) | Full seven-day linear schedule; official Chinese channel display names | Primarily Chinese |
 | Sweden | V Sport portfolio | [Allente TV Guide](https://www.allente.se/tv-guide/) | Full seven-day schedule for 13 V Sport channels | Source language |
-| United Kingdom | Sky Sports and TNT Sports 1–4 | [EE TV Player Live TV Schedule](https://player.ee.co.uk/#/livetv/schedule) | Full seven-day channel-level EPG for 16 unique standard-definition sports channels, with official names and start/end times | English |
+| Norway | TVNorge HD, REX HD, FEM HD, Eurosport Norge HD | [Allente Norway TV Guide](https://www.allente.no/tv-guide/) | Full seven-day channel-level schedule; subtitle and audio-description mirrors excluded | Norwegian / source language |
+| United Kingdom | Sky Sports, TNT Sports 1–4, BBC, ITV, Channel 4 and selected Sky Entertainment | [EE TV Player Live TV Schedule](https://player.ee.co.uk/#/livetv/schedule) | Full seven-day channel-level EPG for 31 unique standard-definition channels, with official names and start/end times | English |
+| United States | USA Network | [USA Network schedule](https://www.usanetwork.com/schedule) | Full rolling seven-day schedule for the public USA-East feed only | English |
 | Romania | Digi 4K | [Digi 4K](https://www.digi4k.ro/) | Public seven-day schedule | Romanian |
 | Türkiye | Eurosport 1 and Eurosport 2 | [TV+ Eurosport 1](https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77) and [TV+ Eurosport 2](https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106) | Public full-day schedule shown by the official TV provider | Turkish |
 
 The Swedish portfolio comprises **V sport extra HD, premium HD, football HD, vinter HD, motor HD, V sport 1 HD, ultra HD, golf HD, and V sport live 1–5**. Allente’s stable channel IDs are retained in the XMLTV output.
 
-The UK guide uses the **anonymous public schedule rendered by EE TV Player**. It includes TNT Sports 1–4 (EE channel numbers 408–411) and Sky Sports News, Main Event, Premier League, Football, Cricket, Golf, F1, Tennis, Action, +, Racing, and Mix (418–429). Every XMLTV display name is the official name returned by the EE Player channel directory, and each programme uses the published start time and duration from its normal schedule request.[2]
+The UK guide uses the **anonymous public schedule rendered by EE TV Player**. It includes TNT Sports 1–4 (EE channel numbers 408–411); Sky Sports News, Main Event, Premier League, Football, Cricket, Golf, F1, Tennis, Action, +, Racing, and Mix (418–429); BBC One London, BBC Two, BBC Three, BBC Four, BBC News and BBC Parliament; ITV1 London, ITV2, ITV3, ITV4 and ITV Quiz; Channel 4; and the non-film Sky Entertainment channels Sky Atlantic, Sky One and Sky Crime. Every XMLTV display name is the official name returned by the EE Player channel directory, and each programme uses the published start time and duration from its normal schedule request.[2]
 
-To avoid duplicate real-world channels, the dataset contains exactly one standard-definition EE row for each channel. It deliberately excludes matching HD mirrors (TNT 430–432/434 and Sky 438–449), the old NOW/Sky event-only feed, and unrelated TNT Sports Ultimate, TNT Sports 5, or temporary channels. This is channel-level deduplication, not a merge of competing schedules; `ee_uk.<EE channel number>` is the stable XMLTV channel ID format.
+To avoid duplicate real-world channels, the dataset contains exactly one standard-definition EE row for each channel. It deliberately excludes matching HD mirrors, +1 services, accessibility variants, the old NOW/Sky event-only feed, Sky Cinema and other movie channels, and unrelated TNT Sports Ultimate, TNT Sports 5, or temporary channels. This is channel-level deduplication, not a merge of competing schedules; `ee_uk.<EE channel number>` is the stable XMLTV channel ID format.
+
+The Norway source is the anonymous public Allente Norway guide. It retains the provider’s standard-channel names **TVNorge HD**, **REX HD**, **FEM HD**, and **Eurosport Norge HD**, while deliberately excluding parallel subtitle and audio-description services. [9]
+
+USA Network’s public schedule page normally loads an XMLTV feed for both time-shift services. This project carries only the requested **USA Network** East feed, rather than duplicating the schedule with the USA-West time-shift version. [10]
+
+The project does not create empty channels when an official page identifies a service but does not offer reusable public channel-level programme data. Therefore, the requested New York ABC/NBC/CBS/FOX stations, FS1/FS2, TBS/truTV, France 2–5, Poland Eurosport 1–4, Eurosport 4K, and NHK domestic channels are not presently published. In particular, NHK’s official text guide limits its programme data to private use unless permission is obtained; no public XMLTV redistribution is made from it.
 
 The English HBO Max Türkiye site confirms the local availability of Eurosport 1, Eurosport 2, and live sports. It does not publish a channel-by-channel schedule, so programme items are sourced from the official Turkish TV+ provider guide instead.[1]
 
@@ -58,6 +66,9 @@ epg search "Premier League"
 epg search "Now爆谷" --provider now_hk --channel 138
 epg search "Eurosport" --provider tvplus_tr
 epg search "TNT Sports" --provider ee_uk
+epg search "BBC" --provider ee_uk
+epg search "Eurosport" --provider allente_no
+epg search "Law & Order" --provider usa_network_us
 ```
 
 Schedules can change at short notice. Before automating a refresh, review the relevant provider terms, limit request frequency, and inspect `data/status.json` if a source is unavailable rather than substituting third-party data.
@@ -78,3 +89,5 @@ Each run executes `epg collect --days 7`, updates the JSONL and XMLTV outputs, a
 [6]: https://www.digi4k.ro/ "Digi 4K România"
 [7]: https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77 "TV+ — Eurosport 1 schedule"
 [8]: https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106 "TV+ — Eurosport 2 schedule"
+[9]: https://www.allente.no/tv-guide/ "Allente Norway — TV Guide"
+[10]: https://www.usanetwork.com/schedule "USA Network — public schedule"

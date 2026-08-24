@@ -39,8 +39,9 @@ def write_xmltv(records: Iterable[Programme], xml_path: Path, gzip_path: Path) -
     for channel_id in sorted(channels):
         first = channels[channel_id][0]
         channel = ET.SubElement(root, "channel", {"id": channel_id})
+        # display-name / tvg-name 必须是官方频道名称；稳定 ID 已由 channel/@id 承担，
+        # 不再额外输出诸如 `CH 138` 的号码显示名，以免客户端错误将其作为频道名称。
         ET.SubElement(channel, "display-name").text = first.channel_name
-        ET.SubElement(channel, "display-name").text = f"CH {first.channel_number}"
         ET.SubElement(channel, "url").text = first.source_url
 
     for programme in programmes:
