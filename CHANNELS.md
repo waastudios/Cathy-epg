@@ -4,7 +4,7 @@ This inventory is generated directly from the currently published `data/epg.xml`
 
 The current XMLTV output contains **121 channels**.
 
-## Astro
+## Astro Malaysia
 
 | tvg-id | tvg-name |
 | --- | --- |
