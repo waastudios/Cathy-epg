@@ -19,10 +19,6 @@
     "status": "ok",
     "records": 4917
   },
-  "usa_network_us": {
-    "status": "ok",
-    "records": 157
-  },
   "digi4k_ro": {
     "status": "ok",
     "records": 115
@@ -33,11 +29,11 @@
   },
   "xmltv": {
     "status": "ok",
-    "channels": 336,
-    "programmes": 58585,
+    "channels": 335,
+    "programmes": 58428,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
   "generated_at": "2026-08-24T15:41:22Z",
-  "total_records": 58585
+  "total_records": 58428
 }

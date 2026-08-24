@@ -66,15 +66,6 @@ EE_UK_CHANNELS: tuple[tuple[str, str, str], ...] = (
     ("346", "Sky One", "http://bds.tv/services/BT_255_1402_SD"),
     ("349", "Sky Crime", "http://bds.tv/services/BT_753644_1212_SD"),
 )
-USA_NETWORK_GUIDE = "https://www.usanetwork.com/schedule"
-# USA Network 自身公开网页正常加载的 USA-East XMLTV 地址；不添加用户未要求的 USA-West 时移馈源。
-USA_NETWORK_EAST_EPG = (
-    "https://usanetwork-cached.api.viewlift.com/v4/content/epg/"
-    "669090af-a232-4270-9bd2-8fdc30fdc224/tv.xml?meta="
-    "eyJmb3JtYXQiOiJHUkFDRU5PVEVfSlNPTiIsInNvdXJjZVVybCI6Imh0dHBzOi8v"
-    "ZGF0YS50bXNhcGkuY29tL3YxLjEvc3RhdGlvbnMvNTg0NTIvYWlyaW5ncz9hcGlfa2V5"
-    "PThqN3lzYWh6czdtNXFtd25zOTlkdG4yciJ9"
-)
 DIGI4K_GUIDE = "https://www.digi4k.ro/"
 TVPLUS_EUROSPORT_1_GUIDE = "https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77"
 TVPLUS_EUROSPORT_2_GUIDE = "https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106"
@@ -401,62 +392,6 @@ def collect_ee_uk_channels(days: int = 7, pause_seconds: float = 0.02) -> list[P
         if not channel_records:
             raise SourceUnavailable(f"EE TV Player 未返回 {channel_name}（CH {channel_number}）的公开节目条目。")
 
-    return _deduplicate(records)
-
-
-def _parse_xmltv_timestamp(value: str, zone: ZoneInfo) -> str | None:
-    """解析官方 XMLTV `YYYYMMDDHHMMSS ±ZZZZ` 时间，不对缺失字段做推测。"""
-    try:
-        return datetime.strptime(value.strip(), "%Y%m%d%H%M%S %z").astimezone(zone).isoformat()
-    except ValueError:
-        return None
-
-
-def collect_usa_network(days: int = 7) -> list[Programme]:
-    """读取 USA Network 官方网页公开调用的 USA-East XMLTV 节目表。
-
-    频道网页同时公布东／西时移馈源；用户仅请求 USA Network，因此只保留 USA-East，
-    不以重复的 USA-West 时移表扩展频道数量。
-    """
-    session = _session()
-    response = session.get(USA_NETWORK_EAST_EPG, timeout=60)
-    response.raise_for_status()
-    try:
-        root = ET.fromstring(response.content)
-    except ET.ParseError as exc:
-        raise SourceUnavailable("USA Network 官方页面的公开 EPG 未返回有效 XMLTV。") from exc
-
-    zone = ZoneInfo("America/New_York")
-    retrieved_at = utc_now_iso()
-    today = datetime.now(zone).date()
-    last_day = today + timedelta(days=days)
-    records: list[Programme] = []
-    for programme in root.findall("programme"):
-        title = (programme.findtext("title") or "").strip()
-        start = _parse_xmltv_timestamp(programme.get("start", ""), zone)
-        end = _parse_xmltv_timestamp(programme.get("stop", ""), zone)
-        if not (title and start and end):
-            continue
-        start_date = datetime.fromisoformat(start).date()
-        if not (today <= start_date < last_day):
-            continue
-        records.append(
-            Programme(
-                provider="usa_network_us",
-                country="US",
-                timezone="America/New_York",
-                channel_id="usa-east",
-                channel_number="usa-east",
-                channel_name="USA Network",
-                title=title,
-                start_at=start,
-                end_at=end,
-                source_url=USA_NETWORK_GUIDE,
-                retrieved_at=retrieved_at,
-            )
-        )
-    if not records:
-        raise SourceUnavailable("USA Network 官方公开 EPG 未返回目标日期范围内的节目记录。")
     return _deduplicate(records)
 
 
