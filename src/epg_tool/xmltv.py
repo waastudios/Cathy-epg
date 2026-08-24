@@ -38,6 +38,7 @@ _ALLENTE_NO_XMLTV_IDS = {
     "10010": "allente_no.fem",
     "10011": "allente_no.rex",
     "10022": "allente_no.euron",
+    "10091": "allente_no.euro1",
 }
 # EE 的官方公开节目接口以 `sky-doc` 作为该服务的内部标记；用户指定导出时
 # 使用数字稳定 ID，以便客户端统一识别 Sky Documentaries。

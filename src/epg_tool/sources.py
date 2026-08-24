@@ -55,6 +55,8 @@ ALLENTE_NO_CHANNELS: dict[str, tuple[str, str]] = {
     "10010": ("FEM", "fem"),
     "10011": ("REX", "rex"),
     "10022": ("Eurosport Norge", "euron"),
+    # Allente Norway 官方 EPG 目录中的 Eurosport 1 HD (N)。
+    "10091": ("Eurosport 1", "euro1"),
 }
 ALLENTE_NO_CHANNEL_IDS = frozenset(ALLENTE_NO_CHANNELS)
 EE_TV_PLAYER_GUIDE = "https://player.ee.co.uk/#/livetv/schedule"
@@ -330,12 +332,149 @@ def collect_allente_v_sport_ultrahd(days: int = 7, pause_seconds: float = 0.25) 
     return [record for record in collect_allente_v_sport(days, pause_seconds) if record.channel_id == "50105"]
 
 
-def collect_allente_no(days: int = 7, pause_seconds: float = 0.25) -> list[Programme]:
-    """读取 Allente Norway 官方 TV Guide 的 TVNorge、REX、FEM 与 Eurosport Norge。
+_ALLENTE_NO_TITLE_EXACT: dict[str, str] = {
+    "Kongen befaler": "Taskmaster Norway",
+    "Neste sommer - tegnspråktolket": "Next Summer — sign-language interpreted",
+    "Norske Talenter": "Norway's Got Talent",
+    "Svenske hyttedrømmer: Militærbrakkene på Fårö": "Swedish Cottage Dreams: The Military Barracks on Faro Island",
+}
 
-    仅使用非字幕／非音频描述的标准频道。节目页公开提供精确开始与结束时间。
+
+def _translate_allente_no_title(title: str) -> str:
+    """将 Allente Norway 官方节目标题转换成可验证的英文。
+
+    此函数在每一次挪威频道采集时对每个官方节目对象调用。只进行赛事类别、
+    节目正式名称和明确节目属性的受控转换，不添加选手、比分、场地或其他原始
+    页面未提供的细节。若检测到未覆盖的挪威语，来源明确失败而不发布原文。
+    """
+    normalised = re.sub(r"\s+", " ", title.strip())
+    if not normalised:
+        raise SourceUnavailable("Allente Norway 官方节目对象缺少可翻译的标题。")
+    if normalised in _ALLENTE_NO_TITLE_EXACT:
+        return _ALLENTE_NO_TITLE_EXACT[normalised]
+
+    translated = normalised
+    replacements = (
+        # Official series titles and recurring Norwegian programme labels.
+        ("Lottomillionærenes husjakt:", "My Lottery Dream Home:"),
+        ("Mysterier på museet:", "Mysteries at the Museum:"),
+        ("Drømmen om et øyliv:", "Island Life:"),
+        ("Husdrøm på 100 dager:", "100 Day Dream Home:"),
+        ("Renoveringsdrømmer Sverige:", "Renovation Dreams Sweden:"),
+        ("Svenske hyttedrømmer:", "Swedish Cottage Dreams:"),
+        ("Fanget på politiets kamera Sverige:", "Caught on Camera Sweden:"),
+        ("Grensevakten Sverige:", "Border Patrol Sweden:"),
+        ("T-banen Stockholm:", "Stockholm Metro:"),
+        ("Min nabo er morder:", "My Neighbor Is a Murderer:"),
+        ("Veiens helter:", "Road Heroes:"),
+        ("Bagasjekrigen:", "Baggage Battles:"),
+        ("Hvordan den lages:", "How It's Made:"),
+        ("Mor og datter pusser opp:", "Mother and Daughter Renovate:"),
+        ("Fabelaktig oppussing:", "Fabulous Renovation:"),
+        ("Husfikserne:", "House Fixers:"),
+        ("Ditt verste mareritt:", "Your Worst Nightmare:"),
+        ("Ringenes herre:", "The Lord of the Rings:"),
+        ("Kongen befaler UK:", "Taskmaster UK:"),
+        ("Kongen befaler", "Taskmaster Norway"),
+        ("Neste sommer", "Next Summer"),
+        ("Norske Talenter", "Norway's Got Talent"),
+        ("Danskebåten", "The Danish Ferry"),
+        ("Først til verdens ende", "First to the End of the World"),
+        ("Nå eller aldri", "Now or Never"),
+        ("16 ukers helvete", "16 Weeks of Hell"),
+        ("48 timer", "48 Hours"),
+        ("Alle mot alle", "Everyone Against Everyone"),
+        ("Bagasjekrigen", "Baggage Battles"),
+        ("Solveig og Johns dolce villa", "Solveig and John's Dolce Villa"),
+        # Recurring episode descriptions from the official sample.
+        ("Timor mistenker løgner", "Timor Suspects Lies"),
+        ("Bløff og bedrageri", "Bluff and Fraud"),
+        ("Drapsforsøk og hjertesorg", "Attempted Murder and Heartbreak"),
+        ("Viser seg å være etterlyst", "Turns Out to Be Wanted"),
+        ("Skyttebanen i Brissund", "The Shooting Range in Brissund"),
+        ("Maleverkstedet på Öland", "The Painting Workshop on Öland"),
+        ("Militærbrakkene på Fårö", "The Military Barracks on Fårö"),
+        ("En uke igjen", "One Week Left"),
+        ("Hva synes Oscar?", "What Does Oscar Think?"),
+        ("Kan den reddes?", "Can It Be Saved?"),
+        ("Katta i sekken", "A Cat in the Bag"),
+        ("Bevæpnet mann på buss", "Armed Man on a Bus"),
+        ("Farlig MC-jakt", "Dangerous Motorcycle Chase"),
+        ("Oppfinnsomme tyver", "Ingenious Thieves"),
+        ("Skuddveksling mellom gjenger", "Gunfight Between Gangs"),
+        ("Underjordisk ranerliga", "Underground Robbery Gang"),
+        ("Voldsom motstand", "Violent Resistance"),
+        ("Ordensvaktene havner midt i et gjengoppgjør", "Security Guards Caught in a Gang Clash"),
+        ("Ung mann får hjertestans på toget", "Young Man Suffers Cardiac Arrest on the Train"),
+        ("Sugerøret i donut-hullet mitt", "The Straw in My Donut Hole"),
+        ("Ildere, angrip!", "Ferrets, Attack!"),
+        ("Døden på landet", "Death in the Countryside"),
+        ("Militærbrakkene", "The Military Barracks"),
+        ("på Fårö", "on Fårö"),
+        ("Passasjerer må evakueres", "Passengers Must Be Evacuated"),
+        ("Militær Rettferdighet", "Military Justice"),
+        ("tegnspråktolket", "sign-language interpreted"),
+        # Sports and event vocabulary.
+        ("24-timersløpet fra Le Mans", "24 Hours of Le Mans"),
+        ("Terrengsykkel:", "Mountain Biking:"),
+        ("Hestesport:", "Equestrian:"),
+        ("Hest:", "Equestrian:"),
+        ("Båtsport:", "Boating:"),
+        ("Friidrett:", "Athletics:"),
+        ("Seiling:", "Sailing:"),
+        ("Triatlon:", "Triathlon:"),
+        ("Sykkel:", "Cycling:"),
+        ("Fotball:", "Football:"),
+        ("BMX: EM:", "BMX: European Championship:"),
+        ("Formel E:", "Formula E:"),
+        ("E-sport:", "Esports:"),
+        ("Samveldelekene", "Commonwealth Games"),
+        ("Helgens høydepunkter", "Weekend Highlights"),
+        ("Dagens høydepunkter", "Today's Highlights"),
+        ("FedExCup-kavalkaden", "FedExCup Highlights"),
+        ("kvinner", "Women"),
+        ("Verdenscupåpning", "World Cup Opening"),
+        ("Verdenscup", "World Cup"),
+        ("VM Aachen", "World Championship, Aachen"),
+        ("VM i ", "World Championship in "),
+        ("VM:", "World Championship:"),
+        ("VM ", "World Championship "),
+        ("OL 2024", "Olympic Games 2024"),
+        ("Frankrike", "France"),
+        ("Spania", "Spain"),
+        ("finale", "final"),
+        ("menn", "men"),
+        ("spesial", "Special"),
+        ("Maraton", "Marathon"),
+        ("La Vuelta de Espana", "La Vuelta de España"),
+        ("U.S Open", "US Open"),
+    )
+    for source, target in replacements:
+        translated = translated.replace(source, target)
+    translated = re.sub(r"\s*—\s*", " — ", translated)
+    translated = re.sub(r"\s+", " ", translated).strip()
+
+    # Norwegian letters and common unambiguous Norwegian programme/sport terms must never
+    # silently enter XMLTV. The source fails so the daily workflow records the issue instead.
+    untranslated = re.search(
+        r"[æøåÆØÅ]|\b(?:Alpint|Alle|Angrip|Bagasjekrigen|Danskebåten|Direkte|Ditt|E-sport|EM|Etappe|Fabelaktig|FedExCup-kavalkaden|Først|Fotball|Friidrett|Hest|Hestesport|Husdrøm|Husfikserne|Håndball|Helgens|Hjertesorg|Hvordan|Ildere|Ishockey|Kongen|Kvinner|Langrenn|Lottomillionærenes|Løpet|Maraton|Menn|Mor|Nabo|Norge|Norske|Norsk|Nå|Renoveringsdrømmer|Ringenes|Samveldelekene|Seiling|Skiskyting|Skuddveksling|Svømming|Sykkel|Svenske|Terrengsykkel|Triatlon|Veiens|Verdenscup|Verdenscupåpning|VM|øyliv|spesial|tegnspråktolket|timer|ukers)\b",
+        translated,
+        flags=re.IGNORECASE,
+    )
+    if untranslated:
+        raise SourceUnavailable(f"Allente Norway 标题未获得可验证的英文转换：{title!r}")
+    return translated
+
+
+def collect_allente_no(days: int = 7, pause_seconds: float = 0.25) -> list[Programme]:
+    """读取 Allente Norway 官方 TV Guide 的 TV Norge、REX、FEM、Eurosport Norge 与 Eurosport 1。
+
+    仅使用非字幕／非音频描述的标准频道。每个官方节目标题在写入 XMLTV 前均
+    经过英文转换与挪威语残留检查；节目页公开提供精确开始与结束时间。
     """
     session = _session()
+    # Allente 的端点偶发截断分块响应；请求同一官方内容时使用 identity 编码可稳定取得完整 JSON。
+    session.headers.update({"Accept-Encoding": "identity"})
     zone = ZoneInfo("Europe/Oslo")
     today = datetime.now(zone).date()
     retrieved_at = utc_now_iso()
@@ -347,12 +486,13 @@ def collect_allente_no(days: int = 7, pause_seconds: float = 0.25) -> list[Progr
         payload = response.json()
         channels = [item for item in payload.get("channels", []) if str(item.get("id")) in ALLENTE_NO_CHANNEL_IDS]
         if not channels:
-            raise SourceUnavailable("Allente Norway 官方 EPG 响应中未找到预期的 TVNorge、REX、FEM 或 Eurosport Norge。")
+            raise SourceUnavailable("Allente Norway 官方 EPG 响应中未找到预期的 TV Norge、REX、FEM、Eurosport Norge 或 Eurosport 1。")
         for channel in channels:
             channel_id = str(channel.get("id"))
             channel_name = ALLENTE_NO_CHANNELS[channel_id][0]
             for item in channel.get("programs", []):
-                title = (item.get("title") or "").strip()
+                source_title = str(item.get("title") or "")
+                title = _translate_allente_no_title(source_title)
                 start = item.get("eventStart")
                 end = item.get("eventEnd")
                 if not (title and start and end):

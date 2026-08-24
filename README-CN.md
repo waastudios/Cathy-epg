@@ -33,7 +33,7 @@ XMLTV 中的每个 `display-name` 都是服务商公开的官方频道名称。�
 | 马来西亚 | Astro：22 条明确白名单体育频道 | [Astro Content Guide](https://www.astro.com.my/content/channels) |
 | 香港 | now TV：37 条明确白名单体育频道 | [now TV Guide](https://nowplayer.now.com/tvguide) 与 [官方中文频道目录](https://nowplayer.now.com/channels?lang=zh&filterType=all) |
 | 瑞典 | 13 条 V Sport 服务，包含 V Sport UltraHD | [Allente TV Guide](https://www.allente.se/tv-guide/) |
-| 挪威 | TV Norge、REX、FEM、Eurosport Norge | [Allente Norway TV Guide](https://www.allente.no/tv-guide/) |
+| 挪威 | TV Norge、REX、FEM、Eurosport Norge、Eurosport 1 | [Allente Norway TV Guide](https://www.allente.no/tv-guide/) |
 | 英国 | 指定 Sky Sports、TNT Sports、BBC、ITV、Channel 4 与 Sky 娱乐频道 | [EE TV Player Live TV Schedule](https://player.ee.co.uk/#/livetv/schedule) |
 | 英国 | Sky Sports Ultra HD 1、Sky Sports Ultra HD 2 | [Virgin Media TV Go Guide](https://virgintvgo.virginmedia.com/en/epg/initial) |
 | 罗马尼亚 | Digi 4K | [Digi 4K](https://www.digi4k.ro/) |
