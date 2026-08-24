@@ -69,6 +69,19 @@ EE_UK_CHANNELS: tuple[tuple[str, str, str], ...] = (
 DIGI4K_GUIDE = "https://www.digi4k.ro/"
 TVPLUS_EUROSPORT_1_GUIDE = "https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77"
 TVPLUS_EUROSPORT_2_GUIDE = "https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106"
+# Virgin Media TV Go Guide 在普通匿名页面会话中加载以下官方频道目录与 EPG 时间片。
+VIRGIN_UK_GUIDE = "https://virgintvgo.virginmedia.com/en/epg/initial"
+VIRGIN_UK_CHANNELS = (
+    "https://spark-prod-gb.gnp.cloud.virgintvgo.virginmedia.com/eng/web/linear-service/v2/channels"
+)
+VIRGIN_UK_EPG_SEGMENT = (
+    "https://staticqbr-prod-gb.gnp.cloud.virgintvgo.virginmedia.com/eng/web/epg-service-lite/gb/en/events/segments/{segment}"
+)
+# 频道目录自报的正式频道名与内部 ID；不收录隐藏的 Duplicate 镜像（2321、2322）。
+VIRGIN_UK_ULTRA_CHANNELS: dict[str, str] = {
+    "2258": "Sky Sports Ultra HD 1",
+    "2265": "Sky Sports Ultra HD 2",
+}
 
 
 class SourceUnavailable(RuntimeError):
@@ -487,12 +500,78 @@ def _tvplus_playbills_from_html(html: str) -> list[dict[str, Any]]:
     return []
 
 
+_TVPLUS_EUROSPORT_TITLE_EXACT: dict[str, str] = {
+    "Wuhan Açık": "Wuhan Open",
+    "Tırmanış Dünya Serisi": "Climbing World Series",
+    "Dünya Motocross Şampiyonası": "Motocross World Championship",
+    "2026 Avrupa BMX Şampiyonası": "2026 European BMX Championship",
+    "Dünya Formula E Şampiyonası": "Formula E World Championship",
+    "Dünya Binicilik Şampiyonası": "Equestrian World Championship",
+    "UCI Dağ Bisikleti Dünya Serisi": "UCI Mountain Bike World Series",
+}
+
+
+def _translate_tvplus_eurosport_title(title: str) -> str:
+    """将 TV+ 官方土耳其语 Eurosport 标题转换成赛事语义准确的英文。
+
+    该转换在每次 TV+ 刷新时逐条执行。它只翻译公开标题中可明确识别的
+    赛事、运动项目与阶段，不补充选手、比分、场地或未由官方页面提供的细节。
+    已是英语或国际赛事正式名称的内容保持原样。
+    """
+    normalised = re.sub(r"\s*,\s*", ", ", title.strip())
+    normalised = re.sub(r"\s+", " ", normalised)
+    if normalised in _TVPLUS_EUROSPORT_TITLE_EXACT:
+        return _TVPLUS_EUROSPORT_TITLE_EXACT[normalised]
+
+    stage_match = re.fullmatch(r"(.+?),?\s*(\d+)\.\s*Etap", normalised, flags=re.IGNORECASE)
+    if stage_match:
+        event = stage_match.group(1).strip()
+        # 官方标题偶有不带重音的 España；统一为国际赛事常用英文拼写。
+        event = re.sub(r"La Vuelta a Espana", "La Vuelta a España", event, flags=re.IGNORECASE)
+        return f"{event}, Stage {stage_match.group(2)}"
+
+    replacements = (
+        ("UCI Dağ Bisikleti Dünya Serisi", "UCI Mountain Bike World Series"),
+        ("Dağ Bisikleti Dünya Serisi", "Mountain Bike World Series"),
+        ("Dünya Formula E Şampiyonası", "Formula E World Championship"),
+        ("Dünya Binicilik Şampiyonası", "Equestrian World Championship"),
+        ("Avrupa BMX Şampiyonası", "European BMX Championship"),
+        ("Dünya Superbike Şampiyonası", "Superbike World Championship"),
+        ("Dünya Ralli Şampiyonası", "World Rally Championship"),
+        ("Dünya Dayanıklılık Şampiyonası", "World Endurance Championship"),
+        ("Dünya Şampiyonası", "World Championship"),
+        ("Avrupa Şampiyonası", "European Championship"),
+        ("Tırmanış Dünya Serisi", "Climbing World Series"),
+        ("Dünya Motocross Şampiyonası", "Motocross World Championship"),
+        ("Yarı Final", "Semi-final"),
+        ("Final", "Final"),
+        ("Erkekler", "Men"),
+        ("Kadınlar", "Women"),
+        ("Açık", "Open"),
+        ("Etap", "Stage"),
+        ("Tur", "Round"),
+    )
+    translated = normalised
+    for source, target in replacements:
+        translated = translated.replace(source, target)
+    # 不能保证语义准确的残余土耳其语不能静默进入 XMLTV；让来源在状态中明确失败，
+    # 而不是发布用户无法使用的原文标题。已覆盖赛事会通过此门槛。
+    untranslated = re.search(
+        r"[çğıöşüÇĞİÖŞÜ]|\\b(?:Açık|Avrupa|Binicilik|Bisikleti|Bölüm|Canlı|Dağ|Dünya|Erkekler|Etap|Kadınlar|Sezon|Serisi|Şampiyonası|Tekrar|Tırmanış|Tur|Yarı|Özet)\\b",
+        translated,
+    )
+    if untranslated:
+        raise SourceUnavailable(f"TV+ Eurosport 标题未获得可验证的英文转换：{title!r}")
+    return translated
+
+
 def collect_tvplus_eurosport(days: int = 7) -> list[Programme]:
     """读取土耳其 TV+（官方电视提供商）公开的 Eurosport 1/2 节目页。
 
     TV+ 的后续日期在匿名网页会话中动态加载。公开 SSR 页稳定提供当日完整
     `starttime`/`endtime` 表；当匿名会话接口无法由普通 HTTP 客户端合规重放时，
-    本采集器仅发布已公开的当日条目，不伪造未来节目。
+    本采集器仅发布已公开的当日条目，不伪造未来节目。每个官方土耳其语标题都
+    经过赛事语义英文转换后写入 XMLTV。
     """
     session = _session()
     zone = ZoneInfo("Europe/Istanbul")
@@ -509,7 +588,8 @@ def collect_tvplus_eurosport(days: int = 7) -> list[Programme]:
         if not playbills:
             raise SourceUnavailable(f"TV+ 官方 {channel_name} 页面未返回可识别的当日节目数据。")
         for item in playbills:
-            title = (item.get("name") or "").strip()
+            source_title = (item.get("name") or "").strip()
+            title = _translate_tvplus_eurosport_title(source_title) if source_title else ""
             start_ms = item.get("starttime")
             end_ms = item.get("endtime")
             if not (title and isinstance(start_ms, (int, float)) and isinstance(end_ms, (int, float))):
@@ -532,6 +612,122 @@ def collect_tvplus_eurosport(days: int = 7) -> list[Programme]:
     if not records:
         raise SourceUnavailable("TV+ 官方 Eurosport 1/2 页面没有可发布的节目记录。")
     return _deduplicate(records)
+
+
+def _virgin_uk_segment_starts(today: date, days: int, zone: ZoneInfo) -> list[datetime]:
+    """计算覆盖英国本地连续日期的 Virgin 官方六小时时间片（按 UTC 边界请求）。"""
+    first_local = datetime.combine(today, clock_time.min, tzinfo=zone)
+    last_local = datetime.combine(today + timedelta(days=days), clock_time.min, tzinfo=zone)
+    start_utc = first_local.astimezone(timezone.utc)
+    end_utc = last_local.astimezone(timezone.utc)
+    # 官方静态 EPG 按 UTC 的 00/06/12/18 点分片；向前／后取整以覆盖夏令时边界。
+    start_utc = start_utc.replace(hour=(start_utc.hour // 6) * 6, minute=0, second=0, microsecond=0)
+    end_hour = ((end_utc.hour + 5) // 6) * 6
+    end_utc = end_utc.replace(hour=0, minute=0, second=0, microsecond=0) + timedelta(hours=end_hour)
+    starts: list[datetime] = []
+    cursor = start_utc
+    while cursor < end_utc:
+        starts.append(cursor)
+        cursor += timedelta(hours=6)
+    return starts
+
+
+def collect_virgin_uk_ultra(days: int = 7, pause_seconds: float = 0.02) -> list[Programme]:
+    """读取 Virgin Media TV Go 正常 Guide 页面加载的 Sky Sports Ultra HD 1／2 EPG。
+
+    两台仅采用频道目录中可见的标准内部 ID ``2258``／``2265``；明确排除目录中
+    标记为 hidden 的 ``Duplicate`` 镜像。节目事件来自同一官方 Guide 正常请求的
+    静态六小时时间片，返回 Unix 秒级 start/end，因此不会推断节目时间。
+    """
+    if days not in range(1, 8):
+        raise ValueError("Virgin Media TV Guide 采集天数必须为 1–7。")
+    session = _session()
+    channel_response = session.get(
+        VIRGIN_UK_CHANNELS,
+        params={"cityId": "40980", "language": "en", "productClass": "Orion-DASH", "platform": "web"},
+        timeout=30,
+    )
+    channel_response.raise_for_status()
+    try:
+        channel_payload = channel_response.json()
+    except ValueError as exc:
+        raise SourceUnavailable("Virgin Media TV Guide 官方频道目录未返回 JSON。") from exc
+    if not isinstance(channel_payload, list):
+        raise SourceUnavailable("Virgin Media TV Guide 官方频道目录格式发生变化。")
+
+    channel_names: dict[str, str] = {}
+    for channel in channel_payload:
+        if not isinstance(channel, dict):
+            continue
+        channel_id = str(channel.get("id") or "")
+        name = (channel.get("name") or "").strip()
+        if channel_id in VIRGIN_UK_ULTRA_CHANNELS and not channel.get("isHidden"):
+            expected_name = VIRGIN_UK_ULTRA_CHANNELS[channel_id]
+            if name != expected_name:
+                raise SourceUnavailable(
+                    f"Virgin Media 官方频道目录中 {channel_id} 的名称为 {name!r}，与预期的 {expected_name!r} 不一致。"
+                )
+            channel_names[channel_id] = name
+    if set(channel_names) != set(VIRGIN_UK_ULTRA_CHANNELS):
+        raise SourceUnavailable("Virgin Media 官方频道目录未同时返回可见的 Sky Sports Ultra HD 1／2。")
+
+    zone = ZoneInfo("Europe/London")
+    today = datetime.now(zone).date()
+    last_day = today + timedelta(days=days)
+    retrieved_at = utc_now_iso()
+    records: list[Programme] = []
+    for segment_start in _virgin_uk_segment_starts(today, days, zone):
+        token = segment_start.strftime("%Y%m%d%H%M%S")
+        response = session.get(VIRGIN_UK_EPG_SEGMENT.format(segment=token), timeout=30)
+        response.raise_for_status()
+        try:
+            payload = response.json()
+        except ValueError as exc:
+            raise SourceUnavailable(f"Virgin Media 官方 EPG 时间片 {token} 未返回 JSON。") from exc
+        entries = payload.get("entries") if isinstance(payload, dict) else None
+        if not isinstance(entries, list):
+            raise SourceUnavailable(f"Virgin Media 官方 EPG 时间片 {token} 格式发生变化。")
+        for channel_schedule in entries:
+            if not isinstance(channel_schedule, dict):
+                continue
+            channel_id = str(channel_schedule.get("channelId") or "")
+            if channel_id not in channel_names:
+                continue
+            events = channel_schedule.get("events")
+            if not isinstance(events, list):
+                continue
+            for event in events:
+                if not isinstance(event, dict):
+                    continue
+                title = (event.get("title") or "").strip()
+                start_seconds = event.get("startTime")
+                end_seconds = event.get("endTime")
+                if not (title and isinstance(start_seconds, (int, float)) and isinstance(end_seconds, (int, float))):
+                    continue
+                start = datetime.fromtimestamp(start_seconds, tz=timezone.utc).astimezone(zone)
+                end = datetime.fromtimestamp(end_seconds, tz=timezone.utc).astimezone(zone)
+                if end <= start or not (today <= start.date() < last_day):
+                    continue
+                records.append(
+                    Programme(
+                        provider="virgin_uk",
+                        country="GB",
+                        timezone="Europe/London",
+                        channel_id=channel_id,
+                        channel_number=channel_id,
+                        channel_name=channel_names[channel_id],
+                        title=title,
+                        start_at=start.isoformat(),
+                        end_at=end.isoformat(),
+                        source_url=VIRGIN_UK_GUIDE,
+                        retrieved_at=retrieved_at,
+                    )
+                )
+        time.sleep(pause_seconds)
+    records = _deduplicate(records)
+    if not records:
+        raise SourceUnavailable("Virgin Media 官方 EPG 未返回 Sky Sports Ultra HD 1／2 的目标日期节目记录。")
+    return records
 
 
 def _deduplicate(records: list[Programme]) -> list[Programme]:

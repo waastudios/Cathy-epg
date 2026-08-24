@@ -1340,6 +1340,14 @@
     <display-name>Eurosport 1</display-name>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77</url>
   </channel>
+  <channel id="virgin_uk.2258">
+    <display-name>Sky Sports Ultra HD 1</display-name>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </channel>
+  <channel id="virgin_uk.2265">
+    <display-name>Sky Sports Ultra HD 2</display-name>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </channel>
   <programme start="20260824002000 +0200" channel="allente_no.10009" stop="20260824030500 +0200">
     <title>Jack Reacher</title>
     <url>https://www.allente.no/tv-guide/</url>
@@ -234917,139 +234925,479 @@
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260824010000 +0300" channel="tvplus_tr.106" stop="20260824023000 +0300">
-    <title>La Vuelta a Espana , 2. Etap</title>
+    <title>La Vuelta a España, Stage 2</title>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106</url>
   </programme>
   <programme start="20260824023000 +0300" channel="tvplus_tr.106" stop="20260824031500 +0300">
-    <title>Dünya Formula E Şampiyonası</title>
+    <title>Formula E World Championship</title>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106</url>
   </programme>
   <programme start="20260824031500 +0300" channel="tvplus_tr.106" stop="20260824040000 +0300">
-    <title>Dünya Formula E Şampiyonası</title>
+    <title>Formula E World Championship</title>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106</url>
   </programme>
   <programme start="20260824040000 +0300" channel="tvplus_tr.106" stop="20260824060000 +0300">
-    <title>La Vuelta a Espana , 2. Etap</title>
+    <title>La Vuelta a España, Stage 2</title>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106</url>
   </programme>
   <programme start="20260824060000 +0300" channel="tvplus_tr.106" stop="20260824080000 +0300">
-    <title>Wuhan Açık</title>
+    <title>Wuhan Open</title>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106</url>
   </programme>
   <programme start="20260824080000 +0300" channel="tvplus_tr.106" stop="20260824090000 +0300">
-    <title>Dünya Formula E Şampiyonası</title>
+    <title>Formula E World Championship</title>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106</url>
   </programme>
   <programme start="20260824090000 +0300" channel="tvplus_tr.106" stop="20260824100000 +0300">
-    <title>Dünya Formula E Şampiyonası</title>
+    <title>Formula E World Championship</title>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106</url>
   </programme>
   <programme start="20260824100000 +0300" channel="tvplus_tr.106" stop="20260824130000 +0300">
-    <title>Dünya Binicilik Şampiyonası</title>
+    <title>Equestrian World Championship</title>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106</url>
   </programme>
   <programme start="20260824130000 +0300" channel="tvplus_tr.106" stop="20260824134500 +0300">
-    <title>Dünya Motocross Şampiyonası</title>
+    <title>Motocross World Championship</title>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106</url>
   </programme>
   <programme start="20260824134500 +0300" channel="tvplus_tr.106" stop="20260824143000 +0300">
-    <title>Dünya Motocross Şampiyonası</title>
+    <title>Motocross World Championship</title>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106</url>
   </programme>
   <programme start="20260824143000 +0300" channel="tvplus_tr.106" stop="20260824173000 +0300">
-    <title>Wuhan Açık</title>
+    <title>Wuhan Open</title>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106</url>
   </programme>
   <programme start="20260824173000 +0300" channel="tvplus_tr.106" stop="20260824190000 +0300">
-    <title>Tırmanış Dünya Serisi</title>
+    <title>Climbing World Series</title>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106</url>
   </programme>
   <programme start="20260824190000 +0300" channel="tvplus_tr.106" stop="20260824193000 +0300">
-    <title>Dünya Motocross Şampiyonası</title>
+    <title>Motocross World Championship</title>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106</url>
   </programme>
   <programme start="20260824193000 +0300" channel="tvplus_tr.106" stop="20260824200000 +0300">
-    <title>Dünya Motocross Şampiyonası</title>
+    <title>Motocross World Championship</title>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106</url>
   </programme>
   <programme start="20260824200000 +0300" channel="tvplus_tr.106" stop="20260824203000 +0300">
-    <title>Dünya Motocross Şampiyonası</title>
+    <title>Motocross World Championship</title>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106</url>
   </programme>
   <programme start="20260824203000 +0300" channel="tvplus_tr.106" stop="20260824210000 +0300">
-    <title>Dünya Motocross Şampiyonası</title>
+    <title>Motocross World Championship</title>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106</url>
   </programme>
   <programme start="20260824210000 +0300" channel="tvplus_tr.106" stop="20260824230000 +0300">
-    <title>La Vuelta a Espana , 3. Etap</title>
+    <title>La Vuelta a España, Stage 3</title>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106</url>
   </programme>
   <programme start="20260824230000 +0300" channel="tvplus_tr.106" stop="20260825010000 +0300">
-    <title>Wuhan Açık</title>
+    <title>Wuhan Open</title>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106</url>
   </programme>
   <programme start="20260824010000 +0300" channel="tvplus_tr.77" stop="20260824023000 +0300">
-    <title>Wuhan Açık</title>
+    <title>Wuhan Open</title>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77</url>
   </programme>
   <programme start="20260824023000 +0300" channel="tvplus_tr.77" stop="20260824040000 +0300">
-    <title>La Vuelta a Espana , 2. Etap</title>
+    <title>La Vuelta a España, Stage 2</title>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77</url>
   </programme>
   <programme start="20260824040000 +0300" channel="tvplus_tr.77" stop="20260824050000 +0300">
-    <title>Dünya Formula E Şampiyonası</title>
+    <title>Formula E World Championship</title>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77</url>
   </programme>
   <programme start="20260824050000 +0300" channel="tvplus_tr.77" stop="20260824060000 +0300">
-    <title>Dünya Formula E Şampiyonası</title>
+    <title>Formula E World Championship</title>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77</url>
   </programme>
   <programme start="20260824060000 +0300" channel="tvplus_tr.77" stop="20260824080000 +0300">
-    <title>La Vuelta a Espana , 2. Etap</title>
+    <title>La Vuelta a España, Stage 2</title>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77</url>
   </programme>
   <programme start="20260824080000 +0300" channel="tvplus_tr.77" stop="20260824090000 +0300">
-    <title>Wuhan Açık</title>
+    <title>Wuhan Open</title>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77</url>
   </programme>
   <programme start="20260824090000 +0300" channel="tvplus_tr.77" stop="20260824120000 +0300">
-    <title>Wuhan Açık</title>
+    <title>Wuhan Open</title>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77</url>
   </programme>
   <programme start="20260824120000 +0300" channel="tvplus_tr.77" stop="20260824130000 +0300">
-    <title>Dünya Formula E Şampiyonası</title>
+    <title>Formula E World Championship</title>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77</url>
   </programme>
   <programme start="20260824130000 +0300" channel="tvplus_tr.77" stop="20260824140000 +0300">
-    <title>Dünya Formula E Şampiyonası</title>
+    <title>Formula E World Championship</title>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77</url>
   </programme>
   <programme start="20260824140000 +0300" channel="tvplus_tr.77" stop="20260824143000 +0300">
-    <title>UCI Dağ Bisikleti Dünya Serisi</title>
+    <title>UCI Mountain Bike World Series</title>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77</url>
   </programme>
   <programme start="20260824143000 +0300" channel="tvplus_tr.77" stop="20260824154500 +0300">
-    <title>La Vuelta a Espana , 2. Etap</title>
+    <title>La Vuelta a España, Stage 2</title>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77</url>
   </programme>
   <programme start="20260824154500 +0300" channel="tvplus_tr.77" stop="20260824190000 +0300">
-    <title>La Vuelta a Espana , 3. Etap</title>
+    <title>La Vuelta a España, Stage 3</title>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77</url>
   </programme>
   <programme start="20260824190000 +0300" channel="tvplus_tr.77" stop="20260824200000 +0300">
-    <title>2026 Avrupa BMX Şampiyonası</title>
+    <title>2026 European BMX Championship</title>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77</url>
   </programme>
   <programme start="20260824200000 +0300" channel="tvplus_tr.77" stop="20260824210000 +0300">
-    <title>2026 Avrupa BMX Şampiyonası</title>
+    <title>2026 European BMX Championship</title>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77</url>
   </programme>
   <programme start="20260824210000 +0300" channel="tvplus_tr.77" stop="20260824230000 +0300">
-    <title>Wuhan Açık</title>
+    <title>Wuhan Open</title>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77</url>
   </programme>
   <programme start="20260824230000 +0300" channel="tvplus_tr.77" stop="20260825010000 +0300">
-    <title>La Vuelta a Espana , 3. Etap</title>
+    <title>La Vuelta a España, Stage 3</title>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77</url>
+  </programme>
+  <programme start="20260824060000 +0100" channel="virgin_uk.2258" stop="20260824083000 +0100">
+    <title>This is Ultra HD</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260824083000 +0100" channel="virgin_uk.2258" stop="20260824143000 +0100">
+    <title>This is Ultra HD</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260824143000 +0100" channel="virgin_uk.2258" stop="20260824173000 +0100">
+    <title>This is Ultra HD</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260824173000 +0100" channel="virgin_uk.2258" stop="20260824183000 +0100">
+    <title>This is Ultra HD</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260824183000 +0100" channel="virgin_uk.2258" stop="20260824230000 +0100">
+    <title>Live: Monday Night Football</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260824230000 +0100" channel="virgin_uk.2258" stop="20260825000000 +0100">
+    <title>This is Ultra HD</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260825000000 +0100" channel="virgin_uk.2258" stop="20260825060000 +0100">
+    <title>This is Ultra HD</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260825060000 +0100" channel="virgin_uk.2258" stop="20260825120000 +0100">
+    <title>This is Ultra HD</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260825120000 +0100" channel="virgin_uk.2258" stop="20260825180000 +0100">
+    <title>This is Ultra HD</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260825180000 +0100" channel="virgin_uk.2258" stop="20260825190000 +0100">
+    <title>This is Ultra HD</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260825190000 +0100" channel="virgin_uk.2258" stop="20260825223000 +0100">
+    <title>Live: EFL Cup</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260825223000 +0100" channel="virgin_uk.2258" stop="20260825233000 +0100">
+    <title>This is Ultra HD</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260825233000 +0100" channel="virgin_uk.2258" stop="20260826060000 +0100">
+    <title>This is Ultra HD</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260826060000 +0100" channel="virgin_uk.2258" stop="20260826113000 +0100">
+    <title>This is Ultra HD</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260826113000 +0100" channel="virgin_uk.2258" stop="20260826173000 +0100">
+    <title>This is Ultra HD</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260826173000 +0100" channel="virgin_uk.2258" stop="20260826180000 +0100">
+    <title>This is Ultra HD</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260826180000 +0100" channel="virgin_uk.2258" stop="20260826190000 +0100">
+    <title>This is Ultra HD</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260826190000 +0100" channel="virgin_uk.2258" stop="20260826224500 +0100">
+    <title>Live: EFL Cup</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260826224500 +0100" channel="virgin_uk.2258" stop="20260826234500 +0100">
+    <title>This is Ultra HD</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260826234500 +0100" channel="virgin_uk.2258" stop="20260827060000 +0100">
+    <title>This is Ultra HD</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260827060000 +0100" channel="virgin_uk.2258" stop="20260827114500 +0100">
+    <title>This is Ultra HD</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260827114500 +0100" channel="virgin_uk.2258" stop="20260827174500 +0100">
+    <title>This is Ultra HD</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260827174500 +0100" channel="virgin_uk.2258" stop="20260827180000 +0100">
+    <title>This is Ultra HD</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260827180000 +0100" channel="virgin_uk.2258" stop="20260828000000 +0100">
+    <title>This is Ultra HD</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260828000000 +0100" channel="virgin_uk.2258" stop="20260828060000 +0100">
+    <title>This is Ultra HD</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260828060000 +0100" channel="virgin_uk.2258" stop="20260828120000 +0100">
+    <title>This is Ultra HD</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260828120000 +0100" channel="virgin_uk.2258" stop="20260828180000 +0100">
+    <title>This is Ultra HD</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260828180000 +0100" channel="virgin_uk.2258" stop="20260828190000 +0100">
+    <title>This is Ultra HD</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260828190000 +0100" channel="virgin_uk.2258" stop="20260828224500 +0100">
+    <title>Live: Friday Night Football</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260828224500 +0100" channel="virgin_uk.2258" stop="20260828234500 +0100">
+    <title>This is Ultra HD</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260828234500 +0100" channel="virgin_uk.2258" stop="20260829060000 +0100">
+    <title>This is Ultra HD</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260829060000 +0100" channel="virgin_uk.2258" stop="20260829103000 +0100">
+    <title>This is Ultra HD</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260829103000 +0100" channel="virgin_uk.2258" stop="20260829113000 +0100">
+    <title>This is Ultra HD</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260829113000 +0100" channel="virgin_uk.2258" stop="20260829150000 +0100">
+    <title>Live: EFL Championship</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260829150000 +0100" channel="virgin_uk.2258" stop="20260829160000 +0100">
+    <title>This is Ultra HD</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260829160000 +0100" channel="virgin_uk.2258" stop="20260829170000 +0100">
+    <title>This is Ultra HD</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260829170000 +0100" channel="virgin_uk.2258" stop="20260829203000 +0100">
+    <title>Live: Saturday Night Football</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260829203000 +0100" channel="virgin_uk.2258" stop="20260829213000 +0100">
+    <title>This is Ultra HD</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260829213000 +0100" channel="virgin_uk.2258" stop="20260830060000 +0100">
+    <title>This is Ultra HD</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260830060000 +0100" channel="virgin_uk.2258" stop="20260830093000 +0100">
+    <title>This is Ultra HD</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260830093000 +0100" channel="virgin_uk.2258" stop="20260830113000 +0100">
+    <title>This is Ultra HD</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260830113000 +0100" channel="virgin_uk.2258" stop="20260830123000 +0100">
+    <title>This is Ultra HD</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260830123000 +0100" channel="virgin_uk.2258" stop="20260830160000 +0100">
+    <title>Live: Premier League</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260830160000 +0100" channel="virgin_uk.2258" stop="20260830193000 +0100">
+    <title>Live: Premier League</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260830193000 +0100" channel="virgin_uk.2258" stop="20260830203000 +0100">
+    <title>This is Ultra HD</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260830203000 +0100" channel="virgin_uk.2258" stop="20260831060000 +0100">
+    <title>This is Ultra HD</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260824020000 +0100" channel="virgin_uk.2265" stop="20260824080000 +0100">
+    <title>This is Ultra HD</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260824080000 +0100" channel="virgin_uk.2265" stop="20260824140000 +0100">
+    <title>This is Ultra HD</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260824140000 +0100" channel="virgin_uk.2265" stop="20260824200000 +0100">
+    <title>This is Ultra HD</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260824200000 +0100" channel="virgin_uk.2265" stop="20260825020000 +0100">
+    <title>This is Ultra HD</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260825020000 +0100" channel="virgin_uk.2265" stop="20260825080000 +0100">
+    <title>This is Ultra HD</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260825080000 +0100" channel="virgin_uk.2265" stop="20260825140000 +0100">
+    <title>This is Ultra HD</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260825140000 +0100" channel="virgin_uk.2265" stop="20260825200000 +0100">
+    <title>This is Ultra HD</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260825200000 +0100" channel="virgin_uk.2265" stop="20260826020000 +0100">
+    <title>This is Ultra HD</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260826020000 +0100" channel="virgin_uk.2265" stop="20260826030000 +0100">
+    <title>This is Ultra HD</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260826030000 +0100" channel="virgin_uk.2265" stop="20260826090000 +0100">
+    <title>This is Ultra HD</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260826090000 +0100" channel="virgin_uk.2265" stop="20260826150000 +0100">
+    <title>This is Ultra HD</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260826150000 +0100" channel="virgin_uk.2265" stop="20260826210000 +0100">
+    <title>This is Ultra HD</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260826210000 +0100" channel="virgin_uk.2265" stop="20260827030000 +0100">
+    <title>This is Ultra HD</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260827030000 +0100" channel="virgin_uk.2265" stop="20260827090000 +0100">
+    <title>This is Ultra HD</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260827090000 +0100" channel="virgin_uk.2265" stop="20260827100000 +0100">
+    <title>This is Ultra HD</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260827100000 +0100" channel="virgin_uk.2265" stop="20260827190000 +0100">
+    <title>Live: Test Cricket</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260827190000 +0100" channel="virgin_uk.2265" stop="20260827200000 +0100">
+    <title>This is Ultra HD</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260827200000 +0100" channel="virgin_uk.2265" stop="20260828020000 +0100">
+    <title>This is Ultra HD</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260828020000 +0100" channel="virgin_uk.2265" stop="20260828031500 +0100">
+    <title>This is Ultra HD</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260828031500 +0100" channel="virgin_uk.2265" stop="20260828091500 +0100">
+    <title>This is Ultra HD</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260828091500 +0100" channel="virgin_uk.2265" stop="20260828101500 +0100">
+    <title>This is Ultra HD</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260828101500 +0100" channel="virgin_uk.2265" stop="20260828190000 +0100">
+    <title>Live: Test Cricket</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260828190000 +0100" channel="virgin_uk.2265" stop="20260828191500 +0100">
+    <title>This is Ultra HD</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260828191500 +0100" channel="virgin_uk.2265" stop="20260828193000 +0100">
+    <title>This is Ultra HD</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260828193000 +0100" channel="virgin_uk.2265" stop="20260828223000 +0100">
+    <title>Live: EFL Championship</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260828223000 +0100" channel="virgin_uk.2265" stop="20260828233000 +0100">
+    <title>This is Ultra HD</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260828233000 +0100" channel="virgin_uk.2265" stop="20260829053000 +0100">
+    <title>This is Ultra HD</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260829053000 +0100" channel="virgin_uk.2265" stop="20260829091500 +0100">
+    <title>This is Ultra HD</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260829091500 +0100" channel="virgin_uk.2265" stop="20260829101500 +0100">
+    <title>This is Ultra HD</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260829101500 +0100" channel="virgin_uk.2265" stop="20260829190000 +0100">
+    <title>Live: Test Cricket</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260829190000 +0100" channel="virgin_uk.2265" stop="20260829230000 +0100">
+    <title>Live: MVP Boxing</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260829230000 +0100" channel="virgin_uk.2265" stop="20260830000000 +0100">
+    <title>This is Ultra HD</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260830000000 +0100" channel="virgin_uk.2265" stop="20260830040000 +0100">
+    <title>This is Ultra HD</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260830040000 +0100" channel="virgin_uk.2265" stop="20260830100000 +0100">
+    <title>This is Ultra HD</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260830100000 +0100" channel="virgin_uk.2265" stop="20260830110000 +0100">
+    <title>This is Ultra HD</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260830110000 +0100" channel="virgin_uk.2265" stop="20260830143000 +0100">
+    <title>Live: Scottish Premiership Football</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260830143000 +0100" channel="virgin_uk.2265" stop="20260830144500 +0100">
+    <title>This is Ultra HD</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260830144500 +0100" channel="virgin_uk.2265" stop="20260830150000 +0100">
+    <title>This is Ultra HD</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+  </programme>
+  <programme start="20260830150000 +0100" channel="virgin_uk.2265" stop="20260831000000 +0100">
+    <title>Live: US Open 2026</title>
+    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
   </programme>
 </tv>

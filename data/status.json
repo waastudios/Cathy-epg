@@ -29,11 +29,15 @@
   },
   "xmltv": {
     "status": "ok",
-    "channels": 335,
-    "programmes": 58428,
+    "channels": 337,
+    "programmes": 58513,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-08-24T15:41:22Z",
-  "total_records": 58428
+  "generated_at": "2026-08-24T17:24:19Z",
+  "total_records": 58513,
+  "virgin_uk": {
+    "status": "ok",
+    "records": 85
+  }
 }

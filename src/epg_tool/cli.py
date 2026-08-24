@@ -21,6 +21,7 @@ from .sources import (
     collect_ee_uk_channels,
     collect_now_hk,
     collect_tvplus_eurosport,
+    collect_virgin_uk_ultra,
 )
 
 DEFAULT_DATASET = Path("data/current_week.jsonl")
@@ -42,6 +43,7 @@ def _collect(args: argparse.Namespace) -> int:
         ("ee_uk", lambda: collect_ee_uk_channels(args.days)),
         ("digi4k_ro", lambda: collect_digi4k(args.days)),
         ("tvplus_tr", lambda: collect_tvplus_eurosport(args.days)),
+        ("virgin_uk", lambda: collect_virgin_uk_ultra(args.days)),
     )
     for provider, collector in collectors:
         try:
@@ -113,7 +115,7 @@ def build_parser() -> argparse.ArgumentParser:
     search = commands.add_parser("search", help="检索已采集的节目表快照")
     search.add_argument("query", help="节目名或频道名关键词")
     search.add_argument("--input", type=Path, default=DEFAULT_DATASET)
-    search.add_argument("--provider", choices=["astro", "now_hk", "allente_se", "allente_no", "ee_uk", "digi4k_ro", "tvplus_tr"])
+    search.add_argument("--provider", choices=["astro", "now_hk", "allente_se", "allente_no", "ee_uk", "digi4k_ro", "tvplus_tr", "virgin_uk"])
     search.add_argument("--channel")
     search.add_argument("--date", help="节目开始日期，格式 YYYY-MM-DD")
     search.set_defaults(func=_search)
