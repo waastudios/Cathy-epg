@@ -38,7 +38,7 @@ python -m pip install -e .
 epg collect --days 7
 ```
 
-> 当前 GitHub 仓库为私有仓库。绝大多数播放器无法携带 GitHub 身份验证读取私有 `raw.githubusercontent.com` 链接；若要让播放器直接订阅，文件必须通过公开、无需认证的地址提供。
+> 仓库现已公开，且订阅地址已验证可在无需认证的情况下返回 HTTP 200 与完整 gzip 内容。
 
 ## 参考资料
 
