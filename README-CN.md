@@ -31,9 +31,9 @@ XMLTV 中的每个 `display-name` 都是服务商公开的官方频道名称。�
 | 市场 | 已发布服务 | 官方来源 | 已执行的规则 |
 | --- | --- | --- | --- |
 | 马来西亚 | Astro：22 条明确白名单体育频道 | [Astro Content Guide](https://www.astro.com.my/content/channels) | 所有非体育 Astro 频道均排除。 |
-| 香港 | NOW TV：37 条明确白名单体育频道 | [NOW TV Guide](https://nowplayer.now.com/tvguide) 与 [官方中文频道目录](https://nowplayer.now.com/channels?lang=zh&filterType=all) | 所有非体育 NOW TV 频道均排除，包括 `now_hk.138`。 |
-| 瑞典 | 13 条 V Sport 服务，包含 V sport ultra HD | [Allente TV Guide](https://www.allente.se/tv-guide/) | 使用服务商稳定频道 ID。 |
-| 挪威 | TVNorge HD、REX HD、FEM HD、Eurosport Norge HD | [Allente Norway TV Guide](https://www.allente.no/tv-guide/) | 排除字幕与音频描述镜像。 |
+| 香港 | now TV：37 条明确白名单体育频道 | [now TV Guide](https://nowplayer.now.com/tvguide) 与 [官方中文频道目录](https://nowplayer.now.com/channels?lang=zh&filterType=all) | 所有非体育 now TV 频道均排除，包括 `now_hk.138`。 |
+| 瑞典 | 13 条 V Sport 服务，包含 V Sport UltraHD | [Allente TV Guide](https://www.allente.se/tv-guide/) | 使用用户确认的稳定频道 ID。 |
+| 挪威 | TV Norge、REX、FEM、Eurosport Norge | [Allente Norway TV Guide](https://www.allente.no/tv-guide/) | 排除字幕与音频描述镜像。 |
 | 英国 | 指定 Sky Sports、TNT Sports、BBC、ITV、Channel 4 与 Sky 娱乐频道 | [EE TV Player Live TV Schedule](https://player.ee.co.uk/#/livetv/schedule) | 从正常公开节目表读取精确开始时间与时长。 |
 | 英国 | Sky Sports Ultra HD 1、Sky Sports Ultra HD 2 | [Virgin Media TV Go Guide](https://virgintvgo.virginmedia.com/en/epg/initial) | 仅采用官方目录中可见、非 Duplicate 的服务。 |
 | 罗马尼亚 | Digi 4K | [Digi 4K](https://www.digi4k.ro/) | 使用官网公开节目表。 |
@@ -55,7 +55,7 @@ EE 范围包含 **Sky Mix、Sky Arts、Sky Witness、Sky Atlantic、Sky One、Sk
 
 `.github/workflows/refresh-epg.yml` 中的 GitHub Actions 工作流每天在 **19:00 UTC** 运行，即北京时间（UTC+8）**次日 03:00**。工作流运行 `epg collect --days 7`，写入节目快照和 XMLTV 文件，并且只在结果变化时提交。若官网暂时无法访问，`data/status.json` 会记录来源失败，绝不使用第三方数据替代。
 
-当前发布只有在以下条件同时满足时才视为有效：`data/epg.xml.gz` 解压后与 `data/epg.xml` 完全一致；所有 XMLTV 频道显示名为官方频道名；Astro 与 NOW TV 频道都属于明确体育白名单；被禁止的美国服务商 ID 不存在。
+当前发布只有在以下条件同时满足时才视为有效：`data/epg.xml.gz` 解压后与 `data/epg.xml` 完全一致；所有 XMLTV 频道显示名为官方频道名；Astro 与 now TV 频道都属于明确体育白名单；被禁止的美国服务商 ID 不存在。
 
 ## 本地使用
 
@@ -72,5 +72,5 @@ epg search "Premier League" --provider now_hk --channel 611
 [1]: https://ee.co.uk/help/tv-sport/ee-tv-channel-guide "EE TV Channel Guide"
 [2]: https://player.ee.co.uk/#/livetv/schedule "EE TV Player — Live TV Schedule"
 [3]: https://www.astro.com.my/content/channels "Astro Content Guide"
-[4]: https://nowplayer.now.com/tvguide "NOW TV Hong Kong — TV Guide"
+[4]: https://nowplayer.now.com/tvguide "now TV Hong Kong — TV Guide"
 [5]: https://virgintvgo.virginmedia.com/en/epg/initial "Virgin Media TV Go — Guide"

@@ -31,9 +31,9 @@ Every XMLTV `display-name` is the provider’s official channel name. Stable XML
 | Market | Published services | Official source | Policy applied |
 | --- | --- | --- | --- |
 | Malaysia | Astro: 22 explicitly allow-listed sports channels | [Astro Content Guide](https://www.astro.com.my/content/channels) | Every non-sports Astro channel is excluded. |
-| Hong Kong | NOW TV: 37 explicitly allow-listed sports channels | [NOW TV Guide](https://nowplayer.now.com/tvguide) and [official Chinese channel directory](https://nowplayer.now.com/channels?lang=zh&filterType=all) | Every non-sports NOW TV channel is excluded, including `now_hk.138`. |
-| Sweden | 13 V Sport services, including V sport ultra HD | [Allente TV Guide](https://www.allente.se/tv-guide/) | Uses the provider’s stable channel IDs. |
-| Norway | TVNorge HD, REX HD, FEM HD, Eurosport Norge HD | [Allente Norway TV Guide](https://www.allente.no/tv-guide/) | Excludes subtitle and audio-description mirrors. |
+| Hong Kong | now TV: 37 explicitly allow-listed sports channels | [now TV Guide](https://nowplayer.now.com/tvguide) and [official Chinese channel directory](https://nowplayer.now.com/channels?lang=zh&filterType=all) | Every non-sports now TV channel is excluded, including `now_hk.138`. |
+| Sweden | 13 V Sport services, including V Sport UltraHD | [Allente TV Guide](https://www.allente.se/tv-guide/) | Uses the user-confirmed stable channel IDs. |
+| Norway | TV Norge, REX, FEM, Eurosport Norge | [Allente Norway TV Guide](https://www.allente.no/tv-guide/) | Excludes subtitle and audio-description mirrors. |
 | United Kingdom | Selected Sky Sports, TNT Sports, BBC, ITV, Channel 4 and Sky Entertainment services | [EE TV Player Live TV Schedule](https://player.ee.co.uk/#/livetv/schedule) | Exact start and duration are read from its normal public schedule. |
 | United Kingdom | Sky Sports Ultra HD 1 and 2 | [Virgin Media TV Go Guide](https://virgintvgo.virginmedia.com/en/epg/initial) | Uses visible, non-duplicate official directory entries only. |
 | Romania | Digi 4K | [Digi 4K](https://www.digi4k.ro/) | Uses the public official schedule. |
@@ -55,7 +55,7 @@ No current broadcaster or authorised-provider guide has been verified to expose 
 
 The GitHub Actions workflow in `.github/workflows/refresh-epg.yml` runs daily at **19:00 UTC**, which is **03:00 China Standard Time (UTC+8) on the following calendar day**. It runs `epg collect --days 7`, writes the snapshot and XMLTV files, and commits only when the results change. If an official source is temporarily unavailable, the workflow records that failure in `data/status.json` rather than substituting third-party data.
 
-A current release is considered valid only when `data/epg.xml.gz` decompresses exactly to `data/epg.xml`, all XMLTV channel display names are official names, the Astro and NOW TV channel IDs are within their explicit sports allow-lists, and prohibited US provider IDs are absent.
+A current release is considered valid only when `data/epg.xml.gz` decompresses exactly to `data/epg.xml`, all XMLTV channel display names are official names, the Astro and now TV channel IDs are within their explicit sports allow-lists, and prohibited US provider IDs are absent.
 
 ## Local use
 
@@ -72,5 +72,5 @@ epg search "Premier League" --provider now_hk --channel 611
 [1]: https://ee.co.uk/help/tv-sport/ee-tv-channel-guide "EE TV Channel Guide"
 [2]: https://player.ee.co.uk/#/livetv/schedule "EE TV Player — Live TV Schedule"
 [3]: https://www.astro.com.my/content/channels "Astro Content Guide"
-[4]: https://nowplayer.now.com/tvguide "NOW TV Hong Kong — TV Guide"
+[4]: https://nowplayer.now.com/tvguide "now TV Hong Kong — TV Guide"
 [5]: https://virgintvgo.virginmedia.com/en/epg/initial "Virgin Media TV Go — Guide"
