@@ -101,7 +101,7 @@
 | `virgin_uk.2258` | Sky Sports Ultra HD 1 |
 | `virgin_uk.2265` | Sky Sports Ultra HD 2 |
 
-## Sky 娱乐
+## 🇬🇧英国综合类频道
 
 | tvg-id | tvg-name |
 | --- | --- |
