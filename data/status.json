@@ -1,11 +1,11 @@
 {
   "astro": {
     "status": "ok",
-    "records": 29166
+    "records": 29165
   },
   "now_hk": {
     "status": "ok",
-    "records": 22841
+    "records": 22741
   },
   "allente_se": {
     "status": "ok",
@@ -26,10 +26,10 @@
   "xmltv": {
     "status": "ok",
     "channels": 311,
-    "programmes": 53180,
+    "programmes": 53079,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-08-24T13:54:49Z",
-  "total_records": 53180
+  "generated_at": "2026-08-24T14:19:12Z",
+  "total_records": 53079
 }

@@ -3331,12 +3331,8 @@
     <title>Golf: Ladies European Tour</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
-  <programme start="20260830120000 +0200" channel="allente_se.50077" stop="20260830123000 +0200">
-    <title>Challenge Tour Grand Final Highlights</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260830123000 +0200" channel="allente_se.50077" stop="20260830130000 +0200">
-    <title>Dp World Tour Highlights</title>
+  <programme start="20260830100000 +0200" channel="allente_se.50077" stop="20260830140000 +0200">
+    <title>Airing Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260830130000 +0200" channel="allente_se.50077" stop="20260830180000 +0200">
@@ -3347,12 +3343,16 @@
     <title>Airing Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
-  <programme start="20260830180000 +0200" channel="allente_se.50077" stop="20260830220000 +0200">
-    <title>Airing Break</title>
+  <programme start="20260830180000 +0200" channel="allente_se.50077" stop="20260830183000 +0200">
+    <title>Challenge Tour Grand Final Highlights</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
-  <programme start="20260830220000 +0200" channel="allente_se.50077" stop="20260831020000 +0200">
-    <title>Airing Break</title>
+  <programme start="20260830183000 +0200" channel="allente_se.50077" stop="20260830190000 +0200">
+    <title>Dp World Tour Highlights</title>
+    <url>https://www.allente.se/tv-guide/</url>
+  </programme>
+  <programme start="20260830190000 +0200" channel="allente_se.50077" stop="20260831010000 +0200">
+    <title>Liv Golf Invitational</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260824010000 +0200" channel="allente_se.50078" stop="20260824050000 +0200">
@@ -67403,15 +67403,11 @@
     <title>Blind Girl On Safari 2</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260824214500 +0800" channel="astro.512" stop="20260824214700 +0800">
-    <title>Business Today - NYSE Opening Bell</title>
+  <programme start="20260824214500 +0800" channel="astro.512" stop="20260824221000 +0800">
+    <title>Ibiza VS Type One Diabetes</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260824214700 +0800" channel="astro.512" stop="20260824220200 +0800">
-    <title>BBC News Now</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260824220200 +0800" channel="astro.512" stop="20260824233200 +0800">
+  <programme start="20260824221000 +0800" channel="astro.512" stop="20260824233200 +0800">
     <title>Verified Live</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
@@ -122283,10 +122279,6 @@
     <title>Celta vs Athletic</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260824210000 +0800" channel="now_hk.102" stop="20260824220000 +0800">
-    <title>女神蒙上眼 第25集</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260824220000 +0800" channel="now_hk.102" stop="20260824230000 +0800">
     <title>神與律師事務所 第7集</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -123457,10 +123449,6 @@
   </programme>
   <programme start="20260830233000 +0800" channel="now_hk.105" stop="20260831003000 +0800">
     <title>花琉璃軼聞 第7集</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260824200000 +0800" channel="now_hk.108" stop="20260824220000 +0800">
-    <title>最強大腦 第12季 第9集 -全新賽段紅牌機制上線</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260824220000 +0800" channel="now_hk.108" stop="20260825000000 +0800">
@@ -125563,10 +125551,6 @@
     <title>夏令營奇幻島 第1季第14集 -Oscar And Hedgehog's Melody</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260824200000 +0800" channel="now_hk.113" stop="20260824220000 +0800">
-    <title>正義聯盟</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260824220000 +0800" channel="now_hk.113" stop="20260825001500 +0800">
     <title>縮水人間</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -125913,10 +125897,6 @@
   </programme>
   <programme start="20260830220000 +0800" channel="now_hk.113" stop="20260831000000 +0800">
     <title>末日先鋒：戰甲飛車</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260824203500 +0800" channel="now_hk.114" stop="20260824220000 +0800">
-    <title>神探零零甩</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260824220000 +0800" channel="now_hk.114" stop="20260825002000 +0800">
@@ -126311,10 +126291,6 @@
     <title>魔幻星塵</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260824210000 +0800" channel="now_hk.115" stop="20260824220000 +0800">
-    <title>Lanterns 第1季第2集</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260824220000 +0800" channel="now_hk.115" stop="20260824234500 +0800">
     <title>玩具熊的五夜驚魂2</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -126645,10 +126621,6 @@
   </programme>
   <programme start="20260830233500 +0800" channel="now_hk.115" stop="20260831014000 +0800">
     <title>闇黑新娘</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260824200000 +0800" channel="now_hk.116" stop="20260824220000 +0800">
-    <title>陽光燦爛的果園</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260824220000 +0800" channel="now_hk.116" stop="20260824233000 +0800">
@@ -127221,14 +127193,6 @@
   </programme>
   <programme start="20260830220000 +0800" channel="now_hk.119" stop="20260831004500 +0800">
     <title>超時空接觸</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260824200000 +0800" channel="now_hk.133" stop="20260824214000 +0800">
-    <title>沉默的證人</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260824214000 +0800" channel="now_hk.133" stop="20260824220000 +0800">
-    <title>爆谷電影現場 第266集 -夜王</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260824220000 +0800" channel="now_hk.133" stop="20260824232500 +0800">
@@ -127957,10 +127921,6 @@
   </programme>
   <programme start="20260830223500 +0800" channel="now_hk.138" stop="20260831003500 +0800">
     <title>急凍奇俠</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260824213000 +0800" channel="now_hk.150" stop="20260824220000 +0800">
-    <title>黑色五葉草 第1季第31集 -Pursuit Over The Snow</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260824220000 +0800" channel="now_hk.150" stop="20260824223000 +0800">
@@ -130391,10 +130351,6 @@
     <title>海洋公園 (即日重溫)</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260824210000 +0800" channel="now_hk.208" stop="20260824215000 +0800">
-    <title>國寶外交 第1季第1集 -Origins Of Panda Diplomacy</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260824215000 +0800" channel="now_hk.208" stop="20260824224000 +0800">
     <title>大象走廊 第1季第2集 -何處是家</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -131215,10 +131171,6 @@
     <title>海陸之間: 馬六甲海峽</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260824210000 +0800" channel="now_hk.209" stop="20260824215500 +0800">
-    <title>金礦的賭注特別篇 第16季第8集 -有其兄必有其弟</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260824215500 +0800" channel="now_hk.209" stop="20260824225000 +0800">
     <title>澳洲蛋白石獵人 第8季第17集 -富貴險中求</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -131921,10 +131873,6 @@
   </programme>
   <programme start="20260830231500 +0800" channel="now_hk.209" stop="20260831001000 +0800">
     <title>追謎檔案 第2季第15集 -真相還是八卦</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260824210000 +0800" channel="now_hk.210" stop="20260824220000 +0800">
-    <title>野性澳大利亞 第1季第1集</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260824220000 +0800" channel="now_hk.210" stop="20260824230000 +0800">
@@ -133603,10 +133551,6 @@
     <title>從地球出發:NASA任務50年 第1季第6集 -定居外太空</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260824212200 +0800" channel="now_hk.212" stop="20260824214500 +0800">
-    <title>犀利修車廠 第7季第15集 -更換車體板</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260824214500 +0800" channel="now_hk.212" stop="20260824220800 +0800">
     <title>犀利修車廠 第7季第1集 -修復80年代車</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -134479,10 +134423,6 @@
     <title>艾倫最強檔 第1季第7集 -拉力時刻</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260824210000 +0800" channel="now_hk.213" stop="20260824215500 +0800">
-    <title>問題皮膚救星 第8季第8集 -診斷最重要</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260824215500 +0800" channel="now_hk.213" stop="20260824225000 +0800">
     <title>面子問題 第1季第4集 -重疊的臉</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -135259,10 +135199,6 @@
     <title>到美國結婚去婚後篇 第9季第11集 -不容忽視</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260824205500 +0800" channel="now_hk.217" stop="20260824215000 +0800">
-    <title>超獸 第1季第3集 -超感官</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260824215000 +0800" channel="now_hk.217" stop="20260824224500 +0800">
     <title>「擬人」動物 第1季第3集 -狐獴求生學校</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -135935,10 +135871,6 @@
     <title>啄木鳥：樹洞故事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260824205500 +0800" channel="now_hk.218" stop="20260824215000 +0800">
-    <title>超獸 第1季第3集 -超感官</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260824215000 +0800" channel="now_hk.218" stop="20260824224500 +0800">
     <title>「擬人」動物 第1季第3集 -狐獴求生學校</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -136609,10 +136541,6 @@
   </programme>
   <programme start="20260830234000 +0800" channel="now_hk.218" stop="20260831003500 +0800">
     <title>啄木鳥：樹洞故事</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260824210000 +0800" channel="now_hk.220" stop="20260824220000 +0800">
-    <title>亞馬遜叢林挑戰 第1季第2集 -挑戰巔峰</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260824220000 +0800" channel="now_hk.220" stop="20260824230000 +0800">
@@ -137309,10 +137237,6 @@
   </programme>
   <programme start="20260830230500 +0800" channel="now_hk.220" stop="20260831000000 +0800">
     <title>蘇柏金斯前進泰國 第1季第1集</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260824210000 +0800" channel="now_hk.221" stop="20260824220000 +0800">
-    <title>Running Wild with Bear Grylls 第4季第2集 -Joseph Gordon-Levitt</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260824220000 +0800" channel="now_hk.221" stop="20260824223000 +0800">
@@ -138207,10 +138131,6 @@
     <title>Panda Power - Rise of Furry Diplomats 第1季第1集 -Origins of Panda Diplomacy</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260824210500 +0800" channel="now_hk.222" stop="20260824220000 +0800">
-    <title>亞洲暗黑檔案：性侵犯的記號</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260824220000 +0800" channel="now_hk.222" stop="20260824225000 +0800">
     <title>現行犯罪 第8集 -秘密之屋</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -138903,10 +138823,6 @@
     <title>被告者：有罪或無罪？ 第14集 -大砍刀攻擊者或無辜的女友？</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260824212500 +0800" channel="now_hk.223" stop="20260824215500 +0800">
-    <title>建構亞洲的食品 第4集 -印尼炒飯</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260824215500 +0800" channel="now_hk.223" stop="20260824225000 +0800">
     <title>摩根·費里曼之越獄風雲 第2季第9集 -阿爾通市越獄</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -139561,14 +139477,6 @@
   </programme>
   <programme start="20260830234500 +0800" channel="now_hk.223" stop="20260831004000 +0800">
     <title>新加坡10件你不知道的事</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260824210000 +0800" channel="now_hk.316" stop="20260824214500 +0800">
-    <title>Connect The World: Monday, Aug. 24, 2026 9Am ET 第168集</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260824214500 +0800" channel="now_hk.316" stop="20260824220000 +0800">
-    <title>World Sport: Monday, August 24, 2026 945Am ET 第168集</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260824220000 +0800" channel="now_hk.316" stop="20260824230000 +0800">
@@ -140321,10 +140229,6 @@
   </programme>
   <programme start="20260830230000 +0800" channel="now_hk.316" stop="20260831000000 +0800">
     <title>Inside Politics With Manu Raju: Sunday, August 30, 2026 8Am 第35集</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260824213000 +0800" channel="now_hk.319" stop="20260824220000 +0800">
-    <title>Squawk On The Street</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260824220000 +0800" channel="now_hk.319" stop="20260824223000 +0800">
@@ -141361,14 +141265,6 @@
   </programme>
   <programme start="20260830230000 +0800" channel="now_hk.319" stop="20260831000000 +0800">
     <title>American Greed</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260824213000 +0800" channel="now_hk.320" stop="20260824214500 +0800">
-    <title>Business Today - Nyse Opening Bell</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260824214500 +0800" channel="now_hk.320" stop="20260824220000 +0800">
-    <title>BBC News Now</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260824220000 +0800" channel="now_hk.320" stop="20260824223000 +0800">
@@ -143183,10 +143079,6 @@
     <title>The Circuit</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260824210000 +0800" channel="now_hk.322" stop="20260824220000 +0800">
-    <title>Inside The Police Coast Guard 第1集 -Part 1: 'We Are Activated'</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260824220000 +0800" channel="now_hk.322" stop="20260824230000 +0800">
     <title>Singapore Tonight</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -143929,10 +143821,6 @@
   </programme>
   <programme start="20260830230300 +0800" channel="now_hk.322" stop="20260831000000 +0800">
     <title>Extraordinary People S2 第1集 -Inclusive Opportunities (Eng Subs)</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260824213000 +0800" channel="now_hk.323" stop="20260824220000 +0800">
-    <title>The World With Yalda Hakim</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260824220000 +0800" channel="now_hk.323" stop="20260824223000 +0800">
@@ -144949,10 +144837,6 @@
   </programme>
   <programme start="20260830233000 +0800" channel="now_hk.323" stop="20260831000000 +0800">
     <title>The Wrap With Gillian Joseph</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260824213000 +0800" channel="now_hk.324" stop="20260824220000 +0800">
-    <title>The 77 Percent -Marriage And Matchmaking</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260824220000 +0800" channel="now_hk.324" stop="20260824220200 +0800">
@@ -146755,10 +146639,6 @@
     <title>Arts Unveiled -Experiencing And Understanding The Art World</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260824210000 +0800" channel="now_hk.325" stop="20260824220000 +0800">
-    <title>Newshour</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260824220000 +0800" channel="now_hk.325" stop="20260824223000 +0800">
     <title>News Live</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -147681,10 +147561,6 @@
   </programme>
   <programme start="20260830230000 +0800" channel="now_hk.325" stop="20260831000000 +0800">
     <title>Newshour</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260824213000 +0800" channel="now_hk.326" stop="20260824220000 +0800">
-    <title>Euronews Now</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260824220000 +0800" channel="now_hk.326" stop="20260824221800 +0800">
@@ -149701,18 +149577,6 @@
   </programme>
   <programme start="20260830233400 +0800" channel="now_hk.326" stop="20260831000000 +0800">
     <title>The Ring</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260824213000 +0800" channel="now_hk.327" stop="20260824214500 +0800">
-    <title>News[直播]</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260824214500 +0800" channel="now_hk.327" stop="20260824215000 +0800">
-    <title>Focus</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260824215000 +0800" channel="now_hk.327" stop="20260824220000 +0800">
-    <title>Entre Nous</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260824220000 +0800" channel="now_hk.327" stop="20260824221500 +0800">
@@ -152111,10 +151975,6 @@
     <title>Arts24</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260824213000 +0800" channel="now_hk.328" stop="20260824220000 +0800">
-    <title>Seasoning The Seasons -E2024-144</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260824220000 +0800" channel="now_hk.328" stop="20260824223000 +0800">
     <title>NHK Newsline</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -153743,10 +153603,6 @@
     <title>此頻道未能提供節目表敬請原諒!</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260824213000 +0800" channel="now_hk.330" stop="20260824220000 +0800">
-    <title>The Point With Liu Xin</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260824220000 +0800" channel="now_hk.330" stop="20260824223000 +0800">
     <title>The World Today</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -155101,10 +154957,6 @@
   </programme>
   <programme start="20260830230000 +0800" channel="now_hk.331" stop="20260831100000 +0800">
     <title>經緯線</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260824213000 +0800" channel="now_hk.332" stop="20260824220000 +0800">
-    <title>Now新聞報道</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260824220000 +0800" channel="now_hk.332" stop="20260824223000 +0800">
@@ -157627,10 +157479,6 @@
     <title>Now深宵新聞[直播]</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260824200000 +0800" channel="now_hk.336" stop="20260824220000 +0800">
-    <title>24小時不停提供投資市場最新報價</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260824220000 +0800" channel="now_hk.336" stop="20260825000000 +0800">
     <title>24小時不停提供投資市場最新報價</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -157921,14 +157769,6 @@
   </programme>
   <programme start="20260830220000 +0800" channel="now_hk.336" stop="20260831000000 +0800">
     <title>24小時不停提供投資市場最新報價</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260824210000 +0800" channel="now_hk.366" stop="20260824215500 +0800">
-    <title>時事直通車</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260824215500 +0800" channel="now_hk.366" stop="20260824220000 +0800">
-    <title>鳳凰氣象站</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260824220000 +0800" channel="now_hk.366" stop="20260824223000 +0800">
@@ -160215,14 +160055,6 @@
     <title>神臍小捲毛 第2季第74集 -太遠/答案/破獄</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260824213000 +0800" channel="now_hk.444" stop="20260824214000 +0800">
-    <title>小粉馬林琪 第1季第117集 -個體</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260824214000 +0800" channel="now_hk.444" stop="20260824215500 +0800">
-    <title>勞德之家 第4季第412集 -痘痘大作戰</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260824215500 +0800" channel="now_hk.444" stop="20260824221500 +0800">
     <title>勞德之家 第2季第223集 -大聲閱讀/不是勞德家的人</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -161845,18 +161677,6 @@
   </programme>
   <programme start="20260830235000 +0800" channel="now_hk.444" stop="20260831000000 +0800">
     <title>長尾豹馬修一家親 第1季第109集 -米卡的機器人</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260824212500 +0800" channel="now_hk.447" stop="20260824214000 +0800">
-    <title>Go Jetters 第1季第16集 -Mount Etna, Italy</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260824214000 +0800" channel="now_hk.447" stop="20260824215000 +0800">
-    <title>Thomas &amp; Friends 第23季第11集 -Grudge Match</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260824215000 +0800" channel="now_hk.447" stop="20260824215700 +0800">
-    <title>Sarah And Duck 第2季第26集 -Scooter Stand Still</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260824215700 +0800" channel="now_hk.447" stop="20260824220500 +0800">
@@ -165903,10 +165723,6 @@
     <title>Andy's Global Adventures 第1季第22集 -Andy And The Pallas's Cats</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260824210300 +0800" channel="now_hk.448" stop="20260824213200 +0800">
-    <title>迷你萌兵 第1季第9集 -我的英雄、故事、泰迪熊與蔬菜！</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260824213200 +0800" channel="now_hk.448" stop="20260824220100 +0800">
     <title>迷你萌兵 第1季第3集 -小把戲、蜘蛛、撞到頭與小飛蟲！</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -167041,26 +166857,6 @@
   </programme>
   <programme start="20260830230000 +0800" channel="now_hk.448" stop="20260831010200 +0800">
     <title>小寶貝布姆：搖籃曲 第1季第2集 -一閃一閃亮晶晶</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260824211500 +0800" channel="now_hk.449" stop="20260824214000 +0800">
-    <title>Deer Squad 第4季第416集 -Cave Invaders/Stone Pangolin Surprise</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260824214000 +0800" channel="now_hk.449" stop="20260824214500 +0800">
-    <title>Peppa Pig 第1季第138集 -Fancy Dress Party</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260824214500 +0800" channel="now_hk.449" stop="20260824215000 +0800">
-    <title>Peppa Pig 第1季第139集 -The Museum</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260824215000 +0800" channel="now_hk.449" stop="20260824215500 +0800">
-    <title>Peppa Pig 第1季第140集 -Very Hot Day</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260824215500 +0800" channel="now_hk.449" stop="20260824220000 +0800">
-    <title>Peppa Pig 第1季第141集 -Chloe's Puppet Show</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260824220000 +0800" channel="now_hk.449" stop="20260824222000 +0800">
@@ -168771,10 +168567,6 @@
     <title>Barbapapa - One Big Happy Family! 第2季第225集 -Living Together/Holey The Snowman</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260824212000 +0800" channel="now_hk.502" stop="20260824215500 +0800">
-    <title>西班牙生活大挑戰 第1季第1集</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260824215500 +0800" channel="now_hk.502" stop="20260824223000 +0800">
     <title>西班牙生活大挑戰 第1季第2集</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -169499,10 +169291,6 @@
     <title>里克斯坦暢遊康沃爾 第2季第11集</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260824205000 +0800" channel="now_hk.512" stop="20260824214500 +0800">
-    <title>特警雄風 第8季第18集 -Exploited</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260824214500 +0800" channel="now_hk.512" stop="20260824224000 +0800">
     <title>聯邦調查局: 國際刑警 第4季第5集 -The Future's Looking Bright</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -170137,10 +169925,6 @@
   </programme>
   <programme start="20260830233000 +0800" channel="now_hk.512" stop="20260831002500 +0800">
     <title>聯邦調查局FBI 第8季第16集 -3 Up, 3 Down</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260824210000 +0800" channel="now_hk.513" stop="20260824220000 +0800">
-    <title>飛越比佛利: 90210 第2季第26集 -雨天可做的事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260824220000 +0800" channel="now_hk.513" stop="20260824230000 +0800">
@@ -170851,10 +170635,6 @@
     <title>太空仙女戀 第5季第11集 -婚禮</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260824210000 +0800" channel="now_hk.517" stop="20260824214500 +0800">
-    <title>芝加哥醫情 第11季第13集 -清算, 下集</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260824214500 +0800" channel="now_hk.517" stop="20260824223000 +0800">
     <title>芝加哥醫情 第11季第14集 -扭轉與吶喊</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -171377,10 +171157,6 @@
   </programme>
   <programme start="20260830230500 +0800" channel="now_hk.517" stop="20260831003000 +0800">
     <title>神祕百慕達 二部</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260824203000 +0800" channel="now_hk.525" stop="20260824220000 +0800">
-    <title>澳洲頂級廚師 第18季第36集</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260824220000 +0800" channel="now_hk.525" stop="20260824233500 +0800">
@@ -173083,10 +172859,6 @@
     <title>大吃特吃 第1季第4集 -超大份量</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260824210000 +0800" channel="now_hk.527" stop="20260824220000 +0800">
-    <title>去'湘'當有味的地方 第2季第1集 -瀏陽</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260824220000 +0800" channel="now_hk.527" stop="20260824223000 +0800">
     <title>跟著大維一起吃 第1季第3集 -台北文化之旅篇上集</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -174087,10 +173859,6 @@
     <title>美食良伴: 風味傳承 第1季第8集 -白新春茶莊與黃亞細肉骨茶</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260824210000 +0800" channel="now_hk.538" stop="20260824220000 +0800">
-    <title>頭條開講</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260824220000 +0800" channel="now_hk.538" stop="20260824230000 +0800">
     <title>小明星大跟班</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -174685,10 +174453,6 @@
   </programme>
   <programme start="20260830230000 +0800" channel="now_hk.538" stop="20260831000000 +0800">
     <title>金牌特派</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260824193000 +0800" channel="now_hk.540" stop="20260824215500 +0800">
-    <title>第一劇場</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260824215500 +0800" channel="now_hk.540" stop="20260824221200 +0800">
@@ -175393,18 +175157,6 @@
   </programme>
   <programme start="20260830235500 +0800" channel="now_hk.540" stop="20260831002500 +0800">
     <title>深視新聞</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260824205200 +0800" channel="now_hk.541" stop="20260824214000 +0800">
-    <title>電視劇 藏鋒</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260824214000 +0800" channel="now_hk.541" stop="20260824214300 +0800">
-    <title>公益宣傳短片</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260824214300 +0800" channel="now_hk.541" stop="20260824220000 +0800">
-    <title>焦點訪談</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260824220000 +0800" channel="now_hk.541" stop="20260824223200 +0800">
@@ -176297,10 +176049,6 @@
   </programme>
   <programme start="20260830231800 +0800" channel="now_hk.541" stop="20260831000400 +0800">
     <title>電視劇 南來北往</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260824213000 +0800" channel="now_hk.542" stop="20260824220000 +0800">
-    <title>今日關注</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260824220000 +0800" channel="now_hk.542" stop="20260824223000 +0800">
@@ -177275,10 +177023,6 @@
     <title>電視劇</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260824210500 +0800" channel="now_hk.543" stop="20260824215500 +0800">
-    <title>晚間劇場</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260824215500 +0800" channel="now_hk.543" stop="20260824221500 +0800">
     <title>紀錄中國</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -177789,10 +177533,6 @@
   </programme>
   <programme start="20260830232500 +0800" channel="now_hk.543" stop="20260831003000 +0800">
     <title>笑口組</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260824213000 +0800" channel="now_hk.545" stop="20260824220000 +0800">
-    <title>新聞1+1</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260824220000 +0800" channel="now_hk.545" stop="20260824223000 +0800">
@@ -178465,14 +178205,6 @@
   </programme>
   <programme start="20260830230000 +0800" channel="now_hk.545" stop="20260831000000 +0800">
     <title>24小時</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260824210000 +0800" channel="now_hk.548" stop="20260824215500 +0800">
-    <title>時事直通車 -24/8/26</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260824215500 +0800" channel="now_hk.548" stop="20260824220000 +0800">
-    <title>鳳凰氣象站</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260824220000 +0800" channel="now_hk.548" stop="20260824223000 +0800">
@@ -179811,14 +179543,6 @@
     <title>此頻道未能提供節目表敬請原諒!</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260824213000 +0800" channel="now_hk.561" stop="20260824214500 +0800">
-    <title>Chopsticks Or Fork? 第1季第4集 -Atherton, Qld</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260824214500 +0800" channel="now_hk.561" stop="20260824220000 +0800">
-    <title>Chopsticks Or Fork? 第1季第5集 -Gawler, Sa</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260824220000 +0800" channel="now_hk.561" stop="20260824221500 +0800">
     <title>ABC Late News:2026 第168集</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -180519,10 +180243,6 @@
     <title>Bondi Rescue 第16季第4集</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260824210000 +0800" channel="now_hk.611" stop="20260824220000 +0800">
-    <title>請留意下場播映賽事</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260824220000 +0800" channel="now_hk.611" stop="20260824230000 +0800">
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -181103,10 +180823,6 @@
     <title>[4K]英格蘭超級聯賽 -曼聯 對 葉士域治[直播]</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260824200000 +0800" channel="now_hk.612" stop="20260824220000 +0800">
-    <title>請留意下場播映賽事</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260824220000 +0800" channel="now_hk.612" stop="20260825000000 +0800">
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -181396,10 +181112,6 @@
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260830220000 +0800" channel="now_hk.612" stop="20260831000000 +0800">
-    <title>請留意下場播映賽事</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260824200000 +0800" channel="now_hk.613" stop="20260824220000 +0800">
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
@@ -184015,10 +183727,6 @@
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260824213000 +0800" channel="now_hk.630" stop="20260824220000 +0800">
-    <title>英超故事26/27 -侯城</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260824220000 +0800" channel="now_hk.630" stop="20260825000000 +0800">
     <title>WTA 26 羅渣士網球盃 -準決賽(2)</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -186335,10 +186043,6 @@
     <title>世界羽毛球錦標賽 回顧</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260824200000 +0800" channel="now_hk.634" stop="20260824220000 +0800">
-    <title>WTA 26 羅渣士網球盃 -決賽</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260824220000 +0800" channel="now_hk.634" stop="20260825000000 +0800">
     <title>WTA 26 辛辛那堤網球公開賽 -決賽</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -187045,10 +186749,6 @@
   </programme>
   <programme start="20260830230000 +0800" channel="now_hk.634" stop="20260831040000 +0800">
     <title>2026美國網球公開賽 (L. Armstrong) -第1天第1圈(A)[直播]</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260824213000 +0800" channel="now_hk.635" stop="20260824215000 +0800">
-    <title>World Climbing Series '26 H/L 第30集 -WCS '26 Krakow H/L 3</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260824215000 +0800" channel="now_hk.635" stop="20260824235500 +0800">
@@ -188815,10 +188515,6 @@
     <title>一CUE過百 第163集</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260824200000 +0800" channel="now_hk.638" stop="20260824220000 +0800">
-    <title>2026 世界一級方程式錦標賽 - 主賽事 第14集 -荷蘭站</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260824220000 +0800" channel="now_hk.638" stop="20260824235000 +0800">
     <title>2026/27 意大利甲組足球聯賽 第8集 -拖連奴 對 AC米蘭</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -189795,10 +189491,6 @@
     <title>歐洲卡車錦標賽精華2026 -紐堡寧站</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260824213000 +0800" channel="now_hk.640" stop="20260824220000 +0800">
-    <title>英超精華 第1集 -侯城 對 曼聯</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260824220000 +0800" channel="now_hk.640" stop="20260824223000 +0800">
     <title>季前賽2026 第8集 -精華: 曼聯 對 巴黎聖日耳門</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -190679,10 +190371,6 @@
     <title>賽日直播: 現場評述 第2集 -曼聯 對 葉士域治[直播]</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260824200000 +0800" channel="now_hk.641" stop="20260824220000 +0800">
-    <title>請留意下場播映賽事</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260824220000 +0800" channel="now_hk.641" stop="20260825000000 +0800">
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -190973,10 +190661,6 @@
   </programme>
   <programme start="20260830220000 +0800" channel="now_hk.641" stop="20260831000000 +0800">
     <title>請留意下場播映賽事</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260824200000 +0800" channel="now_hk.642" stop="20260824220000 +0800">
-    <title>NBA精彩重溫 -聖安東尼奧馬刺 對 夏洛特黃蜂</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260824220000 +0800" channel="now_hk.642" stop="20260825000000 +0800">
@@ -191401,10 +191085,6 @@
   </programme>
   <programme start="20260830233000 +0800" channel="now_hk.642" stop="20260831000000 +0800">
     <title>50大精彩防守 -2025-26球季</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260824200000 +0800" channel="now_hk.643" stop="20260824220000 +0800">
-    <title>意大利甲組足球聯賽 第8集 -拖連奴 對 AC米蘭</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260824220000 +0800" channel="now_hk.643" stop="20260824223000 +0800">
@@ -192327,10 +192007,6 @@
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260824200000 +0800" channel="now_hk.647" stop="20260824220000 +0800">
-    <title>請留意下場播映賽事</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260824220000 +0800" channel="now_hk.647" stop="20260825000000 +0800">
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -192631,10 +192307,6 @@
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260824200000 +0800" channel="now_hk.651" stop="20260824220000 +0800">
-    <title>請留意下場播映賽事</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260824220000 +0800" channel="now_hk.651" stop="20260825000000 +0800">
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -192924,10 +192596,6 @@
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260830220000 +0800" channel="now_hk.651" stop="20260831000000 +0800">
-    <title>請留意下場播映賽事</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260824200000 +0800" channel="now_hk.652" stop="20260824220000 +0800">
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
@@ -193221,10 +192889,6 @@
   </programme>
   <programme start="20260830220000 +0800" channel="now_hk.652" stop="20260831000000 +0800">
     <title>請留意下場播映賽事</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260824205000 +0800" channel="now_hk.668" stop="20260824213500 +0800">
-    <title>賽事重溫 第74集</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260824213500 +0800" channel="now_hk.668" stop="20260824221500 +0800">
@@ -194295,10 +193959,6 @@
     <title>帶你遊馬房 -「競駿輝煌」</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260824213000 +0800" channel="now_hk.674" stop="20260824215400 +0800">
-    <title>CPL 2026 -Highlights: M14: ABF vs TKR</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260824215400 +0800" channel="now_hk.674" stop="20260824222200 +0800">
     <title>TATA IPL 2026 -Highlights: FINAL: RCB vs GT</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -194841,10 +194501,6 @@
   </programme>
   <programme start="20260830175800 +0800" channel="now_hk.674" stop="20260831010000 +0800">
     <title>Pakistan tour of England, 2026 -LIVE: ENG vs PAK, 2nd Test, Day 4[直播]</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260824212000 +0800" channel="now_hk.679" stop="20260824214000 +0800">
-    <title>AFL Highlights -West Coast v Hawthorn</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260824214000 +0800" channel="now_hk.679" stop="20260824233000 +0800">
@@ -196655,14 +196311,6 @@
     <title>PGA冠軍巡迴賽學習中心2026 第16集</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260824210000 +0800" channel="now_hk.711" stop="20260824214500 +0800">
-    <title>The Fountain Of Ancient Wisdom 'Fujiwara Fuhito'</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260824214500 +0800" channel="now_hk.711" stop="20260824220000 +0800">
-    <title>Night Drama Serial 'Books Bought With Tax Money' 第1集</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260824220000 +0800" channel="now_hk.711" stop="20260824222500 +0800">
     <title>Documentary On Popular Writers And Their Cats</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -198301,14 +197949,6 @@
   </programme>
   <programme start="20260830233400 +0800" channel="now_hk.711" stop="20260831002000 +0800">
     <title>Sunday Sports News</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260824212700 +0800" channel="now_hk.713" stop="20260824215400 +0800">
-    <title>Epicerie Fine 第18集 -The Diois</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260824215400 +0800" channel="now_hk.713" stop="20260824220000 +0800">
-    <title>Vf 第10季第11集 -Thom Browne, Autumn-Winter 2024</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260824220000 +0800" channel="now_hk.713" stop="20260824224700 +0800">
@@ -200549,14 +200189,6 @@
   </programme>
   <programme start="20260830230200 +0800" channel="now_hk.714" stop="20260831005700 +0800">
     <title>Le Gala De Meudon Rire De Tout</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260824213000 +0800" channel="now_hk.715" stop="20260824215700 +0800">
-    <title>Aux avant-postes</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260824215700 +0800" channel="now_hk.715" stop="20260824220000 +0800">
-    <title>L'instant mobile</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260824220000 +0800" channel="now_hk.715" stop="20260824221500 +0800">
@@ -203631,10 +203263,6 @@
     <title>Resibo: Walang Lusot Ang May Atraso</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260824211500 +0800" channel="now_hk.721" stop="20260824214500 +0800">
-    <title>Idol Sa Kusina</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260824214500 +0800" channel="now_hk.721" stop="20260824224500 +0800">
     <title>Balitanghali</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -205005,14 +204633,6 @@
   </programme>
   <programme start="20260830213000 +0800" channel="now_hk.722" stop="20260831023000 +0800">
     <title>Reel Time Marathon</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260824204500 +0800" channel="now_hk.725" stop="20260824214500 +0800">
-    <title>Someone, Someday[直播]</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260824214500 +0800" channel="now_hk.725" stop="20260824220000 +0800">
-    <title>Oh My Gan![直播]</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260824220000 +0800" channel="now_hk.725" stop="20260825001500 +0800">
@@ -206389,10 +206009,6 @@
   </programme>
   <programme start="20260830221700 +0800" channel="now_hk.772" stop="20260831002300 +0800">
     <title>Housemates -Housemates</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260824213000 +0800" channel="now_hk.774" stop="20260824220000 +0800">
-    <title>Shrimad Ramayan 第1季第253集 -Shrimad Ramayan</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260824220000 +0800" channel="now_hk.774" stop="20260824223000 +0800">
@@ -208151,10 +207767,6 @@
     <title>MTV Chillax Music Block</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260824213000 +0800" channel="now_hk.780" stop="20260824220000 +0800">
-    <title>Juhi Mui 第46集</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260824220000 +0800" channel="now_hk.780" stop="20260824223000 +0800">
     <title>Mahadev &amp; Sons 第170集</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -209339,10 +208951,6 @@
     <title>Tumbbad</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260824213000 +0800" channel="now_hk.782" stop="20260824220000 +0800">
-    <title>Tu Hi Re Dil Mein 第70集</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260824220000 +0800" channel="now_hk.782" stop="20260824223000 +0800">
     <title>Jagadhatri 第285集</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -210209,10 +209817,6 @@
   </programme>
   <programme start="20260830220000 +0800" channel="now_hk.782" stop="20260831010000 +0800">
     <title>Gunjan Saxena: The Kargil Girl</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260824213000 +0800" channel="now_hk.785" stop="20260824220000 +0800">
-    <title>News Bulletin</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260824220000 +0800" channel="now_hk.785" stop="20260824223000 +0800">
@@ -211627,10 +211231,6 @@
     <title>Sultan</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260824213000 +0800" channel="now_hk.794" stop="20260824220000 +0800">
-    <title>Udne Ki Aasha 第893集</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260824220000 +0800" channel="now_hk.794" stop="20260824223000 +0800">
     <title>Sairaab 第84集</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -212785,10 +212385,6 @@
   </programme>
   <programme start="20260830233000 +0800" channel="now_hk.794" stop="20260831000000 +0800">
     <title>Udne Ki Aasha 第900集</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260824213000 +0800" channel="now_hk.797" stop="20260824220000 +0800">
-    <title>Saraswati Chandra</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260824220000 +0800" channel="now_hk.797" stop="20260824223000 +0800">
