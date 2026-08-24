@@ -44,6 +44,9 @@ _ALLENTE_NO_XMLTV_IDS = {
 _EE_XMLTV_IDS = {
     "sky-doc": "ee_uk.352",
 }
+_SBB_XMLTV_IDS = {
+    "1082": "Eurosport.4K",
+}
 
 
 def _xmltv_channel_id(record: Programme) -> str:
@@ -66,6 +69,10 @@ def _xmltv_channel_id(record: Programme) -> str:
             return configured_id
     if record.provider == "ee_uk":
         configured_id = _EE_XMLTV_IDS.get(record.channel_number)
+        if configured_id:
+            return configured_id
+    if record.provider == "sbb_rs":
+        configured_id = _SBB_XMLTV_IDS.get(record.channel_id)
         if configured_id:
             return configured_id
     return record.provider if not record.channel_number else f"{record.provider}.{record.channel_number}"

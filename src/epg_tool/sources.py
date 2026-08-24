@@ -114,7 +114,8 @@ SBB_COMMUNITY_ID = "1"
 SBB_LANGUAGE_ID = "404"
 SBB_EUROSPORT_4K_CHANNEL_ID = "1082"
 SBB_EUROSPORT_4K_CHANNEL_NUMBER = "123"
-SBB_EUROSPORT_4K_NAME = "Eurosport 4K IPTV"
+SBB_EUROSPORT_4K_SOURCE_NAME = "Eurosport 4K IPTV"
+SBB_EUROSPORT_4K_NAME = "Eurosport 4K"
 # Virgin Media TV Go Guide 在普通匿名页面会话中加载以下官方频道目录与 EPG 时间片。
 VIRGIN_UK_GUIDE = "https://virgintvgo.virginmedia.com/en/epg/initial"
 VIRGIN_UK_CHANNELS = (
@@ -809,8 +810,8 @@ def collect_sbb_eurosport_4k(days: int = 7) -> list[Programme]:
     if len(channels) != 1:
         raise SourceUnavailable("SBB Public EPG 频道目录未返回唯一的 Eurosport 4K IPTV 服务。")
     channel = channels[0]
-    if (channel.get("name") or "").strip() != SBB_EUROSPORT_4K_NAME:
-        raise SourceUnavailable("SBB Public EPG 的 Eurosport 4K IPTV 官方频道名发生变化。")
+    if (channel.get("name") or "").strip() != SBB_EUROSPORT_4K_SOURCE_NAME:
+        raise SourceUnavailable("SBB Public EPG 的 Eurosport 4K IPTV 原始频道名发生变化。")
     if str(channel.get("position")) != SBB_EUROSPORT_4K_CHANNEL_NUMBER:
         raise SourceUnavailable("SBB Public EPG 的 Eurosport 4K IPTV 频道号发生变化。")
 

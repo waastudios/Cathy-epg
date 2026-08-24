@@ -38,7 +38,7 @@ Every XMLTV `display-name` is the provider’s official channel name. Stable XML
 | United Kingdom | Sky Sports Ultra HD 1 and 2 | [Virgin Media TV Go Guide](https://virgintvgo.virginmedia.com/en/epg/initial) |
 | Romania | Digi 4K | [Digi 4K](https://www.digi4k.ro/) |
 | Türkiye | Eurosport 1 and Eurosport 2 | [TV+ Eurosport 1](https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77) and [Eurosport 2](https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106) |
-| Serbia | Eurosport 4K IPTV | [SBB / EON Public EPG](https://epg.sbb.rs/) |
+| Serbia | Eurosport 4K | [SBB / EON Public EPG](https://epg.sbb.rs/) |
 
 ### EE Sky Entertainment selection
 
@@ -48,7 +48,7 @@ The EE scope includes **Sky Mix, Sky Arts, Sky Witness, Sky Atlantic, Sky One, S
 
 The United States scope is intentionally restricted to potential future coverage for **ESPN, ESPN2, ESPNEWS, and ESPNU**. ABC, CBS, NBC, FOX, USA Network, and every other US network are excluded. DIRECTV’s public guide confirms the four ESPN services but exposes only current-programme information; Spectrum’s detailed guide requires account and service-address access; and ESPN’s direct schedule does not offer stable per-channel end times. Consequently, **no ESPN records are currently published**. If a compliant guide becomes available, IDs will be provider-prefixed, for example `directv_espn`.
 
-**Eurosport 4K IPTV** is published from SBB’s normal anonymous Public EPG as `sbb_rs.1082`. The source provides a channel directory plus programme titles, start times, and end times. Each source title is converted through strict deterministic Serbian-to-English rules; an unrecognised title fails the SBB source rather than being guessed or published untranslated. The official display name remains `Eurosport 4K IPTV`.
+**Eurosport 4K** is published from SBB’s normal anonymous Public EPG as `Eurosport.4K`. The source provides a channel directory plus programme titles, start times, and end times. Each source title is converted through strict deterministic Serbian-to-English rules; an unrecognised title fails the SBB source rather than being guessed or published untranslated.
 
 ## Refresh and validation
 
