@@ -18,9 +18,13 @@ from .models import Programme, utc_now_iso
 USER_AGENT = "Cathy-epg/0.2 (+https://github.com/waastudios/Cathy-epg; official-source-only research tool)"
 ASTRO_API = "https://contenthub-api.eco.astro.com.my/api/v2/search-linear"
 ASTRO_GUIDE = "https://www.astro.com.my/content/channels"
+# 用户要求仅保留 Astro 官方体育区当前有排期的频道；不按节目标题猜测体育属性。
+ASTRO_SPORT_CHANNEL_NUMBERS = frozenset({"801", "802", "803", "804", "805", "806", "810", "811", "812", "813", "814", "815", "817", "818", "819", "820", "821", "822", "826", "831", "832", "833"})
 NOW_HK_GUIDE = "https://nowplayer.now.com/tvguide?filterType=all"
 NOW_HK_CHANNELS_ZH = "https://nowplayer.now.com/channels?lang=zh&filterType=all"
 NOW_HK_EPG = "https://nowplayer.now.com/tvguide/epglist"
+# NOW TV 官方目录的体育区频道号；保留官方中英文频道名称和稳定频道 ID。
+NOW_HK_SPORT_CHANNEL_NUMBERS = frozenset({"611", "612", "613", "620", "621", "622", "623", "624", "625", "626", "627", "630", "631", "632", "633", "634", "635", "636", "637", "638", "639", "640", "641", "642", "643", "644", "645", "646", "647", "651", "652", "668", "674", "679", "680", "683", "684"})
 ALLENTE_GUIDE = "https://www.allente.se/tv-guide/"
 ALLENTE_EPG = "https://www.allente.se/api/epg/refetch-epg-data"
 ALLENTE_V_SPORT_IDS = frozenset({"20092", "50048", "50049", "50056", "50077", "50078", "50079", "50105", "50125", "50126", "50127", "50128", "50129"})
@@ -62,9 +66,19 @@ EE_UK_CHANNELS: tuple[tuple[str, str, str], ...] = (
     ("28", "ITV Quiz", "dvb://233a..2094"),
     ("231", "BBC News", "dvb://233a..1100"),
     ("232", "BBC Parliament", "dvb://233a..1280"),
+    # Sky 娱乐：优先采用官方 EE 电视（DVB）版；其余仅收录 SD 主 IP 版并排除 HD 镜像。
+    ("11", "Sky Mix", "dvb://233a..56c0"),
+    ("36", "Sky Arts", "dvb://233a..5680"),
+    ("341", "Sky Witness", "http://bds.tv/services/BT_154279_2201_SD"),
     ("342", "Sky Atlantic", "http://bds.tv/services/BT_759409_1412_SD"),
     ("346", "Sky One", "http://bds.tv/services/BT_255_1402_SD"),
+    ("347", "Sky Comedy", "http://bds.tv/services/BT_772057_1177_SD"),
+    ("348", "Sky Sci-Fi", "http://bds.tv/services/BT_318488_2505_SD"),
     ("349", "Sky Crime", "http://bds.tv/services/BT_753644_1212_SD"),
+    # EE Player 官方线性目录与节目接口已验证该服务；公开 EE 频道指南未列出其逻辑频道号。
+    ("sky-documentaries", "Sky Documentaries", "http://bds.tv/services/BT_772169_1127_SD"),
+    ("353", "Sky History", "http://bds.tv/services/BT_772170_1875_SD"),
+    ("354", "Sky Nature", "http://bds.tv/services/BT_772168_1194_SD"),
 )
 DIGI4K_GUIDE = "https://www.digi4k.ro/"
 TVPLUS_EUROSPORT_1_GUIDE = "https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77"
@@ -121,6 +135,9 @@ def collect_astro(days: int = 7, page_size: int = 40, pause_seconds: float = 0.2
             data = channels.get("data", [])
             pagination = channels.get("pagination", {})
             for channel in data:
+                channel_number = str(channel.get("stbNumber", ""))
+                if channel_number not in ASTRO_SPORT_CHANNEL_NUMBERS:
+                    continue
                 for item in channel.get("schedule", []):
                     start = item.get("eventStartMyt")
                     end = item.get("eventEndMyt")
@@ -177,6 +194,9 @@ def collect_now_hk(days: int = 7, chunk_size: int = 25, pause_seconds: float = 0
     session = _session()
     zone = ZoneInfo("Asia/Hong_Kong")
     channel_names = _now_hk_channels_zh(session)
+    channel_names = {number: name for number, name in channel_names.items() if number in NOW_HK_SPORT_CHANNEL_NUMBERS}
+    if not channel_names:
+        raise SourceUnavailable("NOW TV 香港官方频道目录未返回预期的体育频道。")
     channels = sorted(channel_names, key=int)
     retrieved_at = utc_now_iso()
     records: list[Programme] = []
