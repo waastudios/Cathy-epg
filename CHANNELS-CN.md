@@ -2,7 +2,7 @@
 
 本清单由当前已发布的 `data/current_week.jsonl` 自动生成，并与 `data/epg.xml.gz` 校验一致。它仅列出 XMLTV 中实际已发布的频道；每个显示名称均为 XMLTV 实际发布的 `display-name`。
 
-当前快照生成时间为 `2026-08-24T18:32:30Z`，包含 **119 个频道** 与 **15319 条节目记录**。其 gzip 文件解压后与 `data/epg.xml` 完全一致。
+当前快照生成时间为 `2026-08-24T19:13:20Z`，包含 **120 个频道** 与 **15368 条节目记录**。其 gzip 文件解压后与 `data/epg.xml` 完全一致。
 
 ## Astro：仅发布体育频道
 
@@ -33,9 +33,9 @@
 | `astro.832` | CricBuzz |
 | `astro.833` | Premier Sports |
 
-## now TV 香港：仅发布体育频道
+## NOW TV 香港：仅发布体育频道
 
-所有非体育 now TV 频道均已排除，包括 `now_hk.138`（Now爆谷星影台）。以下为当前保留的 37 条官方服务。
+所有非体育 NOW TV 频道均已排除，包括 `now_hk.138`（Now爆谷星影台）。以下为当前保留的 37 条官方服务。
 
 | XMLTV ID | 官方显示名称 |
 | --- | --- |
@@ -77,35 +77,6 @@
 | `now_hk.683` | Now Golf 2 |
 | `now_hk.684` | Now Golf 3 |
 
-## Allente：用户确认的频道显示名与 XMLTV ID
-
-### 瑞典 V Sport
-
-| XMLTV ID | 官方显示名称 |
-| --- | --- |
-| `allente_se.v1` | V Sport 1 |
-| `allente_se.vextra` | V Sport Extra |
-| `allente_se.vfoot` | V Sport Football |
-| `allente_se.vgolf` | V Sport Golf |
-| `allente_se.vl1` | V Sport Live 1 |
-| `allente_se.vl2` | V Sport Live 2 |
-| `allente_se.vl3` | V Sport Live 3 |
-| `allente_se.vl4` | V Sport Live 4 |
-| `allente_se.vl5` | V Sport Live 5 |
-| `allente_se.vmotor` | V Sport Motor |
-| `allente_se.vpre` | V Sport Premium |
-| `allente_se.vultra` | V Sport UltraHD |
-| `allente_se.vvin` | V Sport Vinter |
-
-### 挪威
-
-| XMLTV ID | 官方显示名称 |
-| --- | --- |
-| `allente_no.euron` | Eurosport Norge |
-| `allente_no.fem` | FEM |
-| `allente_no.rex` | REX |
-| `allente_no.tvn` | TV Norge |
-
 ## EE TV Player：指定 Sky 娱乐频道
 
 下表列出当前 XMLTV 实际发布的 EE Sky 娱乐频道。
@@ -124,23 +95,29 @@
 | `ee_uk.353` | Sky History |
 | `ee_uk.354` | Sky Nature |
 
+## SBB Public EPG：Eurosport 4K
+
+| XMLTV ID | 官方显示名称 |
+| --- | --- |
+| `sbb_rs.1082` | Eurosport 4K IPTV |
+
 ## 未发布服务
 
 | 用户请求的服务 | 发布结论 | 原因 |
 | --- | --- | --- |
 | ESPN / ESPN2 / ESPNEWS / ESPNU | 未添加 | 目前没有合规的匿名授权服务商来源提供可复用的逐节目开始与结束时间。如日后加入，ID 将带服务商前缀，例如 `directv_espn`。 |
-| Eurosport 4K | 未添加 | 当前没有官网或授权服务商节目表被核实可提供完整、可复用的频道级节目时间；不会用 TNT Sports Ultimate 替代。 |
 
 ## 当前来源总计
 
 | 来源 | 频道数 | 节目记录数 |
 | --- | ---: | ---: |
-| `allente_no` | 4 | 702 |
+| `allente_no` | 4 | 704 |
 | `allente_se` | 13 | 896 |
-| `astro` | 22 | 2500 |
+| `astro` | 22 | 2499 |
 | `digi4k_ro` | 1 | 115 |
-| `ee_uk` | 38 | 6438 |
-| `now_hk` | 37 | 4549 |
+| `ee_uk` | 38 | 6442 |
+| `now_hk` | 37 | 4526 |
+| `sbb_rs` | 1 | 67 |
 | `tvplus_tr` | 2 | 34 |
 | `virgin_uk` | 2 | 85 |
 

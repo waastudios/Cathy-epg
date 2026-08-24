@@ -2,7 +2,7 @@
 
 This inventory is generated from the currently published `data/current_week.jsonl` and verified against `data/epg.xml.gz`. It lists channels that are actually published in the XMLTV output; each displayed name is the actual XMLTV `display-name`.
 
-The snapshot generated at `2026-08-24T18:26:24Z` contains **120 channels** and **15461 programmes**. Its gzip file expands byte-for-byte to `data/epg.xml`.
+The snapshot generated at `2026-08-24T19:13:20Z` contains **120 channels** and **15368 programmes**. Its gzip file expands byte-for-byte to `data/epg.xml`.
 
 ## Astro — sports-only published channels
 
@@ -95,23 +95,29 @@ This table lists the EE Sky Entertainment services actually published in the cur
 | `ee_uk.353` | Sky History |
 | `ee_uk.354` | Sky Nature |
 
+## SBB Public EPG — Eurosport 4K
+
+| XMLTV ID | Official display name |
+| --- | --- |
+| `sbb_rs.1082` | Eurosport 4K IPTV |
+
 ## Not published
 
 | Requested service | Publication decision | Reason |
 | --- | --- | --- |
 | ESPN / ESPN2 / ESPNEWS / ESPNU | Not added | No compliant anonymous authorised-provider source currently provides reusable per-event start and stop timing. If added later, IDs will carry the provider prefix (for example, `directv_espn`). |
-| Eurosport 4K | Not added | No current official or authorised-provider guide has been verified to expose complete reusable channel-level programme timing. TNT Sports Ultimate is not a substitute. |
 
 ## Current provider totals
 
 | Provider | Channels | Programme records |
 | --- | ---: | ---: |
-| `allente_no` | 4 | 702 |
+| `allente_no` | 4 | 704 |
 | `allente_se` | 13 | 896 |
-| `astro` | 22 | 2500 |
+| `astro` | 22 | 2499 |
 | `digi4k_ro` | 1 | 115 |
-| `ee_uk` | 39 | 6580 |
-| `now_hk` | 37 | 4549 |
+| `ee_uk` | 38 | 6442 |
+| `now_hk` | 37 | 4526 |
+| `sbb_rs` | 1 | 67 |
 | `tvplus_tr` | 2 | 34 |
 | `virgin_uk` | 2 | 85 |
 
