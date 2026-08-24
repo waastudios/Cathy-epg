@@ -4,5 +4,4 @@ __pycache__/
 .venv/
 .env
 .env.*
-starhub_official_export*.json
 research/

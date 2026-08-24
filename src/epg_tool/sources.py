@@ -3,8 +3,6 @@
 from __future__ import annotations
 
 from datetime import datetime, timedelta
-from pathlib import Path
-import json
 import re
 import time
 from typing import Any
@@ -20,7 +18,6 @@ ASTRO_API = "https://contenthub-api.eco.astro.com.my/api/v2/search-linear"
 ASTRO_GUIDE = "https://www.astro.com.my/content/channels"
 NOW_GUIDE = "https://nowplayer.now.com/tvguide?filterType=all"
 NOW_EPG = "https://nowplayer.now.com/tvguide/epglist"
-STARHUB_GUIDE = "https://www.starhubtvplus.com/guide"
 
 
 class SourceUnavailable(RuntimeError):
@@ -157,40 +154,6 @@ def collect_now_hk(days: int = 7, chunk_size: int = 25, pause_seconds: float = 0
                         )
                     )
             time.sleep(pause_seconds)
-    return _deduplicate(records)
-
-
-def import_starhub_authorized_export(export_path: Path) -> list[Programme]:
-    """导入由用户自行从已授权 StarHub TV+ 会话导出的官方 JSON。
-
-    该函数刻意不处理登录、Cookie、绕过地域或订阅限制。导出文件须为对象列表，
-    每项至少有 channel_number、channel_name、title、start_at、end_at 字段。
-    """
-    with export_path.open(encoding="utf-8") as handle:
-        payload = json.load(handle)
-    if not isinstance(payload, list):
-        raise ValueError("StarHub 授权导出必须是 JSON 对象列表。")
-    retrieved_at = utc_now_iso()
-    records: list[Programme] = []
-    for item in payload:
-        required = ["channel_number", "channel_name", "title", "start_at", "end_at"]
-        if not isinstance(item, dict) or any(not item.get(field) for field in required):
-            continue
-        records.append(
-            Programme(
-                provider="starhub",
-                country="SG",
-                timezone="Asia/Singapore",
-                channel_id=str(item.get("channel_id", item["channel_number"])),
-                channel_number=str(item["channel_number"]),
-                channel_name=str(item["channel_name"]),
-                title=str(item["title"]),
-                start_at=str(item["start_at"]),
-                end_at=str(item["end_at"]),
-                source_url=STARHUB_GUIDE,
-                retrieved_at=retrieved_at,
-            )
-        )
     return _deduplicate(records)
 
 
