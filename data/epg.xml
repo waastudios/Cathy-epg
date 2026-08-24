@@ -4,6 +4,10 @@
     <display-name>Eurosport 4K</display-name>
     <url>https://epg.sbb.rs/</url>
   </channel>
+  <channel id="allente_no.euro1">
+    <display-name>Eurosport 1</display-name>
+    <url>https://www.allente.no/tv-guide/</url>
+  </channel>
   <channel id="allente_no.euron">
     <display-name>Eurosport Norge</display-name>
     <url>https://www.allente.no/tv-guide/</url>
@@ -480,12 +484,16 @@
     <display-name>Sky Sports Ultra HD 2</display-name>
     <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
   </channel>
+  <programme start="20260824002000 +0200" channel="allente_no.tvn" stop="20260824030500 +0200">
+    <title>Jack Reacher</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
   <programme start="20260824002446 +0200" channel="allente_no.tvn" stop="20260824030749 +0200">
     <title>Jack Reacher</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260824030849 +0200" channel="allente_no.tvn" stop="20260824040548 +0200">
-    <title>Kongen befaler UK: The Barrel Dad</title>
+    <title>Taskmaster UK: The Barrel Dad</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260824040650 +0200" channel="allente_no.tvn" stop="20260824050246 +0200">
@@ -493,7 +501,7 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260824050347 +0200" channel="allente_no.tvn" stop="20260824055815 +0200">
-    <title>Mysterier på museet: Cat's Best Friend, Sunken Treasure and Raining Frogs</title>
+    <title>Mysteries at the Museum: Cat's Best Friend, Sunken Treasure and Raining Frogs</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260824061018 +0200" channel="allente_no.tvn" stop="20260824063800 +0200">
@@ -501,19 +509,19 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260824063800 +0200" channel="allente_no.tvn" stop="20260824070441 +0200">
-    <title>Danskebåten</title>
+    <title>The Danish Ferry</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260824070441 +0200" channel="allente_no.tvn" stop="20260824073252 +0200">
-    <title>Danskebåten</title>
+    <title>The Danish Ferry</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260824073252 +0200" channel="allente_no.tvn" stop="20260824083220 +0200">
-    <title>Alle mot alle</title>
+    <title>Everyone Against Everyone</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260824083220 +0200" channel="allente_no.tvn" stop="20260824093322 +0200">
-    <title>Alle mot alle</title>
+    <title>Everyone Against Everyone</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260824093000 +0200" channel="allente_no.tvn" stop="20260824104000 +0200">
@@ -521,23 +529,23 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260824104000 +0200" channel="allente_no.tvn" stop="20260824112500 +0200">
-    <title>Grensevakten Sverige: Hunden Sadie markerer en veske</title>
+    <title>Border Patrol Sweden: Hunden Sadie markerer en veske</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260824112500 +0200" channel="allente_no.tvn" stop="20260824125000 +0200">
-    <title>16 ukers helvete</title>
+    <title>16 Weeks of Hell</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260824125000 +0200" channel="allente_no.tvn" stop="20260824135000 +0200">
-    <title>Alle mot alle</title>
+    <title>Everyone Against Everyone</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260824135000 +0200" channel="allente_no.tvn" stop="20260824141500 +0200">
-    <title>Neste sommer - tegnspråktolket</title>
+    <title>Next Summer — sign-language interpreted</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260824141500 +0200" channel="allente_no.tvn" stop="20260824144500 +0200">
-    <title>Neste sommer - tegnspråktolket</title>
+    <title>Next Summer — sign-language interpreted</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260824144500 +0200" channel="allente_no.tvn" stop="20260824155000 +0200">
@@ -545,7 +553,7 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260824155000 +0200" channel="allente_no.tvn" stop="20260824165000 +0200">
-    <title>Kongen befaler</title>
+    <title>Taskmaster Norway</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260824165000 +0200" channel="allente_no.tvn" stop="20260824171500 +0200">
@@ -569,23 +577,23 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260824193000 +0200" channel="allente_no.tvn" stop="20260824203000 +0200">
-    <title>Alle mot alle</title>
+    <title>Everyone Against Everyone</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260824203000 +0200" channel="allente_no.tvn" stop="20260824205500 +0200">
-    <title>Neste sommer - tegnspråktolket</title>
+    <title>Next Summer — sign-language interpreted</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260824205500 +0200" channel="allente_no.tvn" stop="20260824213000 +0200">
-    <title>Neste sommer - tegnspråktolket</title>
+    <title>Next Summer — sign-language interpreted</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260824213000 +0200" channel="allente_no.tvn" stop="20260824222500 +0200">
-    <title>Grensevakten Sverige: Masse sprit</title>
+    <title>Border Patrol Sweden: Masse sprit</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260824222500 +0200" channel="allente_no.tvn" stop="20260824232500 +0200">
-    <title>Kongen befaler</title>
+    <title>Taskmaster Norway</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260824232500 +0200" channel="allente_no.tvn" stop="20260825002500 +0200">
@@ -605,11 +613,11 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825042500 +0200" channel="allente_no.tvn" stop="20260825052000 +0200">
-    <title>Mysterier på museet: Sandwich in Space, Watergate Crash and Blenda's Banquet</title>
+    <title>Mysteries at the Museum: Sandwich in Space, Watergate Crash and Blenda's Banquet</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825052000 +0200" channel="allente_no.tvn" stop="20260825060000 +0200">
-    <title>Lottomillionærenes husjakt: Bustle to the 'Burbs</title>
+    <title>My Lottery Dream Home: Bustle to the 'Burbs</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825060000 +0200" channel="allente_no.tvn" stop="20260825062500 +0200">
@@ -621,19 +629,19 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825065000 +0200" channel="allente_no.tvn" stop="20260825072000 +0200">
-    <title>Danskebåten</title>
+    <title>The Danish Ferry</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825072000 +0200" channel="allente_no.tvn" stop="20260825075000 +0200">
-    <title>Danskebåten</title>
+    <title>The Danish Ferry</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825075000 +0200" channel="allente_no.tvn" stop="20260825084500 +0200">
-    <title>Alle mot alle</title>
+    <title>Everyone Against Everyone</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825084500 +0200" channel="allente_no.tvn" stop="20260825093500 +0200">
-    <title>Alle mot alle</title>
+    <title>Everyone Against Everyone</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825093500 +0200" channel="allente_no.tvn" stop="20260825103500 +0200">
@@ -641,23 +649,23 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825103500 +0200" channel="allente_no.tvn" stop="20260825113000 +0200">
-    <title>Grensevakten Sverige: Fryktelig overraskelse</title>
+    <title>Border Patrol Sweden: Fryktelig overraskelse</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825113000 +0200" channel="allente_no.tvn" stop="20260825125000 +0200">
-    <title>16 ukers helvete</title>
+    <title>16 Weeks of Hell</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825125000 +0200" channel="allente_no.tvn" stop="20260825135000 +0200">
-    <title>Alle mot alle</title>
+    <title>Everyone Against Everyone</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825135000 +0200" channel="allente_no.tvn" stop="20260825142000 +0200">
-    <title>Neste sommer - tegnspråktolket</title>
+    <title>Next Summer — sign-language interpreted</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825142000 +0200" channel="allente_no.tvn" stop="20260825144500 +0200">
-    <title>Neste sommer - tegnspråktolket</title>
+    <title>Next Summer — sign-language interpreted</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825144500 +0200" channel="allente_no.tvn" stop="20260825155000 +0200">
@@ -665,7 +673,7 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825155000 +0200" channel="allente_no.tvn" stop="20260825165000 +0200">
-    <title>Kongen befaler</title>
+    <title>Taskmaster Norway</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825165000 +0200" channel="allente_no.tvn" stop="20260825171000 +0200">
@@ -689,15 +697,15 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825193000 +0200" channel="allente_no.tvn" stop="20260825203000 +0200">
-    <title>Alle mot alle</title>
+    <title>Everyone Against Everyone</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825203000 +0200" channel="allente_no.tvn" stop="20260825210000 +0200">
-    <title>Neste sommer - tegnspråktolket</title>
+    <title>Next Summer — sign-language interpreted</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825210000 +0200" channel="allente_no.tvn" stop="20260825213000 +0200">
-    <title>Neste sommer - tegnspråktolket</title>
+    <title>Next Summer — sign-language interpreted</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825213000 +0200" channel="allente_no.tvn" stop="20260825223000 +0200">
@@ -705,7 +713,7 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825223000 +0200" channel="allente_no.tvn" stop="20260825233000 +0200">
-    <title>Kongen befaler</title>
+    <title>Taskmaster Norway</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825233000 +0200" channel="allente_no.tvn" stop="20260826003000 +0200">
@@ -725,11 +733,11 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826043000 +0200" channel="allente_no.tvn" stop="20260826052500 +0200">
-    <title>Mysterier på museet: Titanic Hustle, Sherlock to the Rescue and America's Greatest Athlete</title>
+    <title>Mysteries at the Museum: Titanic Hustle, Sherlock to the Rescue and America's Greatest Athlete</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826052500 +0200" channel="allente_no.tvn" stop="20260826060500 +0200">
-    <title>Lottomillionærenes husjakt: I'm Italian, I Cook Sauce!</title>
+    <title>My Lottery Dream Home: I'm Italian, I Cook Sauce!</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826060500 +0200" channel="allente_no.tvn" stop="20260826063000 +0200">
@@ -741,19 +749,19 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826070000 +0200" channel="allente_no.tvn" stop="20260826072500 +0200">
-    <title>Danskebåten</title>
+    <title>The Danish Ferry</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826072500 +0200" channel="allente_no.tvn" stop="20260826080000 +0200">
-    <title>Danskebåten</title>
+    <title>The Danish Ferry</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826080000 +0200" channel="allente_no.tvn" stop="20260826085500 +0200">
-    <title>Alle mot alle</title>
+    <title>Everyone Against Everyone</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826085500 +0200" channel="allente_no.tvn" stop="20260826095500 +0200">
-    <title>Alle mot alle</title>
+    <title>Everyone Against Everyone</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826095500 +0200" channel="allente_no.tvn" stop="20260826105500 +0200">
@@ -761,23 +769,23 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826105500 +0200" channel="allente_no.tvn" stop="20260826115000 +0200">
-    <title>Grensevakten Sverige: Timor mistenker løgner</title>
+    <title>Border Patrol Sweden: Timor Suspects Lies</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826115000 +0200" channel="allente_no.tvn" stop="20260826125000 +0200">
-    <title>16 ukers helvete</title>
+    <title>16 Weeks of Hell</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826125000 +0200" channel="allente_no.tvn" stop="20260826134500 +0200">
-    <title>Alle mot alle</title>
+    <title>Everyone Against Everyone</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826134500 +0200" channel="allente_no.tvn" stop="20260826142000 +0200">
-    <title>Neste sommer - tegnspråktolket</title>
+    <title>Next Summer — sign-language interpreted</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826142000 +0200" channel="allente_no.tvn" stop="20260826145000 +0200">
-    <title>Neste sommer - tegnspråktolket</title>
+    <title>Next Summer — sign-language interpreted</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826145000 +0200" channel="allente_no.tvn" stop="20260826155000 +0200">
@@ -785,7 +793,7 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826155000 +0200" channel="allente_no.tvn" stop="20260826165000 +0200">
-    <title>Kongen befaler</title>
+    <title>Taskmaster Norway</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826165000 +0200" channel="allente_no.tvn" stop="20260826171500 +0200">
@@ -809,23 +817,23 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826193000 +0200" channel="allente_no.tvn" stop="20260826203000 +0200">
-    <title>Alle mot alle</title>
+    <title>Everyone Against Everyone</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826203000 +0200" channel="allente_no.tvn" stop="20260826205500 +0200">
-    <title>Neste sommer - tegnspråktolket</title>
+    <title>Next Summer — sign-language interpreted</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826205500 +0200" channel="allente_no.tvn" stop="20260826213000 +0200">
-    <title>Neste sommer - tegnspråktolket</title>
+    <title>Next Summer — sign-language interpreted</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826213000 +0200" channel="allente_no.tvn" stop="20260826222500 +0200">
-    <title>Svenske hyttedrømmer: Skyttebanen i Brissund</title>
+    <title>Swedish Cottage Dreams: The Shooting Range in Brissund</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826222500 +0200" channel="allente_no.tvn" stop="20260826232500 +0200">
-    <title>Kongen befaler</title>
+    <title>Taskmaster Norway</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826232500 +0200" channel="allente_no.tvn" stop="20260827003000 +0200">
@@ -845,11 +853,11 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827042500 +0200" channel="allente_no.tvn" stop="20260827052500 +0200">
-    <title>Mysterier på museet: Terror on the Tracks, the Ape and the Child and Body in the Bog</title>
+    <title>Mysteries at the Museum: Terror on the Tracks, the Ape and the Child and Body in the Bog</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827052500 +0200" channel="allente_no.tvn" stop="20260827060500 +0200">
-    <title>Lottomillionærenes husjakt: Nova Scotia Homecoming Queen</title>
+    <title>My Lottery Dream Home: Nova Scotia Homecoming Queen</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827060500 +0200" channel="allente_no.tvn" stop="20260827063000 +0200">
@@ -861,19 +869,19 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827070000 +0200" channel="allente_no.tvn" stop="20260827072500 +0200">
-    <title>Danskebåten</title>
+    <title>The Danish Ferry</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827072500 +0200" channel="allente_no.tvn" stop="20260827075500 +0200">
-    <title>Danskebåten</title>
+    <title>The Danish Ferry</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827075500 +0200" channel="allente_no.tvn" stop="20260827085500 +0200">
-    <title>Alle mot alle</title>
+    <title>Everyone Against Everyone</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827085500 +0200" channel="allente_no.tvn" stop="20260827095500 +0200">
-    <title>Alle mot alle</title>
+    <title>Everyone Against Everyone</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827095500 +0200" channel="allente_no.tvn" stop="20260827105500 +0200">
@@ -881,23 +889,23 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827105500 +0200" channel="allente_no.tvn" stop="20260827115000 +0200">
-    <title>Grensevakten Sverige: Leter etter skjult rom</title>
+    <title>Border Patrol Sweden: Leter etter skjult rom</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827115000 +0200" channel="allente_no.tvn" stop="20260827125000 +0200">
-    <title>16 ukers helvete</title>
+    <title>16 Weeks of Hell</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827125000 +0200" channel="allente_no.tvn" stop="20260827134500 +0200">
-    <title>Alle mot alle</title>
+    <title>Everyone Against Everyone</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827134500 +0200" channel="allente_no.tvn" stop="20260827141500 +0200">
-    <title>Neste sommer - tegnspråktolket</title>
+    <title>Next Summer — sign-language interpreted</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827141500 +0200" channel="allente_no.tvn" stop="20260827144500 +0200">
-    <title>Neste sommer - tegnspråktolket</title>
+    <title>Next Summer — sign-language interpreted</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827144500 +0200" channel="allente_no.tvn" stop="20260827155000 +0200">
@@ -905,11 +913,11 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827155000 +0200" channel="allente_no.tvn" stop="20260827165000 +0200">
-    <title>Kongen befaler</title>
+    <title>Taskmaster Norway</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827165000 +0200" channel="allente_no.tvn" stop="20260827171000 +0200">
-    <title>Two and a Half Men: Ildere, angrip!</title>
+    <title>Two and a Half Men: Ferrets, Attack!</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827171000 +0200" channel="allente_no.tvn" stop="20260827174000 +0200">
@@ -929,15 +937,15 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827193000 +0200" channel="allente_no.tvn" stop="20260827203000 +0200">
-    <title>Alle mot alle</title>
+    <title>Everyone Against Everyone</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827203000 +0200" channel="allente_no.tvn" stop="20260827205500 +0200">
-    <title>Neste sommer - tegnspråktolket</title>
+    <title>Next Summer — sign-language interpreted</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827205500 +0200" channel="allente_no.tvn" stop="20260827213000 +0200">
-    <title>Neste sommer - tegnspråktolket</title>
+    <title>Next Summer — sign-language interpreted</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827213000 +0200" channel="allente_no.tvn" stop="20260828002500 +0200">
@@ -945,7 +953,7 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260828002500 +0200" channel="allente_no.tvn" stop="20260828012500 +0200">
-    <title>Kongen befaler</title>
+    <title>Taskmaster Norway</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260828012500 +0200" channel="allente_no.tvn" stop="20260828033000 +0200">
@@ -961,7 +969,7 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260828052000 +0200" channel="allente_no.tvn" stop="20260828060500 +0200">
-    <title>Lottomillionærenes husjakt: Second Home Sanctuary</title>
+    <title>My Lottery Dream Home: Second Home Sanctuary</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260828060500 +0200" channel="allente_no.tvn" stop="20260828063500 +0200">
@@ -973,19 +981,19 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260828070000 +0200" channel="allente_no.tvn" stop="20260828073000 +0200">
-    <title>Danskebåten</title>
+    <title>The Danish Ferry</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260828073000 +0200" channel="allente_no.tvn" stop="20260828080000 +0200">
-    <title>Danskebåten</title>
+    <title>The Danish Ferry</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260828080000 +0200" channel="allente_no.tvn" stop="20260828090000 +0200">
-    <title>Alle mot alle</title>
+    <title>Everyone Against Everyone</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260828090000 +0200" channel="allente_no.tvn" stop="20260828095500 +0200">
-    <title>Alle mot alle</title>
+    <title>Everyone Against Everyone</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260828095500 +0200" channel="allente_no.tvn" stop="20260828105500 +0200">
@@ -993,23 +1001,23 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260828105500 +0200" channel="allente_no.tvn" stop="20260828115000 +0200">
-    <title>Grensevakten Sverige: Spor av kokain</title>
+    <title>Border Patrol Sweden: Spor av kokain</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260828115000 +0200" channel="allente_no.tvn" stop="20260828125000 +0200">
-    <title>16 ukers helvete</title>
+    <title>16 Weeks of Hell</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260828125000 +0200" channel="allente_no.tvn" stop="20260828135000 +0200">
-    <title>Alle mot alle</title>
+    <title>Everyone Against Everyone</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260828135000 +0200" channel="allente_no.tvn" stop="20260828141500 +0200">
-    <title>Neste sommer - tegnspråktolket</title>
+    <title>Next Summer — sign-language interpreted</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260828141500 +0200" channel="allente_no.tvn" stop="20260828144500 +0200">
-    <title>Neste sommer - tegnspråktolket</title>
+    <title>Next Summer — sign-language interpreted</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260828144500 +0200" channel="allente_no.tvn" stop="20260828155000 +0200">
@@ -1017,7 +1025,7 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260828155000 +0200" channel="allente_no.tvn" stop="20260828164000 +0200">
-    <title>Kongen befaler</title>
+    <title>Taskmaster Norway</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260828164000 +0200" channel="allente_no.tvn" stop="20260828171000 +0200">
@@ -1041,15 +1049,15 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260828193000 +0200" channel="allente_no.tvn" stop="20260828203000 +0200">
-    <title>Svenske hyttedrømmer: Skyttebanen i Brissund</title>
+    <title>Swedish Cottage Dreams: The Shooting Range in Brissund</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260828203000 +0200" channel="allente_no.tvn" stop="20260828205500 +0200">
-    <title>Neste sommer - tegnspråktolket</title>
+    <title>Next Summer — sign-language interpreted</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260828205500 +0200" channel="allente_no.tvn" stop="20260828213000 +0200">
-    <title>Neste sommer - tegnspråktolket</title>
+    <title>Next Summer — sign-language interpreted</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260828213000 +0200" channel="allente_no.tvn" stop="20260829000500 +0200">
@@ -1061,7 +1069,7 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260829031000 +0200" channel="allente_no.tvn" stop="20260829040500 +0200">
-    <title>Special Victims Unit: Militær Rettferdighet</title>
+    <title>Special Victims Unit: Military Justice</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260829040500 +0200" channel="allente_no.tvn" stop="20260829050000 +0200">
@@ -1069,31 +1077,31 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260829050000 +0200" channel="allente_no.tvn" stop="20260829060000 +0200">
-    <title>Mysterier på museet: Roosevelt's War on Words, Dragon Slayer and Cheese Puffs</title>
+    <title>Mysteries at the Museum: Roosevelt's War on Words, Dragon Slayer and Cheese Puffs</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260829060000 +0200" channel="allente_no.tvn" stop="20260829062500 +0200">
-    <title>Lottomillionærenes husjakt: City Mouse vs. Country Mouse</title>
+    <title>My Lottery Dream Home: City Mouse vs. Country Mouse</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260829062500 +0200" channel="allente_no.tvn" stop="20260829065500 +0200">
-    <title>Lottomillionærenes husjakt: Million Dollar Start</title>
+    <title>My Lottery Dream Home: Million Dollar Start</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260829065500 +0200" channel="allente_no.tvn" stop="20260829072000 +0200">
-    <title>Lottomillionærenes husjakt: PS, I Love You</title>
+    <title>My Lottery Dream Home: PS, I Love You</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260829072000 +0200" channel="allente_no.tvn" stop="20260829075500 +0200">
-    <title>Lottomillionærenes husjakt: St. Paul Homecoming</title>
+    <title>My Lottery Dream Home: St. Paul Homecoming</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260829075500 +0200" channel="allente_no.tvn" stop="20260829082000 +0200">
-    <title>Neste sommer - tegnspråktolket</title>
+    <title>Next Summer — sign-language interpreted</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260829082000 +0200" channel="allente_no.tvn" stop="20260829085500 +0200">
-    <title>Danskebåten</title>
+    <title>The Danish Ferry</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260829085500 +0200" channel="allente_no.tvn" stop="20260829095000 +0200">
@@ -1101,11 +1109,11 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260829095000 +0200" channel="allente_no.tvn" stop="20260829105000 +0200">
-    <title>Alle mot alle</title>
+    <title>Everyone Against Everyone</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260829105000 +0200" channel="allente_no.tvn" stop="20260829115000 +0200">
-    <title>Alle mot alle</title>
+    <title>Everyone Against Everyone</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260829115000 +0200" channel="allente_no.tvn" stop="20260829125000 +0200">
@@ -1117,39 +1125,39 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260829135000 +0200" channel="allente_no.tvn" stop="20260829144500 +0200">
-    <title>Solveig og Johns dolce villa</title>
+    <title>Solveig and John's Dolce Villa</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260829144500 +0200" channel="allente_no.tvn" stop="20260829164500 +0200">
-    <title>Norske Talenter</title>
+    <title>Norway's Got Talent</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260829164500 +0200" channel="allente_no.tvn" stop="20260829180500 +0200">
-    <title>Først til verdens ende</title>
+    <title>First to the End of the World</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260829180500 +0200" channel="allente_no.tvn" stop="20260829183000 +0200">
-    <title>Neste sommer - tegnspråktolket</title>
+    <title>Next Summer — sign-language interpreted</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260829183000 +0200" channel="allente_no.tvn" stop="20260829185500 +0200">
-    <title>Neste sommer - tegnspråktolket</title>
+    <title>Next Summer — sign-language interpreted</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260829185500 +0200" channel="allente_no.tvn" stop="20260829192500 +0200">
-    <title>Neste sommer - tegnspråktolket</title>
+    <title>Next Summer — sign-language interpreted</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260829192500 +0200" channel="allente_no.tvn" stop="20260829195500 +0200">
-    <title>Neste sommer - tegnspråktolket</title>
+    <title>Next Summer — sign-language interpreted</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260829195500 +0200" channel="allente_no.tvn" stop="20260829203000 +0200">
-    <title>Neste sommer - tegnspråktolket</title>
+    <title>Next Summer — sign-language interpreted</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260829203000 +0200" channel="allente_no.tvn" stop="20260829213000 +0200">
-    <title>Solveig og Johns dolce villa</title>
+    <title>Solveig and John's Dolce Villa</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260829213000 +0200" channel="allente_no.tvn" stop="20260829233000 +0200">
@@ -1157,11 +1165,11 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260829233000 +0200" channel="allente_no.tvn" stop="20260830013000 +0200">
-    <title>Nå eller aldri</title>
+    <title>Now or Never</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260830013000 +0200" channel="allente_no.tvn" stop="20260830023500 +0200">
-    <title>Kongen befaler UK: This is Trevor</title>
+    <title>Taskmaster UK: This is Trevor</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260830023500 +0200" channel="allente_no.tvn" stop="20260830033000 +0200">
@@ -1173,35 +1181,35 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260830043000 +0200" channel="allente_no.tvn" stop="20260830052500 +0200">
-    <title>Mysterier på museet: Titanic Baker, Psychic Scammer and Cuban Swimmer Crisis</title>
+    <title>Mysteries at the Museum: Titanic Baker, Psychic Scammer and Cuban Swimmer Crisis</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260830052500 +0200" channel="allente_no.tvn" stop="20260830060000 +0200">
-    <title>Lottomillionærenes husjakt: Gold Lady of Lake Mendota</title>
+    <title>My Lottery Dream Home: Gold Lady of Lake Mendota</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260830060000 +0200" channel="allente_no.tvn" stop="20260830063000 +0200">
-    <title>Lottomillionærenes husjakt: Tappahannock Is for Lovers</title>
+    <title>My Lottery Dream Home: Tappahannock Is for Lovers</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260830063000 +0200" channel="allente_no.tvn" stop="20260830065500 +0200">
-    <title>Lottomillionærenes husjakt: Family Bonds</title>
+    <title>My Lottery Dream Home: Family Bonds</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260830065500 +0200" channel="allente_no.tvn" stop="20260830072500 +0200">
-    <title>Lottomillionærenes husjakt: Below Dock</title>
+    <title>My Lottery Dream Home: Below Dock</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260830072500 +0200" channel="allente_no.tvn" stop="20260830075500 +0200">
-    <title>Lottomillionærenes husjakt: Rolling In It on the Texas Plains</title>
+    <title>My Lottery Dream Home: Rolling In It on the Texas Plains</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260830075500 +0200" channel="allente_no.tvn" stop="20260830082000 +0200">
-    <title>Neste sommer - tegnspråktolket</title>
+    <title>Next Summer — sign-language interpreted</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260830082000 +0200" channel="allente_no.tvn" stop="20260830085000 +0200">
-    <title>Danskebåten</title>
+    <title>The Danish Ferry</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260830085000 +0200" channel="allente_no.tvn" stop="20260830095000 +0200">
@@ -1209,11 +1217,11 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260830095000 +0200" channel="allente_no.tvn" stop="20260830105000 +0200">
-    <title>Alle mot alle</title>
+    <title>Everyone Against Everyone</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260830105000 +0200" channel="allente_no.tvn" stop="20260830115000 +0200">
-    <title>Alle mot alle</title>
+    <title>Everyone Against Everyone</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260830115000 +0200" channel="allente_no.tvn" stop="20260830124500 +0200">
@@ -1229,31 +1237,31 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260830144500 +0200" channel="allente_no.tvn" stop="20260830164500 +0200">
-    <title>Norske Talenter</title>
+    <title>Norway's Got Talent</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260830164500 +0200" channel="allente_no.tvn" stop="20260830180000 +0200">
-    <title>Først til verdens ende</title>
+    <title>First to the End of the World</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260830180000 +0200" channel="allente_no.tvn" stop="20260830183000 +0200">
-    <title>Neste sommer - tegnspråktolket</title>
+    <title>Next Summer — sign-language interpreted</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260830183000 +0200" channel="allente_no.tvn" stop="20260830185500 +0200">
-    <title>Neste sommer - tegnspråktolket</title>
+    <title>Next Summer — sign-language interpreted</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260830185500 +0200" channel="allente_no.tvn" stop="20260830192500 +0200">
-    <title>Neste sommer - tegnspråktolket</title>
+    <title>Next Summer — sign-language interpreted</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260830192500 +0200" channel="allente_no.tvn" stop="20260830195500 +0200">
-    <title>Neste sommer - tegnspråktolket</title>
+    <title>Next Summer — sign-language interpreted</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260830195500 +0200" channel="allente_no.tvn" stop="20260830203000 +0200">
-    <title>Neste sommer - tegnspråktolket</title>
+    <title>Next Summer — sign-language interpreted</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260830203000 +0200" channel="allente_no.tvn" stop="20260830213000 +0200">
@@ -1277,19 +1285,19 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260824042313 +0200" channel="allente_no.fem" stop="20260824052556 +0200">
-    <title>Ditt verste mareritt: He Seems Perfect</title>
+    <title>Your Worst Nightmare: He Seems Perfect</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260824052556 +0200" channel="allente_no.fem" stop="20260824060000 +0200">
-    <title>Drømmen om et øyliv: Home With a View on Topsail</title>
+    <title>Island Life: Home With a View on Topsail</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260824061400 +0200" channel="allente_no.fem" stop="20260824063942 +0200">
-    <title>Lottomillionærenes husjakt: A Home on The Cape</title>
+    <title>My Lottery Dream Home: A Home on The Cape</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260824063942 +0200" channel="allente_no.fem" stop="20260824073235 +0200">
-    <title>Husfikserne: Old Friend Returns to Waco</title>
+    <title>House Fixers: Old Friend Returns to Waco</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260824073235 +0200" channel="allente_no.fem" stop="20260824083016 +0200">
@@ -1297,7 +1305,7 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260824083016 +0200" channel="allente_no.fem" stop="20260824093409 +0200">
-    <title>Fabelaktig oppussing: Fresh Spin on a Family Home</title>
+    <title>Fabulous Renovation: Fresh Spin on a Family Home</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260824093000 +0200" channel="allente_no.fem" stop="20260824104000 +0200">
@@ -1305,35 +1313,35 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260824104000 +0200" channel="allente_no.fem" stop="20260824114500 +0200">
-    <title>Mor og datter pusser opp: Bringing in the Buyers</title>
+    <title>Mother and Daughter Renovate: Bringing in the Buyers</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260824114500 +0200" channel="allente_no.fem" stop="20260824125000 +0200">
-    <title>Husdrøm på 100 dager: Dream Home for a Globetrotter</title>
+    <title>100 Day Dream Home: Dream Home for a Globetrotter</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260824125000 +0200" channel="allente_no.fem" stop="20260824135000 +0200">
-    <title>Fabelaktig oppussing: Lakeside Motel Overhaul</title>
+    <title>Fabulous Renovation: Lakeside Motel Overhaul</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260824135000 +0200" channel="allente_no.fem" stop="20260824145500 +0200">
-    <title>Alle mot alle</title>
+    <title>Everyone Against Everyone</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260824145500 +0200" channel="allente_no.fem" stop="20260824155500 +0200">
-    <title>Husfikserne: Sports Chaplain Tackles Fixer</title>
+    <title>House Fixers: Sports Chaplain Tackles Fixer</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260824155500 +0200" channel="allente_no.fem" stop="20260824162500 +0200">
-    <title>Lottomillionærenes husjakt: A Family Affair</title>
+    <title>My Lottery Dream Home: A Family Affair</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260824162500 +0200" channel="allente_no.fem" stop="20260824165500 +0200">
-    <title>Lottomillionærenes husjakt: Brotherly Luck</title>
+    <title>My Lottery Dream Home: Brotherly Luck</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260824165500 +0200" channel="allente_no.fem" stop="20260824173000 +0200">
-    <title>Lottomillionærenes husjakt: Lake House Lottery</title>
+    <title>My Lottery Dream Home: Lake House Lottery</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260824173000 +0200" channel="allente_no.fem" stop="20260824184000 +0200">
@@ -1349,11 +1357,11 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260824203000 +0200" channel="allente_no.fem" stop="20260824213000 +0200">
-    <title>Renoveringsdrømmer Sverige: Hva synes Oscar?</title>
+    <title>Renovation Dreams Sweden: What Does Oscar Think?</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260824213000 +0200" channel="allente_no.fem" stop="20260824222500 +0200">
-    <title>Solveig og Johns dolce villa</title>
+    <title>Solveig and John's Dolce Villa</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260824222500 +0200" channel="allente_no.fem" stop="20260824233000 +0200">
@@ -1365,11 +1373,11 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825003500 +0200" channel="allente_no.fem" stop="20260825013500 +0200">
-    <title>Min nabo er morder: Terror i Texas</title>
+    <title>My Neighbor Is a Murderer: Terror i Texas</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825013500 +0200" channel="allente_no.fem" stop="20260825024500 +0200">
-    <title>Ditt verste mareritt: The One that Got Away</title>
+    <title>Your Worst Nightmare: The One that Got Away</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825024500 +0200" channel="allente_no.fem" stop="20260825035000 +0200">
@@ -1385,15 +1393,15 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825060000 +0200" channel="allente_no.fem" stop="20260825062000 +0200">
-    <title>Lottomillionærenes husjakt: A Family Affair</title>
+    <title>My Lottery Dream Home: A Family Affair</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825062000 +0200" channel="allente_no.fem" stop="20260825064500 +0200">
-    <title>Lottomillionærenes husjakt: Brotherly Luck</title>
+    <title>My Lottery Dream Home: Brotherly Luck</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825064500 +0200" channel="allente_no.fem" stop="20260825073500 +0200">
-    <title>Husfikserne: Sports Chaplain Tackles Fixer</title>
+    <title>House Fixers: Sports Chaplain Tackles Fixer</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825073500 +0200" channel="allente_no.fem" stop="20260825083000 +0200">
@@ -1401,7 +1409,7 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825083000 +0200" channel="allente_no.fem" stop="20260825093500 +0200">
-    <title>Fabelaktig oppussing: Lakeside Motel Overhaul</title>
+    <title>Fabulous Renovation: Lakeside Motel Overhaul</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825093500 +0200" channel="allente_no.fem" stop="20260825104500 +0200">
@@ -1409,35 +1417,35 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825104500 +0200" channel="allente_no.fem" stop="20260825114500 +0200">
-    <title>Mor og datter pusser opp: A Charred Charmer for Cory</title>
+    <title>Mother and Daughter Renovate: A Charred Charmer for Cory</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825114500 +0200" channel="allente_no.fem" stop="20260825125000 +0200">
-    <title>Husdrøm på 100 dager: Brian and Mika Dream Big</title>
+    <title>100 Day Dream Home: Brian and Mika Dream Big</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825125000 +0200" channel="allente_no.fem" stop="20260825135500 +0200">
-    <title>Fabelaktig oppussing: Race To Renovate for Check-In</title>
+    <title>Fabulous Renovation: Race To Renovate for Check-In</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825135500 +0200" channel="allente_no.fem" stop="20260825145500 +0200">
-    <title>Alle mot alle</title>
+    <title>Everyone Against Everyone</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825145500 +0200" channel="allente_no.fem" stop="20260825155500 +0200">
-    <title>Husfikserne: Fixer in Older Neighborhood</title>
+    <title>House Fixers: Fixer in Older Neighborhood</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825155500 +0200" channel="allente_no.fem" stop="20260825163000 +0200">
-    <title>Lottomillionærenes husjakt: A Fairytale Fortune</title>
+    <title>My Lottery Dream Home: A Fairytale Fortune</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825163000 +0200" channel="allente_no.fem" stop="20260825170500 +0200">
-    <title>Lottomillionærenes husjakt: A Mexican Dream</title>
+    <title>My Lottery Dream Home: A Mexican Dream</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825170500 +0200" channel="allente_no.fem" stop="20260825173500 +0200">
-    <title>Lottomillionærenes husjakt: Dreaming Big in Boston</title>
+    <title>My Lottery Dream Home: Dreaming Big in Boston</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825173500 +0200" channel="allente_no.fem" stop="20260825184000 +0200">
@@ -1453,11 +1461,11 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825203000 +0200" channel="allente_no.fem" stop="20260825213000 +0200">
-    <title>Renoveringsdrømmer Sverige: Katta i sekken</title>
+    <title>Renovation Dreams Sweden: A Cat in the Bag</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825213000 +0200" channel="allente_no.fem" stop="20260825222500 +0200">
-    <title>Svenske hyttedrømmer: Militærbrakkene på Fårö</title>
+    <title>Swedish Cottage Dreams: The Military Barracks on Faro Island</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825222500 +0200" channel="allente_no.fem" stop="20260825233000 +0200">
@@ -1469,11 +1477,11 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826003000 +0200" channel="allente_no.fem" stop="20260826013500 +0200">
-    <title>Min nabo er morder: Ut av fortiden</title>
+    <title>My Neighbor Is a Murderer: Ut av fortiden</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826013500 +0200" channel="allente_no.fem" stop="20260826023500 +0200">
-    <title>Ditt verste mareritt: Life on the Line</title>
+    <title>Your Worst Nightmare: Life on the Line</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826023500 +0200" channel="allente_no.fem" stop="20260826035000 +0200">
@@ -1489,15 +1497,15 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826060000 +0200" channel="allente_no.fem" stop="20260826062000 +0200">
-    <title>Lottomillionærenes husjakt: Lake House Lottery</title>
+    <title>My Lottery Dream Home: Lake House Lottery</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826062000 +0200" channel="allente_no.fem" stop="20260826064500 +0200">
-    <title>Lottomillionærenes husjakt: A Fairytale Fortune</title>
+    <title>My Lottery Dream Home: A Fairytale Fortune</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826064500 +0200" channel="allente_no.fem" stop="20260826073500 +0200">
-    <title>Husfikserne: Fixer in Older Neighborhood</title>
+    <title>House Fixers: Fixer in Older Neighborhood</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826073500 +0200" channel="allente_no.fem" stop="20260826083000 +0200">
@@ -1505,7 +1513,7 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826083000 +0200" channel="allente_no.fem" stop="20260826093500 +0200">
-    <title>Fabelaktig oppussing: Race To Renovate for Check-In</title>
+    <title>Fabulous Renovation: Race To Renovate for Check-In</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826093500 +0200" channel="allente_no.fem" stop="20260826104500 +0200">
@@ -1513,35 +1521,35 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826104500 +0200" channel="allente_no.fem" stop="20260826114500 +0200">
-    <title>Mor og datter pusser opp: Tiny Condo, Big Reno</title>
+    <title>Mother and Daughter Renovate: Tiny Condo, Big Reno</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826114500 +0200" channel="allente_no.fem" stop="20260826125000 +0200">
-    <title>Husdrøm på 100 dager: Hurricane Safe Haven</title>
+    <title>100 Day Dream Home: Hurricane Safe Haven</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826125000 +0200" channel="allente_no.fem" stop="20260826135500 +0200">
-    <title>Fabelaktig oppussing: A Forever Family Home</title>
+    <title>Fabulous Renovation: A Forever Family Home</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826135500 +0200" channel="allente_no.fem" stop="20260826145500 +0200">
-    <title>Alle mot alle</title>
+    <title>Everyone Against Everyone</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826145500 +0200" channel="allente_no.fem" stop="20260826155500 +0200">
-    <title>Husfikserne: Close to Water in Waco</title>
+    <title>House Fixers: Close to Water in Waco</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826155500 +0200" channel="allente_no.fem" stop="20260826162500 +0200">
-    <title>Lottomillionærenes husjakt: Mom's Million</title>
+    <title>My Lottery Dream Home: Mom's Million</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826162500 +0200" channel="allente_no.fem" stop="20260826170500 +0200">
-    <title>Lottomillionærenes husjakt: A Scratch Made in Heaven</title>
+    <title>My Lottery Dream Home: A Scratch Made in Heaven</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826170500 +0200" channel="allente_no.fem" stop="20260826173500 +0200">
-    <title>Lottomillionærenes husjakt: Gail And Chet: Boston Dream Garden</title>
+    <title>My Lottery Dream Home: Gail And Chet: Boston Dream Garden</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826173500 +0200" channel="allente_no.fem" stop="20260826183500 +0200">
@@ -1557,7 +1565,7 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826203500 +0200" channel="allente_no.fem" stop="20260826213000 +0200">
-    <title>Renoveringsdrømmer Sverige: Kan den reddes?</title>
+    <title>Renovation Dreams Sweden: Can It Be Saved?</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826213000 +0200" channel="allente_no.fem" stop="20260826223000 +0200">
@@ -1573,11 +1581,11 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827004500 +0200" channel="allente_no.fem" stop="20260827015000 +0200">
-    <title>Min nabo er morder: Døden på landet</title>
+    <title>My Neighbor Is a Murderer: Death in the Countryside</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827015000 +0200" channel="allente_no.fem" stop="20260827025000 +0200">
-    <title>Ditt verste mareritt: He's Coming for Me</title>
+    <title>Your Worst Nightmare: He's Coming for Me</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827025000 +0200" channel="allente_no.fem" stop="20260827035500 +0200">
@@ -1593,15 +1601,15 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827060000 +0200" channel="allente_no.fem" stop="20260827062000 +0200">
-    <title>Lottomillionærenes husjakt: A Mexican Dream</title>
+    <title>My Lottery Dream Home: A Mexican Dream</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827062000 +0200" channel="allente_no.fem" stop="20260827064500 +0200">
-    <title>Lottomillionærenes husjakt: Dreaming Big in Boston</title>
+    <title>My Lottery Dream Home: Dreaming Big in Boston</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827064500 +0200" channel="allente_no.fem" stop="20260827073500 +0200">
-    <title>Husfikserne: Close to Water in Waco</title>
+    <title>House Fixers: Close to Water in Waco</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827073500 +0200" channel="allente_no.fem" stop="20260827083000 +0200">
@@ -1609,7 +1617,7 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827083000 +0200" channel="allente_no.fem" stop="20260827093500 +0200">
-    <title>Fabelaktig oppussing: A Forever Family Home</title>
+    <title>Fabulous Renovation: A Forever Family Home</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827093500 +0200" channel="allente_no.fem" stop="20260827103500 +0200">
@@ -1617,35 +1625,35 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827103500 +0200" channel="allente_no.fem" stop="20260827114000 +0200">
-    <title>Mor og datter pusser opp: Historic Cottage for First-Time Flippers</title>
+    <title>Mother and Daughter Renovate: Historic Cottage for First-Time Flippers</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827114000 +0200" channel="allente_no.fem" stop="20260827125000 +0200">
-    <title>Husdrøm på 100 dager: A Family Legacy</title>
+    <title>100 Day Dream Home: A Family Legacy</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827125000 +0200" channel="allente_no.fem" stop="20260827135000 +0200">
-    <title>Fabelaktig oppussing: Starting Over After the Storm</title>
+    <title>Fabulous Renovation: Starting Over After the Storm</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827135000 +0200" channel="allente_no.fem" stop="20260827145500 +0200">
-    <title>Alle mot alle</title>
+    <title>Everyone Against Everyone</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827145500 +0200" channel="allente_no.fem" stop="20260827155500 +0200">
-    <title>Husfikserne: Country Life</title>
+    <title>House Fixers: Country Life</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827155500 +0200" channel="allente_no.fem" stop="20260827162500 +0200">
-    <title>Lottomillionærenes husjakt: A Million-dollar View in Orange County</title>
+    <title>My Lottery Dream Home: A Million-dollar View in Orange County</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827162500 +0200" channel="allente_no.fem" stop="20260827170500 +0200">
-    <title>Lottomillionærenes husjakt: Gone with The Win</title>
+    <title>My Lottery Dream Home: Gone with The Win</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827170500 +0200" channel="allente_no.fem" stop="20260827173500 +0200">
-    <title>Lottomillionærenes husjakt: The Maine Attraction</title>
+    <title>My Lottery Dream Home: The Maine Attraction</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827173500 +0200" channel="allente_no.fem" stop="20260827184000 +0200">
@@ -1661,11 +1669,11 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827203000 +0200" channel="allente_no.fem" stop="20260827213000 +0200">
-    <title>Renoveringsdrømmer Sverige: En uke igjen</title>
+    <title>Renovation Dreams Sweden: One Week Left</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827213000 +0200" channel="allente_no.fem" stop="20260827222500 +0200">
-    <title>Svenske hyttedrømmer: Maleverkstedet på Öland</title>
+    <title>Swedish Cottage Dreams: The Painting Workshop on Öland</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827222500 +0200" channel="allente_no.fem" stop="20260827233000 +0200">
@@ -1677,11 +1685,11 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260828003500 +0200" channel="allente_no.fem" stop="20260828013500 +0200">
-    <title>Min nabo er morder: Drikk med djevelen</title>
+    <title>My Neighbor Is a Murderer: Drikk med djevelen</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260828013500 +0200" channel="allente_no.fem" stop="20260828024000 +0200">
-    <title>Ditt verste mareritt: Twisted Plan</title>
+    <title>Your Worst Nightmare: Twisted Plan</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260828024000 +0200" channel="allente_no.fem" stop="20260828035000 +0200">
@@ -1697,15 +1705,15 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260828060000 +0200" channel="allente_no.fem" stop="20260828062000 +0200">
-    <title>Lottomillionærenes husjakt: Mom's Million</title>
+    <title>My Lottery Dream Home: Mom's Million</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260828062000 +0200" channel="allente_no.fem" stop="20260828064500 +0200">
-    <title>Lottomillionærenes husjakt: A Scratch Made in Heaven</title>
+    <title>My Lottery Dream Home: A Scratch Made in Heaven</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260828064500 +0200" channel="allente_no.fem" stop="20260828073500 +0200">
-    <title>Husfikserne: Country Life</title>
+    <title>House Fixers: Country Life</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260828073500 +0200" channel="allente_no.fem" stop="20260828083000 +0200">
@@ -1713,7 +1721,7 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260828083000 +0200" channel="allente_no.fem" stop="20260828093500 +0200">
-    <title>Fabelaktig oppussing: Starting Over After the Storm</title>
+    <title>Fabulous Renovation: Starting Over After the Storm</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260828093500 +0200" channel="allente_no.fem" stop="20260828103500 +0200">
@@ -1721,35 +1729,35 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260828103500 +0200" channel="allente_no.fem" stop="20260828114500 +0200">
-    <title>Mor og datter pusser opp: From Teardown to Italian Treasure</title>
+    <title>Mother and Daughter Renovate: From Teardown to Italian Treasure</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260828114500 +0200" channel="allente_no.fem" stop="20260828125000 +0200">
-    <title>Husdrøm på 100 dager: Forever Farmhouse</title>
+    <title>100 Day Dream Home: Forever Farmhouse</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260828125000 +0200" channel="allente_no.fem" stop="20260828135500 +0200">
-    <title>Fabelaktig oppussing: First Home Gets a Modern Makeover</title>
+    <title>Fabulous Renovation: First Home Gets a Modern Makeover</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260828135500 +0200" channel="allente_no.fem" stop="20260828145500 +0200">
-    <title>Alle mot alle</title>
+    <title>Everyone Against Everyone</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260828145500 +0200" channel="allente_no.fem" stop="20260828160000 +0200">
-    <title>Husfikserne: Jill and Josh Barrett Looks for a Funky Fixer Upper</title>
+    <title>House Fixers: Jill and Josh Barrett Looks for a Funky Fixer Upper</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260828160000 +0200" channel="allente_no.fem" stop="20260828163000 +0200">
-    <title>Lottomillionærenes husjakt: The Luckiest Cape</title>
+    <title>My Lottery Dream Home: The Luckiest Cape</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260828163000 +0200" channel="allente_no.fem" stop="20260828170500 +0200">
-    <title>Lottomillionærenes husjakt: A Family Fortune</title>
+    <title>My Lottery Dream Home: A Family Fortune</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260828170500 +0200" channel="allente_no.fem" stop="20260828174000 +0200">
-    <title>Lottomillionærenes husjakt: Florida Dreaming</title>
+    <title>My Lottery Dream Home: Florida Dreaming</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260828174000 +0200" channel="allente_no.fem" stop="20260828184000 +0200">
@@ -1777,7 +1785,7 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260829013500 +0200" channel="allente_no.fem" stop="20260829023500 +0200">
-    <title>Ditt verste mareritt: Home Invasion</title>
+    <title>Your Worst Nightmare: Home Invasion</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260829023500 +0200" channel="allente_no.fem" stop="20260829034000 +0200">
@@ -1793,31 +1801,31 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260829060000 +0200" channel="allente_no.fem" stop="20260829062000 +0200">
-    <title>Drømmen om et øyliv: Fixer Upper on Fidalgo Island</title>
+    <title>Island Life: Fixer Upper on Fidalgo Island</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260829062000 +0200" channel="allente_no.fem" stop="20260829064500 +0200">
-    <title>Drømmen om et øyliv: Adventure on Anderson Island</title>
+    <title>Island Life: Adventure on Anderson Island</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260829064500 +0200" channel="allente_no.fem" stop="20260829073500 +0200">
-    <title>Husfikserne: Sports Chaplain Tackles Fixer</title>
+    <title>House Fixers: Sports Chaplain Tackles Fixer</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260829073500 +0200" channel="allente_no.fem" stop="20260829084000 +0200">
-    <title>Husfikserne: Fixer in Older Neighborhood</title>
+    <title>House Fixers: Fixer in Older Neighborhood</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260829084000 +0200" channel="allente_no.fem" stop="20260829094500 +0200">
-    <title>Mor og datter pusser opp: Bringing in the Buyers</title>
+    <title>Mother and Daughter Renovate: Bringing in the Buyers</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260829094500 +0200" channel="allente_no.fem" stop="20260829104500 +0200">
-    <title>Mor og datter pusser opp: A Charred Charmer for Cory</title>
+    <title>Mother and Daughter Renovate: A Charred Charmer for Cory</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260829104500 +0200" channel="allente_no.fem" stop="20260829115000 +0200">
-    <title>Mor og datter pusser opp: Tiny Condo, Big Reno</title>
+    <title>Mother and Daughter Renovate: Tiny Condo, Big Reno</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260829115000 +0200" channel="allente_no.fem" stop="20260829125500 +0200">
@@ -1829,7 +1837,7 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260829135500 +0200" channel="allente_no.fem" stop="20260829150000 +0200">
-    <title>Fabelaktig oppussing: First Home Gets a Modern Makeover</title>
+    <title>Fabulous Renovation: First Home Gets a Modern Makeover</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260829150000 +0200" channel="allente_no.fem" stop="20260829160000 +0200">
@@ -1841,11 +1849,11 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260829170500 +0200" channel="allente_no.fem" stop="20260829180500 +0200">
-    <title>Renoveringsdrømmer Sverige: Hva synes Oscar?</title>
+    <title>Renovation Dreams Sweden: What Does Oscar Think?</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260829180500 +0200" channel="allente_no.fem" stop="20260829190000 +0200">
-    <title>Renoveringsdrømmer Sverige: Katta i sekken</title>
+    <title>Renovation Dreams Sweden: A Cat in the Bag</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260829190000 +0200" channel="allente_no.fem" stop="20260829210000 +0200">
@@ -1873,35 +1881,35 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260830051500 +0200" channel="allente_no.fem" stop="20260830060000 +0200">
-    <title>Drømmen om et øyliv: Absolutely Amelia Island</title>
+    <title>Island Life: Absolutely Amelia Island</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260830060000 +0200" channel="allente_no.fem" stop="20260830062000 +0200">
-    <title>Drømmen om et øyliv: Trading the Desert for the Beach</title>
+    <title>Island Life: Trading the Desert for the Beach</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260830062000 +0200" channel="allente_no.fem" stop="20260830064500 +0200">
-    <title>Drømmen om et øyliv: Alabama Couple Trades Farming for Boating on Ono Island</title>
+    <title>Island Life: Alabama Couple Trades Farming for Boating on Ono Island</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260830064500 +0200" channel="allente_no.fem" stop="20260830073500 +0200">
-    <title>Husfikserne: Close to Water in Waco</title>
+    <title>House Fixers: Close to Water in Waco</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260830073500 +0200" channel="allente_no.fem" stop="20260830083000 +0200">
-    <title>Husfikserne: Country Life</title>
+    <title>House Fixers: Country Life</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260830083000 +0200" channel="allente_no.fem" stop="20260830093000 +0200">
-    <title>Husfikserne: Jill and Josh Barrett Looks for a Funky Fixer Upper</title>
+    <title>House Fixers: Jill and Josh Barrett Looks for a Funky Fixer Upper</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260830093000 +0200" channel="allente_no.fem" stop="20260830103000 +0200">
-    <title>Mor og datter pusser opp: Historic Cottage for First-Time Flippers</title>
+    <title>Mother and Daughter Renovate: Historic Cottage for First-Time Flippers</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260830103000 +0200" channel="allente_no.fem" stop="20260830113500 +0200">
-    <title>Mor og datter pusser opp: From Teardown to Italian Treasure</title>
+    <title>Mother and Daughter Renovate: From Teardown to Italian Treasure</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260830113500 +0200" channel="allente_no.fem" stop="20260830123500 +0200">
@@ -1925,11 +1933,11 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260830165000 +0200" channel="allente_no.fem" stop="20260830175000 +0200">
-    <title>Renoveringsdrømmer Sverige: Kan den reddes?</title>
+    <title>Renovation Dreams Sweden: Can It Be Saved?</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260830175000 +0200" channel="allente_no.fem" stop="20260830185000 +0200">
-    <title>Renoveringsdrømmer Sverige: En uke igjen</title>
+    <title>Renovation Dreams Sweden: One Week Left</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260830185000 +0200" channel="allente_no.fem" stop="20260830210000 +0200">
@@ -1944,8 +1952,8 @@
     <title>Field Day</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260823220000 +0200" channel="allente_no.rex" stop="20260824022348 +0200">
-    <title>Ringenes herre: Atter en konge</title>
+  <programme start="20260823220000 +0200" channel="allente_no.rex" stop="20260824022000 +0200">
+    <title>The Lord of the Rings: Atter en konge</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260824022348 +0200" channel="allente_no.rex" stop="20260824044953 +0200">
@@ -1953,15 +1961,15 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260824044953 +0200" channel="allente_no.rex" stop="20260824060000 +0200">
-    <title>Grensevakten Sverige: Aggressiv tyv</title>
+    <title>Border Patrol Sweden: Aggressiv tyv</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260824060030 +0200" channel="allente_no.rex" stop="20260824062308 +0200">
-    <title>Bagasjekrigen: Gunning for Dollars</title>
+    <title>Baggage Battles: Gunning for Dollars</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260824062308 +0200" channel="allente_no.rex" stop="20260824064545 +0200">
-    <title>Bagasjekrigen: The Wizard of Odd</title>
+    <title>Baggage Battles: The Wizard of Odd</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260824064545 +0200" channel="allente_no.rex" stop="20260824073603 +0200">
@@ -1989,7 +1997,7 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260824101000 +0200" channel="allente_no.rex" stop="20260824104000 +0200">
-    <title>Two and a Half Men: Sugerøret i donut-hullet mitt</title>
+    <title>Two and a Half Men: The Straw in My Donut Hole</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260824104000 +0200" channel="allente_no.rex" stop="20260824111000 +0200">
@@ -2005,15 +2013,15 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260824125000 +0200" channel="allente_no.rex" stop="20260824135000 +0200">
-    <title>Veiens helter: Kraftig kollisjon: «Hadde englevakt»</title>
+    <title>Road Heroes: Kraftig kollisjon: «Hadde englevakt»</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260824135000 +0200" channel="allente_no.rex" stop="20260824145000 +0200">
-    <title>Fanget på politiets kamera Sverige: Voldsom motstand</title>
+    <title>Caught on Camera Sweden: Violent Resistance</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260824145000 +0200" channel="allente_no.rex" stop="20260824155000 +0200">
-    <title>Grensevakten Sverige: Viser seg å være etterlyst</title>
+    <title>Border Patrol Sweden: Turns Out to Be Wanted</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260824155000 +0200" channel="allente_no.rex" stop="20260824162500 +0200">
@@ -2049,11 +2057,11 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260824200000 +0200" channel="allente_no.rex" stop="20260824210000 +0200">
-    <title>Fanget på politiets kamera Sverige: Underjordisk ranerliga</title>
+    <title>Caught on Camera Sweden: Underground Robbery Gang</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260824210000 +0200" channel="allente_no.rex" stop="20260824220000 +0200">
-    <title>Grensevakten Sverige: Avklipt fotlenke</title>
+    <title>Border Patrol Sweden: Avklipt fotlenke</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260824220000 +0200" channel="allente_no.rex" stop="20260824230000 +0200">
@@ -2069,7 +2077,7 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825000500 +0200" channel="allente_no.rex" stop="20260825010500 +0200">
-    <title>Kongen befaler UK: Stay Humble</title>
+    <title>Taskmaster UK: Stay Humble</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825010500 +0200" channel="allente_no.rex" stop="20260825014000 +0200">
@@ -2089,7 +2097,7 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825031000 +0200" channel="allente_no.rex" stop="20260825041500 +0200">
-    <title>T-banen Stockholm: Ordensvaktene havner midt i et gjengoppgjør</title>
+    <title>Stockholm Metro: Security Guards Caught in a Gang Clash</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825041500 +0200" channel="allente_no.rex" stop="20260825052000 +0200">
@@ -2097,15 +2105,15 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825052000 +0200" channel="allente_no.rex" stop="20260825060000 +0200">
-    <title>Hvordan den lages: Spinning Reels, Plasma Protein Therapies, 3D Cups, and Stainless Steel Kegs</title>
+    <title>How It's Made: Spinning Reels, Plasma Protein Therapies, 3D Cups, and Stainless Steel Kegs</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825060000 +0200" channel="allente_no.rex" stop="20260825062000 +0200">
-    <title>Bagasjekrigen: Safari Sale</title>
+    <title>Baggage Battles: Safari Sale</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825062000 +0200" channel="allente_no.rex" stop="20260825064500 +0200">
-    <title>Bagasjekrigen: Miami</title>
+    <title>Baggage Battles: Miami</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825064500 +0200" channel="allente_no.rex" stop="20260825073500 +0200">
@@ -2149,15 +2157,15 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825125000 +0200" channel="allente_no.rex" stop="20260825135000 +0200">
-    <title>Veiens helter: Hestetransport velter</title>
+    <title>Road Heroes: Hestetransport velter</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825135000 +0200" channel="allente_no.rex" stop="20260825145500 +0200">
-    <title>Fanget på politiets kamera Sverige: Underjordisk ranerliga</title>
+    <title>Caught on Camera Sweden: Underground Robbery Gang</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825145500 +0200" channel="allente_no.rex" stop="20260825155000 +0200">
-    <title>Grensevakten Sverige: Avklipt fotlenke</title>
+    <title>Border Patrol Sweden: Avklipt fotlenke</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825155000 +0200" channel="allente_no.rex" stop="20260825162500 +0200">
@@ -2193,11 +2201,11 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825200000 +0200" channel="allente_no.rex" stop="20260825210000 +0200">
-    <title>Fanget på politiets kamera Sverige: Skuddveksling mellom gjenger</title>
+    <title>Caught on Camera Sweden: Gunfight Between Gangs</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825210000 +0200" channel="allente_no.rex" stop="20260825220000 +0200">
-    <title>Grensevakten Sverige: Claes er klar</title>
+    <title>Border Patrol Sweden: Claes er klar</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825220000 +0200" channel="allente_no.rex" stop="20260825230000 +0200">
@@ -2213,7 +2221,7 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826000500 +0200" channel="allente_no.rex" stop="20260826010500 +0200">
-    <title>Kongen befaler UK: Rock 'n' Roll Umlaut</title>
+    <title>Taskmaster UK: Rock 'n' Roll Umlaut</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826010500 +0200" channel="allente_no.rex" stop="20260826013500 +0200">
@@ -2233,7 +2241,7 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826031000 +0200" channel="allente_no.rex" stop="20260826041000 +0200">
-    <title>T-banen Stockholm: Ung mann får hjertestans på toget</title>
+    <title>Stockholm Metro: Young Man Suffers Cardiac Arrest on the Train</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826041000 +0200" channel="allente_no.rex" stop="20260826052000 +0200">
@@ -2241,15 +2249,15 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826052000 +0200" channel="allente_no.rex" stop="20260826060000 +0200">
-    <title>Hvordan den lages: Steamer Baskets, Scooters, Prefabricated Conservatories, Copper Cookware</title>
+    <title>How It's Made: Steamer Baskets, Scooters, Prefabricated Conservatories, Copper Cookware</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826060000 +0200" channel="allente_no.rex" stop="20260826062000 +0200">
-    <title>Bagasjekrigen</title>
+    <title>Baggage Battles</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826062000 +0200" channel="allente_no.rex" stop="20260826064500 +0200">
-    <title>Bagasjekrigen</title>
+    <title>Baggage Battles</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826064500 +0200" channel="allente_no.rex" stop="20260826073500 +0200">
@@ -2293,15 +2301,15 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826125000 +0200" channel="allente_no.rex" stop="20260826135500 +0200">
-    <title>Veiens helter: Ulykke skaper problemer for Berra</title>
+    <title>Road Heroes: Ulykke skaper problemer for Berra</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826135500 +0200" channel="allente_no.rex" stop="20260826145500 +0200">
-    <title>Fanget på politiets kamera Sverige: Skuddveksling mellom gjenger</title>
+    <title>Caught on Camera Sweden: Gunfight Between Gangs</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826145500 +0200" channel="allente_no.rex" stop="20260826155000 +0200">
-    <title>Grensevakten Sverige: Claes er klar</title>
+    <title>Border Patrol Sweden: Claes er klar</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826155000 +0200" channel="allente_no.rex" stop="20260826162500 +0200">
@@ -2337,11 +2345,11 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826200000 +0200" channel="allente_no.rex" stop="20260826210000 +0200">
-    <title>Fanget på politiets kamera Sverige: Oppfinnsomme tyver</title>
+    <title>Caught on Camera Sweden: Ingenious Thieves</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826210000 +0200" channel="allente_no.rex" stop="20260826220000 +0200">
-    <title>Grensevakten Sverige: Masse penger</title>
+    <title>Border Patrol Sweden: Masse penger</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826220000 +0200" channel="allente_no.rex" stop="20260826230000 +0200">
@@ -2357,7 +2365,7 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827000500 +0200" channel="allente_no.rex" stop="20260827010500 +0200">
-    <title>Kongen befaler UK: This is Trevor</title>
+    <title>Taskmaster UK: This is Trevor</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827010500 +0200" channel="allente_no.rex" stop="20260827013500 +0200">
@@ -2377,7 +2385,7 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827030500 +0200" channel="allente_no.rex" stop="20260827040500 +0200">
-    <title>T-banen Stockholm: Forsterkninger tilkalles for mistenkt knivmann</title>
+    <title>Stockholm Metro: Forsterkninger tilkalles for mistenkt knivmann</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827040500 +0200" channel="allente_no.rex" stop="20260827052000 +0200">
@@ -2385,15 +2393,15 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827052000 +0200" channel="allente_no.rex" stop="20260827060000 +0200">
-    <title>Hvordan den lages: Mountain Bike Tires, Leaf &amp; Debris Vacuums, Canned Meat, and Fillet Knives</title>
+    <title>How It's Made: Mountain Bike Tires, Leaf &amp; Debris Vacuums, Canned Meat, and Fillet Knives</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827060000 +0200" channel="allente_no.rex" stop="20260827062000 +0200">
-    <title>Bagasjekrigen: Atlanta</title>
+    <title>Baggage Battles: Atlanta</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827062000 +0200" channel="allente_no.rex" stop="20260827064500 +0200">
-    <title>Bagasjekrigen</title>
+    <title>Baggage Battles</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827064500 +0200" channel="allente_no.rex" stop="20260827073500 +0200">
@@ -2437,15 +2445,15 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827125000 +0200" channel="allente_no.rex" stop="20260827135000 +0200">
-    <title>Veiens helter: En forferdelig opplevelse</title>
+    <title>Road Heroes: En forferdelig opplevelse</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827135000 +0200" channel="allente_no.rex" stop="20260827145500 +0200">
-    <title>Fanget på politiets kamera Sverige: Oppfinnsomme tyver</title>
+    <title>Caught on Camera Sweden: Ingenious Thieves</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827145500 +0200" channel="allente_no.rex" stop="20260827155000 +0200">
-    <title>Grensevakten Sverige: Masse penger</title>
+    <title>Border Patrol Sweden: Masse penger</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827155000 +0200" channel="allente_no.rex" stop="20260827162500 +0200">
@@ -2465,7 +2473,7 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827180000 +0200" channel="allente_no.rex" stop="20260827183000 +0200">
-    <title>Two and a Half Men: Ildere, angrip!</title>
+    <title>Two and a Half Men: Ferrets, Attack!</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827183000 +0200" channel="allente_no.rex" stop="20260827185500 +0200">
@@ -2481,19 +2489,19 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827200000 +0200" channel="allente_no.rex" stop="20260827210000 +0200">
-    <title>Fanget på politiets kamera Sverige: Bevæpnet mann på buss</title>
+    <title>Caught on Camera Sweden: Armed Man on a Bus</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827210000 +0200" channel="allente_no.rex" stop="20260827220000 +0200">
-    <title>Grensevakten Sverige: Tatt i siste sekund</title>
+    <title>Border Patrol Sweden: Tatt i siste sekund</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827220000 +0200" channel="allente_no.rex" stop="20260828022000 +0200">
-    <title>Ringenes herre: Atter en konge</title>
+    <title>The Lord of the Rings: Atter en konge</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260828022000 +0200" channel="allente_no.rex" stop="20260828032500 +0200">
-    <title>Kongen befaler UK: Aquatic Sewing Machine</title>
+    <title>Taskmaster UK: Aquatic Sewing Machine</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260828032500 +0200" channel="allente_no.rex" stop="20260828035500 +0200">
@@ -2505,7 +2513,7 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260828042500 +0200" channel="allente_no.rex" stop="20260828045500 +0200">
-    <title>Two and a Half Men: Ildere, angrip!</title>
+    <title>Two and a Half Men: Ferrets, Attack!</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260828045500 +0200" channel="allente_no.rex" stop="20260828052500 +0200">
@@ -2513,15 +2521,15 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260828052500 +0200" channel="allente_no.rex" stop="20260828060000 +0200">
-    <title>Hvordan den lages: Rice Cookers, Concealment Furniture, Promotional Origami, and Hedge Shears</title>
+    <title>How It's Made: Rice Cookers, Concealment Furniture, Promotional Origami, and Hedge Shears</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260828060000 +0200" channel="allente_no.rex" stop="20260828062000 +0200">
-    <title>Bagasjekrigen: Cash Is King</title>
+    <title>Baggage Battles: Cash Is King</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260828062000 +0200" channel="allente_no.rex" stop="20260828064500 +0200">
-    <title>Bagasjekrigen: Knightwalkers</title>
+    <title>Baggage Battles: Knightwalkers</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260828064500 +0200" channel="allente_no.rex" stop="20260828073500 +0200">
@@ -2545,7 +2553,7 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260828094500 +0200" channel="allente_no.rex" stop="20260828101500 +0200">
-    <title>Two and a Half Men: Ildere, angrip!</title>
+    <title>Two and a Half Men: Ferrets, Attack!</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260828101500 +0200" channel="allente_no.rex" stop="20260828105000 +0200">
@@ -2565,15 +2573,15 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260828125000 +0200" channel="allente_no.rex" stop="20260828135000 +0200">
-    <title>Veiens helter: Passasjerer må evakueres</title>
+    <title>Road Heroes: Passengers Must Be Evacuated</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260828135000 +0200" channel="allente_no.rex" stop="20260828145500 +0200">
-    <title>Fanget på politiets kamera Sverige: Bevæpnet mann på buss</title>
+    <title>Caught on Camera Sweden: Armed Man on a Bus</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260828145500 +0200" channel="allente_no.rex" stop="20260828155000 +0200">
-    <title>Grensevakten Sverige: Tatt i siste sekund</title>
+    <title>Border Patrol Sweden: Tatt i siste sekund</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260828155000 +0200" channel="allente_no.rex" stop="20260828162500 +0200">
@@ -2609,15 +2617,15 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260828200000 +0200" channel="allente_no.rex" stop="20260828210000 +0200">
-    <title>Fanget på politiets kamera Sverige: Farlig MC-jakt</title>
+    <title>Caught on Camera Sweden: Dangerous Motorcycle Chase</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260828210000 +0200" channel="allente_no.rex" stop="20260828220000 +0200">
-    <title>Grensevakten Sverige: Bløff og bedrageri</title>
+    <title>Border Patrol Sweden: Bluff and Fraud</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260828220000 +0200" channel="allente_no.rex" stop="20260829001000 +0200">
-    <title>48 timer</title>
+    <title>48 Hours</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260829001000 +0200" channel="allente_no.rex" stop="20260829023500 +0200">
@@ -2645,19 +2653,19 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260829060000 +0200" channel="allente_no.rex" stop="20260829062000 +0200">
-    <title>Bagasjekrigen: Gunning for Dollars</title>
+    <title>Baggage Battles: Gunning for Dollars</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260829062000 +0200" channel="allente_no.rex" stop="20260829064500 +0200">
-    <title>Bagasjekrigen: The Wizard of Odd</title>
+    <title>Baggage Battles: The Wizard of Odd</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260829064500 +0200" channel="allente_no.rex" stop="20260829074000 +0200">
-    <title>Veiens helter: Kraftig kollisjon: «Hadde englevakt»</title>
+    <title>Road Heroes: Kraftig kollisjon: «Hadde englevakt»</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260829074000 +0200" channel="allente_no.rex" stop="20260829083500 +0200">
-    <title>Veiens helter: Hestetransport velter</title>
+    <title>Road Heroes: Hestetransport velter</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260829083500 +0200" channel="allente_no.rex" stop="20260829093500 +0200">
@@ -2701,23 +2709,23 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260829151000 +0200" channel="allente_no.rex" stop="20260829160500 +0200">
-    <title>Grensevakten Sverige: Avklipt fotlenke</title>
+    <title>Border Patrol Sweden: Avklipt fotlenke</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260829160500 +0200" channel="allente_no.rex" stop="20260829170500 +0200">
-    <title>Grensevakten Sverige: Claes er klar</title>
+    <title>Border Patrol Sweden: Claes er klar</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260829170500 +0200" channel="allente_no.rex" stop="20260829180500 +0200">
-    <title>Grensevakten Sverige: Masse penger</title>
+    <title>Border Patrol Sweden: Masse penger</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260829180500 +0200" channel="allente_no.rex" stop="20260829190500 +0200">
-    <title>Fanget på politiets kamera Sverige: Underjordisk ranerliga</title>
+    <title>Caught on Camera Sweden: Underground Robbery Gang</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260829190500 +0200" channel="allente_no.rex" stop="20260829200000 +0200">
-    <title>Fanget på politiets kamera Sverige: Skuddveksling mellom gjenger</title>
+    <title>Caught on Camera Sweden: Gunfight Between Gangs</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260829200000 +0200" channel="allente_no.rex" stop="20260829210000 +0200">
@@ -2725,7 +2733,7 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260829210000 +0200" channel="allente_no.rex" stop="20260829220000 +0200">
-    <title>Grensevakten Sverige: Drapsforsøk og hjertesorg</title>
+    <title>Border Patrol Sweden: Attempted Murder and Heartbreak</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260829220000 +0200" channel="allente_no.rex" stop="20260830000500 +0200">
@@ -2737,31 +2745,31 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260830025000 +0200" channel="allente_no.rex" stop="20260830035000 +0200">
-    <title>Grensevakten Sverige: Avklipt fotlenke</title>
+    <title>Border Patrol Sweden: Avklipt fotlenke</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260830035000 +0200" channel="allente_no.rex" stop="20260830045000 +0200">
-    <title>Grensevakten Sverige: Claes er klar</title>
+    <title>Border Patrol Sweden: Claes er klar</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260830045000 +0200" channel="allente_no.rex" stop="20260830060500 +0200">
-    <title>Veiens helter: En forferdelig opplevelse</title>
+    <title>Road Heroes: En forferdelig opplevelse</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260830060500 +0200" channel="allente_no.rex" stop="20260830063000 +0200">
-    <title>Bagasjekrigen: Safari Sale</title>
+    <title>Baggage Battles: Safari Sale</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260830063000 +0200" channel="allente_no.rex" stop="20260830065500 +0200">
-    <title>Bagasjekrigen: Miami</title>
+    <title>Baggage Battles: Miami</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260830065500 +0200" channel="allente_no.rex" stop="20260830074000 +0200">
-    <title>Veiens helter: Ulykke skaper problemer for Berra</title>
+    <title>Road Heroes: Ulykke skaper problemer for Berra</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260830074000 +0200" channel="allente_no.rex" stop="20260830084500 +0200">
-    <title>Veiens helter: En forferdelig opplevelse</title>
+    <title>Road Heroes: En forferdelig opplevelse</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260830084500 +0200" channel="allente_no.rex" stop="20260830095000 +0200">
@@ -2801,27 +2809,27 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260830140500 +0200" channel="allente_no.rex" stop="20260830150500 +0200">
-    <title>Grensevakten Sverige: Tatt i siste sekund</title>
+    <title>Border Patrol Sweden: Tatt i siste sekund</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260830150500 +0200" channel="allente_no.rex" stop="20260830160000 +0200">
-    <title>Grensevakten Sverige: Bløff og bedrageri</title>
+    <title>Border Patrol Sweden: Bluff and Fraud</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260830160000 +0200" channel="allente_no.rex" stop="20260830170000 +0200">
-    <title>Grensevakten Sverige: Drapsforsøk og hjertesorg</title>
+    <title>Border Patrol Sweden: Attempted Murder and Heartbreak</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260830170000 +0200" channel="allente_no.rex" stop="20260830180000 +0200">
-    <title>Fanget på politiets kamera Sverige: Oppfinnsomme tyver</title>
+    <title>Caught on Camera Sweden: Ingenious Thieves</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260830180000 +0200" channel="allente_no.rex" stop="20260830190500 +0200">
-    <title>Fanget på politiets kamera Sverige: Bevæpnet mann på buss</title>
+    <title>Caught on Camera Sweden: Armed Man on a Bus</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260830190500 +0200" channel="allente_no.rex" stop="20260830200000 +0200">
-    <title>Fanget på politiets kamera Sverige: Farlig MC-jakt</title>
+    <title>Caught on Camera Sweden: Dangerous Motorcycle Chase</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260830200000 +0200" channel="allente_no.rex" stop="20260830210000 +0200">
@@ -2829,11 +2837,15 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260830210000 +0200" channel="allente_no.rex" stop="20260830220000 +0200">
-    <title>Grensevakten Sverige: Gullproblem</title>
+    <title>Border Patrol Sweden: Gullproblem</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260830220000 +0200" channel="allente_no.rex" stop="20260831002000 +0200">
     <title>Horrible Bosses 2</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260823235500 +0200" channel="allente_no.euron" stop="20260824030000 +0200">
+    <title>PGA Tour: FedEx St. Jude Championship: 23.08.2026 23:55.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260823235655 +0200" channel="allente_no.euron" stop="20260824030000 +0200">
@@ -2841,11 +2853,11 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260824030201 +0200" channel="allente_no.euron" stop="20260824035000 +0200">
-    <title>Sykkel: La Vuelta de Espana: 24.08.2026 03:00.</title>
+    <title>Cycling: La Vuelta de España: 24.08.2026 03:00.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260824035340 +0200" channel="allente_no.euron" stop="20260824045000 +0200">
-    <title>Motorsport: 24-timersløpet fra Le Mans: 24.08.2026 03:50.</title>
+    <title>Motorsport: 24 Hours of Le Mans: 24.08.2026 03:50.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260824045207 +0200" channel="allente_no.euron" stop="20260824060000 +0200">
@@ -2853,27 +2865,27 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260824060000 +0200" channel="allente_no.euron" stop="20260824065500 +0200">
-    <title>Motocross: VM: 24.08.2026 06:00.</title>
+    <title>Motocross: World Championship: 24.08.2026 06:00.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260824065923 +0200" channel="allente_no.euron" stop="20260824075500 +0200">
-    <title>Motocross: VM: 24.08.2026 06:55.</title>
+    <title>Motocross: World Championship: 24.08.2026 06:55.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260824075821 +0200" channel="allente_no.euron" stop="20260824085500 +0200">
-    <title>Motocross: VM: 24.08.2026 07:55.</title>
+    <title>Motocross: World Championship: 24.08.2026 07:55.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260824085500 +0200" channel="allente_no.euron" stop="20260824095500 +0200">
-    <title>Motocross: VM: 24.08.2026 08:55.</title>
+    <title>Motocross: World Championship: 24.08.2026 08:55.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260824095500 +0200" channel="allente_no.euron" stop="20260824105500 +0200">
-    <title>Terrengsykkel: Verdenscupåpning: 24.08.2026 09:55.</title>
+    <title>Mountain Biking: World Cup Opening: 24.08.2026 09:55.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260824105500 +0200" channel="allente_no.euron" stop="20260824115500 +0200">
-    <title>Terrengsykkel: Verdenscupåpning: 24.08.2026 10:55.</title>
+    <title>Mountain Biking: World Cup Opening: 24.08.2026 10:55.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260824115500 +0200" channel="allente_no.euron" stop="20260824133000 +0200">
@@ -2889,11 +2901,11 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260824184000 +0200" channel="allente_no.euron" stop="20260824194000 +0200">
-    <title>Motocross: VM: 24.08.2026 18:40.</title>
+    <title>Motocross: World Championship: 24.08.2026 18:40.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260824194000 +0200" channel="allente_no.euron" stop="20260824204000 +0200">
-    <title>Motocross: VM: 24.08.2026 19:40.</title>
+    <title>Motocross: World Championship: 24.08.2026 19:40.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260824204000 +0200" channel="allente_no.euron" stop="20260824221500 +0200">
@@ -2909,39 +2921,39 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825021500 +0200" channel="allente_no.euron" stop="20260825031000 +0200">
-    <title>Motocross: VM: 25.08.2026 02:15.</title>
+    <title>Motocross: World Championship: 25.08.2026 02:15.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825031000 +0200" channel="allente_no.euron" stop="20260825040500 +0200">
-    <title>Motocross: VM: 25.08.2026 03:10.</title>
+    <title>Motocross: World Championship: 25.08.2026 03:10.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825040500 +0200" channel="allente_no.euron" stop="20260825045000 +0200">
-    <title>Motocross: VM: 25.08.2026 04:05.</title>
+    <title>Motocross: World Championship: 25.08.2026 04:05.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825045000 +0200" channel="allente_no.euron" stop="20260825060000 +0200">
-    <title>Motocross: VM: 25.08.2026 04:50.</title>
+    <title>Motocross: World Championship: 25.08.2026 04:50.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825060000 +0200" channel="allente_no.euron" stop="20260825065500 +0200">
-    <title>Formel E: Monaco ePrix: 25.08.2026 06:00.</title>
+    <title>Formula E: Monaco ePrix: 25.08.2026 06:00.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825065500 +0200" channel="allente_no.euron" stop="20260825075500 +0200">
-    <title>Terrengsykkel: Verdenscupåpning: 25.08.2026 06:55.</title>
+    <title>Mountain Biking: World Cup Opening: 25.08.2026 06:55.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825075500 +0200" channel="allente_no.euron" stop="20260825092500 +0200">
-    <title>Terrengsykkel: Verdenscupåpning: 25.08.2026 07:55.</title>
+    <title>Mountain Biking: World Cup Opening: 25.08.2026 07:55.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825092500 +0200" channel="allente_no.euron" stop="20260825105500 +0200">
-    <title>Terrengsykkel: Verdenscupåpning: 25.08.2026 09:25.</title>
+    <title>Mountain Biking: World Cup Opening: 25.08.2026 09:25.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825105500 +0200" channel="allente_no.euron" stop="20260825133000 +0200">
-    <title>OL 2024: Fotball: Frankrike - Spania, finale, menn</title>
+    <title>Olympic Games 2024: Football: France - Spain, final, men</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825133000 +0200" channel="allente_no.euron" stop="20260825162000 +0200">
@@ -2949,23 +2961,23 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825162000 +0200" channel="allente_no.euron" stop="20260825173000 +0200">
-    <title>PGA Tour: Helgens høydepunkter: Pga Tour Highlights Show</title>
+    <title>PGA Tour: Weekend Highlights: Pga Tour Highlights Show</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825173000 +0200" channel="allente_no.euron" stop="20260825193000 +0200">
-    <title>Sykkel: Bemer Cyclassics: 25.08.2026 17:30.</title>
+    <title>Cycling: Bemer Cyclassics: 25.08.2026 17:30.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825193000 +0200" channel="allente_no.euron" stop="20260825203000 +0200">
-    <title>PGA Tour: FedExCup-kavalkaden: 25.08.2026 19:30.</title>
+    <title>PGA Tour: FedExCup Highlights: 25.08.2026 19:30.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825203000 +0200" channel="allente_no.euron" stop="20260825213500 +0200">
-    <title>PGA Tour: FedExCup-kavalkaden: 25.08.2026 20:30.</title>
+    <title>PGA Tour: FedExCup Highlights: 25.08.2026 20:30.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825213500 +0200" channel="allente_no.euron" stop="20260825224000 +0200">
-    <title>PGA Tour: Helgens høydepunkter: Pga Tour Highlights Show</title>
+    <title>PGA Tour: Weekend Highlights: Pga Tour Highlights Show</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260825224000 +0200" channel="allente_no.euron" stop="20260825233500 +0200">
@@ -2977,47 +2989,47 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826013000 +0200" channel="allente_no.euron" stop="20260826023000 +0200">
-    <title>BMX: EM: 26.08.2026 01:30.</title>
+    <title>BMX: European Championship: 26.08.2026 01:30.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826023000 +0200" channel="allente_no.euron" stop="20260826033000 +0200">
-    <title>Motocross: VM: 26.08.2026 02:30.</title>
+    <title>Motocross: World Championship: 26.08.2026 02:30.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826033000 +0200" channel="allente_no.euron" stop="20260826042000 +0200">
-    <title>Motocross: VM: 26.08.2026 03:30.</title>
+    <title>Motocross: World Championship: 26.08.2026 03:30.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826042000 +0200" channel="allente_no.euron" stop="20260826051000 +0200">
-    <title>Motocross: VM: 26.08.2026 04:20.</title>
+    <title>Motocross: World Championship: 26.08.2026 04:20.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826051000 +0200" channel="allente_no.euron" stop="20260826060000 +0200">
-    <title>Motocross: VM: 26.08.2026 05:10.</title>
+    <title>Motocross: World Championship: 26.08.2026 05:10.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826060000 +0200" channel="allente_no.euron" stop="20260826065500 +0200">
-    <title>BMX: EM: 26.08.2026 06:00.</title>
+    <title>BMX: European Championship: 26.08.2026 06:00.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826065500 +0200" channel="allente_no.euron" stop="20260826075500 +0200">
-    <title>BMX: EM: 26.08.2026 06:55.</title>
+    <title>BMX: European Championship: 26.08.2026 06:55.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826075500 +0200" channel="allente_no.euron" stop="20260826092500 +0200">
-    <title>Sykkel: Bemer Cyclassics: 26.08.2026 07:55.</title>
+    <title>Cycling: Bemer Cyclassics: 26.08.2026 07:55.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826092500 +0200" channel="allente_no.euron" stop="20260826095500 +0200">
-    <title>Terrengsykkel: Verdenscupåpning: 26.08.2026 09:25.</title>
+    <title>Mountain Biking: World Cup Opening: 26.08.2026 09:25.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826095500 +0200" channel="allente_no.euron" stop="20260826110500 +0200">
-    <title>PGA Tour: Helgens høydepunkter: Pga Tour Highlights Show</title>
+    <title>PGA Tour: Weekend Highlights: Pga Tour Highlights Show</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826110500 +0200" channel="allente_no.euron" stop="20260826121000 +0200">
-    <title>Motorsport: 24-timersløpet fra Le Mans: 26.08.2026 11:05.</title>
+    <title>Motorsport: 24 Hours of Le Mans: 26.08.2026 11:05.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826121000 +0200" channel="allente_no.euron" stop="20260826133000 +0200">
@@ -3037,11 +3049,11 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826192500 +0200" channel="allente_no.euron" stop="20260826202500 +0200">
-    <title>Tennis: U.S Open: 26.08.2026 19:25.</title>
+    <title>Tennis: US Open: 26.08.2026 19:25.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826202500 +0200" channel="allente_no.euron" stop="20260826213000 +0200">
-    <title>Tennis: U.S Open: 26.08.2026 20:25.</title>
+    <title>Tennis: US Open: 26.08.2026 20:25.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826213000 +0200" channel="allente_no.euron" stop="20260826220000 +0200">
@@ -3053,15 +3065,15 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826223000 +0200" channel="allente_no.euron" stop="20260826233000 +0200">
-    <title>PGA Tour: FedExCup-kavalkaden: 26.08.2026 22:30.</title>
+    <title>PGA Tour: FedExCup Highlights: 26.08.2026 22:30.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826233000 +0200" channel="allente_no.euron" stop="20260827003500 +0200">
-    <title>PGA Tour: FedExCup-kavalkaden: 26.08.2026 23:30.</title>
+    <title>PGA Tour: FedExCup Highlights: 26.08.2026 23:30.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827003500 +0200" channel="allente_no.euron" stop="20260827034000 +0200">
-    <title>Hestesport: VM Aachen: 27.08.2026 00:35.</title>
+    <title>Equestrian: World Championship, Aachen: 27.08.2026 00:35.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827034000 +0200" channel="allente_no.euron" stop="20260827051500 +0200">
@@ -3069,7 +3081,7 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827051500 +0200" channel="allente_no.euron" stop="20260827060000 +0200">
-    <title>Terrengsykkel: Verdenscupåpning: 27.08.2026 05:15.</title>
+    <title>Mountain Biking: World Cup Opening: 27.08.2026 05:15.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827060000 +0200" channel="allente_no.euron" stop="20260827063000 +0200">
@@ -3077,31 +3089,31 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827063000 +0200" channel="allente_no.euron" stop="20260827073000 +0200">
-    <title>Motocross: VM: 27.08.2026 06:30.</title>
+    <title>Motocross: World Championship: 27.08.2026 06:30.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827073000 +0200" channel="allente_no.euron" stop="20260827083000 +0200">
-    <title>Motocross: VM: 27.08.2026 07:30.</title>
+    <title>Motocross: World Championship: 27.08.2026 07:30.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827083000 +0200" channel="allente_no.euron" stop="20260827092500 +0200">
-    <title>Motocross: VM: 27.08.2026 08:30.</title>
+    <title>Motocross: World Championship: 27.08.2026 08:30.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827092500 +0200" channel="allente_no.euron" stop="20260827102500 +0200">
-    <title>Motocross: VM: 27.08.2026 09:25.</title>
+    <title>Motocross: World Championship: 27.08.2026 09:25.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827102500 +0200" channel="allente_no.euron" stop="20260827110000 +0200">
-    <title>PGA: Tour Championship spesial: 27.08.2026 10:25.</title>
+    <title>PGA: Tour Championship Special: 27.08.2026 10:25.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827110000 +0200" channel="allente_no.euron" stop="20260827123000 +0200">
-    <title>OL 2024: Golf: dag 4, menn</title>
+    <title>Olympic Games 2024: Golf: dag 4, men</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827123000 +0200" channel="allente_no.euron" stop="20260827133000 +0200">
-    <title>Tour de France, kvinner: 27.08.2026 12:30.</title>
+    <title>Tour de France, Women: 27.08.2026 12:30.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827133000 +0200" channel="allente_no.euron" stop="20260827162500 +0200">
@@ -3109,7 +3121,7 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827162500 +0200" channel="allente_no.euron" stop="20260827165500 +0200">
-    <title>PGA: Tour Championship spesial: 27.08.2026 16:25.</title>
+    <title>PGA: Tour Championship Special: 27.08.2026 16:25.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827165500 +0200" channel="allente_no.euron" stop="20260827175000 +0200">
@@ -3125,39 +3137,39 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260827235500 +0200" channel="allente_no.euron" stop="20260828030500 +0200">
-    <title>Hestesport: VM Aachen: 27.08.2026 23:55.</title>
+    <title>Equestrian: World Championship, Aachen: 27.08.2026 23:55.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260828030500 +0200" channel="allente_no.euron" stop="20260828035500 +0200">
-    <title>Båtsport: SailGP: 28.08.2026 03:05.</title>
+    <title>Boating: SailGP: 28.08.2026 03:05.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260828035500 +0200" channel="allente_no.euron" stop="20260828044500 +0200">
-    <title>Terrengsykkel: Verdenscupåpning: 28.08.2026 03:55.</title>
+    <title>Mountain Biking: World Cup Opening: 28.08.2026 03:55.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260828044500 +0200" channel="allente_no.euron" stop="20260828060000 +0200">
-    <title>Terrengsykkel: Verdenscupåpning: 28.08.2026 04:45.</title>
+    <title>Mountain Biking: World Cup Opening: 28.08.2026 04:45.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260828060000 +0200" channel="allente_no.euron" stop="20260828073000 +0200">
-    <title>Tennis: U.S Open: 28.08.2026 06:00.</title>
+    <title>Tennis: US Open: 28.08.2026 06:00.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260828073000 +0200" channel="allente_no.euron" stop="20260828093000 +0200">
-    <title>Tennis: U.S Open: 28.08.2026 07:30.</title>
+    <title>Tennis: US Open: 28.08.2026 07:30.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260828093000 +0200" channel="allente_no.euron" stop="20260828103000 +0200">
-    <title>BMX: EM: 28.08.2026 09:30.</title>
+    <title>BMX: European Championship: 28.08.2026 09:30.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260828103000 +0200" channel="allente_no.euron" stop="20260828105000 +0200">
-    <title>PGA: Tour Championship spesial: 28.08.2026 10:30.</title>
+    <title>PGA: Tour Championship Special: 28.08.2026 10:30.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260828105000 +0200" channel="allente_no.euron" stop="20260828133000 +0200">
-    <title>OL 2024: Fotball: Frankrike - Spania, finale, menn</title>
+    <title>Olympic Games 2024: Football: France - Spain, final, men</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260828133000 +0200" channel="allente_no.euron" stop="20260828170000 +0200">
@@ -3173,35 +3185,35 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260829000000 +0200" channel="allente_no.euron" stop="20260829010000 +0200">
-    <title>PGA Tour: FedExCup-kavalkaden: 29.08.2026 00:00.</title>
+    <title>PGA Tour: FedExCup Highlights: 29.08.2026 00:00.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260829010000 +0200" channel="allente_no.euron" stop="20260829030000 +0200">
-    <title>Samveldelekene 2026: Dagens høydepunkter: 29.08.2026 01:00.</title>
+    <title>Commonwealth Games 2026: Today's Highlights: 29.08.2026 01:00.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260829030000 +0200" channel="allente_no.euron" stop="20260829042000 +0200">
-    <title>Tennis: U.S Open: 29.08.2026 03:00.</title>
+    <title>Tennis: US Open: 29.08.2026 03:00.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260829042000 +0200" channel="allente_no.euron" stop="20260829060000 +0200">
-    <title>Tennis: U.S Open: 29.08.2026 04:20.</title>
+    <title>Tennis: US Open: 29.08.2026 04:20.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260829060000 +0200" channel="allente_no.euron" stop="20260829072500 +0200">
-    <title>Tennis: U.S Open: 29.08.2026 06:00.</title>
+    <title>Tennis: US Open: 29.08.2026 06:00.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260829072500 +0200" channel="allente_no.euron" stop="20260829075500 +0200">
-    <title>Terrengsykkel: VM i Val di Sole: 29.08.2026 07:25.</title>
+    <title>Mountain Biking: World Championship in Val di Sole: 29.08.2026 07:25.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260829075500 +0200" channel="allente_no.euron" stop="20260829085500 +0200">
-    <title>Terrengsykkel: VM i Val di Sole: 29.08.2026 07:55.</title>
+    <title>Mountain Biking: World Championship in Val di Sole: 29.08.2026 07:55.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260829085500 +0200" channel="allente_no.euron" stop="20260829102500 +0200">
-    <title>Sykkel: Bemer Cyclassics: 29.08.2026 08:55.</title>
+    <title>Cycling: Bemer Cyclassics: 29.08.2026 08:55.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260829102500 +0200" channel="allente_no.euron" stop="20260829105500 +0200">
@@ -3209,11 +3221,11 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260829105500 +0200" channel="allente_no.euron" stop="20260829115500 +0200">
-    <title>Tennis: U.S Open: 29.08.2026 10:55.</title>
+    <title>Tennis: US Open: 29.08.2026 10:55.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260829115500 +0200" channel="allente_no.euron" stop="20260829133000 +0200">
-    <title>Tennis: U.S Open: 29.08.2026 11:55.</title>
+    <title>Tennis: US Open: 29.08.2026 11:55.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260829133000 +0200" channel="allente_no.euron" stop="20260829163000 +0200">
@@ -3221,7 +3233,7 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260829163000 +0200" channel="allente_no.euron" stop="20260829181000 +0200">
-    <title>Terrengsykkel: VM i Val di Sole: 29.08.2026 16:30.</title>
+    <title>Mountain Biking: World Championship in Val di Sole: 29.08.2026 16:30.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260829181000 +0200" channel="allente_no.euron" stop="20260829190000 +0200">
@@ -3233,11 +3245,11 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260830005500 +0200" channel="allente_no.euron" stop="20260830022500 +0200">
-    <title>Tennis: U.S Open: 30.08.2026 00:55.</title>
+    <title>Tennis: US Open: 30.08.2026 00:55.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260830022500 +0200" channel="allente_no.euron" stop="20260830040000 +0200">
-    <title>Tennis: U.S Open: 30.08.2026 02:25.</title>
+    <title>Tennis: US Open: 30.08.2026 02:25.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260830040000 +0200" channel="allente_no.euron" stop="20260830042000 +0200">
@@ -3245,23 +3257,23 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260830042000 +0200" channel="allente_no.euron" stop="20260830060000 +0200">
-    <title>Terrengsykkel: VM i Val di Sole: 30.08.2026 04:20.</title>
+    <title>Mountain Biking: World Championship in Val di Sole: 30.08.2026 04:20.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260830060000 +0200" channel="allente_no.euron" stop="20260830070000 +0200">
-    <title>Terrengsykkel: VM i Val di Sole: 30.08.2026 06:00.</title>
+    <title>Mountain Biking: World Championship in Val di Sole: 30.08.2026 06:00.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260830070000 +0200" channel="allente_no.euron" stop="20260830080000 +0200">
-    <title>Motorsport: 24-timersløpet fra Le Mans: 30.08.2026 07:00.</title>
+    <title>Motorsport: 24 Hours of Le Mans: 30.08.2026 07:00.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260830080000 +0200" channel="allente_no.euron" stop="20260830100000 +0200">
-    <title>Tennis: U.S Open: 30.08.2026 08:00.</title>
+    <title>Tennis: US Open: 30.08.2026 08:00.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260830100000 +0200" channel="allente_no.euron" stop="20260830120000 +0200">
-    <title>Tennis: U.S Open: 30.08.2026 10:00.</title>
+    <title>Tennis: US Open: 30.08.2026 10:00.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260830120000 +0200" channel="allente_no.euron" stop="20260830125000 +0200">
@@ -3269,23 +3281,455 @@
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260830125000 +0200" channel="allente_no.euron" stop="20260830144000 +0200">
-    <title>Terrengsykkel: VM i Val di Sole: 30.08.2026 12:50.</title>
+    <title>Mountain Biking: World Championship in Val di Sole: 30.08.2026 12:50.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260830144000 +0200" channel="allente_no.euron" stop="20260830150500 +0200">
-    <title>PGA: Tour Championship spesial: 30.08.2026 14:40.</title>
+    <title>PGA: Tour Championship Special: 30.08.2026 14:40.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260830150500 +0200" channel="allente_no.euron" stop="20260830172500 +0200">
-    <title>Terrengsykkel: VM i Val di Sole: 30.08.2026 15:05.</title>
+    <title>Mountain Biking: World Championship in Val di Sole: 30.08.2026 15:05.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260830172500 +0200" channel="allente_no.euron" stop="20260830180000 +0200">
-    <title>Terrengsykkel: Enduro World Series: 30.08.2026 17:25.</title>
+    <title>Mountain Biking: Enduro World Series: 30.08.2026 17:25.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260830180000 +0200" channel="allente_no.euron" stop="20260831000000 +0200">
     <title>Golf: PGA Tour: 30.08.2026 18:00.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260824015807 +0200" channel="allente_no.euro1" stop="20260824034500 +0200">
+    <title>SNOOKER WUHAN OPEN ROUND 02: 24.08.2026 01:55.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260824034945 +0200" channel="allente_no.euro1" stop="20260824060000 +0200">
+    <title>Tennis: Wimbledon: 24.08.2026 03:45.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260824060000 +0200" channel="allente_no.euro1" stop="20260824080000 +0200">
+    <title>Snooker: Wuhan Open: 24.08.2026 06:00.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260824080000 +0200" channel="allente_no.euro1" stop="20260824105500 +0200">
+    <title>Snooker: Wuhan Open: 24.08.2026 08:00.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260824105500 +0200" channel="allente_no.euro1" stop="20260824122500 +0200">
+    <title>Cycling: Bemer Cyclassics: 24.08.2026 10:55.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260824122500 +0200" channel="allente_no.euro1" stop="20260824125500 +0200">
+    <title>Triathlon: T100: 24.08.2026 12:25.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260824125500 +0200" channel="allente_no.euro1" stop="20260824144500 +0200">
+    <title>Cycling: La Vuelta de España: 24.08.2026 12:55.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260824144500 +0200" channel="allente_no.euro1" stop="20260824175500 +0200">
+    <title>Cycling: La Vuelta de España: 24.08.2026 14:45.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260824175500 +0200" channel="allente_no.euro1" stop="20260824195500 +0200">
+    <title>PGA Tour: BMW Championship: 24.08.2026 17:55.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260824195500 +0200" channel="allente_no.euro1" stop="20260824202000 +0200">
+    <title>PGA: Tour Championship Special: 24.08.2026 19:55.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260824202000 +0200" channel="allente_no.euro1" stop="20260824215000 +0200">
+    <title>Cycling: La Vuelta de España: 24.08.2026 20:20.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260824215000 +0200" channel="allente_no.euro1" stop="20260824234000 +0200">
+    <title>Snooker: Wuhan Open: 24.08.2026 21:50.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260824234000 +0200" channel="allente_no.euro1" stop="20260825004500 +0200">
+    <title>Olympic Games: Hall Of Fame 2004</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260825004500 +0200" channel="allente_no.euro1" stop="20260825021000 +0200">
+    <title>Cycling: Bemer Cyclassics: 25.08.2026 00:45.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260825021000 +0200" channel="allente_no.euro1" stop="20260825033000 +0200">
+    <title>Cycling: La Vuelta de España: 25.08.2026 02:10.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260825033000 +0200" channel="allente_no.euro1" stop="20260825041500 +0200">
+    <title>Formula E: Monaco ePrix: 25.08.2026 03:30.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260825041500 +0200" channel="allente_no.euro1" stop="20260825060000 +0200">
+    <title>PGA Tour: BMW Championship: 25.08.2026 04:15.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260825060000 +0200" channel="allente_no.euro1" stop="20260825080000 +0200">
+    <title>Snooker: Wuhan Open: 25.08.2026 06:00.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260825080000 +0200" channel="allente_no.euro1" stop="20260825105500 +0200">
+    <title>Snooker: Wuhan Open: 25.08.2026 08:00.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260825105500 +0200" channel="allente_no.euro1" stop="20260825130000 +0200">
+    <title>PGA Tour: BMW Championship: 25.08.2026 10:55.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260825130000 +0200" channel="allente_no.euro1" stop="20260825143000 +0200">
+    <title>Cycling: La Vuelta de España: 25.08.2026 13:00.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260825143000 +0200" channel="allente_no.euro1" stop="20260825180000 +0200">
+    <title>Cycling: La Vuelta de España: 25.08.2026 14:30.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260825180000 +0200" channel="allente_no.euro1" stop="20260825190000 +0200">
+    <title>Tennis: US Open: 25.08.2026 18:00.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260825190000 +0200" channel="allente_no.euro1" stop="20260825200000 +0200">
+    <title>Tennis: US Open: 25.08.2026 19:00.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260825200000 +0200" channel="allente_no.euro1" stop="20260825210000 +0200">
+    <title>Tennis: US Open: 25.08.2026 20:00.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260825210000 +0200" channel="allente_no.euro1" stop="20260825220000 +0200">
+    <title>Tennis: US Open: 25.08.2026 21:00.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260825220000 +0200" channel="allente_no.euro1" stop="20260825225500 +0200">
+    <title>Tennis: US Open: 25.08.2026 22:00.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260825225500 +0200" channel="allente_no.euro1" stop="20260826010000 +0200">
+    <title>PGA Tour: Tour Championship: 25.08.2026 22:55.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260826010000 +0200" channel="allente_no.euro1" stop="20260826013000 +0200">
+    <title>Triathlon: T100: 26.08.2026 01:00.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260826013000 +0200" channel="allente_no.euro1" stop="20260826032500 +0200">
+    <title>SNOOKER WUHAN OPEN ROUND 03: 26.08.2026 01:30.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260826013000 +0200" channel="allente_no.euro1" stop="20260826032500 +0200">
+    <title>Snooker: Wuhan Open: 26.08.2026 01:30.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260826032500 +0200" channel="allente_no.euro1" stop="20260826044000 +0200">
+    <title>Tennis: Wimbledon: 26.08.2026 03:25.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260826044000 +0200" channel="allente_no.euro1" stop="20260826060000 +0200">
+    <title>Cycling: La Vuelta de España: 26.08.2026 04:40.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260826060000 +0200" channel="allente_no.euro1" stop="20260826080000 +0200">
+    <title>Snooker: Wuhan Open: 26.08.2026 06:00.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260826080000 +0200" channel="allente_no.euro1" stop="20260826105500 +0200">
+    <title>Snooker: Wuhan Open: 26.08.2026 08:00.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260826105500 +0200" channel="allente_no.euro1" stop="20260826115500 +0200">
+    <title>Tour de France: 26.08.2026 10:55.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260826115500 +0200" channel="allente_no.euro1" stop="20260826135500 +0200">
+    <title>US PGA Championship: 26.08.2026 11:55.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260826135500 +0200" channel="allente_no.euro1" stop="20260826144500 +0200">
+    <title>Cycling: La Vuelta de España</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260826144500 +0200" channel="allente_no.euro1" stop="20260826174500 +0200">
+    <title>Cycling: La Vuelta de España: 26.08.2026 14:45.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260826174500 +0200" channel="allente_no.euro1" stop="20260826184000 +0200">
+    <title>Tour de France: 26.08.2026 17:45.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260826184000 +0200" channel="allente_no.euro1" stop="20260826194000 +0200">
+    <title>Sailing: SailGP: 26.08.2026 18:40.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260826194000 +0200" channel="allente_no.euro1" stop="20260826201000 +0200">
+    <title>Discovery Golf: 26.08.2026 19:40.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260826201000 +0200" channel="allente_no.euro1" stop="20260826214000 +0200">
+    <title>Cycling: La Vuelta de España: 26.08.2026 20:10.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260826214000 +0200" channel="allente_no.euro1" stop="20260826233000 +0200">
+    <title>Snooker: Wuhan Open: 26.08.2026 21:40.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260826233000 +0200" channel="allente_no.euro1" stop="20260827002500 +0200">
+    <title>NFL: Hard Knocks: 26.08.2026 23:30.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260827002500 +0200" channel="allente_no.euro1" stop="20260827010000 +0200">
+    <title>PGA: Tour Championship Special: 27.08.2026 00:25.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260827010000 +0200" channel="allente_no.euro1" stop="20260827020000 +0200">
+    <title>Tennis: US Open: 27.08.2026 01:00.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260827020000 +0200" channel="allente_no.euro1" stop="20260827025000 +0200">
+    <title>Tennis: US Open: 27.08.2026 02:00.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260827025000 +0200" channel="allente_no.euro1" stop="20260827033000 +0200">
+    <title>Cycling: Cycling Show: 27.08.2026 02:50.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260827033000 +0200" channel="allente_no.euro1" stop="20260827052500 +0200">
+    <title>Tennis: US Open: 27.08.2026 03:30.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260827052500 +0200" channel="allente_no.euro1" stop="20260827060000 +0200">
+    <title>Mountain Biking: World Cup Opening: 27.08.2026 05:25.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260827060000 +0200" channel="allente_no.euro1" stop="20260827080000 +0200">
+    <title>Snooker: Wuhan Open: 27.08.2026 06:00.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260827080000 +0200" channel="allente_no.euro1" stop="20260827105500 +0200">
+    <title>Snooker: Wuhan Open: 27.08.2026 08:00.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260827105500 +0200" channel="allente_no.euro1" stop="20260827125500 +0200">
+    <title>PGA Tour: Tour Championship: 27.08.2026 10:55.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260827125500 +0200" channel="allente_no.euro1" stop="20260827144500 +0200">
+    <title>Cycling: La Vuelta de España</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260827144500 +0200" channel="allente_no.euro1" stop="20260827174500 +0200">
+    <title>Cycling: La Vuelta de España: 27.08.2026 14:45.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260827174500 +0200" channel="allente_no.euro1" stop="20260827182000 +0200">
+    <title>Mountain Biking: World Championship in Val di Sole: 27.08.2026 17:45.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260827182000 +0200" channel="allente_no.euro1" stop="20260827192500 +0200">
+    <title>Mountain Biking: World Championship in Val di Sole: 27.08.2026 18:20.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260827192500 +0200" channel="allente_no.euro1" stop="20260827210000 +0200">
+    <title>Tour de France: 27.08.2026 19:25.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260827210000 +0200" channel="allente_no.euro1" stop="20260827220000 +0200">
+    <title>Cycling: La Vuelta de España</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260827220000 +0200" channel="allente_no.euro1" stop="20260827223000 +0200">
+    <title>Esports: World Cup Show: 27.08.2026 22:00.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260827223000 +0200" channel="allente_no.euro1" stop="20260828003000 +0200">
+    <title>Snooker: Wuhan Open: 27.08.2026 22:30.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260828003000 +0200" channel="allente_no.euro1" stop="20260828015500 +0200">
+    <title>Tennis: US Open: 28.08.2026 00:30.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260828015500 +0200" channel="allente_no.euro1" stop="20260828032500 +0200">
+    <title>Cycling: La Vuelta de España</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260828032500 +0200" channel="allente_no.euro1" stop="20260828035000 +0200">
+    <title>Mountain Biking: World Cup Opening: 28.08.2026 03:25.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260828035000 +0200" channel="allente_no.euro1" stop="20260828044000 +0200">
+    <title>BMX: European Championship: 28.08.2026 03:50.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260828044000 +0200" channel="allente_no.euro1" stop="20260828053500 +0200">
+    <title>BMX: European Championship: 28.08.2026 04:40.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260828053500 +0200" channel="allente_no.euro1" stop="20260828060000 +0200">
+    <title>Triathlon: T100: 28.08.2026 05:35.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260828060000 +0200" channel="allente_no.euro1" stop="20260828080000 +0200">
+    <title>Snooker: Wuhan Open: 28.08.2026 06:00.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260828080000 +0200" channel="allente_no.euro1" stop="20260828111500 +0200">
+    <title>Snooker: Wuhan Open: 28.08.2026 08:00.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260828111500 +0200" channel="allente_no.euro1" stop="20260828122500 +0200">
+    <title>PGA Tour: Tour Championship: 28.08.2026 11:15.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260828122500 +0200" channel="allente_no.euro1" stop="20260828133000 +0200">
+    <title>Cycling: La Vuelta de España: 28.08.2026 12:25.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260828133000 +0200" channel="allente_no.euro1" stop="20260828173500 +0200">
+    <title>Cycling: La Vuelta de España: 28.08.2026 13:30.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260828173500 +0200" channel="allente_no.euro1" stop="20260828183000 +0200">
+    <title>PGA Tour: Tour Championship: 28.08.2026 17:35.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260828183000 +0200" channel="allente_no.euro1" stop="20260828190000 +0200">
+    <title>Mountain Biking: World Championship in Val di Sole: 28.08.2026 18:30.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260828190000 +0200" channel="allente_no.euro1" stop="20260828200000 +0200">
+    <title>Mountain Biking: World Championship in Val di Sole: 28.08.2026 19:00.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260828200000 +0200" channel="allente_no.euro1" stop="20260828213000 +0200">
+    <title>Cycling: La Vuelta de España: 28.08.2026 20:00.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260828213000 +0200" channel="allente_no.euro1" stop="20260828232500 +0200">
+    <title>Snooker: Wuhan Open: 28.08.2026 21:30.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260828232500 +0200" channel="allente_no.euro1" stop="20260829002500 +0200">
+    <title>Olympic Games: Hall Of Fame Beijing 2008</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260829002500 +0200" channel="allente_no.euro1" stop="20260829005500 +0200">
+    <title>PGA: Tour Championship Special: 29.08.2026 00:25.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260829005500 +0200" channel="allente_no.euro1" stop="20260829014500 +0200">
+    <title>NFL: Hard Knocks: 29.08.2026 00:55.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260829014500 +0200" channel="allente_no.euro1" stop="20260829021500 +0200">
+    <title>Triathlon: T100: 29.08.2026 01:45.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260829021500 +0200" channel="allente_no.euro1" stop="20260829033500 +0200">
+    <title>Cycling: La Vuelta de España: 29.08.2026 02:15.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260829033500 +0200" channel="allente_no.euro1" stop="20260829060000 +0200">
+    <title>Equestrian: World Championship, Aachen: 29.08.2026 03:35.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260829060000 +0200" channel="allente_no.euro1" stop="20260829080000 +0200">
+    <title>Snooker: Wuhan Open: 29.08.2026 06:00.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260829080000 +0200" channel="allente_no.euro1" stop="20260829105500 +0200">
+    <title>Snooker: Wuhan Open: 29.08.2026 08:00.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260829105500 +0200" channel="allente_no.euro1" stop="20260829121000 +0200">
+    <title>Tour de France: 29.08.2026 10:55.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260829121000 +0200" channel="allente_no.euro1" stop="20260829131000 +0200">
+    <title>Cycling: La Vuelta de España: 29.08.2026 12:10.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260829131000 +0200" channel="allente_no.euro1" stop="20260829150000 +0200">
+    <title>Mountain Biking: World Championship in Val di Sole: 29.08.2026 13:10.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260829150000 +0200" channel="allente_no.euro1" stop="20260829175500 +0200">
+    <title>Cycling: La Vuelta de España: 29.08.2026 15:00.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260829175500 +0200" channel="allente_no.euro1" stop="20260829192000 +0200">
+    <title>Tennis: US Open: 29.08.2026 17:55.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260829192000 +0200" channel="allente_no.euro1" stop="20260829200000 +0200">
+    <title>PGA: Tour Championship Special: 29.08.2026 19:20.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260829200000 +0200" channel="allente_no.euro1" stop="20260829204500 +0200">
+    <title>Equestrian: World Championship, Aachen: 29.08.2026 20:00.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260829204500 +0200" channel="allente_no.euro1" stop="20260829221500 +0200">
+    <title>Cycling: La Vuelta de España: 29.08.2026 20:45.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260829221500 +0200" channel="allente_no.euro1" stop="20260830004000 +0200">
+    <title>Athletics: Sydney Marathon: 29.08.2026 22:15.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260830004000 +0200" channel="allente_no.euro1" stop="20260830011000 +0200">
+    <title>Mountain Biking: World Championship in Val di Sole: 30.08.2026 00:40.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260830011000 +0200" channel="allente_no.euro1" stop="20260830023500 +0200">
+    <title>Cycling: La Vuelta de España: 30.08.2026 01:10.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260830023500 +0200" channel="allente_no.euro1" stop="20260830034000 +0200">
+    <title>Olympic Games: Hall Of Fame London 2012</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260830034000 +0200" channel="allente_no.euro1" stop="20260830060000 +0200">
+    <title>Equestrian: World Championship: 30.08.2026 03:40.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260830060000 +0200" channel="allente_no.euro1" stop="20260830072500 +0200">
+    <title>Cycling: La Vuelta de España: 30.08.2026 06:00.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260830072500 +0200" channel="allente_no.euro1" stop="20260830085500 +0200">
+    <title>Cycling: Bemer Cyclassics: 30.08.2026 07:25.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260830085500 +0200" channel="allente_no.euro1" stop="20260830092000 +0200">
+    <title>PGA: Tour Championship Special: 30.08.2026 08:55.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260830092000 +0200" channel="allente_no.euro1" stop="20260830102000 +0200">
+    <title>PGA Tour: Tour Championship: 30.08.2026 09:20.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260830102000 +0200" channel="allente_no.euro1" stop="20260830120000 +0200">
+    <title>Cycling: La Vuelta de España: 30.08.2026 10:20.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260830120000 +0200" channel="allente_no.euro1" stop="20260830180000 +0200">
+    <title>Cycling: La Vuelta de España: 30.08.2026 12:00.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260830180000 +0200" channel="allente_no.euro1" stop="20260830200000 +0200">
+    <title>Tennis: US Open: 30.08.2026 18:00.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260830200000 +0200" channel="allente_no.euro1" stop="20260830230000 +0200">
+    <title>Tennis: US Open: 30.08.2026 20:00.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260830230000 +0200" channel="allente_no.euro1" stop="20260831004500 +0200">
+    <title>Tennis: US Open: 30.08.2026 23:00.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260824010000 +0200" channel="allente_se.vextra" stop="20260824050000 +0200">
