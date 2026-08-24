@@ -5,7 +5,7 @@
   },
   "now_hk": {
     "status": "ok",
-    "records": 4526
+    "records": 4519
   },
   "allente_se": {
     "status": "ok",
@@ -17,7 +17,7 @@
   },
   "ee_uk": {
     "status": "ok",
-    "records": 6442
+    "records": 6447
   },
   "digi4k_ro": {
     "status": "ok",
@@ -38,10 +38,10 @@
   "xmltv": {
     "status": "ok",
     "channels": 121,
-    "programmes": 15476,
+    "programmes": 15474,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-08-24T19:28:34Z",
-  "total_records": 15476
+  "generated_at": "2026-08-24T19:37:36Z",
+  "total_records": 15474
 }

@@ -5488,8 +5488,12 @@
     <title>Golf: Ladies European Tour</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
-  <programme start="20260830100000 +0200" channel="allente_se.vgolf" stop="20260830140000 +0200">
-    <title>Airing Break</title>
+  <programme start="20260830120000 +0200" channel="allente_se.vgolf" stop="20260830123000 +0200">
+    <title>Challenge Tour Grand Final Highlights</title>
+    <url>https://www.allente.se/tv-guide/</url>
+  </programme>
+  <programme start="20260830123000 +0200" channel="allente_se.vgolf" stop="20260830130000 +0200">
+    <title>Dp World Tour Highlights</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260830130000 +0200" channel="allente_se.vgolf" stop="20260830180000 +0200">
@@ -5500,16 +5504,12 @@
     <title>Airing Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
-  <programme start="20260830180000 +0200" channel="allente_se.vgolf" stop="20260830183000 +0200">
-    <title>Challenge Tour Grand Final Highlights</title>
+  <programme start="20260830180000 +0200" channel="allente_se.vgolf" stop="20260830220000 +0200">
+    <title>Airing Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
-  <programme start="20260830183000 +0200" channel="allente_se.vgolf" stop="20260830190000 +0200">
-    <title>Dp World Tour Highlights</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260830190000 +0200" channel="allente_se.vgolf" stop="20260831010000 +0200">
-    <title>Liv Golf Invitational</title>
+  <programme start="20260830220000 +0200" channel="allente_se.vgolf" stop="20260831020000 +0200">
+    <title>Airing Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260824010000 +0200" channel="allente_se.vpre" stop="20260824050000 +0200">
@@ -37668,12 +37668,20 @@
     <title>1st Test D3: ENG v PAK Highlights</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260826130000 +0100" channel="ee_uk.422" stop="20260826140000 +0100">
-    <title>1st Test D4: ENG v PAK Highlights</title>
+  <programme start="20260826130000 +0100" channel="ee_uk.422" stop="20260826141500 +0100">
+    <title>Jimmy Anderson's Final Farewell</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260826140000 +0100" channel="ee_uk.422" stop="20260826150000 +0100">
-    <title>1st Test D5: ENG v PAK Highlights</title>
+  <programme start="20260826141500 +0100" channel="ee_uk.422" stop="20260826143000 +0100">
+    <title>Jimmy Anderson's Greatest Spells</title>
+    <url>https://player.ee.co.uk/#/livetv/schedule</url>
+  </programme>
+  <programme start="20260826143000 +0100" channel="ee_uk.422" stop="20260826144500 +0100">
+    <title>Jimmy Anderson's Greatest Spells</title>
+    <url>https://player.ee.co.uk/#/livetv/schedule</url>
+  </programme>
+  <programme start="20260826144500 +0100" channel="ee_uk.422" stop="20260826150000 +0100">
+    <title>Jimmy Anderson's Greatest Spells</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20260826150000 +0100" channel="ee_uk.422" stop="20260826153000 +0100">
@@ -37696,12 +37704,20 @@
     <title>1st Test D3: ENG v PAK Highlights</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260826190000 +0100" channel="ee_uk.422" stop="20260826200000 +0100">
-    <title>1st Test D4: ENG v PAK Highlights</title>
+  <programme start="20260826190000 +0100" channel="ee_uk.422" stop="20260826193000 +0100">
+    <title>The Film Room: England v India</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260826200000 +0100" channel="ee_uk.422" stop="20260826210000 +0100">
-    <title>1st Test D5: ENG v PAK Highlights</title>
+  <programme start="20260826193000 +0100" channel="ee_uk.422" stop="20260826200000 +0100">
+    <title>The Film Room: England v India</title>
+    <url>https://player.ee.co.uk/#/livetv/schedule</url>
+  </programme>
+  <programme start="20260826200000 +0100" channel="ee_uk.422" stop="20260826203000 +0100">
+    <title>The Film Room: England v India</title>
+    <url>https://player.ee.co.uk/#/livetv/schedule</url>
+  </programme>
+  <programme start="20260826203000 +0100" channel="ee_uk.422" stop="20260826210000 +0100">
+    <title>The Film Room: England v India</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20260826210000 +0100" channel="ee_uk.422" stop="20260826213000 +0100">
@@ -37760,20 +37776,24 @@
     <title>Men's The Hundred M14</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260827060000 +0100" channel="ee_uk.422" stop="20260827070000 +0100">
-    <title>1st Test D2: ENG v PAK Highlights</title>
+  <programme start="20260827060000 +0100" channel="ee_uk.422" stop="20260827063000 +0100">
+    <title>The Film Room: England v India</title>
+    <url>https://player.ee.co.uk/#/livetv/schedule</url>
+  </programme>
+  <programme start="20260827063000 +0100" channel="ee_uk.422" stop="20260827070000 +0100">
+    <title>The Film Room: England v India</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20260827070000 +0100" channel="ee_uk.422" stop="20260827080000 +0100">
-    <title>1st Test D3: ENG v PAK Highlights</title>
+    <title>1st Test D1: ENG v PAK Highlights</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20260827080000 +0100" channel="ee_uk.422" stop="20260827090000 +0100">
-    <title>1st Test D4: ENG v PAK Highlights</title>
+    <title>1st Test D2: ENG v PAK Highlights</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20260827090000 +0100" channel="ee_uk.422" stop="20260827100000 +0100">
-    <title>1st Test D5: ENG v PAK Highlights</title>
+    <title>1st Test D3: ENG v PAK Highlights</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20260827100000 +0100" channel="ee_uk.422" stop="20260827190000 +0100">
@@ -47524,10 +47544,6 @@
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260825030000 +0800" channel="now_hk.630" stop="20260825033000 +0800">
-    <title>WTA全接觸 第4集</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260825033000 +0800" channel="now_hk.630" stop="20260825034500 +0800">
     <title>一CUE過百 第162集</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -49066,10 +49082,6 @@
   </programme>
   <programme start="20260831234500 +0800" channel="now_hk.631" stop="20260901104500 +0800">
     <title>一CUE過百 第138集</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260825013000 +0800" channel="now_hk.632" stop="20260825033000 +0800">
-    <title>2026/27 西班牙甲組足球聯賽 -奧沙辛拿 對 利雲特[直播]</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260825033000 +0800" channel="now_hk.632" stop="20260825053000 +0800">
@@ -50982,10 +50994,6 @@
   </programme>
   <programme start="20260831230000 +0800" channel="now_hk.634" stop="20260901100000 +0800">
     <title>2026美國網球公開賽 (L. Armstrong) -第2天第1圈(A)[直播]</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260825002500 +0800" channel="now_hk.635" stop="20260825032000 +0800">
-    <title>WBWC '26 Gr. Rockford 第6集 -Mexico v USA</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260825032000 +0800" channel="now_hk.635" stop="20260825052500 +0800">
@@ -53462,10 +53470,6 @@
   </programme>
   <programme start="20260831230000 +0800" channel="now_hk.638" stop="20260901000000 +0800">
     <title>2026 FIA 世界耐力錦標賽精華 第4集 -巴西聖保羅6小時耐力賽</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260825024500 +0800" channel="now_hk.639" stop="20260825031500 +0800">
-    <title>保時捷卡雷拉盃精華2026 -紐堡寧站</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260825031500 +0800" channel="now_hk.639" stop="20260825050000 +0800">
@@ -58972,10 +58976,6 @@
     <title>帶你遊馬房 -「競駿輝煌」</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260825025900 +0800" channel="now_hk.674" stop="20260825032500 +0800">
-    <title>TATA IPL 2026 -Highlights: M3: RR vs CSK</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260825032500 +0800" channel="now_hk.674" stop="20260825034900 +0800">
     <title>CPL 2026 -Highlights: M10: JAK vs STKNP</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -59578,14 +59578,6 @@
   </programme>
   <programme start="20260831175800 +0800" channel="now_hk.674" stop="20260901010000 +0800">
     <title>Pakistan tour of England, 2026 -LIVE: ENG vs PAK, 2nd Test, Day 5[直播]</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260825025000 +0800" channel="now_hk.679" stop="20260825030500 +0800">
-    <title>AFLW Highlights -Carlton v Adelaide</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260825030500 +0800" channel="now_hk.679" stop="20260825032000 +0800">
-    <title>AFLW Highlights -Port Adelaide v Hawthorn</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260825032000 +0800" channel="now_hk.679" stop="20260825034000 +0800">
