@@ -21,11 +21,11 @@ class Programme:
     channel_name: str
     title: str
     start_at: str
-    end_at: str
+    end_at: str | None
     source_url: str
     retrieved_at: str
 
-    def to_dict(self) -> dict[str, str]:
+    def to_dict(self) -> dict[str, str | None]:
         return asdict(self)
 
 
@@ -40,6 +40,7 @@ def write_jsonl(records: Iterable[Programme], destination: Path) -> int:
         records,
         key=lambda item: (
             item.start_at,
+            item.end_at or "",
             item.provider,
             item.channel_number,
             item.title,

@@ -14,8 +14,12 @@ from .models import read_jsonl, write_jsonl
 from .xmltv import write_xmltv
 from .sources import (
     SourceUnavailable,
+    collect_allente_v_sport_ultrahd,
     collect_astro,
+    collect_digi4k,
     collect_now_hk,
+    collect_now_uk_sports,
+    collect_tvplus_eurosport,
 )
 
 DEFAULT_DATASET = Path("data/current_week.jsonl")
@@ -28,7 +32,15 @@ def _collect(args: argparse.Namespace) -> int:
     records = []
     status: dict[str, dict[str, object]] = {}
 
-    for provider, collector in (("astro", lambda: collect_astro(args.days)), ("now_hk", lambda: collect_now_hk(args.days))):
+    collectors = (
+        ("astro", lambda: collect_astro(args.days)),
+        ("now_hk", lambda: collect_now_hk(args.days)),
+        ("allente_se", lambda: collect_allente_v_sport_ultrahd(args.days)),
+        ("now_uk", lambda: collect_now_uk_sports(args.days)),
+        ("digi4k_ro", lambda: collect_digi4k(args.days)),
+        ("tvplus_tr", lambda: collect_tvplus_eurosport(args.days)),
+    )
+    for provider, collector in collectors:
         try:
             result = collector()
             records.extend(result)
@@ -72,7 +84,7 @@ def _search(args: argparse.Namespace) -> int:
             "\t".join(
                 [
                     row.get("start_at", ""),
-                    row.get("end_at", ""),
+                    row.get("end_at") or "",
                     row.get("provider", ""),
                     f"{row.get('channel_number', '')} {row.get('channel_name', '')}".strip(),
                     row.get("title", ""),
@@ -87,7 +99,7 @@ def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="Official-source-only weekly EPG collector and search tool")
     commands = parser.add_subparsers(dest="command", required=True)
 
-    collect = commands.add_parser("collect", help="采集 Astro 与 NOW TV 香港官网的一周节目表")
+    collect = commands.add_parser("collect", help="采集官方节目来源的一周节目表")
     collect.add_argument("--days", type=int, default=7, choices=range(1, 8), metavar="1..7")
     collect.add_argument("--output", type=Path, default=DEFAULT_DATASET)
     collect.add_argument("--status", type=Path, default=DEFAULT_STATUS)
@@ -98,7 +110,7 @@ def build_parser() -> argparse.ArgumentParser:
     search = commands.add_parser("search", help="检索已采集的节目表快照")
     search.add_argument("query", help="节目名或频道名关键词")
     search.add_argument("--input", type=Path, default=DEFAULT_DATASET)
-    search.add_argument("--provider", choices=["astro", "now_hk"])
+    search.add_argument("--provider", choices=["astro", "now_hk", "allente_se", "now_uk", "digi4k_ro", "tvplus_tr"])
     search.add_argument("--channel")
     search.add_argument("--date", help="节目开始日期，格式 YYYY-MM-DD")
     search.set_defaults(func=_search)

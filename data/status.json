@@ -1,19 +1,35 @@
 {
   "astro": {
     "status": "ok",
-    "records": 29157
+    "records": 29166
   },
   "now_hk": {
     "status": "ok",
-    "records": 23035
+    "records": 22899
+  },
+  "allente_se": {
+    "status": "ok",
+    "records": 43
+  },
+  "now_uk": {
+    "status": "ok",
+    "records": 123
+  },
+  "digi4k_ro": {
+    "status": "ok",
+    "records": 115
+  },
+  "tvplus_tr": {
+    "status": "ok",
+    "records": 34
   },
   "xmltv": {
     "status": "ok",
-    "channels": 284,
-    "programmes": 52192,
+    "channels": 299,
+    "programmes": 52380,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-08-24T12:12:04Z",
-  "total_records": 52192
+  "generated_at": "2026-08-24T13:26:55Z",
+  "total_records": 52380
 }

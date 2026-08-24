@@ -1,46 +1,37 @@
-# 官方 XMLTV 节目表：交付报告
+# Cathy-epg 交付报告
 
-**项目范围：** Astro（马来西亚）与 NOW TV（香港）官网节目表。  
-**仓库：** <https://github.com/waastudios/official-epg-search>  
-**XMLTV 订阅地址：** `https://raw.githubusercontent.com/waastudios/official-epg-search/master/data/epg.xml.gz`
+## 本次交付
 
-## 已交付内容
+本次更新将项目扩展为六类官方来源，并保持 **不使用 EPGshare、epg.pw 或其他第三方节目表聚合接口** 的约束。已生成新的 `data/epg.xml.gz`，并将仓库目标名称设为 **Cathy-epg**。
 
-本次已删除 StarHub 采集、导入与文档内容。仓库现在只保留 Astro 和 NOW TV（香港）两个运营商官网来源；未使用 EPGshare、epg.pw、IPTV 社区库或其他第三方节目表聚合站。
+| 来源键 | 市场与范围 | 本次记录数 | 官方数据页面 | 覆盖说明 |
+| --- | --- | ---: | --- | --- |
+| `astro` | 马来西亚 Astro | 29,166 | [Astro Content Guide](https://www.astro.com.my/content/channels) | 七日线性节目表 |
+| `now_hk` | 香港 NOW TV | 22,899 | [NOW TV Guide](https://nowplayer.now.com/tvguide) | 七日线性节目表；官网中文频道名 |
+| `allente_se` | 瑞典 V sport ultra HD | 43 | [Allente TV Guide](https://www.allente.se/tv-guide/) | 单频道七日节目表 |
+| `now_uk` | 英国 NOW Sports / Sky Sports | 123 | [Sky Sports live schedule](https://www.sky.com/watch/channel/sky-sports) | 官方直播活动；无全频道全天 EPG |
+| `digi4k_ro` | 罗马尼亚 Digi 4K | 115 | [Digi 4K](https://www.digi4k.ro/) | 官网连续七日节目表 |
+| `tvplus_tr` | 土耳其 Eurosport 1、2 | 34 | [TV+ Eurosport 1](https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77)、[TV+ Eurosport 2](https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106) | 官方电视提供商公开的当日完整节目表 |
 
-| 来源 | 市场 | 官方入口 | 本次记录数 |
-| --- | --- | --- | ---: |
-| Astro | 马来西亚 | [Content Guide — Channels](https://content.astro.com.my/channels) | 29,157 |
-| NOW TV | 香港 | [TV Guide](https://nowplayer.now.com/tvguide) | 23,035 |
-| **合计** |  |  | **52,192** |
+HBO Max 土耳其英文页用于验证当地提供 Eurosport 1 与 Eurosport 2；因该页不提供逐频道时刻表，节目明细来自同一市场官方电视提供商 TV+ 的公开节目页面。[1]
 
-## XMLTV 文件
+## 生成与验证
 
-| 文件 | 大小 | 验证结果 |
-| --- | ---: | --- |
-| `data/epg.xml` | 约 11 MB | 标准 XMLTV 文本输出。 |
-| `data/epg.xml.gz` | 约 571 KB | 已通过 gzip 完整性测试。 |
+最新快照生成于 **2026-08-24 13:26:55 UTC**。`data/status.json` 显示全部六个来源采集成功，共写入 **52,380** 条节目、**299** 个 XMLTV 频道。`gzip -t data/epg.xml.gz` 已通过，说明压缩文件可正常解压。
 
-导出的 XMLTV 包含 **284 个频道**和 **52,192 条节目**。频道 ID 使用 `astro.<频道号>` 与 `now_hk.<频道号>` 的稳定形式；节目 `start`、`stop` 时间保留 `+0800` 时区偏移。
+香港频道的 XMLTV ID 没有变更：`now_hk.138` 仍为该 ID；其显示名已改为 NOW TV 官网中文名称 **Now爆谷星影台**。该变化仅影响 `display-name`，不破坏使用稳定频道 ID 的订阅端配置。
 
-## 订阅与刷新
-
-支持 XMLTV gzip 的客户端可直接使用以下地址：
+## 订阅地址
 
 ```text
-https://raw.githubusercontent.com/waastudios/official-epg-search/master/data/epg.xml.gz
+https://raw.githubusercontent.com/waastudios/Cathy-epg/master/data/epg.xml.gz
 ```
 
-建议每天刷新一次，以维持“当天起未来 7 天”的滚动节目表。刷新的命令如下：
-
-```bash
-python -m pip install -e .
-epg collect --days 7
-```
-
-> 仓库现已公开，且订阅地址已验证可在无需认证的情况下返回 HTTP 200 与完整 gzip 内容。
+该文件是当前起未来七天的滚动快照。建议每日刷新；土耳其 TV+ 的匿名公开 SSR 页面当前稳定提供当日节目，其后续日排期在官网浏览器会话中动态加载，因此本快照不会伪造未来的 Eurosport 时段。
 
 ## 参考资料
 
-[1]: https://content.astro.com.my/channels "Astro Content Guide — Channel guide"
-[2]: https://nowplayer.now.com/tvguide "NOW TV — TV Guide"
+[1]: https://www.hbomax.com/tr/en "HBO Max Türkiye — English site"
+[2]: https://www.digi4k.ro/ "Digi 4K România"
+[3]: https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77 "TV+ — Eurosport 1 schedule"
+[4]: https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106 "TV+ — Eurosport 2 schedule"

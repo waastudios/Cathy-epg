@@ -29,7 +29,7 @@ def write_xmltv(records: Iterable[Programme], xml_path: Path, gzip_path: Path) -
     """写入 XMLTV 与 gzip 文件，返回频道数和节目数。"""
     programmes = sorted(
         records,
-        key=lambda item: (item.provider, item.channel_number, item.start_at, item.end_at, item.title),
+        key=lambda item: (item.provider, item.channel_number, item.start_at, item.end_at or "", item.title),
     )
     channels: dict[str, list[Programme]] = defaultdict(list)
     for programme in programmes:
@@ -44,15 +44,13 @@ def write_xmltv(records: Iterable[Programme], xml_path: Path, gzip_path: Path) -
         ET.SubElement(channel, "url").text = first.source_url
 
     for programme in programmes:
-        item = ET.SubElement(
-            root,
-            "programme",
-            {
-                "start": _xmltv_timestamp(programme.start_at),
-                "stop": _xmltv_timestamp(programme.end_at),
-                "channel": _xmltv_channel_id(programme),
-            },
-        )
+        attributes = {
+            "start": _xmltv_timestamp(programme.start_at),
+            "channel": _xmltv_channel_id(programme),
+        }
+        if programme.end_at:
+            attributes["stop"] = _xmltv_timestamp(programme.end_at)
+        item = ET.SubElement(root, "programme", attributes)
         ET.SubElement(item, "title").text = programme.title
         ET.SubElement(item, "url").text = programme.source_url
 
