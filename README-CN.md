@@ -13,7 +13,7 @@
 | 瑞典 | 完整 V Sport 体育频道组合 | [Allente TV Guide](https://www.allente.se/tv-guide/) | 13 条 V Sport 频道的完整七日节目表 | 来源原文 |
 | 挪威 | TVNorge HD、REX HD、FEM HD、Eurosport Norge HD | [Allente Norway TV Guide](https://www.allente.no/tv-guide/) | 完整七日频道级节目表；排除字幕与音频描述镜像 | 挪威语／来源原文 |
 | 英国 | Sky Sports、TNT Sports 1–4、BBC、ITV、Channel 4 与指定 Sky 娱乐频道 | [EE TV Player Live TV Schedule](https://player.ee.co.uk/#/livetv/schedule) | 31 条去重后的标准清晰度频道，提供完整七日频道级节目表、官方频道名与开始/结束时间 | 英文 |
-| 美国 | USA Network | [USA Network schedule](https://www.usanetwork.com/schedule) | 仅使用公开 USA-East 馈源的滚动七日节目表 | 英文 |
+| 美国 | CBS East HD、USA Network | [CBS Schedule](https://www.cbs.com/schedule/) 与 [USA Network schedule](https://www.usanetwork.com/schedule) | 仅使用公开 CBS East HD 与 USA-East 馈源的滚动七日节目表 | 英文 |
 | 罗马尼亚 | Digi 4K | [Digi 4K](https://www.digi4k.ro/) | 官网公开的连续七日节目表 | 罗马尼亚语 |
 | 土耳其 | Eurosport 1、Eurosport 2 | [TV+ Eurosport 1](https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77) 与 [TV+ Eurosport 2](https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106) | TV+ 官方页公开的完整当日节目表 | 土耳其语 |
 
@@ -25,9 +25,11 @@ HBO Max 土耳其英文页明确说明 Eurosport 1 与 Eurosport 2 及直播活�
 
 挪威来源使用匿名公开的 Allente Norway TV Guide，保留其标准频道官方名称 **TVNorge HD**、**REX HD**、**FEM HD** 和 **Eurosport Norge HD**，并排除与其并行的字幕及音频描述频道。[9]
 
+CBS 官方 Schedule 页面在匿名正常访问中加载 EPG JSON，其频道对象的正式名称是 **CBS East HD**。该馈源包含 CBS New York 的本地节目条目，但 XMLTV 严格保留官方 `CBS East HD` 显示名，不把它改写为通用 ID 或来源未明示的台名。[11]
+
 USA Network 官方节目页正常加载东／西时移馈源的 XMLTV。由于用户只要求 USA Network，仓库仅收录 **USA Network** 的东部馈源，不以 USA-West 的时移表重复同一频道。[10]
 
-若官网仅能确认频道存在、却没有可公开复用的频道级节目数据，项目不会创建空频道。因此，目前未发布纽约 ABC/NBC/CBS/FOX、FS1/FS2、TBS/truTV、France 2–5、波兰 Eurosport 1–4 与 Eurosport 4K。NHK 国内频道的官方文字节目表还明确规定，节目数据除私人使用外须取得 NHK 许可；公开发布 XMLTV 不属于私人使用，故未收录 NHK G、E、BS、BSP4K、BS8K 的节目条目。
+若官网仅能确认频道存在、却没有可公开复用的频道级节目数据，项目不会创建空频道。CBS 官方馈源现已加入；纽约 ABC/NBC/FOX、NBC Sports NOW、ESPN/ESPN2/ESPNews/ESPNU、FS1/FS2、TBS/truTV、France 2–5、波兰 Eurosport 1–4 与 Eurosport 4K 当前仍未发布。NBC、ABC 与 ESPN 已公开部分直播导览信息，但尚未确认可稳定复用的完整频道级节目表。NHK 国内频道的官方文字节目表还明确规定，节目数据除私人使用外须取得 NHK 许可；公开发布 XMLTV 不属于私人使用，故未收录 NHK G、E、BS、BSP4K、BS8K 的节目条目。
 
 ## XMLTV 文件与订阅
 
@@ -46,7 +48,7 @@ USA Network 官方节目页正常加载东／西时移馈源的 XMLTV。由于�
 https://raw.githubusercontent.com/waastudios/Cathy-epg/master/data/epg.xml.gz
 ```
 
-频道标识稳定使用 `<provider>.<channel-id>`。例如，香港 NOW TV 的频道 ID **`now_hk.138`** 保持不变，显示名已由通用 `CH 138` 改为官网中文名 **`Now爆谷星影台`**。
+频道标识通常稳定使用 `<provider>.<channel-id>`。例如，香港 NOW TV 的频道 ID **`now_hk.138`** 保持不变，显示名已由通用 `CH 138` 改为官网中文名 **`Now爆谷星影台`**。Digi 4K 是用户指定的单频道例外：XMLTV 频道 ID 精确为 **`digi4k_ro`**，显示名保持官方名称 **Digi 4K**。
 
 ## 本地运行
 
@@ -67,6 +69,7 @@ epg search "TNT Sports" --provider ee_uk
 epg search "BBC" --provider ee_uk
 epg search "Eurosport" --provider allente_no
 epg search "Law & Order" --provider usa_network_us
+epg search "CBS News New York" --provider cbs_us
 ```
 
 节目排期会临时变更；建议每日执行一次刷新，以维持“当天起未来七天”的滚动窗口。每日运行前应复核相关网站条款、控制访问频率，并在来源不可用时查看 `data/status.json`，而非使用第三方替代数据。
@@ -83,3 +86,4 @@ epg search "Law & Order" --provider usa_network_us
 [8]: https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106 "TV+ — Eurosport 2 schedule"
 [9]: https://www.allente.no/tv-guide/ "Allente Norway — TV Guide"
 [10]: https://www.usanetwork.com/schedule "USA Network — public schedule"
+[11]: https://www.cbs.com/schedule/ "CBS — Schedule"

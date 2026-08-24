@@ -13,8 +13,12 @@ from .models import Programme
 
 
 def _xmltv_channel_id(record: Programme) -> str:
-    """构造稳定且跨来源不冲突的 XMLTV 频道标识。"""
-    return f"{record.provider}.{record.channel_number}"
+    """构造稳定且跨来源不冲突的 XMLTV 频道标识。
+
+    通常使用 `<provider>.<channel-number>`；没有公开频道号的单频道来源可将
+    `channel_number` 留空，此时精确使用 `<provider>`，例如 `digi4k_ro`。
+    """
+    return record.provider if not record.channel_number else f"{record.provider}.{record.channel_number}"
 
 
 def _xmltv_timestamp(value: str) -> str:

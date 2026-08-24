@@ -66,6 +66,9 @@ EE_UK_CHANNELS: tuple[tuple[str, str, str], ...] = (
     ("346", "Sky One", "http://bds.tv/services/BT_255_1402_SD"),
     ("349", "Sky Crime", "http://bds.tv/services/BT_753644_1212_SD"),
 )
+CBS_GUIDE = "https://www.cbs.com/schedule/"
+# 由 CBS Schedule 页面匿名正常加载；频道对象自报名称 `CBS East HD`，其中包含 CBS New York 本地节目。
+CBS_EAST_EPG = "https://video-assets.cbssports.com/epg/channels/28/epg.json"
 USA_NETWORK_GUIDE = "https://www.usanetwork.com/schedule"
 # USA Network 自身公开网页正常加载的 USA-East XMLTV 地址；不添加用户未要求的 USA-West 时移馈源。
 USA_NETWORK_EAST_EPG = (
@@ -412,6 +415,71 @@ def _parse_xmltv_timestamp(value: str, zone: ZoneInfo) -> str | None:
         return None
 
 
+def collect_cbs(days: int = 7) -> list[Programme]:
+    """读取 CBS 官方 Schedule 页面公开加载的 CBS East HD 节目表。
+
+    CBS 页面在正常匿名访问中请求单一频道 JSON，公开返回频道标题和每档的
+    ISO `startTime` / `endTime`。只发布该官方 East feed，避免与未来可能发现的
+    West feed 或本地重传重复。
+    """
+    session = _session()
+    response = session.get(CBS_EAST_EPG, timeout=60)
+    response.raise_for_status()
+    try:
+        payload = response.json()
+    except ValueError as exc:
+        raise SourceUnavailable("CBS 官方 Schedule 页面未返回有效的频道 EPG JSON。") from exc
+    if not isinstance(payload, dict):
+        raise SourceUnavailable("CBS 官方 Schedule 页面返回的 EPG 格式发生变化。")
+
+    channel_name = ((((payload.get("video") or {}).get("about") or {}).get("title")) or "").strip()
+    channel_slug = ((((payload.get("video") or {}).get("identifiers") or {}).get("slug")) or "cbs-east-hd").strip()
+    schedule = payload.get("schedule")
+    if not channel_name or not isinstance(schedule, list):
+        raise SourceUnavailable("CBS 官方 EPG 未包含频道名称或节目列表。")
+
+    zone = ZoneInfo("America/New_York")
+    today = datetime.now(zone).date()
+    last_day = today + timedelta(days=days)
+    retrieved_at = utc_now_iso()
+    records: list[Programme] = []
+    for item in schedule:
+        if not isinstance(item, dict):
+            continue
+        program = item.get("program") if isinstance(item.get("program"), dict) else {}
+        episode = item.get("episode") if isinstance(item.get("episode"), dict) else {}
+        title = ((program.get("title") or episode.get("title") or "").strip())
+        start_raw = item.get("startTime")
+        end_raw = item.get("endTime")
+        if not (title and isinstance(start_raw, str) and isinstance(end_raw, str)):
+            continue
+        try:
+            start = datetime.fromisoformat(start_raw.replace("Z", "+00:00")).astimezone(zone)
+            end = datetime.fromisoformat(end_raw.replace("Z", "+00:00")).astimezone(zone)
+        except ValueError:
+            continue
+        if end <= start or not (today <= start.date() < last_day):
+            continue
+        records.append(
+            Programme(
+                provider="cbs_us",
+                country="US",
+                timezone="America/New_York",
+                channel_id=channel_slug,
+                channel_number=channel_slug,
+                channel_name=channel_name,
+                title=title,
+                start_at=start.isoformat(),
+                end_at=end.isoformat(),
+                source_url=CBS_GUIDE,
+                retrieved_at=retrieved_at,
+            )
+        )
+    if not records:
+        raise SourceUnavailable("CBS 官方公开 EPG 未返回目标日期范围内的节目记录。")
+    return _deduplicate(records)
+
+
 def collect_usa_network(days: int = 7) -> list[Programme]:
     """读取 USA Network 官方网页公开调用的 USA-East XMLTV 节目表。
 
@@ -514,8 +582,9 @@ def collect_digi4k(days: int = 7) -> list[Programme]:
                     provider="digi4k_ro",
                     country="RO",
                     timezone="Europe/Bucharest",
-                    channel_id="digi-4k",
-                    channel_number="digi-4k",
+                    channel_id="digi4k_ro",
+                    # 用户指定 XMLTV ID 为 `digi4k_ro`；单频道来源不附加旧的 `digi-4k` 后缀。
+                    channel_number="",
                     channel_name="Digi 4K",
                     title=title,
                     start_at=start.isoformat(),

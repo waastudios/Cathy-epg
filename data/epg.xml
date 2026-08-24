@@ -708,7 +708,7 @@
     <display-name>GOXUAN</display-name>
     <url>https://www.astro.com.my/content/channels</url>
   </channel>
-  <channel id="digi4k_ro.digi-4k">
+  <channel id="digi4k_ro">
     <display-name>Digi 4K</display-name>
     <url>https://www.digi4k.ro/</url>
   </channel>
@@ -124416,463 +124416,463 @@
     <title>GOXUAN MC OF THE DAY</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260824003500 +0300" channel="digi4k_ro.digi-4k" stop="20260824080000 +0300">
+  <programme start="20260824003500 +0300" channel="digi4k_ro" stop="20260824080000 +0300">
     <title>Muzică</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260824080000 +0300" channel="digi4k_ro.digi-4k" stop="20260824100000 +0300">
+  <programme start="20260824080000 +0300" channel="digi4k_ro" stop="20260824100000 +0300">
     <title>Rayo vs Real Sociedad</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260824100000 +0300" channel="digi4k_ro.digi-4k" stop="20260824103000 +0300">
+  <programme start="20260824100000 +0300" channel="digi4k_ro" stop="20260824103000 +0300">
     <title>Minunile oceanului | s2 ep. 8</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260824103000 +0300" channel="digi4k_ro.digi-4k" stop="20260824110000 +0300">
+  <programme start="20260824103000 +0300" channel="digi4k_ro" stop="20260824110000 +0300">
     <title>Balistică în spatele casei | ep. 1</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260824110000 +0300" channel="digi4k_ro.digi-4k" stop="20260824120000 +0300">
+  <programme start="20260824110000 +0300" channel="digi4k_ro" stop="20260824120000 +0300">
     <title>O planetă dinamică | ep. 3</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260824120000 +0300" channel="digi4k_ro.digi-4k" stop="20260824123000 +0300">
+  <programme start="20260824120000 +0300" channel="digi4k_ro" stop="20260824123000 +0300">
     <title>Ştiinţa bate ficţiunea | ep. 3</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260824123000 +0300" channel="digi4k_ro.digi-4k" stop="20260824130000 +0300">
+  <programme start="20260824123000 +0300" channel="digi4k_ro" stop="20260824130000 +0300">
     <title>Ştiinţa bate ficţiunea | ep. 4</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260824130000 +0300" channel="digi4k_ro.digi-4k" stop="20260824140000 +0300">
+  <programme start="20260824130000 +0300" channel="digi4k_ro" stop="20260824140000 +0300">
     <title>Tabăra puilor de urs | ep. 5</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260824140000 +0300" channel="digi4k_ro.digi-4k" stop="20260824150000 +0300">
+  <programme start="20260824140000 +0300" channel="digi4k_ro" stop="20260824150000 +0300">
     <title>Odiseea insulelor greceşti | ep. 4</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260824150000 +0300" channel="digi4k_ro.digi-4k" stop="20260824155000 +0300">
+  <programme start="20260824150000 +0300" channel="digi4k_ro" stop="20260824155000 +0300">
     <title>Urangutanii: Şcoala e o junglă | s3 ep. 1</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260824155000 +0300" channel="digi4k_ro.digi-4k" stop="20260824174000 +0300">
+  <programme start="20260824155000 +0300" channel="digi4k_ro" stop="20260824174000 +0300">
     <title>Getafe vs Barcelona</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260824174000 +0300" channel="digi4k_ro.digi-4k" stop="20260824183500 +0300">
+  <programme start="20260824174000 +0300" channel="digi4k_ro" stop="20260824183500 +0300">
     <title>Odiseea insulelor greceşti | ep. 5</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260824183500 +0300" channel="digi4k_ro.digi-4k" stop="20260824190000 +0300">
+  <programme start="20260824183500 +0300" channel="digi4k_ro" stop="20260824190000 +0300">
     <title>Balistică în spatele casei | ep. 2</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260824190000 +0300" channel="digi4k_ro.digi-4k" stop="20260824193000 +0300">
+  <programme start="20260824190000 +0300" channel="digi4k_ro" stop="20260824193000 +0300">
     <title>Balistică în spatele casei | ep. 3</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260824193000 +0300" channel="digi4k_ro.digi-4k" stop="20260824200000 +0300">
+  <programme start="20260824193000 +0300" channel="digi4k_ro" stop="20260824200000 +0300">
     <title>Ştiinţa bate ficţiunea | ep. 5</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260824200000 +0300" channel="digi4k_ro.digi-4k" stop="20260824203000 +0300">
+  <programme start="20260824200000 +0300" channel="digi4k_ro" stop="20260824203000 +0300">
     <title>Ştiinţa bate ficţiunea | ep. 6</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260824203000 +0300" channel="digi4k_ro.digi-4k" stop="20260824223000 +0300">
+  <programme start="20260824203000 +0300" channel="digi4k_ro" stop="20260824223000 +0300">
     <title>Osasuna vs Levante</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260824223000 +0300" channel="digi4k_ro.digi-4k">
+  <programme start="20260824223000 +0300" channel="digi4k_ro">
     <title>Malaga vs Deportivo</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260825000500 +0300" channel="digi4k_ro.digi-4k" stop="20260825080000 +0300">
+  <programme start="20260825000500 +0300" channel="digi4k_ro" stop="20260825080000 +0300">
     <title>Muzică</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260825080000 +0300" channel="digi4k_ro.digi-4k" stop="20260825094500 +0300">
+  <programme start="20260825080000 +0300" channel="digi4k_ro" stop="20260825094500 +0300">
     <title>Getafe vs Barcelona</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260825094500 +0300" channel="digi4k_ro.digi-4k" stop="20260825101000 +0300">
+  <programme start="20260825094500 +0300" channel="digi4k_ro" stop="20260825101000 +0300">
     <title>În Munții Nanling | ep. 1</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260825101000 +0300" channel="digi4k_ro.digi-4k" stop="20260825103500 +0300">
+  <programme start="20260825101000 +0300" channel="digi4k_ro" stop="20260825103500 +0300">
     <title>Balistică în spatele casei | ep. 2</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260825103500 +0300" channel="digi4k_ro.digi-4k" stop="20260825110000 +0300">
+  <programme start="20260825103500 +0300" channel="digi4k_ro" stop="20260825110000 +0300">
     <title>Balistică în spatele casei | ep. 3</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260825110000 +0300" channel="digi4k_ro.digi-4k" stop="20260825120000 +0300">
+  <programme start="20260825110000 +0300" channel="digi4k_ro" stop="20260825120000 +0300">
     <title>O planetă dinamică | ep. 4</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260825120000 +0300" channel="digi4k_ro.digi-4k" stop="20260825130000 +0300">
+  <programme start="20260825120000 +0300" channel="digi4k_ro" stop="20260825130000 +0300">
     <title>Tabăra puilor de urs | ep. 6</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260825130000 +0300" channel="digi4k_ro.digi-4k" stop="20260825133000 +0300">
+  <programme start="20260825130000 +0300" channel="digi4k_ro" stop="20260825133000 +0300">
     <title>Ştiinţa bate ficţiunea | ep. 5</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260825133000 +0300" channel="digi4k_ro.digi-4k" stop="20260825140000 +0300">
+  <programme start="20260825133000 +0300" channel="digi4k_ro" stop="20260825140000 +0300">
     <title>Ştiinţa bate ficţiunea | ep. 6</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260825140000 +0300" channel="digi4k_ro.digi-4k" stop="20260825150000 +0300">
+  <programme start="20260825140000 +0300" channel="digi4k_ro" stop="20260825150000 +0300">
     <title>Urangutanii: Şcoala e o junglă | s3 ep. 1</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260825150000 +0300" channel="digi4k_ro.digi-4k" stop="20260825160000 +0300">
+  <programme start="20260825150000 +0300" channel="digi4k_ro" stop="20260825160000 +0300">
     <title>Urangutanii: Şcoala e o junglă | s3 ep. 2</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260825160000 +0300" channel="digi4k_ro.digi-4k" stop="20260825175000 +0300">
+  <programme start="20260825160000 +0300" channel="digi4k_ro" stop="20260825175000 +0300">
     <title>Alaves vs Mallorca</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260825175000 +0300" channel="digi4k_ro.digi-4k" stop="20260825181500 +0300">
+  <programme start="20260825175000 +0300" channel="digi4k_ro" stop="20260825181500 +0300">
     <title>Balistică în spatele casei | ep. 4</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260825181500 +0300" channel="digi4k_ro.digi-4k" stop="20260825184500 +0300">
+  <programme start="20260825181500 +0300" channel="digi4k_ro" stop="20260825184500 +0300">
     <title>Balistică în spatele casei | ep. 5</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260825184500 +0300" channel="digi4k_ro.digi-4k" stop="20260825194500 +0300">
+  <programme start="20260825184500 +0300" channel="digi4k_ro" stop="20260825194500 +0300">
     <title>Cei mai periculoşi vulcani | ep. 1</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260825194500 +0300" channel="digi4k_ro.digi-4k" stop="20260825220000 +0300">
+  <programme start="20260825194500 +0300" channel="digi4k_ro" stop="20260825220000 +0300">
     <title>Sabah vs Hapoel</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260825220000 +0300" channel="digi4k_ro.digi-4k">
+  <programme start="20260825220000 +0300" channel="digi4k_ro">
     <title>Lask Linz vs Celtic</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260826000500 +0300" channel="digi4k_ro.digi-4k" stop="20260826080000 +0300">
+  <programme start="20260826000500 +0300" channel="digi4k_ro" stop="20260826080000 +0300">
     <title>Muzică</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260826080000 +0300" channel="digi4k_ro.digi-4k" stop="20260826095500 +0300">
+  <programme start="20260826080000 +0300" channel="digi4k_ro" stop="20260826095500 +0300">
     <title>Alaves vs Mallorca</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260826095500 +0300" channel="digi4k_ro.digi-4k" stop="20260826110000 +0300">
+  <programme start="20260826095500 +0300" channel="digi4k_ro" stop="20260826110000 +0300">
     <title>Cei mai periculoşi vulcani | ep. 1</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260826110000 +0300" channel="digi4k_ro.digi-4k" stop="20260826120000 +0300">
+  <programme start="20260826110000 +0300" channel="digi4k_ro" stop="20260826120000 +0300">
     <title>Cei mai periculoşi vulcani | ep. 2</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260826120000 +0300" channel="digi4k_ro.digi-4k" stop="20260826125500 +0300">
+  <programme start="20260826120000 +0300" channel="digi4k_ro" stop="20260826125500 +0300">
     <title>Arome din Yucatan</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260826125500 +0300" channel="digi4k_ro.digi-4k" stop="20260826132500 +0300">
+  <programme start="20260826125500 +0300" channel="digi4k_ro" stop="20260826132500 +0300">
     <title>Ştiinţa bate ficţiunea | ep. 7</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260826132500 +0300" channel="digi4k_ro.digi-4k" stop="20260826140000 +0300">
+  <programme start="20260826132500 +0300" channel="digi4k_ro" stop="20260826140000 +0300">
     <title>Ştiinţa bate ficţiunea | ep. 8</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260826140000 +0300" channel="digi4k_ro.digi-4k" stop="20260826150000 +0300">
+  <programme start="20260826140000 +0300" channel="digi4k_ro" stop="20260826150000 +0300">
     <title>Urangutanii: Şcoala e o junglă | s3 ep. 2</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260826150000 +0300" channel="digi4k_ro.digi-4k" stop="20260826160000 +0300">
+  <programme start="20260826150000 +0300" channel="digi4k_ro" stop="20260826160000 +0300">
     <title>Urangutanii: Şcoala e o junglă | s3 ep. 3</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260826160000 +0300" channel="digi4k_ro.digi-4k" stop="20260826175000 +0300">
+  <programme start="20260826160000 +0300" channel="digi4k_ro" stop="20260826175000 +0300">
     <title>Valencia vs Girona</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260826175000 +0300" channel="digi4k_ro.digi-4k" stop="20260826182000 +0300">
+  <programme start="20260826175000 +0300" channel="digi4k_ro" stop="20260826182000 +0300">
     <title>Balistică în spatele casei | ep. 5</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260826182000 +0300" channel="digi4k_ro.digi-4k" stop="20260826191000 +0300">
+  <programme start="20260826182000 +0300" channel="digi4k_ro" stop="20260826191000 +0300">
     <title>Odiseea insulelor greceşti | ep. 6</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260826191000 +0300" channel="digi4k_ro.digi-4k" stop="20260826200000 +0300">
+  <programme start="20260826191000 +0300" channel="digi4k_ro" stop="20260826200000 +0300">
     <title>Misterele apelor fermecate | ep. 1</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260826200000 +0300" channel="digi4k_ro.digi-4k" stop="20260826210000 +0300">
+  <programme start="20260826200000 +0300" channel="digi4k_ro" stop="20260826210000 +0300">
     <title>O planetǎ de bizarerii | ep. 1</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260826210000 +0300" channel="digi4k_ro.digi-4k" stop="20260826220000 +0300">
+  <programme start="20260826210000 +0300" channel="digi4k_ro" stop="20260826220000 +0300">
     <title>O planetǎ de bizarerii | ep. 2</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260826220000 +0300" channel="digi4k_ro.digi-4k">
+  <programme start="20260826220000 +0300" channel="digi4k_ro">
     <title>Real Madrid vs Real Sociedad</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260827000500 +0300" channel="digi4k_ro.digi-4k" stop="20260827080000 +0300">
+  <programme start="20260827000500 +0300" channel="digi4k_ro" stop="20260827080000 +0300">
     <title>Muzică</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260827080000 +0300" channel="digi4k_ro.digi-4k" stop="20260827095000 +0300">
+  <programme start="20260827080000 +0300" channel="digi4k_ro" stop="20260827095000 +0300">
     <title>Valencia vs Girona</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260827095000 +0300" channel="digi4k_ro.digi-4k" stop="20260827104000 +0300">
+  <programme start="20260827095000 +0300" channel="digi4k_ro" stop="20260827104000 +0300">
     <title>Misterele apelor fermecate | ep. 2</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260827104000 +0300" channel="digi4k_ro.digi-4k" stop="20260827110000 +0300">
+  <programme start="20260827104000 +0300" channel="digi4k_ro" stop="20260827110000 +0300">
     <title>Balistică în spatele casei | ep. 1</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260827110000 +0300" channel="digi4k_ro.digi-4k" stop="20260827120000 +0300">
+  <programme start="20260827110000 +0300" channel="digi4k_ro" stop="20260827120000 +0300">
     <title>Cei mai periculoşi vulcani | ep. 2</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260827120000 +0300" channel="digi4k_ro.digi-4k" stop="20260827123000 +0300">
+  <programme start="20260827120000 +0300" channel="digi4k_ro" stop="20260827123000 +0300">
     <title>Ştiinţa bate ficţiunea | ep. 9</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260827123000 +0300" channel="digi4k_ro.digi-4k" stop="20260827130000 +0300">
+  <programme start="20260827123000 +0300" channel="digi4k_ro" stop="20260827130000 +0300">
     <title>Ştiinţa bate ficţiunea | ep. 10</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260827130000 +0300" channel="digi4k_ro.digi-4k" stop="20260827140000 +0300">
+  <programme start="20260827130000 +0300" channel="digi4k_ro" stop="20260827140000 +0300">
     <title>Valea Rinului: Reclǎdind natura</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260827140000 +0300" channel="digi4k_ro.digi-4k" stop="20260827150000 +0300">
+  <programme start="20260827140000 +0300" channel="digi4k_ro" stop="20260827150000 +0300">
     <title>Urangutanii: Şcoala e o junglă | s3 ep. 3</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260827150000 +0300" channel="digi4k_ro.digi-4k" stop="20260827155000 +0300">
+  <programme start="20260827150000 +0300" channel="digi4k_ro" stop="20260827155000 +0300">
     <title>Urangutanii: Şcoala e o junglă | s3 ep. 4</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260827155000 +0300" channel="digi4k_ro.digi-4k" stop="20260827174000 +0300">
+  <programme start="20260827155000 +0300" channel="digi4k_ro" stop="20260827174000 +0300">
     <title>Atletico Madrid vs Athletic Bilbao</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260827174000 +0300" channel="digi4k_ro.digi-4k" stop="20260827180500 +0300">
+  <programme start="20260827174000 +0300" channel="digi4k_ro" stop="20260827180500 +0300">
     <title>Balistică în spatele casei | ep. 6</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260827180500 +0300" channel="digi4k_ro.digi-4k" stop="20260827183000 +0300">
+  <programme start="20260827180500 +0300" channel="digi4k_ro" stop="20260827183000 +0300">
     <title>Balistică în spatele casei | ep. 7</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260827183000 +0300" channel="digi4k_ro.digi-4k" stop="20260827193000 +0300">
+  <programme start="20260827183000 +0300" channel="digi4k_ro" stop="20260827193000 +0300">
     <title>Cei mai periculoşi vulcani | ep. 3</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260827193000 +0300" channel="digi4k_ro.digi-4k" stop="20260827200000 +0300">
+  <programme start="20260827193000 +0300" channel="digi4k_ro" stop="20260827200000 +0300">
     <title>Balistică în spatele casei | ep. 6</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260827200000 +0300" channel="digi4k_ro.digi-4k" stop="20260827210000 +0300">
+  <programme start="20260827200000 +0300" channel="digi4k_ro" stop="20260827210000 +0300">
     <title>O planetǎ de bizarerii | ep. 3</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260827210000 +0300" channel="digi4k_ro.digi-4k" stop="20260827220000 +0300">
+  <programme start="20260827210000 +0300" channel="digi4k_ro" stop="20260827220000 +0300">
     <title>O planetǎ de bizarerii | ep. 4</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260827220000 +0300" channel="digi4k_ro.digi-4k">
+  <programme start="20260827220000 +0300" channel="digi4k_ro">
     <title>Barcelona vs Athletic</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260828003500 +0300" channel="digi4k_ro.digi-4k" stop="20260828080000 +0300">
+  <programme start="20260828003500 +0300" channel="digi4k_ro" stop="20260828080000 +0300">
     <title>Muzică</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260828080000 +0300" channel="digi4k_ro.digi-4k" stop="20260828095500 +0300">
+  <programme start="20260828080000 +0300" channel="digi4k_ro" stop="20260828095500 +0300">
     <title>Atletico Madrid vs Athletic Bilbao</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260828095500 +0300" channel="digi4k_ro.digi-4k" stop="20260828110000 +0300">
+  <programme start="20260828095500 +0300" channel="digi4k_ro" stop="20260828110000 +0300">
     <title>Misterele apelor fermecate | ep. 3</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260828110000 +0300" channel="digi4k_ro.digi-4k" stop="20260828120000 +0300">
+  <programme start="20260828110000 +0300" channel="digi4k_ro" stop="20260828120000 +0300">
     <title>Cei mai periculoşi vulcani | ep. 3</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260828120000 +0300" channel="digi4k_ro.digi-4k" stop="20260828123000 +0300">
+  <programme start="20260828120000 +0300" channel="digi4k_ro" stop="20260828123000 +0300">
     <title>Bali: paradisul culinar | ep. 1</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260828123000 +0300" channel="digi4k_ro.digi-4k" stop="20260828130000 +0300">
+  <programme start="20260828123000 +0300" channel="digi4k_ro" stop="20260828130000 +0300">
     <title>Bali: paradisul culinar | ep. 2</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260828130000 +0300" channel="digi4k_ro.digi-4k" stop="20260828140000 +0300">
+  <programme start="20260828130000 +0300" channel="digi4k_ro" stop="20260828140000 +0300">
     <title>Fluturii: eroii naturii</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260828140000 +0300" channel="digi4k_ro.digi-4k" stop="20260828150000 +0300">
+  <programme start="20260828140000 +0300" channel="digi4k_ro" stop="20260828150000 +0300">
     <title>Urangutanii: Şcoala e o junglă | s3 ep. 4</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260828150000 +0300" channel="digi4k_ro.digi-4k" stop="20260828160000 +0300">
+  <programme start="20260828150000 +0300" channel="digi4k_ro" stop="20260828160000 +0300">
     <title>Urangutanii: Şcoala e o junglă | s3 ep. 5</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260828160000 +0300" channel="digi4k_ro.digi-4k" stop="20260828180000 +0300">
+  <programme start="20260828160000 +0300" channel="digi4k_ro" stop="20260828180000 +0300">
     <title>Betis vs Real Madrid</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260828180000 +0300" channel="digi4k_ro.digi-4k" stop="20260828182500 +0300">
+  <programme start="20260828180000 +0300" channel="digi4k_ro" stop="20260828182500 +0300">
     <title>Balistică în spatele casei | ep. 7</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260828182500 +0300" channel="digi4k_ro.digi-4k" stop="20260828185500 +0300">
+  <programme start="20260828182500 +0300" channel="digi4k_ro" stop="20260828185500 +0300">
     <title>Lucrătorii din sălbăticie | ep. 1</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260828185500 +0300" channel="digi4k_ro.digi-4k" stop="20260828200000 +0300">
+  <programme start="20260828185500 +0300" channel="digi4k_ro" stop="20260828200000 +0300">
     <title>Orașul de corali | ep. 1</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260828200000 +0300" channel="digi4k_ro.digi-4k" stop="20260828220500 +0300">
+  <programme start="20260828200000 +0300" channel="digi4k_ro" stop="20260828220500 +0300">
     <title>Racing vs Elche</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260828220500 +0300" channel="digi4k_ro.digi-4k" stop="20260828223000 +0300">
+  <programme start="20260828220500 +0300" channel="digi4k_ro" stop="20260828223000 +0300">
     <title>Balistică în spatele casei | ep. 5</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260828223000 +0300" channel="digi4k_ro.digi-4k">
+  <programme start="20260828223000 +0300" channel="digi4k_ro">
     <title>Alaves vs Villarreal</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260829003500 +0300" channel="digi4k_ro.digi-4k" stop="20260829080000 +0300">
+  <programme start="20260829003500 +0300" channel="digi4k_ro" stop="20260829080000 +0300">
     <title>Muzică</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260829080000 +0300" channel="digi4k_ro.digi-4k" stop="20260829100000 +0300">
+  <programme start="20260829080000 +0300" channel="digi4k_ro" stop="20260829100000 +0300">
     <title>Betis vs Real Madrid</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260829100000 +0300" channel="digi4k_ro.digi-4k" stop="20260829103000 +0300">
+  <programme start="20260829100000 +0300" channel="digi4k_ro" stop="20260829103000 +0300">
     <title>Balistică în spatele casei | ep. 3</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260829103000 +0300" channel="digi4k_ro.digi-4k" stop="20260829110000 +0300">
+  <programme start="20260829103000 +0300" channel="digi4k_ro" stop="20260829110000 +0300">
     <title>Lucrătorii din sălbăticie | ep. 1</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260829110000 +0300" channel="digi4k_ro.digi-4k" stop="20260829120000 +0300">
+  <programme start="20260829110000 +0300" channel="digi4k_ro" stop="20260829120000 +0300">
     <title>Orașul de corali | ep. 1</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260829120000 +0300" channel="digi4k_ro.digi-4k" stop="20260829130000 +0300">
+  <programme start="20260829120000 +0300" channel="digi4k_ro" stop="20260829130000 +0300">
     <title>Cum combatem schimbarea climatului</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260829130000 +0300" channel="digi4k_ro.digi-4k" stop="20260829133000 +0300">
+  <programme start="20260829130000 +0300" channel="digi4k_ro" stop="20260829133000 +0300">
     <title>Bali: paradisul culinar | ep. 3</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260829133000 +0300" channel="digi4k_ro.digi-4k" stop="20260829140000 +0300">
+  <programme start="20260829133000 +0300" channel="digi4k_ro" stop="20260829140000 +0300">
     <title>Bali: paradisul culinar | ep. 4</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260829140000 +0300" channel="digi4k_ro.digi-4k" stop="20260829150000 +0300">
+  <programme start="20260829140000 +0300" channel="digi4k_ro" stop="20260829150000 +0300">
     <title>Urangutanii: Şcoala e o junglă | s3 ep. 5</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260829150000 +0300" channel="digi4k_ro.digi-4k" stop="20260829160000 +0300">
+  <programme start="20260829150000 +0300" channel="digi4k_ro" stop="20260829160000 +0300">
     <title>Urangutanii: Şcoala e o junglă | s3 ep. 6</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260829160000 +0300" channel="digi4k_ro.digi-4k" stop="20260829180000 +0300">
+  <programme start="20260829160000 +0300" channel="digi4k_ro" stop="20260829180000 +0300">
     <title>Rayo vs Espanyol</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260829180000 +0300" channel="digi4k_ro.digi-4k" stop="20260829200000 +0300">
+  <programme start="20260829180000 +0300" channel="digi4k_ro" stop="20260829200000 +0300">
     <title>Levante vs Betis</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260829200000 +0300" channel="digi4k_ro.digi-4k" stop="20260829220500 +0300">
+  <programme start="20260829200000 +0300" channel="digi4k_ro" stop="20260829220500 +0300">
     <title>Real Sociedad vs Espanyol</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260829220500 +0300" channel="digi4k_ro.digi-4k" stop="20260829223000 +0300">
+  <programme start="20260829220500 +0300" channel="digi4k_ro" stop="20260829223000 +0300">
     <title>Balistică în spatele casei | ep. 2</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260829223000 +0300" channel="digi4k_ro.digi-4k">
+  <programme start="20260829223000 +0300" channel="digi4k_ro">
     <title>Sevilla vs Atletico</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260830003500 +0300" channel="digi4k_ro.digi-4k" stop="20260830080000 +0300">
+  <programme start="20260830003500 +0300" channel="digi4k_ro" stop="20260830080000 +0300">
     <title>Muzică</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260830080000 +0300" channel="digi4k_ro.digi-4k" stop="20260830100000 +0300">
+  <programme start="20260830080000 +0300" channel="digi4k_ro" stop="20260830100000 +0300">
     <title>Rayo vs Espanyol</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260830100000 +0300" channel="digi4k_ro.digi-4k" stop="20260830105000 +0300">
+  <programme start="20260830100000 +0300" channel="digi4k_ro" stop="20260830105000 +0300">
     <title>Orașul de corali | ep. 2</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260830105000 +0300" channel="digi4k_ro.digi-4k" stop="20260830111500 +0300">
+  <programme start="20260830105000 +0300" channel="digi4k_ro" stop="20260830111500 +0300">
     <title>Bali: paradisul culinar | ep. 5</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260830111500 +0300" channel="digi4k_ro.digi-4k" stop="20260830114000 +0300">
+  <programme start="20260830111500 +0300" channel="digi4k_ro" stop="20260830114000 +0300">
     <title>Bali: paradisul culinar | ep. 6</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260830114000 +0300" channel="digi4k_ro.digi-4k" stop="20260830131000 +0300">
+  <programme start="20260830114000 +0300" channel="digi4k_ro" stop="20260830131000 +0300">
     <title>Cum a intrat sushi în America</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260830131000 +0300" channel="digi4k_ro.digi-4k" stop="20260830134000 +0300">
+  <programme start="20260830131000 +0300" channel="digi4k_ro" stop="20260830134000 +0300">
     <title>Lucrătorii din sălbăticie | ep. 2</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260830134000 +0300" channel="digi4k_ro.digi-4k" stop="20260830141000 +0300">
+  <programme start="20260830134000 +0300" channel="digi4k_ro" stop="20260830141000 +0300">
     <title>Lucrătorii din sălbăticie | ep. 3</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260830141000 +0300" channel="digi4k_ro.digi-4k" stop="20260830150500 +0300">
+  <programme start="20260830141000 +0300" channel="digi4k_ro" stop="20260830150500 +0300">
     <title>Poveste cu leneș</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260830150500 +0300" channel="digi4k_ro.digi-4k" stop="20260830160000 +0300">
+  <programme start="20260830150500 +0300" channel="digi4k_ro" stop="20260830160000 +0300">
     <title>Odiseea sepiei</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260830160000 +0300" channel="digi4k_ro.digi-4k" stop="20260830180000 +0300">
+  <programme start="20260830160000 +0300" channel="digi4k_ro" stop="20260830180000 +0300">
     <title>Real Sociedad vs Getafe</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260830180000 +0300" channel="digi4k_ro.digi-4k" stop="20260830200500 +0300">
+  <programme start="20260830180000 +0300" channel="digi4k_ro" stop="20260830200500 +0300">
     <title>Real Madrid vs Malaga</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260830200500 +0300" channel="digi4k_ro.digi-4k" stop="20260830203000 +0300">
+  <programme start="20260830200500 +0300" channel="digi4k_ro" stop="20260830203000 +0300">
     <title>Balistică în spatele casei | ep. 2</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260830203000 +0300" channel="digi4k_ro.digi-4k" stop="20260830223000 +0300">
+  <programme start="20260830203000 +0300" channel="digi4k_ro" stop="20260830223000 +0300">
     <title>Deportivo vs Valencia</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260830223000 +0300" channel="digi4k_ro.digi-4k">
+  <programme start="20260830223000 +0300" channel="digi4k_ro">
     <title>Celta vs Athletic</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
