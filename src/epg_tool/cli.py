@@ -17,8 +17,8 @@ from .sources import (
     collect_allente_v_sport,
     collect_astro,
     collect_digi4k,
+    collect_ee_uk_sports,
     collect_now_hk,
-    collect_now_uk_sports,
     collect_tvplus_eurosport,
 )
 
@@ -36,7 +36,8 @@ def _collect(args: argparse.Namespace) -> int:
         ("astro", lambda: collect_astro(args.days)),
         ("now_hk", lambda: collect_now_hk(args.days)),
         ("allente_se", lambda: collect_allente_v_sport(args.days)),
-        ("now_uk", lambda: collect_now_uk_sports(args.days)),
+        # EE TV Player 提供完整频道级 start/stop；取代旧 Sky 活动列表，避免同名 Sky 频道重复。
+        ("ee_uk", lambda: collect_ee_uk_sports(args.days)),
         ("digi4k_ro", lambda: collect_digi4k(args.days)),
         ("tvplus_tr", lambda: collect_tvplus_eurosport(args.days)),
     )
@@ -110,7 +111,7 @@ def build_parser() -> argparse.ArgumentParser:
     search = commands.add_parser("search", help="检索已采集的节目表快照")
     search.add_argument("query", help="节目名或频道名关键词")
     search.add_argument("--input", type=Path, default=DEFAULT_DATASET)
-    search.add_argument("--provider", choices=["astro", "now_hk", "allente_se", "now_uk", "digi4k_ro", "tvplus_tr"])
+    search.add_argument("--provider", choices=["astro", "now_hk", "allente_se", "ee_uk", "digi4k_ro", "tvplus_tr"])
     search.add_argument("--channel")
     search.add_argument("--date", help="节目开始日期，格式 YYYY-MM-DD")
     search.set_defaults(func=_search)

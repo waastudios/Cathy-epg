@@ -11,13 +11,15 @@
 | 马来西亚 | Astro | [Astro Content Guide](https://www.astro.com.my/content/channels) | 完整七日线性节目表 | 来源原文 |
 | 香港 | NOW TV | [NOW TV Guide](https://nowplayer.now.com/tvguide) 与[中文频道页](https://nowplayer.now.com/channels?lang=zh&filterType=all) | 完整七日线性节目表；显示名取官方中文名 | 中文为主 |
 | 瑞典 | 完整 V Sport 体育频道组合 | [Allente TV Guide](https://www.allente.se/tv-guide/) | 13 条 V Sport 频道的完整七日节目表 | 来源原文 |
-| 英国 | NOW Sports 可观看的 Sky Sports 活动 | [Sky Sports live schedule](https://www.sky.com/watch/channel/sky-sports) | Sky 官方公开直播活动、开播时间与频道；并非英国 NOW 全频道的全天 EPG | 英文 |
+| 英国 | Sky Sports 与 TNT Sports 1–4 | [EE TV Player Live TV Schedule](https://player.ee.co.uk/#/livetv/schedule) | 16 条去重后的标准清晰度体育频道，提供完整七日频道级节目表、官方频道名与开始/结束时间 | 英文 |
 | 罗马尼亚 | Digi 4K | [Digi 4K](https://www.digi4k.ro/) | 官网公开的连续七日节目表 | 罗马尼亚语 |
 | 土耳其 | Eurosport 1、Eurosport 2 | [TV+ Eurosport 1](https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77) 与 [TV+ Eurosport 2](https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106) | TV+ 官方页公开的完整当日节目表 | 土耳其语 |
 
 HBO Max 土耳其英文页明确说明 Eurosport 1 与 Eurosport 2 及直播活动在当地方案中提供；该页并不公开逐频道时刻表，因此实际节目条目使用其官方电视提供商 TV+ 的公开节目页，而不是第三方聚合数据。[1]
 
-英国 NOW TV 的官方网站不公开全量线性频道的七日 XMLTV 时刻表。为维持“只用官方来源”的边界，项目仅纳入 Sky 官方页面明确列出的、NOW Sports 所覆盖的 Sky Sports 直播活动；官方页面未给出结束时间时，XMLTV 中会省略 `stop` 属性，而不会推断时长。
+英国节目表改用 **EE TV Player 匿名公开显示的 Live TV Schedule**。覆盖 TNT Sports 1–4（EE 频道 408–411），以及 Sky Sports News、Main Event、Premier League、Football、Cricket、Golf、F1、Tennis、Action、+、Racing 和 Mix（418–429）。XMLTV 的显示名严格使用 EE Player 官方频道目录返回的名称；节目开始时间与时长来自该页面正常加载的公开节目表请求。[2]
+
+为筛除同名实际频道，数据集对每条真实线性频道只保留一个标准清晰度 EE 条目。已明确排除对应的 HD 镜像（TNT 430–432/434，Sky 438–449）、旧的 NOW/Sky 活动型来源，以及 TNT Sports Ultimate、TNT Sports 5 和临时频道；不会把来自不同平台的同名行合并为重复条目。英国频道稳定使用 `ee_uk.<EE频道号>` 作为 XMLTV ID。
 
 ## XMLTV 文件与订阅
 
@@ -53,6 +55,7 @@ epg collect --days 7
 epg search "Premier League"
 epg search "Now爆谷" --provider now_hk --channel 138
 epg search "Eurosport" --provider tvplus_tr
+epg search "TNT Sports" --provider ee_uk
 ```
 
 节目排期会临时变更；建议每日执行一次刷新，以维持“当天起未来七天”的滚动窗口。每日运行前应复核相关网站条款、控制访问频率，并在来源不可用时查看 `data/status.json`，而非使用第三方替代数据。
@@ -60,10 +63,10 @@ epg search "Eurosport" --provider tvplus_tr
 ## 参考资料
 
 [1]: https://www.hbomax.com/tr/en "HBO Max Türkiye — English site"
-[2]: https://content.astro.com.my/channels "Astro Content Guide — Channel guide"
-[3]: https://nowplayer.now.com/tvguide "NOW TV Hong Kong — TV Guide"
-[4]: https://www.allente.se/tv-guide/ "Allente — TV Guide"
-[5]: https://www.sky.com/watch/channel/sky-sports "Sky Sports — Live schedule"
+[2]: https://player.ee.co.uk/#/livetv/schedule "EE TV Player — Live TV Schedule"
+[3]: https://content.astro.com.my/channels "Astro Content Guide — Channel guide"
+[4]: https://nowplayer.now.com/tvguide "NOW TV Hong Kong — TV Guide"
+[5]: https://www.allente.se/tv-guide/ "Allente — TV Guide"
 [6]: https://www.digi4k.ro/ "Digi 4K România"
 [7]: https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77 "TV+ — Eurosport 1 schedule"
 [8]: https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106 "TV+ — Eurosport 2 schedule"

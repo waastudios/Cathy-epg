@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from datetime import date, datetime, time as clock_time, timedelta
+from datetime import date, datetime, time as clock_time, timedelta, timezone
 import json
 import re
 import time
@@ -23,8 +23,28 @@ NOW_HK_EPG = "https://nowplayer.now.com/tvguide/epglist"
 ALLENTE_GUIDE = "https://www.allente.se/tv-guide/"
 ALLENTE_EPG = "https://www.allente.se/api/epg/refetch-epg-data"
 ALLENTE_V_SPORT_IDS = frozenset({"20092", "50048", "50049", "50056", "50077", "50078", "50079", "50105", "50125", "50126", "50127", "50128", "50129"})
-SKY_SPORTS_GUIDE = "https://www.sky.com/watch/channel/sky-sports"
-SKY_SPORTS_MORE = "https://www.skysports.com/watch/liveonsky/more/{token}"
+EE_TV_PLAYER_GUIDE = "https://player.ee.co.uk/#/livetv/schedule"
+EE_TV_SCHEDULE = "https://api.youview.tv/metadata/linear/v2/schedule/by-servicelocator"
+# 以下映射来自 EE TV Player 匿名公开的线性频道目录；仅保留每个实际频道的 SD 行。
+# 同一节目流的 HD 镜像（TNT 430–432/434、Sky 438–449）明确排除，防止重复频道。
+EE_UK_SPORT_CHANNELS: tuple[tuple[str, str, str], ...] = (
+    ("408", "TNT Sports 1", "http://bds.tv/services/BT_763997"),
+    ("409", "TNT Sports 2", "http://bds.tv/services/BT_764001"),
+    ("410", "TNT Sports 3", "http://bds.tv/services/BT_768612"),
+    ("411", "TNT Sports 4", "http://bds.tv/services/BT_758465"),
+    ("418", "Sky Sports News", "http://bds.tv/services/BT_631679_1314_SD"),
+    ("419", "Sky Sports Main Event", "http://bds.tv/services/BT_503_1301_SD"),
+    ("420", "Sky Sports Premier League", "http://bds.tv/services/BT_768064_1303_SD"),
+    ("421", "Sky Sports Football", "http://bds.tv/services/BT_771052_3838_SD"),
+    ("422", "Sky Sports Cricket", "http://bds.tv/services/BT_223160_1302_SD"),
+    ("423", "Sky Sports Golf", "http://bds.tv/services/BT_750598_1322_SD"),
+    ("424", "Sky Sports F1", "http://bds.tv/services/BT_759963_1306_SD"),
+    ("425", "Sky Sports Tennis", "http://bds.tv/services/BT_RBM63515_1284_SD"),
+    ("426", "Sky Sports Action", "http://bds.tv/services/BT_397065_1333_SD"),
+    ("427", "Sky Sports +", "http://bds.tv/services/BT_771051_3839_SD"),
+    ("428", "Sky Sports Racing", "http://bds.tv/services/BT_751621_1354_SD"),
+    ("429", "Sky Sports Mix", "http://bds.tv/services/BT_770332_4091_SD"),
+)
 DIGI4K_GUIDE = "https://www.digi4k.ro/"
 TVPLUS_EUROSPORT_1_GUIDE = "https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77"
 TVPLUS_EUROSPORT_2_GUIDE = "https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106"
@@ -223,101 +243,87 @@ def collect_allente_v_sport_ultrahd(days: int = 7, pause_seconds: float = 0.25) 
     return [record for record in collect_allente_v_sport(days, pause_seconds) if record.channel_id == "50105"]
 
 
-def _parse_sky_date(label: str, reference: date) -> date | None:
-    """解析 Sky Sports 页面如 `Mon 24th August` 的日期标题。"""
-    matched = re.search(r"(\d{1,2})(?:st|nd|rd|th)\s+([A-Za-z]+)", label)
-    if not matched:
-        return None
-    day_number, month_name = matched.groups()
-    try:
-        parsed = datetime.strptime(f"{day_number} {month_name} {reference.year}", "%d %B %Y").date()
-    except ValueError:
-        return None
-    if parsed < reference - timedelta(days=7):
-        parsed = parsed.replace(year=parsed.year + 1)
-    return parsed
+def _ee_interval_starts(today: date, days: int, zone: ZoneInfo) -> list[datetime]:
+    """返回覆盖本地连续日期的 EE Player 六小时时间窗起点（统一换算为 UTC）。"""
+    intervals: list[datetime] = []
+    for day_offset in range(days):
+        local_midnight = datetime.combine(today + timedelta(days=day_offset), clock_time.min, tzinfo=zone)
+        for hour in range(0, 24, 6):
+            intervals.append((local_midnight + timedelta(hours=hour)).astimezone(timezone.utc))
+    return intervals
 
 
-def _sky_channel_slug(name: str) -> str:
-    """把官方 Sky Sports 频道名转换为稳定的 XMLTV 频道号部分。"""
-    slug = re.sub(r"[^a-z0-9]+", "-", name.casefold().replace("+", " plus ")).strip("-")
-    return slug or "sky-sports"
+def collect_ee_uk_sports(days: int = 7, pause_seconds: float = 0.02) -> list[Programme]:
+    """读取 EE TV Player 匿名公开的 Sky Sports 与 TNT Sports 标准清晰度节目表。
 
-
-def _parse_sky_events(html: str, reference: date, retrieved_at: str) -> list[Programme]:
-    """从 Sky 官方 sport-on-sky 页面解析按日直播活动和频道开播时间。"""
-    soup = BeautifulSoup(html, "html.parser")
-    zone = ZoneInfo("Europe/London")
-    records: list[Programme] = []
-    for event in soup.select("div.event-group"):
-        date_heading = event.find_previous("h3", class_=re.compile(r"text-h4"))
-        event_date = _parse_sky_date(date_heading.get_text(" ", strip=True), reference) if date_heading else None
-        title_node = event.select_one("strong")
-        detail_node = event.select_one("p.event-detail")
-        title = title_node.get_text(" ", strip=True) if title_node else ""
-        detail = detail_node.get_text(" ", strip=True) if detail_node else ""
-        if not (event_date and title and detail):
-            continue
-        for channel_name, start_text in re.findall(r"([^,(]+?)\s*\((\d{2}:\d{2})\)", detail):
-            channel_name = channel_name.strip()
-            try:
-                start_time = datetime.strptime(start_text, "%H:%M").time()
-            except ValueError:
-                continue
-            start = datetime.combine(event_date, start_time, tzinfo=zone).isoformat()
-            records.append(
-                Programme(
-                    provider="now_uk",
-                    country="GB",
-                    timezone="Europe/London",
-                    channel_id=_sky_channel_slug(channel_name),
-                    channel_number=_sky_channel_slug(channel_name),
-                    channel_name=channel_name,
-                    title=title,
-                    start_at=start,
-                    # Sky 官方 Live Sports 页面只公开开播时间，不推测或伪造结束时间。
-                    end_at=None,
-                    source_url=SKY_SPORTS_GUIDE,
-                    retrieved_at=retrieved_at,
-                )
-            )
-    return records
-
-
-def collect_now_uk_sports(days: int = 7, pause_seconds: float = 0.25) -> list[Programme]:
-    """读取 Sky 官方直播体育列表，作为英国 NOW Sports 可观看 Sky Sports 的官方活动表。
-
-    这不是英国 NOW 全部娱乐频道的完整全天 EPG；只包含 Sky 官方明确列出的
-    Sky Sports 直播活动及其频道和开播时间。
+    EE 的 Live TV Schedule 正常加载 YouView 官方节目端点，公开返回单频道的
+    ``publishedStartTime`` 与 ``publishedDuration``。频道列表只使用 EE 的 SD
+    逻辑频道号，特意排除同一线性流的 HD 镜像，以避免 NOW/EE 或 SD/HD 的重复。
     """
+    if days not in range(1, 8):
+        raise ValueError("EE TV Player 采集天数必须为 1–7。")
     session = _session()
     zone = ZoneInfo("Europe/London")
     today = datetime.now(zone).date()
-    target_end = today + timedelta(days=days - 1)
     retrieved_at = utc_now_iso()
-    response = session.get(SKY_SPORTS_GUIDE, timeout=30)
-    response.raise_for_status()
-    records = _parse_sky_events(response.text, today, retrieved_at)
+    intervals = _ee_interval_starts(today, days, zone)
+    records: list[Programme] = []
 
-    soup = BeautifulSoup(response.text, "html.parser")
-    loader = soup.select_one("div[data-fn='load-more'][data-current-page]")
-    token = loader.get("data-current-page") if loader else None
-    visited: set[str] = set()
-    while token and token not in visited:
-        visited.add(token)
-        more = session.get(SKY_SPORTS_MORE.format(token=token), timeout=30)
-        more.raise_for_status()
-        page_records = _parse_sky_events(more.text, today, retrieved_at)
-        records.extend(page_records)
-        page_dates = [date.fromisoformat(record.start_at[:10]) for record in page_records]
-        if page_dates and min(page_dates) > target_end:
-            break
-        more_soup = BeautifulSoup(more.text, "html.parser")
-        more_loader = more_soup.select_one("div[data-fn='load-more'][data-current-page]")
-        token = more_loader.get("data-current-page") if more_loader else None
-        time.sleep(pause_seconds)
+    for channel_number, channel_name, service_locator in EE_UK_SPORT_CHANNELS:
+        channel_records = 0
+        for interval_start in intervals:
+            interval_token = interval_start.strftime("%Y-%m-%dT%HZ/PT6H")
+            response = session.get(
+                EE_TV_SCHEDULE,
+                params={"serviceLocator": service_locator, "interval": interval_token},
+                timeout=30,
+            )
+            response.raise_for_status()
+            payload = response.json()
+            items = payload.get("items", [])
+            if not isinstance(items, list):
+                raise SourceUnavailable("EE TV Player 官方节目表响应未返回 items 列表。")
+            for item in items:
+                if not isinstance(item, dict):
+                    continue
+                title = (item.get("title") or "").strip()
+                published_start = item.get("publishedStartTime")
+                duration = item.get("publishedDuration")
+                service_name = ((item.get("serviceSummary") or {}).get("fullName") or "").strip()
+                if not (title and isinstance(published_start, str)):
+                    continue
+                if service_name and service_name != channel_name:
+                    raise SourceUnavailable(
+                        f"EE TV Player 服务定位符 {service_locator} 返回了意外频道名 {service_name!r}。"
+                    )
+                try:
+                    start = datetime.fromisoformat(published_start.replace("Z", "+00:00")).astimezone(zone)
+                except ValueError:
+                    continue
+                end_at: str | None = None
+                if isinstance(duration, (int, float)) and duration > 0:
+                    end_at = (start + timedelta(seconds=duration)).isoformat()
+                records.append(
+                    Programme(
+                        provider="ee_uk",
+                        country="GB",
+                        timezone="Europe/London",
+                        channel_id=channel_number,
+                        channel_number=channel_number,
+                        channel_name=channel_name,
+                        title=title,
+                        start_at=start.isoformat(),
+                        end_at=end_at,
+                        source_url=EE_TV_PLAYER_GUIDE,
+                        retrieved_at=retrieved_at,
+                    )
+                )
+                channel_records += 1
+            time.sleep(pause_seconds)
+        if not channel_records:
+            raise SourceUnavailable(f"EE TV Player 未返回 {channel_name}（CH {channel_number}）的公开节目条目。")
 
-    return _deduplicate([record for record in records if date.fromisoformat(record.start_at[:10]) <= target_end])
+    return _deduplicate(records)
 
 
 def _digi4k_time(value: str) -> clock_time | None:

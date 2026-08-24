@@ -13,13 +13,15 @@ Chinese documentation is available in [README-CN.md](README-CN.md).
 | Malaysia | Astro | [Astro Content Guide](https://www.astro.com.my/content/channels) | Full seven-day linear schedule | Source language |
 | Hong Kong | NOW TV | [NOW TV Guide](https://nowplayer.now.com/tvguide) and the [Chinese channel directory](https://nowplayer.now.com/channels?lang=zh&filterType=all) | Full seven-day linear schedule; official Chinese channel display names | Primarily Chinese |
 | Sweden | V Sport portfolio | [Allente TV Guide](https://www.allente.se/tv-guide/) | Full seven-day schedule for 13 V Sport channels | Source language |
-| United Kingdom | NOW Sports / Sky Sports | [Sky Sports live schedule](https://www.sky.com/watch/channel/sky-sports) | Official live-event listings, channel names, and start times; not a full linear EPG | English |
+| United Kingdom | Sky Sports and TNT Sports 1–4 | [EE TV Player Live TV Schedule](https://player.ee.co.uk/#/livetv/schedule) | Full seven-day channel-level EPG for 16 unique standard-definition sports channels, with official names and start/end times | English |
 | Romania | Digi 4K | [Digi 4K](https://www.digi4k.ro/) | Public seven-day schedule | Romanian |
 | Türkiye | Eurosport 1 and Eurosport 2 | [TV+ Eurosport 1](https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77) and [TV+ Eurosport 2](https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106) | Public full-day schedule shown by the official TV provider | Turkish |
 
 The Swedish portfolio comprises **V sport extra HD, premium HD, football HD, vinter HD, motor HD, V sport 1 HD, ultra HD, golf HD, and V sport live 1–5**. Allente’s stable channel IDs are retained in the XMLTV output.
 
-The official UK NOW TV website does not publicly expose a complete seven-day, linear XMLTV guide. To preserve the official-source-only scope, Cathy-epg includes only Sky Sports live events explicitly published by Sky, with the listed channel and start time. Where no end time is published, the XMLTV programme omits `stop` rather than inferring a duration.
+The UK guide uses the **anonymous public schedule rendered by EE TV Player**. It includes TNT Sports 1–4 (EE channel numbers 408–411) and Sky Sports News, Main Event, Premier League, Football, Cricket, Golf, F1, Tennis, Action, +, Racing, and Mix (418–429). Every XMLTV display name is the official name returned by the EE Player channel directory, and each programme uses the published start time and duration from its normal schedule request.[2]
+
+To avoid duplicate real-world channels, the dataset contains exactly one standard-definition EE row for each channel. It deliberately excludes matching HD mirrors (TNT 430–432/434 and Sky 438–449), the old NOW/Sky event-only feed, and unrelated TNT Sports Ultimate, TNT Sports 5, or temporary channels. This is channel-level deduplication, not a merge of competing schedules; `ee_uk.<EE channel number>` is the stable XMLTV channel ID format.
 
 The English HBO Max Türkiye site confirms the local availability of Eurosport 1, Eurosport 2, and live sports. It does not publish a channel-by-channel schedule, so programme items are sourced from the official Turkish TV+ provider guide instead.[1]
 
@@ -55,6 +57,7 @@ Local search reads only the generated JSONL snapshot.
 epg search "Premier League"
 epg search "Now爆谷" --provider now_hk --channel 138
 epg search "Eurosport" --provider tvplus_tr
+epg search "TNT Sports" --provider ee_uk
 ```
 
 Schedules can change at short notice. Before automating a refresh, review the relevant provider terms, limit request frequency, and inspect `data/status.json` if a source is unavailable rather than substituting third-party data.
@@ -68,10 +71,10 @@ Each run executes `epg collect --days 7`, updates the JSONL and XMLTV outputs, a
 ## References
 
 [1]: https://www.hbomax.com/tr/en "HBO Max Türkiye — English site"
-[2]: https://content.astro.com.my/channels "Astro Content Guide — Channel guide"
-[3]: https://nowplayer.now.com/tvguide "NOW TV Hong Kong — TV Guide"
-[4]: https://www.allente.se/tv-guide/ "Allente — TV Guide"
-[5]: https://www.sky.com/watch/channel/sky-sports "Sky Sports — Live schedule"
+[2]: https://player.ee.co.uk/#/livetv/schedule "EE TV Player — Live TV Schedule"
+[3]: https://content.astro.com.my/channels "Astro Content Guide — Channel guide"
+[4]: https://nowplayer.now.com/tvguide "NOW TV Hong Kong — TV Guide"
+[5]: https://www.allente.se/tv-guide/ "Allente — TV Guide"
 [6]: https://www.digi4k.ro/ "Digi 4K România"
 [7]: https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77 "TV+ — Eurosport 1 schedule"
 [8]: https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106 "TV+ — Eurosport 2 schedule"
