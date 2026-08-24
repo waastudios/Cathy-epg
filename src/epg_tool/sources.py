@@ -76,7 +76,7 @@ EE_UK_CHANNELS: tuple[tuple[str, str, str], ...] = (
     ("348", "Sky Sci-Fi", "http://bds.tv/services/BT_318488_2505_SD"),
     ("349", "Sky Crime", "http://bds.tv/services/BT_753644_1212_SD"),
     # EE Player 官方线性目录与节目接口已验证该服务；公开 EE 频道指南未列出其逻辑频道号。
-    ("sky-documentaries", "Sky Documentaries", "http://bds.tv/services/BT_772169_1127_SD"),
+    ("sky-doc", "Sky Documentaries", "http://bds.tv/services/BT_772169_1127_SD"),
     ("353", "Sky History", "http://bds.tv/services/BT_772170_1875_SD"),
     ("354", "Sky Nature", "http://bds.tv/services/BT_772168_1194_SD"),
 )

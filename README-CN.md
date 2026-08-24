@@ -24,7 +24,7 @@ https://raw.githubusercontent.com/waastudios/Cathy-epg/master/data/epg.xml.gz
 | `data/status.json` | 每个来源的采集状态和输出总量。 |
 | `CHANNELS.md` | 由当前发布快照生成的显示名与 XMLTV ID 对照表。 |
 
-XMLTV 中的每个 `display-name` 都是服务商公开的官方频道名称。稳定 ID 通常采用 `<provider>.<channel-id>`；EE 的 Sky Documentaries 是记录在案的例外：EE 公开节目表提供该服务，但公共频道指南没有公布逻辑频道号，因此使用 `ee_uk.sky-documentaries`。
+XMLTV 中的每个 `display-name` 都是服务商公开的官方频道名称。稳定 ID 通常采用 `<provider>.<channel-id>`；EE 的 Sky Documentaries 是记录在案的例外：EE 公开节目表提供该服务，但公共频道指南没有公布逻辑频道号，因此使用 `ee_uk.sky-doc`。
 
 ## 当前覆盖与强制范围
 

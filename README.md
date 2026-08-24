@@ -24,7 +24,7 @@ https://raw.githubusercontent.com/waastudios/Cathy-epg/master/data/epg.xml.gz
 | `data/status.json` | Per-source collection result and output totals. |
 | `CHANNELS.md` | Generated display-name and XMLTV ID inventory for the published snapshot. |
 
-Every XMLTV `display-name` is the provider’s official channel name. Stable XMLTV IDs normally follow `<provider>.<channel-id>`; the public EE Sky Documentaries service is the documented exception `ee_uk.sky-documentaries`, because the public EE guide exposes its schedule but does not publish a logical channel number.
+Every XMLTV `display-name` is the provider’s official channel name. Stable XMLTV IDs normally follow `<provider>.<channel-id>`; the public EE Sky Documentaries service is the documented exception `ee_uk.sky-doc`, because the public EE guide exposes its schedule but does not publish a logical channel number.
 
 ## Current coverage and enforced scope
 

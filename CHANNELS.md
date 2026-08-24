@@ -2,7 +2,7 @@
 
 This inventory is generated from the currently published `data/current_week.jsonl` and verified against `data/epg.xml.gz`. It lists the channels changed or confirmed by the sports-only and EE Sky Entertainment scope update; each displayed name is the actual XMLTV `display-name`.
 
-The snapshot generated at `2026-08-24T18:17:53Z` contains **120 channels** and **15461 programmes**. Its gzip file expands byte-for-byte to `data/epg.xml`.
+The snapshot generated at `2026-08-24T18:26:24Z` contains **120 channels** and **15461 programmes**. Its gzip file expands byte-for-byte to `data/epg.xml`.
 
 ## Astro — sports-only published channels
 
@@ -91,7 +91,7 @@ When EE exposes parallel variants, the DVB/television service is selected for Sk
 | `ee_uk.347` | Sky Comedy | Added — SD primary service |
 | `ee_uk.348` | Sky Sci-Fi | Added — SD primary service |
 | `ee_uk.349` | Sky Crime | Retained — previously published SD primary service |
-| `ee_uk.sky-documentaries` | Sky Documentaries | Added — EE does not publish an LCN for this public service |
+| `ee_uk.sky-doc` | Sky Documentaries | Added — EE does not publish an LCN for this public service |
 | `ee_uk.353` | Sky History | Added — SD primary service |
 | `ee_uk.354` | Sky Nature | Added — SD primary service |
 
