@@ -57,7 +57,13 @@ epg search "Now爆谷" --provider now_hk --channel 138
 epg search "Eurosport" --provider tvplus_tr
 ```
 
-Schedules can change at short notice. Run a daily refresh to maintain a rolling seven-day window. Before automating a refresh, review the relevant provider terms, limit request frequency, and inspect `data/status.json` if a source is unavailable rather than substituting third-party data.
+Schedules can change at short notice. Before automating a refresh, review the relevant provider terms, limit request frequency, and inspect `data/status.json` if a source is unavailable rather than substituting third-party data.
+
+## Automatic daily refresh
+
+The repository includes a GitHub Actions workflow at `.github/workflows/refresh-epg.yml`. It runs every day at **19:00 UTC**, which is **03:00 China Standard Time (UTC+8) on the following calendar day**, and can also be started manually from the repository's Actions page.
+
+Each run executes `epg collect --days 7`, updates the JSONL and XMLTV outputs, and commits only when the snapshot changes. If an official source is temporarily unavailable, the workflow keeps the collected output from the other sources and records the source-level failure in `data/status.json`; it does not substitute third-party data.
 
 ## References
 
