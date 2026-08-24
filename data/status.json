@@ -13,7 +13,7 @@
   },
   "allente_no": {
     "status": "ok",
-    "records": 812
+    "records": 810
   },
   "ee_uk": {
     "status": "ok",
@@ -38,10 +38,10 @@
   "xmltv": {
     "status": "ok",
     "channels": 121,
-    "programmes": 15474,
+    "programmes": 15472,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-08-24T19:37:36Z",
-  "total_records": 15474
+  "generated_at": "2026-08-24T19:39:20Z",
+  "total_records": 15472
 }

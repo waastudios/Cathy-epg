@@ -484,10 +484,6 @@
     <display-name>Sky Sports Ultra HD 2</display-name>
     <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
   </channel>
-  <programme start="20260824002000 +0200" channel="allente_no.tvn" stop="20260824030500 +0200">
-    <title>Jack Reacher</title>
-    <url>https://www.allente.no/tv-guide/</url>
-  </programme>
   <programme start="20260824002446 +0200" channel="allente_no.tvn" stop="20260824030749 +0200">
     <title>Jack Reacher</title>
     <url>https://www.allente.no/tv-guide/</url>
@@ -1952,7 +1948,7 @@
     <title>Field Day</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260823220000 +0200" channel="allente_no.rex" stop="20260824022000 +0200">
+  <programme start="20260823220000 +0200" channel="allente_no.rex" stop="20260824022348 +0200">
     <title>The Lord of the Rings: Atter en konge</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
@@ -2844,10 +2840,6 @@
     <title>Horrible Bosses 2</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260823235500 +0200" channel="allente_no.euro1" stop="20260824030000 +0200">
-    <title>PGA Tour: FedEx St. Jude Championship: 23.08.2026 23:55.</title>
-    <url>https://www.allente.no/tv-guide/</url>
-  </programme>
   <programme start="20260823235655 +0200" channel="allente_no.euro1" stop="20260824030000 +0200">
     <title>PGA Tour: FedEx St. Jude Championship: 23.08.2026 23:55.</title>
     <url>https://www.allente.no/tv-guide/</url>
@@ -3414,6 +3406,10 @@
   </programme>
   <programme start="20260826010000 +0200" channel="allente_no.euron" stop="20260826013000 +0200">
     <title>Triathlon: T100: 26.08.2026 01:00.</title>
+    <url>https://www.allente.no/tv-guide/</url>
+  </programme>
+  <programme start="20260826013000 +0200" channel="allente_no.euron" stop="20260826032500 +0200">
+    <title>SNOOKER WUHAN OPEN ROUND 03: 26.08.2026 01:30.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
   <programme start="20260826013000 +0200" channel="allente_no.euron" stop="20260826032500 +0200">
