@@ -38,18 +38,17 @@ Every XMLTV `display-name` is the provider’s official channel name. Stable XML
 | United Kingdom | Sky Sports Ultra HD 1 and 2 | [Virgin Media TV Go Guide](https://virgintvgo.virginmedia.com/en/epg/initial) |
 | Romania | Digi 4K | [Digi 4K](https://www.digi4k.ro/) |
 | Türkiye | Eurosport 1 and Eurosport 2 | [TV+ Eurosport 1](https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77) and [Eurosport 2](https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106) |
+| Serbia | Eurosport 4K IPTV | [SBB / EON Public EPG](https://epg.sbb.rs/) |
 
 ### EE Sky Entertainment selection
 
 The EE scope includes **Sky Mix, Sky Arts, Sky Witness, Sky Atlantic, Sky One, Sky Comedy, Sky Sci-Fi, Sky Crime, Sky Documentaries, Sky History, and Sky Nature**. Where EE presents parallel versions, Sky Mix and Sky Arts use the DVB/television service; the others use the standard-definition primary service. HD, +1, accessibility, and other duplicate mirrors are not published. The exact IDs and display names are in [CHANNELS.md](CHANNELS.md).
 
-**Sky History 2** and **Sky Replay** are not published because neither appears in EE’s current public linear directory or official channel guide. [1]
-
-### ESPN and Eurosport 4K
+### ESPN status
 
 The United States scope is intentionally restricted to potential future coverage for **ESPN, ESPN2, ESPNEWS, and ESPNU**. ABC, CBS, NBC, FOX, USA Network, and every other US network are excluded. DIRECTV’s public guide confirms the four ESPN services but exposes only current-programme information; Spectrum’s detailed guide requires account and service-address access; and ESPN’s direct schedule does not offer stable per-channel end times. Consequently, **no ESPN records are currently published**. If a compliant guide becomes available, IDs will be provider-prefixed, for example `directv_espn`.
 
-No current broadcaster or authorised-provider guide has been verified to expose complete reusable channel-level timing for **Eurosport 4K**. It is not substituted with TNT Sports Ultimate and no blank channel is created.
+**Eurosport 4K IPTV** is published from SBB’s normal anonymous Public EPG as `sbb_rs.1082`. The source provides a channel directory plus programme titles, start times, and end times. Each source title is converted through strict deterministic Serbian-to-English rules; an unrecognised title fails the SBB source rather than being guessed or published untranslated. The official display name remains `Eurosport 4K IPTV`.
 
 ## Refresh and validation
 
