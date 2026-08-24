@@ -8,7 +8,7 @@
 | --- | --- | --- | --- | --- |
 | `astro` | 马来西亚 Astro | 29,166 | [Astro Content Guide](https://www.astro.com.my/content/channels) | 七日线性节目表 |
 | `now_hk` | 香港 NOW TV | 22,899 | [NOW TV Guide](https://nowplayer.now.com/tvguide) | 七日线性节目表；官网中文频道名 |
-| [`allente_se`](https://raw.githubusercontent.com/waastudios/Cathy-epg/master/data/epg.xml.gz) | 瑞典完整 V Sport 体育频道组合 | 901 | [Allente TV Guide](https://www.allente.se/tv-guide/) | 13 个频道的七日节目表 |
+| [`allente_se`] | 瑞典完整 V Sport 体育频道组合 | 901 | [Allente TV Guide](https://www.allente.se/tv-guide/) | 13 个频道的七日节目表 |
 | `now_uk` | 英国 NOW Sports / Sky Sports | 123 | [Sky Sports live schedule](https://www.sky.com/watch/channel/sky-sports) | 官方直播活动；无全频道全天 EPG |
 | `digi4k_ro` | 罗马尼亚 Digi 4K | 115 | [Digi 4K](https://www.digi4k.ro/) | 官网连续七日节目表 |
 | `tvplus_tr` | 土耳其 Eurosport 1、2 | 34 | [TV+ Eurosport 1](https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77)、[TV+ Eurosport 2](https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106) | 官方电视提供商公开的当日完整节目表 |
