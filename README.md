@@ -10,7 +10,7 @@
 | --- | --- | --- | --- | --- |
 | 马来西亚 | Astro | [Astro Content Guide](https://www.astro.com.my/content/channels) | 完整七日线性节目表 | 来源原文 |
 | 香港 | NOW TV | [NOW TV Guide](https://nowplayer.now.com/tvguide) 与[中文频道页](https://nowplayer.now.com/channels?lang=zh&filterType=all) | 完整七日线性节目表；显示名取官方中文名 | 中文为主 |
-| 瑞典 | V sport ultra HD | [Allente TV Guide](https://www.allente.se/tv-guide/) | 单频道完整七日节目表 | 来源原文 |
+| 瑞典 | 完整 V Sport 体育频道组合 | [Allente TV Guide](https://www.allente.se/tv-guide/) | 13 条 V Sport 频道的完整七日节目表 | 来源原文 |
 | 英国 | NOW Sports 可观看的 Sky Sports 活动 | [Sky Sports live schedule](https://www.sky.com/watch/channel/sky-sports) | Sky 官方公开直播活动、开播时间与频道；并非英国 NOW 全频道的全天 EPG | 英文 |
 | 罗马尼亚 | Digi 4K | [Digi 4K](https://www.digi4k.ro/) | 官网公开的连续七日节目表 | 罗马尼亚语 |
 | 土耳其 | Eurosport 1、Eurosport 2 | [TV+ Eurosport 1](https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77) 与 [TV+ Eurosport 2](https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106) | TV+ 官方页公开的完整当日节目表 | 土耳其语 |
@@ -27,6 +27,8 @@ HBO Max 土耳其英文页明确说明 Eurosport 1 与 Eurosport 2 及直播活�
 | `data/epg.xml` | 未压缩 XMLTV 文件，便于审计与调试。 |
 | `data/current_week.jsonl` | 标准化原始快照，每行一条节目记录。 |
 | `data/status.json` | 本次刷新中每个来源的状态、记录数与总量。 |
+
+瑞典集合包括 **V sport extra HD、premium HD、football HD、vinter HD、motor HD、V sport 1 HD、ultra HD、golf HD 与 V sport live 1–5**，保留 Allente 官方的稳定频道 ID。
 
 订阅地址如下：
 

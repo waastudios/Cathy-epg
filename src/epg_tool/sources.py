@@ -22,7 +22,7 @@ NOW_HK_CHANNELS_ZH = "https://nowplayer.now.com/channels?lang=zh&filterType=all"
 NOW_HK_EPG = "https://nowplayer.now.com/tvguide/epglist"
 ALLENTE_GUIDE = "https://www.allente.se/tv-guide/"
 ALLENTE_EPG = "https://www.allente.se/api/epg/refetch-epg-data"
-ALLENTE_V_SPORT_ULTRA_ID = "50105"
+ALLENTE_V_SPORT_IDS = frozenset({"20092", "50048", "50049", "50056", "50077", "50078", "50079", "50105", "50125", "50126", "50127", "50128", "50129"})
 SKY_SPORTS_GUIDE = "https://www.sky.com/watch/channel/sky-sports"
 SKY_SPORTS_MORE = "https://www.skysports.com/watch/liveonsky/more/{token}"
 DIGI4K_GUIDE = "https://www.digi4k.ro/"
@@ -175,8 +175,8 @@ def _to_local_iso(value: str, zone: ZoneInfo) -> str:
     return datetime.fromisoformat(value).astimezone(zone).isoformat()
 
 
-def collect_allente_v_sport_ultrahd(days: int = 7, pause_seconds: float = 0.25) -> list[Programme]:
-    """读取 Allente 瑞典官方 EPG 中 V Sport Ultra HD（频道 ID 50105）的节目表。"""
+def collect_allente_v_sport(days: int = 7, pause_seconds: float = 0.25) -> list[Programme]:
+    """读取 Allente 瑞典官方 EPG 中全部可公开识别的 V Sport 体育频道节目表。"""
     session = _session()
     zone = ZoneInfo("Europe/Stockholm")
     today = datetime.now(zone).date()
@@ -187,35 +187,40 @@ def collect_allente_v_sport_ultrahd(days: int = 7, pause_seconds: float = 0.25) 
         response = session.get(ALLENTE_EPG, params={"Start": (today + timedelta(days=day_offset)).isoformat()}, timeout=60)
         response.raise_for_status()
         payload = response.json()
-        channel = next(
-            (item for item in payload.get("channels", []) if str(item.get("id")) == ALLENTE_V_SPORT_ULTRA_ID),
-            None,
-        )
-        if channel is None:
-            raise SourceUnavailable("Allente 官方 EPG 响应中未找到 V Sport Ultra HD（50105）。")
-        for item in channel.get("programs", []):
-            title = (item.get("title") or "").strip()
-            start = item.get("eventStart")
-            end = item.get("eventEnd")
-            if not (title and start and end):
-                continue
-            records.append(
-                Programme(
-                    provider="allente_se",
-                    country="SE",
-                    timezone="Europe/Stockholm",
-                    channel_id=ALLENTE_V_SPORT_ULTRA_ID,
-                    channel_number=ALLENTE_V_SPORT_ULTRA_ID,
-                    channel_name=(channel.get("name") or "V sport ultra HD").strip(),
-                    title=title,
-                    start_at=_to_local_iso(start, zone),
-                    end_at=_to_local_iso(end, zone),
-                    source_url=ALLENTE_GUIDE,
-                    retrieved_at=retrieved_at,
+        channels = [item for item in payload.get("channels", []) if str(item.get("id")) in ALLENTE_V_SPORT_IDS]
+        if not channels:
+            raise SourceUnavailable("Allente 官方 EPG 响应中未找到任何预期的 V Sport 体育频道。")
+        for channel in channels:
+            channel_id = str(channel.get("id"))
+            channel_name = (channel.get("name") or f"V sport {channel_id}").strip()
+            for item in channel.get("programs", []):
+                title = (item.get("title") or "").strip()
+                start = item.get("eventStart")
+                end = item.get("eventEnd")
+                if not (title and start and end):
+                    continue
+                records.append(
+                    Programme(
+                        provider="allente_se",
+                        country="SE",
+                        timezone="Europe/Stockholm",
+                        channel_id=channel_id,
+                        channel_number=channel_id,
+                        channel_name=channel_name,
+                        title=title,
+                        start_at=_to_local_iso(start, zone),
+                        end_at=_to_local_iso(end, zone),
+                        source_url=ALLENTE_GUIDE,
+                        retrieved_at=retrieved_at,
+                    )
                 )
-            )
         time.sleep(pause_seconds)
     return _deduplicate(records)
+
+
+def collect_allente_v_sport_ultrahd(days: int = 7, pause_seconds: float = 0.25) -> list[Programme]:
+    """兼容旧接口：仅保留 V sport ultra HD（50105）记录。"""
+    return [record for record in collect_allente_v_sport(days, pause_seconds) if record.channel_id == "50105"]
 
 
 def _parse_sky_date(label: str, reference: date) -> date | None:

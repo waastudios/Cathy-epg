@@ -14,7 +14,7 @@ from .models import read_jsonl, write_jsonl
 from .xmltv import write_xmltv
 from .sources import (
     SourceUnavailable,
-    collect_allente_v_sport_ultrahd,
+    collect_allente_v_sport,
     collect_astro,
     collect_digi4k,
     collect_now_hk,
@@ -35,7 +35,7 @@ def _collect(args: argparse.Namespace) -> int:
     collectors = (
         ("astro", lambda: collect_astro(args.days)),
         ("now_hk", lambda: collect_now_hk(args.days)),
-        ("allente_se", lambda: collect_allente_v_sport_ultrahd(args.days)),
+        ("allente_se", lambda: collect_allente_v_sport(args.days)),
         ("now_uk", lambda: collect_now_uk_sports(args.days)),
         ("digi4k_ro", lambda: collect_digi4k(args.days)),
         ("tvplus_tr", lambda: collect_tvplus_eurosport(args.days)),
