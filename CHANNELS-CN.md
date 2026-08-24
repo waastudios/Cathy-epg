@@ -120,7 +120,7 @@
 | `ee_uk.347` | Sky Comedy |
 | `ee_uk.348` | Sky Sci-Fi |
 | `ee_uk.349` | Sky Crime |
-| `ee_uk.sky-doc` | Sky Documentaries |
+| `ee_uk.352` | Sky Documentaries |
 | `ee_uk.353` | Sky History |
 | `ee_uk.354` | Sky Nature |
 

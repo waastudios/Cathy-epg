@@ -39,6 +39,11 @@ _ALLENTE_NO_XMLTV_IDS = {
     "10011": "allente_no.rex",
     "10022": "allente_no.euron",
 }
+# EE 的官方公开节目接口以 `sky-doc` 作为该服务的内部标记；用户指定导出时
+# 使用数字稳定 ID，以便客户端统一识别 Sky Documentaries。
+_EE_XMLTV_IDS = {
+    "sky-doc": "ee_uk.352",
+}
 
 
 def _xmltv_channel_id(record: Programme) -> str:
@@ -57,6 +62,10 @@ def _xmltv_channel_id(record: Programme) -> str:
             return configured_id
     if record.provider == "allente_no":
         configured_id = _ALLENTE_NO_XMLTV_IDS.get(record.channel_id)
+        if configured_id:
+            return configured_id
+    if record.provider == "ee_uk":
+        configured_id = _EE_XMLTV_IDS.get(record.channel_number)
         if configured_id:
             return configured_id
     return record.provider if not record.channel_number else f"{record.provider}.{record.channel_number}"

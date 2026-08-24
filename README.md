@@ -24,20 +24,20 @@ https://raw.githubusercontent.com/waastudios/Cathy-epg/master/data/epg.xml.gz
 | `data/status.json` | Per-source collection result and output totals. |
 | `CHANNELS.md` | Generated display-name and XMLTV ID inventory for the published snapshot. |
 
-Every XMLTV `display-name` is the provider’s official channel name. Stable XMLTV IDs normally follow `<provider>.<channel-id>`; the public EE Sky Documentaries service is the documented exception `ee_uk.sky-doc`, because the public EE guide exposes its schedule but does not publish a logical channel number.
+Every XMLTV `display-name` is the provider’s official channel name. Stable XMLTV IDs normally follow `<provider>.<channel-id>`; Sky Documentaries uses the user-designated stable ID `ee_uk.352`.
 
 ## Current coverage and enforced scope
 
-| Market | Published services | Official source | Policy applied |
-| --- | --- | --- | --- |
-| Malaysia | Astro: 22 explicitly allow-listed sports channels | [Astro Content Guide](https://www.astro.com.my/content/channels) | Every non-sports Astro channel is excluded. |
-| Hong Kong | now TV: 37 explicitly allow-listed sports channels | [now TV Guide](https://nowplayer.now.com/tvguide) and [official Chinese channel directory](https://nowplayer.now.com/channels?lang=zh&filterType=all) | Every non-sports now TV channel is excluded, including `now_hk.138`. |
-| Sweden | 13 V Sport services, including V Sport UltraHD | [Allente TV Guide](https://www.allente.se/tv-guide/) | Uses the user-confirmed stable channel IDs. |
-| Norway | TV Norge, REX, FEM, Eurosport Norge | [Allente Norway TV Guide](https://www.allente.no/tv-guide/) | Excludes subtitle and audio-description mirrors. |
-| United Kingdom | Selected Sky Sports, TNT Sports, BBC, ITV, Channel 4 and Sky Entertainment services | [EE TV Player Live TV Schedule](https://player.ee.co.uk/#/livetv/schedule) | Exact start and duration are read from its normal public schedule. |
-| United Kingdom | Sky Sports Ultra HD 1 and 2 | [Virgin Media TV Go Guide](https://virgintvgo.virginmedia.com/en/epg/initial) | Uses visible, non-duplicate official directory entries only. |
-| Romania | Digi 4K | [Digi 4K](https://www.digi4k.ro/) | Uses the public official schedule. |
-| Türkiye | Eurosport 1 and Eurosport 2 | [TV+ Eurosport 1](https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77) and [Eurosport 2](https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106) | Uses the authorised provider’s normal public programme pages. |
+| Market | Published services | Official source |
+| --- | --- | --- |
+| Malaysia | Astro: 22 explicitly allow-listed sports channels | [Astro Content Guide](https://www.astro.com.my/content/channels) |
+| Hong Kong | now TV: 37 explicitly allow-listed sports channels | [now TV Guide](https://nowplayer.now.com/tvguide) and [official Chinese channel directory](https://nowplayer.now.com/channels?lang=zh&filterType=all) |
+| Sweden | 13 V Sport services, including V Sport UltraHD | [Allente TV Guide](https://www.allente.se/tv-guide/) |
+| Norway | TV Norge, REX, FEM, Eurosport Norge | [Allente Norway TV Guide](https://www.allente.no/tv-guide/) |
+| United Kingdom | Selected Sky Sports, TNT Sports, BBC, ITV, Channel 4 and Sky Entertainment services | [EE TV Player Live TV Schedule](https://player.ee.co.uk/#/livetv/schedule) |
+| United Kingdom | Sky Sports Ultra HD 1 and 2 | [Virgin Media TV Go Guide](https://virgintvgo.virginmedia.com/en/epg/initial) |
+| Romania | Digi 4K | [Digi 4K](https://www.digi4k.ro/) |
+| Türkiye | Eurosport 1 and Eurosport 2 | [TV+ Eurosport 1](https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77) and [Eurosport 2](https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106) |
 
 ### EE Sky Entertainment selection
 

@@ -24,20 +24,20 @@ https://raw.githubusercontent.com/waastudios/Cathy-epg/master/data/epg.xml.gz
 | `data/status.json` | 每个来源的采集状态和输出总量。 |
 | `CHANNELS.md` | 由当前发布快照生成的显示名与 XMLTV ID 对照表。 |
 
-XMLTV 中的每个 `display-name` 都是服务商公开的官方频道名称。稳定 ID 通常采用 `<provider>.<channel-id>`；EE 的 Sky Documentaries 是记录在案的例外：EE 公开节目表提供该服务，但公共频道指南没有公布逻辑频道号，因此使用 `ee_uk.sky-doc`。
+XMLTV 中的每个 `display-name` 都是服务商公开的官方频道名称。稳定 ID 通常采用 `<provider>.<channel-id>`；Sky Documentaries 使用用户指定的稳定 ID `ee_uk.352`。
 
 ## 当前覆盖与强制范围
 
-| 市场 | 已发布服务 | 官方来源 | 已执行的规则 |
-| --- | --- | --- | --- |
-| 马来西亚 | Astro：22 条明确白名单体育频道 | [Astro Content Guide](https://www.astro.com.my/content/channels) | 所有非体育 Astro 频道均排除。 |
-| 香港 | now TV：37 条明确白名单体育频道 | [now TV Guide](https://nowplayer.now.com/tvguide) 与 [官方中文频道目录](https://nowplayer.now.com/channels?lang=zh&filterType=all) | 所有非体育 now TV 频道均排除，包括 `now_hk.138`。 |
-| 瑞典 | 13 条 V Sport 服务，包含 V Sport UltraHD | [Allente TV Guide](https://www.allente.se/tv-guide/) | 使用用户确认的稳定频道 ID。 |
-| 挪威 | TV Norge、REX、FEM、Eurosport Norge | [Allente Norway TV Guide](https://www.allente.no/tv-guide/) | 排除字幕与音频描述镜像。 |
-| 英国 | 指定 Sky Sports、TNT Sports、BBC、ITV、Channel 4 与 Sky 娱乐频道 | [EE TV Player Live TV Schedule](https://player.ee.co.uk/#/livetv/schedule) | 从正常公开节目表读取精确开始时间与时长。 |
-| 英国 | Sky Sports Ultra HD 1、Sky Sports Ultra HD 2 | [Virgin Media TV Go Guide](https://virgintvgo.virginmedia.com/en/epg/initial) | 仅采用官方目录中可见、非 Duplicate 的服务。 |
-| 罗马尼亚 | Digi 4K | [Digi 4K](https://www.digi4k.ro/) | 使用官网公开节目表。 |
-| 土耳其 | Eurosport 1、Eurosport 2 | [TV+ Eurosport 1](https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77) 与 [Eurosport 2](https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106) | 使用授权服务商的正常公开节目页。 |
+| 市场 | 已发布服务 | 官方来源 |
+| --- | --- | --- |
+| 马来西亚 | Astro：22 条明确白名单体育频道 | [Astro Content Guide](https://www.astro.com.my/content/channels) |
+| 香港 | now TV：37 条明确白名单体育频道 | [now TV Guide](https://nowplayer.now.com/tvguide) 与 [官方中文频道目录](https://nowplayer.now.com/channels?lang=zh&filterType=all) |
+| 瑞典 | 13 条 V Sport 服务，包含 V Sport UltraHD | [Allente TV Guide](https://www.allente.se/tv-guide/) |
+| 挪威 | TV Norge、REX、FEM、Eurosport Norge | [Allente Norway TV Guide](https://www.allente.no/tv-guide/) |
+| 英国 | 指定 Sky Sports、TNT Sports、BBC、ITV、Channel 4 与 Sky 娱乐频道 | [EE TV Player Live TV Schedule](https://player.ee.co.uk/#/livetv/schedule) |
+| 英国 | Sky Sports Ultra HD 1、Sky Sports Ultra HD 2 | [Virgin Media TV Go Guide](https://virgintvgo.virginmedia.com/en/epg/initial) |
+| 罗马尼亚 | Digi 4K | [Digi 4K](https://www.digi4k.ro/) |
+| 土耳其 | Eurosport 1、Eurosport 2 | [TV+ Eurosport 1](https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77) 与 [Eurosport 2](https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106) |
 
 ### EE Sky 娱乐频道选择
 

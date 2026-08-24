@@ -220,6 +220,10 @@
     <display-name>Sky Crime</display-name>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </channel>
+  <channel id="ee_uk.352">
+    <display-name>Sky Documentaries</display-name>
+    <url>https://player.ee.co.uk/#/livetv/schedule</url>
+  </channel>
   <channel id="ee_uk.353">
     <display-name>Sky History</display-name>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
@@ -306,10 +310,6 @@
   </channel>
   <channel id="ee_uk.9">
     <display-name>BBC Four</display-name>
-    <url>https://player.ee.co.uk/#/livetv/schedule</url>
-  </channel>
-  <channel id="ee_uk.sky-doc">
-    <display-name>Sky Documentaries</display-name>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </channel>
   <channel id="eurosport.1">
@@ -42536,547 +42536,547 @@
     <title>Absurd Person Singular</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260823233000 +0100" channel="ee_uk.sky-doc" stop="20260824012000 +0100">
+  <programme start="20260823233000 +0100" channel="ee_uk.352" stop="20260824012000 +0100">
     <title>Fatboy Slim: Right Here,...</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260824012000 +0100" channel="ee_uk.sky-doc" stop="20260824031000 +0100">
+  <programme start="20260824012000 +0100" channel="ee_uk.352" stop="20260824031000 +0100">
     <title>Benetton Formula</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260824031000 +0100" channel="ee_uk.sky-doc" stop="20260824050000 +0100">
+  <programme start="20260824031000 +0100" channel="ee_uk.352" stop="20260824050000 +0100">
     <title>I Am MLK</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260824050000 +0100" channel="ee_uk.sky-doc" stop="20260824060000 +0100">
+  <programme start="20260824050000 +0100" channel="ee_uk.352" stop="20260824060000 +0100">
     <title>Orson Welles: The Directors</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260824060000 +0100" channel="ee_uk.sky-doc" stop="20260824070000 +0100">
+  <programme start="20260824060000 +0100" channel="ee_uk.352" stop="20260824070000 +0100">
     <title>History Of The Sitcom</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260824070000 +0100" channel="ee_uk.sky-doc" stop="20260824080000 +0100">
+  <programme start="20260824070000 +0100" channel="ee_uk.352" stop="20260824080000 +0100">
     <title>Discovering: Jeremy Irons</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260824080000 +0100" channel="ee_uk.sky-doc" stop="20260824090000 +0100">
+  <programme start="20260824080000 +0100" channel="ee_uk.352" stop="20260824090000 +0100">
     <title>Phillip Noyce: The Directors</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260824090000 +0100" channel="ee_uk.sky-doc" stop="20260824100000 +0100">
+  <programme start="20260824090000 +0100" channel="ee_uk.352" stop="20260824100000 +0100">
     <title>Janet Jackson</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260824100000 +0100" channel="ee_uk.sky-doc" stop="20260824110000 +0100">
+  <programme start="20260824100000 +0100" channel="ee_uk.352" stop="20260824110000 +0100">
     <title>The Story Of Late Night</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260824110000 +0100" channel="ee_uk.sky-doc" stop="20260824120000 +0100">
+  <programme start="20260824110000 +0100" channel="ee_uk.352" stop="20260824120000 +0100">
     <title>Juan Carlos: Downfall Of The King</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260824120000 +0100" channel="ee_uk.sky-doc" stop="20260824134500 +0100">
+  <programme start="20260824120000 +0100" channel="ee_uk.352" stop="20260824134500 +0100">
     <title>On The Line: The Richard Williams Story</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260824134500 +0100" channel="ee_uk.sky-doc" stop="20260824140000 +0100">
+  <programme start="20260824134500 +0100" channel="ee_uk.352" stop="20260824140000 +0100">
     <title>My Icon: Duke McKenzie</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260824140000 +0100" channel="ee_uk.sky-doc" stop="20260824160000 +0100">
+  <programme start="20260824140000 +0100" channel="ee_uk.352" stop="20260824160000 +0100">
     <title>Jackie Stewart</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260824160000 +0100" channel="ee_uk.sky-doc" stop="20260824170000 +0100">
+  <programme start="20260824160000 +0100" channel="ee_uk.352" stop="20260824170000 +0100">
     <title>Phillip Noyce: The Directors</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260824170000 +0100" channel="ee_uk.sky-doc" stop="20260824175500 +0100">
+  <programme start="20260824170000 +0100" channel="ee_uk.352" stop="20260824175500 +0100">
     <title>Discovering: Jeremy Irons</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260824175500 +0100" channel="ee_uk.sky-doc" stop="20260824190000 +0100">
+  <programme start="20260824175500 +0100" channel="ee_uk.352" stop="20260824190000 +0100">
     <title>Chimp Crazy</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260824190000 +0100" channel="ee_uk.sky-doc" stop="20260824200000 +0100">
+  <programme start="20260824190000 +0100" channel="ee_uk.352" stop="20260824200000 +0100">
     <title>Love Has Won: The Cult Of...</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260824200000 +0100" channel="ee_uk.sky-doc" stop="20260824210500 +0100">
+  <programme start="20260824200000 +0100" channel="ee_uk.352" stop="20260824210500 +0100">
     <title>The Girl Who Caught A Killer</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260824210500 +0100" channel="ee_uk.sky-doc" stop="20260824222000 +0100">
+  <programme start="20260824210500 +0100" channel="ee_uk.352" stop="20260824222000 +0100">
     <title>The Girl Who Caught A Killer</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260824222000 +0100" channel="ee_uk.sky-doc" stop="20260825001000 +0100">
+  <programme start="20260824222000 +0100" channel="ee_uk.352" stop="20260825001000 +0100">
     <title>I Am Patrick Swayze</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260825001000 +0100" channel="ee_uk.sky-doc" stop="20260825020000 +0100">
+  <programme start="20260825001000 +0100" channel="ee_uk.352" stop="20260825020000 +0100">
     <title>Steve McQueen: The Lost Movie</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260825020000 +0100" channel="ee_uk.sky-doc" stop="20260825030000 +0100">
+  <programme start="20260825020000 +0100" channel="ee_uk.352" stop="20260825030000 +0100">
     <title>Alexia Putellas: Labor Omnia..</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260825030000 +0100" channel="ee_uk.sky-doc" stop="20260825040000 +0100">
+  <programme start="20260825030000 +0100" channel="ee_uk.352" stop="20260825040000 +0100">
     <title>Alexia: Labor Omnia Vincit</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260825040000 +0100" channel="ee_uk.sky-doc" stop="20260825050000 +0100">
+  <programme start="20260825040000 +0100" channel="ee_uk.352" stop="20260825050000 +0100">
     <title>Alexia: Labor Omnia Vincit</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260825050000 +0100" channel="ee_uk.sky-doc" stop="20260825060000 +0100">
+  <programme start="20260825050000 +0100" channel="ee_uk.352" stop="20260825060000 +0100">
     <title>Discovering: Jeremy Irons</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260825060000 +0100" channel="ee_uk.sky-doc" stop="20260825070000 +0100">
+  <programme start="20260825060000 +0100" channel="ee_uk.352" stop="20260825070000 +0100">
     <title>History Of The Sitcom</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260825070000 +0100" channel="ee_uk.sky-doc" stop="20260825080000 +0100">
+  <programme start="20260825070000 +0100" channel="ee_uk.352" stop="20260825080000 +0100">
     <title>Discovering: Emma Thompson</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260825080000 +0100" channel="ee_uk.sky-doc" stop="20260825090000 +0100">
+  <programme start="20260825080000 +0100" channel="ee_uk.352" stop="20260825090000 +0100">
     <title>David Fincher: The Directors</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260825090000 +0100" channel="ee_uk.sky-doc" stop="20260825095500 +0100">
+  <programme start="20260825090000 +0100" channel="ee_uk.352" stop="20260825095500 +0100">
     <title>Janet Jackson</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260825095500 +0100" channel="ee_uk.sky-doc" stop="20260825110000 +0100">
+  <programme start="20260825095500 +0100" channel="ee_uk.352" stop="20260825110000 +0100">
     <title>Branson</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260825110000 +0100" channel="ee_uk.sky-doc" stop="20260825120000 +0100">
+  <programme start="20260825110000 +0100" channel="ee_uk.352" stop="20260825120000 +0100">
     <title>Juan Carlos: Downfall Of The King</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260825120000 +0100" channel="ee_uk.sky-doc" stop="20260825135000 +0100">
+  <programme start="20260825120000 +0100" channel="ee_uk.352" stop="20260825135000 +0100">
     <title>Wild Wild Space</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260825135000 +0100" channel="ee_uk.sky-doc" stop="20260825140000 +0100">
+  <programme start="20260825135000 +0100" channel="ee_uk.352" stop="20260825140000 +0100">
     <title>My Icon: Michael Campbell</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260825140000 +0100" channel="ee_uk.sky-doc" stop="20260825160000 +0100">
+  <programme start="20260825140000 +0100" channel="ee_uk.352" stop="20260825160000 +0100">
     <title>The Fall and Rise of Coventry City</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260825160000 +0100" channel="ee_uk.sky-doc" stop="20260825170000 +0100">
+  <programme start="20260825160000 +0100" channel="ee_uk.352" stop="20260825170000 +0100">
     <title>David Fincher: The Directors</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260825170000 +0100" channel="ee_uk.sky-doc" stop="20260825175500 +0100">
+  <programme start="20260825170000 +0100" channel="ee_uk.352" stop="20260825175500 +0100">
     <title>Discovering: Emma Thompson</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260825175500 +0100" channel="ee_uk.sky-doc" stop="20260825185500 +0100">
+  <programme start="20260825175500 +0100" channel="ee_uk.352" stop="20260825185500 +0100">
     <title>Chimp Crazy</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260825185500 +0100" channel="ee_uk.sky-doc" stop="20260825200000 +0100">
+  <programme start="20260825185500 +0100" channel="ee_uk.352" stop="20260825200000 +0100">
     <title>Love Has Won: The Cult Of...</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260825200000 +0100" channel="ee_uk.sky-doc" stop="20260825213000 +0100">
+  <programme start="20260825200000 +0100" channel="ee_uk.352" stop="20260825213000 +0100">
     <title>The Salt Path Scandal</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260825213000 +0100" channel="ee_uk.sky-doc" stop="20260825231500 +0100">
+  <programme start="20260825213000 +0100" channel="ee_uk.352" stop="20260825231500 +0100">
     <title>The Sleepwalker</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260825231500 +0100" channel="ee_uk.sky-doc" stop="20260826013000 +0100">
+  <programme start="20260825231500 +0100" channel="ee_uk.352" stop="20260826013000 +0100">
     <title>JFK Revisited: Through The...</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260826013000 +0100" channel="ee_uk.sky-doc" stop="20260826020000 +0100">
+  <programme start="20260826013000 +0100" channel="ee_uk.352" stop="20260826020000 +0100">
     <title>Chernobyl, My Promised Land</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260826020000 +0100" channel="ee_uk.sky-doc" stop="20260826040000 +0100">
+  <programme start="20260826020000 +0100" channel="ee_uk.352" stop="20260826040000 +0100">
     <title>New: Rainbow Warrior</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260826040000 +0100" channel="ee_uk.sky-doc" stop="20260826050000 +0100">
+  <programme start="20260826040000 +0100" channel="ee_uk.352" stop="20260826050000 +0100">
     <title>David Fincher: The Directors</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260826050000 +0100" channel="ee_uk.sky-doc" stop="20260826060000 +0100">
+  <programme start="20260826050000 +0100" channel="ee_uk.352" stop="20260826060000 +0100">
     <title>Discovering: Emma Thompson</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260826060000 +0100" channel="ee_uk.sky-doc" stop="20260826070000 +0100">
+  <programme start="20260826060000 +0100" channel="ee_uk.352" stop="20260826070000 +0100">
     <title>History Of The Sitcom</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260826070000 +0100" channel="ee_uk.sky-doc" stop="20260826080000 +0100">
+  <programme start="20260826070000 +0100" channel="ee_uk.352" stop="20260826080000 +0100">
     <title>Discovering: John Travolta</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260826080000 +0100" channel="ee_uk.sky-doc" stop="20260826090000 +0100">
+  <programme start="20260826080000 +0100" channel="ee_uk.352" stop="20260826090000 +0100">
     <title>Nancy Meyers: The Directors</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260826090000 +0100" channel="ee_uk.sky-doc" stop="20260826095500 +0100">
+  <programme start="20260826090000 +0100" channel="ee_uk.352" stop="20260826095500 +0100">
     <title>Janet Jackson</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260826095500 +0100" channel="ee_uk.sky-doc" stop="20260826110000 +0100">
+  <programme start="20260826095500 +0100" channel="ee_uk.352" stop="20260826110000 +0100">
     <title>Branson</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260826110000 +0100" channel="ee_uk.sky-doc" stop="20260826120000 +0100">
+  <programme start="20260826110000 +0100" channel="ee_uk.352" stop="20260826120000 +0100">
     <title>Juan Carlos: Downfall Of The King</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260826120000 +0100" channel="ee_uk.sky-doc" stop="20260826145000 +0100">
+  <programme start="20260826120000 +0100" channel="ee_uk.352" stop="20260826145000 +0100">
     <title>Stevie Van Zandt: Disciple</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260826145000 +0100" channel="ee_uk.sky-doc" stop="20260826160000 +0100">
+  <programme start="20260826145000 +0100" channel="ee_uk.352" stop="20260826160000 +0100">
     <title>Young Guns: The New Tennis Titans</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260826160000 +0100" channel="ee_uk.sky-doc" stop="20260826170000 +0100">
+  <programme start="20260826160000 +0100" channel="ee_uk.352" stop="20260826170000 +0100">
     <title>Nancy Meyers: The Directors</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260826170000 +0100" channel="ee_uk.sky-doc" stop="20260826180000 +0100">
+  <programme start="20260826170000 +0100" channel="ee_uk.352" stop="20260826180000 +0100">
     <title>Discovering: John Travolta</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260826180000 +0100" channel="ee_uk.sky-doc" stop="20260826190000 +0100">
+  <programme start="20260826180000 +0100" channel="ee_uk.352" stop="20260826190000 +0100">
     <title>Chimp Crazy</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260826190000 +0100" channel="ee_uk.sky-doc" stop="20260826200000 +0100">
+  <programme start="20260826190000 +0100" channel="ee_uk.352" stop="20260826200000 +0100">
     <title>Love Has Won: The Cult of...</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260826200000 +0100" channel="ee_uk.sky-doc" stop="20260826220000 +0100">
+  <programme start="20260826200000 +0100" channel="ee_uk.352" stop="20260826220000 +0100">
     <title>Costa Concordia: Chronicle Of...</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260826220000 +0100" channel="ee_uk.sky-doc" stop="20260827000000 +0100">
+  <programme start="20260826220000 +0100" channel="ee_uk.352" stop="20260827000000 +0100">
     <title>New: Rainbow Warrior</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260827000000 +0100" channel="ee_uk.sky-doc" stop="20260827014000 +0100">
+  <programme start="20260827000000 +0100" channel="ee_uk.352" stop="20260827014000 +0100">
     <title>The Salisbury Poisonings: A...</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260827014000 +0100" channel="ee_uk.sky-doc" stop="20260827024000 +0100">
+  <programme start="20260827014000 +0100" channel="ee_uk.352" stop="20260827024000 +0100">
     <title>Scouting for Girls:...</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260827024000 +0100" channel="ee_uk.sky-doc" stop="20260827034000 +0100">
+  <programme start="20260827024000 +0100" channel="ee_uk.352" stop="20260827034000 +0100">
     <title>Scouting for Girls:...</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260827034000 +0100" channel="ee_uk.sky-doc" stop="20260827044000 +0100">
+  <programme start="20260827034000 +0100" channel="ee_uk.352" stop="20260827044000 +0100">
     <title>Scouting for Girls:...</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260827044000 +0100" channel="ee_uk.sky-doc" stop="20260827050000 +0100">
+  <programme start="20260827044000 +0100" channel="ee_uk.352" stop="20260827050000 +0100">
     <title>My Icon: K &amp; H Richardson-Walsh</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260827050000 +0100" channel="ee_uk.sky-doc" stop="20260827060000 +0100">
+  <programme start="20260827050000 +0100" channel="ee_uk.352" stop="20260827060000 +0100">
     <title>Discovering: John Travolta</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260827060000 +0100" channel="ee_uk.sky-doc" stop="20260827070000 +0100">
+  <programme start="20260827060000 +0100" channel="ee_uk.352" stop="20260827070000 +0100">
     <title>History Of The Sitcom</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260827070000 +0100" channel="ee_uk.sky-doc" stop="20260827080000 +0100">
+  <programme start="20260827070000 +0100" channel="ee_uk.352" stop="20260827080000 +0100">
     <title>Discovering: Matthew Broderick</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260827080000 +0100" channel="ee_uk.sky-doc" stop="20260827090000 +0100">
+  <programme start="20260827080000 +0100" channel="ee_uk.352" stop="20260827090000 +0100">
     <title>Clint Eastwood: The Directors</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260827090000 +0100" channel="ee_uk.sky-doc" stop="20260827100000 +0100">
+  <programme start="20260827090000 +0100" channel="ee_uk.352" stop="20260827100000 +0100">
     <title>Janet Jackson</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260827100000 +0100" channel="ee_uk.sky-doc" stop="20260827110000 +0100">
+  <programme start="20260827100000 +0100" channel="ee_uk.352" stop="20260827110000 +0100">
     <title>Branson</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260827110000 +0100" channel="ee_uk.sky-doc" stop="20260827120000 +0100">
+  <programme start="20260827110000 +0100" channel="ee_uk.352" stop="20260827120000 +0100">
     <title>Juan Carlos: Downfall Of The King</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260827120000 +0100" channel="ee_uk.sky-doc" stop="20260827135000 +0100">
+  <programme start="20260827120000 +0100" channel="ee_uk.352" stop="20260827135000 +0100">
     <title>Barbie Uncovered</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260827135000 +0100" channel="ee_uk.sky-doc" stop="20260827140000 +0100">
+  <programme start="20260827135000 +0100" channel="ee_uk.352" stop="20260827140000 +0100">
     <title>My Icon: Heather Watson</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260827140000 +0100" channel="ee_uk.sky-doc" stop="20260827160000 +0100">
+  <programme start="20260827140000 +0100" channel="ee_uk.352" stop="20260827160000 +0100">
     <title>Missile From The East</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260827160000 +0100" channel="ee_uk.sky-doc" stop="20260827170000 +0100">
+  <programme start="20260827160000 +0100" channel="ee_uk.352" stop="20260827170000 +0100">
     <title>Clint Eastwood: The Directors</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260827170000 +0100" channel="ee_uk.sky-doc" stop="20260827175500 +0100">
+  <programme start="20260827170000 +0100" channel="ee_uk.352" stop="20260827175500 +0100">
     <title>Discovering: Matthew Broderick</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260827175500 +0100" channel="ee_uk.sky-doc" stop="20260827190000 +0100">
+  <programme start="20260827175500 +0100" channel="ee_uk.352" stop="20260827190000 +0100">
     <title>Chimp Crazy</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260827190000 +0100" channel="ee_uk.sky-doc" stop="20260827204500 +0100">
+  <programme start="20260827190000 +0100" channel="ee_uk.352" stop="20260827204500 +0100">
     <title>I Am Raquel Welch</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260827204500 +0100" channel="ee_uk.sky-doc" stop="20260827210000 +0100">
+  <programme start="20260827204500 +0100" channel="ee_uk.352" stop="20260827210000 +0100">
     <title>My Icon: Denise Lewis</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260827210000 +0100" channel="ee_uk.sky-doc" stop="20260827230000 +0100">
+  <programme start="20260827210000 +0100" channel="ee_uk.352" stop="20260827230000 +0100">
     <title>My Mom Jayne</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260827230000 +0100" channel="ee_uk.sky-doc" stop="20260828010000 +0100">
+  <programme start="20260827230000 +0100" channel="ee_uk.352" stop="20260828010000 +0100">
     <title>Val</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260828010000 +0100" channel="ee_uk.sky-doc" stop="20260828020000 +0100">
+  <programme start="20260828010000 +0100" channel="ee_uk.352" stop="20260828020000 +0100">
     <title>Escobar By Escobar</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260828020000 +0100" channel="ee_uk.sky-doc" stop="20260828030000 +0100">
+  <programme start="20260828020000 +0100" channel="ee_uk.352" stop="20260828030000 +0100">
     <title>Escobar By Escobar</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260828030000 +0100" channel="ee_uk.sky-doc" stop="20260828040000 +0100">
+  <programme start="20260828030000 +0100" channel="ee_uk.352" stop="20260828040000 +0100">
     <title>Escobar By Escobar</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260828040000 +0100" channel="ee_uk.sky-doc" stop="20260828050000 +0100">
+  <programme start="20260828040000 +0100" channel="ee_uk.352" stop="20260828050000 +0100">
     <title>Escobar By Escobar</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260828050000 +0100" channel="ee_uk.sky-doc" stop="20260828060000 +0100">
+  <programme start="20260828050000 +0100" channel="ee_uk.352" stop="20260828060000 +0100">
     <title>Discovering: Matthew Broderick</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260828060000 +0100" channel="ee_uk.sky-doc" stop="20260828070000 +0100">
+  <programme start="20260828060000 +0100" channel="ee_uk.352" stop="20260828070000 +0100">
     <title>History Of The Sitcom</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260828070000 +0100" channel="ee_uk.sky-doc" stop="20260828080000 +0100">
+  <programme start="20260828070000 +0100" channel="ee_uk.352" stop="20260828080000 +0100">
     <title>Discovering: William Hurt</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260828080000 +0100" channel="ee_uk.sky-doc" stop="20260828090000 +0100">
+  <programme start="20260828080000 +0100" channel="ee_uk.352" stop="20260828090000 +0100">
     <title>Ang Lee: The Directors</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260828090000 +0100" channel="ee_uk.sky-doc" stop="20260828100000 +0100">
+  <programme start="20260828090000 +0100" channel="ee_uk.352" stop="20260828100000 +0100">
     <title>Urban Secrets</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260828100000 +0100" channel="ee_uk.sky-doc" stop="20260828114500 +0100">
+  <programme start="20260828100000 +0100" channel="ee_uk.352" stop="20260828114500 +0100">
     <title>Branson</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260828114500 +0100" channel="ee_uk.sky-doc" stop="20260828120000 +0100">
+  <programme start="20260828114500 +0100" channel="ee_uk.352" stop="20260828120000 +0100">
     <title>My Icon: Ebony Rainford-Brent</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260828120000 +0100" channel="ee_uk.sky-doc" stop="20260828134500 +0100">
+  <programme start="20260828120000 +0100" channel="ee_uk.352" stop="20260828134500 +0100">
     <title>Love Means Zero</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260828134500 +0100" channel="ee_uk.sky-doc" stop="20260828140000 +0100">
+  <programme start="20260828134500 +0100" channel="ee_uk.352" stop="20260828140000 +0100">
     <title>My Icon: Tanni Grey Thompson Pt 1</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260828140000 +0100" channel="ee_uk.sky-doc" stop="20260828160000 +0100">
+  <programme start="20260828140000 +0100" channel="ee_uk.352" stop="20260828160000 +0100">
     <title>Benetton Formula</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260828160000 +0100" channel="ee_uk.sky-doc" stop="20260828170000 +0100">
+  <programme start="20260828160000 +0100" channel="ee_uk.352" stop="20260828170000 +0100">
     <title>Ang Lee: The Directors</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260828170000 +0100" channel="ee_uk.sky-doc" stop="20260828180000 +0100">
+  <programme start="20260828170000 +0100" channel="ee_uk.352" stop="20260828180000 +0100">
     <title>Discovering: William Hurt</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260828180000 +0100" channel="ee_uk.sky-doc" stop="20260828200000 +0100">
+  <programme start="20260828180000 +0100" channel="ee_uk.352" stop="20260828200000 +0100">
     <title>Hitsville: The Making Of Motown</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260828200000 +0100" channel="ee_uk.sky-doc" stop="20260828223000 +0100">
+  <programme start="20260828200000 +0100" channel="ee_uk.352" stop="20260828223000 +0100">
     <title>Amy (2015)</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260828223000 +0100" channel="ee_uk.sky-doc" stop="20260829003000 +0100">
+  <programme start="20260828223000 +0100" channel="ee_uk.352" stop="20260829003000 +0100">
     <title>Rik Mayall: Magnificent B'Stard</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260829003000 +0100" channel="ee_uk.sky-doc" stop="20260829032000 +0100">
+  <programme start="20260829003000 +0100" channel="ee_uk.352" stop="20260829032000 +0100">
     <title>Stevie Van Zandt: Disciple</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260829032000 +0100" channel="ee_uk.sky-doc" stop="20260829050000 +0100">
+  <programme start="20260829032000 +0100" channel="ee_uk.352" stop="20260829050000 +0100">
     <title>When We Were Kings</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260829050000 +0100" channel="ee_uk.sky-doc" stop="20260829060000 +0100">
+  <programme start="20260829050000 +0100" channel="ee_uk.352" stop="20260829060000 +0100">
     <title>Discovering: William Hurt</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260829060000 +0100" channel="ee_uk.sky-doc" stop="20260829070000 +0100">
+  <programme start="20260829060000 +0100" channel="ee_uk.352" stop="20260829070000 +0100">
     <title>Discovering: Jeremy Irons</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260829070000 +0100" channel="ee_uk.sky-doc" stop="20260829080000 +0100">
+  <programme start="20260829070000 +0100" channel="ee_uk.352" stop="20260829080000 +0100">
     <title>Discovering: John Travolta</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260829080000 +0100" channel="ee_uk.sky-doc" stop="20260829085000 +0100">
+  <programme start="20260829080000 +0100" channel="ee_uk.352" stop="20260829085000 +0100">
     <title>Nancy Meyers: The Directors</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260829085000 +0100" channel="ee_uk.sky-doc" stop="20260829104000 +0100">
+  <programme start="20260829085000 +0100" channel="ee_uk.352" stop="20260829104000 +0100">
     <title>On The Line: The Richard Williams Story</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260829104000 +0100" channel="ee_uk.sky-doc" stop="20260829114500 +0100">
+  <programme start="20260829104000 +0100" channel="ee_uk.352" stop="20260829114500 +0100">
     <title>JFK: Destiny Betrayed</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260829114500 +0100" channel="ee_uk.sky-doc" stop="20260829125000 +0100">
+  <programme start="20260829114500 +0100" channel="ee_uk.352" stop="20260829125000 +0100">
     <title>JFK: Destiny Betrayed</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260829125000 +0100" channel="ee_uk.sky-doc" stop="20260829135500 +0100">
+  <programme start="20260829125000 +0100" channel="ee_uk.352" stop="20260829135500 +0100">
     <title>JFK: Destiny Betrayed</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260829135500 +0100" channel="ee_uk.sky-doc" stop="20260829150000 +0100">
+  <programme start="20260829135500 +0100" channel="ee_uk.352" stop="20260829150000 +0100">
     <title>JFK: Destiny Betrayed</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260829150000 +0100" channel="ee_uk.sky-doc" stop="20260829170000 +0100">
+  <programme start="20260829150000 +0100" channel="ee_uk.352" stop="20260829170000 +0100">
     <title>Rainbow Warrior</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260829170000 +0100" channel="ee_uk.sky-doc" stop="20260829190000 +0100">
+  <programme start="20260829170000 +0100" channel="ee_uk.352" stop="20260829190000 +0100">
     <title>Lancaster</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260829190000 +0100" channel="ee_uk.sky-doc" stop="20260829210000 +0100">
+  <programme start="20260829190000 +0100" channel="ee_uk.352" stop="20260829210000 +0100">
     <title>Spitfire</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260829210000 +0100" channel="ee_uk.sky-doc" stop="20260829220000 +0100">
+  <programme start="20260829210000 +0100" channel="ee_uk.352" stop="20260829220000 +0100">
     <title>The Essex Murders: Who Killed.</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260829220000 +0100" channel="ee_uk.sky-doc" stop="20260829230000 +0100">
+  <programme start="20260829220000 +0100" channel="ee_uk.352" stop="20260829230000 +0100">
     <title>The Essex Murders: Who Killed.</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260829230000 +0100" channel="ee_uk.sky-doc" stop="20260830000000 +0100">
+  <programme start="20260829230000 +0100" channel="ee_uk.352" stop="20260830000000 +0100">
     <title>The Essex Murders: Who Killed.</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260830000000 +0100" channel="ee_uk.sky-doc" stop="20260830020000 +0100">
+  <programme start="20260830000000 +0100" channel="ee_uk.352" stop="20260830020000 +0100">
     <title>Savage Mountain</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260830020000 +0100" channel="ee_uk.sky-doc" stop="20260830040000 +0100">
+  <programme start="20260830020000 +0100" channel="ee_uk.352" stop="20260830040000 +0100">
     <title>I Am MLK</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260830040000 +0100" channel="ee_uk.sky-doc" stop="20260830060000 +0100">
+  <programme start="20260830040000 +0100" channel="ee_uk.352" stop="20260830060000 +0100">
     <title>The Loneliest Whale</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260830060000 +0100" channel="ee_uk.sky-doc" stop="20260830070000 +0100">
+  <programme start="20260830060000 +0100" channel="ee_uk.352" stop="20260830070000 +0100">
     <title>Discovering: John Travolta</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260830070000 +0100" channel="ee_uk.sky-doc" stop="20260830080000 +0100">
+  <programme start="20260830070000 +0100" channel="ee_uk.352" stop="20260830080000 +0100">
     <title>Discovering: William Hurt</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260830080000 +0100" channel="ee_uk.sky-doc" stop="20260830090000 +0100">
+  <programme start="20260830080000 +0100" channel="ee_uk.352" stop="20260830090000 +0100">
     <title>Clint Eastwood: The Directors</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260830090000 +0100" channel="ee_uk.sky-doc" stop="20260830105000 +0100">
+  <programme start="20260830090000 +0100" channel="ee_uk.352" stop="20260830105000 +0100">
     <title>I Am Alfred Hitchcock</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260830105000 +0100" channel="ee_uk.sky-doc" stop="20260830110000 +0100">
+  <programme start="20260830105000 +0100" channel="ee_uk.352" stop="20260830110000 +0100">
     <title>My Icon: Michael Holding</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260830110000 +0100" channel="ee_uk.sky-doc" stop="20260830125000 +0100">
+  <programme start="20260830110000 +0100" channel="ee_uk.352" stop="20260830125000 +0100">
     <title>Barbie Uncovered</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260830125000 +0100" channel="ee_uk.sky-doc" stop="20260830130000 +0100">
+  <programme start="20260830125000 +0100" channel="ee_uk.352" stop="20260830130000 +0100">
     <title>My Icon: Kadeen Corbin</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260830130000 +0100" channel="ee_uk.sky-doc" stop="20260830150000 +0100">
+  <programme start="20260830130000 +0100" channel="ee_uk.352" stop="20260830150000 +0100">
     <title>My Mom Jayne</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260830150000 +0100" channel="ee_uk.sky-doc" stop="20260830160500 +0100">
+  <programme start="20260830150000 +0100" channel="ee_uk.352" stop="20260830160500 +0100">
     <title>Chimp Crazy</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260830160500 +0100" channel="ee_uk.sky-doc" stop="20260830170500 +0100">
+  <programme start="20260830160500 +0100" channel="ee_uk.352" stop="20260830170500 +0100">
     <title>Chimp Crazy</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260830170500 +0100" channel="ee_uk.sky-doc" stop="20260830181000 +0100">
+  <programme start="20260830170500 +0100" channel="ee_uk.352" stop="20260830181000 +0100">
     <title>Chimp Crazy</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260830181000 +0100" channel="ee_uk.sky-doc" stop="20260830192000 +0100">
+  <programme start="20260830181000 +0100" channel="ee_uk.352" stop="20260830192000 +0100">
     <title>Chimp Crazy</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260830192000 +0100" channel="ee_uk.sky-doc" stop="20260830210000 +0100">
+  <programme start="20260830192000 +0100" channel="ee_uk.352" stop="20260830210000 +0100">
     <title>The Salisbury Poisonings: A...</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260830210000 +0100" channel="ee_uk.sky-doc" stop="20260830220000 +0100">
+  <programme start="20260830210000 +0100" channel="ee_uk.352" stop="20260830220000 +0100">
     <title>New: Groomed: The Truth Behind The...</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260830220000 +0100" channel="ee_uk.sky-doc" stop="20260830230000 +0100">
+  <programme start="20260830220000 +0100" channel="ee_uk.352" stop="20260830230000 +0100">
     <title>The Essex Murders: Who Killed...</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260830230000 +0100" channel="ee_uk.sky-doc" stop="20260831000000 +0100">
+  <programme start="20260830230000 +0100" channel="ee_uk.352" stop="20260831000000 +0100">
     <title>The Essex Murders: Who Killed...</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
