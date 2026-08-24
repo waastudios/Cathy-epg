@@ -128,18 +128,13 @@
 | `ee_uk.353` | Sky History |
 | `ee_uk.354` | Sky Nature |
 
-## 土耳其 Eurosport
-
+## Eurosport
 | tvg-id | tvg-name |
 | --- | --- |
 | `eurosport.1` | Eurosport 1 |
 | `eurosport.2` | Eurosport 2 |
-
-## Eurosport 4K
-
-| tvg-id | tvg-name |
-| --- | --- |
 | `Eurosport.4K` | Eurosport 4K |
+
 
 ## Digi 4K
 
@@ -151,8 +146,8 @@
 
 | tvg-id | tvg-name |
 | --- | --- |
-| `allente_no.euron` | Eurosport Norge |
-| `allente_no.euro1` | Eurosport 1 |
+| `allente_no.euron` | Eurosport 1 |
+| `allente_no.euro1` | Eurosport Norge |
 | `allente_no.fem` | FEM |
 | `allente_no.rex` | REX |
 | `allente_no.tvn` | TV Norge |
