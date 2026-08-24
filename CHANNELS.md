@@ -2,7 +2,7 @@
 
 This inventory is generated directly from the currently published `data/epg.xml`. Every row is an actual XMLTV `<channel>` node: **tvg-id** is `channel/@id` and **tvg-name** is `display-name`.
 
-The current XMLTV output contains **120 channels**.
+The current XMLTV output contains **121 channels**.
 
 ## Astro
 
@@ -31,7 +31,7 @@ The current XMLTV output contains **120 channels**.
 | `astro.832` | CricBuzz |
 | `astro.833` | Premier Sports |
 
-## NOW TV Hong Kong
+## now TV Hong Kong
 
 | tvg-id | tvg-name |
 | --- | --- |
@@ -152,6 +152,7 @@ The current XMLTV output contains **120 channels**.
 | tvg-id | tvg-name |
 | --- | --- |
 | `allente_no.euron` | Eurosport Norge |
+| `allente_no.euro1` | Eurosport 1 |
 | `allente_no.fem` | FEM |
 | `allente_no.rex` | REX |
 | `allente_no.tvn` | TV Norge |

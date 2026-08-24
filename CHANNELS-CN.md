@@ -2,7 +2,7 @@
 
 本清单直接由当前发布的 `data/epg.xml` 生成。每一行均为实际 XMLTV `<channel>` 节点：**tvg-id** 对应 `channel/@id`，**tvg-name** 对应 `display-name`。
 
-当前 XMLTV 输出包含 **120 个频道**。
+当前 XMLTV 输出包含 **121 个频道**。
 
 ## Astro
 
@@ -31,7 +31,7 @@
 | `astro.832` | CricBuzz |
 | `astro.833` | Premier Sports |
 
-## 香港 NOW TV
+## 香港 now TV
 
 | tvg-id | tvg-name |
 | --- | --- |
@@ -152,6 +152,7 @@
 | tvg-id | tvg-name |
 | --- | --- |
 | `allente_no.euron` | Eurosport Norge |
+| `allente_no.euro1` | Eurosport 1 |
 | `allente_no.fem` | FEM |
 | `allente_no.rex` | REX |
 | `allente_no.tvn` | TV Norge |
