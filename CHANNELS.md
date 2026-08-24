@@ -1,6 +1,6 @@
-# Published channel changes
+# Published channels
 
-This inventory is generated from the currently published `data/current_week.jsonl` and verified against `data/epg.xml.gz`. It lists the channels changed or confirmed by the sports-only and EE Sky Entertainment scope update; each displayed name is the actual XMLTV `display-name`.
+This inventory is generated from the currently published `data/current_week.jsonl` and verified against `data/epg.xml.gz`. It lists channels that are actually published in the XMLTV output; each displayed name is the actual XMLTV `display-name`.
 
 The snapshot generated at `2026-08-24T18:26:24Z` contains **120 channels** and **15461 programmes**. Its gzip file expands byte-for-byte to `data/epg.xml`.
 
@@ -79,28 +79,26 @@ All non-sports NOW TV channels are excluded, including `now_hk.138` (Now爆谷�
 
 ## EE TV Player — requested Sky Entertainment channels
 
-When EE exposes parallel variants, the DVB/television service is selected for Sky Mix and Sky Arts; remaining services below are the available standard-definition primary service. HD and +1 mirrors are not published.
+This table lists the EE Sky Entertainment services actually published in the current XMLTV output.
 
-| XMLTV ID | Official display name | Status in this scope update |
-| --- | --- | --- |
-| `ee_uk.11` | Sky Mix | Added — DVB/television service |
-| `ee_uk.36` | Sky Arts | Added — DVB/television service |
-| `ee_uk.341` | Sky Witness | Added — SD primary service |
-| `ee_uk.342` | Sky Atlantic | Retained — previously published SD primary service |
-| `ee_uk.346` | Sky One | Retained — previously published SD primary service |
-| `ee_uk.347` | Sky Comedy | Added — SD primary service |
-| `ee_uk.348` | Sky Sci-Fi | Added — SD primary service |
-| `ee_uk.349` | Sky Crime | Retained — previously published SD primary service |
-| `ee_uk.sky-doc` | Sky Documentaries | Added — EE does not publish an LCN for this public service |
-| `ee_uk.353` | Sky History | Added — SD primary service |
-| `ee_uk.354` | Sky Nature | Added — SD primary service |
+| XMLTV ID | Official display name |
+| --- | --- |
+| `ee_uk.11` | Sky Mix |
+| `ee_uk.36` | Sky Arts |
+| `ee_uk.341` | Sky Witness |
+| `ee_uk.342` | Sky Atlantic |
+| `ee_uk.346` | Sky One |
+| `ee_uk.347` | Sky Comedy |
+| `ee_uk.348` | Sky Sci-Fi |
+| `ee_uk.349` | Sky Crime |
+| `ee_uk.sky-doc` | Sky Documentaries |
+| `ee_uk.353` | Sky History |
+| `ee_uk.354` | Sky Nature |
 
 ## Not published
 
 | Requested service | Publication decision | Reason |
 | --- | --- | --- |
-| Sky History 2 | Not added | It is absent from EE TV Player’s current public linear directory and official channel guide. |
-| Sky Replay | Not added | It is absent from EE TV Player’s current public linear directory and official channel guide. |
 | ESPN / ESPN2 / ESPNEWS / ESPNU | Not added | No compliant anonymous authorised-provider source currently provides reusable per-event start and stop timing. If added later, IDs will carry the provider prefix (for example, `directv_espn`). |
 | Eurosport 4K | Not added | No current official or authorised-provider guide has been verified to expose complete reusable channel-level programme timing. TNT Sports Ultimate is not a substitute. |
 
