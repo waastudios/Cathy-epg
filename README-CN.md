@@ -48,7 +48,7 @@ TV+ Eurosport 每次采集均对每个官方标题执行确定性的英文赛事
 https://raw.githubusercontent.com/waastudios/Cathy-epg/master/data/epg.xml.gz
 ```
 
-频道标识通常稳定使用 `<provider>.<channel-id>`。例如，香港 NOW TV 的频道 ID **`now_hk.138`** 保持不变，显示名已由通用 `CH 138` 改为官网中文名 **`Now爆谷星影台`**。Digi 4K 是用户指定的单频道例外：XMLTV 频道 ID 精确为 **`digi4k_ro`**，显示名保持官方名称 **Digi 4K**。Virgin Media Sky Sports Ultra 严格采用所要求的官方 ID 格式：**Sky Sports Ultra HD 1** 为 **`virgin_uk.2258`**，**Sky Sports Ultra HD 2** 为 **`virgin_uk.2265`**。
+频道标识通常稳定使用 `<provider>.<channel-id>`。例如，香港 NOW TV 的频道 ID **`now_hk.138`** 保持不变，显示名已由通用 `CH 138` 改为官网中文名 **`Now爆谷星影台`**。Digi 4K 是用户指定的单频道例外：XMLTV 频道 ID 精确为 **`digi4k_ro`**，显示名保持官方名称 **Digi 4K**。TV+ 土耳其 Eurosport 1、Eurosport 2 分别使用用户指定的稳定 ID **`eurosport.1`**、**`eurosport.2`**，显示名仍严格保留运营商官方名称。Virgin Media Sky Sports Ultra 严格采用所要求的官方 ID 格式：**Sky Sports Ultra HD 1** 为 **`virgin_uk.2258`**，**Sky Sports Ultra HD 2** 为 **`virgin_uk.2265`**。
 
 ## 本地运行
 

@@ -836,6 +836,14 @@
     <display-name>BBC Four</display-name>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </channel>
+  <channel id="eurosport.1">
+    <display-name>Eurosport 1</display-name>
+    <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77</url>
+  </channel>
+  <channel id="eurosport.2">
+    <display-name>Eurosport 2</display-name>
+    <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106</url>
+  </channel>
   <channel id="now_hk.102">
     <display-name>Viu 頻道</display-name>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -1331,14 +1339,6 @@
   <channel id="now_hk.797">
     <display-name>Star Bharat</display-name>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </channel>
-  <channel id="tvplus_tr.106">
-    <display-name>Eurosport 2</display-name>
-    <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106</url>
-  </channel>
-  <channel id="tvplus_tr.77">
-    <display-name>Eurosport 1</display-name>
-    <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77</url>
   </channel>
   <channel id="virgin_uk.2258">
     <display-name>Sky Sports Ultra HD 1</display-name>
@@ -234924,139 +234924,139 @@
     <title>Savdhaan India</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260824010000 +0300" channel="tvplus_tr.106" stop="20260824023000 +0300">
+  <programme start="20260824010000 +0300" channel="eurosport.2" stop="20260824023000 +0300">
     <title>La Vuelta a España, Stage 2</title>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106</url>
   </programme>
-  <programme start="20260824023000 +0300" channel="tvplus_tr.106" stop="20260824031500 +0300">
+  <programme start="20260824023000 +0300" channel="eurosport.2" stop="20260824031500 +0300">
     <title>Formula E World Championship</title>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106</url>
   </programme>
-  <programme start="20260824031500 +0300" channel="tvplus_tr.106" stop="20260824040000 +0300">
+  <programme start="20260824031500 +0300" channel="eurosport.2" stop="20260824040000 +0300">
     <title>Formula E World Championship</title>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106</url>
   </programme>
-  <programme start="20260824040000 +0300" channel="tvplus_tr.106" stop="20260824060000 +0300">
+  <programme start="20260824040000 +0300" channel="eurosport.2" stop="20260824060000 +0300">
     <title>La Vuelta a España, Stage 2</title>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106</url>
   </programme>
-  <programme start="20260824060000 +0300" channel="tvplus_tr.106" stop="20260824080000 +0300">
+  <programme start="20260824060000 +0300" channel="eurosport.2" stop="20260824080000 +0300">
     <title>Wuhan Open</title>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106</url>
   </programme>
-  <programme start="20260824080000 +0300" channel="tvplus_tr.106" stop="20260824090000 +0300">
+  <programme start="20260824080000 +0300" channel="eurosport.2" stop="20260824090000 +0300">
     <title>Formula E World Championship</title>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106</url>
   </programme>
-  <programme start="20260824090000 +0300" channel="tvplus_tr.106" stop="20260824100000 +0300">
+  <programme start="20260824090000 +0300" channel="eurosport.2" stop="20260824100000 +0300">
     <title>Formula E World Championship</title>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106</url>
   </programme>
-  <programme start="20260824100000 +0300" channel="tvplus_tr.106" stop="20260824130000 +0300">
+  <programme start="20260824100000 +0300" channel="eurosport.2" stop="20260824130000 +0300">
     <title>Equestrian World Championship</title>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106</url>
   </programme>
-  <programme start="20260824130000 +0300" channel="tvplus_tr.106" stop="20260824134500 +0300">
+  <programme start="20260824130000 +0300" channel="eurosport.2" stop="20260824134500 +0300">
     <title>Motocross World Championship</title>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106</url>
   </programme>
-  <programme start="20260824134500 +0300" channel="tvplus_tr.106" stop="20260824143000 +0300">
+  <programme start="20260824134500 +0300" channel="eurosport.2" stop="20260824143000 +0300">
     <title>Motocross World Championship</title>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106</url>
   </programme>
-  <programme start="20260824143000 +0300" channel="tvplus_tr.106" stop="20260824173000 +0300">
+  <programme start="20260824143000 +0300" channel="eurosport.2" stop="20260824173000 +0300">
     <title>Wuhan Open</title>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106</url>
   </programme>
-  <programme start="20260824173000 +0300" channel="tvplus_tr.106" stop="20260824190000 +0300">
+  <programme start="20260824173000 +0300" channel="eurosport.2" stop="20260824190000 +0300">
     <title>Climbing World Series</title>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106</url>
   </programme>
-  <programme start="20260824190000 +0300" channel="tvplus_tr.106" stop="20260824193000 +0300">
+  <programme start="20260824190000 +0300" channel="eurosport.2" stop="20260824193000 +0300">
     <title>Motocross World Championship</title>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106</url>
   </programme>
-  <programme start="20260824193000 +0300" channel="tvplus_tr.106" stop="20260824200000 +0300">
+  <programme start="20260824193000 +0300" channel="eurosport.2" stop="20260824200000 +0300">
     <title>Motocross World Championship</title>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106</url>
   </programme>
-  <programme start="20260824200000 +0300" channel="tvplus_tr.106" stop="20260824203000 +0300">
+  <programme start="20260824200000 +0300" channel="eurosport.2" stop="20260824203000 +0300">
     <title>Motocross World Championship</title>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106</url>
   </programme>
-  <programme start="20260824203000 +0300" channel="tvplus_tr.106" stop="20260824210000 +0300">
+  <programme start="20260824203000 +0300" channel="eurosport.2" stop="20260824210000 +0300">
     <title>Motocross World Championship</title>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106</url>
   </programme>
-  <programme start="20260824210000 +0300" channel="tvplus_tr.106" stop="20260824230000 +0300">
+  <programme start="20260824210000 +0300" channel="eurosport.2" stop="20260824230000 +0300">
     <title>La Vuelta a España, Stage 3</title>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106</url>
   </programme>
-  <programme start="20260824230000 +0300" channel="tvplus_tr.106" stop="20260825010000 +0300">
+  <programme start="20260824230000 +0300" channel="eurosport.2" stop="20260825010000 +0300">
     <title>Wuhan Open</title>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106</url>
   </programme>
-  <programme start="20260824010000 +0300" channel="tvplus_tr.77" stop="20260824023000 +0300">
+  <programme start="20260824010000 +0300" channel="eurosport.1" stop="20260824023000 +0300">
     <title>Wuhan Open</title>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77</url>
   </programme>
-  <programme start="20260824023000 +0300" channel="tvplus_tr.77" stop="20260824040000 +0300">
+  <programme start="20260824023000 +0300" channel="eurosport.1" stop="20260824040000 +0300">
     <title>La Vuelta a España, Stage 2</title>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77</url>
   </programme>
-  <programme start="20260824040000 +0300" channel="tvplus_tr.77" stop="20260824050000 +0300">
+  <programme start="20260824040000 +0300" channel="eurosport.1" stop="20260824050000 +0300">
     <title>Formula E World Championship</title>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77</url>
   </programme>
-  <programme start="20260824050000 +0300" channel="tvplus_tr.77" stop="20260824060000 +0300">
+  <programme start="20260824050000 +0300" channel="eurosport.1" stop="20260824060000 +0300">
     <title>Formula E World Championship</title>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77</url>
   </programme>
-  <programme start="20260824060000 +0300" channel="tvplus_tr.77" stop="20260824080000 +0300">
+  <programme start="20260824060000 +0300" channel="eurosport.1" stop="20260824080000 +0300">
     <title>La Vuelta a España, Stage 2</title>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77</url>
   </programme>
-  <programme start="20260824080000 +0300" channel="tvplus_tr.77" stop="20260824090000 +0300">
+  <programme start="20260824080000 +0300" channel="eurosport.1" stop="20260824090000 +0300">
     <title>Wuhan Open</title>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77</url>
   </programme>
-  <programme start="20260824090000 +0300" channel="tvplus_tr.77" stop="20260824120000 +0300">
+  <programme start="20260824090000 +0300" channel="eurosport.1" stop="20260824120000 +0300">
     <title>Wuhan Open</title>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77</url>
   </programme>
-  <programme start="20260824120000 +0300" channel="tvplus_tr.77" stop="20260824130000 +0300">
+  <programme start="20260824120000 +0300" channel="eurosport.1" stop="20260824130000 +0300">
     <title>Formula E World Championship</title>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77</url>
   </programme>
-  <programme start="20260824130000 +0300" channel="tvplus_tr.77" stop="20260824140000 +0300">
+  <programme start="20260824130000 +0300" channel="eurosport.1" stop="20260824140000 +0300">
     <title>Formula E World Championship</title>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77</url>
   </programme>
-  <programme start="20260824140000 +0300" channel="tvplus_tr.77" stop="20260824143000 +0300">
+  <programme start="20260824140000 +0300" channel="eurosport.1" stop="20260824143000 +0300">
     <title>UCI Mountain Bike World Series</title>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77</url>
   </programme>
-  <programme start="20260824143000 +0300" channel="tvplus_tr.77" stop="20260824154500 +0300">
+  <programme start="20260824143000 +0300" channel="eurosport.1" stop="20260824154500 +0300">
     <title>La Vuelta a España, Stage 2</title>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77</url>
   </programme>
-  <programme start="20260824154500 +0300" channel="tvplus_tr.77" stop="20260824190000 +0300">
+  <programme start="20260824154500 +0300" channel="eurosport.1" stop="20260824190000 +0300">
     <title>La Vuelta a España, Stage 3</title>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77</url>
   </programme>
-  <programme start="20260824190000 +0300" channel="tvplus_tr.77" stop="20260824200000 +0300">
+  <programme start="20260824190000 +0300" channel="eurosport.1" stop="20260824200000 +0300">
     <title>2026 European BMX Championship</title>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77</url>
   </programme>
-  <programme start="20260824200000 +0300" channel="tvplus_tr.77" stop="20260824210000 +0300">
+  <programme start="20260824200000 +0300" channel="eurosport.1" stop="20260824210000 +0300">
     <title>2026 European BMX Championship</title>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77</url>
   </programme>
-  <programme start="20260824210000 +0300" channel="tvplus_tr.77" stop="20260824230000 +0300">
+  <programme start="20260824210000 +0300" channel="eurosport.1" stop="20260824230000 +0300">
     <title>Wuhan Open</title>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77</url>
   </programme>
-  <programme start="20260824230000 +0300" channel="tvplus_tr.77" stop="20260825010000 +0300">
+  <programme start="20260824230000 +0300" channel="eurosport.1" stop="20260825010000 +0300">
     <title>La Vuelta a España, Stage 3</title>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77</url>
   </programme>

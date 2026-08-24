@@ -520,6 +520,8 @@ def _translate_tvplus_eurosport_title(title: str) -> str:
     """
     normalised = re.sub(r"\s*,\s*", ", ", title.strip())
     normalised = re.sub(r"\s+", " ", normalised)
+    if not normalised:
+        raise SourceUnavailable("TV+ Eurosport 官方节目对象缺少可翻译的标题。")
     if normalised in _TVPLUS_EUROSPORT_TITLE_EXACT:
         return _TVPLUS_EUROSPORT_TITLE_EXACT[normalised]
 
@@ -588,8 +590,10 @@ def collect_tvplus_eurosport(days: int = 7) -> list[Programme]:
         if not playbills:
             raise SourceUnavailable(f"TV+ 官方 {channel_name} 页面未返回可识别的当日节目数据。")
         for item in playbills:
-            source_title = (item.get("name") or "").strip()
-            title = _translate_tvplus_eurosport_title(source_title) if source_title else ""
+            # 每一个来自官方 ``playbills`` 的节目对象都必须先经过翻译函数；
+            # 空标题或残余无法验证的土耳其语会抛出 SourceUnavailable，绝不跳过或原样发布。
+            source_title = str(item.get("name") or "")
+            title = _translate_tvplus_eurosport_title(source_title)
             start_ms = item.get("starttime")
             end_ms = item.get("endtime")
             if not (title and isinstance(start_ms, (int, float)) and isinstance(end_ms, (int, float))):

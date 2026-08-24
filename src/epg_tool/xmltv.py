@@ -12,12 +12,24 @@ from typing import Iterable
 from .models import Programme
 
 
+# 用户指定：TV+ Türkiye 的官方 Eurosport 频道号 77／106 使用跨来源稳定的
+# XMLTV ID，而非默认的 ``tvplus_tr.<channel-number>`` 形式。
+_TVPLUS_EUROSPORT_XMLTV_IDS = {
+    "77": "eurosport.1",
+    "106": "eurosport.2",
+}
+
+
 def _xmltv_channel_id(record: Programme) -> str:
     """构造稳定且跨来源不冲突的 XMLTV 频道标识。
 
     通常使用 `<provider>.<channel-number>`；没有公开频道号的单频道来源可将
     `channel_number` 留空，此时精确使用 `<provider>`，例如 `digi4k_ro`。
     """
+    if record.provider == "tvplus_tr":
+        configured_id = _TVPLUS_EUROSPORT_XMLTV_IDS.get(record.channel_id)
+        if configured_id:
+            return configured_id
     return record.provider if not record.channel_number else f"{record.provider}.{record.channel_number}"
 
 

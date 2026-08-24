@@ -50,7 +50,7 @@ The English HBO Max Türkiye site confirms the local availability of Eurosport 1
 https://raw.githubusercontent.com/waastudios/Cathy-epg/master/data/epg.xml.gz
 ```
 
-Channel IDs normally use the stable `<provider>.<channel-id>` form. Hong Kong NOW TV channel ID **`now_hk.138`** is unchanged while its display name is normalised to the official Chinese name **Now爆谷星影台**. Digi 4K is the documented single-channel exception requested by the user: its XMLTV channel ID is exactly **`digi4k_ro`**, with official display name **Digi 4K**. Virgin Media Sky Sports Ultra uses the requested official-ID format: **`virgin_uk.2258`** for **Sky Sports Ultra HD 1** and **`virgin_uk.2265`** for **Sky Sports Ultra HD 2**.
+Channel IDs normally use the stable `<provider>.<channel-id>` form. Hong Kong NOW TV channel ID **`now_hk.138`** is unchanged while its display name is normalised to the official Chinese name **Now爆谷星影台**. Digi 4K is the documented single-channel exception requested by the user: its XMLTV channel ID is exactly **`digi4k_ro`**, with official display name **Digi 4K**. TV+ Türkiye Eurosport 1 and Eurosport 2 use the user-specified stable IDs **`eurosport.1`** and **`eurosport.2`**, respectively, while retaining the provider’s official display names. Virgin Media Sky Sports Ultra uses the requested official-ID format: **`virgin_uk.2258`** for **Sky Sports Ultra HD 1** and **`virgin_uk.2265`** for **Sky Sports Ultra HD 2**.
 
 ## Run locally
 
