@@ -37,11 +37,15 @@
   },
   "xmltv": {
     "status": "ok",
-    "channels": 129,
-    "programmes": 15556,
+    "channels": 158,
+    "programmes": 16977,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-08-25T04:30:50Z",
-  "total_records": 15556
+  "generated_at": "2026-08-25T10:22:59Z",
+  "total_records": 16977,
+  "sky_de": {
+    "status": "ok",
+    "records": 1421
+  }
 }

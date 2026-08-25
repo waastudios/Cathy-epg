@@ -142,6 +142,38 @@ VIRGIN_UK_ULTRA_CHANNELS: dict[str, str] = {
     "2265": "Sky Sports Ultra HD 2",
 }
 
+# Telekom MagentaTV 的公开前端配置引用 ThePlatform 官方频道目录与节目表服务。
+# ``source name`` 为目录返回的正式名称；导出时依用户要求移除末尾 HD，而保留 UHD。
+MAGENTA_TV_GUIDE = "https://www.magenta.tv/"
+MAGENTA_TV_CHANNEL_DIRECTORY = (
+    "https://feed.entertainment.tv.theplatform.eu/f/mdeprod/"
+    "mdeprod-channel-stations-main"
+)
+MAGENTA_TV_ALL_CHANNEL_SCHEDULES = (
+    "https://feed.entertainment.tv.theplatform.eu/f/mdeprod/"
+    "mdeprod-all-channel-schedules"
+)
+MAGENTA_TV_LOCATION_ID = "245991976396"
+MAGENTA_TV_SKY_CHANNELS: dict[str, tuple[str, str]] = {
+    "Sky Sport Top Event HD": ("201", "Sky Sport Top Event"),
+    "Sky Sport Bundesliga HD": ("202", "Sky Sport Bundesliga"),
+    "Sky Sport F1 HD": ("203", "Sky Sport F1"),
+    "Sky Sport Premier League HD": ("204", "Sky Sport Premier League"),
+    "Sky Sport Mix HD": ("205", "Sky Sport Mix"),
+    "Sky Sport Tennis HD": ("206", "Sky Sport Tennis"),
+    "Sky Sport Golf HD": ("207", "Sky Sport Golf"),
+    "Sky Sport UHD": ("209", "Sky Sport UHD"),
+    "Sky Sport Bundesliga UHD": ("210", "Sky Sport Bundesliga UHD"),
+    **{
+        f"Sky Sport Bundesliga {number} HD": (str(210 + number), f"Sky Sport Bundesliga {number}")
+        for number in range(1, 11)
+    },
+    **{
+        f"Sky Sport {number} HD": (str(220 + number), f"Sky Sport {number}")
+        for number in range(1, 11)
+    },
+}
+
 
 class SourceUnavailable(RuntimeError):
     """官网无法在当前合规访问范围内读取时抛出。"""
@@ -1279,6 +1311,175 @@ def collect_virgin_uk_ultra(days: int = 7, pause_seconds: float = 0.02) -> list[
     records = _deduplicate(records)
     if not records:
         raise SourceUnavailable("Virgin Media 官方 EPG 未返回 Sky Sports Ultra HD 1／2 的目标日期节目记录。")
+    return records
+
+
+def _magenta_tv_sky_directory(session: requests.Session) -> list[tuple[int, str, str, str, str]]:
+    """从 MagentaTV 官方生产频道目录读取目标 Sky 频道及其目录位置。
+
+    MagentaTV 的节目表按频道目录位置分页，而非按单一站点 ID 查询。目录每页最多
+    返回 50 个对象；先完整读取公开目录，才能把用户指定的 Sky 频道号映射为最小的
+    官方节目表请求分组。
+    """
+    catalog: list[dict[str, Any]] = []
+    for start in range(1, 5001, 50):
+        response = session.get(MAGENTA_TV_CHANNEL_DIRECTORY, params={"range": f"{start}-{start + 49}"}, timeout=60)
+        response.raise_for_status()
+        try:
+            payload = response.json()
+        except ValueError as exc:
+            raise SourceUnavailable("MagentaTV 官方频道目录未返回 JSON。") from exc
+        entries = payload.get("entries") if isinstance(payload, dict) else None
+        if not isinstance(entries, list):
+            raise SourceUnavailable("MagentaTV 官方频道目录格式发生变化。")
+        if not entries:
+            break
+        catalog.extend(item for item in entries if isinstance(item, dict))
+        if len(entries) < 50:
+            break
+    if not catalog:
+        raise SourceUnavailable("MagentaTV 官方频道目录未返回可识别的频道对象。")
+
+    def channel_sort_key(item: dict[str, Any]) -> tuple[int, str]:
+        value = item.get("channelNumber")
+        return (int(value) if isinstance(value, (int, float)) else 999999, str(value or ""))
+
+    catalog.sort(key=channel_sort_key)
+    selected: list[tuple[int, str, str, str, str]] = []
+    found_names: set[str] = set()
+    for position, item in enumerate(catalog, start=1):
+        stations = item.get("stations")
+        station = next(iter(stations.values()), {}) if isinstance(stations, dict) else {}
+        if not isinstance(station, dict):
+            continue
+        source_name = (station.get("title") or "").strip()
+        configured = MAGENTA_TV_SKY_CHANNELS.get(source_name)
+        if not configured:
+            continue
+        service_id = str(station.get("dt$serviceId") or "").strip()
+        if not service_id:
+            raise SourceUnavailable(f"MagentaTV Sky 频道 {source_name!r} 缺少官方 service ID。")
+        sky_number, display_name = configured
+        selected.append((position, source_name, service_id, sky_number, display_name))
+        found_names.add(source_name)
+
+    missing = sorted(set(MAGENTA_TV_SKY_CHANNELS) - found_names)
+    if missing:
+        raise SourceUnavailable(f"MagentaTV 官方频道目录未返回预期 Sky 频道：{', '.join(missing)}。")
+    if len(selected) != len(MAGENTA_TV_SKY_CHANNELS):
+        raise SourceUnavailable("MagentaTV 官方频道目录返回了重复或不完整的目标 Sky 频道映射。")
+    return selected
+
+
+def _magenta_tv_sky_groups(directory: list[tuple[int, str, str, str, str]]) -> list[tuple[int, int]]:
+    """根据 MagentaTV 的 2000 channel-hours 限制构造七日节目表请求区间。"""
+    positions = sorted(item[0] for item in directory)
+    groups: list[list[int]] = []
+    # 11 x 7 x 24 = 1848，保留夏令时切换余量，低于官方接口 2000 channel-hours 上限。
+    for position in positions:
+        if not groups or position != groups[-1][-1] + 1 or len(groups[-1]) >= 11:
+            groups.append([position])
+        else:
+            groups[-1].append(position)
+    return [(group[0], group[-1]) for group in groups]
+
+
+def collect_magenta_tv_sky_de(days: int = 7, pause_seconds: float = 0.05) -> list[Programme]:
+    """读取 Telekom MagentaTV 匿名公开节目表中的 Sky Germany 体育频道。
+
+    官方 ThePlatform 节目表要求 ``byLocationId``、本地日期对应的 ``byListingTime``
+    和目录范围。采集器每次运行重新读取官方目录，避免把 Telekom 的内部站点标识
+    当作稳定 XMLTV ID；导出 ID 使用用户指定的 Sky Germany 频道号 ``sky_de.<number>``。
+    """
+    if days not in range(1, 8):
+        raise ValueError("MagentaTV Sky Germany 采集天数必须为 1–7。")
+    session = _session()
+    zone = ZoneInfo("Europe/Berlin")
+    today = datetime.now(zone).date()
+    last_day = today + timedelta(days=days)
+    start_utc = datetime.combine(today, clock_time.min, tzinfo=zone).astimezone(timezone.utc)
+    end_utc = datetime.combine(last_day, clock_time.min, tzinfo=zone).astimezone(timezone.utc)
+    time_range = f"{start_utc.isoformat().replace('+00:00', 'Z')}~{end_utc.isoformat().replace('+00:00', 'Z')}"
+    retrieved_at = utc_now_iso()
+
+    directory = _magenta_tv_sky_directory(session)
+    source_mapping = {source_name: (service_id, sky_number, display_name) for _, source_name, service_id, sky_number, display_name in directory}
+    expected_numbers = {sky_number for _, _, _, sky_number, _ in directory}
+    records: list[Programme] = []
+
+    for range_start, range_end in _magenta_tv_sky_groups(directory):
+        response = session.get(
+            MAGENTA_TV_ALL_CHANNEL_SCHEDULES,
+            params={
+                "byListingTime": time_range,
+                "byLocationId": MAGENTA_TV_LOCATION_ID,
+                "range": f"{range_start}-{range_end}",
+            },
+            timeout=180,
+        )
+        response.raise_for_status()
+        try:
+            payload = response.json()
+        except ValueError as exc:
+            raise SourceUnavailable("MagentaTV 官方 Sky 节目表未返回 JSON。") from exc
+        entries = payload.get("entries") if isinstance(payload, dict) else None
+        if not isinstance(entries, list):
+            raise SourceUnavailable("MagentaTV 官方 Sky 节目表格式发生变化。")
+        for schedule in entries:
+            if not isinstance(schedule, dict):
+                continue
+            stations = schedule.get("stations")
+            station = next(iter(stations.values()), {}) if isinstance(stations, dict) else {}
+            if not isinstance(station, dict):
+                continue
+            source_name = (station.get("title") or "").strip()
+            configured = source_mapping.get(source_name)
+            if not configured:
+                continue
+            service_id, sky_number, display_name = configured
+            returned_service_id = str(station.get("dt$serviceId") or "").strip()
+            if returned_service_id != service_id:
+                raise SourceUnavailable(
+                    f"MagentaTV Sky 频道 {source_name!r} 的 service ID 已从 {service_id!r} 变为 {returned_service_id!r}。"
+                )
+            listings = schedule.get("listings")
+            if not isinstance(listings, list):
+                continue
+            for listing in listings:
+                if not isinstance(listing, dict):
+                    continue
+                program = listing.get("program")
+                title = (program.get("title") or "").strip() if isinstance(program, dict) else ""
+                start_ms = listing.get("startTime")
+                end_ms = listing.get("endTime")
+                if not (title and isinstance(start_ms, (int, float)) and isinstance(end_ms, (int, float))):
+                    continue
+                start = datetime.fromtimestamp(start_ms / 1000, tz=timezone.utc).astimezone(zone)
+                end = datetime.fromtimestamp(end_ms / 1000, tz=timezone.utc).astimezone(zone)
+                if end <= start or not (today <= start.date() < last_day):
+                    continue
+                records.append(
+                    Programme(
+                        provider="sky_de",
+                        country="DE",
+                        timezone="Europe/Berlin",
+                        channel_id=service_id,
+                        channel_number=sky_number,
+                        channel_name=display_name,
+                        title=title,
+                        start_at=start.isoformat(),
+                        end_at=end.isoformat(),
+                        source_url=MAGENTA_TV_GUIDE,
+                        retrieved_at=retrieved_at,
+                    )
+                )
+        time.sleep(pause_seconds)
+
+    records = _deduplicate(records)
+    published_numbers = {record.channel_number for record in records}
+    missing_numbers = sorted(expected_numbers - published_numbers, key=int)
+    if missing_numbers:
+        raise SourceUnavailable(f"MagentaTV 官方 Sky 节目表未返回频道号 {', '.join(missing_numbers)} 的节目条目。")
     return records
 
 

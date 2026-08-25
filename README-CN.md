@@ -26,7 +26,7 @@ https://raw.githubusercontent.com/waastudios/Cathy-epg/master/data/epg.xml.gz
 | `data/status.json` | 每个来源的采集状态和输出总量。 |
 | `CHANNELS.md` | 由当前发布快照生成的显示名与 XMLTV ID 对照表。 |
 
-XMLTV 中的每个 `display-name` 都是服务商公开的官方频道名称。稳定 ID 通常采用 `<provider>.<channel-id>`；Sky Documentaries 使用用户指定的稳定 ID `ee_uk.352`。
+除经用户明确指定的名称规范化外，XMLTV 中的每个 `display-name` 都是服务商公开的官方频道名称。德国 Sky 仅移除频道显示名末尾的 `HD`，并保留 `UHD`。稳定 ID 通常采用 `<provider>.<channel-id>`；Sky Documentaries 使用用户指定的稳定 ID `ee_uk.352`，德国 Sky 使用 Sky 频道号作为 `sky_de.<频道号>`。
 
 ## 当前覆盖与强制范围
 
@@ -34,6 +34,7 @@ XMLTV 中的每个 `display-name` 都是服务商公开的官方频道名称。�
 | --- | --- | --- |
 | 马来西亚 | Astro：22 条明确白名单体育频道 | [Astro Content Guide](https://www.astro.com.my/content/channels) |
 | 香港 | now TV：37 条明确白名单体育频道 | [now TV Guide](https://nowplayer.now.com/tvguide) 与 [官方中文频道目录](https://nowplayer.now.com/channels?lang=zh&filterType=all) |
+| 德国 | 29 条 Sky Sport 与 Sky Sport Bundesliga 频道，包含 UHD | [Telekom MagentaTV](https://www.magenta.tv/) 正常公开节目表 |
 | 瑞典 | 13 条 V Sport 服务，包含 V Sport UltraHD | [Allente TV Guide](https://www.allente.se/tv-guide/) |
 | 挪威 | TV Norge、REX、FEM、Eurosport Norge、Eurosport 1 | [Allente Norway TV Guide](https://www.allente.no/tv-guide/) |
 | 英国 | 指定 Sky Sports、TNT Sports、BBC、ITV、Channel 4 与 Sky 娱乐频道 | [EE TV Player Live TV Schedule](https://player.ee.co.uk/#/livetv/schedule) |
@@ -41,6 +42,10 @@ XMLTV 中的每个 `display-name` 都是服务商公开的官方频道名称。�
 | 罗马尼亚 | Digi 4K | [Digi 4K](https://www.digi4k.ro/) |
 | 土耳其 | Eurosport 1、Eurosport 2 | [TV+ Eurosport 1](https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77) 与 [Eurosport 2](https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106) |
 | 塞尔维亚 | Eurosport 4K | [SBB / EON Public EPG](https://epg.sbb.rs/) |
+
+### 德国 Sky 与 MagentaTV
+
+德国范围仅包括 MagentaTV 正常公开的生产节目表当前暴露的 29 条 Sky Sport 与 Sky Sport Bundesliga 服务。采集器每次刷新都会动态读取 MagentaTV 的官方频道目录，要求所有映射频道均返回节目记录，并按用户指定的 Sky 频道号导出 `sky_de.201` 至 `sky_de.230`（频道 208 不发布）。当前公开目录没有可无歧义映射的一组 Sky Austria 频道，因此不会发布 Sky Austria。
 
 ### EE Sky 娱乐频道选择
 
