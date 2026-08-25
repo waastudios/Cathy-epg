@@ -312,10 +312,6 @@
     <display-name>TNT Sports Ultimate</display-name>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </channel>
-  <channel id="ee_uk.44112656">
-    <display-name>TNT Sports Box Office HD</display-name>
-    <url>https://player.ee.co.uk/#/livetv/schedule</url>
-  </channel>
   <channel id="ee_uk.450">
     <display-name>TNT Sports 5</display-name>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
@@ -338,6 +334,10 @@
   </channel>
   <channel id="ee_uk.455">
     <display-name>TNT Sports 10</display-name>
+    <url>https://player.ee.co.uk/#/livetv/schedule</url>
+  </channel>
+  <channel id="ee_uk.494">
+    <display-name>TNT Sports Box Office</display-name>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </channel>
   <channel id="ee_uk.6">
@@ -41952,118 +41952,6 @@
     <title>This is TNT Sports Ultimate</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260825000000 +0100" channel="ee_uk.44112656" stop="20260825060000 +0100">
-    <title>Welcome to TNT Sports Box Office</title>
-    <url>https://player.ee.co.uk/#/livetv/schedule</url>
-  </programme>
-  <programme start="20260825060000 +0100" channel="ee_uk.44112656" stop="20260825120000 +0100">
-    <title>Welcome to TNT Sports Box Office</title>
-    <url>https://player.ee.co.uk/#/livetv/schedule</url>
-  </programme>
-  <programme start="20260825120000 +0100" channel="ee_uk.44112656" stop="20260825180000 +0100">
-    <title>Welcome to TNT Sports Box Office</title>
-    <url>https://player.ee.co.uk/#/livetv/schedule</url>
-  </programme>
-  <programme start="20260825180000 +0100" channel="ee_uk.44112656" stop="20260826000000 +0100">
-    <title>Welcome to TNT Sports Box Office</title>
-    <url>https://player.ee.co.uk/#/livetv/schedule</url>
-  </programme>
-  <programme start="20260826000000 +0100" channel="ee_uk.44112656" stop="20260826060000 +0100">
-    <title>Welcome to TNT Sports Box Office</title>
-    <url>https://player.ee.co.uk/#/livetv/schedule</url>
-  </programme>
-  <programme start="20260826060000 +0100" channel="ee_uk.44112656" stop="20260826120000 +0100">
-    <title>Welcome to TNT Sports Box Office</title>
-    <url>https://player.ee.co.uk/#/livetv/schedule</url>
-  </programme>
-  <programme start="20260826120000 +0100" channel="ee_uk.44112656" stop="20260826180000 +0100">
-    <title>Welcome to TNT Sports Box Office</title>
-    <url>https://player.ee.co.uk/#/livetv/schedule</url>
-  </programme>
-  <programme start="20260826180000 +0100" channel="ee_uk.44112656" stop="20260827000000 +0100">
-    <title>Welcome to TNT Sports Box Office</title>
-    <url>https://player.ee.co.uk/#/livetv/schedule</url>
-  </programme>
-  <programme start="20260827000000 +0100" channel="ee_uk.44112656" stop="20260827060000 +0100">
-    <title>Welcome to TNT Sports Box Office</title>
-    <url>https://player.ee.co.uk/#/livetv/schedule</url>
-  </programme>
-  <programme start="20260827060000 +0100" channel="ee_uk.44112656" stop="20260827120000 +0100">
-    <title>Welcome to TNT Sports Box Office</title>
-    <url>https://player.ee.co.uk/#/livetv/schedule</url>
-  </programme>
-  <programme start="20260827120000 +0100" channel="ee_uk.44112656" stop="20260827180000 +0100">
-    <title>Welcome to TNT Sports Box Office</title>
-    <url>https://player.ee.co.uk/#/livetv/schedule</url>
-  </programme>
-  <programme start="20260827180000 +0100" channel="ee_uk.44112656" stop="20260828000000 +0100">
-    <title>Welcome to TNT Sports Box Office</title>
-    <url>https://player.ee.co.uk/#/livetv/schedule</url>
-  </programme>
-  <programme start="20260828000000 +0100" channel="ee_uk.44112656" stop="20260828060000 +0100">
-    <title>Welcome to TNT Sports Box Office</title>
-    <url>https://player.ee.co.uk/#/livetv/schedule</url>
-  </programme>
-  <programme start="20260828060000 +0100" channel="ee_uk.44112656" stop="20260828120000 +0100">
-    <title>Welcome to TNT Sports Box Office</title>
-    <url>https://player.ee.co.uk/#/livetv/schedule</url>
-  </programme>
-  <programme start="20260828120000 +0100" channel="ee_uk.44112656" stop="20260828180000 +0100">
-    <title>Welcome to TNT Sports Box Office</title>
-    <url>https://player.ee.co.uk/#/livetv/schedule</url>
-  </programme>
-  <programme start="20260828180000 +0100" channel="ee_uk.44112656" stop="20260829000000 +0100">
-    <title>Welcome to TNT Sports Box Office</title>
-    <url>https://player.ee.co.uk/#/livetv/schedule</url>
-  </programme>
-  <programme start="20260829000000 +0100" channel="ee_uk.44112656" stop="20260829060000 +0100">
-    <title>Welcome to TNT Sports Box Office</title>
-    <url>https://player.ee.co.uk/#/livetv/schedule</url>
-  </programme>
-  <programme start="20260829060000 +0100" channel="ee_uk.44112656" stop="20260829120000 +0100">
-    <title>Welcome to TNT Sports Box Office</title>
-    <url>https://player.ee.co.uk/#/livetv/schedule</url>
-  </programme>
-  <programme start="20260829120000 +0100" channel="ee_uk.44112656" stop="20260829180000 +0100">
-    <title>Welcome to TNT Sports Box Office</title>
-    <url>https://player.ee.co.uk/#/livetv/schedule</url>
-  </programme>
-  <programme start="20260829180000 +0100" channel="ee_uk.44112656" stop="20260830000000 +0100">
-    <title>Welcome to TNT Sports Box Office</title>
-    <url>https://player.ee.co.uk/#/livetv/schedule</url>
-  </programme>
-  <programme start="20260830000000 +0100" channel="ee_uk.44112656" stop="20260830060000 +0100">
-    <title>Welcome to TNT Sports Box Office</title>
-    <url>https://player.ee.co.uk/#/livetv/schedule</url>
-  </programme>
-  <programme start="20260830060000 +0100" channel="ee_uk.44112656" stop="20260830120000 +0100">
-    <title>Welcome to TNT Sports Box Office</title>
-    <url>https://player.ee.co.uk/#/livetv/schedule</url>
-  </programme>
-  <programme start="20260830120000 +0100" channel="ee_uk.44112656" stop="20260830180000 +0100">
-    <title>Welcome to TNT Sports Box Office</title>
-    <url>https://player.ee.co.uk/#/livetv/schedule</url>
-  </programme>
-  <programme start="20260830180000 +0100" channel="ee_uk.44112656" stop="20260831000000 +0100">
-    <title>Welcome to TNT Sports Box Office</title>
-    <url>https://player.ee.co.uk/#/livetv/schedule</url>
-  </programme>
-  <programme start="20260831000000 +0100" channel="ee_uk.44112656" stop="20260831060000 +0100">
-    <title>Welcome to TNT Sports Box Office</title>
-    <url>https://player.ee.co.uk/#/livetv/schedule</url>
-  </programme>
-  <programme start="20260831060000 +0100" channel="ee_uk.44112656" stop="20260831120000 +0100">
-    <title>Welcome to TNT Sports Box Office</title>
-    <url>https://player.ee.co.uk/#/livetv/schedule</url>
-  </programme>
-  <programme start="20260831120000 +0100" channel="ee_uk.44112656" stop="20260831180000 +0100">
-    <title>Welcome to TNT Sports Box Office</title>
-    <url>https://player.ee.co.uk/#/livetv/schedule</url>
-  </programme>
-  <programme start="20260831180000 +0100" channel="ee_uk.44112656" stop="20260901000000 +0100">
-    <title>Welcome to TNT Sports Box Office</title>
-    <url>https://player.ee.co.uk/#/livetv/schedule</url>
-  </programme>
   <programme start="20260824175000 +0100" channel="ee_uk.450" stop="20260825055000 +0100">
     <title>This is TNT Sports 5</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
@@ -42726,6 +42614,118 @@
   </programme>
   <programme start="20260831173000 +0100" channel="ee_uk.455" stop="20260901053000 +0100">
     <title>This is TNT Sports 10</title>
+    <url>https://player.ee.co.uk/#/livetv/schedule</url>
+  </programme>
+  <programme start="20260825000000 +0100" channel="ee_uk.494" stop="20260825060000 +0100">
+    <title>Welcome to TNT Sports Box Office</title>
+    <url>https://player.ee.co.uk/#/livetv/schedule</url>
+  </programme>
+  <programme start="20260825060000 +0100" channel="ee_uk.494" stop="20260825120000 +0100">
+    <title>Welcome to TNT Sports Box Office</title>
+    <url>https://player.ee.co.uk/#/livetv/schedule</url>
+  </programme>
+  <programme start="20260825120000 +0100" channel="ee_uk.494" stop="20260825180000 +0100">
+    <title>Welcome to TNT Sports Box Office</title>
+    <url>https://player.ee.co.uk/#/livetv/schedule</url>
+  </programme>
+  <programme start="20260825180000 +0100" channel="ee_uk.494" stop="20260826000000 +0100">
+    <title>Welcome to TNT Sports Box Office</title>
+    <url>https://player.ee.co.uk/#/livetv/schedule</url>
+  </programme>
+  <programme start="20260826000000 +0100" channel="ee_uk.494" stop="20260826060000 +0100">
+    <title>Welcome to TNT Sports Box Office</title>
+    <url>https://player.ee.co.uk/#/livetv/schedule</url>
+  </programme>
+  <programme start="20260826060000 +0100" channel="ee_uk.494" stop="20260826120000 +0100">
+    <title>Welcome to TNT Sports Box Office</title>
+    <url>https://player.ee.co.uk/#/livetv/schedule</url>
+  </programme>
+  <programme start="20260826120000 +0100" channel="ee_uk.494" stop="20260826180000 +0100">
+    <title>Welcome to TNT Sports Box Office</title>
+    <url>https://player.ee.co.uk/#/livetv/schedule</url>
+  </programme>
+  <programme start="20260826180000 +0100" channel="ee_uk.494" stop="20260827000000 +0100">
+    <title>Welcome to TNT Sports Box Office</title>
+    <url>https://player.ee.co.uk/#/livetv/schedule</url>
+  </programme>
+  <programme start="20260827000000 +0100" channel="ee_uk.494" stop="20260827060000 +0100">
+    <title>Welcome to TNT Sports Box Office</title>
+    <url>https://player.ee.co.uk/#/livetv/schedule</url>
+  </programme>
+  <programme start="20260827060000 +0100" channel="ee_uk.494" stop="20260827120000 +0100">
+    <title>Welcome to TNT Sports Box Office</title>
+    <url>https://player.ee.co.uk/#/livetv/schedule</url>
+  </programme>
+  <programme start="20260827120000 +0100" channel="ee_uk.494" stop="20260827180000 +0100">
+    <title>Welcome to TNT Sports Box Office</title>
+    <url>https://player.ee.co.uk/#/livetv/schedule</url>
+  </programme>
+  <programme start="20260827180000 +0100" channel="ee_uk.494" stop="20260828000000 +0100">
+    <title>Welcome to TNT Sports Box Office</title>
+    <url>https://player.ee.co.uk/#/livetv/schedule</url>
+  </programme>
+  <programme start="20260828000000 +0100" channel="ee_uk.494" stop="20260828060000 +0100">
+    <title>Welcome to TNT Sports Box Office</title>
+    <url>https://player.ee.co.uk/#/livetv/schedule</url>
+  </programme>
+  <programme start="20260828060000 +0100" channel="ee_uk.494" stop="20260828120000 +0100">
+    <title>Welcome to TNT Sports Box Office</title>
+    <url>https://player.ee.co.uk/#/livetv/schedule</url>
+  </programme>
+  <programme start="20260828120000 +0100" channel="ee_uk.494" stop="20260828180000 +0100">
+    <title>Welcome to TNT Sports Box Office</title>
+    <url>https://player.ee.co.uk/#/livetv/schedule</url>
+  </programme>
+  <programme start="20260828180000 +0100" channel="ee_uk.494" stop="20260829000000 +0100">
+    <title>Welcome to TNT Sports Box Office</title>
+    <url>https://player.ee.co.uk/#/livetv/schedule</url>
+  </programme>
+  <programme start="20260829000000 +0100" channel="ee_uk.494" stop="20260829060000 +0100">
+    <title>Welcome to TNT Sports Box Office</title>
+    <url>https://player.ee.co.uk/#/livetv/schedule</url>
+  </programme>
+  <programme start="20260829060000 +0100" channel="ee_uk.494" stop="20260829120000 +0100">
+    <title>Welcome to TNT Sports Box Office</title>
+    <url>https://player.ee.co.uk/#/livetv/schedule</url>
+  </programme>
+  <programme start="20260829120000 +0100" channel="ee_uk.494" stop="20260829180000 +0100">
+    <title>Welcome to TNT Sports Box Office</title>
+    <url>https://player.ee.co.uk/#/livetv/schedule</url>
+  </programme>
+  <programme start="20260829180000 +0100" channel="ee_uk.494" stop="20260830000000 +0100">
+    <title>Welcome to TNT Sports Box Office</title>
+    <url>https://player.ee.co.uk/#/livetv/schedule</url>
+  </programme>
+  <programme start="20260830000000 +0100" channel="ee_uk.494" stop="20260830060000 +0100">
+    <title>Welcome to TNT Sports Box Office</title>
+    <url>https://player.ee.co.uk/#/livetv/schedule</url>
+  </programme>
+  <programme start="20260830060000 +0100" channel="ee_uk.494" stop="20260830120000 +0100">
+    <title>Welcome to TNT Sports Box Office</title>
+    <url>https://player.ee.co.uk/#/livetv/schedule</url>
+  </programme>
+  <programme start="20260830120000 +0100" channel="ee_uk.494" stop="20260830180000 +0100">
+    <title>Welcome to TNT Sports Box Office</title>
+    <url>https://player.ee.co.uk/#/livetv/schedule</url>
+  </programme>
+  <programme start="20260830180000 +0100" channel="ee_uk.494" stop="20260831000000 +0100">
+    <title>Welcome to TNT Sports Box Office</title>
+    <url>https://player.ee.co.uk/#/livetv/schedule</url>
+  </programme>
+  <programme start="20260831000000 +0100" channel="ee_uk.494" stop="20260831060000 +0100">
+    <title>Welcome to TNT Sports Box Office</title>
+    <url>https://player.ee.co.uk/#/livetv/schedule</url>
+  </programme>
+  <programme start="20260831060000 +0100" channel="ee_uk.494" stop="20260831120000 +0100">
+    <title>Welcome to TNT Sports Box Office</title>
+    <url>https://player.ee.co.uk/#/livetv/schedule</url>
+  </programme>
+  <programme start="20260831120000 +0100" channel="ee_uk.494" stop="20260831180000 +0100">
+    <title>Welcome to TNT Sports Box Office</title>
+    <url>https://player.ee.co.uk/#/livetv/schedule</url>
+  </programme>
+  <programme start="20260831180000 +0100" channel="ee_uk.494" stop="20260901000000 +0100">
+    <title>Welcome to TNT Sports Box Office</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20260823233500 +0100" channel="ee_uk.6" stop="20260824000500 +0100">

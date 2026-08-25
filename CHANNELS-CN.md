@@ -88,7 +88,7 @@
 | `ee_uk.453` | TNT Sports 8 |
 | `ee_uk.454` | TNT Sports 9 |
 | `ee_uk.455` | TNT Sports 10 |
-| `ee_uk.44112656` | TNT Sports Box Office HD |
+| `ee_uk.494` | TNT Sports Box Office |
 | `ee_uk.418` | Sky Sports News |
 | `ee_uk.419` | Sky Sports Main Event |
 | `ee_uk.420` | Sky Sports Premier League |
