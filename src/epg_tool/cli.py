@@ -10,7 +10,7 @@ import sys
 
 import requests
 
-from .models import read_jsonl, write_jsonl
+from .models import Programme, read_jsonl, write_jsonl
 from .xmltv import write_xmltv
 from .sources import (
     SourceUnavailable,
@@ -35,6 +35,24 @@ DEFAULT_XML_GZIP = Path("data/epg.xml.gz")
 def _collect(args: argparse.Namespace) -> int:
     records = []
     status: dict[str, dict[str, object]] = {}
+    previous_records = []
+    if args.output.exists():
+        try:
+            previous_records = read_jsonl(args.output)
+        except (OSError, ValueError):
+            # 损坏的旧快照不能阻塞本次完整刷新；没有可安全复用的数据时正常报错。
+            previous_records = []
+    previous_by_provider: dict[str, list[Programme]] = {}
+    for previous in previous_records:
+        provider = previous.get("provider")
+        if not isinstance(provider, str):
+            continue
+        try:
+            previous_programme = Programme(**previous)
+        except TypeError:
+            # 只复用符合当前模型的旧记录，避免历史格式污染本次输出。
+            continue
+        previous_by_provider.setdefault(provider, []).append(previous_programme)
 
     collectors = (
         ("astro", lambda: collect_astro(args.days)),
@@ -56,7 +74,17 @@ def _collect(args: argparse.Namespace) -> int:
             records.extend(result)
             status[provider] = {"status": "ok", "records": len(result)}
         except (SourceUnavailable, OSError, ValueError, requests.RequestException) as exc:
-            status[provider] = {"status": "error", "records": 0, "message": str(exc)}
+            fallback = previous_by_provider.get(provider, [])
+            if fallback:
+                records.extend(fallback)
+                status[provider] = {
+                    "status": "stale",
+                    "records": len(fallback),
+                    "message": str(exc),
+                    "fallback": "previous_snapshot",
+                }
+            else:
+                status[provider] = {"status": "error", "records": 0, "message": str(exc)}
 
     count = write_jsonl(records, args.output)
     channel_count, programme_count = write_xmltv(records, args.xml_output, args.xml_gzip_output)
