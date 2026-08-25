@@ -6,6 +6,7 @@ from datetime import date, datetime, time as clock_time, timedelta, timezone
 import json
 import re
 import time
+import unicodedata
 from typing import Any
 from urllib.parse import urljoin
 import xml.etree.ElementTree as ET
@@ -619,11 +620,95 @@ def _digi4k_time(value: str) -> clock_time | None:
         return None
 
 
+_DIGI4K_TITLE_EXACT: dict[str, str] = {
+    "Arome din Yucatan": "Aromas of Yucatán",
+    "Balistică în spatele casei": "Backyard Ballistics",
+    "Balistica în spatele casei": "Backyard Ballistics",
+    "Bali: paradisul culinar": "Bali: Culinary Paradise",
+    "Cei mai periculoşi vulcani": "The World's Most Dangerous Volcanoes",
+    "Cei mai periculoși vulcani": "The World's Most Dangerous Volcanoes",
+    "Cum a intrat sushi în America": "How Sushi Came to America",
+    "Cum combatem schimbarea climatului": "How We Fight Climate Change",
+    "Fluturii: eroii naturii": "Butterflies: Nature's Heroes",
+    "Lucrătorii din sălbăticie": "Wild Workers",
+    "Minunile oceanului": "Wonders of the Ocean",
+    "Misterele apelor fermecate": "Mysteries of Enchanted Waters",
+    "Muzică": "Music",
+    "O planetă dinamică": "A Dynamic Planet",
+    "O planetǎ de bizarerii": "A Planet of Oddities",
+    "O planetă de bizarerii": "A Planet of Oddities",
+    "Odiseea insulelor greceşti": "Odyssey of the Greek Islands",
+    "Odiseea insulelor grecești": "Odyssey of the Greek Islands",
+    "Odiseea sepiei": "Cuttlefish Odyssey",
+    "Orașul de corali": "City of Coral",
+    "Oraşul de corali": "City of Coral",
+    "Poveste cu leneș": "A Sloth Story",
+    "Poveste cu leneş": "A Sloth Story",
+    "Tabăra puilor de urs": "Bear Cub Camp",
+    "Urangutanii: Şcoala e o junglă": "Orangutans: School Is a Jungle",
+    "Urangutanii: Școala e o junglă": "Orangutans: School Is a Jungle",
+    "Valea Rinului: Reclǎdind natura": "The Rhine Valley: Rebuilding Nature",
+    "Valea Rinului: Reclădind natura": "The Rhine Valley: Rebuilding Nature",
+    "În Munții Nanling": "In the Nanling Mountains",
+    "În Munţii Nanling": "In the Nanling Mountains",
+    "Ştiinţa bate ficţiunea": "Science Beats Fiction",
+    "Știința bate ficțiunea": "Science Beats Fiction",
+}
+
+
+def _translate_digi4k_title(title: str) -> str:
+    """将 Digi 4K 官网的罗马尼亚语节目标题转换为可验证的英文。
+
+    此函数在每次 Digi 4K 采集时对每个官方标题调用。仅使用受控的节目名称、
+    集数标签和球队名称转换；无法明确转换的罗马尼亚语标题会使该来源失败，
+    从而避免在 XMLTV 中发布罗马尼亚语残留。
+    """
+    normalised = unicodedata.normalize("NFC", re.sub(r"\s+", " ", title.strip()))
+    if not normalised:
+        raise SourceUnavailable("Digi 4K 官方节目对象缺少可翻译的标题。")
+
+    # The official page appends Romanian episode labels after a vertical bar.
+    base, separator, suffix = normalised.partition("|")
+    base = base.strip()
+    translated = _DIGI4K_TITLE_EXACT.get(base, base)
+
+    # Controlled normalisation of Spanish club names published without accents by Digi 4K.
+    replacements = (
+        ("Alaves", "Alavés"),
+        ("Atletico Madrid", "Atlético Madrid"),
+        ("Malaga", "Málaga"),
+    )
+    for source, target in replacements:
+        translated = translated.replace(source, target)
+
+    if separator:
+        episode = suffix.strip()
+        matched = re.fullmatch(r"s(\d+)\s+ep\.\s*(\d+)", episode, flags=re.IGNORECASE)
+        if matched:
+            translated = f"{translated} — Season {matched.group(1)}, Episode {matched.group(2)}"
+        else:
+            matched = re.fullmatch(r"ep\.\s*(\d+)", episode, flags=re.IGNORECASE)
+            if not matched:
+                raise SourceUnavailable(f"Digi 4K 标题包含未识别的集数标签：{title!r}")
+            translated = f"{translated} — Episode {matched.group(1)}"
+
+    translated = re.sub(r"\s+", " ", translated).strip()
+    untranslated = re.search(
+        r"[ăâîșşțţǎĂÂÎȘŞȚŢǍ]|\b(?:Arome|din|paradisul|culinar|Balistică|Balistica|spatele|casei|Cei|mai|periculoși|periculoşi|vulcani|Cum|intrat|combatem|schimbarea|climatului|Fluturii|eroii|naturii|Lucrătorii|sălbăticie|Minunile|oceanului|Misterele|apelor|fermecate|Muzică|planetă|bizarerii|Odiseea|insulelor|grecești|greceşti|sepiei|Orașul|Oraşul|corali|Poveste|leneș|leneş|Tabăra|puilor|urs|Urangutanii|Școala|Şcoala|junglă|Valea|Rinului|Reclădind|Reclǎdind|natura|Munții|Munţii|Știința|Ştiinţa|bate|ficțiunea|ficţiunea)\b",
+        translated,
+        flags=re.IGNORECASE,
+    )
+    if untranslated:
+        raise SourceUnavailable(f"Digi 4K 标题未获得可验证的英文转换：{title!r}")
+    return translated
+
+
 def collect_digi4k(days: int = 7) -> list[Programme]:
     """解析 Digi 4K 罗马尼亚官网首页公开发布的一周节目表。
 
-    官网逐日展示开始时间而不总是发布最后一档的结束时间；最后一档的 XMLTV
-    `stop` 将被省略，而不是根据猜测补写。
+    每个官方节目标题在写入 XMLTV 前都会执行确定性英文转换与罗马尼亚语残留
+    检查。官网逐日展示开始时间而不总是发布最后一档的结束时间；最后一档的
+    XMLTV `stop` 将被省略，而不是根据猜测补写。
     """
     session = _session()
     response = session.get(DIGI4K_GUIDE, timeout=30)
@@ -643,9 +728,9 @@ def collect_digi4k(days: int = 7) -> list[Programme]:
             start_time = _digi4k_time(mark.get_text(" ", strip=True))
             row = mark.find_parent("div", class_=lambda classes: classes and "flex" in classes)
             title_node = row.select_one("h3") if row else None
-            title = title_node.get_text(" ", strip=True) if title_node else ""
-            if start_time and title:
-                raw_items.append((start_time, title))
+            source_title = title_node.get_text(" ", strip=True) if title_node else ""
+            if start_time and source_title:
+                raw_items.append((start_time, _translate_digi4k_title(source_title)))
         if not raw_items:
             continue
         schedule_day = today + timedelta(days=day_offset)

@@ -21,11 +21,11 @@
   },
   "digi4k_ro": {
     "status": "ok",
-    "records": 115
+    "records": 97
   },
   "tvplus_tr": {
     "status": "ok",
-    "records": 34
+    "records": 35
   },
   "sbb_rs": {
     "status": "ok",
@@ -38,10 +38,10 @@
   "xmltv": {
     "status": "ok",
     "channels": 129,
-    "programmes": 15686,
+    "programmes": 15669,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-08-25T03:16:03Z",
-  "total_records": 15686
+  "generated_at": "2026-08-25T03:53:30Z",
+  "total_records": 15669
 }
