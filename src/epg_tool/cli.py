@@ -11,6 +11,7 @@ import sys
 import requests
 
 from .models import Programme, read_jsonl, write_jsonl
+from .tvguide_images import enrich_tvguide_uk_images
 from .xmltv import write_xmltv
 from .sources import (
     SourceUnavailable,
@@ -85,6 +86,14 @@ def _collect(args: argparse.Namespace) -> int:
                 }
             else:
                 status[provider] = {"status": "error", "records": 0, "message": str(exc)}
+
+    # TVGuide.co.uk artwork is optional enrichment: if it is unavailable, the
+    # official text EPG remains publishable and any previous artwork is retained.
+    try:
+        records, image_stats = enrich_tvguide_uk_images(records)
+        status["tvguide_images"] = {"status": "ok", **image_stats}
+    except (OSError, ValueError, requests.RequestException) as exc:
+        status["tvguide_images"] = {"status": "error", "message": str(exc)}
 
     count = write_jsonl(records, args.output)
     channel_count, programme_count = write_xmltv(records, args.xml_output, args.xml_gzip_output)

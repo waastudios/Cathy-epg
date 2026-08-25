@@ -24,6 +24,10 @@ class Programme:
     end_at: str | None
     source_url: str
     retrieved_at: str
+    # Optional direct programme artwork URL. Images are linked, never re-hosted.
+    image_url: str | None = None
+    # TVGuide detail page that supplied image_url, retained for provenance.
+    image_source_url: str | None = None
 
     def to_dict(self) -> dict[str, str | None]:
         return asdict(self)

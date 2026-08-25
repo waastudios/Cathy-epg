@@ -48,6 +48,14 @@
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-08-25T16:24:26Z",
-  "total_records": 15563
+  "generated_at": "2026-08-25T16:50:23Z",
+  "total_records": 15563,
+  "tvguide_images": {
+    "status": "ok",
+    "eligible_programmes": 6450,
+    "schedule_pages": 302,
+    "schedule_page_failures": 0,
+    "matched_images": 3015,
+    "unmatched_programmes": 3435
+  }
 }
