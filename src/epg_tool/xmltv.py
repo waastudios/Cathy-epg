@@ -117,7 +117,8 @@ def write_xmltv(records: Iterable[Programme], xml_path: Path, gzip_path: Path) -
         ET.SubElement(item, "title").text = programme.title
         if programme.image_url:
             # Keep icon for clients that implement the classic XMLTV convention.
-            ET.SubElement(item, "icon", {"src": programme.image_url, "width": "1024", "height": "576"})
+            # Match the NanoTV-compatible shape exactly: only a direct src attribute.
+            ET.SubElement(item, "icon", {"src": programme.image_url})
         ET.SubElement(item, "url").text = programme.source_url
         if programme.image_url:
             # XMLTV's modern image element is what clients commonly use for backdrop art.
