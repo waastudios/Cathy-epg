@@ -1,11 +1,11 @@
 {
   "astro": {
     "status": "ok",
-    "records": 2500
+    "records": 2374
   },
   "now_hk": {
     "status": "ok",
-    "records": 4005
+    "records": 4483
   },
   "allente_se": {
     "status": "ok",
@@ -18,11 +18,13 @@
   },
   "ee_uk": {
     "status": "ok",
-    "records": 6617
+    "records": 6623
   },
   "sky_de": {
-    "status": "ok",
-    "records": 1421
+    "status": "stale",
+    "records": 1421,
+    "message": "MagentaTV Sky Germany 标题不在已审校的英文映射或受控词汇范围内：'PL'",
+    "fallback": "previous_snapshot"
   },
   "digi4k_ro": {
     "status": "ok",
@@ -38,17 +40,16 @@
     "message": "SBB Eurosport 4K 标题未获得可验证的英文转换：'Esport Svetski Kup Show'"
   },
   "virgin_uk": {
-    "status": "stale",
-    "records": 87,
-    "fallback": "previous_snapshot"
+    "status": "ok",
+    "records": 85
   },
   "xmltv": {
     "status": "ok",
     "channels": 152,
-    "programmes": 15562,
+    "programmes": 15918,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-08-25T17:22:30Z",
-  "total_records": 15562
+  "generated_at": "2026-08-25T19:39:24Z",
+  "total_records": 15918
 }
