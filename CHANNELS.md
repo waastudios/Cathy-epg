@@ -2,7 +2,7 @@
 
 This inventory is generated directly from the currently published `data/epg.xml`. Every row is an actual XMLTV `<channel>` node: **tvg-id** is `channel/@id` and **tvg-name** is `display-name`.
 
-The current XMLTV output contains **158 channels**.
+The current XMLTV output contains **151 channels**.
 
 > **Note:** `(T)` means **Translated**. The channel's schedule originates in a non-English market and programme titles are translated into English before publication. This marker appears **only in this inventory**; it is never written to `data/epg.xml`, `data/epg.xml.gz`, or the programme snapshot. XMLTV `display-name` values remain the official provider names.
 
@@ -117,14 +117,6 @@ The current XMLTV output contains **158 channels**.
 | `ee_uk.409` | TNT Sports 2 |
 | `ee_uk.410` | TNT Sports 3 |
 | `ee_uk.411` | TNT Sports 4 |
-| `ee_uk.433` | TNT Sports Ultimate |
-| `ee_uk.450` | TNT Sports 5 |
-| `ee_uk.451` | TNT Sports 6 |
-| `ee_uk.452` | TNT Sports 7 |
-| `ee_uk.453` | TNT Sports 8 |
-| `ee_uk.454` | TNT Sports 9 |
-| `ee_uk.455` | TNT Sports 10 |
-| `ee_uk.494` | TNT Sports Box Office |
 | `ee_uk.418` | Sky Sports News |
 | `ee_uk.419` | Sky Sports Main Event |
 | `ee_uk.420` | Sky Sports Premier League |
@@ -137,6 +129,14 @@ The current XMLTV output contains **158 channels**.
 | `ee_uk.427` | Sky Sports + |
 | `ee_uk.428` | Sky Sports Racing |
 | `ee_uk.429` | Sky Sports Mix |
+| `ee_uk.433` | TNT Sports Ultimate |
+| `ee_uk.450` | TNT Sports 5 |
+| `ee_uk.451` | TNT Sports 6 |
+| `ee_uk.452` | TNT Sports 7 |
+| `ee_uk.453` | TNT Sports 8 |
+| `ee_uk.454` | TNT Sports 9 |
+| `ee_uk.455` | TNT Sports 10 |
+| `ee_uk.494` | TNT Sports Box Office HD |
 
 ## Virgin Media UK
 
@@ -150,18 +150,14 @@ The current XMLTV output contains **158 channels**.
 | tvg-id | tvg-name |
 | --- | --- |
 | `ee_uk.1` | BBC One London |
-| `ee_uk.2` | BBC Two |
-| `ee_uk.3` | ITV1 London |
-| `ee_uk.4` | Channel 4 |
-| `ee_uk.6` | ITV2 |
-| `ee_uk.9` | BBC Four |
 | `ee_uk.10` | ITV3 |
 | `ee_uk.11` | Sky Mix |
+| `ee_uk.2` | BBC Two |
 | `ee_uk.23` | BBC Three |
-| `ee_uk.26` | ITV4 |
-| `ee_uk.36` | Sky Arts |
 | `ee_uk.231` | BBC News |
 | `ee_uk.232` | BBC Parliament |
+| `ee_uk.26` | ITV4 |
+| `ee_uk.3` | ITV1 London |
 | `ee_uk.341` | Sky Witness |
 | `ee_uk.342` | Sky Atlantic |
 | `ee_uk.346` | Sky One |
@@ -171,6 +167,10 @@ The current XMLTV output contains **158 channels**.
 | `ee_uk.352` | Sky Documentaries |
 | `ee_uk.353` | Sky History |
 | `ee_uk.354` | Sky Nature |
+| `ee_uk.36` | Sky Arts |
+| `ee_uk.4` | Channel 4 |
+| `ee_uk.6` | ITV2 |
+| `ee_uk.9` | BBC Four |
 
 ## Eurosport
 
@@ -178,23 +178,6 @@ The current XMLTV output contains **158 channels**.
 | --- | --- |
 | `eurosport.1` | Eurosport 1 (T) |
 | `eurosport.2` | Eurosport 2 (T) |
-| `eurosport.4k` | Eurosport 4K (T) |
-
-## Digi 4K
-
-| tvg-id | tvg-name |
-| --- | --- |
-| `digi4k_ro` | Digi 4K (T) |
-
-## Allente Norway
-
-| tvg-id | tvg-name |
-| --- | --- |
-| `allente_no.euro1` | Eurosport 1 (T) |
-| `allente_no.euron` | Eurosport Norge (T) |
-| `allente_no.fem` | FEM (T) |
-| `allente_no.rex` | REX (T) |
-| `allente_no.tvn` | TV Norge (T) |
 
 ## Allente Sweden
 

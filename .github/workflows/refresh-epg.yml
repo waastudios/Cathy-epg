@@ -1,4 +1,4 @@
-name: Refresh official EPG
+name: Refresh EPG and authorised UK artwork
 
 on:
   schedule:
@@ -10,7 +10,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: refresh-official-epg
+  group: refresh-epg-and-authorised-artwork
   cancel-in-progress: false
 
 jobs:
@@ -31,7 +31,7 @@ jobs:
       - name: Install collector
         run: python -m pip install --upgrade pip && python -m pip install -e .
 
-      - name: Collect official programme guides
+      - name: Collect provider programme guides and authorised UK artwork
         run: epg collect --days 7
 
       - name: Publish refreshed snapshot when it changes
@@ -43,5 +43,5 @@ jobs:
             echo "No programme-guide changes to publish."
             exit 0
           fi
-          git commit -m "chore: refresh official EPG snapshot"
+          git commit -m "chore: refresh EPG and UK artwork"
           git push

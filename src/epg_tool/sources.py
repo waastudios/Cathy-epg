@@ -77,8 +77,8 @@ EE_UK_CHANNELS: tuple[tuple[str, str, str], ...] = (
     ("453", "TNT Sports 8", "http://bds.tv/services/BT_767936"),
     ("454", "TNT Sports 9", "http://bds.tv/services/BT_767937"),
     ("455", "TNT Sports 10", "http://bds.tv/services/BT_767938"),
-    # TNT Sports／WBD Sports 官方页面确认：EE TV 主 TNT Sports Box Office 频道为 494。
-    ("494", "TNT Sports Box Office", "http://bds.tv/services/BT_771276"),
+    # EE TV 当前公开节目接口将 CH 494 的官方服务名标为 TNT Sports Box Office HD。
+    ("494", "TNT Sports Box Office HD", "http://bds.tv/services/BT_771276"),
     ("418", "Sky Sports News", "http://bds.tv/services/BT_631679_1314_SD"),
     ("419", "Sky Sports Main Event", "http://bds.tv/services/BT_503_1301_SD"),
     ("420", "Sky Sports Premier League", "http://bds.tv/services/BT_768064_1303_SD"),

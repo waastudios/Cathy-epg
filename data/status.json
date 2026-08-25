@@ -1,51 +1,62 @@
 {
   "astro": {
     "status": "ok",
-    "records": 2499
+    "records": 2500
   },
   "now_hk": {
     "status": "ok",
-    "records": 4519
+    "records": 4005
   },
   "allente_se": {
     "status": "ok",
     "records": 783
   },
   "allente_no": {
-    "status": "ok",
-    "records": 810
+    "status": "error",
+    "records": 0,
+    "message": "Allente Norway 官方 EPG 响应中未找到预期的 TV Norge、REX、FEM、Eurosport Norge 或 Eurosport 1。"
   },
   "ee_uk": {
     "status": "ok",
-    "records": 6661
+    "records": 6618
+  },
+  "sky_de": {
+    "status": "ok",
+    "records": 1421
   },
   "digi4k_ro": {
-    "status": "ok",
-    "records": 97
+    "status": "error",
+    "records": 0,
+    "message": "Digi 4K 标题未获得可验证的英文转换：'Maimuțe și mai mult de atât'"
   },
   "tvplus_tr": {
     "status": "ok",
     "records": 35
   },
   "sbb_rs": {
-    "status": "ok",
-    "records": 67
+    "status": "error",
+    "records": 0,
+    "message": "SBB Eurosport 4K 标题未获得可验证的英文转换：'Esport Svetski Kup Show'"
   },
   "virgin_uk": {
     "status": "ok",
-    "records": 85
+    "records": 87
+  },
+  "tvguide_images": {
+    "status": "ok",
+    "eligible_programmes": 6450,
+    "schedule_pages": 302,
+    "schedule_page_failures": 0,
+    "matched_images": 3015,
+    "unmatched_programmes": 3435
   },
   "xmltv": {
     "status": "ok",
-    "channels": 158,
-    "programmes": 16977,
+    "channels": 151,
+    "programmes": 15449,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-08-25T12:27:42Z",
-  "total_records": 16977,
-  "sky_de": {
-    "status": "ok",
-    "records": 1421
-  }
+  "generated_at": "2026-08-25T14:22:14Z",
+  "total_records": 15449
 }

@@ -11,7 +11,7 @@ from typing import Iterable
 
 @dataclass(frozen=True)
 class Programme:
-    """一条可追溯至运营商官方页面的节目记录。"""
+    """一条带可追溯来源链接的节目记录。"""
 
     provider: str
     country: str
@@ -24,6 +24,10 @@ class Programme:
     end_at: str | None
     source_url: str
     retrieved_at: str
+    # Optional direct programme artwork URL. Images are linked, never re-hosted.
+    image_url: str | None = None
+    # TV guide detail page that supplied image_url, retained for provenance.
+    image_source_url: str | None = None
 
     def to_dict(self) -> dict[str, str | None]:
         return asdict(self)
@@ -54,7 +58,7 @@ def write_jsonl(records: Iterable[Programme], destination: Path) -> int:
     return len(rows)
 
 
-def read_jsonl(source: Path) -> list[dict[str, str]]:
+def read_jsonl(source: Path) -> list[dict[str, str | None]]:
     """读取本工具写入的节目记录。"""
     if not source.exists():
         return []
