@@ -4,6 +4,8 @@ This inventory is generated directly from the currently published `data/epg.xml`
 
 The current XMLTV output contains **129 channels**.
 
+> **Note:** `(T)` means **Translated**. The channel's schedule originates in a non-English market and programme titles are translated into English before publication. This marker is for this inventory only; the XMLTV `display-name` remains the official provider name.
+
 ## Astro Malaysia
 
 | tvg-id | tvg-name |
@@ -140,25 +142,25 @@ The current XMLTV output contains **129 channels**.
 
 | tvg-id | tvg-name |
 | --- | --- |
-| `eurosport.1` | Eurosport 1 |
-| `eurosport.2` | Eurosport 2 |
-| `eurosport.4k` | Eurosport 4K |
+| `eurosport.1` | Eurosport 1 (T) |
+| `eurosport.2` | Eurosport 2 (T) |
+| `eurosport.4k` | Eurosport 4K (T) |
 
 ## Digi 4K
 
 | tvg-id | tvg-name |
 | --- | --- |
-| `digi4k_ro` | Digi 4K |
+| `digi4k_ro` | Digi 4K (T) |
 
 ## Allente Norway
 
 | tvg-id | tvg-name |
 | --- | --- |
-| `allente_no.euro1` | Eurosport 1 |
-| `allente_no.euron` | Eurosport Norge |
-| `allente_no.fem` | FEM |
-| `allente_no.rex` | REX |
-| `allente_no.tvn` | TV Norge |
+| `allente_no.euro1` | Eurosport 1 (T) |
+| `allente_no.euron` | Eurosport Norge (T) |
+| `allente_no.fem` | FEM (T) |
+| `allente_no.rex` | REX (T) |
+| `allente_no.tvn` | TV Norge (T) |
 
 ## Allente Sweden
 

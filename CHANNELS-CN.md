@@ -4,6 +4,8 @@
 
 当前 XMLTV 输出包含 **129 个频道**。
 
+> **注：**频道名称后的 **`(T)`** 表示 **Translated**：该频道的节目表来自非英语地区，原始节目标题已转换为英文后发布。此标记仅用于本清单展示，XMLTV 的官方 `display-name` 保持不变。
+
 ## 🇲🇾马来西亚 Astro
 
 | tvg-id | tvg-name |
@@ -139,26 +141,26 @@
 ## 🇹🇷土耳其／🇷🇸塞尔维亚 Eurosport
 | tvg-id | tvg-name |
 | --- | --- |
-| `eurosport.1` | Eurosport 1 |
-| `eurosport.2` | Eurosport 2 |
-| `eurosport.4k` | Eurosport 4K |
+| `eurosport.1` | Eurosport 1 (T) |
+| `eurosport.2` | Eurosport 2 (T) |
+| `eurosport.4k` | Eurosport 4K (T) |
 
 
 ## 🇷🇴罗马尼亚 Digi 4K
 
 | tvg-id | tvg-name |
 | --- | --- |
-| `digi4k_ro` | Digi 4K |
+| `digi4k_ro` | Digi 4K (T) |
 
 ## 🇳🇴挪威 Allente
 
 | tvg-id | tvg-name |
 | --- | --- |
-| `allente_no.euro1` | Eurosport 1 |
-| `allente_no.euron` | Eurosport Norge |
-| `allente_no.fem` | FEM |
-| `allente_no.rex` | REX |
-| `allente_no.tvn` | TV Norge |
+| `allente_no.euro1` | Eurosport 1 (T) |
+| `allente_no.euron` | Eurosport Norge (T) |
+| `allente_no.fem` | FEM (T) |
+| `allente_no.rex` | REX (T) |
+| `allente_no.tvn` | TV Norge (T) |
 
 ## 🇸🇪瑞典 Allente
 
