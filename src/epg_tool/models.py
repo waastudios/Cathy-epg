@@ -28,8 +28,6 @@ class Programme:
     image_url: str | None = None
     # TVGuide detail page that supplied image_url, retained for provenance.
     image_source_url: str | None = None
-    # Optional official programme detail page, such as Virgin TV Go's event URL.
-    programme_url: str | None = None
 
     def to_dict(self) -> dict[str, str | None]:
         return asdict(self)
