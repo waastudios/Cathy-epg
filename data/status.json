@@ -18,7 +18,7 @@
   },
   "ee_uk": {
     "status": "ok",
-    "records": 6618
+    "records": 6617
   },
   "sky_de": {
     "status": "ok",
@@ -38,24 +38,17 @@
     "message": "SBB Eurosport 4K 标题未获得可验证的英文转换：'Esport Svetski Kup Show'"
   },
   "virgin_uk": {
-    "status": "ok",
-    "records": 87
+    "status": "stale",
+    "records": 87,
+    "fallback": "previous_snapshot"
   },
   "xmltv": {
     "status": "ok",
-    "channels": 151,
-    "programmes": 15563,
+    "channels": 152,
+    "programmes": 15562,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-08-25T16:50:23Z",
-  "total_records": 15563,
-  "tvguide_images": {
-    "status": "ok",
-    "eligible_programmes": 6450,
-    "schedule_pages": 302,
-    "schedule_page_failures": 0,
-    "matched_images": 3015,
-    "unmatched_programmes": 3435
-  }
+  "generated_at": "2026-08-25T17:22:30Z",
+  "total_records": 15562
 }

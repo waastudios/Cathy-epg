@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+from dataclasses import replace
 from datetime import datetime, timezone
 from pathlib import Path
 import json
@@ -11,7 +12,6 @@ import sys
 import requests
 
 from .models import Programme, read_jsonl, write_jsonl
-from .tvguide_images import enrich_tvguide_uk_images
 from .xmltv import write_xmltv
 from .sources import (
     SourceUnavailable,
@@ -87,13 +87,24 @@ def _collect(args: argparse.Namespace) -> int:
             else:
                 status[provider] = {"status": "error", "records": 0, "message": str(exc)}
 
-    # TVGuide.co.uk artwork is optional enrichment: if it is unavailable, the
-    # official text EPG remains publishable and any previous artwork is retained.
-    try:
-        records, image_stats = enrich_tvguide_uk_images(records)
-        status["tvguide_images"] = {"status": "ok", **image_stats}
-    except (OSError, ValueError, requests.RequestException) as exc:
-        status["tvguide_images"] = {"status": "error", "message": str(exc)}
+    # Do not call third-party guide interfaces during refresh. If a freshly
+    # collected UK programme is unchanged, retain its existing direct image link.
+    previous_images = {
+        (row.provider, row.channel_id, row.start_at, row.title): (row.image_url, row.image_source_url)
+        for row in previous_by_provider.get("ee_uk", []) + previous_by_provider.get("virgin_uk", [])
+        if row.image_url
+    }
+    if previous_images:
+        records = [
+            replace(
+                row,
+                image_url=previous_images[(row.provider, row.channel_id, row.start_at, row.title)][0],
+                image_source_url=previous_images[(row.provider, row.channel_id, row.start_at, row.title)][1],
+            )
+            if not row.image_url and (row.provider, row.channel_id, row.start_at, row.title) in previous_images
+            else row
+            for row in records
+        ]
 
     count = write_jsonl(records, args.output)
     channel_count, programme_count = write_xmltv(records, args.xml_output, args.xml_gzip_output)

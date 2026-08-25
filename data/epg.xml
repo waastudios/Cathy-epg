@@ -30380,12 +30380,12 @@
     <title>Groundbreaking: Anfield</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260826191500 +0100" channel="ee_uk.408" stop="20260826200000 +0100">
+  <programme start="20260826191500 +0100" channel="ee_uk.408" stop="20260826195500 +0100">
     <title>The Breakdown</title>
     <icon src="https://tv.assets.pressassociation.io/cc243f38-3c25-5970-acc9-f819f11c7242.jpg" />
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260826200000 +0100" channel="ee_uk.408" stop="20260826220000 +0100">
+  <programme start="20260826195500 +0100" channel="ee_uk.408" stop="20260826220000 +0100">
     <title>Live UCL: Lyon v Fenerbahce</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
@@ -30572,7 +30572,7 @@
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20260829104500 +0100" channel="ee_uk.408" stop="20260829110000 +0100">
-    <title>The Breakdown</title>
+    <title>The Breakdown: Gerrard &amp; Iraola</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20260829110000 +0100" channel="ee_uk.408" stop="20260829150000 +0100">
@@ -30687,7 +30687,7 @@
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20260830214500 +0100" channel="ee_uk.408" stop="20260830220000 +0100">
-    <title>The Breakdown</title>
+    <title>The Breakdown: Gerrard &amp; Iraola</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20260830220000 +0100" channel="ee_uk.408" stop="20260830230000 +0100">
@@ -30936,11 +30936,11 @@
     <title>UCL: Sabah v Hapoel Be'er Sheva</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260826190000 +0100" channel="ee_uk.409" stop="20260826200000 +0100">
+  <programme start="20260826190000 +0100" channel="ee_uk.409" stop="20260826195500 +0100">
     <title>UCL: Bodo/Glimt v NEC</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260826200000 +0100" channel="ee_uk.409" stop="20260826220000 +0100">
+  <programme start="20260826195500 +0100" channel="ee_uk.409" stop="20260826220000 +0100">
     <title>Live UCL: Viking v Dinamo Zagreb</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
@@ -31300,14 +31300,8 @@
     <title>Live WRC: Rally Paraguay</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260830163000 +0100" channel="ee_uk.409" stop="20260830170000 +0100">
-    <title>T100 Triathlon World Tour Highlights</title>
-    <icon src="https://tv.assets.pressassociation.io/bd1dde84-31e0-5d01-9fa7-c02b651c201a.jpg" />
-    <url>https://player.ee.co.uk/#/livetv/schedule</url>
-  </programme>
-  <programme start="20260830170000 +0100" channel="ee_uk.409" stop="20260830173000 +0100">
-    <title>MLB Plays of the Week</title>
-    <icon src="https://tv.assets.pressassociation.io/b0ef36b1-729f-50cf-983c-e39d9e9fb6f2.jpg" />
+  <programme start="20260830163000 +0100" channel="ee_uk.409" stop="20260830173000 +0100">
+    <title>FIM Speedway World Cup</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20260830173000 +0100" channel="ee_uk.409" stop="20260830183000 +0100">
@@ -31400,23 +31394,20 @@
     <title>LIV Golf - Indianapolis Review</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260831163000 +0100" channel="ee_uk.409" stop="20260831170000 +0100">
-    <title>UEFA Champions League Magazine</title>
-    <icon src="https://tv.assets.pressassociation.io/030ff5b1-ccd4-57e1-93ce-e9e43e1b892d.jpg" />
-    <url>https://player.ee.co.uk/#/livetv/schedule</url>
-  </programme>
-  <programme start="20260831170000 +0100" channel="ee_uk.409" stop="20260831180000 +0100">
+  <programme start="20260831163000 +0100" channel="ee_uk.409" stop="20260831173000 +0100">
     <title>Sign Up - Into Football</title>
-    <icon src="https://tv.assets.pressassociation.io/7cb45e91-ca36-5446-ac58-bd860a734018.jpg" />
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260831180000 +0100" channel="ee_uk.409" stop="20260831183000 +0100">
+  <programme start="20260831173000 +0100" channel="ee_uk.409" stop="20260831180000 +0100">
     <title>CPL Highlights</title>
-    <icon src="https://tv.assets.pressassociation.io/0248ab10-7181-53dd-939d-88594bc42f2a.jpg" />
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260831183000 +0100" channel="ee_uk.409" stop="20260831193000 +0100">
-    <title>SailGP Highlights</title>
+  <programme start="20260831180000 +0100" channel="ee_uk.409" stop="20260831190000 +0100">
+    <title>FIM Speedway World Cup</title>
+    <url>https://player.ee.co.uk/#/livetv/schedule</url>
+  </programme>
+  <programme start="20260831190000 +0100" channel="ee_uk.409" stop="20260831193000 +0100">
+    <title>UEFA Champions League Magazine</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20260831193000 +0100" channel="ee_uk.409" stop="20260831203000 +0100">
@@ -31518,13 +31509,12 @@
     <title>La Vuelta Men Highlights</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260825133000 +0100" channel="ee_uk.410" stop="20260825170000 +0100">
+  <programme start="20260825133000 +0100" channel="ee_uk.410" stop="20260825172000 +0100">
     <title>Live: La Vuelta - Stage 4</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260825170000 +0100" channel="ee_uk.410" stop="20260825180000 +0100">
+  <programme start="20260825172000 +0100" channel="ee_uk.410" stop="20260825180000 +0100">
     <title>MLB Highlights</title>
-    <icon src="https://tv.assets.pressassociation.io/ef096206-f3cf-50a6-b74c-f38999f04d2e.jpg" />
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20260825180000 +0100" channel="ee_uk.410" stop="20260825190000 +0100">
@@ -31922,24 +31912,20 @@
     <title>Live: La Vuelta - Stage 8</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260829170000 +0100" channel="ee_uk.410" stop="20260829173000 +0100">
-    <title>eSports Show</title>
-    <icon src="https://tv.assets.pressassociation.io/0d0e8388-4547-5328-95a7-e3dcaa67d53d.jpg" />
+  <programme start="20260829170000 +0100" channel="ee_uk.410" stop="20260829180000 +0100">
+    <title>MLB Highlights</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260829173000 +0100" channel="ee_uk.410" stop="20260829183000 +0100">
-    <title>Supercars Championship Highlights</title>
-    <icon src="https://tv.assets.pressassociation.io/ee41c0bc-5f87-54ac-8634-616e97c2eaec.jpg" />
+  <programme start="20260829180000 +0100" channel="ee_uk.410" stop="20260829183000 +0100">
+    <title>CPL Highlights</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20260829183000 +0100" channel="ee_uk.410" stop="20260829193000 +0100">
-    <title>Supercars Championship Highlights</title>
-    <icon src="https://tv.assets.pressassociation.io/d04ed9d5-d21e-5152-96f8-c23aecca5856.jpg" />
+    <title>LIV Golf - Indianapolis Review</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20260829193000 +0100" channel="ee_uk.410" stop="20260829210000 +0100">
-    <title>AFL</title>
-    <icon src="https://tv.assets.pressassociation.io/cb926ee9-dce2-5467-85d5-11e57a7a4827.jpg" />
+    <title>AFL: Melbourne v Carlton</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20260829210000 +0100" channel="ee_uk.410" stop="20260830013000 +0100">
@@ -31947,7 +31933,7 @@
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20260830013000 +0100" channel="ee_uk.410" stop="20260830030000 +0100">
-    <title>AFL</title>
+    <title>AFL: Melbourne v Carlton</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20260830030000 +0100" channel="ee_uk.410" stop="20260830043000 +0100">
@@ -32087,7 +32073,7 @@
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20260831160000 +0100" channel="ee_uk.410" stop="20260831170000 +0100">
-    <title>La Vuelta Men Highlights</title>
+    <title>UCI Gravel European Championship</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20260831170000 +0100" channel="ee_uk.410" stop="20260831180000 +0100">
@@ -32302,11 +32288,11 @@
     <icon src="https://tv.assets.pressassociation.io/94401774-2b25-5f7c-a39c-46951fb08098.jpg" />
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260826193000 +0100" channel="ee_uk.411" stop="20260826200000 +0100">
+  <programme start="20260826193000 +0100" channel="ee_uk.411" stop="20260826195500 +0100">
     <title>PL Stories: Pep - The Legacy</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260826200000 +0100" channel="ee_uk.411" stop="20260826220000 +0100">
+  <programme start="20260826195500 +0100" channel="ee_uk.411" stop="20260826220000 +0100">
     <title>Live UCL: AEK v Levski Sofia</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
@@ -32529,8 +32515,7 @@
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20260828233000 +0100" channel="ee_uk.411" stop="20260829010000 +0100">
-    <title>AFL</title>
-    <icon src="https://tv.assets.pressassociation.io/cb926ee9-dce2-5467-85d5-11e57a7a4827.jpg" />
+    <title>AFL: Bulldogs v Collingwood</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20260829010000 +0100" channel="ee_uk.411" stop="20260829020000 +0100">
@@ -32587,22 +32572,20 @@
     <title>Live Snooker: Wuhan Open Final</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260829153000 +0100" channel="ee_uk.411" stop="20260829160000 +0100">
-    <title>CPL Highlights</title>
-    <icon src="https://tv.assets.pressassociation.io/65a75731-6b54-5628-a634-af4c53415b5d.jpg" />
+  <programme start="20260829153000 +0100" channel="ee_uk.411" stop="20260829154500 +0100">
+    <title>TNT Sports Reload</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260829160000 +0100" channel="ee_uk.411" stop="20260829170000 +0100">
-    <title>MLB Highlights</title>
-    <icon src="https://tv.assets.pressassociation.io/6b92bc87-1e7c-5c15-b8cb-09bfcd11ef53.jpg" />
+  <programme start="20260829154500 +0100" channel="ee_uk.411" stop="20260829164500 +0100">
+    <title>Supercars Championship Highlights</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260829170000 +0100" channel="ee_uk.411" stop="20260829183000 +0100">
-    <title>Ultimate Pool Finals Night</title>
+  <programme start="20260829164500 +0100" channel="ee_uk.411" stop="20260829174500 +0100">
+    <title>Supercars Championship Highlights</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260829183000 +0100" channel="ee_uk.411" stop="20260829203000 +0100">
-    <title>Sri Lanka v India: 2nd Test Review</title>
+  <programme start="20260829174500 +0100" channel="ee_uk.411" stop="20260829203000 +0100">
+    <title>FIM Speedway World Cup</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20260829203000 +0100" channel="ee_uk.411" stop="20260829210000 +0100">
@@ -32684,13 +32667,11 @@
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20260831060000 +0100" channel="ee_uk.411" stop="20260831073000 +0100">
-    <title>AFL</title>
-    <icon src="https://tv.assets.pressassociation.io/cb926ee9-dce2-5467-85d5-11e57a7a4827.jpg" />
+    <title>AFL: Bulldogs v Collingwood</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20260831073000 +0100" channel="ee_uk.411" stop="20260831090000 +0100">
-    <title>AFL</title>
-    <icon src="https://tv.assets.pressassociation.io/cb926ee9-dce2-5467-85d5-11e57a7a4827.jpg" />
+    <title>AFL: Melbourne v Carlton</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20260831090000 +0100" channel="ee_uk.411" stop="20260831100000 +0100">
@@ -32718,13 +32699,11 @@
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20260831143000 +0100" channel="ee_uk.411" stop="20260831160000 +0100">
-    <title>AFL</title>
-    <icon src="https://tv.assets.pressassociation.io/cb926ee9-dce2-5467-85d5-11e57a7a4827.jpg" />
+    <title>AFL: Bulldogs v Collingwood</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20260831160000 +0100" channel="ee_uk.411" stop="20260831173000 +0100">
-    <title>AFL</title>
-    <icon src="https://tv.assets.pressassociation.io/cb926ee9-dce2-5467-85d5-11e57a7a4827.jpg" />
+    <title>AFL: Melbourne v Carlton</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20260831173000 +0100" channel="ee_uk.411" stop="20260831180000 +0100">
