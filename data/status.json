@@ -42,14 +42,6 @@
     "status": "ok",
     "records": 87
   },
-  "tvguide_images": {
-    "status": "ok",
-    "eligible_programmes": 6450,
-    "schedule_pages": 302,
-    "schedule_page_failures": 0,
-    "matched_images": 3015,
-    "unmatched_programmes": 3435
-  },
   "xmltv": {
     "status": "ok",
     "channels": 151,

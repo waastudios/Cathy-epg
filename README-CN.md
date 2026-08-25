@@ -2,7 +2,7 @@
 
 ## 项目说明
 
-**Cathy-epg** 的节目排期仅从节目运营商官网或授权电视服务商的正常公开节目表生成。项目不使用 EPGshare、epg.pw、IPTV 播放列表、第三方节目表镜像、播放地址、账号、会话重放、地域绕过或任何访问控制规避方法。对于已映射的英国节目，项目维护者已取得授权，可额外直接链接 TVGuide.co.uk 的节目图片；该图片增强不会替代或改写服务商节目排期数据。
+**Cathy-epg** 是仅从节目运营商官网或授权电视服务商的正常公开节目表生成的 XMLTV 节目元数据订阅。项目不使用 EPGshare、epg.pw、IPTV 播放列表、第三方节目表镜像、播放地址、账号、会话重放、地域绕过或任何访问控制规避方法。
 
 > 本仓库只发布频道和节目元数据；不发布播放链接、凭据、Cookie，也不会为了填充清单而创建空频道。
 
@@ -28,10 +28,6 @@ https://raw.githubusercontent.com/waastudios/Cathy-epg/master/data/epg.xml.gz
 
 除经用户明确指定的名称规范化外，XMLTV 中的每个 `display-name` 都是服务商公开的官方频道名称。德国 Sky 会移除频道显示名末尾的 `HD` 并保留 `UHD`；[CHANNELS.md](CHANNELS.md) 频道清单会在其名称后追加“（T）”以标记节目标题固定译为英文，但 XMLTV `display-name` 仍保留服务商官方名称。稳定 ID 通常采用 `<provider>.<channel-id>`；Sky Documentaries 使用用户指定的稳定 ID `ee_uk.352`，德国 Sky 使用 Sky 频道号作为 `sky_de.<频道号>`。
 
-### 已授权的英国节目背景图
-
-对于已映射的 EE TV 与 Virgin Media 英国节目，刷新流程会在 XMLTV 中直接写入 TVGuide.co.uk 图片链接：标准字段 `<programme><image type="backdrop" orient="L">…</image></programme>`，同时保留兼容性的 `<icon>` 字段。图片不会下载或二次托管。只有当已映射的 TVGuide 频道页存在**唯一**候选，且规范化节目标题相同、开始时间与服务商记录相差不超过一分钟时，才会写入图片；缺图、歧义、频道不支持或页面请求失败时一律不写图。节目标题、播出时间和频道仍只来自 EE TV 或 Virgin Media；每日的 `data/status.json` 会记录可匹配节目数、页面请求数、精确图片匹配数和未匹配数。
-
 ## 当前覆盖与强制范围
 
 | 市场 | 已发布服务 | 官方来源 |
@@ -43,7 +39,6 @@ https://raw.githubusercontent.com/waastudios/Cathy-epg/master/data/epg.xml.gz
 | 挪威 | TV Norge、REX、FEM、Eurosport Norge、Eurosport 1 | [Allente Norway TV Guide](https://www.allente.no/tv-guide/) |
 | 英国 | 指定 Sky Sports、TNT Sports、BBC、ITV、Channel 4 与 Sky 娱乐频道 | [EE TV Player Live TV Schedule](https://player.ee.co.uk/#/livetv/schedule) |
 | 英国 | Sky Sports Ultra HD 1、Sky Sports Ultra HD 2 | [Virgin Media TV Go Guide](https://virgintvgo.virginmedia.com/en/epg/initial) |
-| 英国节目图片 | 已映射 EE TV／Virgin Media 节目的精确匹配图标 | 经项目维护者授权使用的 [TVGuide.co.uk](https://www.tvguide.co.uk/) 直接图片 URL |
 | 罗马尼亚 | Digi 4K | [Digi 4K](https://www.digi4k.ro/) |
 | 土耳其 | Eurosport 1、Eurosport 2 | [TV+ Eurosport 1](https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77) 与 [Eurosport 2](https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106) |
 | 塞尔维亚 | Eurosport 4K | [SBB / EON Public EPG](https://epg.sbb.rs/) |
@@ -64,9 +59,9 @@ EE 范围包含 **Sky Mix、Sky Arts、Sky Witness、Sky Atlantic、Sky One、Sk
 
 ## 自动刷新与校验
 
-`.github/workflows/refresh-epg.yml` 中的 GitHub Actions 工作流每天在 **19:00 UTC** 运行，即北京时间（UTC+8）**次日 03:00**。工作流运行 `epg collect --days 7`，写入节目快照和 XMLTV 文件，并且只在结果变化时提交。若服务商节目表暂时无法访问，`data/status.json` 会记录来源失败，绝不使用其他节目排期替代。已获授权的 TVGuide 图片增强是可选步骤，即使暂时不可用，也不会阻断服务商节目数据的发布。
+`.github/workflows/refresh-epg.yml` 中的 GitHub Actions 工作流每天在 **19:00 UTC** 运行，即北京时间（UTC+8）**次日 03:00**。工作流运行 `epg collect --days 7`，写入节目快照和 XMLTV 文件，并且只在结果变化时提交。若官网暂时无法访问，`data/status.json` 会记录来源失败，绝不使用第三方数据替代。
 
-当前发布只有在以下条件同时满足时才视为有效：`data/epg.xml.gz` 解压后与 `data/epg.xml` 完全一致；所有 XMLTV 频道显示名为官方频道名；节目图片只由精确映射匹配写入；Astro 与 now TV 频道都属于明确体育白名单；被禁止的美国服务商 ID 不存在。
+当前发布只有在以下条件同时满足时才视为有效：`data/epg.xml.gz` 解压后与 `data/epg.xml` 完全一致；所有 XMLTV 频道显示名为官方频道名；Astro 与 now TV 频道都属于明确体育白名单；被禁止的美国服务商 ID 不存在。
 
 ## 本地使用
 
@@ -85,4 +80,3 @@ epg search "Premier League" --provider now_hk --channel 611
 [3]: https://www.astro.com.my/content/channels "Astro Content Guide"
 [4]: https://nowplayer.now.com/tvguide "now TV Hong Kong — TV Guide"
 [5]: https://virgintvgo.virginmedia.com/en/epg/initial "Virgin Media TV Go — Guide"
-[6]: https://www.tvguide.co.uk/ "TVGuide.co.uk — 经项目维护者授权的节目图片"

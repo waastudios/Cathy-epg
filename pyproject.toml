@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "cathy-epg"
 version = "0.1.0"
-description = "XMLTV collector for selected provider guides with authorised UK programme artwork links"
+description = "Official-source-only XMLTV collector for selected broadcaster and TV-provider guides"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [

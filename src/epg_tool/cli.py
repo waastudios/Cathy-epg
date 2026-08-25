@@ -12,7 +12,6 @@ import requests
 
 from .models import read_jsonl, write_jsonl
 from .xmltv import write_xmltv
-from .tvguide_images import enrich_tvguide_uk_images
 from .sources import (
     SourceUnavailable,
     collect_allente_no,
@@ -58,15 +57,6 @@ def _collect(args: argparse.Namespace) -> int:
             status[provider] = {"status": "ok", "records": len(result)}
         except (SourceUnavailable, OSError, ValueError, requests.RequestException) as exc:
             status[provider] = {"status": "error", "records": 0, "message": str(exc)}
-
-    # The user has obtained permission from TVGuide.co.uk to link programme artwork.
-    # Image matching is optional enrichment: source EPG collection remains publishable
-    # if the third-party artwork service is temporarily unavailable.
-    try:
-        records, image_stats = enrich_tvguide_uk_images(records)
-        status["tvguide_images"] = {"status": "ok", **image_stats}
-    except (OSError, ValueError, requests.RequestException) as exc:
-        status["tvguide_images"] = {"status": "error", "message": str(exc)}
 
     count = write_jsonl(records, args.output)
     channel_count, programme_count = write_xmltv(records, args.xml_output, args.xml_gzip_output)
@@ -116,7 +106,7 @@ def _search(args: argparse.Namespace) -> int:
 
 
 def build_parser() -> argparse.ArgumentParser:
-    parser = argparse.ArgumentParser(description="Weekly XMLTV collector with user-authorised UK programme artwork linking")
+    parser = argparse.ArgumentParser(description="Official-source-only weekly EPG collector and search tool")
     commands = parser.add_subparsers(dest="command", required=True)
 
     collect = commands.add_parser("collect", help="采集官方节目来源的一周节目表")

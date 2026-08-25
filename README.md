@@ -2,7 +2,7 @@
 
 ## Project
 
-**Cathy-epg** publishes an XMLTV programme-metadata subscription whose schedules are assembled from broadcaster websites and normal public programme guides of authorised television providers. It does not use EPGshare, epg.pw, IPTV playlists, third-party EPG mirrors, stream URLs, accounts, session replay, geographical bypasses, or access-control workarounds. For selected UK programmes only, it additionally links artwork from TVGuide.co.uk after the project maintainer obtained permission to do so; this does not replace or alter provider-sourced schedule data.
+**Cathy-epg** publishes an XMLTV programme-metadata subscription assembled exclusively from broadcaster websites and normal public programme guides of authorised television providers. It does not use EPGshare, epg.pw, IPTV playlists, third-party EPG mirrors, stream URLs, accounts, session replay, geographical bypasses, or access-control workarounds.
 
 > The repository contains metadata only. It does not publish playback links, credentials, cookies, or empty placeholder channels.
 
@@ -28,10 +28,6 @@ https://raw.githubusercontent.com/waastudios/Cathy-epg/master/data/epg.xml.gz
 
 Every XMLTV `display-name` is the provider’s official channel name unless an explicit user-approved normalisation applies. For Sky Germany, a terminal `HD` is removed while `UHD` is retained. The generated [CHANNELS.md](CHANNELS.md) inventory appends `(T)` to identify channels whose programme titles are translated into English; the XMLTV `display-name` remains the official provider name. Stable XMLTV IDs normally follow `<provider>.<channel-id>`; Sky Documentaries uses the user-designated stable ID `ee_uk.352`, and Sky Germany uses the Sky channel number as `sky_de.<number>`.
 
-### Authorised UK programme artwork
-
-For mapped EE TV and Virgin Media UK records, the refresh links a TVGuide.co.uk image directly in XMLTV as both the standard `<programme><image type="backdrop" orient="L">…</image></programme>` element and a compatibility `<icon>` element. Images are neither downloaded nor re-hosted. An icon is emitted only when the mapped TVGuide channel page has exactly one candidate with the same normalised programme title and a start time within one minute of the provider record; absent, ambiguous, unsupported-channel, or failed-page matches remain image-free. Programme titles, times, and channels continue to come solely from EE TV or Virgin Media. The daily status file records the number of eligible records, page requests, exact artwork matches, and unmatched records.
-
 ## Current coverage and enforced scope
 
 | Market | Published services | Official source |
@@ -43,7 +39,6 @@ For mapped EE TV and Virgin Media UK records, the refresh links a TVGuide.co.uk 
 | Norway | TV Norge, REX, FEM, Eurosport Norge, Eurosport 1 | [Allente Norway TV Guide](https://www.allente.no/tv-guide/) |
 | United Kingdom | Selected Sky Sports, TNT Sports, BBC, ITV, Channel 4 and Sky Entertainment services | [EE TV Player Live TV Schedule](https://player.ee.co.uk/#/livetv/schedule) |
 | United Kingdom | Sky Sports Ultra HD 1 and 2 | [Virgin Media TV Go Guide](https://virgintvgo.virginmedia.com/en/epg/initial) |
-| United Kingdom artwork | Exact-matched programme icons for mapped EE TV / Virgin Media entries | [TVGuide.co.uk](https://www.tvguide.co.uk/) direct artwork URLs, under maintainer-authorised use |
 | Romania | Digi 4K | [Digi 4K](https://www.digi4k.ro/) |
 | Türkiye | Eurosport 1 and Eurosport 2 | [TV+ Eurosport 1](https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77) and [Eurosport 2](https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106) |
 | Serbia | Eurosport 4K | [SBB / EON Public EPG](https://epg.sbb.rs/) |
@@ -64,9 +59,9 @@ The United States scope is intentionally restricted to potential future coverage
 
 ## Refresh and validation
 
-The GitHub Actions workflow in `.github/workflows/refresh-epg.yml` runs daily at **19:00 UTC**, which is **03:00 China Standard Time (UTC+8) on the following calendar day**. It runs `epg collect --days 7`, writes the snapshot and XMLTV files, and commits only when the results change. If a provider EPG source is temporarily unavailable, the workflow records that failure in `data/status.json` rather than substituting another schedule source. The separately authorised TVGuide artwork enrichment is optional and never blocks publication of provider-sourced programme data.
+The GitHub Actions workflow in `.github/workflows/refresh-epg.yml` runs daily at **19:00 UTC**, which is **03:00 China Standard Time (UTC+8) on the following calendar day**. It runs `epg collect --days 7`, writes the snapshot and XMLTV files, and commits only when the results change. If an official source is temporarily unavailable, the workflow records that failure in `data/status.json` rather than substituting third-party data.
 
-A current release is considered valid only when `data/epg.xml.gz` decompresses exactly to `data/epg.xml`, all XMLTV channel display names are official names, artwork is emitted only from an exact mapped programme match, the Astro and now TV channel IDs are within their explicit sports allow-lists, and prohibited US provider IDs are absent.
+A current release is considered valid only when `data/epg.xml.gz` decompresses exactly to `data/epg.xml`, all XMLTV channel display names are official names, the Astro and now TV channel IDs are within their explicit sports allow-lists, and prohibited US provider IDs are absent.
 
 ## Local use
 
@@ -85,4 +80,3 @@ epg search "Premier League" --provider now_hk --channel 611
 [3]: https://www.astro.com.my/content/channels "Astro Content Guide"
 [4]: https://nowplayer.now.com/tvguide "now TV Hong Kong — TV Guide"
 [5]: https://virgintvgo.virginmedia.com/en/epg/initial "Virgin Media TV Go — Guide"
-[6]: https://www.tvguide.co.uk/ "TVGuide.co.uk — programme artwork, project-maintainer authorised use"
