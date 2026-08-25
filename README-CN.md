@@ -26,7 +26,7 @@ https://raw.githubusercontent.com/waastudios/Cathy-epg/master/data/epg.xml.gz
 | `data/status.json` | 每个来源的采集状态和输出总量。 |
 | `CHANNELS.md` | 由当前发布快照生成的显示名与 XMLTV ID 对照表。 |
 
-除经用户明确指定的名称规范化外，XMLTV 中的每个 `display-name` 都是服务商公开的官方频道名称。德国 Sky 仅移除频道显示名末尾的 `HD`，并保留 `UHD`。稳定 ID 通常采用 `<provider>.<channel-id>`；Sky Documentaries 使用用户指定的稳定 ID `ee_uk.352`，德国 Sky 使用 Sky 频道号作为 `sky_de.<频道号>`。
+除经用户明确指定的名称规范化外，XMLTV 中的每个 `display-name` 都是服务商公开的官方频道名称。德国 Sky 会移除频道显示名末尾的 `HD` 并保留 `UHD`；[CHANNELS.md](CHANNELS.md) 频道清单会在其名称后追加“（T）”以标记节目标题固定译为英文，但 XMLTV `display-name` 仍保留服务商官方名称。稳定 ID 通常采用 `<provider>.<channel-id>`；Sky Documentaries 使用用户指定的稳定 ID `ee_uk.352`，德国 Sky 使用 Sky 频道号作为 `sky_de.<频道号>`。
 
 ## 当前覆盖与强制范围
 
@@ -45,7 +45,7 @@ https://raw.githubusercontent.com/waastudios/Cathy-epg/master/data/epg.xml.gz
 
 ### 德国 Sky 与 MagentaTV
 
-德国范围仅包括 MagentaTV 正常公开的生产节目表当前暴露的 29 条 Sky Sport 与 Sky Sport Bundesliga 服务。采集器每次刷新都会动态读取 MagentaTV 的官方频道目录，要求所有映射频道均返回节目记录，并按用户指定的 Sky 频道号导出 `sky_de.201` 至 `sky_de.230`（频道 208 不发布）。当前公开目录没有可无歧义映射的一组 Sky Austria 频道，因此不会发布 Sky Austria。
+德国范围仅包括 MagentaTV 正常公开的生产节目表当前暴露的 29 条 Sky Sport 与 Sky Sport Bundesliga 服务。采集器每次刷新都会动态读取 MagentaTV 的官方频道目录，要求所有映射频道均返回节目记录，并按用户指定的 Sky 频道号导出 `sky_de.201` 至 `sky_de.230`（频道 208 不发布）。仓库已收录的德语节目标题均通过版本控制的本地映射固定转换为英文；新增常规体育标题只会使用受控词汇翻译，若仍包含未经核验的德语，Sky 来源会明确失败而不会发布原文。当前公开目录没有可无歧义映射的一组 Sky Austria 频道，因此不会发布 Sky Austria。
 
 ### EE Sky 娱乐频道选择
 

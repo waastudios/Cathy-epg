@@ -79,35 +79,35 @@ The current XMLTV output contains **158 channels**.
 
 | tvg-id | tvg-name |
 | --- | --- |
-| `sky_de.201` | Sky Sport Top Event |
-| `sky_de.202` | Sky Sport Bundesliga |
-| `sky_de.203` | Sky Sport F1 |
-| `sky_de.204` | Sky Sport Premier League |
-| `sky_de.205` | Sky Sport Mix |
-| `sky_de.206` | Sky Sport Tennis |
-| `sky_de.207` | Sky Sport Golf |
-| `sky_de.209` | Sky Sport UHD |
-| `sky_de.210` | Sky Sport Bundesliga UHD |
-| `sky_de.211` | Sky Sport Bundesliga 1 |
-| `sky_de.212` | Sky Sport Bundesliga 2 |
-| `sky_de.213` | Sky Sport Bundesliga 3 |
-| `sky_de.214` | Sky Sport Bundesliga 4 |
-| `sky_de.215` | Sky Sport Bundesliga 5 |
-| `sky_de.216` | Sky Sport Bundesliga 6 |
-| `sky_de.217` | Sky Sport Bundesliga 7 |
-| `sky_de.218` | Sky Sport Bundesliga 8 |
-| `sky_de.219` | Sky Sport Bundesliga 9 |
-| `sky_de.220` | Sky Sport Bundesliga 10 |
-| `sky_de.221` | Sky Sport 1 |
-| `sky_de.222` | Sky Sport 2 |
-| `sky_de.223` | Sky Sport 3 |
-| `sky_de.224` | Sky Sport 4 |
-| `sky_de.225` | Sky Sport 5 |
-| `sky_de.226` | Sky Sport 6 |
-| `sky_de.227` | Sky Sport 7 |
-| `sky_de.228` | Sky Sport 8 |
-| `sky_de.229` | Sky Sport 9 |
-| `sky_de.230` | Sky Sport 10 |
+| `sky_de.201` | Sky Sport Top Event (T) |
+| `sky_de.202` | Sky Sport Bundesliga (T) |
+| `sky_de.203` | Sky Sport F1 (T) |
+| `sky_de.204` | Sky Sport Premier League (T) |
+| `sky_de.205` | Sky Sport Mix (T) |
+| `sky_de.206` | Sky Sport Tennis (T) |
+| `sky_de.207` | Sky Sport Golf (T) |
+| `sky_de.209` | Sky Sport UHD (T) |
+| `sky_de.210` | Sky Sport Bundesliga UHD (T) |
+| `sky_de.211` | Sky Sport Bundesliga 1 (T) |
+| `sky_de.212` | Sky Sport Bundesliga 2 (T) |
+| `sky_de.213` | Sky Sport Bundesliga 3 (T) |
+| `sky_de.214` | Sky Sport Bundesliga 4 (T) |
+| `sky_de.215` | Sky Sport Bundesliga 5 (T) |
+| `sky_de.216` | Sky Sport Bundesliga 6 (T) |
+| `sky_de.217` | Sky Sport Bundesliga 7 (T) |
+| `sky_de.218` | Sky Sport Bundesliga 8 (T) |
+| `sky_de.219` | Sky Sport Bundesliga 9 (T) |
+| `sky_de.220` | Sky Sport Bundesliga 10 (T) |
+| `sky_de.221` | Sky Sport 1 (T) |
+| `sky_de.222` | Sky Sport 2 (T) |
+| `sky_de.223` | Sky Sport 3 (T) |
+| `sky_de.224` | Sky Sport 4 (T) |
+| `sky_de.225` | Sky Sport 5 (T) |
+| `sky_de.226` | Sky Sport 6 (T) |
+| `sky_de.227` | Sky Sport 7 (T) |
+| `sky_de.228` | Sky Sport 8 (T) |
+| `sky_de.229` | Sky Sport 9 (T) |
+| `sky_de.230` | Sky Sport 10 (T) |
 
 ## Sky Sports
 

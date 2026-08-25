@@ -4,6 +4,7 @@ from __future__ import annotations
 
 from datetime import date, datetime, time as clock_time, timedelta, timezone
 import json
+from importlib.resources import files
 import re
 import time
 import unicodedata
@@ -174,9 +175,87 @@ MAGENTA_TV_SKY_CHANNELS: dict[str, tuple[str, str]] = {
     },
 }
 
+# 该映射由仓库当前 Sky Germany 已发布标题审校后固化。刷新时仅查本地资源，
+# 因而标题翻译不会受第三方翻译服务、网络或模型输出变化影响。
+SKY_DE_TITLE_TRANSLATIONS: dict[str, str] = json.loads(
+    files("epg_tool").joinpath("sky_de_title_translations.json").read_text(encoding="utf-8")
+)
+
 
 class SourceUnavailable(RuntimeError):
     """官网无法在当前合规访问范围内读取时抛出。"""
+
+
+_SKY_DE_FALLBACK_REPLACEMENTS: tuple[tuple[str, str], ...] = (
+    ("Alle Spiele, alle Tore", "All Matches, All Goals"),
+    ("Die Vodafone Highlight-Show", "The Vodafone Highlights Show"),
+    ("Freitags-Konferenz", "Friday Conference"),
+    ("Samstags-Konferenz", "Saturday Conference"),
+    ("Sonntags-Konferenz", "Sunday Conference"),
+    ("Finaltag", "Final Day"),
+    ("Halbfinale", "Semi-final"),
+    ("Viertelfinale", "Quarter-final"),
+    ("Achtelfinale", "Round of 16"),
+    ("Rennen Kompakt", "Race Compact"),
+    ("Rennen", "Race"),
+    ("Sendepause", "Off Air"),
+    ("Es folgt:", "Coming up:"),
+    ("Topspiel", "Top Match"),
+    ("Konferenz", "Conference"),
+    ("Spieltag", "Matchday"),
+    ("Spielrunde", "Match Round"),
+    ("Spiel", "Match"),
+    ("Tore", "Goals"),
+    ("Finale", "Final"),
+    ("Freitag", "Friday"),
+    ("Samstag", "Saturday"),
+    ("Sonntag", "Sunday"),
+    ("Montag", "Monday"),
+    ("Dienstag", "Tuesday"),
+    ("Mittwoch", "Wednesday"),
+    ("Donnerstag", "Thursday"),
+    ("Damen", "Women"),
+    ("Herren", "Men"),
+    ("Fußball", "Football"),
+    ("Frauen", "Women"),
+    ("Spezial", "Special"),
+    ("Die Analyse", "The Analysis"),
+    ("Die Show", "The Show"),
+    ("Wiederholung", "Repeat"),
+    ("Highlights", "Highlights"),
+)
+_SKY_DE_UNTRANSLATED = re.compile(
+    r"\b(?:Alle|Damen|Die|Ein|Es|Finaltag|Folgt|Frauen|Fußball|Halbfinale|Herren|"
+    r"Konferenz|Mit|Rennen|Runde|Samstag|Sendepause|Spezial|Spiel|Spieltag|"
+    r"Sonntag|Tag|Tore|Topspiel|Training|Viertelfinale|Wiederholung)\b",
+    flags=re.IGNORECASE,
+)
+
+
+def _translate_magenta_tv_sky_de_title(title: str) -> str:
+    """将已收录 Sky Germany 节目标题稳定转换为英文。
+
+    优先使用随代码版本控制的精确映射；对未出现过但仅含受控体育词汇的标题
+    使用固定替换。若仍检测到未覆盖的德语，整个 Sky 来源失败而非发布原文，
+    以便在下一次代码更新中显式审校并固定新翻译。
+    """
+    normalised = unicodedata.normalize("NFC", re.sub(r"\s+", " ", title.strip()))
+    if not normalised:
+        raise SourceUnavailable("MagentaTV Sky Germany 官方节目对象缺少可翻译的标题。")
+    translated = SKY_DE_TITLE_TRANSLATIONS.get(normalised)
+    if translated:
+        return translated
+    translated = normalised
+    for source, target in _SKY_DE_FALLBACK_REPLACEMENTS:
+        translated = translated.replace(source, target)
+    translated = re.sub(r"\b(\d+)\.\s*Tag\b", r"\1 Day", translated)
+    translated = re.sub(r"\b(\d+)\.\s*Runde\b", r"\1 Round", translated)
+    translated = re.sub(r"\s+", " ", translated).strip()
+    if translated == normalised:
+        raise SourceUnavailable(f"MagentaTV Sky Germany 标题不在已审校的英文映射或受控词汇范围内：{title!r}")
+    if _SKY_DE_UNTRANSLATED.search(translated):
+        raise SourceUnavailable(f"MagentaTV Sky Germany 标题未获得可验证的英文转换：{title!r}")
+    return translated
 
 
 def _session() -> requests.Session:
@@ -1449,7 +1528,8 @@ def collect_magenta_tv_sky_de(days: int = 7, pause_seconds: float = 0.05) -> lis
                 if not isinstance(listing, dict):
                     continue
                 program = listing.get("program")
-                title = (program.get("title") or "").strip() if isinstance(program, dict) else ""
+                source_title = (program.get("title") or "").strip() if isinstance(program, dict) else ""
+                title = _translate_magenta_tv_sky_de_title(source_title)
                 start_ms = listing.get("startTime")
                 end_ms = listing.get("endTime")
                 if not (title and isinstance(start_ms, (int, float)) and isinstance(end_ms, (int, float))):

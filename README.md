@@ -26,7 +26,7 @@ https://raw.githubusercontent.com/waastudios/Cathy-epg/master/data/epg.xml.gz
 | `data/status.json` | Per-source collection result and output totals. |
 | `CHANNELS.md` | Generated display-name and XMLTV ID inventory for the published snapshot. |
 
-Every XMLTV `display-name` is the provider’s official channel name unless an explicit user-approved normalisation applies. For Sky Germany, only a terminal `HD` is removed from the display name while `UHD` is retained. Stable XMLTV IDs normally follow `<provider>.<channel-id>`; Sky Documentaries uses the user-designated stable ID `ee_uk.352`, and Sky Germany uses the Sky channel number as `sky_de.<number>`.
+Every XMLTV `display-name` is the provider’s official channel name unless an explicit user-approved normalisation applies. For Sky Germany, a terminal `HD` is removed while `UHD` is retained. The generated [CHANNELS.md](CHANNELS.md) inventory appends `(T)` to identify channels whose programme titles are translated into English; the XMLTV `display-name` remains the official provider name. Stable XMLTV IDs normally follow `<provider>.<channel-id>`; Sky Documentaries uses the user-designated stable ID `ee_uk.352`, and Sky Germany uses the Sky channel number as `sky_de.<number>`.
 
 ## Current coverage and enforced scope
 
@@ -45,7 +45,7 @@ Every XMLTV `display-name` is the provider’s official channel name unless an e
 
 ### Sky Germany via MagentaTV
 
-The Germany scope is limited to the 29 current Sky Sport and Sky Sport Bundesliga services that MagentaTV’s anonymous public production guide exposes. The collector dynamically reads MagentaTV’s official channel directory on every refresh, requires all mapped services to return programme records, and exports the user-designated Sky channel-number IDs `sky_de.201`–`sky_de.230` (with no published channel 208). Sky Austria services are not published because the current public directory does not expose an unambiguous matching set.
+The Germany scope is limited to the 29 current Sky Sport and Sky Sport Bundesliga services that MagentaTV’s anonymous public production guide exposes. The collector dynamically reads MagentaTV’s official channel directory on every refresh, requires all mapped services to return programme records, and exports the user-designated Sky channel-number IDs `sky_de.201`–`sky_de.230` (with no published channel 208). Each known German programme title is translated through the version-controlled local mapping; controlled sports vocabulary handles new routine titles, while a title that still contains unverified German causes the Sky source to fail rather than publish untranslated text. Sky Austria services are not published because the current public directory does not expose an unambiguous matching set.
 
 ### EE Sky Entertainment selection
 

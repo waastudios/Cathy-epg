@@ -21,3 +21,6 @@ package-dir = {"" = "src"}
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[tool.setuptools.package-data]
+epg_tool = ["sky_de_title_translations.json"]
