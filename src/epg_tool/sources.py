@@ -294,8 +294,65 @@ def _to_local_iso(value: str, zone: ZoneInfo) -> str:
     return datetime.fromisoformat(value).astimezone(zone).isoformat()
 
 
+_ALLENTE_SE_TITLE_EXACT: dict[str, str] = {
+    "Sändningsuppehåll": "Broadcast Break",
+    "Formel 1: F1": "Formula 1: F1",
+    "Formel 1: Formel 1 Highlights": "Formula 1: Formula 1 Highlights",
+    "Premier League Studio: Efterstudio": "Premier League Studio: Post-match Studio",
+    "Premier League Studio: Efterstudio med Stryktipset": "Premier League Studio: Post-match Studio with Football Pool",
+    "Premier League Studio: Förstudio": "Premier League Studio: Pre-match Studio",
+    "Premier League Studio: Förstudio med Stryktipset": "Premier League Studio: Pre-match Studio with Football Pool",
+}
+
+
+def _translate_allente_se_title(title: str) -> str:
+    """将 Allente Sweden V Sport 官方节目标题转换为可验证的英文。
+
+    此函数在每次瑞典 V Sport 采集时对每个官方节目对象调用。仅进行受控的
+    赛事、演播室节目和官方地名转换；未覆盖的瑞典语残留会使来源失败，避免
+    在 XMLTV 中发布瑞典语标题。瑞典语以外的官方专有名词（例如德国或挪威
+    队名）保持原样。
+    """
+    normalised = unicodedata.normalize("NFC", re.sub(r"\s+", " ", title.strip()))
+    if not normalised:
+        raise SourceUnavailable("Allente Sweden 官方节目对象缺少可翻译的标题。")
+    if normalised in _ALLENTE_SE_TITLE_EXACT:
+        return _ALLENTE_SE_TITLE_EXACT[normalised]
+
+    translated = normalised
+    replacements = (
+        ("Formel 1:", "Formula 1:"),
+        ("Ligacupen:", "League Cup:"),
+        ("Fri Träning", "Free Practice"),
+        ("Fri träning", "Free Practice"),
+        ("Träning", "Practice"),
+        ("Kval", "Qualifying"),
+        ("Storbritanniens GP", "British Grand Prix"),
+        ("Tyska Supercupen:", "German Super Cup:"),
+        ("Aten", "Athens"),
+        ("Nederländerna", "Netherlands"),
+    )
+    for source, target in replacements:
+        translated = translated.replace(source, target)
+    translated = re.sub(r"\s+", " ", translated).strip()
+
+    # Use vocabulary rather than generic Nordic diacritics: Mönchengladbach,
+    # Nürnberg and Bodö/Glimt are official foreign proper names, not Swedish residue.
+    untranslated = re.search(
+        r"\b(?:Aten|Avsnitt|Direkt|Efterstudio|Finalen|Formel|Förstudio|Höjdpunkter|Kval|Ligacupen|Mästerskap|Med|Mot|Nederländerna|Sändningsuppehåll|Säsong|Storbritanniens|Stryktipset|Svenska|Svensk|Träning|Tyska|Världscupen|avsnitt|direkt|efterstudio|finalen|förstudio|höjdpunkter|kval|ligacupen|mästerskap|med|mot|nederländerna|sändningsuppehåll|säsong|storbritanniens|stryk|svenska|svensk|träning|tyska|världscupen)\b",
+        translated,
+        flags=re.IGNORECASE,
+    )
+    if untranslated:
+        raise SourceUnavailable(f"Allente Sweden 标题未获得可验证的英文转换：{title!r}")
+    return translated
+
+
 def collect_allente_v_sport(days: int = 7, pause_seconds: float = 0.25) -> list[Programme]:
-    """读取 Allente 瑞典官方 EPG 中全部可公开识别的 V Sport 体育频道节目表。"""
+    """读取 Allente 瑞典官方 EPG 中全部可公开识别的 V Sport 体育频道节目表。
+
+    每个官方节目标题在写入 XMLTV 前都会执行确定性英文转换和瑞典语残留检查。
+    """
     session = _session()
     zone = ZoneInfo("Europe/Stockholm")
     today = datetime.now(zone).date()
@@ -313,7 +370,8 @@ def collect_allente_v_sport(days: int = 7, pause_seconds: float = 0.25) -> list[
             channel_id = str(channel.get("id"))
             channel_name = ALLENTE_V_SPORT_CHANNELS[channel_id][0]
             for item in channel.get("programs", []):
-                title = (item.get("title") or "").strip()
+                source_title = (item.get("title") or "").strip()
+                title = _translate_allente_se_title(source_title)
                 start = item.get("eventStart")
                 end = item.get("eventEnd")
                 if not (title and start and end):

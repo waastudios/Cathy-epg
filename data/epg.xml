@@ -3756,84 +3756,24 @@
     <title>Tennis: US Open: 30.08.2026 23:00.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260824010000 +0200" channel="allente_se.vextra" stop="20260824050000 +0200">
-    <title>Sändningsuppehåll</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824050000 +0200" channel="allente_se.vextra" stop="20260824060000 +0200">
-    <title>Sändningsuppehåll</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824060000 +0200" channel="allente_se.vextra" stop="20260824100000 +0200">
-    <title>Sändningsuppehåll</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824100000 +0200" channel="allente_se.vextra" stop="20260824130000 +0200">
-    <title>Sändningsuppehåll</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824130000 +0200" channel="allente_se.vextra" stop="20260824160000 +0200">
-    <title>IndyCar Series: Freedom 250 Grand Prix - Race</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824160000 +0200" channel="allente_se.vextra" stop="20260824170000 +0200">
-    <title>Formel 1: Formel 1 Highlights</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824170000 +0200" channel="allente_se.vextra" stop="20260824190000 +0200">
-    <title>EFL Championship: Wrexham - Birmingham</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824190000 +0200" channel="allente_se.vextra" stop="20260824200000 +0200">
-    <title>Formel 1: Formel 1 Highlights</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824200000 +0200" channel="allente_se.vextra" stop="20260824203000 +0200">
-    <title>Championship Highlights</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824203000 +0200" channel="allente_se.vextra" stop="20260824210000 +0200">
-    <title>Ligue 1: Highlights</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824210000 +0200" channel="allente_se.vextra" stop="20260824230000 +0200">
-    <title>EFL Championship: West Bromwich - Burnley</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824230000 +0200" channel="allente_se.vextra" stop="20260824233000 +0200">
-    <title>MLB: Plays Of The Week</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824233000 +0200" channel="allente_se.vextra" stop="20260825000000 +0200">
-    <title>MLB: Plays Of The Week</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260825000000 +0200" channel="allente_se.vextra" stop="20260825003000 +0200">
-    <title>Premier League Stories</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260825003000 +0200" channel="allente_se.vextra" stop="20260825010000 +0200">
-    <title>Premier League Stories</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
   <programme start="20260825010000 +0200" channel="allente_se.vextra" stop="20260825050000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260825050000 +0200" channel="allente_se.vextra" stop="20260825060000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260825060000 +0200" channel="allente_se.vextra" stop="20260825100000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260825100000 +0200" channel="allente_se.vextra" stop="20260825130000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260825130000 +0200" channel="allente_se.vextra" stop="20260825140000 +0200">
-    <title>Formel 1: Formel 1 Highlights</title>
+    <title>Formula 1: Formula 1 Highlights</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260825140000 +0200" channel="allente_se.vextra" stop="20260825143000 +0200">
@@ -3877,11 +3817,11 @@
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260825205500 +0200" channel="allente_se.vextra" stop="20260825230000 +0200">
-    <title>Ligacupen: Birmingham - Brentford</title>
+    <title>League Cup: Birmingham - Brentford</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260825230000 +0200" channel="allente_se.vextra" stop="20260826000000 +0200">
-    <title>Formel 1: Formel 1 Highlights</title>
+    <title>Formula 1: Formula 1 Highlights</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826000000 +0200" channel="allente_se.vextra" stop="20260826003000 +0200">
@@ -3893,19 +3833,19 @@
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826010000 +0200" channel="allente_se.vextra" stop="20260826050000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826050000 +0200" channel="allente_se.vextra" stop="20260826060000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826060000 +0200" channel="allente_se.vextra" stop="20260826100000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826100000 +0200" channel="allente_se.vextra" stop="20260826130000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826130000 +0200" channel="allente_se.vextra" stop="20260826140000 +0200">
@@ -3921,11 +3861,11 @@
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826150000 +0200" channel="allente_se.vextra" stop="20260826170000 +0200">
-    <title>Ligacupen: Birmingham - Brentford</title>
+    <title>League Cup: Birmingham - Brentford</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826170000 +0200" channel="allente_se.vextra" stop="20260826180000 +0200">
-    <title>Formel 1: Formel 1 Highlights</title>
+    <title>Formula 1: Formula 1 Highlights</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826180000 +0200" channel="allente_se.vextra" stop="20260826183000 +0200">
@@ -3949,7 +3889,7 @@
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826205500 +0200" channel="allente_se.vextra" stop="20260826230000 +0200">
-    <title>Ligacupen: Preston - Everton</title>
+    <title>League Cup: Preston - Everton</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826230000 +0200" channel="allente_se.vextra" stop="20260826233000 +0200">
@@ -3969,19 +3909,19 @@
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827010000 +0200" channel="allente_se.vextra" stop="20260827050000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827050000 +0200" channel="allente_se.vextra" stop="20260827060000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827060000 +0200" channel="allente_se.vextra" stop="20260827100000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827100000 +0200" channel="allente_se.vextra" stop="20260827130000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827130000 +0200" channel="allente_se.vextra" stop="20260827140000 +0200">
@@ -3997,7 +3937,7 @@
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827150000 +0200" channel="allente_se.vextra" stop="20260827170000 +0200">
-    <title>Ligacupen: Preston - Everton</title>
+    <title>League Cup: Preston - Everton</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827170000 +0200" channel="allente_se.vextra" stop="20260827173000 +0200">
@@ -4029,7 +3969,7 @@
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827210000 +0200" channel="allente_se.vextra" stop="20260827230000 +0200">
-    <title>Ligacupen: Newcastle - West Bromwich</title>
+    <title>League Cup: Newcastle - West Bromwich</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827230000 +0200" channel="allente_se.vextra" stop="20260828000000 +0200">
@@ -4041,19 +3981,19 @@
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828010000 +0200" channel="allente_se.vextra" stop="20260828050000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828050000 +0200" channel="allente_se.vextra" stop="20260828060000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828060000 +0200" channel="allente_se.vextra" stop="20260828100000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828100000 +0200" channel="allente_se.vextra" stop="20260828130000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828130000 +0200" channel="allente_se.vextra" stop="20260828140000 +0200">
@@ -4069,7 +4009,7 @@
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828150000 +0200" channel="allente_se.vextra" stop="20260828170000 +0200">
-    <title>Ligacupen: Fulham - Wimbledon</title>
+    <title>League Cup: Fulham - Wimbledon</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828170000 +0200" channel="allente_se.vextra" stop="20260828180000 +0200">
@@ -4093,7 +4033,7 @@
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828210000 +0200" channel="allente_se.vextra" stop="20260828230000 +0200">
-    <title>Ligacupen: Chelsea - Luton</title>
+    <title>League Cup: Chelsea - Luton</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828230000 +0200" channel="allente_se.vextra" stop="20260828233000 +0200">
@@ -4113,19 +4053,19 @@
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829010000 +0200" channel="allente_se.vextra" stop="20260829050000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829050000 +0200" channel="allente_se.vextra" stop="20260829060000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829060000 +0200" channel="allente_se.vextra" stop="20260829100000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829100000 +0200" channel="allente_se.vextra" stop="20260829125500 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829125500 +0200" channel="allente_se.vextra" stop="20260829132500 +0200">
@@ -4161,19 +4101,19 @@
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260830004500 +0200" channel="allente_se.vextra" stop="20260830044500 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260830044500 +0200" channel="allente_se.vextra" stop="20260830060000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260830060000 +0200" channel="allente_se.vextra" stop="20260830100000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260830100000 +0200" channel="allente_se.vextra" stop="20260830125000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260830125000 +0200" channel="allente_se.vextra" stop="20260830145500 +0200">
@@ -4189,7 +4129,7 @@
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260830180000 +0200" channel="allente_se.vextra" stop="20260830190000 +0200">
-    <title>Formel 1: Formel 1 Highlights</title>
+    <title>Formula 1: Formula 1 Highlights</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260830190000 +0200" channel="allente_se.vextra" stop="20260830230000 +0200">
@@ -4200,60 +4140,24 @@
     <title>EFL Championship: Derby - Swansea</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
-  <programme start="20260824010000 +0200" channel="allente_se.vmotor" stop="20260824020000 +0200">
-    <title>DTM - Feel the Roar: Nürburgring</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824020000 +0200" channel="allente_se.vmotor" stop="20260824060000 +0200">
-    <title>Sändningsuppehåll</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824060000 +0200" channel="allente_se.vmotor" stop="20260824100000 +0200">
-    <title>Sändningsuppehåll</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824100000 +0200" channel="allente_se.vmotor" stop="20260824120000 +0200">
-    <title>Sändningsuppehåll</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824120000 +0200" channel="allente_se.vmotor" stop="20260824150000 +0200">
-    <title>Formel 1: F1</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824150000 +0200" channel="allente_se.vmotor" stop="20260824180000 +0200">
-    <title>IndyCar Series: Freedom 250 Grand Prix - Race</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824180000 +0200" channel="allente_se.vmotor" stop="20260824190000 +0200">
-    <title>Formel 1: Formel 1 Highlights</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824190000 +0200" channel="allente_se.vmotor" stop="20260824220000 +0200">
-    <title>Formel 1: F1</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824220000 +0200" channel="allente_se.vmotor" stop="20260825010000 +0200">
-    <title>IndyCar Series: Freedom 250 Grand Prix - Race</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
   <programme start="20260825010000 +0200" channel="allente_se.vmotor" stop="20260825020000 +0200">
-    <title>Formel 1: Formel 1 Highlights</title>
+    <title>Formula 1: Formula 1 Highlights</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260825020000 +0200" channel="allente_se.vmotor" stop="20260825060000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260825060000 +0200" channel="allente_se.vmotor" stop="20260825100000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260825100000 +0200" channel="allente_se.vmotor" stop="20260825120000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260825120000 +0200" channel="allente_se.vmotor" stop="20260825150000 +0200">
-    <title>Formel 1: F1</title>
+    <title>Formula 1: F1</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260825150000 +0200" channel="allente_se.vmotor" stop="20260825180000 +0200">
@@ -4261,7 +4165,7 @@
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260825180000 +0200" channel="allente_se.vmotor" stop="20260825190000 +0200">
-    <title>Formel 1: Formel 1 Highlights</title>
+    <title>Formula 1: Formula 1 Highlights</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260825190000 +0200" channel="allente_se.vmotor" stop="20260825193000 +0200">
@@ -4285,7 +4189,7 @@
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260825220000 +0200" channel="allente_se.vmotor" stop="20260825230000 +0200">
-    <title>Formel 1: Formel 1 Highlights</title>
+    <title>Formula 1: Formula 1 Highlights</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260825230000 +0200" channel="allente_se.vmotor" stop="20260825233000 +0200">
@@ -4301,19 +4205,19 @@
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826010000 +0200" channel="allente_se.vmotor" stop="20260826020000 +0200">
-    <title>Formel 1: Formel 1 Highlights</title>
+    <title>Formula 1: Formula 1 Highlights</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826020000 +0200" channel="allente_se.vmotor" stop="20260826060000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826060000 +0200" channel="allente_se.vmotor" stop="20260826100000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826100000 +0200" channel="allente_se.vmotor" stop="20260826120000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826120000 +0200" channel="allente_se.vmotor" stop="20260826123000 +0200">
@@ -4337,7 +4241,7 @@
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826150000 +0200" channel="allente_se.vmotor" stop="20260826160000 +0200">
-    <title>Formel 1: Formel 1 Highlights</title>
+    <title>Formula 1: Formula 1 Highlights</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826160000 +0200" channel="allente_se.vmotor" stop="20260826163000 +0200">
@@ -4353,7 +4257,7 @@
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826180000 +0200" channel="allente_se.vmotor" stop="20260826190000 +0200">
-    <title>Formel 1: Formel 1 Highlights</title>
+    <title>Formula 1: Formula 1 Highlights</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826190000 +0200" channel="allente_se.vmotor" stop="20260826193000 +0200">
@@ -4361,11 +4265,11 @@
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826193000 +0200" channel="allente_se.vmotor" stop="20260826203000 +0200">
-    <title>Ultramarathon Porsche Super Cup: Nederländerna</title>
+    <title>Ultramarathon Porsche Super Cup: Netherlands</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826203000 +0200" channel="allente_se.vmotor" stop="20260826213000 +0200">
-    <title>Ultramarathon Porsche Super Cup: Nederländerna</title>
+    <title>Ultramarathon Porsche Super Cup: Netherlands</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826213000 +0200" channel="allente_se.vmotor" stop="20260826223000 +0200">
@@ -4373,7 +4277,7 @@
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826223000 +0200" channel="allente_se.vmotor" stop="20260826233000 +0200">
-    <title>Formel 1: Formel 1 Highlights</title>
+    <title>Formula 1: Formula 1 Highlights</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826233000 +0200" channel="allente_se.vmotor" stop="20260827000000 +0200">
@@ -4393,15 +4297,15 @@
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827020000 +0200" channel="allente_se.vmotor" stop="20260827060000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827060000 +0200" channel="allente_se.vmotor" stop="20260827100000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827100000 +0200" channel="allente_se.vmotor" stop="20260827120000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827120000 +0200" channel="allente_se.vmotor" stop="20260827123000 +0200">
@@ -4409,11 +4313,11 @@
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827123000 +0200" channel="allente_se.vmotor" stop="20260827133000 +0200">
-    <title>Ultramarathon Porsche Super Cup: Nederländerna</title>
+    <title>Ultramarathon Porsche Super Cup: Netherlands</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827133000 +0200" channel="allente_se.vmotor" stop="20260827143000 +0200">
-    <title>Ultramarathon Porsche Super Cup: Nederländerna</title>
+    <title>Ultramarathon Porsche Super Cup: Netherlands</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827143000 +0200" channel="allente_se.vmotor" stop="20260827153000 +0200">
@@ -4421,7 +4325,7 @@
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827153000 +0200" channel="allente_se.vmotor" stop="20260827163000 +0200">
-    <title>Formel 1: Formel 1 Highlights</title>
+    <title>Formula 1: Formula 1 Highlights</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827163000 +0200" channel="allente_se.vmotor" stop="20260827170000 +0200">
@@ -4457,15 +4361,15 @@
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827220000 +0200" channel="allente_se.vmotor" stop="20260827230000 +0200">
-    <title>Formel 1: Formel 1 Highlights</title>
+    <title>Formula 1: Formula 1 Highlights</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827230000 +0200" channel="allente_se.vmotor" stop="20260828000000 +0200">
-    <title>Ultramarathon Porsche Super Cup: Nederländerna</title>
+    <title>Ultramarathon Porsche Super Cup: Netherlands</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828000000 +0200" channel="allente_se.vmotor" stop="20260828010000 +0200">
-    <title>Ultramarathon Porsche Super Cup: Nederländerna</title>
+    <title>Ultramarathon Porsche Super Cup: Netherlands</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828010000 +0200" channel="allente_se.vmotor" stop="20260828013000 +0200">
@@ -4477,19 +4381,19 @@
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828020000 +0200" channel="allente_se.vmotor" stop="20260828060000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828060000 +0200" channel="allente_se.vmotor" stop="20260828100000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828100000 +0200" channel="allente_se.vmotor" stop="20260828103500 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828103500 +0200" channel="allente_se.vmotor" stop="20260828114500 +0200">
-    <title>MotoGP: Aragon GP - Fri Träning 1</title>
+    <title>MotoGP: Aragon GP - Free Practice 1</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828114500 +0200" channel="allente_se.vmotor" stop="20260828124500 +0200">
@@ -4501,7 +4405,7 @@
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828131500 +0200" channel="allente_se.vmotor" stop="20260828141500 +0200">
-    <title>Formel 1: Formel 1 Highlights</title>
+    <title>Formula 1: Formula 1 Highlights</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828141500 +0200" channel="allente_se.vmotor" stop="20260828145000 +0200">
@@ -4509,11 +4413,11 @@
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828145000 +0200" channel="allente_se.vmotor" stop="20260828161500 +0200">
-    <title>Moto2: Aragon GP - Träning</title>
+    <title>Moto2: Aragon GP - Practice</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828161500 +0200" channel="allente_se.vmotor" stop="20260828183000 +0200">
-    <title>MotoGP: Storbritanniens GP - Race</title>
+    <title>MotoGP: British Grand Prix - Race</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828183000 +0200" channel="allente_se.vmotor" stop="20260828190000 +0200">
@@ -4521,11 +4425,11 @@
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828190000 +0200" channel="allente_se.vmotor" stop="20260828201000 +0200">
-    <title>MotoGP: Aragon GP - Fri Träning 1</title>
+    <title>MotoGP: Aragon GP - Free Practice 1</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828201000 +0200" channel="allente_se.vmotor" stop="20260828214000 +0200">
-    <title>Moto2: Aragon GP - Träning</title>
+    <title>Moto2: Aragon GP - Practice</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828214000 +0200" channel="allente_se.vmotor" stop="20260828220000 +0200">
@@ -4537,7 +4441,7 @@
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828230000 +0200" channel="allente_se.vmotor" stop="20260829000000 +0200">
-    <title>Formel 1: Formel 1 Highlights</title>
+    <title>Formula 1: Formula 1 Highlights</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829000000 +0200" channel="allente_se.vmotor" stop="20260829013000 +0200">
@@ -4549,19 +4453,19 @@
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829020000 +0200" channel="allente_se.vmotor" stop="20260829060000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829060000 +0200" channel="allente_se.vmotor" stop="20260829100000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829100000 +0200" channel="allente_se.vmotor" stop="20260829104000 +0200">
-    <title>MotoGP: Aragon GP - Fri träning 2</title>
+    <title>MotoGP: Aragon GP - Free Practice 2</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829104000 +0200" channel="allente_se.vmotor" stop="20260829120000 +0200">
-    <title>Moto2: Aragon GP - Kval</title>
+    <title>Moto2: Aragon GP - Qualifying</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829120000 +0200" channel="allente_se.vmotor" stop="20260829124000 +0200">
@@ -4569,11 +4473,11 @@
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829124000 +0200" channel="allente_se.vmotor" stop="20260829133000 +0200">
-    <title>Moto2: Aragon GP Moto3 - Kval</title>
+    <title>Moto2: Aragon GP Moto3 - Qualifying</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829133000 +0200" channel="allente_se.vmotor" stop="20260829143000 +0200">
-    <title>Moto2: Aragon GP Moto2 - Kval</title>
+    <title>Moto2: Aragon GP Moto2 - Qualifying</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829143000 +0200" channel="allente_se.vmotor" stop="20260829155000 +0200">
@@ -4581,7 +4485,7 @@
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829155000 +0200" channel="allente_se.vmotor" stop="20260829170000 +0200">
-    <title>Formel 1: Formel 1 Highlights</title>
+    <title>Formula 1: Formula 1 Highlights</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829170000 +0200" channel="allente_se.vmotor" stop="20260829180000 +0200">
@@ -4609,7 +4513,7 @@
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829230000 +0200" channel="allente_se.vmotor" stop="20260830001500 +0200">
-    <title>Moto2: Aragon GP - Kval</title>
+    <title>Moto2: Aragon GP - Qualifying</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260830001500 +0200" channel="allente_se.vmotor" stop="20260830014500 +0200">
@@ -4617,15 +4521,15 @@
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260830014500 +0200" channel="allente_se.vmotor" stop="20260830054500 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260830054500 +0200" channel="allente_se.vmotor" stop="20260830060000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260830060000 +0200" channel="allente_se.vmotor" stop="20260830093500 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260830093500 +0200" channel="allente_se.vmotor" stop="20260830104500 +0200">
@@ -4645,7 +4549,7 @@
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260830151500 +0200" channel="allente_se.vmotor" stop="20260830161500 +0200">
-    <title>Formel 1: Formel 1 Highlights</title>
+    <title>Formula 1: Formula 1 Highlights</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260830161500 +0200" channel="allente_se.vmotor" stop="20260830164500 +0200">
@@ -4676,60 +4580,20 @@
     <title>Moto2: Aragon GP Moto3 - Race</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
-  <programme start="20260824000000 +0200" channel="allente_se.vvin" stop="20260824040000 +0200">
-    <title>Sändningsuppehåll</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824040000 +0200" channel="allente_se.vvin" stop="20260824060000 +0200">
-    <title>Sändningsuppehåll</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824060000 +0200" channel="allente_se.vvin" stop="20260824100000 +0200">
-    <title>Sändningsuppehåll</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824100000 +0200" channel="allente_se.vvin" stop="20260824120000 +0200">
-    <title>Sändningsuppehåll</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824120000 +0200" channel="allente_se.vvin" stop="20260824140000 +0200">
-    <title>NHL: Dallas Stars-Florida Panthers</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824140000 +0200" channel="allente_se.vvin" stop="20260824160000 +0200">
-    <title>NHL: Colorado Avalanche-Nashville Predators</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824160000 +0200" channel="allente_se.vvin" stop="20260824180000 +0200">
-    <title>NHL: Los Angeles Kings-Calgary Flames</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824180000 +0200" channel="allente_se.vvin" stop="20260824200000 +0200">
-    <title>NHL: Pittsburgh Penguins-Utah Mammoth</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824200000 +0200" channel="allente_se.vvin" stop="20260824220000 +0200">
-    <title>NHL: Carolina Hurricanes-Philadelphia Flyers</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824220000 +0200" channel="allente_se.vvin" stop="20260825000000 +0200">
-    <title>NHL: Minnesota Wild-Boston Bruins</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
   <programme start="20260825000000 +0200" channel="allente_se.vvin" stop="20260825040000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260825040000 +0200" channel="allente_se.vvin" stop="20260825060000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260825060000 +0200" channel="allente_se.vvin" stop="20260825100000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260825100000 +0200" channel="allente_se.vvin" stop="20260825120000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260825120000 +0200" channel="allente_se.vvin" stop="20260825140000 +0200">
@@ -4757,19 +4621,19 @@
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826000000 +0200" channel="allente_se.vvin" stop="20260826040000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826040000 +0200" channel="allente_se.vvin" stop="20260826060000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826060000 +0200" channel="allente_se.vvin" stop="20260826100000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826100000 +0200" channel="allente_se.vvin" stop="20260826120000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826120000 +0200" channel="allente_se.vvin" stop="20260826140000 +0200">
@@ -4797,19 +4661,19 @@
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827000000 +0200" channel="allente_se.vvin" stop="20260827040000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827040000 +0200" channel="allente_se.vvin" stop="20260827060000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827060000 +0200" channel="allente_se.vvin" stop="20260827100000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827100000 +0200" channel="allente_se.vvin" stop="20260827120000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827120000 +0200" channel="allente_se.vvin" stop="20260827140000 +0200">
@@ -4837,19 +4701,19 @@
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828000000 +0200" channel="allente_se.vvin" stop="20260828040000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828040000 +0200" channel="allente_se.vvin" stop="20260828060000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828060000 +0200" channel="allente_se.vvin" stop="20260828100000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828100000 +0200" channel="allente_se.vvin" stop="20260828120000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828120000 +0200" channel="allente_se.vvin" stop="20260828140000 +0200">
@@ -4877,19 +4741,19 @@
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829000000 +0200" channel="allente_se.vvin" stop="20260829040000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829040000 +0200" channel="allente_se.vvin" stop="20260829060000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829060000 +0200" channel="allente_se.vvin" stop="20260829100000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829100000 +0200" channel="allente_se.vvin" stop="20260829120000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829120000 +0200" channel="allente_se.vvin" stop="20260829140000 +0200">
@@ -4917,19 +4781,19 @@
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260830000000 +0200" channel="allente_se.vvin" stop="20260830040000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260830040000 +0200" channel="allente_se.vvin" stop="20260830060000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260830060000 +0200" channel="allente_se.vvin" stop="20260830100000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260830100000 +0200" channel="allente_se.vvin" stop="20260830120000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260830120000 +0200" channel="allente_se.vvin" stop="20260830140000 +0200">
@@ -4956,68 +4820,20 @@
     <title>NHL: Calgary Flames-Vegas Golden Knights</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
-  <programme start="20260824010000 +0200" channel="allente_se.vfoot" stop="20260824050000 +0200">
-    <title>Sändningsuppehåll</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824050000 +0200" channel="allente_se.vfoot" stop="20260824060000 +0200">
-    <title>Sändningsuppehåll</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824060000 +0200" channel="allente_se.vfoot" stop="20260824100000 +0200">
-    <title>Sändningsuppehåll</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824100000 +0200" channel="allente_se.vfoot" stop="20260824120000 +0200">
-    <title>Sändningsuppehåll</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824120000 +0200" channel="allente_se.vfoot" stop="20260824140000 +0200">
-    <title>Ligue 1: Angers - Lille</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824140000 +0200" channel="allente_se.vfoot" stop="20260824160000 +0200">
-    <title>Ligue 1: Le Havre - Monaco</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824160000 +0200" channel="allente_se.vfoot" stop="20260824180000 +0200">
-    <title>EFL Championship: West Bromwich - Burnley</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824180000 +0200" channel="allente_se.vfoot" stop="20260824200000 +0200">
-    <title>Ligue 1: PSG - Rennes</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824200000 +0200" channel="allente_se.vfoot" stop="20260824203000 +0200">
-    <title>Championship Highlights</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824203000 +0200" channel="allente_se.vfoot" stop="20260824213000 +0200">
-    <title>Bundesliga Highlights</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824213000 +0200" channel="allente_se.vfoot" stop="20260824233000 +0200">
-    <title>Ligue 1: Nice - Lorient</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824233000 +0200" channel="allente_se.vfoot" stop="20260825013000 +0200">
-    <title>Ligue 1: Troyes - Paris FC</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
   <programme start="20260825013000 +0200" channel="allente_se.vfoot" stop="20260825053000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260825053000 +0200" channel="allente_se.vfoot" stop="20260825060000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260825060000 +0200" channel="allente_se.vfoot" stop="20260825100000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260825100000 +0200" channel="allente_se.vfoot" stop="20260825115000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260825115000 +0200" channel="allente_se.vfoot" stop="20260825135000 +0200">
@@ -5061,19 +4877,19 @@
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826013000 +0200" channel="allente_se.vfoot" stop="20260826053000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826053000 +0200" channel="allente_se.vfoot" stop="20260826060000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826060000 +0200" channel="allente_se.vfoot" stop="20260826100000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826100000 +0200" channel="allente_se.vfoot" stop="20260826120000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826120000 +0200" channel="allente_se.vfoot" stop="20260826140000 +0200">
@@ -5097,7 +4913,7 @@
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826204000 +0200" channel="allente_se.vfoot" stop="20260826224500 +0200">
-    <title>Ligacupen: Tottenham - Charlton</title>
+    <title>League Cup: Tottenham - Charlton</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826224500 +0200" channel="allente_se.vfoot" stop="20260826234500 +0200">
@@ -5109,19 +4925,19 @@
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827014500 +0200" channel="allente_se.vfoot" stop="20260827054500 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827054500 +0200" channel="allente_se.vfoot" stop="20260827060000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827060000 +0200" channel="allente_se.vfoot" stop="20260827100000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827100000 +0200" channel="allente_se.vfoot" stop="20260827120000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827120000 +0200" channel="allente_se.vfoot" stop="20260827143000 +0200">
@@ -5133,7 +4949,7 @@
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827170000 +0200" channel="allente_se.vfoot" stop="20260827193000 +0200">
-    <title>Ligacupen: Preston - Everton</title>
+    <title>League Cup: Preston - Everton</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827193000 +0200" channel="allente_se.vfoot" stop="20260827200000 +0200">
@@ -5145,7 +4961,7 @@
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827210000 +0200" channel="allente_se.vfoot" stop="20260827233000 +0200">
-    <title>Ligacupen: Tottenham - Charlton</title>
+    <title>League Cup: Tottenham - Charlton</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827233000 +0200" channel="allente_se.vfoot" stop="20260828013000 +0200">
@@ -5153,19 +4969,19 @@
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828013000 +0200" channel="allente_se.vfoot" stop="20260828053000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828053000 +0200" channel="allente_se.vfoot" stop="20260828060000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828060000 +0200" channel="allente_se.vfoot" stop="20260828100000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828100000 +0200" channel="allente_se.vfoot" stop="20260828115000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828115000 +0200" channel="allente_se.vfoot" stop="20260828135000 +0200">
@@ -5205,19 +5021,19 @@
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829013000 +0200" channel="allente_se.vfoot" stop="20260829053000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829053000 +0200" channel="allente_se.vfoot" stop="20260829060000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829060000 +0200" channel="allente_se.vfoot" stop="20260829100000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829100000 +0200" channel="allente_se.vfoot" stop="20260829105000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829105000 +0200" channel="allente_se.vfoot" stop="20260829125000 +0200">
@@ -5233,7 +5049,7 @@
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829153000 +0200" channel="allente_se.vfoot" stop="20260829155500 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829155500 +0200" channel="allente_se.vfoot" stop="20260829180000 +0200">
@@ -5261,19 +5077,19 @@
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260830011500 +0200" channel="allente_se.vfoot" stop="20260830051500 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260830051500 +0200" channel="allente_se.vfoot" stop="20260830060000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260830060000 +0200" channel="allente_se.vfoot" stop="20260830100000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260830100000 +0200" channel="allente_se.vfoot" stop="20260830105000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260830105000 +0200" channel="allente_se.vfoot" stop="20260830125000 +0200">
@@ -5310,38 +5126,6 @@
   </programme>
   <programme start="20260830224500 +0200" channel="allente_se.vfoot" stop="20260831004500 +0200">
     <title>EFL Championship: Watford - West Ham</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824010000 +0200" channel="allente_se.vgolf" stop="20260824030000 +0200">
-    <title>LPGA Tour</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824030000 +0200" channel="allente_se.vgolf" stop="20260824060000 +0200">
-    <title>Airing Break</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824060000 +0200" channel="allente_se.vgolf" stop="20260824090000 +0200">
-    <title>Airing Break</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824090000 +0200" channel="allente_se.vgolf" stop="20260824120000 +0200">
-    <title>LPGA Tour</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824120000 +0200" channel="allente_se.vgolf" stop="20260824170000 +0200">
-    <title>Liv Golf Invitational</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824170000 +0200" channel="allente_se.vgolf" stop="20260824220000 +0200">
-    <title>DP World Tour</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824220000 +0200" channel="allente_se.vgolf" stop="20260824223000 +0200">
-    <title>Dp World Tour Highlights</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824223000 +0200" channel="allente_se.vgolf" stop="20260824230000 +0200">
-    <title>Dp World Tour Highlights</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260824230000 +0200" channel="allente_se.vgolf" stop="20260825020000 +0200">
@@ -5476,8 +5260,16 @@
     <title>Airing Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
-  <programme start="20260829100000 +0200" channel="allente_se.vgolf" stop="20260829140000 +0200">
+  <programme start="20260829100000 +0200" channel="allente_se.vgolf" stop="20260829120000 +0200">
     <title>Airing Break</title>
+    <url>https://www.allente.se/tv-guide/</url>
+  </programme>
+  <programme start="20260829120000 +0200" channel="allente_se.vgolf" stop="20260829123000 +0200">
+    <title>Challenge Tour Grand Final Highlights</title>
+    <url>https://www.allente.se/tv-guide/</url>
+  </programme>
+  <programme start="20260829123000 +0200" channel="allente_se.vgolf" stop="20260829130000 +0200">
+    <title>Dp World Tour Highlights</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829130000 +0200" channel="allente_se.vgolf" stop="20260829180000 +0200">
@@ -5524,80 +5316,32 @@
     <title>DP World Tour</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
-  <programme start="20260830140000 +0200" channel="allente_se.vgolf" stop="20260830180000 +0200">
-    <title>Airing Break</title>
+  <programme start="20260830180000 +0200" channel="allente_se.vgolf" stop="20260830183000 +0200">
+    <title>Challenge Tour Grand Final Highlights</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
-  <programme start="20260830180000 +0200" channel="allente_se.vgolf" stop="20260830220000 +0200">
-    <title>Airing Break</title>
+  <programme start="20260830183000 +0200" channel="allente_se.vgolf" stop="20260830190000 +0200">
+    <title>Dp World Tour Highlights</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
-  <programme start="20260830220000 +0200" channel="allente_se.vgolf" stop="20260831020000 +0200">
-    <title>Airing Break</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824010000 +0200" channel="allente_se.vpre" stop="20260824050000 +0200">
-    <title>Sändningsuppehåll</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824050000 +0200" channel="allente_se.vpre" stop="20260824060000 +0200">
-    <title>Sändningsuppehåll</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824060000 +0200" channel="allente_se.vpre" stop="20260824100000 +0200">
-    <title>Sändningsuppehåll</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824100000 +0200" channel="allente_se.vpre" stop="20260824114000 +0200">
-    <title>Sändningsuppehåll</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824114000 +0200" channel="allente_se.vpre" stop="20260824134000 +0200">
-    <title>Premier League: Arsenal - Coventry</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824134000 +0200" channel="allente_se.vpre" stop="20260824154000 +0200">
-    <title>Premier League: Brentford - Tottenham</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824154000 +0200" channel="allente_se.vpre" stop="20260824174000 +0200">
-    <title>Premier League: Nottingham - Leeds</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824174000 +0200" channel="allente_se.vpre" stop="20260824194000 +0200">
-    <title>Premier League: Everton - Crystal Palace</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824194000 +0200" channel="allente_se.vpre" stop="20260824201000 +0200">
-    <title>Championship Highlights</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824201000 +0200" channel="allente_se.vpre" stop="20260824204500 +0200">
-    <title>Premier League Stories</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824204500 +0200" channel="allente_se.vpre" stop="20260824230000 +0200">
-    <title>Premier League: Fulham - Chelsea</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824230000 +0200" channel="allente_se.vpre" stop="20260825010000 +0200">
-    <title>Premier League: Ipswich - Sunderland</title>
+  <programme start="20260830190000 +0200" channel="allente_se.vgolf" stop="20260831010000 +0200">
+    <title>Liv Golf Invitational</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260825010000 +0200" channel="allente_se.vpre" stop="20260825050000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260825050000 +0200" channel="allente_se.vpre" stop="20260825060000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260825060000 +0200" channel="allente_se.vpre" stop="20260825100000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260825100000 +0200" channel="allente_se.vpre" stop="20260825115000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260825115000 +0200" channel="allente_se.vpre" stop="20260825135000 +0200">
@@ -5641,19 +5385,19 @@
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826010000 +0200" channel="allente_se.vpre" stop="20260826050000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826050000 +0200" channel="allente_se.vpre" stop="20260826060000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826060000 +0200" channel="allente_se.vpre" stop="20260826100000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826100000 +0200" channel="allente_se.vpre" stop="20260826115000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826115000 +0200" channel="allente_se.vpre" stop="20260826135000 +0200">
@@ -5689,19 +5433,19 @@
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827010000 +0200" channel="allente_se.vpre" stop="20260827050000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827050000 +0200" channel="allente_se.vpre" stop="20260827060000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827060000 +0200" channel="allente_se.vpre" stop="20260827100000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827100000 +0200" channel="allente_se.vpre" stop="20260827115000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827115000 +0200" channel="allente_se.vpre" stop="20260827135000 +0200">
@@ -5709,11 +5453,11 @@
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827135000 +0200" channel="allente_se.vpre" stop="20260827162000 +0200">
-    <title>Ligacupen: Nottingham - Leeds</title>
+    <title>League Cup: Nottingham - Leeds</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827162000 +0200" channel="allente_se.vpre" stop="20260827185000 +0200">
-    <title>Ligacupen: Newcastle - West Bromwich</title>
+    <title>League Cup: Newcastle - West Bromwich</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827185000 +0200" channel="allente_se.vpre" stop="20260827205500 +0200">
@@ -5721,7 +5465,7 @@
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827205500 +0200" channel="allente_se.vpre" stop="20260827230000 +0200">
-    <title>Ligacupen: Fulham - Wimbledon</title>
+    <title>League Cup: Fulham - Wimbledon</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827230000 +0200" channel="allente_se.vpre" stop="20260828013000 +0200">
@@ -5729,19 +5473,19 @@
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828013000 +0200" channel="allente_se.vpre" stop="20260828053000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828053000 +0200" channel="allente_se.vpre" stop="20260828060000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828060000 +0200" channel="allente_se.vpre" stop="20260828100000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828100000 +0200" channel="allente_se.vpre" stop="20260828115000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828115000 +0200" channel="allente_se.vpre" stop="20260828142000 +0200">
@@ -5785,19 +5529,19 @@
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829010000 +0200" channel="allente_se.vpre" stop="20260829050000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829050000 +0200" channel="allente_se.vpre" stop="20260829060000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829060000 +0200" channel="allente_se.vpre" stop="20260829100000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829100000 +0200" channel="allente_se.vpre" stop="20260829102000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829102000 +0200" channel="allente_se.vpre" stop="20260829115000 +0200">
@@ -5821,7 +5565,7 @@
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829154500 +0200" channel="allente_se.vpre" stop="20260829155500 +0200">
-    <title>Premier League Studio: Förstudio med Stryktipset</title>
+    <title>Premier League Studio: Pre-match Studio with Football Pool</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829155500 +0200" channel="allente_se.vpre" stop="20260829180000 +0200">
@@ -5829,7 +5573,7 @@
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829180000 +0200" channel="allente_se.vpre" stop="20260829182500 +0200">
-    <title>Premier League Studio: Efterstudio med Stryktipset</title>
+    <title>Premier League Studio: Post-match Studio with Football Pool</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829182500 +0200" channel="allente_se.vpre" stop="20260829204000 +0200">
@@ -5849,19 +5593,19 @@
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260830011500 +0200" channel="allente_se.vpre" stop="20260830051500 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260830051500 +0200" channel="allente_se.vpre" stop="20260830060000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260830060000 +0200" channel="allente_se.vpre" stop="20260830100000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260830100000 +0200" channel="allente_se.vpre" stop="20260830103000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260830103000 +0200" channel="allente_se.vpre" stop="20260830123000 +0200">
@@ -5885,7 +5629,7 @@
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260830163000 +0200" channel="allente_se.vpre" stop="20260830172500 +0200">
-    <title>Premier League Studio: Förstudio</title>
+    <title>Premier League Studio: Pre-match Studio</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260830172500 +0200" channel="allente_se.vpre" stop="20260830193000 +0200">
@@ -5893,7 +5637,7 @@
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260830193000 +0200" channel="allente_se.vpre" stop="20260830201500 +0200">
-    <title>Premier League Studio: Efterstudio</title>
+    <title>Premier League Studio: Post-match Studio</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260830201500 +0200" channel="allente_se.vpre" stop="20260830204500 +0200">
@@ -5912,72 +5656,20 @@
     <title>Premier League: Chelsea - Brighton</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
-  <programme start="20260824010000 +0200" channel="allente_se.v1" stop="20260824050000 +0200">
-    <title>Sändningsuppehåll</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824050000 +0200" channel="allente_se.v1" stop="20260824060000 +0200">
-    <title>Sändningsuppehåll</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824060000 +0200" channel="allente_se.v1" stop="20260824100000 +0200">
-    <title>Sändningsuppehåll</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824100000 +0200" channel="allente_se.v1" stop="20260824130000 +0200">
-    <title>Sändningsuppehåll</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824130000 +0200" channel="allente_se.v1" stop="20260824150000 +0200">
-    <title>Premier League: Arsenal - Coventry</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824150000 +0200" channel="allente_se.v1" stop="20260824170000 +0200">
-    <title>Premier League: Everton - Crystal Palace</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824170000 +0200" channel="allente_se.v1" stop="20260824190000 +0200">
-    <title>Premier League: Ipswich - Sunderland</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824190000 +0200" channel="allente_se.v1" stop="20260824193000 +0200">
-    <title>Championship Highlights</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824193000 +0200" channel="allente_se.v1" stop="20260824200000 +0200">
-    <title>Ligue 1: Highlights</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824200000 +0200" channel="allente_se.v1" stop="20260824203000 +0200">
-    <title>MLB: Plays Of The Week</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824203000 +0200" channel="allente_se.v1" stop="20260824210000 +0200">
-    <title>MLB: Plays Of The Week</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824210000 +0200" channel="allente_se.v1" stop="20260824230000 +0200">
-    <title>Premier League: Newcastle - Liverpool</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824230000 +0200" channel="allente_se.v1" stop="20260825013000 +0200">
-    <title>Tyska Supercupen: Franz Beckenbauer Supercup 2026: Dortmund - Bayern München</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
   <programme start="20260825013000 +0200" channel="allente_se.v1" stop="20260825053000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260825053000 +0200" channel="allente_se.v1" stop="20260825060000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260825060000 +0200" channel="allente_se.v1" stop="20260825100000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260825100000 +0200" channel="allente_se.v1" stop="20260825124000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260825124000 +0200" channel="allente_se.v1" stop="20260825131000 +0200">
@@ -5997,7 +5689,7 @@
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260825161000 +0200" channel="allente_se.v1" stop="20260825184000 +0200">
-    <title>Tyska Supercupen: Franz Beckenbauer Supercup 2026: Dortmund - Bayern München</title>
+    <title>German Super Cup: Franz Beckenbauer Supercup 2026: Dortmund - Bayern München</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260825184000 +0200" channel="allente_se.v1" stop="20260825194000 +0200">
@@ -6013,7 +5705,7 @@
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260825204000 +0200" channel="allente_se.v1" stop="20260825224500 +0200">
-    <title>Ligacupen: Southampton - West Ham</title>
+    <title>League Cup: Southampton - West Ham</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260825224500 +0200" channel="allente_se.v1" stop="20260825231500 +0200">
@@ -6029,19 +5721,19 @@
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826004500 +0200" channel="allente_se.v1" stop="20260826044500 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826044500 +0200" channel="allente_se.v1" stop="20260826060000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826060000 +0200" channel="allente_se.v1" stop="20260826100000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826100000 +0200" channel="allente_se.v1" stop="20260826130000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826130000 +0200" channel="allente_se.v1" stop="20260826140000 +0200">
@@ -6069,11 +5761,11 @@
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826183000 +0200" channel="allente_se.v1" stop="20260826204000 +0200">
-    <title>Ligacupen: Nottingham - Leeds</title>
+    <title>League Cup: Nottingham - Leeds</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826204000 +0200" channel="allente_se.v1" stop="20260826224500 +0200">
-    <title>Ligacupen: Newcastle - West Bromwich</title>
+    <title>League Cup: Newcastle - West Bromwich</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826224500 +0200" channel="allente_se.v1" stop="20260826231500 +0200">
@@ -6093,19 +5785,19 @@
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827004500 +0200" channel="allente_se.v1" stop="20260827044500 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827044500 +0200" channel="allente_se.v1" stop="20260827060000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827060000 +0200" channel="allente_se.v1" stop="20260827100000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827100000 +0200" channel="allente_se.v1" stop="20260827130000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827130000 +0200" channel="allente_se.v1" stop="20260827150000 +0200">
@@ -6129,7 +5821,7 @@
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827183000 +0200" channel="allente_se.v1" stop="20260827210000 +0200">
-    <title>UEFA Champions League: AEK Aten - Levski Sofia</title>
+    <title>UEFA Champions League: AEK Athens - Levski Sofia</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827210000 +0200" channel="allente_se.v1" stop="20260827233000 +0200">
@@ -6149,19 +5841,19 @@
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828010000 +0200" channel="allente_se.v1" stop="20260828050000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828050000 +0200" channel="allente_se.v1" stop="20260828060000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828060000 +0200" channel="allente_se.v1" stop="20260828100000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828100000 +0200" channel="allente_se.v1" stop="20260828130000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828130000 +0200" channel="allente_se.v1" stop="20260828145500 +0200">
@@ -6205,19 +5897,19 @@
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829010000 +0200" channel="allente_se.v1" stop="20260829050000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829050000 +0200" channel="allente_se.v1" stop="20260829060000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829060000 +0200" channel="allente_se.v1" stop="20260829100000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829100000 +0200" channel="allente_se.v1" stop="20260829125500 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829125500 +0200" channel="allente_se.v1" stop="20260829132500 +0200">
@@ -6269,19 +5961,19 @@
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260830010000 +0200" channel="allente_se.v1" stop="20260830050000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260830050000 +0200" channel="allente_se.v1" stop="20260830060000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260830060000 +0200" channel="allente_se.v1" stop="20260830100000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260830100000 +0200" channel="allente_se.v1" stop="20260830124500 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260830124500 +0200" channel="allente_se.v1" stop="20260830145500 +0200">
@@ -6308,35 +6000,11 @@
     <title>Premier League: Manchester United - Ipswich</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
-  <programme start="20260824000000 +0200" channel="allente_se.vultra" stop="20260824040000 +0200">
+  <programme start="20260825000000 +0200" channel="allente_se.vultra" stop="20260825040000 +0200">
     <title>Airing Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
-  <programme start="20260824040000 +0200" channel="allente_se.vultra" stop="20260824060000 +0200">
-    <title>Airing Break</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824060000 +0200" channel="allente_se.vultra" stop="20260824100000 +0200">
-    <title>Airing Break</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824100000 +0200" channel="allente_se.vultra" stop="20260824140000 +0200">
-    <title>Airing Break</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824140000 +0200" channel="allente_se.vultra" stop="20260824180000 +0200">
-    <title>Airing Break</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824180000 +0200" channel="allente_se.vultra" stop="20260824220000 +0200">
-    <title>Airing Break</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824220000 +0200" channel="allente_se.vultra" stop="20260825020000 +0200">
-    <title>Airing Break</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260825020000 +0200" channel="allente_se.vultra" stop="20260825060000 +0200">
+  <programme start="20260825040000 +0200" channel="allente_se.vultra" stop="20260825060000 +0200">
     <title>Airing Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
@@ -6480,864 +6148,744 @@
     <title>Airing Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
-  <programme start="20260823220000 +0200" channel="allente_se.vl1" stop="20260824020000 +0200">
-    <title>Sändningsuppehåll</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824020000 +0200" channel="allente_se.vl1" stop="20260824060000 +0200">
-    <title>Sändningsuppehåll</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824060000 +0200" channel="allente_se.vl1" stop="20260824100000 +0200">
-    <title>Sändningsuppehåll</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824100000 +0200" channel="allente_se.vl1" stop="20260824140000 +0200">
-    <title>Sändningsuppehåll</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824140000 +0200" channel="allente_se.vl1" stop="20260824180000 +0200">
-    <title>Sändningsuppehåll</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824180000 +0200" channel="allente_se.vl1" stop="20260824220000 +0200">
-    <title>Sändningsuppehåll</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
   <programme start="20260824220000 +0200" channel="allente_se.vl1" stop="20260825020000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260825020000 +0200" channel="allente_se.vl1" stop="20260825060000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260825060000 +0200" channel="allente_se.vl1" stop="20260825100000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260825100000 +0200" channel="allente_se.vl1" stop="20260825140000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260825140000 +0200" channel="allente_se.vl1" stop="20260825180000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260825180000 +0200" channel="allente_se.vl1" stop="20260825220000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260825220000 +0200" channel="allente_se.vl1" stop="20260826020000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826020000 +0200" channel="allente_se.vl1" stop="20260826060000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826060000 +0200" channel="allente_se.vl1" stop="20260826100000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826100000 +0200" channel="allente_se.vl1" stop="20260826140000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826140000 +0200" channel="allente_se.vl1" stop="20260826180000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826180000 +0200" channel="allente_se.vl1" stop="20260826220000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826220000 +0200" channel="allente_se.vl1" stop="20260827020000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827020000 +0200" channel="allente_se.vl1" stop="20260827060000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827060000 +0200" channel="allente_se.vl1" stop="20260827100000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827100000 +0200" channel="allente_se.vl1" stop="20260827140000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827140000 +0200" channel="allente_se.vl1" stop="20260827180000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827180000 +0200" channel="allente_se.vl1" stop="20260827220000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827220000 +0200" channel="allente_se.vl1" stop="20260828020000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828020000 +0200" channel="allente_se.vl1" stop="20260828060000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828060000 +0200" channel="allente_se.vl1" stop="20260828100000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828100000 +0200" channel="allente_se.vl1" stop="20260828140000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828140000 +0200" channel="allente_se.vl1" stop="20260828180000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828180000 +0200" channel="allente_se.vl1" stop="20260828220000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828220000 +0200" channel="allente_se.vl1" stop="20260829020000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829020000 +0200" channel="allente_se.vl1" stop="20260829060000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829060000 +0200" channel="allente_se.vl1" stop="20260829100000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829100000 +0200" channel="allente_se.vl1" stop="20260829140000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829140000 +0200" channel="allente_se.vl1" stop="20260829180000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829180000 +0200" channel="allente_se.vl1" stop="20260829220000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829220000 +0200" channel="allente_se.vl1" stop="20260830020000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260830020000 +0200" channel="allente_se.vl1" stop="20260830060000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260830060000 +0200" channel="allente_se.vl1" stop="20260830100000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260830100000 +0200" channel="allente_se.vl1" stop="20260830140000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260830140000 +0200" channel="allente_se.vl1" stop="20260830180000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260830180000 +0200" channel="allente_se.vl1" stop="20260830220000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260830220000 +0200" channel="allente_se.vl1" stop="20260831020000 +0200">
-    <title>Sändningsuppehåll</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260823220000 +0200" channel="allente_se.vl2" stop="20260824020000 +0200">
-    <title>Sändningsuppehåll</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824020000 +0200" channel="allente_se.vl2" stop="20260824060000 +0200">
-    <title>Sändningsuppehåll</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824060000 +0200" channel="allente_se.vl2" stop="20260824100000 +0200">
-    <title>Sändningsuppehåll</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824100000 +0200" channel="allente_se.vl2" stop="20260824140000 +0200">
-    <title>Sändningsuppehåll</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824140000 +0200" channel="allente_se.vl2" stop="20260824180000 +0200">
-    <title>Sändningsuppehåll</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824180000 +0200" channel="allente_se.vl2" stop="20260824220000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260824220000 +0200" channel="allente_se.vl2" stop="20260825020000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260825020000 +0200" channel="allente_se.vl2" stop="20260825060000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260825060000 +0200" channel="allente_se.vl2" stop="20260825100000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260825100000 +0200" channel="allente_se.vl2" stop="20260825140000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260825140000 +0200" channel="allente_se.vl2" stop="20260825180000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260825180000 +0200" channel="allente_se.vl2" stop="20260825220000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260825220000 +0200" channel="allente_se.vl2" stop="20260826020000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826020000 +0200" channel="allente_se.vl2" stop="20260826060000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826060000 +0200" channel="allente_se.vl2" stop="20260826100000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826100000 +0200" channel="allente_se.vl2" stop="20260826140000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826140000 +0200" channel="allente_se.vl2" stop="20260826180000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826180000 +0200" channel="allente_se.vl2" stop="20260826220000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826220000 +0200" channel="allente_se.vl2" stop="20260827020000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827020000 +0200" channel="allente_se.vl2" stop="20260827060000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827060000 +0200" channel="allente_se.vl2" stop="20260827100000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827100000 +0200" channel="allente_se.vl2" stop="20260827140000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827140000 +0200" channel="allente_se.vl2" stop="20260827180000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827180000 +0200" channel="allente_se.vl2" stop="20260827220000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827220000 +0200" channel="allente_se.vl2" stop="20260828020000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828020000 +0200" channel="allente_se.vl2" stop="20260828060000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828060000 +0200" channel="allente_se.vl2" stop="20260828100000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828100000 +0200" channel="allente_se.vl2" stop="20260828140000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828140000 +0200" channel="allente_se.vl2" stop="20260828180000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828180000 +0200" channel="allente_se.vl2" stop="20260828220000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828220000 +0200" channel="allente_se.vl2" stop="20260829020000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829020000 +0200" channel="allente_se.vl2" stop="20260829060000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829060000 +0200" channel="allente_se.vl2" stop="20260829100000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829100000 +0200" channel="allente_se.vl2" stop="20260829140000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829140000 +0200" channel="allente_se.vl2" stop="20260829180000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829180000 +0200" channel="allente_se.vl2" stop="20260829220000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829220000 +0200" channel="allente_se.vl2" stop="20260830020000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260830020000 +0200" channel="allente_se.vl2" stop="20260830060000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260830060000 +0200" channel="allente_se.vl2" stop="20260830100000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260830100000 +0200" channel="allente_se.vl2" stop="20260830140000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260830140000 +0200" channel="allente_se.vl2" stop="20260830180000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260830180000 +0200" channel="allente_se.vl2" stop="20260830220000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260830220000 +0200" channel="allente_se.vl2" stop="20260831020000 +0200">
-    <title>Sändningsuppehåll</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260823220000 +0200" channel="allente_se.vl3" stop="20260824020000 +0200">
-    <title>Sändningsuppehåll</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824020000 +0200" channel="allente_se.vl3" stop="20260824060000 +0200">
-    <title>Sändningsuppehåll</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824060000 +0200" channel="allente_se.vl3" stop="20260824100000 +0200">
-    <title>Sändningsuppehåll</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824100000 +0200" channel="allente_se.vl3" stop="20260824140000 +0200">
-    <title>Sändningsuppehåll</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824140000 +0200" channel="allente_se.vl3" stop="20260824180000 +0200">
-    <title>Sändningsuppehåll</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824180000 +0200" channel="allente_se.vl3" stop="20260824220000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260824220000 +0200" channel="allente_se.vl3" stop="20260825020000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260825020000 +0200" channel="allente_se.vl3" stop="20260825060000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260825060000 +0200" channel="allente_se.vl3" stop="20260825100000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260825100000 +0200" channel="allente_se.vl3" stop="20260825140000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260825140000 +0200" channel="allente_se.vl3" stop="20260825180000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260825180000 +0200" channel="allente_se.vl3" stop="20260825220000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260825220000 +0200" channel="allente_se.vl3" stop="20260826020000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826020000 +0200" channel="allente_se.vl3" stop="20260826060000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826060000 +0200" channel="allente_se.vl3" stop="20260826100000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826100000 +0200" channel="allente_se.vl3" stop="20260826140000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826140000 +0200" channel="allente_se.vl3" stop="20260826180000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826180000 +0200" channel="allente_se.vl3" stop="20260826220000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826220000 +0200" channel="allente_se.vl3" stop="20260827020000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827020000 +0200" channel="allente_se.vl3" stop="20260827060000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827060000 +0200" channel="allente_se.vl3" stop="20260827100000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827100000 +0200" channel="allente_se.vl3" stop="20260827140000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827140000 +0200" channel="allente_se.vl3" stop="20260827180000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827180000 +0200" channel="allente_se.vl3" stop="20260827220000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827220000 +0200" channel="allente_se.vl3" stop="20260828020000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828020000 +0200" channel="allente_se.vl3" stop="20260828060000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828060000 +0200" channel="allente_se.vl3" stop="20260828100000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828100000 +0200" channel="allente_se.vl3" stop="20260828140000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828140000 +0200" channel="allente_se.vl3" stop="20260828180000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828180000 +0200" channel="allente_se.vl3" stop="20260828220000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828220000 +0200" channel="allente_se.vl3" stop="20260829020000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829020000 +0200" channel="allente_se.vl3" stop="20260829060000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829060000 +0200" channel="allente_se.vl3" stop="20260829100000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829100000 +0200" channel="allente_se.vl3" stop="20260829140000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829140000 +0200" channel="allente_se.vl3" stop="20260829180000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829180000 +0200" channel="allente_se.vl3" stop="20260829220000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829220000 +0200" channel="allente_se.vl3" stop="20260830020000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260830020000 +0200" channel="allente_se.vl3" stop="20260830060000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260830060000 +0200" channel="allente_se.vl3" stop="20260830100000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260830100000 +0200" channel="allente_se.vl3" stop="20260830140000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260830140000 +0200" channel="allente_se.vl3" stop="20260830180000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260830180000 +0200" channel="allente_se.vl3" stop="20260830220000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260830220000 +0200" channel="allente_se.vl3" stop="20260831020000 +0200">
-    <title>Sändningsuppehåll</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260823220000 +0200" channel="allente_se.vl4" stop="20260824020000 +0200">
-    <title>Sändningsuppehåll</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824020000 +0200" channel="allente_se.vl4" stop="20260824060000 +0200">
-    <title>Sändningsuppehåll</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824060000 +0200" channel="allente_se.vl4" stop="20260824100000 +0200">
-    <title>Sändningsuppehåll</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824100000 +0200" channel="allente_se.vl4" stop="20260824140000 +0200">
-    <title>Sändningsuppehåll</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824140000 +0200" channel="allente_se.vl4" stop="20260824180000 +0200">
-    <title>Sändningsuppehåll</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824180000 +0200" channel="allente_se.vl4" stop="20260824220000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260824220000 +0200" channel="allente_se.vl4" stop="20260825020000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260825020000 +0200" channel="allente_se.vl4" stop="20260825060000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260825060000 +0200" channel="allente_se.vl4" stop="20260825100000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260825100000 +0200" channel="allente_se.vl4" stop="20260825140000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260825140000 +0200" channel="allente_se.vl4" stop="20260825180000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260825180000 +0200" channel="allente_se.vl4" stop="20260825220000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260825220000 +0200" channel="allente_se.vl4" stop="20260826020000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826020000 +0200" channel="allente_se.vl4" stop="20260826060000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826060000 +0200" channel="allente_se.vl4" stop="20260826100000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826100000 +0200" channel="allente_se.vl4" stop="20260826140000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826140000 +0200" channel="allente_se.vl4" stop="20260826180000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826180000 +0200" channel="allente_se.vl4" stop="20260826220000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826220000 +0200" channel="allente_se.vl4" stop="20260827020000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827020000 +0200" channel="allente_se.vl4" stop="20260827060000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827060000 +0200" channel="allente_se.vl4" stop="20260827100000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827100000 +0200" channel="allente_se.vl4" stop="20260827140000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827140000 +0200" channel="allente_se.vl4" stop="20260827180000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827180000 +0200" channel="allente_se.vl4" stop="20260827220000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827220000 +0200" channel="allente_se.vl4" stop="20260828020000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828020000 +0200" channel="allente_se.vl4" stop="20260828060000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828060000 +0200" channel="allente_se.vl4" stop="20260828100000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828100000 +0200" channel="allente_se.vl4" stop="20260828140000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828140000 +0200" channel="allente_se.vl4" stop="20260828180000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828180000 +0200" channel="allente_se.vl4" stop="20260828220000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828220000 +0200" channel="allente_se.vl4" stop="20260829020000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829020000 +0200" channel="allente_se.vl4" stop="20260829060000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829060000 +0200" channel="allente_se.vl4" stop="20260829100000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829100000 +0200" channel="allente_se.vl4" stop="20260829140000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829140000 +0200" channel="allente_se.vl4" stop="20260829180000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829180000 +0200" channel="allente_se.vl4" stop="20260829220000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829220000 +0200" channel="allente_se.vl4" stop="20260830020000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260830020000 +0200" channel="allente_se.vl4" stop="20260830060000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260830060000 +0200" channel="allente_se.vl4" stop="20260830100000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260830100000 +0200" channel="allente_se.vl4" stop="20260830140000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260830140000 +0200" channel="allente_se.vl4" stop="20260830180000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260830180000 +0200" channel="allente_se.vl4" stop="20260830220000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260830220000 +0200" channel="allente_se.vl4" stop="20260831020000 +0200">
-    <title>Sändningsuppehåll</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260823220000 +0200" channel="allente_se.vl5" stop="20260824020000 +0200">
-    <title>Sändningsuppehåll</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824020000 +0200" channel="allente_se.vl5" stop="20260824060000 +0200">
-    <title>Sändningsuppehåll</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824060000 +0200" channel="allente_se.vl5" stop="20260824100000 +0200">
-    <title>Sändningsuppehåll</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824100000 +0200" channel="allente_se.vl5" stop="20260824140000 +0200">
-    <title>Sändningsuppehåll</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824140000 +0200" channel="allente_se.vl5" stop="20260824180000 +0200">
-    <title>Sändningsuppehåll</title>
-    <url>https://www.allente.se/tv-guide/</url>
-  </programme>
-  <programme start="20260824180000 +0200" channel="allente_se.vl5" stop="20260824220000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260824220000 +0200" channel="allente_se.vl5" stop="20260825020000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260825020000 +0200" channel="allente_se.vl5" stop="20260825060000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260825060000 +0200" channel="allente_se.vl5" stop="20260825100000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260825100000 +0200" channel="allente_se.vl5" stop="20260825140000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260825140000 +0200" channel="allente_se.vl5" stop="20260825180000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260825180000 +0200" channel="allente_se.vl5" stop="20260825220000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260825220000 +0200" channel="allente_se.vl5" stop="20260826020000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826020000 +0200" channel="allente_se.vl5" stop="20260826060000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826060000 +0200" channel="allente_se.vl5" stop="20260826100000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826100000 +0200" channel="allente_se.vl5" stop="20260826140000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826140000 +0200" channel="allente_se.vl5" stop="20260826180000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826180000 +0200" channel="allente_se.vl5" stop="20260826220000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260826220000 +0200" channel="allente_se.vl5" stop="20260827020000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827020000 +0200" channel="allente_se.vl5" stop="20260827060000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827060000 +0200" channel="allente_se.vl5" stop="20260827100000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827100000 +0200" channel="allente_se.vl5" stop="20260827140000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827140000 +0200" channel="allente_se.vl5" stop="20260827180000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827180000 +0200" channel="allente_se.vl5" stop="20260827220000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260827220000 +0200" channel="allente_se.vl5" stop="20260828020000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828020000 +0200" channel="allente_se.vl5" stop="20260828060000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828060000 +0200" channel="allente_se.vl5" stop="20260828100000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828100000 +0200" channel="allente_se.vl5" stop="20260828140000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828140000 +0200" channel="allente_se.vl5" stop="20260828180000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828180000 +0200" channel="allente_se.vl5" stop="20260828220000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260828220000 +0200" channel="allente_se.vl5" stop="20260829020000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829020000 +0200" channel="allente_se.vl5" stop="20260829060000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829060000 +0200" channel="allente_se.vl5" stop="20260829100000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829100000 +0200" channel="allente_se.vl5" stop="20260829140000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829140000 +0200" channel="allente_se.vl5" stop="20260829180000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829180000 +0200" channel="allente_se.vl5" stop="20260829220000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260829220000 +0200" channel="allente_se.vl5" stop="20260830020000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260830020000 +0200" channel="allente_se.vl5" stop="20260830060000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260830060000 +0200" channel="allente_se.vl5" stop="20260830100000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260830100000 +0200" channel="allente_se.vl5" stop="20260830140000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260830140000 +0200" channel="allente_se.vl5" stop="20260830180000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260830180000 +0200" channel="allente_se.vl5" stop="20260830220000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260830220000 +0200" channel="allente_se.vl5" stop="20260831020000 +0200">
-    <title>Sändningsuppehåll</title>
+    <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
   <programme start="20260825000000 +0800" channel="astro.801" stop="20260825070000 +0800">

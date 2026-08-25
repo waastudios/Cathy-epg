@@ -166,16 +166,16 @@ The current XMLTV output contains **129 channels**.
 
 | tvg-id | tvg-name |
 | --- | --- |
-| `allente_se.v1` | V Sport 1 |
-| `allente_se.vextra` | V Sport Extra |
-| `allente_se.vfoot` | V Sport Football |
-| `allente_se.vgolf` | V Sport Golf |
-| `allente_se.vl1` | V Sport Live 1 |
-| `allente_se.vl2` | V Sport Live 2 |
-| `allente_se.vl3` | V Sport Live 3 |
-| `allente_se.vl4` | V Sport Live 4 |
-| `allente_se.vl5` | V Sport Live 5 |
-| `allente_se.vmotor` | V Sport Motor |
-| `allente_se.vpre` | V Sport Premium |
-| `allente_se.vultra` | V Sport UltraHD |
-| `allente_se.vvin` | V Sport Vinter |
+| `allente_se.v1` | V Sport 1 (T) |
+| `allente_se.vextra` | V Sport Extra (T) |
+| `allente_se.vfoot` | V Sport Football (T) |
+| `allente_se.vgolf` | V Sport Golf (T) |
+| `allente_se.vl1` | V Sport Live 1 (T) |
+| `allente_se.vl2` | V Sport Live 2 (T) |
+| `allente_se.vl3` | V Sport Live 3 (T) |
+| `allente_se.vl4` | V Sport Live 4 (T) |
+| `allente_se.vl5` | V Sport Live 5 (T) |
+| `allente_se.vmotor` | V Sport Motor (T) |
+| `allente_se.vpre` | V Sport Premium (T) |
+| `allente_se.vultra` | V Sport UltraHD (T) |
+| `allente_se.vvin` | V Sport Vinter (T) |
