@@ -93,6 +93,10 @@ class TVGuideImageTests(unittest.TestCase):
             icon = programme.find("icon") if programme is not None else None
             self.assertIsNotNone(icon)
             self.assertEqual(icon.get("src") if icon is not None else None, IMAGE_URL)
+            backdrop = programme.find("image") if programme is not None else None
+            self.assertIsNotNone(backdrop)
+            self.assertEqual(backdrop.get("type") if backdrop is not None else None, "backdrop")
+            self.assertEqual(backdrop.text if backdrop is not None else None, IMAGE_URL)
 
 
 if __name__ == "__main__":

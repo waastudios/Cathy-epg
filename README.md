@@ -30,7 +30,7 @@ Every XMLTV `display-name` is the provider’s official channel name unless an e
 
 ### Authorised UK programme artwork
 
-For mapped EE TV and Virgin Media UK records, the refresh links a TVGuide.co.uk image directly in XMLTV as `<programme><icon src="…"/></programme>`. Images are neither downloaded nor re-hosted. An icon is emitted only when the mapped TVGuide channel page has exactly one candidate with the same normalised programme title and a start time within one minute of the provider record; absent, ambiguous, unsupported-channel, or failed-page matches remain image-free. Programme titles, times, and channels continue to come solely from EE TV or Virgin Media. The daily status file records the number of eligible records, page requests, exact artwork matches, and unmatched records.
+For mapped EE TV and Virgin Media UK records, the refresh links a TVGuide.co.uk image directly in XMLTV as both the standard `<programme><image type="backdrop" orient="L">…</image></programme>` element and a compatibility `<icon>` element. Images are neither downloaded nor re-hosted. An icon is emitted only when the mapped TVGuide channel page has exactly one candidate with the same normalised programme title and a start time within one minute of the provider record; absent, ambiguous, unsupported-channel, or failed-page matches remain image-free. Programme titles, times, and channels continue to come solely from EE TV or Virgin Media. The daily status file records the number of eligible records, page requests, exact artwork matches, and unmatched records.
 
 ## Current coverage and enforced scope
 

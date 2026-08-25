@@ -116,9 +116,13 @@ def write_xmltv(records: Iterable[Programme], xml_path: Path, gzip_path: Path) -
         item = ET.SubElement(root, "programme", attributes)
         ET.SubElement(item, "title").text = programme.title
         if programme.image_url:
-            # XMLTV clients commonly use programme/icon as landscape artwork or a detail header.
-            ET.SubElement(item, "icon", {"src": programme.image_url})
+            # Keep icon for clients that implement the classic XMLTV convention.
+            ET.SubElement(item, "icon", {"src": programme.image_url, "width": "1024", "height": "576"})
         ET.SubElement(item, "url").text = programme.source_url
+        if programme.image_url:
+            # XMLTV's modern image element is what clients commonly use for backdrop art.
+            image = ET.SubElement(item, "image", {"type": "backdrop", "orient": "L", "system": "TVGuide.co.uk"})
+            image.text = programme.image_url
 
     tree = ET.ElementTree(root)
     ET.indent(tree, space="  ")

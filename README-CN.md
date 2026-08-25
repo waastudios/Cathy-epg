@@ -30,7 +30,7 @@ https://raw.githubusercontent.com/waastudios/Cathy-epg/master/data/epg.xml.gz
 
 ### 已授权的英国节目背景图
 
-对于已映射的 EE TV 与 Virgin Media 英国节目，刷新流程会在 XMLTV 中直接写入 TVGuide.co.uk 图片链接：`<programme><icon src="…"/></programme>`。图片不会下载或二次托管。只有当已映射的 TVGuide 频道页存在**唯一**候选，且规范化节目标题相同、开始时间与服务商记录相差不超过一分钟时，才会写入图片；缺图、歧义、频道不支持或页面请求失败时一律不写图。节目标题、播出时间和频道仍只来自 EE TV 或 Virgin Media；每日的 `data/status.json` 会记录可匹配节目数、页面请求数、精确图片匹配数和未匹配数。
+对于已映射的 EE TV 与 Virgin Media 英国节目，刷新流程会在 XMLTV 中直接写入 TVGuide.co.uk 图片链接：标准字段 `<programme><image type="backdrop" orient="L">…</image></programme>`，同时保留兼容性的 `<icon>` 字段。图片不会下载或二次托管。只有当已映射的 TVGuide 频道页存在**唯一**候选，且规范化节目标题相同、开始时间与服务商记录相差不超过一分钟时，才会写入图片；缺图、歧义、频道不支持或页面请求失败时一律不写图。节目标题、播出时间和频道仍只来自 EE TV 或 Virgin Media；每日的 `data/status.json` 会记录可匹配节目数、页面请求数、精确图片匹配数和未匹配数。
 
 ## 当前覆盖与强制范围
 
