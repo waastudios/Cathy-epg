@@ -4,7 +4,7 @@
 
 当前 XMLTV 输出包含 **129 个频道**。
 
-## Astro
+## 🇲🇾马来西亚 Astro
 
 | tvg-id | tvg-name |
 | --- | --- |
@@ -31,7 +31,7 @@
 | `astro.832` | CricBuzz |
 | `astro.833` | Premier Sports |
 
-## 香港 now TV
+## 🇭🇰香港 now TV
 
 | tvg-id | tvg-name |
 | --- | --- |
@@ -136,7 +136,7 @@
 | `ee_uk.353` | Sky History |
 | `ee_uk.354` | Sky Nature |
 
-## Eurosport
+## 🇹🇷土耳其／🇷🇸塞尔维亚 Eurosport
 | tvg-id | tvg-name |
 | --- | --- |
 | `eurosport.1` | Eurosport 1 |
@@ -144,13 +144,13 @@
 | `eurosport.4k` | Eurosport 4K |
 
 
-## Digi 4K
+## 🇷🇴罗马尼亚 Digi 4K
 
 | tvg-id | tvg-name |
 | --- | --- |
 | `digi4k_ro` | Digi 4K |
 
-## 挪威 Allente
+## 🇳🇴挪威 Allente
 
 | tvg-id | tvg-name |
 | --- | --- |
@@ -160,7 +160,7 @@
 | `allente_no.rex` | REX |
 | `allente_no.tvn` | TV Norge |
 
-## 瑞典 Allente
+## 🇸🇪瑞典 Allente
 
 | tvg-id | tvg-name |
 | --- | --- |
