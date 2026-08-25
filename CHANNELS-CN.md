@@ -2,7 +2,7 @@
 
 本清单直接由当前发布的 `data/epg.xml` 生成。每一行均为实际 XMLTV `<channel>` 节点：**tvg-id** 对应 `channel/@id`，**tvg-name** 对应 `display-name`。
 
-当前 XMLTV 输出包含 **158 个频道**。
+当前 XMLTV 输出包含 **152 个频道**。
 
 > **注：**频道名称后的 **`(T)`** 表示 **Translated**：该频道的节目表来自非英语地区，原始节目标题已转换为英文后发布。此标记**仅用于本清单展示**，绝不会写入 `data/epg.xml`、`data/epg.xml.gz` 或节目快照；XMLTV 的官方 `display-name` 保持不变。
 
@@ -79,35 +79,35 @@
 
 | tvg-id | tvg-name |
 | --- | --- |
-| `sky_de.201` | Sky Sport Top Event |
-| `sky_de.202` | Sky Sport Bundesliga |
-| `sky_de.203` | Sky Sport F1 |
-| `sky_de.204` | Sky Sport Premier League |
-| `sky_de.205` | Sky Sport Mix |
-| `sky_de.206` | Sky Sport Tennis |
-| `sky_de.207` | Sky Sport Golf |
-| `sky_de.209` | Sky Sport UHD |
-| `sky_de.210` | Sky Sport Bundesliga UHD |
-| `sky_de.211` | Sky Sport Bundesliga 1 |
-| `sky_de.212` | Sky Sport Bundesliga 2 |
-| `sky_de.213` | Sky Sport Bundesliga 3 |
-| `sky_de.214` | Sky Sport Bundesliga 4 |
-| `sky_de.215` | Sky Sport Bundesliga 5 |
-| `sky_de.216` | Sky Sport Bundesliga 6 |
-| `sky_de.217` | Sky Sport Bundesliga 7 |
-| `sky_de.218` | Sky Sport Bundesliga 8 |
-| `sky_de.219` | Sky Sport Bundesliga 9 |
-| `sky_de.220` | Sky Sport Bundesliga 10 |
-| `sky_de.221` | Sky Sport 1 |
-| `sky_de.222` | Sky Sport 2 |
-| `sky_de.223` | Sky Sport 3 |
-| `sky_de.224` | Sky Sport 4 |
-| `sky_de.225` | Sky Sport 5 |
-| `sky_de.226` | Sky Sport 6 |
-| `sky_de.227` | Sky Sport 7 |
-| `sky_de.228` | Sky Sport 8 |
-| `sky_de.229` | Sky Sport 9 |
-| `sky_de.230` | Sky Sport 10 |
+| `sky_de.201` | Sky Sport Top Event (T) |
+| `sky_de.202` | Sky Sport Bundesliga (T) |
+| `sky_de.203` | Sky Sport F1 (T) |
+| `sky_de.204` | Sky Sport Premier League (T) |
+| `sky_de.205` | Sky Sport Mix (T) |
+| `sky_de.206` | Sky Sport Tennis (T) |
+| `sky_de.207` | Sky Sport Golf (T) |
+| `sky_de.209` | Sky Sport UHD (T) |
+| `sky_de.210` | Sky Sport Bundesliga UHD (T) |
+| `sky_de.211` | Sky Sport Bundesliga 1 (T) |
+| `sky_de.212` | Sky Sport Bundesliga 2 (T) |
+| `sky_de.213` | Sky Sport Bundesliga 3 (T) |
+| `sky_de.214` | Sky Sport Bundesliga 4 (T) |
+| `sky_de.215` | Sky Sport Bundesliga 5 (T) |
+| `sky_de.216` | Sky Sport Bundesliga 6 (T) |
+| `sky_de.217` | Sky Sport Bundesliga 7 (T) |
+| `sky_de.218` | Sky Sport Bundesliga 8 (T) |
+| `sky_de.219` | Sky Sport Bundesliga 9 (T) |
+| `sky_de.220` | Sky Sport Bundesliga 10 (T) |
+| `sky_de.221` | Sky Sport 1 (T) |
+| `sky_de.222` | Sky Sport 2 (T) |
+| `sky_de.223` | Sky Sport 3 (T) |
+| `sky_de.224` | Sky Sport 4 (T) |
+| `sky_de.225` | Sky Sport 5 (T) |
+| `sky_de.226` | Sky Sport 6 (T) |
+| `sky_de.227` | Sky Sport 7 (T) |
+| `sky_de.228` | Sky Sport 8 (T) |
+| `sky_de.229` | Sky Sport 9 (T) |
+| `sky_de.230` | Sky Sport 10 (T) |
 
 ## 🇬🇧英国体育类频道
 
@@ -124,7 +124,7 @@
 | `ee_uk.453` | TNT Sports 8 |
 | `ee_uk.454` | TNT Sports 9 |
 | `ee_uk.455` | TNT Sports 10 |
-| `ee_uk.494` | TNT Sports Box Office |
+| `ee_uk.494` | TNT Sports Box Office HD |
 | `ee_uk.418` | Sky Sports News |
 | `ee_uk.419` | Sky Sports Main Event |
 | `ee_uk.420` | Sky Sports Premier League |
@@ -177,7 +177,6 @@
 | --- | --- |
 | `eurosport.1` | Eurosport 1 (T) |
 | `eurosport.2` | Eurosport 2 (T) |
-| `eurosport.4k` | Eurosport 4K (T) |
 
 
 ## 🇷🇴罗马尼亚 Digi 4K
@@ -185,16 +184,6 @@
 | tvg-id | tvg-name |
 | --- | --- |
 | `digi4k_ro` | Digi 4K (T) |
-
-## 🇳🇴挪威 Allente
-
-| tvg-id | tvg-name |
-| --- | --- |
-| `allente_no.euro1` | Eurosport 1 (T) |
-| `allente_no.euron` | Eurosport Norge (T) |
-| `allente_no.fem` | FEM (T) |
-| `allente_no.rex` | REX (T) |
-| `allente_no.tvn` | TV Norge (T) |
 
 ## 🇸🇪瑞典 Allente
 

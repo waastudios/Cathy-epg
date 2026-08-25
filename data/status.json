@@ -25,9 +25,8 @@
     "records": 1421
   },
   "digi4k_ro": {
-    "status": "error",
-    "records": 0,
-    "message": "Digi 4K 标题未获得可验证的英文转换：'Maimuțe și mai mult de atât'"
+    "status": "ok",
+    "records": 114
   },
   "tvplus_tr": {
     "status": "ok",
@@ -45,10 +44,10 @@
   "xmltv": {
     "status": "ok",
     "channels": 151,
-    "programmes": 15449,
+    "programmes": 15563,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-08-25T14:22:14Z",
-  "total_records": 15449
+  "generated_at": "2026-08-25T16:24:26Z",
+  "total_records": 15563
 }

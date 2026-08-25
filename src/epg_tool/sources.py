@@ -820,6 +820,8 @@ _DIGI4K_TITLE_EXACT: dict[str, str] = {
     "Valea Rinului: Reclădind natura": "The Rhine Valley: Rebuilding Nature",
     "În Munții Nanling": "In the Nanling Mountains",
     "În Munţii Nanling": "In the Nanling Mountains",
+    "Maimuțe și mai mult de atât": "Monkeys and More",
+    "Maimute si mai mult de atat": "Monkeys and More",
     "Ştiinţa bate ficţiunea": "Science Beats Fiction",
     "Știința bate ficțiunea": "Science Beats Fiction",
 }
