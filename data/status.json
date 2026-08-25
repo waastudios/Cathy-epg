@@ -38,17 +38,17 @@
     "message": "SBB Eurosport 4K 标题未获得可验证的英文转换：'Esport Svetski Kup Show'"
   },
   "virgin_uk": {
-    "status": "stale",
-    "records": 87,
-    "fallback": "previous_snapshot"
+    "status": "ok",
+    "records": 85,
+    "detail_urls": 85
   },
   "xmltv": {
     "status": "ok",
     "channels": 152,
-    "programmes": 15562,
+    "programmes": 15560,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-08-25T17:22:30Z",
-  "total_records": 15562
+  "generated_at": "2026-08-25T17:40:20Z",
+  "total_records": 15560
 }

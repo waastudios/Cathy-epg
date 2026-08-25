@@ -142,6 +142,12 @@ VIRGIN_UK_ULTRA_CHANNELS: dict[str, str] = {
     "2258": "Sky Sports Ultra HD 1",
     "2265": "Sky Sports Ultra HD 2",
 }
+VIRGIN_TV_GO_DETAILS = "https://virgintvgo.virginmedia.com/en/epg/initial/details/tv"
+
+
+def _virgin_tvgo_detail_url(event_id: str) -> str:
+    """Build the official Virgin TV Go detail URL from an event CRID/IMI ID."""
+    return f"{VIRGIN_TV_GO_DETAILS}/{event_id.replace('/', '~~2F')}/_"
 
 # Telekom MagentaTV 的公开前端配置引用 ThePlatform 官方频道目录与节目表服务。
 # ``source name`` 为目录返回的正式名称；导出时依用户要求移除末尾 HD，而保留 UHD。
@@ -1365,6 +1371,7 @@ def collect_virgin_uk_ultra(days: int = 7, pause_seconds: float = 0.02) -> list[
                 if not isinstance(event, dict):
                     continue
                 title = (event.get("title") or "").strip()
+                event_id = event.get("id")
                 start_seconds = event.get("startTime")
                 end_seconds = event.get("endTime")
                 if not (title and isinstance(start_seconds, (int, float)) and isinstance(end_seconds, (int, float))):
@@ -1386,6 +1393,11 @@ def collect_virgin_uk_ultra(days: int = 7, pause_seconds: float = 0.02) -> list[
                         end_at=end.isoformat(),
                         source_url=VIRGIN_UK_GUIDE,
                         retrieved_at=retrieved_at,
+                        programme_url=(
+                            _virgin_tvgo_detail_url(event_id)
+                            if isinstance(event_id, str) and event_id.strip()
+                            else None
+                        ),
                     )
                 )
         time.sleep(pause_seconds)
