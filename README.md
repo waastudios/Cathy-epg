@@ -8,6 +8,8 @@
 
 The Chinese version of this document is available as [README-CN.md](README-CN.md). The **actual currently published names and XMLTV IDs** for this scope update are generated from the release snapshot in [CHANNELS.md](CHANNELS.md).
 
+Telegram group: https://t.me/garysclub
+
 ## Subscription and data files
 
 The subscription URL remains unchanged:
