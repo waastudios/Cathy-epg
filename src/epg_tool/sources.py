@@ -61,13 +61,22 @@ ALLENTE_NO_CHANNELS: dict[str, tuple[str, str]] = {
 ALLENTE_NO_CHANNEL_IDS = frozenset(ALLENTE_NO_CHANNELS)
 EE_TV_PLAYER_GUIDE = "https://player.ee.co.uk/#/livetv/schedule"
 EE_TV_SCHEDULE = "https://api.youview.tv/metadata/linear/v2/schedule/by-servicelocator"
-# 以下映射来自 EE TV Player 匿名公开的线性频道目录；仅保留每个实际频道的 SD 行。
+# 以下映射来自 EE TV Player 匿名公开的线性频道目录；保留用户指定的 TNT Sports SD/UHD 主频道。
 # 同一节目流的 HD、+1、字幕／音频描述镜像明确排除，防止跨馈源重复频道。
 EE_UK_CHANNELS: tuple[tuple[str, str, str], ...] = (
     ("408", "TNT Sports 1", "http://bds.tv/services/BT_763997"),
     ("409", "TNT Sports 2", "http://bds.tv/services/BT_764001"),
     ("410", "TNT Sports 3", "http://bds.tv/services/BT_768612"),
     ("411", "TNT Sports 4", "http://bds.tv/services/BT_758465"),
+    ("433", "TNT Sports Ultimate", "http://bds.tv/services/BT_768397"),
+    ("450", "TNT Sports 5", "http://bds.tv/services/BT_767933"),
+    ("451", "TNT Sports 6", "http://bds.tv/services/BT_767934"),
+    ("452", "TNT Sports 7", "http://bds.tv/services/BT_767935"),
+    ("453", "TNT Sports 8", "http://bds.tv/services/BT_767936"),
+    ("454", "TNT Sports 9", "http://bds.tv/services/BT_767937"),
+    ("455", "TNT Sports 10", "http://bds.tv/services/BT_767938"),
+    # EE 官方目录未公开该频道的逻辑频道号；使用其官方 YouView 数字目录 ID 作为稳定后缀。
+    ("44112656", "TNT Sports Box Office HD", "http://bds.tv/services/BT_771276"),
     ("418", "Sky Sports News", "http://bds.tv/services/BT_631679_1314_SD"),
     ("419", "Sky Sports Main Event", "http://bds.tv/services/BT_503_1301_SD"),
     ("420", "Sky Sports Premier League", "http://bds.tv/services/BT_768064_1303_SD"),
@@ -517,11 +526,11 @@ def collect_allente_no(days: int = 7, pause_seconds: float = 0.25) -> list[Progr
 
 
 def _ee_interval_starts(today: date, days: int, zone: ZoneInfo) -> list[datetime]:
-    """返回覆盖本地连续日期的 EE Player 六小时时间窗起点（统一换算为 UTC）。"""
+    """返回覆盖本地连续日期的 EE Player 十二小时时间窗起点（统一换算为 UTC）。"""
     intervals: list[datetime] = []
     for day_offset in range(days):
         local_midnight = datetime.combine(today + timedelta(days=day_offset), clock_time.min, tzinfo=zone)
-        for hour in range(0, 24, 6):
+        for hour in range(0, 24, 12):
             intervals.append((local_midnight + timedelta(hours=hour)).astimezone(timezone.utc))
     return intervals
 
@@ -545,7 +554,7 @@ def collect_ee_uk_channels(days: int = 7, pause_seconds: float = 0.02) -> list[P
     for channel_number, channel_name, service_locator in EE_UK_CHANNELS:
         channel_records = 0
         for interval_start in intervals:
-            interval_token = interval_start.strftime("%Y-%m-%dT%HZ/PT6H")
+            interval_token = interval_start.strftime("%Y-%m-%dT%HZ/PT12H")
             response = session.get(
                 EE_TV_SCHEDULE,
                 params={"serviceLocator": service_locator, "interval": interval_token},

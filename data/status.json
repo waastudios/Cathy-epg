@@ -17,7 +17,7 @@
   },
   "ee_uk": {
     "status": "ok",
-    "records": 6447
+    "records": 6661
   },
   "digi4k_ro": {
     "status": "ok",
@@ -37,11 +37,11 @@
   },
   "xmltv": {
     "status": "ok",
-    "channels": 121,
-    "programmes": 15472,
+    "channels": 129,
+    "programmes": 15686,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-08-24T19:39:20Z",
-  "total_records": 15472
+  "generated_at": "2026-08-25T03:10:25Z",
+  "total_records": 15686
 }

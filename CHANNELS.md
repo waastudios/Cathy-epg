@@ -2,7 +2,7 @@
 
 This inventory is generated directly from the currently published `data/epg.xml`. Every row is an actual XMLTV `<channel>` node: **tvg-id** is `channel/@id` and **tvg-name** is `display-name`.
 
-The current XMLTV output contains **121 channels**.
+The current XMLTV output contains **129 channels**.
 
 ## Astro Malaysia
 
@@ -81,6 +81,14 @@ The current XMLTV output contains **121 channels**.
 | `ee_uk.409` | TNT Sports 2 |
 | `ee_uk.410` | TNT Sports 3 |
 | `ee_uk.411` | TNT Sports 4 |
+| `ee_uk.433` | TNT Sports Ultimate |
+| `ee_uk.450` | TNT Sports 5 |
+| `ee_uk.451` | TNT Sports 6 |
+| `ee_uk.452` | TNT Sports 7 |
+| `ee_uk.453` | TNT Sports 8 |
+| `ee_uk.454` | TNT Sports 9 |
+| `ee_uk.455` | TNT Sports 10 |
+| `ee_uk.44112656` | TNT Sports Box Office HD |
 | `ee_uk.418` | Sky Sports News |
 | `ee_uk.419` | Sky Sports Main Event |
 | `ee_uk.420` | Sky Sports Premier League |

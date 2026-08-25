@@ -2,7 +2,7 @@
 
 本清单直接由当前发布的 `data/epg.xml` 生成。每一行均为实际 XMLTV `<channel>` 节点：**tvg-id** 对应 `channel/@id`，**tvg-name** 对应 `display-name`。
 
-当前 XMLTV 输出包含 **121 个频道**。
+当前 XMLTV 输出包含 **129 个频道**。
 
 ## Astro
 
@@ -73,7 +73,7 @@
 | `now_hk.683` | Now Golf 2 |
 | `now_hk.684` | Now Golf 3 |
 
-## Sky 体育
+## 🇬🇧英国体育类频道
 
 | tvg-id | tvg-name |
 | --- | --- |
@@ -81,6 +81,14 @@
 | `ee_uk.409` | TNT Sports 2 |
 | `ee_uk.410` | TNT Sports 3 |
 | `ee_uk.411` | TNT Sports 4 |
+| `ee_uk.433` | TNT Sports Ultimate |
+| `ee_uk.450` | TNT Sports 5 |
+| `ee_uk.451` | TNT Sports 6 |
+| `ee_uk.452` | TNT Sports 7 |
+| `ee_uk.453` | TNT Sports 8 |
+| `ee_uk.454` | TNT Sports 9 |
+| `ee_uk.455` | TNT Sports 10 |
+| `ee_uk.44112656` | TNT Sports Box Office HD |
 | `ee_uk.418` | Sky Sports News |
 | `ee_uk.419` | Sky Sports Main Event |
 | `ee_uk.420` | Sky Sports Premier League |
