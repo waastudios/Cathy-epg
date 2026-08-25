@@ -8,6 +8,8 @@
 
 英文说明见 [README.md](README.md)。本次范围更新后，**实际已发布**的频道显示名和 XMLTV ID 由当前快照自动生成在 [CHANNELS.md](CHANNELS.md)，不是手工猜测的静态列表。
 
+Telegram 群组：https://t.me/garysclub
+
 ## 订阅地址与数据文件
 
 订阅地址保持不变：
