@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 <tv generator-info-name="official-epg-search" generator-info-url="https://github.com/waastudios/official-epg-search">
   <channel id="allente_no.euro1">
-    <display-name>Eurosport Norge</display-name>
+    <display-name>Eurosport 1</display-name>
     <url>https://www.allente.no/tv-guide/</url>
   </channel>
   <channel id="allente_no.euron">
-    <display-name>Eurosport 1</display-name>
+    <display-name>Eurosport Norge</display-name>
     <url>https://www.allente.no/tv-guide/</url>
   </channel>
   <channel id="allente_no.fem">
@@ -2872,887 +2872,887 @@
     <title>Horrible Bosses 2</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260823235655 +0200" channel="allente_no.euro1" stop="20260824030000 +0200">
+  <programme start="20260823235655 +0200" channel="allente_no.euron" stop="20260824030000 +0200">
     <title>PGA Tour: FedEx St. Jude Championship: 23.08.2026 23:55.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260824030201 +0200" channel="allente_no.euro1" stop="20260824035000 +0200">
+  <programme start="20260824030201 +0200" channel="allente_no.euron" stop="20260824035000 +0200">
     <title>Cycling: La Vuelta de España: 24.08.2026 03:00.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260824035340 +0200" channel="allente_no.euro1" stop="20260824045000 +0200">
+  <programme start="20260824035340 +0200" channel="allente_no.euron" stop="20260824045000 +0200">
     <title>Motorsport: 24 Hours of Le Mans: 24.08.2026 03:50.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260824045207 +0200" channel="allente_no.euro1" stop="20260824060000 +0200">
+  <programme start="20260824045207 +0200" channel="allente_no.euron" stop="20260824060000 +0200">
     <title>NFL: Hard Knocks: 24.08.2026 04:50.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260824060000 +0200" channel="allente_no.euro1" stop="20260824065500 +0200">
+  <programme start="20260824060000 +0200" channel="allente_no.euron" stop="20260824065500 +0200">
     <title>Motocross: World Championship: 24.08.2026 06:00.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260824065923 +0200" channel="allente_no.euro1" stop="20260824075500 +0200">
+  <programme start="20260824065923 +0200" channel="allente_no.euron" stop="20260824075500 +0200">
     <title>Motocross: World Championship: 24.08.2026 06:55.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260824075821 +0200" channel="allente_no.euro1" stop="20260824085500 +0200">
+  <programme start="20260824075821 +0200" channel="allente_no.euron" stop="20260824085500 +0200">
     <title>Motocross: World Championship: 24.08.2026 07:55.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260824085500 +0200" channel="allente_no.euro1" stop="20260824095500 +0200">
+  <programme start="20260824085500 +0200" channel="allente_no.euron" stop="20260824095500 +0200">
     <title>Motocross: World Championship: 24.08.2026 08:55.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260824095500 +0200" channel="allente_no.euro1" stop="20260824105500 +0200">
+  <programme start="20260824095500 +0200" channel="allente_no.euron" stop="20260824105500 +0200">
     <title>Mountain Biking: World Cup Opening: 24.08.2026 09:55.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260824105500 +0200" channel="allente_no.euro1" stop="20260824115500 +0200">
+  <programme start="20260824105500 +0200" channel="allente_no.euron" stop="20260824115500 +0200">
     <title>Mountain Biking: World Cup Opening: 24.08.2026 10:55.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260824115500 +0200" channel="allente_no.euro1" stop="20260824133000 +0200">
+  <programme start="20260824115500 +0200" channel="allente_no.euron" stop="20260824133000 +0200">
     <title>Tennis: Wimbledon: 24.08.2026 11:55.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260824133000 +0200" channel="allente_no.euro1" stop="20260824162500 +0200">
+  <programme start="20260824133000 +0200" channel="allente_no.euron" stop="20260824162500 +0200">
     <title>Snooker: Wuhan Open: 24.08.2026 13:30.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260824162500 +0200" channel="allente_no.euro1" stop="20260824184000 +0200">
+  <programme start="20260824162500 +0200" channel="allente_no.euron" stop="20260824184000 +0200">
     <title>US PGA Championship: 24.08.2026 16:25.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260824184000 +0200" channel="allente_no.euro1" stop="20260824194000 +0200">
+  <programme start="20260824184000 +0200" channel="allente_no.euron" stop="20260824194000 +0200">
     <title>Motocross: World Championship: 24.08.2026 18:40.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260824194000 +0200" channel="allente_no.euro1" stop="20260824204000 +0200">
+  <programme start="20260824194000 +0200" channel="allente_no.euron" stop="20260824204000 +0200">
     <title>Motocross: World Championship: 24.08.2026 19:40.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260824204000 +0200" channel="allente_no.euro1" stop="20260824221500 +0200">
+  <programme start="20260824204000 +0200" channel="allente_no.euron" stop="20260824221500 +0200">
     <title>PGA Tour: Travelers Championship: 24.08.2026 20:40.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260824221500 +0200" channel="allente_no.euro1" stop="20260825001000 +0200">
+  <programme start="20260824221500 +0200" channel="allente_no.euron" stop="20260825001000 +0200">
     <title>PGA Tour: BMW Championship: 24.08.2026 22:15.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260825001000 +0200" channel="allente_no.euro1" stop="20260825021500 +0200">
+  <programme start="20260825001000 +0200" channel="allente_no.euron" stop="20260825021500 +0200">
     <title>PGA Tour: Tour Championship: 25.08.2026 00:10.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260825021500 +0200" channel="allente_no.euro1" stop="20260825031000 +0200">
+  <programme start="20260825021500 +0200" channel="allente_no.euron" stop="20260825031000 +0200">
     <title>Motocross: World Championship: 25.08.2026 02:15.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260825031000 +0200" channel="allente_no.euro1" stop="20260825040500 +0200">
+  <programme start="20260825031000 +0200" channel="allente_no.euron" stop="20260825040500 +0200">
     <title>Motocross: World Championship: 25.08.2026 03:10.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260825040500 +0200" channel="allente_no.euro1" stop="20260825045000 +0200">
+  <programme start="20260825040500 +0200" channel="allente_no.euron" stop="20260825045000 +0200">
     <title>Motocross: World Championship: 25.08.2026 04:05.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260825045000 +0200" channel="allente_no.euro1" stop="20260825060000 +0200">
+  <programme start="20260825045000 +0200" channel="allente_no.euron" stop="20260825060000 +0200">
     <title>Motocross: World Championship: 25.08.2026 04:50.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260825060000 +0200" channel="allente_no.euro1" stop="20260825065500 +0200">
+  <programme start="20260825060000 +0200" channel="allente_no.euron" stop="20260825065500 +0200">
     <title>Formula E: Monaco ePrix: 25.08.2026 06:00.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260825065500 +0200" channel="allente_no.euro1" stop="20260825075500 +0200">
+  <programme start="20260825065500 +0200" channel="allente_no.euron" stop="20260825075500 +0200">
     <title>Mountain Biking: World Cup Opening: 25.08.2026 06:55.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260825075500 +0200" channel="allente_no.euro1" stop="20260825092500 +0200">
+  <programme start="20260825075500 +0200" channel="allente_no.euron" stop="20260825092500 +0200">
     <title>Mountain Biking: World Cup Opening: 25.08.2026 07:55.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260825092500 +0200" channel="allente_no.euro1" stop="20260825105500 +0200">
+  <programme start="20260825092500 +0200" channel="allente_no.euron" stop="20260825105500 +0200">
     <title>Mountain Biking: World Cup Opening: 25.08.2026 09:25.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260825105500 +0200" channel="allente_no.euro1" stop="20260825133000 +0200">
+  <programme start="20260825105500 +0200" channel="allente_no.euron" stop="20260825133000 +0200">
     <title>Olympic Games 2024: Football: France - Spain, final, men</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260825133000 +0200" channel="allente_no.euro1" stop="20260825162000 +0200">
+  <programme start="20260825133000 +0200" channel="allente_no.euron" stop="20260825162000 +0200">
     <title>Snooker: Wuhan Open: 25.08.2026 13:30.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260825162000 +0200" channel="allente_no.euro1" stop="20260825173000 +0200">
+  <programme start="20260825162000 +0200" channel="allente_no.euron" stop="20260825173000 +0200">
     <title>PGA Tour: Weekend Highlights: Pga Tour Highlights Show</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260825173000 +0200" channel="allente_no.euro1" stop="20260825193000 +0200">
+  <programme start="20260825173000 +0200" channel="allente_no.euron" stop="20260825193000 +0200">
     <title>Cycling: Bemer Cyclassics: 25.08.2026 17:30.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260825193000 +0200" channel="allente_no.euro1" stop="20260825203000 +0200">
+  <programme start="20260825193000 +0200" channel="allente_no.euron" stop="20260825203000 +0200">
     <title>PGA Tour: FedExCup Highlights: 25.08.2026 19:30.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260825203000 +0200" channel="allente_no.euro1" stop="20260825213500 +0200">
+  <programme start="20260825203000 +0200" channel="allente_no.euron" stop="20260825213500 +0200">
     <title>PGA Tour: FedExCup Highlights: 25.08.2026 20:30.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260825213500 +0200" channel="allente_no.euro1" stop="20260825224000 +0200">
+  <programme start="20260825213500 +0200" channel="allente_no.euron" stop="20260825224000 +0200">
     <title>PGA Tour: Weekend Highlights: Pga Tour Highlights Show</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260825224000 +0200" channel="allente_no.euro1" stop="20260825233500 +0200">
+  <programme start="20260825224000 +0200" channel="allente_no.euron" stop="20260825233500 +0200">
     <title>NFL: Hard Knocks: 25.08.2026 22:40.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260825233500 +0200" channel="allente_no.euro1" stop="20260826013000 +0200">
+  <programme start="20260825233500 +0200" channel="allente_no.euron" stop="20260826013000 +0200">
     <title>PGA Tour: BMW Championship: 25.08.2026 23:35.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260826013000 +0200" channel="allente_no.euro1" stop="20260826023000 +0200">
+  <programme start="20260826013000 +0200" channel="allente_no.euron" stop="20260826023000 +0200">
     <title>BMX: European Championship: 26.08.2026 01:30.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260826023000 +0200" channel="allente_no.euro1" stop="20260826033000 +0200">
+  <programme start="20260826023000 +0200" channel="allente_no.euron" stop="20260826033000 +0200">
     <title>Motocross: World Championship: 26.08.2026 02:30.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260826033000 +0200" channel="allente_no.euro1" stop="20260826042000 +0200">
+  <programme start="20260826033000 +0200" channel="allente_no.euron" stop="20260826042000 +0200">
     <title>Motocross: World Championship: 26.08.2026 03:30.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260826042000 +0200" channel="allente_no.euro1" stop="20260826051000 +0200">
+  <programme start="20260826042000 +0200" channel="allente_no.euron" stop="20260826051000 +0200">
     <title>Motocross: World Championship: 26.08.2026 04:20.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260826051000 +0200" channel="allente_no.euro1" stop="20260826060000 +0200">
+  <programme start="20260826051000 +0200" channel="allente_no.euron" stop="20260826060000 +0200">
     <title>Motocross: World Championship: 26.08.2026 05:10.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260826060000 +0200" channel="allente_no.euro1" stop="20260826065500 +0200">
+  <programme start="20260826060000 +0200" channel="allente_no.euron" stop="20260826065500 +0200">
     <title>BMX: European Championship: 26.08.2026 06:00.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260826065500 +0200" channel="allente_no.euro1" stop="20260826075500 +0200">
+  <programme start="20260826065500 +0200" channel="allente_no.euron" stop="20260826075500 +0200">
     <title>BMX: European Championship: 26.08.2026 06:55.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260826075500 +0200" channel="allente_no.euro1" stop="20260826092500 +0200">
+  <programme start="20260826075500 +0200" channel="allente_no.euron" stop="20260826092500 +0200">
     <title>Cycling: Bemer Cyclassics: 26.08.2026 07:55.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260826092500 +0200" channel="allente_no.euro1" stop="20260826095500 +0200">
+  <programme start="20260826092500 +0200" channel="allente_no.euron" stop="20260826095500 +0200">
     <title>Mountain Biking: World Cup Opening: 26.08.2026 09:25.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260826095500 +0200" channel="allente_no.euro1" stop="20260826110500 +0200">
+  <programme start="20260826095500 +0200" channel="allente_no.euron" stop="20260826110500 +0200">
     <title>PGA Tour: Weekend Highlights: Pga Tour Highlights Show</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260826110500 +0200" channel="allente_no.euro1" stop="20260826121000 +0200">
+  <programme start="20260826110500 +0200" channel="allente_no.euron" stop="20260826121000 +0200">
     <title>Motorsport: 24 Hours of Le Mans: 26.08.2026 11:05.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260826121000 +0200" channel="allente_no.euro1" stop="20260826133000 +0200">
+  <programme start="20260826121000 +0200" channel="allente_no.euron" stop="20260826133000 +0200">
     <title>PGA Tour: Travelers Championship: 26.08.2026 12:10.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260826133000 +0200" channel="allente_no.euro1" stop="20260826162500 +0200">
+  <programme start="20260826133000 +0200" channel="allente_no.euron" stop="20260826162500 +0200">
     <title>Snooker: Wuhan Open: 26.08.2026 13:30.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260826162500 +0200" channel="allente_no.euro1" stop="20260826172500 +0200">
+  <programme start="20260826162500 +0200" channel="allente_no.euron" stop="20260826172500 +0200">
     <title>PGA Tour: Tour Championship: 26.08.2026 16:25.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260826172500 +0200" channel="allente_no.euro1" stop="20260826192500 +0200">
+  <programme start="20260826172500 +0200" channel="allente_no.euron" stop="20260826192500 +0200">
     <title>US PGA Championship: 26.08.2026 17:25.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260826192500 +0200" channel="allente_no.euro1" stop="20260826202500 +0200">
+  <programme start="20260826192500 +0200" channel="allente_no.euron" stop="20260826202500 +0200">
     <title>Tennis: US Open: 26.08.2026 19:25.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260826202500 +0200" channel="allente_no.euro1" stop="20260826213000 +0200">
+  <programme start="20260826202500 +0200" channel="allente_no.euron" stop="20260826213000 +0200">
     <title>Tennis: US Open: 26.08.2026 20:25.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260826213000 +0200" channel="allente_no.euro1" stop="20260826220000 +0200">
+  <programme start="20260826213000 +0200" channel="allente_no.euron" stop="20260826220000 +0200">
     <title>PGA Tour: The CUT: 26.08.2026 21:30.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260826220000 +0200" channel="allente_no.euro1" stop="20260826223000 +0200">
+  <programme start="20260826220000 +0200" channel="allente_no.euron" stop="20260826223000 +0200">
     <title>Discovery Golf: 26.08.2026 22:00.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260826223000 +0200" channel="allente_no.euro1" stop="20260826233000 +0200">
+  <programme start="20260826223000 +0200" channel="allente_no.euron" stop="20260826233000 +0200">
     <title>PGA Tour: FedExCup Highlights: 26.08.2026 22:30.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260826233000 +0200" channel="allente_no.euro1" stop="20260827003500 +0200">
+  <programme start="20260826233000 +0200" channel="allente_no.euron" stop="20260827003500 +0200">
     <title>PGA Tour: FedExCup Highlights: 26.08.2026 23:30.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260827003500 +0200" channel="allente_no.euro1" stop="20260827034000 +0200">
+  <programme start="20260827003500 +0200" channel="allente_no.euron" stop="20260827034000 +0200">
     <title>Equestrian: World Championship, Aachen: 27.08.2026 00:35.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260827034000 +0200" channel="allente_no.euro1" stop="20260827051500 +0200">
+  <programme start="20260827034000 +0200" channel="allente_no.euron" stop="20260827051500 +0200">
     <title>Snooker: Wuhan Open: 27.08.2026 03:40.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260827051500 +0200" channel="allente_no.euro1" stop="20260827060000 +0200">
+  <programme start="20260827051500 +0200" channel="allente_no.euron" stop="20260827060000 +0200">
     <title>Mountain Biking: World Cup Opening: 27.08.2026 05:15.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260827060000 +0200" channel="allente_no.euro1" stop="20260827063000 +0200">
+  <programme start="20260827060000 +0200" channel="allente_no.euron" stop="20260827063000 +0200">
     <title>PGA Tour: The CUT: 27.08.2026 06:00.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260827063000 +0200" channel="allente_no.euro1" stop="20260827073000 +0200">
+  <programme start="20260827063000 +0200" channel="allente_no.euron" stop="20260827073000 +0200">
     <title>Motocross: World Championship: 27.08.2026 06:30.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260827073000 +0200" channel="allente_no.euro1" stop="20260827083000 +0200">
+  <programme start="20260827073000 +0200" channel="allente_no.euron" stop="20260827083000 +0200">
     <title>Motocross: World Championship: 27.08.2026 07:30.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260827083000 +0200" channel="allente_no.euro1" stop="20260827092500 +0200">
+  <programme start="20260827083000 +0200" channel="allente_no.euron" stop="20260827092500 +0200">
     <title>Motocross: World Championship: 27.08.2026 08:30.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260827092500 +0200" channel="allente_no.euro1" stop="20260827102500 +0200">
+  <programme start="20260827092500 +0200" channel="allente_no.euron" stop="20260827102500 +0200">
     <title>Motocross: World Championship: 27.08.2026 09:25.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260827102500 +0200" channel="allente_no.euro1" stop="20260827110000 +0200">
+  <programme start="20260827102500 +0200" channel="allente_no.euron" stop="20260827110000 +0200">
     <title>PGA: Tour Championship Special: 27.08.2026 10:25.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260827110000 +0200" channel="allente_no.euro1" stop="20260827123000 +0200">
+  <programme start="20260827110000 +0200" channel="allente_no.euron" stop="20260827123000 +0200">
     <title>Olympic Games 2024: Golf: dag 4, men</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260827123000 +0200" channel="allente_no.euro1" stop="20260827133000 +0200">
+  <programme start="20260827123000 +0200" channel="allente_no.euron" stop="20260827133000 +0200">
     <title>Tour de France, Women: 27.08.2026 12:30.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260827133000 +0200" channel="allente_no.euro1" stop="20260827162500 +0200">
+  <programme start="20260827133000 +0200" channel="allente_no.euron" stop="20260827162500 +0200">
     <title>Snooker: Wuhan Open: 27.08.2026 13:30.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260827162500 +0200" channel="allente_no.euro1" stop="20260827165500 +0200">
+  <programme start="20260827162500 +0200" channel="allente_no.euron" stop="20260827165500 +0200">
     <title>PGA: Tour Championship Special: 27.08.2026 16:25.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260827165500 +0200" channel="allente_no.euro1" stop="20260827175000 +0200">
+  <programme start="20260827165500 +0200" channel="allente_no.euron" stop="20260827175000 +0200">
     <title>PGA Tour: Tour Championship: 27.08.2026 16:55.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260827175000 +0200" channel="allente_no.euro1" stop="20260827190000 +0200">
+  <programme start="20260827175000 +0200" channel="allente_no.euron" stop="20260827190000 +0200">
     <title>PGA Tour: Tour Championship: 27.08.2026 17:50.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260827190000 +0200" channel="allente_no.euro1" stop="20260827235500 +0200">
+  <programme start="20260827190000 +0200" channel="allente_no.euron" stop="20260827235500 +0200">
     <title>Golf: PGA Tour: 27.08.2026 19:00.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260827235500 +0200" channel="allente_no.euro1" stop="20260828030500 +0200">
+  <programme start="20260827235500 +0200" channel="allente_no.euron" stop="20260828030500 +0200">
     <title>Equestrian: World Championship, Aachen: 27.08.2026 23:55.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260828030500 +0200" channel="allente_no.euro1" stop="20260828035500 +0200">
+  <programme start="20260828030500 +0200" channel="allente_no.euron" stop="20260828035500 +0200">
     <title>Boating: SailGP: 28.08.2026 03:05.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260828035500 +0200" channel="allente_no.euro1" stop="20260828044500 +0200">
+  <programme start="20260828035500 +0200" channel="allente_no.euron" stop="20260828044500 +0200">
     <title>Mountain Biking: World Cup Opening: 28.08.2026 03:55.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260828044500 +0200" channel="allente_no.euro1" stop="20260828060000 +0200">
+  <programme start="20260828044500 +0200" channel="allente_no.euron" stop="20260828060000 +0200">
     <title>Mountain Biking: World Cup Opening: 28.08.2026 04:45.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260828060000 +0200" channel="allente_no.euro1" stop="20260828073000 +0200">
+  <programme start="20260828060000 +0200" channel="allente_no.euron" stop="20260828073000 +0200">
     <title>Tennis: US Open: 28.08.2026 06:00.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260828073000 +0200" channel="allente_no.euro1" stop="20260828093000 +0200">
+  <programme start="20260828073000 +0200" channel="allente_no.euron" stop="20260828093000 +0200">
     <title>Tennis: US Open: 28.08.2026 07:30.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260828093000 +0200" channel="allente_no.euro1" stop="20260828103000 +0200">
+  <programme start="20260828093000 +0200" channel="allente_no.euron" stop="20260828103000 +0200">
     <title>BMX: European Championship: 28.08.2026 09:30.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260828103000 +0200" channel="allente_no.euro1" stop="20260828105000 +0200">
+  <programme start="20260828103000 +0200" channel="allente_no.euron" stop="20260828105000 +0200">
     <title>PGA: Tour Championship Special: 28.08.2026 10:30.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260828105000 +0200" channel="allente_no.euro1" stop="20260828133000 +0200">
+  <programme start="20260828105000 +0200" channel="allente_no.euron" stop="20260828133000 +0200">
     <title>Olympic Games 2024: Football: France - Spain, final, men</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260828133000 +0200" channel="allente_no.euro1" stop="20260828170000 +0200">
+  <programme start="20260828133000 +0200" channel="allente_no.euron" stop="20260828170000 +0200">
     <title>Snooker: Wuhan Open: 28.08.2026 13:30.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260828170000 +0200" channel="allente_no.euro1" stop="20260828190000 +0200">
+  <programme start="20260828170000 +0200" channel="allente_no.euron" stop="20260828190000 +0200">
     <title>PGA Tour: Tour Championship: 28.08.2026 17:00.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260828190000 +0200" channel="allente_no.euro1" stop="20260829000000 +0200">
+  <programme start="20260828190000 +0200" channel="allente_no.euron" stop="20260829000000 +0200">
     <title>Golf: PGA Tour: 28.08.2026 19:00.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260829000000 +0200" channel="allente_no.euro1" stop="20260829010000 +0200">
+  <programme start="20260829000000 +0200" channel="allente_no.euron" stop="20260829010000 +0200">
     <title>PGA Tour: FedExCup Highlights: 29.08.2026 00:00.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260829010000 +0200" channel="allente_no.euro1" stop="20260829030000 +0200">
+  <programme start="20260829010000 +0200" channel="allente_no.euron" stop="20260829030000 +0200">
     <title>Commonwealth Games 2026: Today's Highlights: 29.08.2026 01:00.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260829030000 +0200" channel="allente_no.euro1" stop="20260829042000 +0200">
+  <programme start="20260829030000 +0200" channel="allente_no.euron" stop="20260829042000 +0200">
     <title>Tennis: US Open: 29.08.2026 03:00.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260829042000 +0200" channel="allente_no.euro1" stop="20260829060000 +0200">
+  <programme start="20260829042000 +0200" channel="allente_no.euron" stop="20260829060000 +0200">
     <title>Tennis: US Open: 29.08.2026 04:20.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260829060000 +0200" channel="allente_no.euro1" stop="20260829072500 +0200">
+  <programme start="20260829060000 +0200" channel="allente_no.euron" stop="20260829072500 +0200">
     <title>Tennis: US Open: 29.08.2026 06:00.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260829072500 +0200" channel="allente_no.euro1" stop="20260829075500 +0200">
+  <programme start="20260829072500 +0200" channel="allente_no.euron" stop="20260829075500 +0200">
     <title>Mountain Biking: World Championship in Val di Sole: 29.08.2026 07:25.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260829075500 +0200" channel="allente_no.euro1" stop="20260829085500 +0200">
+  <programme start="20260829075500 +0200" channel="allente_no.euron" stop="20260829085500 +0200">
     <title>Mountain Biking: World Championship in Val di Sole: 29.08.2026 07:55.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260829085500 +0200" channel="allente_no.euro1" stop="20260829102500 +0200">
+  <programme start="20260829085500 +0200" channel="allente_no.euron" stop="20260829102500 +0200">
     <title>Cycling: Bemer Cyclassics: 29.08.2026 08:55.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260829102500 +0200" channel="allente_no.euro1" stop="20260829105500 +0200">
+  <programme start="20260829102500 +0200" channel="allente_no.euron" stop="20260829105500 +0200">
     <title>Discovery Golf: 29.08.2026 10:25.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260829105500 +0200" channel="allente_no.euro1" stop="20260829115500 +0200">
+  <programme start="20260829105500 +0200" channel="allente_no.euron" stop="20260829115500 +0200">
     <title>Tennis: US Open: 29.08.2026 10:55.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260829115500 +0200" channel="allente_no.euro1" stop="20260829133000 +0200">
+  <programme start="20260829115500 +0200" channel="allente_no.euron" stop="20260829133000 +0200">
     <title>Tennis: US Open: 29.08.2026 11:55.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260829133000 +0200" channel="allente_no.euro1" stop="20260829163000 +0200">
+  <programme start="20260829133000 +0200" channel="allente_no.euron" stop="20260829163000 +0200">
     <title>Snooker: Wuhan Open: 29.08.2026 13:30.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260829163000 +0200" channel="allente_no.euro1" stop="20260829181000 +0200">
+  <programme start="20260829163000 +0200" channel="allente_no.euron" stop="20260829181000 +0200">
     <title>Mountain Biking: World Championship in Val di Sole: 29.08.2026 16:30.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260829181000 +0200" channel="allente_no.euro1" stop="20260829190000 +0200">
+  <programme start="20260829181000 +0200" channel="allente_no.euron" stop="20260829190000 +0200">
     <title>Discovery Golf: 29.08.2026 18:10.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260829190000 +0200" channel="allente_no.euro1" stop="20260830005500 +0200">
+  <programme start="20260829190000 +0200" channel="allente_no.euron" stop="20260830005500 +0200">
     <title>Golf: PGA Tour: 29.08.2026 19:00.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260830005500 +0200" channel="allente_no.euro1" stop="20260830022500 +0200">
+  <programme start="20260830005500 +0200" channel="allente_no.euron" stop="20260830022500 +0200">
     <title>Tennis: US Open: 30.08.2026 00:55.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260830022500 +0200" channel="allente_no.euro1" stop="20260830040000 +0200">
+  <programme start="20260830022500 +0200" channel="allente_no.euron" stop="20260830040000 +0200">
     <title>Tennis: US Open: 30.08.2026 02:25.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260830040000 +0200" channel="allente_no.euro1" stop="20260830042000 +0200">
+  <programme start="20260830040000 +0200" channel="allente_no.euron" stop="20260830042000 +0200">
     <title>PGA Tour: The CUT: 30.08.2026 04:00.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260830042000 +0200" channel="allente_no.euro1" stop="20260830060000 +0200">
+  <programme start="20260830042000 +0200" channel="allente_no.euron" stop="20260830060000 +0200">
     <title>Mountain Biking: World Championship in Val di Sole: 30.08.2026 04:20.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260830060000 +0200" channel="allente_no.euro1" stop="20260830070000 +0200">
+  <programme start="20260830060000 +0200" channel="allente_no.euron" stop="20260830070000 +0200">
     <title>Mountain Biking: World Championship in Val di Sole: 30.08.2026 06:00.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260830070000 +0200" channel="allente_no.euro1" stop="20260830080000 +0200">
+  <programme start="20260830070000 +0200" channel="allente_no.euron" stop="20260830080000 +0200">
     <title>Motorsport: 24 Hours of Le Mans: 30.08.2026 07:00.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260830080000 +0200" channel="allente_no.euro1" stop="20260830100000 +0200">
+  <programme start="20260830080000 +0200" channel="allente_no.euron" stop="20260830100000 +0200">
     <title>Tennis: US Open: 30.08.2026 08:00.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260830100000 +0200" channel="allente_no.euro1" stop="20260830120000 +0200">
+  <programme start="20260830100000 +0200" channel="allente_no.euron" stop="20260830120000 +0200">
     <title>Tennis: US Open: 30.08.2026 10:00.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260830120000 +0200" channel="allente_no.euro1" stop="20260830125000 +0200">
+  <programme start="20260830120000 +0200" channel="allente_no.euron" stop="20260830125000 +0200">
     <title>Discovery Golf: 30.08.2026 12:00.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260830125000 +0200" channel="allente_no.euro1" stop="20260830144000 +0200">
+  <programme start="20260830125000 +0200" channel="allente_no.euron" stop="20260830144000 +0200">
     <title>Mountain Biking: World Championship in Val di Sole: 30.08.2026 12:50.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260830144000 +0200" channel="allente_no.euro1" stop="20260830150500 +0200">
+  <programme start="20260830144000 +0200" channel="allente_no.euron" stop="20260830150500 +0200">
     <title>PGA: Tour Championship Special: 30.08.2026 14:40.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260830150500 +0200" channel="allente_no.euro1" stop="20260830172500 +0200">
+  <programme start="20260830150500 +0200" channel="allente_no.euron" stop="20260830172500 +0200">
     <title>Mountain Biking: World Championship in Val di Sole: 30.08.2026 15:05.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260830172500 +0200" channel="allente_no.euro1" stop="20260830180000 +0200">
+  <programme start="20260830172500 +0200" channel="allente_no.euron" stop="20260830180000 +0200">
     <title>Mountain Biking: Enduro World Series: 30.08.2026 17:25.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260830180000 +0200" channel="allente_no.euro1" stop="20260831000000 +0200">
+  <programme start="20260830180000 +0200" channel="allente_no.euron" stop="20260831000000 +0200">
     <title>Golf: PGA Tour: 30.08.2026 18:00.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260824015807 +0200" channel="allente_no.euron" stop="20260824034500 +0200">
+  <programme start="20260824015807 +0200" channel="allente_no.euro1" stop="20260824034500 +0200">
     <title>SNOOKER WUHAN OPEN ROUND 02: 24.08.2026 01:55.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260824034945 +0200" channel="allente_no.euron" stop="20260824060000 +0200">
+  <programme start="20260824034945 +0200" channel="allente_no.euro1" stop="20260824060000 +0200">
     <title>Tennis: Wimbledon: 24.08.2026 03:45.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260824060000 +0200" channel="allente_no.euron" stop="20260824080000 +0200">
+  <programme start="20260824060000 +0200" channel="allente_no.euro1" stop="20260824080000 +0200">
     <title>Snooker: Wuhan Open: 24.08.2026 06:00.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260824080000 +0200" channel="allente_no.euron" stop="20260824105500 +0200">
+  <programme start="20260824080000 +0200" channel="allente_no.euro1" stop="20260824105500 +0200">
     <title>Snooker: Wuhan Open: 24.08.2026 08:00.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260824105500 +0200" channel="allente_no.euron" stop="20260824122500 +0200">
+  <programme start="20260824105500 +0200" channel="allente_no.euro1" stop="20260824122500 +0200">
     <title>Cycling: Bemer Cyclassics: 24.08.2026 10:55.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260824122500 +0200" channel="allente_no.euron" stop="20260824125500 +0200">
+  <programme start="20260824122500 +0200" channel="allente_no.euro1" stop="20260824125500 +0200">
     <title>Triathlon: T100: 24.08.2026 12:25.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260824125500 +0200" channel="allente_no.euron" stop="20260824144500 +0200">
+  <programme start="20260824125500 +0200" channel="allente_no.euro1" stop="20260824144500 +0200">
     <title>Cycling: La Vuelta de España: 24.08.2026 12:55.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260824144500 +0200" channel="allente_no.euron" stop="20260824175500 +0200">
+  <programme start="20260824144500 +0200" channel="allente_no.euro1" stop="20260824175500 +0200">
     <title>Cycling: La Vuelta de España: 24.08.2026 14:45.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260824175500 +0200" channel="allente_no.euron" stop="20260824195500 +0200">
+  <programme start="20260824175500 +0200" channel="allente_no.euro1" stop="20260824195500 +0200">
     <title>PGA Tour: BMW Championship: 24.08.2026 17:55.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260824195500 +0200" channel="allente_no.euron" stop="20260824202000 +0200">
+  <programme start="20260824195500 +0200" channel="allente_no.euro1" stop="20260824202000 +0200">
     <title>PGA: Tour Championship Special: 24.08.2026 19:55.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260824202000 +0200" channel="allente_no.euron" stop="20260824215000 +0200">
+  <programme start="20260824202000 +0200" channel="allente_no.euro1" stop="20260824215000 +0200">
     <title>Cycling: La Vuelta de España: 24.08.2026 20:20.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260824215000 +0200" channel="allente_no.euron" stop="20260824234000 +0200">
+  <programme start="20260824215000 +0200" channel="allente_no.euro1" stop="20260824234000 +0200">
     <title>Snooker: Wuhan Open: 24.08.2026 21:50.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260824234000 +0200" channel="allente_no.euron" stop="20260825004500 +0200">
+  <programme start="20260824234000 +0200" channel="allente_no.euro1" stop="20260825004500 +0200">
     <title>Olympic Games: Hall Of Fame 2004</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260825004500 +0200" channel="allente_no.euron" stop="20260825021000 +0200">
+  <programme start="20260825004500 +0200" channel="allente_no.euro1" stop="20260825021000 +0200">
     <title>Cycling: Bemer Cyclassics: 25.08.2026 00:45.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260825021000 +0200" channel="allente_no.euron" stop="20260825033000 +0200">
+  <programme start="20260825021000 +0200" channel="allente_no.euro1" stop="20260825033000 +0200">
     <title>Cycling: La Vuelta de España: 25.08.2026 02:10.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260825033000 +0200" channel="allente_no.euron" stop="20260825041500 +0200">
+  <programme start="20260825033000 +0200" channel="allente_no.euro1" stop="20260825041500 +0200">
     <title>Formula E: Monaco ePrix: 25.08.2026 03:30.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260825041500 +0200" channel="allente_no.euron" stop="20260825060000 +0200">
+  <programme start="20260825041500 +0200" channel="allente_no.euro1" stop="20260825060000 +0200">
     <title>PGA Tour: BMW Championship: 25.08.2026 04:15.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260825060000 +0200" channel="allente_no.euron" stop="20260825080000 +0200">
+  <programme start="20260825060000 +0200" channel="allente_no.euro1" stop="20260825080000 +0200">
     <title>Snooker: Wuhan Open: 25.08.2026 06:00.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260825080000 +0200" channel="allente_no.euron" stop="20260825105500 +0200">
+  <programme start="20260825080000 +0200" channel="allente_no.euro1" stop="20260825105500 +0200">
     <title>Snooker: Wuhan Open: 25.08.2026 08:00.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260825105500 +0200" channel="allente_no.euron" stop="20260825130000 +0200">
+  <programme start="20260825105500 +0200" channel="allente_no.euro1" stop="20260825130000 +0200">
     <title>PGA Tour: BMW Championship: 25.08.2026 10:55.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260825130000 +0200" channel="allente_no.euron" stop="20260825143000 +0200">
+  <programme start="20260825130000 +0200" channel="allente_no.euro1" stop="20260825143000 +0200">
     <title>Cycling: La Vuelta de España: 25.08.2026 13:00.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260825143000 +0200" channel="allente_no.euron" stop="20260825180000 +0200">
+  <programme start="20260825143000 +0200" channel="allente_no.euro1" stop="20260825180000 +0200">
     <title>Cycling: La Vuelta de España: 25.08.2026 14:30.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260825180000 +0200" channel="allente_no.euron" stop="20260825190000 +0200">
+  <programme start="20260825180000 +0200" channel="allente_no.euro1" stop="20260825190000 +0200">
     <title>Tennis: US Open: 25.08.2026 18:00.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260825190000 +0200" channel="allente_no.euron" stop="20260825200000 +0200">
+  <programme start="20260825190000 +0200" channel="allente_no.euro1" stop="20260825200000 +0200">
     <title>Tennis: US Open: 25.08.2026 19:00.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260825200000 +0200" channel="allente_no.euron" stop="20260825210000 +0200">
+  <programme start="20260825200000 +0200" channel="allente_no.euro1" stop="20260825210000 +0200">
     <title>Tennis: US Open: 25.08.2026 20:00.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260825210000 +0200" channel="allente_no.euron" stop="20260825220000 +0200">
+  <programme start="20260825210000 +0200" channel="allente_no.euro1" stop="20260825220000 +0200">
     <title>Tennis: US Open: 25.08.2026 21:00.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260825220000 +0200" channel="allente_no.euron" stop="20260825225500 +0200">
+  <programme start="20260825220000 +0200" channel="allente_no.euro1" stop="20260825225500 +0200">
     <title>Tennis: US Open: 25.08.2026 22:00.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260825225500 +0200" channel="allente_no.euron" stop="20260826010000 +0200">
+  <programme start="20260825225500 +0200" channel="allente_no.euro1" stop="20260826010000 +0200">
     <title>PGA Tour: Tour Championship: 25.08.2026 22:55.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260826010000 +0200" channel="allente_no.euron" stop="20260826013000 +0200">
+  <programme start="20260826010000 +0200" channel="allente_no.euro1" stop="20260826013000 +0200">
     <title>Triathlon: T100: 26.08.2026 01:00.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260826013000 +0200" channel="allente_no.euron" stop="20260826032500 +0200">
+  <programme start="20260826013000 +0200" channel="allente_no.euro1" stop="20260826032500 +0200">
     <title>SNOOKER WUHAN OPEN ROUND 03: 26.08.2026 01:30.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260826013000 +0200" channel="allente_no.euron" stop="20260826032500 +0200">
+  <programme start="20260826013000 +0200" channel="allente_no.euro1" stop="20260826032500 +0200">
     <title>Snooker: Wuhan Open: 26.08.2026 01:30.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260826032500 +0200" channel="allente_no.euron" stop="20260826044000 +0200">
+  <programme start="20260826032500 +0200" channel="allente_no.euro1" stop="20260826044000 +0200">
     <title>Tennis: Wimbledon: 26.08.2026 03:25.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260826044000 +0200" channel="allente_no.euron" stop="20260826060000 +0200">
+  <programme start="20260826044000 +0200" channel="allente_no.euro1" stop="20260826060000 +0200">
     <title>Cycling: La Vuelta de España: 26.08.2026 04:40.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260826060000 +0200" channel="allente_no.euron" stop="20260826080000 +0200">
+  <programme start="20260826060000 +0200" channel="allente_no.euro1" stop="20260826080000 +0200">
     <title>SNOOKER WUHAN OPEN ROUND 03: 26.08.2026 06:00.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260826080000 +0200" channel="allente_no.euron" stop="20260826105500 +0200">
+  <programme start="20260826080000 +0200" channel="allente_no.euro1" stop="20260826105500 +0200">
     <title>Snooker: Wuhan Open: 26.08.2026 08:00.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260826105500 +0200" channel="allente_no.euron" stop="20260826115500 +0200">
+  <programme start="20260826105500 +0200" channel="allente_no.euro1" stop="20260826115500 +0200">
     <title>Tour de France: 26.08.2026 10:55.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260826115500 +0200" channel="allente_no.euron" stop="20260826135500 +0200">
+  <programme start="20260826115500 +0200" channel="allente_no.euro1" stop="20260826135500 +0200">
     <title>US PGA Championship: 26.08.2026 11:55.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260826135500 +0200" channel="allente_no.euron" stop="20260826144500 +0200">
+  <programme start="20260826135500 +0200" channel="allente_no.euro1" stop="20260826144500 +0200">
     <title>Cycling: La Vuelta de España</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260826144500 +0200" channel="allente_no.euron" stop="20260826174500 +0200">
+  <programme start="20260826144500 +0200" channel="allente_no.euro1" stop="20260826174500 +0200">
     <title>Cycling: La Vuelta de España: 26.08.2026 14:45.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260826174500 +0200" channel="allente_no.euron" stop="20260826184000 +0200">
+  <programme start="20260826174500 +0200" channel="allente_no.euro1" stop="20260826184000 +0200">
     <title>Tour de France: 26.08.2026 17:45.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260826184000 +0200" channel="allente_no.euron" stop="20260826194000 +0200">
+  <programme start="20260826184000 +0200" channel="allente_no.euro1" stop="20260826194000 +0200">
     <title>Boating: SailGP: 26.08.2026 18:40.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260826194000 +0200" channel="allente_no.euron" stop="20260826201000 +0200">
+  <programme start="20260826194000 +0200" channel="allente_no.euro1" stop="20260826201000 +0200">
     <title>Discovery Golf: 26.08.2026 19:40.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260826201000 +0200" channel="allente_no.euron" stop="20260826214000 +0200">
+  <programme start="20260826201000 +0200" channel="allente_no.euro1" stop="20260826214000 +0200">
     <title>Cycling: La Vuelta de España: 26.08.2026 20:10.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260826214000 +0200" channel="allente_no.euron" stop="20260826233000 +0200">
+  <programme start="20260826214000 +0200" channel="allente_no.euro1" stop="20260826233000 +0200">
     <title>Snooker: Wuhan Open: 26.08.2026 21:40.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260826233000 +0200" channel="allente_no.euron" stop="20260827002500 +0200">
+  <programme start="20260826233000 +0200" channel="allente_no.euro1" stop="20260827002500 +0200">
     <title>NFL: Hard Knocks: 26.08.2026 23:30.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260827002500 +0200" channel="allente_no.euron" stop="20260827010000 +0200">
+  <programme start="20260827002500 +0200" channel="allente_no.euro1" stop="20260827010000 +0200">
     <title>PGA: Tour Championship Special: 27.08.2026 00:25.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260827010000 +0200" channel="allente_no.euron" stop="20260827020000 +0200">
+  <programme start="20260827010000 +0200" channel="allente_no.euro1" stop="20260827020000 +0200">
     <title>Tennis: US Open: 27.08.2026 01:00.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260827020000 +0200" channel="allente_no.euron" stop="20260827025000 +0200">
+  <programme start="20260827020000 +0200" channel="allente_no.euro1" stop="20260827025000 +0200">
     <title>Tennis: US Open: 27.08.2026 02:00.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260827025000 +0200" channel="allente_no.euron" stop="20260827033000 +0200">
+  <programme start="20260827025000 +0200" channel="allente_no.euro1" stop="20260827033000 +0200">
     <title>Cycling: Cycling Show: 27.08.2026 02:50.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260827033000 +0200" channel="allente_no.euron" stop="20260827052500 +0200">
+  <programme start="20260827033000 +0200" channel="allente_no.euro1" stop="20260827052500 +0200">
     <title>Tennis: US Open: 27.08.2026 03:30.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260827052500 +0200" channel="allente_no.euron" stop="20260827060000 +0200">
+  <programme start="20260827052500 +0200" channel="allente_no.euro1" stop="20260827060000 +0200">
     <title>Mountain Biking: World Cup Opening: 27.08.2026 05:25.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260827060000 +0200" channel="allente_no.euron" stop="20260827080000 +0200">
+  <programme start="20260827060000 +0200" channel="allente_no.euro1" stop="20260827080000 +0200">
     <title>Snooker: Wuhan Open: 27.08.2026 06:00.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260827080000 +0200" channel="allente_no.euron" stop="20260827105500 +0200">
+  <programme start="20260827080000 +0200" channel="allente_no.euro1" stop="20260827105500 +0200">
     <title>Snooker: Wuhan Open: 27.08.2026 08:00.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260827105500 +0200" channel="allente_no.euron" stop="20260827125500 +0200">
+  <programme start="20260827105500 +0200" channel="allente_no.euro1" stop="20260827125500 +0200">
     <title>PGA Tour: Tour Championship: 27.08.2026 10:55.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260827125500 +0200" channel="allente_no.euron" stop="20260827144500 +0200">
+  <programme start="20260827125500 +0200" channel="allente_no.euro1" stop="20260827144500 +0200">
     <title>Cycling: La Vuelta de España</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260827144500 +0200" channel="allente_no.euron" stop="20260827174500 +0200">
+  <programme start="20260827144500 +0200" channel="allente_no.euro1" stop="20260827174500 +0200">
     <title>Cycling: La Vuelta de España: 27.08.2026 14:45.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260827174500 +0200" channel="allente_no.euron" stop="20260827182000 +0200">
+  <programme start="20260827174500 +0200" channel="allente_no.euro1" stop="20260827182000 +0200">
     <title>Mountain Biking: World Championship in Val di Sole: 27.08.2026 17:45.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260827182000 +0200" channel="allente_no.euron" stop="20260827192500 +0200">
+  <programme start="20260827182000 +0200" channel="allente_no.euro1" stop="20260827192500 +0200">
     <title>Mountain Biking: World Championship in Val di Sole: 27.08.2026 18:20.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260827192500 +0200" channel="allente_no.euron" stop="20260827210000 +0200">
+  <programme start="20260827192500 +0200" channel="allente_no.euro1" stop="20260827210000 +0200">
     <title>Tour de France: 27.08.2026 19:25.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260827210000 +0200" channel="allente_no.euron" stop="20260827220000 +0200">
+  <programme start="20260827210000 +0200" channel="allente_no.euro1" stop="20260827220000 +0200">
     <title>Cycling: La Vuelta de España</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260827220000 +0200" channel="allente_no.euron" stop="20260827223000 +0200">
+  <programme start="20260827220000 +0200" channel="allente_no.euro1" stop="20260827223000 +0200">
     <title>Esports: World Cup Show: 27.08.2026 22:00.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260827223000 +0200" channel="allente_no.euron" stop="20260828003000 +0200">
+  <programme start="20260827223000 +0200" channel="allente_no.euro1" stop="20260828003000 +0200">
     <title>Snooker: Wuhan Open: 27.08.2026 22:30.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260828003000 +0200" channel="allente_no.euron" stop="20260828015500 +0200">
+  <programme start="20260828003000 +0200" channel="allente_no.euro1" stop="20260828015500 +0200">
     <title>Tennis: US Open: 28.08.2026 00:30.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260828015500 +0200" channel="allente_no.euron" stop="20260828032500 +0200">
+  <programme start="20260828015500 +0200" channel="allente_no.euro1" stop="20260828032500 +0200">
     <title>Cycling: La Vuelta de España</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260828032500 +0200" channel="allente_no.euron" stop="20260828035000 +0200">
+  <programme start="20260828032500 +0200" channel="allente_no.euro1" stop="20260828035000 +0200">
     <title>Mountain Biking: World Cup Opening: 28.08.2026 03:25.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260828035000 +0200" channel="allente_no.euron" stop="20260828044000 +0200">
+  <programme start="20260828035000 +0200" channel="allente_no.euro1" stop="20260828044000 +0200">
     <title>BMX: European Championship: 28.08.2026 03:50.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260828044000 +0200" channel="allente_no.euron" stop="20260828053500 +0200">
+  <programme start="20260828044000 +0200" channel="allente_no.euro1" stop="20260828053500 +0200">
     <title>BMX: European Championship: 28.08.2026 04:40.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260828053500 +0200" channel="allente_no.euron" stop="20260828060000 +0200">
+  <programme start="20260828053500 +0200" channel="allente_no.euro1" stop="20260828060000 +0200">
     <title>Triathlon: T100: 28.08.2026 05:35.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260828060000 +0200" channel="allente_no.euron" stop="20260828080000 +0200">
+  <programme start="20260828060000 +0200" channel="allente_no.euro1" stop="20260828080000 +0200">
     <title>Snooker: Wuhan Open: 28.08.2026 06:00.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260828080000 +0200" channel="allente_no.euron" stop="20260828111500 +0200">
+  <programme start="20260828080000 +0200" channel="allente_no.euro1" stop="20260828111500 +0200">
     <title>Snooker: Wuhan Open: 28.08.2026 08:00.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260828111500 +0200" channel="allente_no.euron" stop="20260828122500 +0200">
+  <programme start="20260828111500 +0200" channel="allente_no.euro1" stop="20260828122500 +0200">
     <title>PGA Tour: Tour Championship: 28.08.2026 11:15.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260828122500 +0200" channel="allente_no.euron" stop="20260828133000 +0200">
+  <programme start="20260828122500 +0200" channel="allente_no.euro1" stop="20260828133000 +0200">
     <title>Cycling: La Vuelta de España: 28.08.2026 12:25.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260828133000 +0200" channel="allente_no.euron" stop="20260828173500 +0200">
+  <programme start="20260828133000 +0200" channel="allente_no.euro1" stop="20260828173500 +0200">
     <title>Cycling: La Vuelta de España: 28.08.2026 13:30.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260828173500 +0200" channel="allente_no.euron" stop="20260828183000 +0200">
+  <programme start="20260828173500 +0200" channel="allente_no.euro1" stop="20260828183000 +0200">
     <title>PGA Tour: Tour Championship: 28.08.2026 17:35.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260828183000 +0200" channel="allente_no.euron" stop="20260828190000 +0200">
+  <programme start="20260828183000 +0200" channel="allente_no.euro1" stop="20260828190000 +0200">
     <title>Mountain Biking: World Championship in Val di Sole: 28.08.2026 18:30.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260828190000 +0200" channel="allente_no.euron" stop="20260828200000 +0200">
+  <programme start="20260828190000 +0200" channel="allente_no.euro1" stop="20260828200000 +0200">
     <title>Mountain Biking: World Championship in Val di Sole: 28.08.2026 19:00.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260828200000 +0200" channel="allente_no.euron" stop="20260828213000 +0200">
+  <programme start="20260828200000 +0200" channel="allente_no.euro1" stop="20260828213000 +0200">
     <title>Cycling: La Vuelta de España: 28.08.2026 20:00.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260828213000 +0200" channel="allente_no.euron" stop="20260828232500 +0200">
+  <programme start="20260828213000 +0200" channel="allente_no.euro1" stop="20260828232500 +0200">
     <title>Snooker: Wuhan Open: 28.08.2026 21:30.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260828232500 +0200" channel="allente_no.euron" stop="20260829002500 +0200">
+  <programme start="20260828232500 +0200" channel="allente_no.euro1" stop="20260829002500 +0200">
     <title>Olympic Games: Hall Of Fame Beijing 2008</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260829002500 +0200" channel="allente_no.euron" stop="20260829005500 +0200">
+  <programme start="20260829002500 +0200" channel="allente_no.euro1" stop="20260829005500 +0200">
     <title>PGA: Tour Championship Special: 29.08.2026 00:25.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260829005500 +0200" channel="allente_no.euron" stop="20260829014500 +0200">
+  <programme start="20260829005500 +0200" channel="allente_no.euro1" stop="20260829014500 +0200">
     <title>NFL: Hard Knocks: 29.08.2026 00:55.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260829014500 +0200" channel="allente_no.euron" stop="20260829021500 +0200">
+  <programme start="20260829014500 +0200" channel="allente_no.euro1" stop="20260829021500 +0200">
     <title>Triathlon: T100: 29.08.2026 01:45.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260829021500 +0200" channel="allente_no.euron" stop="20260829033500 +0200">
+  <programme start="20260829021500 +0200" channel="allente_no.euro1" stop="20260829033500 +0200">
     <title>Cycling: La Vuelta de España: 29.08.2026 02:15.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260829033500 +0200" channel="allente_no.euron" stop="20260829060000 +0200">
+  <programme start="20260829033500 +0200" channel="allente_no.euro1" stop="20260829060000 +0200">
     <title>Equestrian: World Championship, Aachen: 29.08.2026 03:35.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260829060000 +0200" channel="allente_no.euron" stop="20260829080000 +0200">
+  <programme start="20260829060000 +0200" channel="allente_no.euro1" stop="20260829080000 +0200">
     <title>Snooker: Wuhan Open: 29.08.2026 06:00.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260829080000 +0200" channel="allente_no.euron" stop="20260829105500 +0200">
+  <programme start="20260829080000 +0200" channel="allente_no.euro1" stop="20260829105500 +0200">
     <title>Snooker: Wuhan Open: 29.08.2026 08:00.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260829105500 +0200" channel="allente_no.euron" stop="20260829121000 +0200">
+  <programme start="20260829105500 +0200" channel="allente_no.euro1" stop="20260829121000 +0200">
     <title>Tour de France: 29.08.2026 10:55.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260829121000 +0200" channel="allente_no.euron" stop="20260829131000 +0200">
+  <programme start="20260829121000 +0200" channel="allente_no.euro1" stop="20260829131000 +0200">
     <title>Cycling: La Vuelta de España: 29.08.2026 12:10.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260829131000 +0200" channel="allente_no.euron" stop="20260829150000 +0200">
+  <programme start="20260829131000 +0200" channel="allente_no.euro1" stop="20260829150000 +0200">
     <title>Mountain Biking: World Championship in Val di Sole: 29.08.2026 13:10.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260829150000 +0200" channel="allente_no.euron" stop="20260829175500 +0200">
+  <programme start="20260829150000 +0200" channel="allente_no.euro1" stop="20260829175500 +0200">
     <title>Cycling: La Vuelta de España: 29.08.2026 15:00.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260829175500 +0200" channel="allente_no.euron" stop="20260829192000 +0200">
+  <programme start="20260829175500 +0200" channel="allente_no.euro1" stop="20260829192000 +0200">
     <title>Tennis: US Open: 29.08.2026 17:55.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260829192000 +0200" channel="allente_no.euron" stop="20260829200000 +0200">
+  <programme start="20260829192000 +0200" channel="allente_no.euro1" stop="20260829200000 +0200">
     <title>PGA: Tour Championship Special: 29.08.2026 19:20.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260829200000 +0200" channel="allente_no.euron" stop="20260829204500 +0200">
+  <programme start="20260829200000 +0200" channel="allente_no.euro1" stop="20260829204500 +0200">
     <title>Equestrian: World Championship, Aachen: 29.08.2026 20:00.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260829204500 +0200" channel="allente_no.euron" stop="20260829221500 +0200">
+  <programme start="20260829204500 +0200" channel="allente_no.euro1" stop="20260829221500 +0200">
     <title>Cycling: La Vuelta de España: 29.08.2026 20:45.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260829221500 +0200" channel="allente_no.euron" stop="20260830004000 +0200">
+  <programme start="20260829221500 +0200" channel="allente_no.euro1" stop="20260830004000 +0200">
     <title>Athletics: Sydney Marathon: 29.08.2026 22:15.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260830004000 +0200" channel="allente_no.euron" stop="20260830011000 +0200">
+  <programme start="20260830004000 +0200" channel="allente_no.euro1" stop="20260830011000 +0200">
     <title>Mountain Biking: World Championship in Val di Sole: 30.08.2026 00:40.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260830011000 +0200" channel="allente_no.euron" stop="20260830023500 +0200">
+  <programme start="20260830011000 +0200" channel="allente_no.euro1" stop="20260830023500 +0200">
     <title>Cycling: La Vuelta de España: 30.08.2026 01:10.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260830023500 +0200" channel="allente_no.euron" stop="20260830034000 +0200">
+  <programme start="20260830023500 +0200" channel="allente_no.euro1" stop="20260830034000 +0200">
     <title>Olympic Games: Hall Of Fame London 2012</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260830034000 +0200" channel="allente_no.euron" stop="20260830060000 +0200">
+  <programme start="20260830034000 +0200" channel="allente_no.euro1" stop="20260830060000 +0200">
     <title>Equestrian: World Championship: 30.08.2026 03:40.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260830060000 +0200" channel="allente_no.euron" stop="20260830072500 +0200">
+  <programme start="20260830060000 +0200" channel="allente_no.euro1" stop="20260830072500 +0200">
     <title>Cycling: La Vuelta de España: 30.08.2026 06:00.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260830072500 +0200" channel="allente_no.euron" stop="20260830085500 +0200">
+  <programme start="20260830072500 +0200" channel="allente_no.euro1" stop="20260830085500 +0200">
     <title>Cycling: Bemer Cyclassics: 30.08.2026 07:25.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260830085500 +0200" channel="allente_no.euron" stop="20260830092000 +0200">
+  <programme start="20260830085500 +0200" channel="allente_no.euro1" stop="20260830092000 +0200">
     <title>PGA: Tour Championship Special: 30.08.2026 08:55.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260830092000 +0200" channel="allente_no.euron" stop="20260830102000 +0200">
+  <programme start="20260830092000 +0200" channel="allente_no.euro1" stop="20260830102000 +0200">
     <title>PGA Tour: Tour Championship: 30.08.2026 09:20.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260830102000 +0200" channel="allente_no.euron" stop="20260830120000 +0200">
+  <programme start="20260830102000 +0200" channel="allente_no.euro1" stop="20260830120000 +0200">
     <title>Cycling: La Vuelta de España: 30.08.2026 10:20.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260830120000 +0200" channel="allente_no.euron" stop="20260830180000 +0200">
+  <programme start="20260830120000 +0200" channel="allente_no.euro1" stop="20260830180000 +0200">
     <title>Cycling: La Vuelta de España: 30.08.2026 12:00.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260830180000 +0200" channel="allente_no.euron" stop="20260830200000 +0200">
+  <programme start="20260830180000 +0200" channel="allente_no.euro1" stop="20260830200000 +0200">
     <title>Tennis: US Open: 30.08.2026 18:00.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260830200000 +0200" channel="allente_no.euron" stop="20260830230000 +0200">
+  <programme start="20260830200000 +0200" channel="allente_no.euro1" stop="20260830230000 +0200">
     <title>Tennis: US Open: 30.08.2026 20:00.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>
-  <programme start="20260830230000 +0200" channel="allente_no.euron" stop="20260831004500 +0200">
+  <programme start="20260830230000 +0200" channel="allente_no.euro1" stop="20260831004500 +0200">
     <title>Tennis: US Open: 30.08.2026 23:00.</title>
     <url>https://www.allente.no/tv-guide/</url>
   </programme>

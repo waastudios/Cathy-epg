@@ -154,8 +154,8 @@
 
 | tvg-id | tvg-name |
 | --- | --- |
-| `allente_no.euron` | Eurosport 1 |
-| `allente_no.euro1` | Eurosport Norge |
+| `allente_no.euron` | Eurosport Norge |
+| `allente_no.euro1` | Eurosport 1 |
 | `allente_no.fem` | FEM |
 | `allente_no.rex` | REX |
 | `allente_no.tvn` | TV Norge |
