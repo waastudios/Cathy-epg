@@ -39,7 +39,7 @@
   "sbb_rs": {
     "status": "error",
     "records": 0,
-    "message": "SBB Eurosport 4K 标题未获得可验证的英文转换：'Formula E: Svetsko prvenstvo - Pregled: Šangaj'"
+    "message": "SBB Eurosport 4K 标题未获得可验证的英文转换：'Biciklizam: Serija PRO - Tur Nemačke (M): Pregled'"
   },
   "virgin_uk": {
     "status": "ok",
@@ -52,6 +52,6 @@
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-08-26T08:20:52Z",
+  "generated_at": "2026-08-26T08:24:59Z",
   "total_records": 15573
 }
