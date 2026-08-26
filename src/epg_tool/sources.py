@@ -1108,6 +1108,7 @@ def _translate_sbb_eurosport_4k_title(title: str) -> str:
         ("Jedrenje", "Sailing"),
         ("Konjički sport", "Equestrian"),
         ("Skakanje", "Jumping"),
+        ("Kratke staze", "Short Track"),
         ("Ahen", "Aachen"),
         ("Snuker", "Snooker"),
         ("Tenis", "Tennis"),
@@ -1149,7 +1150,7 @@ def _translate_sbb_eurosport_4k_title(title: str) -> str:
     translated = re.sub(r"\b1\s*2 finals\b", "Semi-finals", translated)
     translated = re.sub(r"\s+", " ", translated).strip(" ,")
     untranslated = re.search(
-        r"[čćđšžČĆĐŠŽ]|\b(?:Ahen|Aleksander|Biciklizam|Brdski|Dubl|Etapa|finala|Garos|Jedrenje|Koboli|Konjički|Majami|Meksiko|Mešovito|Nemačke|Pregled|pregled|Rolan|Runda|Serija|Singl|Skakanje|Snuker|Spust|Svetski|Svetsko|Šampionat|Tenis|Tokio|Trka|Triatlon|Tur|Žene|Muškarci)\b",
+        r"[čćđšžČĆĐŠŽ]|\b(?:Ahen|Aleksander|Biciklizam|Brdski|Dubl|Etapa|finala|Garos|Jedrenje|Koboli|Konjički|Kratke|Majami|Meksiko|Mešovito|Nemačke|Pregled|pregled|Rolan|Runda|Serija|Singl|Skakanje|Snuker|Spust|staze|Svetski|Svetsko|Šampionat|Tenis|Tokio|Trka|Triatlon|Tur|Žene|Muškarci)\b",
         translated,
     )
     if untranslated:
