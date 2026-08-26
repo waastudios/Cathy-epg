@@ -336,6 +336,10 @@
     <display-name>Eurosport 2</display-name>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106</url>
   </channel>
+  <channel id="eurosport.4k">
+    <display-name>Eurosport 4K</display-name>
+    <url>https://epg.sbb.rs/</url>
+  </channel>
   <channel id="now_hk.611">
     <display-name>Now Sports 4K 1</display-name>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -59249,6 +59253,270 @@
   <programme start="20260901230000 +0800" channel="now_hk.684" stop="20260902000000 +0800">
     <title>PGA巡迴賽精華2026 -高爾夫球巡迴錦標賽</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
+  </programme>
+  <programme start="20260826002500 +0200" channel="eurosport.4k" stop="20260826020000 +0200">
+    <title>Snooker - Wuhan Open: Round 3</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260826020000 +0200" channel="eurosport.4k" stop="20260826032600 +0200">
+    <title>Cycling - La Vuelta (Men): Stage 4</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260826032600 +0200" channel="eurosport.4k" stop="20260826042000 +0200">
+    <title>Formula E: World Championship - Highlights: Madrid</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260826042000 +0200" channel="eurosport.4k" stop="20260826050900 +0200">
+    <title>Formula E: World Championship - Highlights: Berlin</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260826050900 +0200" channel="eurosport.4k" stop="20260826052900 +0200">
+    <title>Snooker - Wuhan Open: Round 3</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260826052900 +0200" channel="eurosport.4k" stop="20260826070000 +0200">
+    <title>Cycling - La Vuelta (Men): Stage 4</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260826070000 +0200" channel="eurosport.4k" stop="20260826080000 +0200">
+    <title>Snooker - Wuhan Open: Round 3</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260826080000 +0200" channel="eurosport.4k" stop="20260826110000 +0200">
+    <title>Snooker - Wuhan Open: Round 4</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260826110000 +0200" channel="eurosport.4k" stop="20260826120100 +0200">
+    <title>Formula E - World Championship, Madrid</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260826120100 +0200" channel="eurosport.4k" stop="20260826130000 +0200">
+    <title>Formula E: World Championship - Berlin: Highlights</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260826130000 +0200" channel="eurosport.4k" stop="20260826135600 +0200">
+    <title>Cycling - Tour of Portugal, Highlights</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260826135600 +0200" channel="eurosport.4k" stop="20260826144100 +0200">
+    <title>Cycling - La Vuelta (Men): Stage 4</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260826144100 +0200" channel="eurosport.4k" stop="20260826180000 +0200">
+    <title>Cycling - La Vuelta (Men): Stage 5</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260826180000 +0200" channel="eurosport.4k" stop="20260826190000 +0200">
+    <title>Mountain Biking - World Cup, Haute Savoie (Men): XC Olympic, Elite</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260826190000 +0200" channel="eurosport.4k" stop="20260826200000 +0200">
+    <title>Sailing GP: Highlights</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260826200000 +0200" channel="eurosport.4k" stop="20260826220000 +0200">
+    <title>Snooker - Wuhan Open: Round 4</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260826220000 +0200" channel="eurosport.4k" stop="20260827000000 +0200">
+    <title>Cycling - La Vuelta (Men): Stage 5</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260827000000 +0200" channel="eurosport.4k" stop="20260827010000 +0200">
+    <title>Tennis - US Open: Doubles</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260827010000 +0200" channel="eurosport.4k" stop="20260827020000 +0200">
+    <title>Tennis - US Open: Doubles, Mixed, Semi-finals</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260827020000 +0200" channel="eurosport.4k" stop="20260827030000 +0200">
+    <title>Tennis - US Open: Doubles, Mixed, Semi-finals</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260827030000 +0200" channel="eurosport.4k" stop="20260827033000 +0200">
+    <title>Tennis - US Open: Doubles, Mixed, Semi-finals</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260827033000 +0200" channel="eurosport.4k" stop="20260827053000 +0200">
+    <title>Tennis - US Open: Doubles, Mixed, Final</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260827053000 +0200" channel="eurosport.4k" stop="20260827070000 +0200">
+    <title>Cycling - La Vuelta (Men): Stage 5</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260827070000 +0200" channel="eurosport.4k" stop="20260827080000 +0200">
+    <title>Snooker - Wuhan Open: Round 4</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260827080000 +0200" channel="eurosport.4k" stop="20260827110000 +0200">
+    <title>Snooker - Wuhan Open: 1/4 finals</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260827110000 +0200" channel="eurosport.4k" stop="20260827113000 +0200">
+    <title>Discovery Golf</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260827113000 +0200" channel="eurosport.4k" stop="20260827123000 +0200">
+    <title>Sailing: Sassnitz</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260827123000 +0200" channel="eurosport.4k" stop="20260827133000 +0200">
+    <title>NFL Hard Knocks</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260827133000 +0200" channel="eurosport.4k" stop="20260827144500 +0200">
+    <title>Cycling - La Vuelta (Men): Stage 5</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260827144500 +0200" channel="eurosport.4k" stop="20260827174500 +0200">
+    <title>Cycling - La Vuelta (Men): Stage 6</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260827174500 +0200" channel="eurosport.4k" stop="20260827181500 +0200">
+    <title>Mountain Biking - World Cup, Val di Sole (Women): XC Kratke staze, Elite</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260827181500 +0200" channel="eurosport.4k" stop="20260827182000 +0200">
+    <title>Magazine: Cycling Show</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260827182000 +0200" channel="eurosport.4k" stop="20260827193000 +0200">
+    <title>Mountain Biking - World Cup, Val di Sole (Men): XC Kratke staze, Elite</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260827193000 +0200" channel="eurosport.4k" stop="20260827213000 +0200">
+    <title>Tennis - US Open: Doubles, Mixed, Final</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260827213000 +0200" channel="eurosport.4k" stop="20260827220000 +0200">
+    <title>Esports World Cup Show</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260827220000 +0200" channel="eurosport.4k" stop="20260827230000 +0200">
+    <title>Cycling - La Vuelta (Men): Stage 6</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260827230000 +0200" channel="eurosport.4k" stop="20260827233000 +0200">
+    <title>Mountain Biking - World Cup, Val di Sole (Women): XC Kratke staze, Elite</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260827233000 +0200" channel="eurosport.4k" stop="20260828000000 +0200">
+    <title>Mountain Biking - World Cup, Val di Sole (Men): XC Kratke staze, Elite</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260828000000 +0200" channel="eurosport.4k" stop="20260828013000 +0200">
+    <title>Snooker - Wuhan Open: 1/4 finals</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260828013000 +0200" channel="eurosport.4k" stop="20260828030000 +0200">
+    <title>Cycling - La Vuelta (Men): Stage 6</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260828030000 +0200" channel="eurosport.4k" stop="20260828040000 +0200">
+    <title>Formula E: World Championship - Highlights: Shanghai</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260828040000 +0200" channel="eurosport.4k" stop="20260828050000 +0200">
+    <title>Formula E: World Championship - Highlights: Tokio</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260828050000 +0200" channel="eurosport.4k" stop="20260828070000 +0200">
+    <title>Cycling - La Vuelta (Men): Stage 6</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260828070000 +0200" channel="eurosport.4k" stop="20260828080000 +0200">
+    <title>Snooker - Wuhan Open: Quarter-finals</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260828080000 +0200" channel="eurosport.4k" stop="20260828113000 +0200">
+    <title>Snooker - Wuhan Open: Semi-finals</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260828113000 +0200" channel="eurosport.4k" stop="20260828120000 +0200">
+    <title>Mountain Biking - World Cup, Val di Sole (Women): XC Kratke staze, Elite, Women</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260828120000 +0200" channel="eurosport.4k" stop="20260828123000 +0200">
+    <title>Mountain Biking - World Cup, Val di Sole (Men): XC Kratke staze, Elite, Men</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260828123000 +0200" channel="eurosport.4k" stop="20260828133000 +0200">
+    <title>Cycling - La Vuelta (Men): Stage 6</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260828133000 +0200" channel="eurosport.4k" stop="20260828180000 +0200">
+    <title>Cycling - La Vuelta (Men): Stage 7</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260828180000 +0200" channel="eurosport.4k" stop="20260828190000 +0200">
+    <title>Cycling: PRO Series - Tour of Germany (Men): Highlights</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260828190000 +0200" channel="eurosport.4k" stop="20260828200000 +0200">
+    <title>Tennis - Rolan Garos: Singl, Men, Final, Flavio Koboli - Aleksander Zverev</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260828200000 +0200" channel="eurosport.4k" stop="20260828213000 +0200">
+    <title>Snooker - Wuhan Open: Semi-finals</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260828213000 +0200" channel="eurosport.4k" stop="20260828220000 +0200">
+    <title>Esports World Cup Show</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260828220000 +0200" channel="eurosport.4k" stop="20260828230000 +0200">
+    <title>Cycling - La Vuelta (Men): Stage 7</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260828230000 +0200" channel="eurosport.4k" stop="20260829000000 +0200">
+    <title>Cycling: PRO Series - Tour of Germany (Men): Highlights</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260829000000 +0200" channel="eurosport.4k" stop="20260829013000 +0200">
+    <title>Snooker - Wuhan Open: Semi-finals</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260829013000 +0200" channel="eurosport.4k" stop="20260829030000 +0200">
+    <title>Cycling - La Vuelta (Men): Stage 7</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260829030000 +0200" channel="eurosport.4k" stop="20260829040000 +0200">
+    <title>Formula E - London: Trka 1</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260829040000 +0200" channel="eurosport.4k" stop="20260829050000 +0200">
+    <title>Formula E - London: Trka 2</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260829050000 +0200" channel="eurosport.4k" stop="20260829070000 +0200">
+    <title>Cycling - La Vuelta (Men): Stage 7</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260829070000 +0200" channel="eurosport.4k" stop="20260829080000 +0200">
+    <title>Snooker - Wuhan Open: Semi-finals</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260829080000 +0200" channel="eurosport.4k" stop="20260829110000 +0200">
+    <title>Snooker - Wuhan Open: Final</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260829110000 +0200" channel="eurosport.4k" stop="20260829120000 +0200">
+    <title>Formula E: London, Highlights</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260829120000 +0200" channel="eurosport.4k" stop="20260829131000 +0200">
+    <title>Cycling - La Vuelta (Men): Stage 7</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260829131000 +0200" channel="eurosport.4k" stop="20260829150000 +0200">
+    <title>Mountain Biking - World Cup, Val di Sole (Women): Downhill, Elite, Women</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260829150000 +0200" channel="eurosport.4k" stop="20260829180000 +0200">
+    <title>Cycling - La Vuelta (Men): Stage 8</title>
+    <url>https://epg.sbb.rs/</url>
   </programme>
   <programme start="20260825002500 +0200" channel="sky_de.201" stop="20260825020000 +0200">
     <title>Live ATP 250: Winston-Salem Open in Winston-Salem, North Carolina (USA), Day 2</title>
