@@ -1122,8 +1122,14 @@ def _translate_sbb_eurosport_4k_title(title: str) -> str:
         ("Meksiko Siti", "Mexico City"),
         ("Majami", "Miami"),
         ("Šangaj", "Shanghai"),
+        ("Tokio", "Tokyo"),
         ("Džeda", "Jeddah"),
+        ("Rolan Garos", "Roland Garros"),
+        ("Koboli", "Cobolli"),
+        ("Aleksander", "Alexander"),
         ("Etapa", "Stage"),
+        ("Trka", "Race"),
+        ("Singl", "Singles"),
         ("Pregled", "Highlights"),
         ("pregled", "Highlights"),
         ("Runda", "Round"),
@@ -1143,7 +1149,7 @@ def _translate_sbb_eurosport_4k_title(title: str) -> str:
     translated = re.sub(r"\b1\s*2 finals\b", "Semi-finals", translated)
     translated = re.sub(r"\s+", " ", translated).strip(" ,")
     untranslated = re.search(
-        r"[čćđšžČĆĐŠŽ]|\b(?:Ahen|Biciklizam|Brdski|Dubl|Etapa|finala|Jedrenje|Konjički|Majami|Meksiko|Mešovito|Nemačke|Pregled|pregled|Runda|Serija|Skakanje|Snuker|Spust|Svetski|Svetsko|Šampionat|Tenis|Triatlon|Tur|Žene|Muškarci)\b",
+        r"[čćđšžČĆĐŠŽ]|\b(?:Ahen|Aleksander|Biciklizam|Brdski|Dubl|Etapa|finala|Garos|Jedrenje|Koboli|Konjički|Majami|Meksiko|Mešovito|Nemačke|Pregled|pregled|Rolan|Runda|Serija|Singl|Skakanje|Snuker|Spust|Svetski|Svetsko|Šampionat|Tenis|Tokio|Trka|Triatlon|Tur|Žene|Muškarci)\b",
         translated,
     )
     if untranslated:
