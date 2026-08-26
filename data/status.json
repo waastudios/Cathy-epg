@@ -18,7 +18,7 @@
   },
   "ee_uk": {
     "status": "ok",
-    "records": 6622
+    "records": 6625
   },
   "sky_de": {
     "status": "stale",
@@ -39,7 +39,7 @@
   "sbb_rs": {
     "status": "error",
     "records": 0,
-    "message": "SBB Eurosport 4K 标题未获得可验证的英文转换：'Esport Svetski Kup Show'"
+    "message": "SBB Eurosport 4K 标题未获得可验证的英文转换：'Formula E: Svetsko prvenstvo - Pregled: Šangaj'"
   },
   "virgin_uk": {
     "status": "ok",
@@ -48,10 +48,10 @@
   "xmltv": {
     "status": "ok",
     "channels": 152,
-    "programmes": 15570,
+    "programmes": 15573,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-08-26T08:07:12Z",
-  "total_records": 15570
+  "generated_at": "2026-08-26T08:20:52Z",
+  "total_records": 15573
 }

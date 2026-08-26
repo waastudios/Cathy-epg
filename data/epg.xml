@@ -24029,6 +24029,14 @@
     <title>New: Teleshopping 2026</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
+  <programme start="20260901070000 +0100" channel="ee_uk.347" stop="20260901073000 +0100">
+    <title>Teleshopping 2026</title>
+    <url>https://player.ee.co.uk/#/livetv/schedule</url>
+  </programme>
+  <programme start="20260901073000 +0100" channel="ee_uk.347" stop="20260901080000 +0100">
+    <title>Teleshopping 2026</title>
+    <url>https://player.ee.co.uk/#/livetv/schedule</url>
+  </programme>
   <programme start="20260901080000 +0100" channel="ee_uk.347" stop="20260901082500 +0100">
     <title>Will &amp; Grace</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
@@ -40169,6 +40177,10 @@
     <title>This is TNT Sports 6</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
+  <programme start="20260831083000 +0100" channel="ee_uk.451" stop="20260831203000 +0100">
+    <title>This is TNT Sports 6</title>
+    <url>https://player.ee.co.uk/#/livetv/schedule</url>
+  </programme>
   <programme start="20260831203000 +0100" channel="ee_uk.451" stop="20260901083000 +0100">
     <title>This is TNT Sports 6</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
@@ -51879,7 +51891,7 @@
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260827120000 +0800" channel="now_hk.639" stop="20260827130000 +0800">
-    <title>GT電競賽車世界系列賽精華2026 -日本站</title>
+    <title>UCI公路單車巡迴賽精華2026 -挪威站</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260827130000 +0800" channel="now_hk.639" stop="20260827133000 +0800">
@@ -64975,11 +64987,11 @@
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106</url>
   </programme>
   <programme start="20260826173000 +0300" channel="eurosport.2" stop="20260826181500 +0300">
-    <title>Amerika Open</title>
+    <title>US Open</title>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106</url>
   </programme>
   <programme start="20260826181500 +0300" channel="eurosport.2" stop="20260826190000 +0300">
-    <title>Amerika Open</title>
+    <title>US Open</title>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106</url>
   </programme>
   <programme start="20260826190000 +0300" channel="eurosport.2" stop="20260826200000 +0300">
@@ -64987,7 +64999,7 @@
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106</url>
   </programme>
   <programme start="20260826200000 +0300" channel="eurosport.2" stop="20260826210000 +0300">
-    <title>2026 Portekiz Bisiklet Roundu</title>
+    <title>2026 Tour of Portugal</title>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106</url>
   </programme>
   <programme start="20260826210000 +0300" channel="eurosport.2" stop="20260826230000 +0300">
@@ -65043,7 +65055,7 @@
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77</url>
   </programme>
   <programme start="20260826140000 +0300" channel="eurosport.1" stop="20260826150000 +0300">
-    <title>2026 Portekiz Bisiklet Roundu</title>
+    <title>2026 Tour of Portugal</title>
     <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77</url>
   </programme>
   <programme start="20260826150000 +0300" channel="eurosport.1" stop="20260826154500 +0300">
