@@ -59,7 +59,7 @@ EE 范围包含 **Sky Mix、Sky Arts、Sky Witness、Sky Atlantic、Sky One、Sk
 
 ## 自动刷新与校验
 
-`.github/workflows/refresh-epg.yml` 中的 GitHub Actions 工作流每天在 **19:00 UTC** 运行，即北京时间（UTC+8）**次日 03:00**。工作流运行 `epg collect --days 7`，写入节目快照和 XMLTV 文件，并且只在结果变化时提交。若官网暂时无法访问，`data/status.json` 会记录来源失败，绝不使用第三方数据替代。
+`.github/workflows/refresh-epg.yml` 中的 GitHub Actions 工作流每天在 **19:00 UTC** 运行，即北京时间（UTC+8）**次日 03:00**。工作流运行 `epg collect --days 7`，写入节目快照和 XMLTV 文件，重新生成 [Eurosport 三天节目单](EUROSPORT-3DAY.md)，并且只在结果变化时提交。若官网暂时无法访问，`data/status.json` 会记录来源失败，绝不使用第三方数据替代。
 
 当前发布只有在以下条件同时满足时才视为有效：`data/epg.xml.gz` 解压后与 `data/epg.xml` 完全一致；所有 XMLTV 频道显示名为官方频道名；Astro 与 now TV 频道都属于明确体育白名单；被禁止的美国服务商 ID 不存在。
 

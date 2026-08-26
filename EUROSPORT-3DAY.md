@@ -1,6 +1,6 @@
 # Eurosport three-day programme guide
 
-This guide is generated directly from the current published `data/epg.xml`. Times are China Standard Time (UTC+8); programme titles are the published English XMLTV titles.
+This guide is generated automatically each day from the current published `data/epg.xml`. Times are China Standard Time (UTC+8); programme titles are the published English XMLTV titles.
 
 Coverage dates: **2026-08-26**, **2026-08-27**, **2026-08-28**.
 

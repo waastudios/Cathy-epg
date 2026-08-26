@@ -34,11 +34,14 @@ jobs:
       - name: Collect official programme guides
         run: epg collect --days 7
 
+      - name: Generate Eurosport three-day guide
+        run: python scripts/generate_eurosport_three_day.py
+
       - name: Publish refreshed snapshot when it changes
         run: |
           git config user.name "Cathy-epg refresh bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/current_week.jsonl data/epg.xml data/epg.xml.gz data/status.json
+          git add data/current_week.jsonl data/epg.xml data/epg.xml.gz data/status.json EUROSPORT-3DAY.md
           if git diff --cached --quiet; then
             echo "No programme-guide changes to publish."
             exit 0
