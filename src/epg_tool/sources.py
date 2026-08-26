@@ -877,9 +877,10 @@ def _translate_digi4k_title(title: str) -> str:
 def collect_digi4k(days: int = 7) -> list[Programme]:
     """解析 Digi 4K 罗马尼亚官网首页公开发布的一周节目表。
 
-    每个官方节目标题在写入 XMLTV 前都会执行确定性英文转换与罗马尼亚语残留
-    检查。官网逐日展示开始时间而不总是发布最后一档的结束时间；最后一档的
-    XMLTV `stop` 将被省略，而不是根据猜测补写。
+    官网按页面顺序给出节目，午夜后的首档仍位于前一日期容器的末尾。采集器
+    因此保留 DOM 顺序而不按时钟排序，遇到时间回绕时推进日历日期。每一条
+    XMLTV 节目均必须从官网的下一条节目获得明确结束时间；不能建立该边界的
+    节目不会发布，避免部分 XMLTV 客户端直接隐藏无 ``stop`` 的条目。
     """
     session = _session()
     response = session.get(DIGI4K_GUIDE, timeout=30)
@@ -892,45 +893,73 @@ def collect_digi4k(days: int = 7) -> list[Programme]:
     zone = ZoneInfo("Europe/Bucharest")
     today = datetime.now(zone).date()
     retrieved_at = utc_now_iso()
-    records: list[Programme] = []
+    window_start = datetime.combine(today, clock_time.min, tzinfo=zone)
+    window_end = window_start + timedelta(days=days)
+    entries: list[tuple[datetime, str]] = []
+
     for day_offset, day_node in enumerate(day_nodes[:days]):
-        raw_items: list[tuple[clock_time, str]] = []
+        schedule_day = today + timedelta(days=day_offset)
+        effective_day = schedule_day
+        previous_time: clock_time | None = None
+        day_entries = 0
         for mark in day_node.select("mark.schedule-days-item-hour"):
             start_time = _digi4k_time(mark.get_text(" ", strip=True))
             row = mark.find_parent("div", class_=lambda classes: classes and "flex" in classes)
             title_node = row.select_one("h3") if row else None
             source_title = title_node.get_text(" ", strip=True) if title_node else ""
-            if start_time and source_title:
-                raw_items.append((start_time, _translate_digi4k_title(source_title)))
-        if not raw_items:
-            continue
-        schedule_day = today + timedelta(days=day_offset)
-        raw_items.sort(key=lambda item: item[0])
-        for index, (start_time, title) in enumerate(raw_items):
-            start = datetime.combine(schedule_day, start_time, tzinfo=zone)
-            end_at: str | None = None
-            if index + 1 < len(raw_items):
-                next_time = raw_items[index + 1][0]
-                next_day = schedule_day + timedelta(days=1) if next_time <= start_time else schedule_day
-                end_at = datetime.combine(next_day, next_time, tzinfo=zone).isoformat()
-            records.append(
-                Programme(
-                    provider="digi4k_ro",
-                    country="RO",
-                    timezone="Europe/Bucharest",
-                    channel_id="digi4k_ro",
-                    # 用户指定 XMLTV ID 为 `digi4k_ro`；单频道来源不附加旧的 `digi-4k` 后缀。
-                    channel_number="",
-                    channel_name="Digi 4K",
-                    title=title,
-                    start_at=start.isoformat(),
-                    end_at=end_at,
-                    source_url=DIGI4K_GUIDE,
-                    retrieved_at=retrieved_at,
+            if not (start_time and source_title):
+                continue
+            # The official schedule inserts the post-midnight programme after the
+            # evening items in the same date container. A clock reset is the only
+            # authoritative signal required to advance to the following calendar day.
+            if previous_time is not None and start_time <= previous_time:
+                effective_day += timedelta(days=1)
+            entries.append(
+                (
+                    datetime.combine(effective_day, start_time, tzinfo=zone),
+                    _translate_digi4k_title(source_title),
                 )
             )
+            previous_time = start_time
+            day_entries += 1
+        if not day_entries:
+            raise SourceUnavailable(f"Digi 4K 官网日期容器 {schedule_day.isoformat()} 未返回可发布节目。")
+
+    entries.sort(key=lambda item: item[0])
+    if len(entries) < 2:
+        raise SourceUnavailable("Digi 4K 官网未返回足够节目以建立明确的结束时间。")
+
+    records: list[Programme] = []
+    for index, (start, title) in enumerate(entries):
+        if not (window_start <= start < window_end):
+            continue
+        if index + 1 >= len(entries):
+            # The displayed official horizon ends here. Do not manufacture an
+            # end time or publish a record that XMLTV clients may hide.
+            continue
+        end, _ = entries[index + 1]
+        if end <= start:
+            raise SourceUnavailable(
+                f"Digi 4K 官网节目顺序无法建立正向结束时间：{start.isoformat()} -> {end.isoformat()}。"
+            )
+        records.append(
+            Programme(
+                provider="digi4k_ro",
+                country="RO",
+                timezone="Europe/Bucharest",
+                channel_id="digi4k_ro",
+                # 用户指定 XMLTV ID 为 `digi4k_ro`；单频道来源不附加旧的 `digi-4k` 后缀。
+                channel_number="",
+                channel_name="Digi 4K",
+                title=title,
+                start_at=start.isoformat(),
+                end_at=end.isoformat(),
+                source_url=DIGI4K_GUIDE,
+                retrieved_at=retrieved_at,
+            )
+        )
     if not records:
-        raise SourceUnavailable("Digi 4K 官网节目容器未返回可识别的时间和节目标题。")
+        raise SourceUnavailable("Digi 4K 官网未返回目标日期范围内具有完整起止时间的节目。")
     return _deduplicate(records)
 
 

@@ -13200,7 +13200,7 @@
     <title>Sabah vs Hapoel</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260825220000 +0300" channel="digi4k_ro">
+  <programme start="20260825220000 +0300" channel="digi4k_ro" stop="20260826000500 +0300">
     <title>Lask Linz vs Celtic</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
@@ -13264,7 +13264,7 @@
     <title>A Planet of Oddities — Episode 2</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260826220000 +0300" channel="digi4k_ro">
+  <programme start="20260826220000 +0300" channel="digi4k_ro" stop="20260827000500 +0300">
     <title>Real Madrid vs Real Sociedad</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
@@ -13336,7 +13336,7 @@
     <title>A Planet of Oddities — Episode 4</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260827220000 +0300" channel="digi4k_ro">
+  <programme start="20260827220000 +0300" channel="digi4k_ro" stop="20260828003500 +0300">
     <title>Barcelona vs Athletic</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
@@ -13400,7 +13400,7 @@
     <title>Backyard Ballistics — Episode 5</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260828223000 +0300" channel="digi4k_ro">
+  <programme start="20260828223000 +0300" channel="digi4k_ro" stop="20260829003500 +0300">
     <title>Alavés vs Villarreal</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
@@ -13460,7 +13460,7 @@
     <title>Backyard Ballistics — Episode 2</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260829223000 +0300" channel="digi4k_ro">
+  <programme start="20260829223000 +0300" channel="digi4k_ro" stop="20260830003500 +0300">
     <title>Sevilla vs Atletico</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
@@ -13520,7 +13520,7 @@
     <title>Deportivo vs Valencia</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
-  <programme start="20260830223000 +0300" channel="digi4k_ro">
+  <programme start="20260830223000 +0300" channel="digi4k_ro" stop="20260831003500 +0300">
     <title>Celta vs Athletic</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
@@ -13586,10 +13586,6 @@
   </programme>
   <programme start="20260831203000 +0300" channel="digi4k_ro" stop="20260831223000 +0300">
     <title>Osasuna vs Getafe</title>
-    <url>https://www.digi4k.ro/</url>
-  </programme>
-  <programme start="20260831223000 +0300" channel="digi4k_ro">
-    <title>Barcelona vs Rayo</title>
     <url>https://www.digi4k.ro/</url>
   </programme>
   <programme start="20260825224000 +0100" channel="ee_uk.1" stop="20260826001000 +0100">

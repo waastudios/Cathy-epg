@@ -28,9 +28,14 @@
   },
   "digi4k_ro": {
     "status": "stale",
-    "records": 114,
+    "records": 113,
     "message": "Digi 4K 标题未获得可验证的英文转换：'Călătoriile lui Darley | ep. 1'",
-    "fallback": "previous_snapshot"
+    "fallback": "previous_snapshot",
+    "integrity_repair": {
+      "filled_stop_times": 6,
+      "dropped_horizon_edge_records": 1,
+      "rule": "only publish programmes with an official next-programme boundary"
+    }
   },
   "tvplus_tr": {
     "status": "ok",
@@ -47,10 +52,10 @@
   "xmltv": {
     "status": "ok",
     "channels": 153,
-    "programmes": 15631,
+    "programmes": 15630,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
   "generated_at": "2026-08-26T08:37:27Z",
-  "total_records": 15631
+  "total_records": 15630
 }
