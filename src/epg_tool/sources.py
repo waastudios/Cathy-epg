@@ -1119,6 +1119,7 @@ def _translate_sbb_eurosport_4k_title(title: str) -> str:
         ("Tur Beneluksa", "Benelux Tour"),
         ("Meksiko Siti", "Mexico City"),
         ("Majami", "Miami"),
+        ("Šangaj", "Shanghai"),
         ("Džeda", "Jeddah"),
         ("Etapa", "Stage"),
         ("Pregled", "Highlights"),
