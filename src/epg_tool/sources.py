@@ -1117,6 +1117,8 @@ def _translate_sbb_eurosport_4k_title(title: str) -> str:
         ("Svetski kup", "World Cup"),
         ("Tur Portugala", "Tour of Portugal"),
         ("Tur Beneluksa", "Benelux Tour"),
+        ("Tur Nemačke", "Tour of Germany"),
+        ("Serija PRO", "PRO Series"),
         ("Meksiko Siti", "Mexico City"),
         ("Majami", "Miami"),
         ("Šangaj", "Shanghai"),
@@ -1141,7 +1143,7 @@ def _translate_sbb_eurosport_4k_title(title: str) -> str:
     translated = re.sub(r"\b1\s*2 finals\b", "Semi-finals", translated)
     translated = re.sub(r"\s+", " ", translated).strip(" ,")
     untranslated = re.search(
-        r"[čćđšžČĆĐŠŽ]|\b(?:Ahen|Biciklizam|Brdski|Dubl|Etapa|finala|Jedrenje|Konjički|Majami|Meksiko|Mešovito|Pregled|pregled|Runda|Skakanje|Snuker|Spust|Svetski|Svetsko|Šampionat|Tenis|Triatlon|Tur|Žene|Muškarci)\b",
+        r"[čćđšžČĆĐŠŽ]|\b(?:Ahen|Biciklizam|Brdski|Dubl|Etapa|finala|Jedrenje|Konjički|Majami|Meksiko|Mešovito|Nemačke|Pregled|pregled|Runda|Serija|Skakanje|Snuker|Spust|Svetski|Svetsko|Šampionat|Tenis|Triatlon|Tur|Žene|Muškarci)\b",
         translated,
     )
     if untranslated:
