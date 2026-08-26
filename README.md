@@ -73,6 +73,17 @@ epg collect --days 7
 epg search "Premier League" --provider now_hk --channel 611
 ```
 
+### Three-day programme preview
+
+The published snapshot retains up to seven days of official scheduling data. The `preview` command presents **today, tomorrow, and the day after tomorrow** in China Standard Time by default; use `--day` to show one of those three days and the standard provider/channel filters to narrow the result.
+
+```bash
+epg preview
+epg preview --day tomorrow --provider allente_se --channel 50048
+```
+
+For TV+ Türkiye Eurosport schedules, a trailing `(T)` or `（T）` marker identifies a Turkish-language source title. The marker is removed before the existing strict title-conversion rules run; the published result must be English, or the source fails instead of publishing an unverified untranslated title.
+
 ## References
 
 [1]: https://ee.co.uk/help/tv-sport/ee-tv-channel-guide "EE TV Channel Guide"

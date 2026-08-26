@@ -73,6 +73,17 @@ epg collect --days 7
 epg search "Premier League" --provider now_hk --channel 611
 ```
 
+### 三天节目预告
+
+已发布快照保留最多七天的官方节目数据。`preview` 命令默认以北京时间输出**今天、明天和后天**的节目；使用 `--day` 可只查看其中一天，并可配合常规服务商／频道筛选缩小结果。
+
+```bash
+epg preview
+epg preview --day tomorrow --provider allente_se --channel 50048
+```
+
+对于土耳其 TV+ Eurosport 节目表，标题末尾的 `(T)` 或 `（T）` 用于标示土耳其语原文。采集器会先移除此标记，再执行已有的严格英文转换规则；结果必须为英文，否则该来源会失败，绝不会发布未经核验的未翻译标题。
+
 ## 参考资料
 
 [1]: https://ee.co.uk/help/tv-sport/ee-tv-channel-guide "EE TV Channel Guide"

@@ -976,6 +976,9 @@ def _translate_tvplus_eurosport_title(title: str) -> str:
     """
     normalised = re.sub(r"\s*,\s*", ", ", title.strip())
     normalised = re.sub(r"\s+", " ", normalised)
+    # TV+ 节目列表偶尔以 `(T)`／`（T）` 标示土耳其语原文；该标记不是标题本体。
+    # 移除后，标题仍须通过下方严格英文转换和残余土耳其语检查。
+    normalised = re.sub(r"\s*[（(]T[）)]\s*$", "", normalised, flags=re.IGNORECASE)
     if not normalised:
         raise SourceUnavailable("TV+ Eurosport 官方节目对象缺少可翻译的标题。")
     if normalised in _TVPLUS_EUROSPORT_TITLE_EXACT:

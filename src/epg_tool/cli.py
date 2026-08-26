@@ -4,7 +4,8 @@ from __future__ import annotations
 
 import argparse
 from dataclasses import replace
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
+from zoneinfo import ZoneInfo
 from pathlib import Path
 import json
 import sys
@@ -153,6 +154,50 @@ def _search(args: argparse.Namespace) -> int:
     return 0
 
 
+def _preview(args: argparse.Namespace) -> int:
+    """按北京时间输出今天、明天和后天的已发布节目预告。"""
+    zone = ZoneInfo("Asia/Shanghai")
+    today = datetime.now(zone).date()
+    day_offsets = {
+        "today": 0,
+        "tomorrow": 1,
+        "day-after-tomorrow": 2,
+    }
+    offsets = (day_offsets[args.day],) if args.day else (0, 1, 2)
+    target_dates = {today + timedelta(days=offset) for offset in offsets}
+    rows = read_jsonl(args.input)
+    results: list[tuple[datetime, dict[str, str]]] = []
+    for row in rows:
+        if args.provider and row.get("provider") != args.provider:
+            continue
+        if args.channel and row.get("channel_number") != args.channel:
+            continue
+        try:
+            start = datetime.fromisoformat(row["start_at"]).astimezone(zone)
+            stop = datetime.fromisoformat(row["end_at"]).astimezone(zone) if row.get("end_at") else None
+        except (KeyError, TypeError, ValueError):
+            continue
+        if start.date() not in target_dates:
+            continue
+        row["_preview_stop"] = stop.isoformat() if stop else ""
+        results.append((start, row))
+    for start, row in sorted(results, key=lambda item: (item[0], item[1].get("provider", ""), item[1].get("channel_number", ""))):
+        stop = datetime.fromisoformat(row["_preview_stop"]).astimezone(zone) if row["_preview_stop"] else None
+        print(
+            "\t".join(
+                [
+                    start.strftime("%Y-%m-%d %H:%M"),
+                    stop.strftime("%H:%M") if stop else "",
+                    row.get("provider", ""),
+                    f"{row.get('channel_number', '')} {row.get('channel_name', '')}".strip(),
+                    row.get("title", ""),
+                ]
+            )
+        )
+    print(f"{len(results)} preview programme(s)", file=sys.stderr)
+    return 0
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="Official-source-only weekly EPG collector and search tool")
     commands = parser.add_subparsers(dest="command", required=True)
@@ -172,6 +217,13 @@ def build_parser() -> argparse.ArgumentParser:
     search.add_argument("--channel")
     search.add_argument("--date", help="节目开始日期，格式 YYYY-MM-DD")
     search.set_defaults(func=_search)
+
+    preview = commands.add_parser("preview", help="查看今天、明天、后天的节目预告（北京时间）")
+    preview.add_argument("--input", type=Path, default=DEFAULT_DATASET)
+    preview.add_argument("--day", choices=["today", "tomorrow", "day-after-tomorrow"], help="只查看其中一天；省略时输出三天")
+    preview.add_argument("--provider", choices=["astro", "now_hk", "allente_se", "allente_no", "ee_uk", "sky_de", "digi4k_ro", "tvplus_tr", "sbb_rs", "virgin_uk"])
+    preview.add_argument("--channel")
+    preview.set_defaults(func=_preview)
     return parser
 
 
