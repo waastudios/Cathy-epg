@@ -59,7 +59,7 @@ The United States scope is intentionally restricted to potential future coverage
 
 ## Refresh and validation
 
-The GitHub Actions workflow in `.github/workflows/refresh-epg.yml` runs daily at **19:00 UTC**, which is **03:00 China Standard Time (UTC+8) on the following calendar day**. It runs `epg collect --days 7`, writes the snapshot and XMLTV files, regenerates [the Eurosport three-day guide](EUROSPORT-3DAY.md), and commits only when the results change. If an official source is temporarily unavailable, the workflow records that failure in `data/status.json` rather than substituting third-party data.
+The GitHub Actions workflow in `.github/workflows/refresh-epg.yml` runs daily at **19:00 UTC**, which is **03:00 China Standard Time (UTC+8) on the following calendar day**. It runs `epg collect --days 7` across **every configured official channel source**, writes the complete snapshot and XMLTV files (`data/epg.xml` and `data/epg.xml.gz`), regenerates [the Eurosport three-day guide](EUROSPORT-3DAY.md), and commits only when the results change. If an official source is temporarily unavailable, the workflow records that failure in `data/status.json` rather than substituting third-party data.
 
 A current release is considered valid only when `data/epg.xml.gz` decompresses exactly to `data/epg.xml`, all XMLTV channel display names are official names, the Astro and now TV channel IDs are within their explicit sports allow-lists, and prohibited US provider IDs are absent.
 
