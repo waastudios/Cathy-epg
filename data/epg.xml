@@ -48778,10 +48778,6 @@
     <title>吳宜澤奪冠之路 第1集</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260826160000 +0800" channel="now_hk.634" stop="20260826163000 +0800">
-    <title>WTA 2026 決賽精華 -馬德里網球公開賽</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260826163000 +0800" channel="now_hk.634" stop="20260826190000 +0800">
     <title>WTA 26 蒙特雷網球公開賽 第3集</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -49906,10 +49902,6 @@
     <title>WBWC '26 Gr. Rockford 第14集 -Canada v Australia</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260826160000 +0800" channel="now_hk.636" stop="20260826161500 +0800">
-    <title>一CUE過百 第158集</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260826161500 +0800" channel="now_hk.636" stop="20260826181500 +0800">
     <title>2026美國網球公開賽每日精選 -混雙第1-2圈(B)</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -50544,14 +50536,6 @@
   </programme>
   <programme start="20260901233000 +0800" channel="now_hk.636" stop="20260902043000 +0800">
     <title>2026美國網球公開賽 (A. Ashe) -第3天第1圈(A)[直播]</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260826160000 +0800" channel="now_hk.637" stop="20260826161500 +0800">
-    <title>一CUE過百 第162集</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260826161500 +0800" channel="now_hk.637" stop="20260826163000 +0800">
-    <title>一CUE過百 第158集</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260826163000 +0800" channel="now_hk.637" stop="20260826190000 +0800">
@@ -51336,10 +51320,6 @@
   </programme>
   <programme start="20260901213000 +0800" channel="now_hk.637" stop="20260902000000 +0800">
     <title>中國桌球公開賽 2026 -準決賽(2) - 沙比 對 冰咸</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260826143000 +0800" channel="now_hk.638" stop="20260826163000 +0800">
-    <title>2026/27 意大利甲組足球聯賽 第7集 -阿特蘭大 對 沙素路</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260826163000 +0800" channel="now_hk.638" stop="20260826183000 +0800">
@@ -55774,14 +55754,6 @@
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260826152000 +0800" channel="now_hk.668" stop="20260826160500 +0800">
-    <title>賽事重溫 第78集</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260826160500 +0800" channel="now_hk.668" stop="20260826161000 +0800">
-    <title>帶你遊馬房 -游達榮</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260826161000 +0800" channel="now_hk.668" stop="20260826165500 +0800">
     <title>賽事重溫 第76集</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -57400,10 +57372,6 @@
   </programme>
   <programme start="20260901210500 +0800" channel="now_hk.674" stop="20260902011500 +0800">
     <title>ETPL 2026 -LIVE: M9: ETPL 2026[直播]</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260826142000 +0800" channel="now_hk.679" stop="20260826161000 +0800">
-    <title>Rugby's Greatest Rivalry -Lions v New Zealand</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260826161000 +0800" channel="now_hk.679" stop="20260826180000 +0800">
@@ -59419,7 +59387,7 @@
     <url>https://epg.sbb.rs/</url>
   </programme>
   <programme start="20260828040000 +0200" channel="eurosport.4k" stop="20260828050000 +0200">
-    <title>Formula E: World Championship - Highlights: Tokio</title>
+    <title>Formula E: World Championship - Highlights: Tokyo</title>
     <url>https://epg.sbb.rs/</url>
   </programme>
   <programme start="20260828050000 +0200" channel="eurosport.4k" stop="20260828070000 +0200">
@@ -59455,7 +59423,7 @@
     <url>https://epg.sbb.rs/</url>
   </programme>
   <programme start="20260828190000 +0200" channel="eurosport.4k" stop="20260828200000 +0200">
-    <title>Tennis - Rolan Garos: Singl, Men, Final, Flavio Koboli - Aleksander Zverev</title>
+    <title>Tennis - Roland Garros: Singles, Men, Final, Flavio Cobolli - Alexander Zverev</title>
     <url>https://epg.sbb.rs/</url>
   </programme>
   <programme start="20260828200000 +0200" channel="eurosport.4k" stop="20260828213000 +0200">
@@ -59483,11 +59451,11 @@
     <url>https://epg.sbb.rs/</url>
   </programme>
   <programme start="20260829030000 +0200" channel="eurosport.4k" stop="20260829040000 +0200">
-    <title>Formula E - London: Trka 1</title>
+    <title>Formula E - London: Race 1</title>
     <url>https://epg.sbb.rs/</url>
   </programme>
   <programme start="20260829040000 +0200" channel="eurosport.4k" stop="20260829050000 +0200">
-    <title>Formula E - London: Trka 2</title>
+    <title>Formula E - London: Race 2</title>
     <url>https://epg.sbb.rs/</url>
   </programme>
   <programme start="20260829050000 +0200" channel="eurosport.4k" stop="20260829070000 +0200">
