@@ -964,6 +964,8 @@ _TVPLUS_EUROSPORT_TITLE_EXACT: dict[str, str] = {
     "Dünya Formula E Şampiyonası": "Formula E World Championship",
     "Dünya Binicilik Şampiyonası": "Equestrian World Championship",
     "UCI Dağ Bisikleti Dünya Serisi": "UCI Mountain Bike World Series",
+    "2026 Portekiz Bisiklet Turu": "2026 Tour of Portugal",
+    "Amerika Açık": "US Open",
 }
 
 
@@ -1018,7 +1020,7 @@ def _translate_tvplus_eurosport_title(title: str) -> str:
     # 不能保证语义准确的残余土耳其语不能静默进入 XMLTV；让来源在状态中明确失败，
     # 而不是发布用户无法使用的原文标题。已覆盖赛事会通过此门槛。
     untranslated = re.search(
-        r"[çğıöşüÇĞİÖŞÜ]|\\b(?:Açık|Avrupa|Binicilik|Bisikleti|Bölüm|Canlı|Dağ|Dünya|Erkekler|Etap|Kadınlar|Sezon|Serisi|Şampiyonası|Tekrar|Tırmanış|Tur|Yarı|Özet)\\b",
+        r"[çğıöşüÇĞİÖŞÜ]|\\b(?:Açık|Amerika|Avrupa|Binicilik|Bisiklet|Bisikleti|Bölüm|Canlı|Dağ|Dünya|Erkekler|Etap|Kadınlar|Portekiz|Sezon|Serisi|Şampiyonası|Tekrar|Tırmanış|Tur|Turu|Yarı|Özet)\\b",
         translated,
     )
     if untranslated:
@@ -1082,6 +1084,7 @@ _SBB_EUROSPORT_4K_TITLE_EXACT: dict[str, str] = {
     "Magazin: Cycling Show": "Magazine: Cycling Show",
     "NFL Hard Knocks": "NFL Hard Knocks",
     "UEC BMX Racing European Championship - Pregled": "UEC BMX Racing European Championship - Highlights",
+    "Esport Svetski Kup Show": "Esports World Cup Show",
 }
 
 
