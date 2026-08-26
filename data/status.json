@@ -1,15 +1,15 @@
 {
   "astro": {
     "status": "ok",
-    "records": 2374
+    "records": 2367
   },
   "now_hk": {
     "status": "ok",
-    "records": 4483
+    "records": 4159
   },
   "allente_se": {
     "status": "ok",
-    "records": 783
+    "records": 764
   },
   "allente_no": {
     "status": "error",
@@ -18,21 +18,23 @@
   },
   "ee_uk": {
     "status": "ok",
-    "records": 6623
+    "records": 6622
   },
   "sky_de": {
     "status": "stale",
     "records": 1421,
-    "message": "MagentaTV Sky Germany 标题不在已审校的英文映射或受控词汇范围内：'PL'",
+    "message": "MagentaTV Sky Germany 标题不在已审校的英文映射或受控词汇范围内：'PL: My Season: Cristiano Ronaldo (2007/2008)'",
     "fallback": "previous_snapshot"
   },
   "digi4k_ro": {
-    "status": "ok",
-    "records": 114
+    "status": "stale",
+    "records": 114,
+    "message": "Digi 4K 标题未获得可验证的英文转换：'Călătoriile lui Darley | ep. 1'",
+    "fallback": "previous_snapshot"
   },
   "tvplus_tr": {
     "status": "ok",
-    "records": 35
+    "records": 37
   },
   "sbb_rs": {
     "status": "error",
@@ -41,15 +43,15 @@
   },
   "virgin_uk": {
     "status": "ok",
-    "records": 85
+    "records": 86
   },
   "xmltv": {
     "status": "ok",
     "channels": 152,
-    "programmes": 15918,
+    "programmes": 15570,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-08-25T19:39:24Z",
-  "total_records": 15918
+  "generated_at": "2026-08-26T08:07:12Z",
+  "total_records": 15570
 }
