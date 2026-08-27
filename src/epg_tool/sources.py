@@ -66,8 +66,8 @@ EE_TV_SCHEDULE = "https://api.youview.tv/metadata/linear/v2/schedule/by-servicel
 CANALPLUS_FR_GUIDE = "https://www.canalplus.com/live-tv/programme-tv/"
 CANALPLUS_FR_API_BASE = "https://hodor.canalplus.pro/api/v2/mycanal/channels/b63a43e7548cb1a6e7c7319084f48af8"
 CANALPLUS_FR_CHANNELS: tuple[tuple[str, str, str, int], ...] = (
-    ("301", "CANAL+", "canalplus", 4),
-    ("19", "CANAL+ FOOT", "canalplus_foot", 10),
+    ("301", "CANAL+", "canal+.fr", 4),
+    ("19", "CANAL+ FOOT", "foot+.fr", 10),
 )
 # 以下映射来自 EE TV Player 匿名公开的线性频道目录；保留用户指定的 TNT Sports SD/UHD 主频道。
 # 同一节目流的 HD、+1、字幕／音频描述镜像明确排除，防止跨馈源重复频道。

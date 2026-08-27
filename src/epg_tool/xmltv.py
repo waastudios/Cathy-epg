@@ -48,6 +48,10 @@ _EE_XMLTV_IDS = {
 _SBB_XMLTV_IDS = {
     "1082": "eurosport.4k",
 }
+_CANALPLUS_FR_XMLTV_IDS = {
+    "301": "canal+.fr",
+    "19": "foot+.fr",
+}
 
 
 def _xmltv_channel_id(record: Programme) -> str:
@@ -74,6 +78,10 @@ def _xmltv_channel_id(record: Programme) -> str:
             return configured_id
     if record.provider == "sbb_rs":
         configured_id = _SBB_XMLTV_IDS.get(record.channel_id)
+        if configured_id:
+            return configured_id
+    if record.provider == "canalplus_fr":
+        configured_id = _CANALPLUS_FR_XMLTV_IDS.get(record.channel_number)
         if configured_id:
             return configured_id
     return record.provider if not record.channel_number else f"{record.provider}.{record.channel_number}"
