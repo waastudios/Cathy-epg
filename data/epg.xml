@@ -140,6 +140,18 @@
     <display-name>Premier Sports</display-name>
     <url>https://www.astro.com.my/content/channels</url>
   </channel>
+  <channel id="canalplus_fr.177">
+    <display-name>CANAL+ SPORT</display-name>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </channel>
+  <channel id="canalplus_fr.19">
+    <display-name>CANAL+ FOOT</display-name>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </channel>
+  <channel id="canalplus_fr.83">
+    <display-name>CANAL+ SPORT 360</display-name>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </channel>
   <channel id="digi4k_ro">
     <display-name>Digi 4K</display-name>
     <url>https://www.digi4k.ro/</url>
@@ -13335,6 +13347,1759 @@
   <programme start="20260902231200 +0800" channel="astro.833" stop="20260903001200 +0800">
     <title>NRL Try Time</title>
     <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20260827070000 +0200" channel="canalplus_fr.177" stop="20260827093000 +0200">
+    <title>Le 5e tour — Emission du 25 août 2026</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260827093000 +0200" channel="canalplus_fr.177" stop="20260827123800 +0200">
+    <title>La course — Grand Prix de Washington</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260827123800 +0200" channel="canalplus_fr.177" stop="20260827130700 +0200">
+    <title>Preview — Rallye du Paraguay</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260827130700 +0200" channel="canalplus_fr.177" stop="20260827145100 +0200">
+    <title>Afrique du Sud / Nouvelle-Zélande — Rugby's Greatest Rivalry - 1er t...</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260827145100 +0200" channel="canalplus_fr.177" stop="20260827163500 +0200">
+    <title>Blue Bulls / Nouvelle-Zélande — Rugby's Greatest Rivalry - 3e ma...</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260827163500 +0200" channel="canalplus_fr.177" stop="20260827170500 +0200">
+    <title>Més que une finale - 2016, le Top 14 illumine le Camp Nou — Doc. Sport</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260827170500 +0200" channel="canalplus_fr.177" stop="20260827185000 +0200">
+    <title>Vannes / Provence Rugby — Pro D2 - Finale</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260827185000 +0200" channel="canalplus_fr.177" stop="20260827190000 +0200">
+    <title>Soir de rugby avant-match — Biarritz - Nice</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260827190000 +0200" channel="canalplus_fr.177" stop="20260827205100 +0200">
+    <title>Biarritz / Nice — Pro D2 - 1re journée</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260827205100 +0200" channel="canalplus_fr.177" stop="20260827210000 +0200">
+    <title>Soir de rugby avant-match — Provence Rugby - Agen</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260827210000 +0200" channel="canalplus_fr.177" stop="20260827225100 +0200">
+    <title>Provence Rugby / Agen — Pro D2 - 1re journée</title>
+    <icon src="https://thumb.canalplus.pro/http/unsafe/254x143/filters:quality(80)/mht.images.prod.siec.canal.aws.io-cplus.net/program/1321227/7/1321227_7-47b3461b-4135-43b3-a1c8-5f8915c50a28.jpg" />
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260827225100 +0200" channel="canalplus_fr.177" stop="20260827232800 +0200">
+    <title>Soir de rugby — Emission du 27 août 2026</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260827232800 +0200" channel="canalplus_fr.177" stop="20260828025300 +0200">
+    <title>Slam ICP. Finale — Cesta Punta Summer League</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260828025300 +0200" channel="canalplus_fr.177" stop="20260828032800 +0200">
+    <title>Benzema : une saison en or — Doc. Sport</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260828032800 +0200" channel="canalplus_fr.177" stop="20260828072900 +0200">
+    <title>Fin des programmes — Divers</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260828072900 +0200" channel="canalplus_fr.177" stop="20260828092400 +0200">
+    <title>1er tour — Open d'Atlanta</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260828092400 +0200" channel="canalplus_fr.177" stop="20260828093400 +0200">
+    <title>Fractionné Rugby — Emission du 28 août 2026</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260828093400 +0200" channel="canalplus_fr.177" stop="20260828111700 +0200">
+    <title>Biarritz / Nice — Pro D2 - 1re journée</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260828111700 +0200" channel="canalplus_fr.177" stop="20260828130100 +0200">
+    <title>Provence Rugby / Agen — Pro D2 - 1re journée</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260828130100 +0200" channel="canalplus_fr.177" stop="20260828133200 +0200">
+    <title>Famille Delecour : les fous du volant — Doc. Sport</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260828133200 +0200" channel="canalplus_fr.177" stop="20260828140200 +0200">
+    <title>Preview — Rallye du Paraguay</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260828140200 +0200" channel="canalplus_fr.177" stop="20260828145300 +0200">
+    <title>1re spéciale — Rallye du Paraguay</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260828145300 +0200" channel="canalplus_fr.177" stop="20260828154200 +0200">
+    <title>2e spéciale — Rallye du Paraguay</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260828154200 +0200" channel="canalplus_fr.177" stop="20260828154800 +0200">
+    <title>Fractionné F1 — Le circuit F1 idéal</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260828154800 +0200" channel="canalplus_fr.177" stop="20260828164400 +0200">
+    <title>3e spéciale — Rallye du Paraguay</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260828164400 +0200" channel="canalplus_fr.177" stop="20260828164900 +0200">
+    <title>Fractionné WRC — Les secteurs de liaison en WRC :...</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260828164900 +0200" channel="canalplus_fr.177" stop="20260828173200 +0200">
+    <title>4e spéciale — Rallye du Paraguay</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260828173200 +0200" channel="canalplus_fr.177" stop="20260828181600 +0200">
+    <title>Inspecteur Dupin — Jean Alesi</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260828181600 +0200" channel="canalplus_fr.177" stop="20260828184700 +0200">
+    <title>On Board F1 — Grand Prix des Pays-Bas</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260828184700 +0200" channel="canalplus_fr.177" stop="20260828191800 +0200">
+    <title>Formula One, le mag — GP de Zandvoort : Norris triomph...</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260828191800 +0200" channel="canalplus_fr.177" stop="20260828200900 +0200">
+    <title>5e spéciale — Rallye du Paraguay</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260828200900 +0200" channel="canalplus_fr.177" stop="20260828201600 +0200">
+    <title>Fractionné WRC — Les secteurs de liaison en WRC :...</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260828201600 +0200" channel="canalplus_fr.177" stop="20260828205000 +0200">
+    <title>Més que une finale - 2016, le Top 14 illumine le Camp Nou — Doc. Sport</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260828205000 +0200" channel="canalplus_fr.177" stop="20260828210000 +0200">
+    <title>Avant-match Pro D2 — Brive - Valence-Romans</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260828210000 +0200" channel="canalplus_fr.177" stop="20260828225200 +0200">
+    <title>Brive / Valence-Romans — Pro D2 - 1re journée</title>
+    <icon src="https://thumb.canalplus.pro/http/unsafe/254x143/filters:quality(80)/mht.images.prod.siec.canal.aws.io-cplus.net/program/1321227/8/1321227_8-b98865ce-4857-401f-8cc6-6e26a405e220.jpg" />
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260828225200 +0200" channel="canalplus_fr.177" stop="20260828230300 +0200">
+    <title>Après-match Pro D2 — Brive - Valence-Romans</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260828230300 +0200" channel="canalplus_fr.177" stop="20260829002000 +0200">
+    <title>Gant d'Or. Finale — Cesta Punta Summer League</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260829002000 +0200" channel="canalplus_fr.177" stop="20260829022200 +0200">
+    <title>2e tour — Open d'Atlanta</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260829022200 +0200" channel="canalplus_fr.177" stop="20260829024300 +0200">
+    <title>Arsen Goulamirian : Le Revenant — Doc. Sport</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260829024300 +0200" channel="canalplus_fr.177" stop="20260829073300 +0200">
+    <title>Fin des programmes — Divers</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260829073300 +0200" channel="canalplus_fr.177" stop="20260829092700 +0200">
+    <title>2e tour — Open d'Atlanta</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260829092700 +0200" channel="canalplus_fr.177" stop="20260829111100 +0200">
+    <title>Provence Rugby / Agen — Pro D2 - 1re journée</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260829111100 +0200" channel="canalplus_fr.177" stop="20260829125700 +0200">
+    <title>Brive / Valence-Romans — Pro D2 - 1re journée</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260829125700 +0200" channel="canalplus_fr.177" stop="20260829131800 +0200">
+    <title>Fractionné Rugby — Emission du 18 août 2026</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260829131800 +0200" channel="canalplus_fr.177" stop="20260829141000 +0200">
+    <title>9e spéciale — Rallye du Paraguay</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260829141000 +0200" channel="canalplus_fr.177" stop="20260829144600 +0200">
+    <title>10e spéciale — Rallye du Paraguay</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260829144600 +0200" channel="canalplus_fr.177" stop="20260829145200 +0200">
+    <title>Fractionné WRC — Les secteurs de liaison en WRC :...</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260829145200 +0200" channel="canalplus_fr.177" stop="20260829145900 +0200">
+    <title>Fractionné WRC — Les ouvreurs en WRC : les binôme...</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260829145900 +0200" channel="canalplus_fr.177" stop="20260829160000 +0200">
+    <title>11e spéciale — Rallye du Paraguay</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260829160000 +0200" channel="canalplus_fr.177" stop="20260829164600 +0200">
+    <title>12e spéciale — Rallye du Paraguay</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260829164600 +0200" channel="canalplus_fr.177" stop="20260829172800 +0200">
+    <title>Fast Live avec Julien Fébreau — Doc. Sport</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260829172800 +0200" channel="canalplus_fr.177" stop="20260829180100 +0200">
+    <title>On Board F1 — Grand Prix des Pays-Bas</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260829180100 +0200" channel="canalplus_fr.177" stop="20260829191500 +0200">
+    <title>Gant d'Or. Finale — Cesta Punta Summer League</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260829191500 +0200" channel="canalplus_fr.177" stop="20260829200800 +0200">
+    <title>13e spéciale — Rallye du Paraguay</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260829200800 +0200" channel="canalplus_fr.177" stop="20260829204000 +0200">
+    <title>Famille Delecour : les fous du volant — Doc. Sport</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260829204000 +0200" channel="canalplus_fr.177" stop="20260829231100 +0200">
+    <title>1re course — The Milwaukee Mile</title>
+    <icon src="https://thumb.canalplus.pro/http/unsafe/254x143/filters:quality(80)/img-hapi.canalplus.pro:80/ServiceImage/ImageID/124847408" />
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260829231100 +0200" channel="canalplus_fr.177" stop="20260830005700 +0200">
+    <title>3e tour — Open d'Atlanta</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260830005700 +0200" channel="canalplus_fr.177" stop="20260830075000 +0200">
+    <title>Fin des programmes — Divers</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260830075000 +0200" channel="canalplus_fr.177" stop="20260830095400 +0200">
+    <title>3e tour — Open d'Atlanta</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260830095400 +0200" channel="canalplus_fr.177" stop="20260830105400 +0200">
+    <title>In Extenso Supersevens — Etape de Pau. Matches pour la 3e...</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260830105400 +0200" channel="canalplus_fr.177" stop="20260830115900 +0200">
+    <title>In Extenso Supersevens — Etape de Pau. Finales</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260830115900 +0200" channel="canalplus_fr.177" stop="20260830130100 +0200">
+    <title>18e spéciale — Rallye du Paraguay</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260830130100 +0200" channel="canalplus_fr.177" stop="20260830131800 +0200">
+    <title>On Board F1 — Grand Prix des Pays-Bas</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260830131800 +0200" channel="canalplus_fr.177" stop="20260830133700 +0200">
+    <title>Formula One, le mag — GP de Zandvoort : Norris triomph...</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260830133700 +0200" channel="canalplus_fr.177" stop="20260830142800 +0200">
+    <title>19e spéciale — Rallye du Paraguay</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260830142800 +0200" channel="canalplus_fr.177" stop="20260830164100 +0200">
+    <title>Top 14 — Finale Made by Canal</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260830164100 +0200" channel="canalplus_fr.177" stop="20260830183700 +0200">
+    <title>Afrique du Sud / Nouvelle-Zélande — Rugby's Greatest Rivalry - 2e te...</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260830183700 +0200" channel="canalplus_fr.177" stop="20260830191000 +0200">
+    <title>Fast Life Margot Laffite — Doc. Sport</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260830191000 +0200" channel="canalplus_fr.177" stop="20260830214000 +0200">
+    <title>2e course — The Milwaukee Mile</title>
+    <icon src="https://thumb.canalplus.pro/http/unsafe/254x143/filters:quality(80)/img-hapi.canalplus.pro:80/ServiceImage/ImageID/124837120" />
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260830214000 +0200" channel="canalplus_fr.177" stop="20260831000000 +0200">
+    <title>4e tour — Open d'Atlanta</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260831000000 +0200" channel="canalplus_fr.177" stop="20260831015000 +0200">
+    <title>Argentine / Australie — Test-match - 1er match</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260831015000 +0200" channel="canalplus_fr.177" stop="20260831072300 +0200">
+    <title>Fin des programmes — Divers</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260831072300 +0200" channel="canalplus_fr.177" stop="20260831092400 +0200">
+    <title>4e tour — Open d'Atlanta</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260831092400 +0200" channel="canalplus_fr.177" stop="20260831110500 +0200">
+    <title>Argentine / Australie — Test-match - 1er match</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260831110500 +0200" channel="canalplus_fr.177" stop="20260831124900 +0200">
+    <title>Afrique du Sud / Nouvelle-Zélande — Rugby's Greatest Rivalry - 2e te...</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260831124900 +0200" channel="canalplus_fr.177" stop="20260831132300 +0200">
+    <title>Canal Rugby Manager — Le talonneur au centre du jeu</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260831132300 +0200" channel="canalplus_fr.177" stop="20260831155400 +0200">
+    <title>2e course — The Milwaukee Mile</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260831155400 +0200" channel="canalplus_fr.177" stop="20260831171000 +0200">
+    <title>Slam ICP. Finale — Cesta Punta Summer League</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260831171000 +0200" channel="canalplus_fr.177" stop="20260831185300 +0200">
+    <title>Soyaux-Angoulême / Colomiers — Pro D2 - 1re journée</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260831185300 +0200" channel="canalplus_fr.177" stop="20260831203600 +0200">
+    <title>Béziers / Oyonnax — Pro D2 - 1re journée</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260831203600 +0200" channel="canalplus_fr.177" stop="20260831210000 +0200">
+    <title>Fractionné Rugby — La Section Paloise : musique, tr...</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260831210000 +0200" channel="canalplus_fr.177" stop="20260831230000 +0200">
+    <title>Etape de Pau. Les meilleurs moments — In Extenso Supersevens</title>
+    <icon src="https://thumb.canalplus.pro/http/unsafe/254x143/filters:quality(80)/img-hapi.canalplus.pro:80/ServiceImage/ImageID/102970394" />
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260831230000 +0200" channel="canalplus_fr.177" stop="20260901003100 +0200">
+    <title>22e spéciale : Powerstage — Rallye du Paraguay</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260901003100 +0200" channel="canalplus_fr.177" stop="20260901013000 +0200">
+    <title>Golf+, le mag — GOLF+ LE MAG 2026/2027</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260901013000 +0200" channel="canalplus_fr.177" stop="20260901021100 +0200">
+    <title>Au micro ! Une nouvelle voix pour le foot - Saison 1 — Episode 4 : Huitième de finale :...</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260901021100 +0200" channel="canalplus_fr.177" stop="20260901024300 +0200">
+    <title>Au micro ! Une nouvelle voix pour le foot - Saison 1 — Episode 5 : Huitièmes de finale ...</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260901024300 +0200" channel="canalplus_fr.177" stop="20260901031800 +0200">
+    <title>Au micro ! Une nouvelle voix pour le foot - Saison 1 — Episode 6 : Quart de finale : La...</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260901031800 +0200" channel="canalplus_fr.177" stop="20260901072600 +0200">
+    <title>Fin des programmes — Divers</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260901072600 +0200" channel="canalplus_fr.177" stop="20260901092700 +0200">
+    <title>Etape de Pau. Les meilleurs moments — In Extenso Supersevens</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260901092700 +0200" channel="canalplus_fr.177" stop="20260901111000 +0200">
+    <title>Dax / Narbonne — Pro D2 - 1re journée</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260901111000 +0200" channel="canalplus_fr.177" stop="20260901125400 +0200">
+    <title>Grenoble / Aurillac — Pro D2 - 1re journée</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260901125400 +0200" channel="canalplus_fr.177" stop="20260901141200 +0200">
+    <title>Gant d'Or. Finale — Cesta Punta Summer League</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260901141200 +0200" channel="canalplus_fr.177" stop="20260901161300 +0200">
+    <title>4e tour — Open d'Atlanta</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260901161300 +0200" channel="canalplus_fr.177" stop="20260901161900 +0200">
+    <title>Zapsport 360 — Emission du 31 août 2026</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260901161900 +0200" channel="canalplus_fr.177" stop="20260901185100 +0200">
+    <title>2e course — The Milwaukee Mile</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260901185100 +0200" channel="canalplus_fr.177" stop="20260901203800 +0200">
+    <title>Nevers / Montauban — Pro D2 - 1re journée</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260901203800 +0200" channel="canalplus_fr.177" stop="20260901210000 +0200">
+    <title>Fractionné Rugby — Emission du 01 sept. 2026</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260901210000 +0200" channel="canalplus_fr.177" stop="20260901224100 +0200">
+    <title>Afrique du Sud / Nouvelle-Zélande — Rugby's Greatest Rivalry - 2e te...</title>
+    <icon src="https://thumb.canalplus.pro/http/unsafe/254x143/filters:quality(80)/canalplus-cdn.canal-plus.io/p1/unit/32006158/canal-ouah/STD169/myCANAL_16x9_sport_blasons_1920x108024-S4j-" />
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260901224100 +0200" channel="canalplus_fr.177" stop="20260902002300 +0200">
+    <title>Brive / Valence-Romans — Pro D2 - 1re journée</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260902002300 +0200" channel="canalplus_fr.177" stop="20260902010300 +0200">
+    <title>24h de Boulleau - Saison 3 — Episode 1 : Laure au Maroc</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260902010300 +0200" channel="canalplus_fr.177" stop="20260902013800 +0200">
+    <title>Baby foot, neuf mois dans la vie d'Amel Majri — Doc. Sport</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260902013800 +0200" channel="canalplus_fr.177" stop="20260902072700 +0200">
+    <title>Fin des programmes — Divers</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260902072700 +0200" channel="canalplus_fr.177" stop="20260902091000 +0200">
+    <title>Argentine / Australie — Test-match - 1er match</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260902091000 +0200" channel="canalplus_fr.177" stop="20260902105200 +0200">
+    <title>Afrique du Sud / Nouvelle-Zélande — Rugby's Greatest Rivalry - 2e te...</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260902105200 +0200" channel="canalplus_fr.177" stop="20260902123700 +0200">
+    <title>Biarritz / Nice — Pro D2 - 1re journée</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260902123700 +0200" channel="canalplus_fr.177" stop="20260902133800 +0200">
+    <title>Golf+, le mag — GOLF+ LE MAG 2026/2027</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260902133800 +0200" channel="canalplus_fr.177" stop="20260902140900 +0200">
+    <title>L'oeil des pros — Coaching</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260902140900 +0200" channel="canalplus_fr.177" stop="20260902155100 +0200">
+    <title>Argentine / Australie — Test-match - 1er match</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260902155100 +0200" channel="canalplus_fr.177" stop="20260902173300 +0200">
+    <title>Afrique du Sud / Nouvelle-Zélande — Rugby's Greatest Rivalry - 2e te...</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260902173300 +0200" channel="canalplus_fr.177" stop="20260902175400 +0200">
+    <title>Fractionné Rugby — Emission du 01 sept. 2026</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260902175400 +0200" channel="canalplus_fr.177" stop="20260902195600 +0200">
+    <title>Etape de Pau. Les meilleurs moments — In Extenso Supersevens</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260902195600 +0200" channel="canalplus_fr.177" stop="20260902210000 +0200">
+    <title>Golf+, le mag — GOLF+ LE MAG 2026/2027</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260902210000 +0200" channel="canalplus_fr.177" stop="20260902232800 +0200">
+    <title>Le 5e tour — Emission du 01 sept. 2026</title>
+    <icon src="https://thumb.canalplus.pro/http/unsafe/254x143/filters:quality(80)/img-hapi.canalplus.pro:80/ServiceImage/ImageID/107072058" />
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260902232800 +0200" channel="canalplus_fr.177" stop="20260903011400 +0200">
+    <title>Provence Rugby / Agen — Pro D2 - 1re journée</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260903011400 +0200" channel="canalplus_fr.177" stop="20260903072600 +0200">
+    <title>Fin des programmes — Divers</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260827072300 +0200" channel="canalplus_fr.19" stop="20260827090800 +0200">
+    <title>AEK Athènes / Levski Sofia — Qualifications pour la Ligue des...</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260827090800 +0200" channel="canalplus_fr.19" stop="20260827105300 +0200">
+    <title>Lyon / Fenerbahçe — Qualifications pour la Ligue des...</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260827105300 +0200" channel="canalplus_fr.19" stop="20260827112300 +0200">
+    <title>Débrief UEFA — Emission du 25 août 2026</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260827112300 +0200" channel="canalplus_fr.19" stop="20260827130400 +0200">
+    <title>Brentford / Tottenham — Premier League - 1re journée</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260827130400 +0200" channel="canalplus_fr.19" stop="20260827133300 +0200">
+    <title>Le Club - Saison 2 — Episode 4</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260827133300 +0200" channel="canalplus_fr.19" stop="20260827141700 +0200">
+    <title>Strikers - Saison 1 — Episode 4 : Dans la tempête</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260827141700 +0200" channel="canalplus_fr.19" stop="20260827160100 +0200">
+    <title>Manchester City / Bournemouth — Premier League - 1re journée</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260827160100 +0200" channel="canalplus_fr.19" stop="20260827174500 +0200">
+    <title>Fulham / Chelsea — Premier League - 1re journée</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260827174500 +0200" channel="canalplus_fr.19" stop="20260827193400 +0200">
+    <title>Tirage au sort UEFA UCL — Phase de ligue de la Ligue des c...</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260827193400 +0200" channel="canalplus_fr.19" stop="20260827202100 +0200">
+    <title>Strikers - Saison 1 — Episode 6 : Toucher au but</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260827202100 +0200" channel="canalplus_fr.19" stop="20260827210100 +0200">
+    <title>Jour de foot — Emission du 27 août 2026</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260827210100 +0200" channel="canalplus_fr.19" stop="20260827224700 +0200">
+    <title>Lyon / Fenerbahçe — Qualifications pour la Ligue des...</title>
+    <icon src="https://thumb.canalplus.pro/http/unsafe/254x143/filters:quality(80)/canalplus-cdn.canal-plus.io/p1/unit/32030571/canal-ouah/STD169/myCANAL_16x9_sport_1920x108098-_omQ" />
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260827224700 +0200" channel="canalplus_fr.19" stop="20260827230200 +0200">
+    <title>Inside Ze Club — Tottenham</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260827230200 +0200" channel="canalplus_fr.19" stop="20260828000300 +0200">
+    <title>Late Football Club — Emission du 27 août 2026</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260828000300 +0200" channel="canalplus_fr.19" stop="20260828014200 +0200">
+    <title>Viking FK / Dinamo Zagreb — Qualifications pour la Ligue des...</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260828014200 +0200" channel="canalplus_fr.19" stop="20260828073400 +0200">
+    <title>Fin des programmes — Divers</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260828073400 +0200" channel="canalplus_fr.19" stop="20260828083500 +0200">
+    <title>Late Football Club — Emission du 27 août 2026</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260828083500 +0200" channel="canalplus_fr.19" stop="20260828092700 +0200">
+    <title>Détective Mathoux — Détective Mathoux avec Tony Chap...</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260828092700 +0200" channel="canalplus_fr.19" stop="20260828101200 +0200">
+    <title>Strikers - Saison 1 — Episode 5 : Buteurs-nés ?</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260828101200 +0200" channel="canalplus_fr.19" stop="20260828104300 +0200">
+    <title>Le Club - Saison 2 — Episode 5</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260828104300 +0200" channel="canalplus_fr.19" stop="20260828110400 +0200">
+    <title>Décrypté — Eden Hazard</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260828110400 +0200" channel="canalplus_fr.19" stop="20260828115300 +0200">
+    <title>Weekly UEL / UECL Magazine — Ligue Conférence UEFA : Crystal ...</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260828115300 +0200" channel="canalplus_fr.19" stop="20260828124500 +0200">
+    <title>Weekly UEL / UECL Magazine — Aston Villa remporte la Ligue Eu...</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260828124500 +0200" channel="canalplus_fr.19" stop="20260828141700 +0200">
+    <title>Tirage au sort UEFA UEL et UECL — Phases de ligue</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260828141700 +0200" channel="canalplus_fr.19" stop="20260828145600 +0200">
+    <title>Strikers - Saison 1 — Episode 3 : Une question de conf...</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260828145600 +0200" channel="canalplus_fr.19" stop="20260828163900 +0200">
+    <title>Lyon / Fenerbahçe — Qualifications pour la Ligue des...</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260828163900 +0200" channel="canalplus_fr.19" stop="20260828182400 +0200">
+    <title>Everton / Crystal Palace — Premier League - 1re journée</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260828182400 +0200" channel="canalplus_fr.19" stop="20260828192500 +0200">
+    <title>Late Football Club — Emission du 27 août 2026</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260828192500 +0200" channel="canalplus_fr.19" stop="20260828202000 +0200">
+    <title>Premier League Review — 1re journée</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260828202000 +0200" channel="canalplus_fr.19" stop="20260828205500 +0200">
+    <title>Jour de foot — Emission du 28 août 2026</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260828205500 +0200" channel="canalplus_fr.19" stop="20260828230000 +0200">
+    <title>Crystal Palace / Manchester City — Premier League - 2e journée</title>
+    <icon src="https://thumb.canalplus.pro/http/unsafe/254x143/filters:quality(80)/mht.images.prod.siec.canal.aws.io-cplus.net/program/1321225/16/1321225_16-c5fcc349-030b-4b5f-b27e-020cf3334b36.jpg" />
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260828230000 +0200" channel="canalplus_fr.19" stop="20260829000100 +0200">
+    <title>Late Football Club — Emission du 28 août 2026</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260829000100 +0200" channel="canalplus_fr.19" stop="20260829002900 +0200">
+    <title>Histoires de Premier League — Kevin Keegan : De Scunthorpe à l...</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260829002900 +0200" channel="canalplus_fr.19" stop="20260829021000 +0200">
+    <title>Crystal Palace / Manchester City — Premier League - 2e journée</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260829021000 +0200" channel="canalplus_fr.19" stop="20260829074800 +0200">
+    <title>Fin des programmes — Divers</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260829074800 +0200" channel="canalplus_fr.19" stop="20260829085100 +0200">
+    <title>Late Football Club — Emission du 28 août 2026</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260829085100 +0200" channel="canalplus_fr.19" stop="20260829103600 +0200">
+    <title>Crystal Palace / Manchester City — Premier League - 2e journée</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260829103600 +0200" channel="canalplus_fr.19" stop="20260829122000 +0200">
+    <title>Lyon / Fenerbahçe — Qualifications pour la Ligue des...</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260829122000 +0200" channel="canalplus_fr.19" stop="20260829132500 +0200">
+    <title>Late Football Club — Emission du 28 août 2026</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260829132500 +0200" channel="canalplus_fr.19" stop="20260829133000 +0200">
+    <title>Match of ze Day — Emission du 29 août 2026</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260829133000 +0200" channel="canalplus_fr.19" stop="20260829153100 +0200">
+    <title>Liverpool / Nottingham Forest — Premier League - 2e journée</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260829153100 +0200" channel="canalplus_fr.19" stop="20260829155500 +0200">
+    <title>Match of ze Day — Emission du 29 août 2026</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260829155500 +0200" channel="canalplus_fr.19" stop="20260829180100 +0200">
+    <title>Bournemouth / Everton — Premier League - 2e journée</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260829180100 +0200" channel="canalplus_fr.19" stop="20260829182500 +0200">
+    <title>Match of ze Day — Emission du 29 août 2026</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260829182500 +0200" channel="canalplus_fr.19" stop="20260829203400 +0200">
+    <title>Tottenham / Newcastle — Premier League - 2e journée</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260829203400 +0200" channel="canalplus_fr.19" stop="20260829205000 +0200">
+    <title>Inside Ze Club — Tottenham</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260829205000 +0200" channel="canalplus_fr.19" stop="20260829205500 +0200">
+    <title>Plateau sport — Emission du 23 août 2026</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260829205500 +0200" channel="canalplus_fr.19" stop="20260829212500 +0200">
+    <title>Platini - Saison 1 — Episode 1 : Le fils de l'Aldo</title>
+    <icon src="https://thumb.canalplus.pro/http/unsafe/254x143/filters:quality(80)/img-hapi.canalplus.pro:80/ServiceImage/ImageID/124720298" />
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260829212500 +0200" channel="canalplus_fr.19" stop="20260829215600 +0200">
+    <title>Platini - Saison 1 — Episode 2 : Devenir Platini</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260829215600 +0200" channel="canalplus_fr.19" stop="20260829222800 +0200">
+    <title>Platini - Saison 1 — Episode 3 : Toujours gagner</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260829222800 +0200" channel="canalplus_fr.19" stop="20260830001300 +0200">
+    <title>Bournemouth / Everton — Premier League - 2e journée</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260830001300 +0200" channel="canalplus_fr.19" stop="20260830022300 +0200">
+    <title>Coventry City / Hull City — Premier League - 2e journée</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260830022300 +0200" channel="canalplus_fr.19" stop="20260830074200 +0200">
+    <title>Fin des programmes — Divers</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260830074200 +0200" channel="canalplus_fr.19" stop="20260830092700 +0200">
+    <title>Tottenham / Newcastle — Premier League - 2e journée</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260830092700 +0200" channel="canalplus_fr.19" stop="20260830111100 +0200">
+    <title>Coventry City / Hull City — Premier League - 2e journée</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260830111100 +0200" channel="canalplus_fr.19" stop="20260830125500 +0200">
+    <title>Crystal Palace / Manchester City — Premier League - 2e journée</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260830125500 +0200" channel="canalplus_fr.19" stop="20260830144000 +0200">
+    <title>Liverpool / Nottingham Forest — Premier League - 2e journée</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260830144000 +0200" channel="canalplus_fr.19" stop="20260830145500 +0200">
+    <title>Match of ze Day — Emission du 30 août 2026</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260830145500 +0200" channel="canalplus_fr.19" stop="20260830170300 +0200">
+    <title>Sunderland / Fulham — Premier League - 2e journée</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260830170300 +0200" channel="canalplus_fr.19" stop="20260830173000 +0200">
+    <title>The Match — Avant Manchester United - Ipswich</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260830173000 +0200" channel="canalplus_fr.19" stop="20260830192600 +0200">
+    <title>Manchester United / Ipswich Town — Premier League - 2e journée</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260830192600 +0200" channel="canalplus_fr.19" stop="20260830193000 +0200">
+    <title>The Match — Débrief Manchester United / Ipsw...</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260830193000 +0200" channel="canalplus_fr.19" stop="20260830202100 +0200">
+    <title>Canal Football Club — Emission du 30 août 2026</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260830202100 +0200" channel="canalplus_fr.19" stop="20260830210000 +0200">
+    <title>Canal Football Club — 2e partie</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260830210000 +0200" channel="canalplus_fr.19" stop="20260830224400 +0200">
+    <title>Chelsea / Brighton &amp; Hove Albion — Premier League - 2e journée</title>
+    <icon src="https://thumb.canalplus.pro/http/unsafe/254x143/filters:quality(80)/mht.images.prod.siec.canal.aws.io-cplus.net/program/1321225/18/1321225_18-6696d374-b101-4b4e-b7f8-e50c90ef023a.jpg" />
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260830224400 +0200" channel="canalplus_fr.19" stop="20260831002800 +0200">
+    <title>Sunderland / Fulham — Premier League - 2e journée</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260831002800 +0200" channel="canalplus_fr.19" stop="20260831011300 +0200">
+    <title>Canal Football Club — Emission du 30 août 2026</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260831011300 +0200" channel="canalplus_fr.19" stop="20260831014800 +0200">
+    <title>Canal Football Club — 2e partie</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260831014800 +0200" channel="canalplus_fr.19" stop="20260831044800 +0200">
+    <title>Leeds / Brentford — Premier League - 2e journée</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260831044800 +0200" channel="canalplus_fr.19" stop="20260831063000 +0200">
+    <title>Sunderland / Fulham — Premier League - 2e journée</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260831063000 +0200" channel="canalplus_fr.19" stop="20260831073800 +0200">
+    <title>Canal Football Club — Emission du 30 août 2026</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260831073800 +0200" channel="canalplus_fr.19" stop="20260831082300 +0200">
+    <title>Canal Football Club — Emission du 30 août 2026</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260831082300 +0200" channel="canalplus_fr.19" stop="20260831085900 +0200">
+    <title>Canal Football Club — 2e partie</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260831085900 +0200" channel="canalplus_fr.19" stop="20260831104300 +0200">
+    <title>Manchester United / Ipswich Town — Premier League - 2e journée</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260831104300 +0200" channel="canalplus_fr.19" stop="20260831111000 +0200">
+    <title>Histoires de Premier League — Kevin Keegan : De Scunthorpe à l...</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260831111000 +0200" channel="canalplus_fr.19" stop="20260831125600 +0200">
+    <title>Tottenham / Newcastle — Premier League - 2e journée</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260831125600 +0200" channel="canalplus_fr.19" stop="20260831134200 +0200">
+    <title>Canal Football Club — Emission du 30 août 2026</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260831134200 +0200" channel="canalplus_fr.19" stop="20260831141600 +0200">
+    <title>Canal Football Club — 2e partie</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260831141600 +0200" channel="canalplus_fr.19" stop="20260831150300 +0200">
+    <title>Strikers - Saison 1 — Episode 6 : Toucher au but</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260831150300 +0200" channel="canalplus_fr.19" stop="20260831164800 +0200">
+    <title>Chelsea / Brighton &amp; Hove Albion — Premier League - 2e journée</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260831164800 +0200" channel="canalplus_fr.19" stop="20260831183300 +0200">
+    <title>Crystal Palace / Manchester City — Premier League - 2e journée</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260831183300 +0200" channel="canalplus_fr.19" stop="20260831202000 +0200">
+    <title>Coventry City / Hull City — Premier League - 2e journée</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260831202000 +0200" channel="canalplus_fr.19" stop="20260831205500 +0200">
+    <title>Jour de foot — Emission du 31 août 2026</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260831205500 +0200" channel="canalplus_fr.19" stop="20260831225900 +0200">
+    <title>Aston Villa / Arsenal — Premier League - 2e journée</title>
+    <icon src="https://thumb.canalplus.pro/http/unsafe/254x143/filters:quality(80)/mht.images.prod.siec.canal.aws.io-cplus.net/program/1321225/19/1321225_19-5f96161e-46c1-4557-8094-69dbbb1044ab.jpg" />
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260831225900 +0200" channel="canalplus_fr.19" stop="20260901000100 +0200">
+    <title>Late Football Club — Emission du 31 août 2026</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260901000100 +0200" channel="canalplus_fr.19" stop="20260901002800 +0200">
+    <title>Champions League Weekly — Retour sur les barrages et le ti...</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260901002800 +0200" channel="canalplus_fr.19" stop="20260901020700 +0200">
+    <title>Aston Villa / Arsenal — Premier League - 2e journée</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260901020700 +0200" channel="canalplus_fr.19" stop="20260901073400 +0200">
+    <title>Fin des programmes — Divers</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260901073400 +0200" channel="canalplus_fr.19" stop="20260901091700 +0200">
+    <title>Tottenham / Newcastle — Premier League - 2e journée</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260901091700 +0200" channel="canalplus_fr.19" stop="20260901110000 +0200">
+    <title>Leeds / Brentford — Premier League - 2e journée</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260901110000 +0200" channel="canalplus_fr.19" stop="20260901124200 +0200">
+    <title>Sunderland / Fulham — Premier League - 2e journée</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260901124200 +0200" channel="canalplus_fr.19" stop="20260901130700 +0200">
+    <title>Champions League Weekly — Retour sur les barrages et le ti...</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260901130700 +0200" channel="canalplus_fr.19" stop="20260901140800 +0200">
+    <title>Late Football Club — Emission du 31 août 2026</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260901140800 +0200" channel="canalplus_fr.19" stop="20260901155100 +0200">
+    <title>Liverpool / Nottingham Forest — Premier League - 2e journée</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260901155100 +0200" channel="canalplus_fr.19" stop="20260901173400 +0200">
+    <title>Aston Villa / Arsenal — Premier League - 2e journée</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260901173400 +0200" channel="canalplus_fr.19" stop="20260901191600 +0200">
+    <title>Chelsea / Brighton &amp; Hove Albion — Premier League - 2e journée</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260901191600 +0200" channel="canalplus_fr.19" stop="20260901201900 +0200">
+    <title>Late Football Club — Emission du 31 août 2026</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260901201900 +0200" channel="canalplus_fr.19" stop="20260901205500 +0200">
+    <title>Jour de foot — Emission du 01 sept. 2026</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260901205500 +0200" channel="canalplus_fr.19" stop="20260901210500 +0200">
+    <title>Plateau sport — Emission du 01 sept. 2026</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260901210500 +0200" channel="canalplus_fr.19" stop="20260901213300 +0200">
+    <title>Platini - Saison 1 — Episode 4 : Le roi hanté</title>
+    <icon src="https://thumb.canalplus.pro/http/unsafe/254x143/filters:quality(80)/img-hapi.canalplus.pro:80/ServiceImage/ImageID/124799961" />
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260901213300 +0200" channel="canalplus_fr.19" stop="20260901220100 +0200">
+    <title>Platini - Saison 1 — Episode 5 : Nouveaux mondes</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260901220100 +0200" channel="canalplus_fr.19" stop="20260901230000 +0200">
+    <title>Platini - Saison 1 — Episode 6 : Politique</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260901230000 +0200" channel="canalplus_fr.19" stop="20260902000400 +0200">
+    <title>Late Football Club — Emission du 01 sept. 2026</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260902000400 +0200" channel="canalplus_fr.19" stop="20260902014400 +0200">
+    <title>Crystal Palace / Manchester City — Premier League - 2e journée</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260902014400 +0200" channel="canalplus_fr.19" stop="20260902073200 +0200">
+    <title>Fin des programmes — Divers</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260902073200 +0200" channel="canalplus_fr.19" stop="20260902091500 +0200">
+    <title>Bournemouth / Everton — Premier League - 2e journée</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260902091500 +0200" channel="canalplus_fr.19" stop="20260902105700 +0200">
+    <title>Liverpool / Nottingham Forest — Premier League - 2e journée</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260902105700 +0200" channel="canalplus_fr.19" stop="20260902112400 +0200">
+    <title>Histoires de Premier League — Kevin Keegan : De Scunthorpe à l...</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260902112400 +0200" channel="canalplus_fr.19" stop="20260902130600 +0200">
+    <title>Aston Villa / Arsenal — Premier League - 2e journée</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260902130600 +0200" channel="canalplus_fr.19" stop="20260902140800 +0200">
+    <title>Late Football Club — Emission du 01 sept. 2026</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260902140800 +0200" channel="canalplus_fr.19" stop="20260902155100 +0200">
+    <title>Coventry City / Hull City — Premier League - 2e journée</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260902155100 +0200" channel="canalplus_fr.19" stop="20260902173400 +0200">
+    <title>Chelsea / Brighton &amp; Hove Albion — Premier League - 2e journée</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260902173400 +0200" channel="canalplus_fr.19" stop="20260902191600 +0200">
+    <title>Sunderland / Fulham — Premier League - 2e journée</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260902191600 +0200" channel="canalplus_fr.19" stop="20260902201900 +0200">
+    <title>Late Football Club — Emission du 01 sept. 2026</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260902201900 +0200" channel="canalplus_fr.19" stop="20260902205500 +0200">
+    <title>Jour de foot — Emission du 02 sept. 2026</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260902205500 +0200" channel="canalplus_fr.19" stop="20260902225900 +0200">
+    <title>Manchester United / Ipswich Town — Premier League - 2e journée</title>
+    <icon src="https://thumb.canalplus.pro/http/unsafe/254x143/filters:quality(80)/mht.images.prod.siec.canal.aws.io-cplus.net/program/1321225/13/1321225_13-a7a17d65-68b7-4a73-ab38-735cd69e228a.jpg" />
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260902225900 +0200" channel="canalplus_fr.19" stop="20260903000300 +0200">
+    <title>Late Football Club — Emission du 02 sept. 2026</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260903000300 +0200" channel="canalplus_fr.19" stop="20260903014400 +0200">
+    <title>Tottenham / Newcastle — Premier League - 2e journée</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260903014400 +0200" channel="canalplus_fr.19" stop="20260903073100 +0200">
+    <title>Fin des programmes — Divers</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260827060000 +0200" channel="canalplus_fr.83" stop="20260827080000 +0200">
+    <title>Le JT — Emission du 27 août 2026</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260827080000 +0200" channel="canalplus_fr.83" stop="20260827095500 +0200">
+    <title>Etape de Biarritz. Les meilleurs moments — In Extenso Supersevens</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260827095500 +0200" channel="canalplus_fr.83" stop="20260827100100 +0200">
+    <title>Fractionné Moto — One to One Maximo Quiles</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260827100100 +0200" channel="canalplus_fr.83" stop="20260827104800 +0200">
+    <title>La course des Moto GP — Grand Prix de Grande-Bretagne</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260827104800 +0200" channel="canalplus_fr.83" stop="20260827111100 +0200">
+    <title>Moto : Le podium — Grand Prix de Grande-Bretagne</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260827111100 +0200" channel="canalplus_fr.83" stop="20260827113200 +0200">
+    <title>Débrief Moto — Raúl Fernández triomphe à Silver...</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260827113200 +0200" channel="canalplus_fr.83" stop="20260827120000 +0200">
+    <title>Preview — Rallye du Paraguay</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260827120000 +0200" channel="canalplus_fr.83" stop="20260827124500 +0200">
+    <title>Le JT — Emission du 27 août 2026</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260827124500 +0200" channel="canalplus_fr.83" stop="20260827140500 +0200">
+    <title>Girl Climber : Sans limite — Doc. Sport</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260827140500 +0200" channel="canalplus_fr.83" stop="20260827153000 +0200">
+    <title>Trail 360 — Trail 360 : Spéciale été avec Bo...</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260827153000 +0200" channel="canalplus_fr.83" stop="20260827160000 +0200">
+    <title>Intérieur sport — Jimmy Gressier - Un coeur en nord</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260827160000 +0200" channel="canalplus_fr.83" stop="20260827163000 +0200">
+    <title>Le JT — Emission du 27 août 2026</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260827163000 +0200" channel="canalplus_fr.83" stop="20260827165600 +0200">
+    <title>Preview — Rallye du Paraguay</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260827165600 +0200" channel="canalplus_fr.83" stop="20260827170000 +0200">
+    <title>On Board Express Moto — Grand Prix de Grande-Bretagne</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260827170000 +0200" channel="canalplus_fr.83" stop="20260827180000 +0200">
+    <title>Les anges gardiens de Monaco — Doc. Sport</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260827180000 +0200" channel="canalplus_fr.83" stop="20260827190000 +0200">
+    <title>Le JT — Emission du 27 août 2026</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260827190000 +0200" channel="canalplus_fr.83" stop="20260827194300 +0200">
+    <title>Inspecteur Dupin — Jean Alesi</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260827194300 +0200" channel="canalplus_fr.83" stop="20260827203500 +0200">
+    <title>Review — Rallye de Finlande</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260827203500 +0200" channel="canalplus_fr.83" stop="20260827210400 +0200">
+    <title>Preview — Rallye du Paraguay</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260827210400 +0200" channel="canalplus_fr.83" stop="20260827213600 +0200">
+    <title>On Board F1 — Grand Prix des Pays-Bas</title>
+    <icon src="https://thumb.canalplus.pro/http/unsafe/254x143/filters:quality(80)/img-hapi.canalplus.pro:80/ServiceImage/ImageID/123192922" />
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260827213600 +0200" channel="canalplus_fr.83" stop="20260827220600 +0200">
+    <title>Formula One, le mag — GP de Zandvoort : Norris triomph...</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260827220600 +0200" channel="canalplus_fr.83" stop="20260827222800 +0200">
+    <title>On Board moto — Grand Prix de Grande-Bretagne</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260827222800 +0200" channel="canalplus_fr.83" stop="20260827225100 +0200">
+    <title>Moto : Le podium — Grand Prix de Grande-Bretagne</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260827225100 +0200" channel="canalplus_fr.83" stop="20260827231300 +0200">
+    <title>Débrief Moto — Raúl Fernández triomphe à Silver...</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260827231300 +0200" channel="canalplus_fr.83" stop="20260828004500 +0200">
+    <title>2e jour — Grand Prix d'Allemagne</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260828004500 +0200" channel="canalplus_fr.83" stop="20260828011500 +0200">
+    <title>Le JT — Emission du 27 août 2026</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260828011500 +0200" channel="canalplus_fr.83" stop="20260828013700 +0200">
+    <title>On Board moto — Grand Prix de Grande-Bretagne</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260828013700 +0200" channel="canalplus_fr.83" stop="20260828015800 +0200">
+    <title>Débrief Moto — Raúl Fernández triomphe à Silver...</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260828015800 +0200" channel="canalplus_fr.83" stop="20260828022500 +0200">
+    <title>Preview — Rallye du Paraguay</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260828022500 +0200" channel="canalplus_fr.83" stop="20260828035500 +0200">
+    <title>MMA : ARES Fighting Championship — Best of</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260828035500 +0200" channel="canalplus_fr.83" stop="20260828060000 +0200">
+    <title>Fin des programmes — Divers</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260828060000 +0200" channel="canalplus_fr.83" stop="20260828074500 +0200">
+    <title>Le JT — Emission du 28 août 2026</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260828074500 +0200" channel="canalplus_fr.83" stop="20260828081500 +0200">
+    <title>On Board F1 — Grand Prix des Pays-Bas</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260828081500 +0200" channel="canalplus_fr.83" stop="20260828083600 +0200">
+    <title>On Board moto — Grand Prix de Grande-Bretagne</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260828083600 +0200" channel="canalplus_fr.83" stop="20260828085500 +0200">
+    <title>Team Zarco - Saison 4 — Episode 1</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260828085500 +0200" channel="canalplus_fr.83" stop="20260828094500 +0200">
+    <title>Essais libres 1 des Moto 3 — Grand Prix d'Aragon</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260828094500 +0200" channel="canalplus_fr.83" stop="20260828103500 +0200">
+    <title>Essais libres 1 des Moto 2 — Grand Prix d'Aragon</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260828103500 +0200" channel="canalplus_fr.83" stop="20260828114100 +0200">
+    <title>Essais libres 1 des Moto GP — Grand Prix d'Aragon</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260828114100 +0200" channel="canalplus_fr.83" stop="20260828123400 +0200">
+    <title>Review — Rallye de Finlande</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260828123400 +0200" channel="canalplus_fr.83" stop="20260828130200 +0200">
+    <title>Preview — Rallye du Paraguay</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260828130200 +0200" channel="canalplus_fr.83" stop="20260828131000 +0200">
+    <title>Fractionné WRC — Visite guidée de l'intérieur d'u...</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260828131000 +0200" channel="canalplus_fr.83" stop="20260828140000 +0200">
+    <title>Essais des Moto 3 — Grand Prix d'Aragon</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260828140000 +0200" channel="canalplus_fr.83" stop="20260828145000 +0200">
+    <title>Essais des Moto 2 — Grand Prix d'Aragon</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260828145000 +0200" channel="canalplus_fr.83" stop="20260828161100 +0200">
+    <title>Essais des Moto GP — Grand Prix d'Aragon</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260828161100 +0200" channel="canalplus_fr.83" stop="20260828173600 +0200">
+    <title>In Extenso Supersevens — Etape de Pau. Phase de poules. 2...</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260828173600 +0200" channel="canalplus_fr.83" stop="20260828203800 +0200">
+    <title>In Extenso Supersevens — Etape de Pau. Phase de poules. 3...</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260828203800 +0200" channel="canalplus_fr.83" stop="20260828230400 +0200">
+    <title>In Extenso Supersevens — Etape de Pau. Phase de poules. 4...</title>
+    <icon src="https://thumb.canalplus.pro/http/unsafe/254x143/filters:quality(80)/canalplus-cdn.canal-plus.io/p1/unit/32006467/canal-ouah/STD169/myCANAL_MEA_16x9_1920x10802-1fM7" />
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260828230400 +0200" channel="canalplus_fr.83" stop="20260828235700 +0200">
+    <title>6e spéciale — Rallye du Paraguay</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260828235700 +0200" channel="canalplus_fr.83" stop="20260829004500 +0200">
+    <title>7e spéciale — Rallye du Paraguay</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260829004500 +0200" channel="canalplus_fr.83" stop="20260829013400 +0200">
+    <title>8e spéciale — Rallye du Paraguay</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260829013400 +0200" channel="canalplus_fr.83" stop="20260829041100 +0200">
+    <title>In Extenso Supersevens — Etape de Pau. Phase de poules. 1...</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260829041100 +0200" channel="canalplus_fr.83" stop="20260829070000 +0200">
+    <title>Fin des programmes — Divers</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260829070000 +0200" channel="canalplus_fr.83" stop="20260829073000 +0200">
+    <title>Le JT — Emission du 29 août 2026</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260829073000 +0200" channel="canalplus_fr.83" stop="20260829074100 +0200">
+    <title>Fractionné WRC — Sébastien Loeb, les voitures de ...</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260829074100 +0200" channel="canalplus_fr.83" stop="20260829082900 +0200">
+    <title>8e spéciale — Rallye du Paraguay</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260829082900 +0200" channel="canalplus_fr.83" stop="20260829083500 +0200">
+    <title>Fractionné Moto — Moto tour en hélicoptère</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260829083500 +0200" channel="canalplus_fr.83" stop="20260829092000 +0200">
+    <title>Essais libres 2 des Moto 3 — Grand Prix d'Aragon</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260829092000 +0200" channel="canalplus_fr.83" stop="20260829100000 +0200">
+    <title>Essais libres 2 des Moto 2 — Grand Prix d'Aragon</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260829100000 +0200" channel="canalplus_fr.83" stop="20260829104500 +0200">
+    <title>Essais libres 2 des Moto GP — Grand Prix d'Aragon</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260829104500 +0200" channel="canalplus_fr.83" stop="20260829114600 +0200">
+    <title>Essais qualificatifs des Moto GP — Grand Prix d'Aragon</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260829114600 +0200" channel="canalplus_fr.83" stop="20260829123400 +0200">
+    <title>8e spéciale — Rallye du Paraguay</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260829123400 +0200" channel="canalplus_fr.83" stop="20260829124000 +0200">
+    <title>Fractionné Moto — Tour en Safety Car</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260829124000 +0200" channel="canalplus_fr.83" stop="20260829133500 +0200">
+    <title>Essais qualificatifs des Moto 3 — Grand Prix d'Aragon</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260829133500 +0200" channel="canalplus_fr.83" stop="20260829142600 +0200">
+    <title>Essais qualificatifs des Moto 2 — Grand Prix d'Aragon</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260829142600 +0200" channel="canalplus_fr.83" stop="20260829145500 +0200">
+    <title>La grille Moto — Grand Prix d'Aragon : Sprint des...</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260829145500 +0200" channel="canalplus_fr.83" stop="20260829152600 +0200">
+    <title>La course sprint des Moto GP — Grand Prix d'Aragon</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260829152600 +0200" channel="canalplus_fr.83" stop="20260829155600 +0200">
+    <title>Débrief Moto — Grand Prix d'Aragon : Sprint des...</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260829155600 +0200" channel="canalplus_fr.83" stop="20260829170100 +0200">
+    <title>In Extenso Supersevens — Etape de Pau. Barrages et quarts...</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260829170100 +0200" channel="canalplus_fr.83" stop="20260829185800 +0200">
+    <title>In Extenso Supersevens — Etape de Pau. Demi-finales</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260829185800 +0200" channel="canalplus_fr.83" stop="20260829195700 +0200">
+    <title>In Extenso Supersevens — Etape de Pau. Matches pour la 3e...</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260829195700 +0200" channel="canalplus_fr.83" stop="20260829210000 +0200">
+    <title>In Extenso Supersevens — Etape de Pau. Finales</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260829210000 +0200" channel="canalplus_fr.83" stop="20260829220000 +0200">
+    <title>15e spéciale — Rallye du Paraguay</title>
+    <icon src="https://thumb.canalplus.pro/http/unsafe/254x143/filters:quality(80)/img-hapi.canalplus.pro:80/ServiceImage/ImageID/124772395" />
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260829220000 +0200" channel="canalplus_fr.83" stop="20260829225200 +0200">
+    <title>16e spéciale — Rallye du Paraguay</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260829225200 +0200" channel="canalplus_fr.83" stop="20260829230400 +0200">
+    <title>Fractionné WRC — Sébastien Loeb, les voitures de ...</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260829230400 +0200" channel="canalplus_fr.83" stop="20260829234700 +0200">
+    <title>17e spéciale — Rallye du Paraguay</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260829234700 +0200" channel="canalplus_fr.83" stop="20260830001500 +0200">
+    <title>Les temps forts — Rallye de République tchèque</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260830001500 +0200" channel="canalplus_fr.83" stop="20260830010000 +0200">
+    <title>Le JT — Emission du 29 août 2026</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260830010000 +0200" channel="canalplus_fr.83" stop="20260830013100 +0200">
+    <title>La course sprint des Moto GP — Grand Prix d'Aragon</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260830013100 +0200" channel="canalplus_fr.83" stop="20260830020200 +0200">
+    <title>Débrief Moto — Grand Prix d'Aragon : Sprint des...</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260830020200 +0200" channel="canalplus_fr.83" stop="20260830025300 +0200">
+    <title>14e spéciale — Rallye du Paraguay</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260830025300 +0200" channel="canalplus_fr.83" stop="20260830035400 +0200">
+    <title>15e spéciale — Rallye du Paraguay</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260830035400 +0200" channel="canalplus_fr.83" stop="20260830044600 +0200">
+    <title>16e spéciale — Rallye du Paraguay</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260830044600 +0200" channel="canalplus_fr.83" stop="20260830070000 +0200">
+    <title>Fin des programmes — Divers</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260830070000 +0200" channel="canalplus_fr.83" stop="20260830073000 +0200">
+    <title>Le JT — Emission du 30 août 2026</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260830073000 +0200" channel="canalplus_fr.83" stop="20260830081300 +0200">
+    <title>17e spéciale — Rallye du Paraguay</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260830081300 +0200" channel="canalplus_fr.83" stop="20260830083100 +0200">
+    <title>Fractionné WRC — Ogier, la preuve par 9</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260830083100 +0200" channel="canalplus_fr.83" stop="20260830090200 +0200">
+    <title>La course sprint des Moto GP — Grand Prix d'Aragon</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260830090200 +0200" channel="canalplus_fr.83" stop="20260830093500 +0200">
+    <title>Débrief Moto — Grand Prix d'Aragon : Sprint des...</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260830093500 +0200" channel="canalplus_fr.83" stop="20260830100300 +0200">
+    <title>Warm Up des Moto GP — Grand Prix d'Aragon</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260830100300 +0200" channel="canalplus_fr.83" stop="20260830103200 +0200">
+    <title>La parade des pilotes — Grand Prix d'Aragon</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260830103200 +0200" channel="canalplus_fr.83" stop="20260830105500 +0200">
+    <title>On Board moto — Grand Prix de Grande-Bretagne</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260830105500 +0200" channel="canalplus_fr.83" stop="20260830115100 +0200">
+    <title>La course des Moto 3 — Grand Prix d'Aragon</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260830115100 +0200" channel="canalplus_fr.83" stop="20260830121200 +0200">
+    <title>La grille Moto — Grand Prix d'Aragon</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260830121200 +0200" channel="canalplus_fr.83" stop="20260830131100 +0200">
+    <title>La course des Moto 2 — Grand Prix d'Aragon</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260830131100 +0200" channel="canalplus_fr.83" stop="20260830131600 +0200">
+    <title>Fractionné Moto — Sous le casque de Bagnaia</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260830131600 +0200" channel="canalplus_fr.83" stop="20260830141700 +0200">
+    <title>In Extenso Supersevens — Etape de Pau. Finales</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260830141700 +0200" channel="canalplus_fr.83" stop="20260830144500 +0200">
+    <title>Les acrobates du football — Doc. Sport</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260830144500 +0200" channel="canalplus_fr.83" stop="20260830150200 +0200">
+    <title>Moto : Le podium — Grand Prix d'Aragon</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260830150200 +0200" channel="canalplus_fr.83" stop="20260830154100 +0200">
+    <title>Débrief Moto — Grand Prix d'Aragon</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260830154100 +0200" channel="canalplus_fr.83" stop="20260830155000 +0200">
+    <title>Fractionné WRC — Visite guidée de l'intérieur d'u...</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260830155000 +0200" channel="canalplus_fr.83" stop="20260830163500 +0200">
+    <title>20e spéciale — Rallye du Paraguay</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260830163500 +0200" channel="canalplus_fr.83" stop="20260830164200 +0200">
+    <title>Fractionné WRC — Les ouvreurs en WRC : les binôme...</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260830164200 +0200" channel="canalplus_fr.83" stop="20260830173200 +0200">
+    <title>21e spéciale — Rallye du Paraguay</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260830173200 +0200" channel="canalplus_fr.83" stop="20260830175900 +0200">
+    <title>Passions extrêmes — Episode 1 : Wing Foil, les ailes...</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260830175900 +0200" channel="canalplus_fr.83" stop="20260830190000 +0200">
+    <title>It's on IV — Doc. Sport</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260830190000 +0200" channel="canalplus_fr.83" stop="20260830203100 +0200">
+    <title>22e spéciale : Powerstage — Rallye du Paraguay</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260830203100 +0200" channel="canalplus_fr.83" stop="20260830210200 +0200">
+    <title>Famille Delecour : les fous du volant — Doc. Sport</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260830210200 +0200" channel="canalplus_fr.83" stop="20260830215200 +0200">
+    <title>La course des Moto GP — Grand Prix d'Aragon</title>
+    <icon src="https://thumb.canalplus.pro/http/unsafe/254x143/filters:quality(80)/img-hapi.canalplus.pro:80/ServiceImage/ImageID/124770404" />
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260830215200 +0200" channel="canalplus_fr.83" stop="20260830220800 +0200">
+    <title>Moto : Le podium — Grand Prix d'Aragon</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260830220800 +0200" channel="canalplus_fr.83" stop="20260830224700 +0200">
+    <title>Débrief Moto — Grand Prix d'Aragon</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260830224700 +0200" channel="canalplus_fr.83" stop="20260830231000 +0200">
+    <title>Moto : le dîner des légendes — Doc. Sport</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260830231000 +0200" channel="canalplus_fr.83" stop="20260831001500 +0200">
+    <title>In Extenso Supersevens — Etape de Pau. Finales</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260831001500 +0200" channel="canalplus_fr.83" stop="20260831004500 +0200">
+    <title>Le JT — Emission du 30 août 2026</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260831004500 +0200" channel="canalplus_fr.83" stop="20260831021600 +0200">
+    <title>22e spéciale : Powerstage — Rallye du Paraguay</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260831021600 +0200" channel="canalplus_fr.83" stop="20260831030500 +0200">
+    <title>La course des Moto GP — Grand Prix d'Aragon</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260831030500 +0200" channel="canalplus_fr.83" stop="20260831032200 +0200">
+    <title>Moto : Le podium — Grand Prix d'Aragon</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260831032200 +0200" channel="canalplus_fr.83" stop="20260831040000 +0200">
+    <title>Débrief Moto — Grand Prix d'Aragon</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260831040000 +0200" channel="canalplus_fr.83" stop="20260831060000 +0200">
+    <title>Fin des programmes — Divers</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260831060000 +0200" channel="canalplus_fr.83" stop="20260831080000 +0200">
+    <title>La matinale — Emission du 31 août 2026</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260831080000 +0200" channel="canalplus_fr.83" stop="20260831085000 +0200">
+    <title>La course des Moto GP — Grand Prix d'Aragon</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260831085000 +0200" channel="canalplus_fr.83" stop="20260831090700 +0200">
+    <title>Moto : Le podium — Grand Prix d'Aragon</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260831090700 +0200" channel="canalplus_fr.83" stop="20260831094700 +0200">
+    <title>Débrief Moto — Grand Prix d'Aragon</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260831094700 +0200" channel="canalplus_fr.83" stop="20260831095100 +0200">
+    <title>Fractionné Moto — Tour en Safety Car</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260831095100 +0200" channel="canalplus_fr.83" stop="20260831104100 +0200">
+    <title>21e spéciale — Rallye du Paraguay</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260831104100 +0200" channel="canalplus_fr.83" stop="20260831121500 +0200">
+    <title>22e spéciale : Powerstage — Rallye du Paraguay</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260831121500 +0200" channel="canalplus_fr.83" stop="20260831124500 +0200">
+    <title>Le JT — Emission du 31 août 2026</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260831124500 +0200" channel="canalplus_fr.83" stop="20260831133400 +0200">
+    <title>La course des Moto GP — Grand Prix d'Aragon</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260831133400 +0200" channel="canalplus_fr.83" stop="20260831135100 +0200">
+    <title>Moto : Le podium — Grand Prix d'Aragon</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260831135100 +0200" channel="canalplus_fr.83" stop="20260831143000 +0200">
+    <title>Débrief Moto — Grand Prix d'Aragon</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260831143000 +0200" channel="canalplus_fr.83" stop="20260831144000 +0200">
+    <title>Fractionné — TRAIL - Ultra 01 - 28/07/26</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260831144000 +0200" channel="canalplus_fr.83" stop="20260831160000 +0200">
+    <title>Girl Climber : Sans limite — Doc. Sport</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260831160000 +0200" channel="canalplus_fr.83" stop="20260831163000 +0200">
+    <title>Le JT — Emission du 31 août 2026</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260831163000 +0200" channel="canalplus_fr.83" stop="20260831172700 +0200">
+    <title>La course des Moto 3 — Grand Prix d'Aragon</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260831172700 +0200" channel="canalplus_fr.83" stop="20260831180000 +0200">
+    <title>On Board F1 — Grand Prix des Pays-Bas</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260831180000 +0200" channel="canalplus_fr.83" stop="20260831190000 +0200">
+    <title>Club 360 — Emission du 31 août 2026</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260831190000 +0200" channel="canalplus_fr.83" stop="20260831190300 +0200">
+    <title>Zapsport 360 — Emission du 31 août 2026</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260831190300 +0200" channel="canalplus_fr.83" stop="20260831193000 +0200">
+    <title>Les temps forts — Rallye de République tchèque</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260831193000 +0200" channel="canalplus_fr.83" stop="20260831201500 +0200">
+    <title>20e spéciale — Rallye du Paraguay</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260831201500 +0200" channel="canalplus_fr.83" stop="20260831210700 +0200">
+    <title>21e spéciale — Rallye du Paraguay</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260831210700 +0200" channel="canalplus_fr.83" stop="20260831224100 +0200">
+    <title>22e spéciale : Powerstage — Rallye du Paraguay</title>
+    <icon src="https://thumb.canalplus.pro/http/unsafe/254x143/filters:quality(80)/img-hapi.canalplus.pro:80/ServiceImage/ImageID/124405760" />
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260831224100 +0200" channel="canalplus_fr.83" stop="20260831233000 +0200">
+    <title>La course des Moto GP — Grand Prix d'Aragon</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260831233000 +0200" channel="canalplus_fr.83" stop="20260831234700 +0200">
+    <title>Moto : Le podium — Grand Prix d'Aragon</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260831234700 +0200" channel="canalplus_fr.83" stop="20260901002600 +0200">
+    <title>Débrief Moto — Grand Prix d'Aragon</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260901002600 +0200" channel="canalplus_fr.83" stop="20260901003000 +0200">
+    <title>Zapsport 360 — Emission du 31 août 2026</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260901003000 +0200" channel="canalplus_fr.83" stop="20260901010000 +0200">
+    <title>Le JT — Emission du 31 août 2026</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260901010000 +0200" channel="canalplus_fr.83" stop="20260901030100 +0200">
+    <title>Etape de Pau. Les meilleurs moments — In Extenso Supersevens</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260901030100 +0200" channel="canalplus_fr.83" stop="20260901040100 +0200">
+    <title>Soir de padel — Londres : Fernandez/Calvo créent...</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260901040100 +0200" channel="canalplus_fr.83" stop="20260901060000 +0200">
+    <title>Fin des programmes — Divers</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260901060000 +0200" channel="canalplus_fr.83" stop="20260901080000 +0200">
+    <title>La matinale — Emission du 01 sept. 2026</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260901080000 +0200" channel="canalplus_fr.83" stop="20260901093000 +0200">
+    <title>22e spéciale : Powerstage — Rallye du Paraguay</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260901093000 +0200" channel="canalplus_fr.83" stop="20260901100100 +0200">
+    <title>On Board F1 — Grand Prix des Pays-Bas</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260901100100 +0200" channel="canalplus_fr.83" stop="20260901103000 +0200">
+    <title>Formula One, le mag — GP de Zandvoort : Norris triomph...</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260901103000 +0200" channel="canalplus_fr.83" stop="20260901111900 +0200">
+    <title>La course des Moto GP — Grand Prix d'Aragon</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260901111900 +0200" channel="canalplus_fr.83" stop="20260901113500 +0200">
+    <title>Moto : Le podium — Grand Prix d'Aragon</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260901113500 +0200" channel="canalplus_fr.83" stop="20260901121500 +0200">
+    <title>Débrief Moto — Grand Prix d'Aragon</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260901121500 +0200" channel="canalplus_fr.83" stop="20260901130000 +0200">
+    <title>Le JT — Emission du 01 sept. 2026</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260901130000 +0200" channel="canalplus_fr.83" stop="20260901143100 +0200">
+    <title>22e spéciale : Powerstage — Rallye du Paraguay</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260901143100 +0200" channel="canalplus_fr.83" stop="20260901145800 +0200">
+    <title>Les temps forts — Rallye de République tchèque</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260901145800 +0200" channel="canalplus_fr.83" stop="20260901160000 +0200">
+    <title>Soir de padel — Londres : Fernandez/Calvo créent...</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260901160000 +0200" channel="canalplus_fr.83" stop="20260901163000 +0200">
+    <title>Le JT — Emission du 01 sept. 2026</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260901163000 +0200" channel="canalplus_fr.83" stop="20260901172900 +0200">
+    <title>La course des Moto 2 — Grand Prix d'Aragon</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260901172900 +0200" channel="canalplus_fr.83" stop="20260901180000 +0200">
+    <title>Formule 1 : La fabrique des rêves — Formule 1</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260901180000 +0200" channel="canalplus_fr.83" stop="20260901190000 +0200">
+    <title>Club 360 — Emission du 01 sept. 2026</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260901190000 +0200" channel="canalplus_fr.83" stop="20260901190300 +0200">
+    <title>Zapsport 360 — Emission du 01 sept. 2026</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260901190300 +0200" channel="canalplus_fr.83" stop="20260901191900 +0200">
+    <title>Team Zarco - Saison 4 — Episode 1</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260901191900 +0200" channel="canalplus_fr.83" stop="20260901200800 +0200">
+    <title>La course des Moto GP — Grand Prix d'Aragon</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260901200800 +0200" channel="canalplus_fr.83" stop="20260901202500 +0200">
+    <title>Moto : Le podium — Grand Prix d'Aragon</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260901202500 +0200" channel="canalplus_fr.83" stop="20260901210700 +0200">
+    <title>Débrief Moto — Grand Prix d'Aragon</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260901210700 +0200" channel="canalplus_fr.83" stop="20260901225800 +0200">
+    <title>La course — Grand Prix des Pays-Bas</title>
+    <icon src="https://thumb.canalplus.pro/http/unsafe/254x143/filters:quality(80)/img-hapi.canalplus.pro:80/ServiceImage/ImageID/124706484" />
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260901225800 +0200" channel="canalplus_fr.83" stop="20260901231800 +0200">
+    <title>Le podium — Grand Prix des Pays-Bas</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260901231800 +0200" channel="canalplus_fr.83" stop="20260901235000 +0200">
+    <title>Formula One, le mag — GP de Zandvoort : Norris triomph...</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260901235000 +0200" channel="canalplus_fr.83" stop="20260902001500 +0200">
+    <title>Team Gunther — Doc. Sport</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260902001500 +0200" channel="canalplus_fr.83" stop="20260902010000 +0200">
+    <title>Le JT — Emission du 01 sept. 2026</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260902010000 +0200" channel="canalplus_fr.83" stop="20260902022800 +0200">
+    <title>1er jour — Grand Prix d'Allemagne</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260902022800 +0200" channel="canalplus_fr.83" stop="20260902035800 +0200">
+    <title>2e jour — Grand Prix d'Allemagne</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260902035800 +0200" channel="canalplus_fr.83" stop="20260902060000 +0200">
+    <title>Fin des programmes — Divers</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260902060000 +0200" channel="canalplus_fr.83" stop="20260902080000 +0200">
+    <title>La matinale — Emission du 02 sept. 2026</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260902080000 +0200" channel="canalplus_fr.83" stop="20260902093300 +0200">
+    <title>La clinique des sports — Best of 2</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260902093300 +0200" channel="canalplus_fr.83" stop="20260902105800 +0200">
+    <title>Trail 360 — Trail 360 : Spéciale été avec Bo...</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260902105800 +0200" channel="canalplus_fr.83" stop="20260902120000 +0200">
+    <title>Soir de padel — Londres : Fernandez/Calvo créent...</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260902120000 +0200" channel="canalplus_fr.83" stop="20260902124500 +0200">
+    <title>Le JT — Emission du 02 sept. 2026</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260902124500 +0200" channel="canalplus_fr.83" stop="20260902143600 +0200">
+    <title>La course — Grand Prix des Pays-Bas</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260902143600 +0200" channel="canalplus_fr.83" stop="20260902150500 +0200">
+    <title>Formula One, le mag — GP de Zandvoort : Norris triomph...</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260902150500 +0200" channel="canalplus_fr.83" stop="20260902160000 +0200">
+    <title>Review — Rallye du Paraguay</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260902160000 +0200" channel="canalplus_fr.83" stop="20260902163000 +0200">
+    <title>Le JT — Emission du 02 sept. 2026</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260902163000 +0200" channel="canalplus_fr.83" stop="20260902172000 +0200">
+    <title>La course des Moto GP — Grand Prix d'Aragon</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260902172000 +0200" channel="canalplus_fr.83" stop="20260902180000 +0200">
+    <title>Débrief Moto — Grand Prix d'Aragon</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260902180000 +0200" channel="canalplus_fr.83" stop="20260902193000 +0200">
+    <title>Club 360 — Emission du 02 sept. 2026</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260902193000 +0200" channel="canalplus_fr.83" stop="20260902210400 +0200">
+    <title>Histoire de champions rugby — Christophe Dominici</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260902210400 +0200" channel="canalplus_fr.83" stop="20260902224900 +0200">
+    <title>Objectif Brennus : Toulouse seul au monde — Doc. Sport</title>
+    <icon src="https://thumb.canalplus.pro/http/unsafe/254x143/filters:quality(80)/canalplus-cdn.canal-plus.io/p1/unit/31651959/canal-ouah_50001/STD169/myCANAL_16x9_MEA_1920x1080-PxZo" />
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260902224900 +0200" channel="canalplus_fr.83" stop="20260902231900 +0200">
+    <title>Més que une finale - 2016, le Top 14 illumine le Camp Nou — Doc. Sport</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260902231900 +0200" channel="canalplus_fr.83" stop="20260902232200 +0200">
+    <title>Zapsport 360 — Emission du 02 sept. 2026</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260902232200 +0200" channel="canalplus_fr.83" stop="20260903001500 +0200">
+    <title>Les temps forts — Grand Prix d'Allemagne</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260903001500 +0200" channel="canalplus_fr.83" stop="20260903010000 +0200">
+    <title>Le JT — Emission du 02 sept. 2026</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260903010000 +0200" channel="canalplus_fr.83" stop="20260903015300 +0200">
+    <title>Review — Rallye du Paraguay</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260903015300 +0200" channel="canalplus_fr.83" stop="20260903034400 +0200">
+    <title>La course — Grand Prix des Pays-Bas</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260903034400 +0200" channel="canalplus_fr.83" stop="20260903040400 +0200">
+    <title>Le podium — Grand Prix des Pays-Bas</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260903040400 +0200" channel="canalplus_fr.83" stop="20260903042200 +0200">
+    <title>Formula One, le mag — GP de Zandvoort : Norris triomph...</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
+  </programme>
+  <programme start="20260903042200 +0200" channel="canalplus_fr.83" stop="20260903060000 +0200">
+    <title>Fin des programmes — Divers</title>
+    <url>https://www.canalplus.com/live-tv/programme-tv/</url>
   </programme>
   <programme start="20260825000500 +0300" channel="digi4k_ro" stop="20260825080000 +0300">
     <title>Music</title>

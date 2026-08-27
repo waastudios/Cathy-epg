@@ -48,11 +48,21 @@
   },
   "xmltv": {
     "status": "ok",
-    "channels": 153,
-    "programmes": 15918,
+    "channels": 156,
+    "programmes": 16351,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-08-26T21:47:35Z",
-  "total_records": 15918
+  "generated_at": "2026-08-27T13:57:49Z",
+  "total_records": 16351,
+  "canalplus_fr": {
+    "status": "ok",
+    "records": 433,
+    "channels": [
+      "CANAL+ FOOT",
+      "CANAL+ SPORT",
+      "CANAL+ SPORT 360"
+    ],
+    "api": "https://hodor.canalplus.pro/api/v2/mycanal"
+  }
 }
