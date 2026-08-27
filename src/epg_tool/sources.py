@@ -63,6 +63,13 @@ ALLENTE_NO_CHANNELS: dict[str, tuple[str, str]] = {
 ALLENTE_NO_CHANNEL_IDS = frozenset(ALLENTE_NO_CHANNELS)
 EE_TV_PLAYER_GUIDE = "https://player.ee.co.uk/#/livetv/schedule"
 EE_TV_SCHEDULE = "https://api.youview.tv/metadata/linear/v2/schedule/by-servicelocator"
+CANALPLUS_FR_GUIDE = "https://www.canalplus.com/live-tv/programme-tv/"
+CANALPLUS_FR_API_BASE = "https://hodor.canalplus.pro/api/v2/mycanal/channels/b63a43e7548cb1a6e7c7319084f48af8"
+CANALPLUS_FR_SPORT_CHANNELS: tuple[tuple[str, str, str, int], ...] = (
+    ("83", "CANAL+ SPORT 360", "canalplus_sport360", 9),
+    ("19", "CANAL+ FOOT", "canalplus_foot", 10),
+    ("177", "CANAL+ SPORT", "canalplus_sport", 11),
+)
 # 以下映射来自 EE TV Player 匿名公开的线性频道目录；保留用户指定的 TNT Sports SD/UHD 主频道。
 # 同一节目流的 HD、+1、字幕／音频描述镜像明确排除，防止跨馈源重复频道。
 EE_UK_CHANNELS: tuple[tuple[str, str, str], ...] = (
@@ -703,6 +710,89 @@ def _ee_interval_starts(today: date, days: int, zone: ZoneInfo) -> list[datetime
         for hour in range(0, 24, 12):
             intervals.append((local_midnight + timedelta(hours=hour)).astimezone(timezone.utc))
     return intervals
+
+
+def _canalplus_fr_image_url(value: object) -> str | None:
+    if not isinstance(value, str) or not value.strip():
+        return None
+    return (
+        value.replace("{resolutionXY}", "254x143")
+        .replace("{imageQualityPercentage}", "80")
+        .replace("\\u002F", "/")
+        .replace("\\u0026", "&")
+    )
+
+
+def collect_canalplus_fr_sport(days: int = 7, pause_seconds: float = 0.02) -> list[Programme]:
+    """读取法国 Canal+ 官方节目表中的三个体育频道。"""
+    if days not in range(1, 9):
+        raise ValueError("法国 Canal+ 采集天数必须为 1–8。")
+    session = _session()
+    zone = ZoneInfo("Europe/Paris")
+    retrieved_at = utc_now_iso()
+    records: list[Programme] = []
+    for channel_id, channel_name, channel_suffix, channel_position in CANALPLUS_FR_SPORT_CHANNELS:
+        for day_offset in range(days):
+            response = session.get(
+                f"{CANALPLUS_FR_API_BASE}/{channel_id}/broadcasts/day/{day_offset}",
+                params={
+                    "channelPosition": channel_position,
+                    "displayAvailabilityIcons": "false",
+                    "displayAccessibilityIcons": "false",
+                },
+                headers={
+                    "Accept": "application/json, text/plain, */*",
+                    "Origin": "https://www.canalplus.com",
+                    "Referer": CANALPLUS_FR_GUIDE,
+                    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+                },
+                timeout=(5, 20),
+            )
+            response.raise_for_status()
+            payload = response.json()
+            time_slices = payload.get("timeSlices") if isinstance(payload, dict) else None
+            if not isinstance(time_slices, list):
+                raise SourceUnavailable(f"法国 Canal+ {channel_name} 官方 EPG 未返回 timeSlices。")
+            for time_slice in time_slices:
+                contents = time_slice.get("contents") if isinstance(time_slice, dict) else None
+                if not isinstance(contents, list):
+                    continue
+                for content in contents:
+                    if not isinstance(content, dict):
+                        continue
+                    title = str(content.get("title") or "").strip()
+                    subtitle = str(content.get("subtitle") or "").strip()
+                    start_ms = content.get("startTime")
+                    end_ms = content.get("endTime")
+                    if not title or not isinstance(start_ms, (int, float)) or not isinstance(end_ms, (int, float)):
+                        continue
+                    start = datetime.fromtimestamp(start_ms / 1000, tz=timezone.utc).astimezone(zone)
+                    end = datetime.fromtimestamp(end_ms / 1000, tz=timezone.utc).astimezone(zone)
+                    if end <= start:
+                        continue
+                    display_title = title if not subtitle or subtitle == title else f"{title} — {subtitle}"
+                    records.append(
+                        Programme(
+                            provider="canalplus_fr",
+                            country="FR",
+                            timezone="Europe/Paris",
+                            channel_id=channel_suffix,
+                            channel_number=channel_id,
+                            channel_name=channel_name,
+                            title=display_title,
+                            start_at=start.isoformat(),
+                            end_at=end.isoformat(),
+                            source_url=CANALPLUS_FR_GUIDE,
+                            retrieved_at=retrieved_at,
+                            image_url=_canalplus_fr_image_url(content.get("URLImage")),
+                            image_source_url=CANALPLUS_FR_GUIDE,
+                        )
+                    )
+            time.sleep(pause_seconds)
+    records = _deduplicate(records)
+    if not records:
+        raise SourceUnavailable("法国 Canal+ 官方体育 EPG 未返回节目记录。")
+    return records
 
 
 def collect_ee_uk_channels(days: int = 7, pause_seconds: float = 0.02) -> list[Programme]:

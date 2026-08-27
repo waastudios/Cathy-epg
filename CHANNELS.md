@@ -2,7 +2,7 @@
 
 This inventory is generated directly from the currently published `data/epg.xml`. Every row is an actual XMLTV `<channel>` node: **tvg-id** is `channel/@id` and **tvg-name** is `display-name`.
 
-The current XMLTV output contains **152 channels**.
+The current XMLTV output contains **155 channels**.
 
 > **Note:** `(T)` means **Translated**. The channel's schedule originates in a non-English market and programme titles are translated into English before publication. This marker appears **only in this inventory**; it is never written to `data/epg.xml`, `data/epg.xml.gz`, or the programme snapshot. XMLTV `display-name` values remain the official provider names.
 
@@ -171,6 +171,14 @@ The current XMLTV output contains **152 channels**.
 | `ee_uk.4` | Channel 4 |
 | `ee_uk.6` | ITV2 |
 | `ee_uk.9` | BBC Four |
+
+## France Canal+ Sport
+
+| tvg-id | tvg-name |
+| --- | --- |
+| `canalplus_sport360` | CANAL+ SPORT 360 |
+| `canalplus_foot` | CANAL+ FOOT |
+| `canalplus_sport` | CANAL+ SPORT |
 
 ## Eurosport
 
