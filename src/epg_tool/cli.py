@@ -18,6 +18,7 @@ from .sources import (
     SourceUnavailable,
     collect_allente_no,
     collect_allente_v_sport,
+    collect_canalplus_fr,
     collect_astro,
     collect_digi4k,
     collect_ee_uk_channels,
@@ -63,6 +64,7 @@ def _collect(args: argparse.Namespace) -> int:
         ("allente_no", lambda: collect_allente_no(args.days)),
         # EE TV Player 提供完整频道级 start/stop；只保留 SD 主频道，避免 HD／+1 镜像重复。
         ("ee_uk", lambda: collect_ee_uk_channels(args.days)),
+        ("canalplus_fr", lambda: collect_canalplus_fr(args.days)),
         # Telekom MagentaTV 的匿名官方生产节目表；XMLTV ID 使用用户指定 Sky Germany 频道号。
         ("sky_de", lambda: collect_magenta_tv_sky_de(args.days)),
         ("digi4k_ro", lambda: collect_digi4k(args.days)),
@@ -92,7 +94,7 @@ def _collect(args: argparse.Namespace) -> int:
     # collected UK programme is unchanged, retain its existing direct image link.
     previous_images = {
         (row.provider, row.channel_id, row.start_at, row.title): (row.image_url, row.image_source_url)
-        for row in previous_by_provider.get("ee_uk", []) + previous_by_provider.get("virgin_uk", [])
+        for row in previous_by_provider.get("ee_uk", []) + previous_by_provider.get("virgin_uk", []) + previous_by_provider.get("canalplus_fr", [])
         if row.image_url
     }
     if previous_images:
@@ -213,7 +215,7 @@ def build_parser() -> argparse.ArgumentParser:
     search = commands.add_parser("search", help="检索已采集的节目表快照")
     search.add_argument("query", help="节目名或频道名关键词")
     search.add_argument("--input", type=Path, default=DEFAULT_DATASET)
-    search.add_argument("--provider", choices=["astro", "now_hk", "allente_se", "allente_no", "ee_uk", "sky_de", "digi4k_ro", "tvplus_tr", "sbb_rs", "virgin_uk"])
+    search.add_argument("--provider", choices=["astro", "now_hk", "allente_se", "allente_no", "ee_uk", "canalplus_fr", "sky_de", "digi4k_ro", "tvplus_tr", "sbb_rs", "virgin_uk"])
     search.add_argument("--channel")
     search.add_argument("--date", help="节目开始日期，格式 YYYY-MM-DD")
     search.set_defaults(func=_search)
@@ -221,7 +223,7 @@ def build_parser() -> argparse.ArgumentParser:
     preview = commands.add_parser("preview", help="查看今天、明天、后天的节目预告（北京时间）")
     preview.add_argument("--input", type=Path, default=DEFAULT_DATASET)
     preview.add_argument("--day", choices=["today", "tomorrow", "day-after-tomorrow"], help="只查看其中一天；省略时输出三天")
-    preview.add_argument("--provider", choices=["astro", "now_hk", "allente_se", "allente_no", "ee_uk", "sky_de", "digi4k_ro", "tvplus_tr", "sbb_rs", "virgin_uk"])
+    preview.add_argument("--provider", choices=["astro", "now_hk", "allente_se", "allente_no", "ee_uk", "canalplus_fr", "sky_de", "digi4k_ro", "tvplus_tr", "sbb_rs", "virgin_uk"])
     preview.add_argument("--channel")
     preview.set_defaults(func=_preview)
     return parser

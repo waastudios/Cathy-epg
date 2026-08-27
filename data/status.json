@@ -48,11 +48,20 @@
   },
   "xmltv": {
     "status": "ok",
-    "channels": 153,
-    "programmes": 15918,
+    "channels": 155,
+    "programmes": 16231,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-08-26T21:47:35Z",
-  "total_records": 15918
+  "generated_at": "2026-08-27T14:14:06Z",
+  "total_records": 16231,
+  "canalplus_fr": {
+    "status": "ok",
+    "records": 313,
+    "channels": [
+      "CANAL+",
+      "CANAL+ FOOT"
+    ],
+    "api": "https://hodor.canalplus.pro/api/v2/mycanal"
+  }
 }
