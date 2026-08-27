@@ -2,7 +2,7 @@
 
 本清单直接由当前发布的 `data/epg.xml` 生成。每一行均为实际 XMLTV `<channel>` 节点：**tvg-id** 对应 `channel/@id`，**tvg-name** 对应 `display-name`。
 
-当前 XMLTV 输出包含 **155 个频道**。
+当前 XMLTV 输出包含 **152 个频道**。
 
 > **注：**频道名称后的 **`(T)`** 表示 **Translated**：该频道的节目表来自非英语地区，原始节目标题已转换为英文后发布。此标记**仅用于本清单展示**，绝不会写入 `data/epg.xml`、`data/epg.xml.gz` 或节目快照；XMLTV 的官方 `display-name` 保持不变。
 
@@ -171,14 +171,6 @@
 | `ee_uk.352` | Sky Documentaries |
 | `ee_uk.353` | Sky History |
 | `ee_uk.354` | Sky Nature |
-
-## 🇫🇷法国 Canal+ 体育频道
-
-| tvg-id | tvg-name |
-| --- | --- |
-| `canalplus_sport360` | CANAL+ SPORT 360 |
-| `canalplus_foot` | CANAL+ FOOT |
-| `canalplus_sport` | CANAL+ SPORT |
 
 ## 🇹🇷土耳其／🇷🇸塞尔维亚 Eurosport
 | tvg-id | tvg-name |
