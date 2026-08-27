@@ -69,6 +69,9 @@ CANALPLUS_FR_CHANNELS: tuple[tuple[str, str, str, int], ...] = (
     ("301", "CANAL+", "canal+.fr", 4),
     ("19", "CANAL+ FOOT", "foot+.fr", 10),
 )
+CANALPLUS_FR_TITLE_TRANSLATIONS: dict[str, str] = json.loads(
+    files("epg_tool").joinpath("canalplus_fr_title_translations.json").read_text(encoding="utf-8")
+)
 # 以下映射来自 EE TV Player 匿名公开的线性频道目录；保留用户指定的 TNT Sports SD/UHD 主频道。
 # 同一节目流的 HD、+1、字幕／音频描述镜像明确排除，防止跨馈源重复频道。
 EE_UK_CHANNELS: tuple[tuple[str, str, str], ...] = (
@@ -722,6 +725,56 @@ def _canalplus_fr_image_url(value: object) -> str | None:
     )
 
 
+_CANALPLUS_FR_FALLBACK_REPLACEMENTS: tuple[tuple[str, str], ...] = (
+    ("Émission", "Broadcast"),
+    ("Emission", "Broadcast"),
+    ("Saison", "Season"),
+    ("Episode", "Episode"),
+    ("épisode", "episode"),
+    ("Partie", "Part"),
+    ("partie", "part"),
+    ("Qualifications", "Qualifying"),
+    ("qualification", "qualifying"),
+    ("journée", "matchday"),
+    ("match", "match"),
+    ("Film Drame", "Drama film"),
+    ("Film Comédie", "Comedy film"),
+    ("Film Horreur", "Horror film"),
+    ("Film Policier", "Crime film"),
+    ("Film Action", "Action film"),
+    ("Film Aventure", "Adventure film"),
+    ("Film Fantastique", "Fantasy film"),
+    ("Film Suspense", "Thriller film"),
+    ("Court métrage", "Short film"),
+    ("1re ", "1st "),
+    ("1er ", "1st "),
+    ("2e ", "2nd "),
+    ("3e ", "3rd "),
+)
+_CANALPLUS_FR_UNTRANSLATED = re.compile(
+    r"\b(?:avec|dans|des|du|et|la|le|les|pour|sur|une|un|Retour|Meilleurs|meilleurs|direct|directe|directement|"
+    r"Rugby|Football|Course|Podium|Débrief|Décrypté|Détective|Club|Emission|Émission|Saison|Journée|Partie)\b",
+    flags=re.IGNORECASE,
+)
+
+
+def _translate_canalplus_fr_title(title: str) -> str:
+    """将 Canal+ 法语标题通过本地固定映射转换为英文。"""
+    normalised = re.sub(r"\s+", " ", title).strip()
+    if not normalised:
+        raise SourceUnavailable("法国 Canal+ 官方节目对象缺少标题。")
+    translated = CANALPLUS_FR_TITLE_TRANSLATIONS.get(normalised)
+    if translated:
+        return translated
+    translated = normalised
+    for source, target in _CANALPLUS_FR_FALLBACK_REPLACEMENTS:
+        translated = translated.replace(source, target)
+    translated = re.sub(r"\s+", " ", translated).strip()
+    if translated == normalised or _CANALPLUS_FR_UNTRANSLATED.search(translated):
+        raise SourceUnavailable(f"Canal+ 法语标题没有本地固定英文映射：{title!r}")
+    return translated
+
+
 def collect_canalplus_fr(days: int = 7, pause_seconds: float = 0.02) -> list[Programme]:
     """读取法国 Canal+ 官方 EPG 的 CANAL+ 主频道和 CANAL+ FOOT。"""
     if days not in range(1, 9):
@@ -769,7 +822,8 @@ def collect_canalplus_fr(days: int = 7, pause_seconds: float = 0.02) -> list[Pro
                     end = datetime.fromtimestamp(end_ms / 1000, tz=timezone.utc).astimezone(zone)
                     if end <= start:
                         continue
-                    display_title = title if not subtitle or subtitle == title else f"{title} — {subtitle}"
+                    source_display_title = title if not subtitle or subtitle == title else f"{title} — {subtitle}"
+                    display_title = _translate_canalplus_fr_title(source_display_title)
                     records.append(
                         Programme(
                             provider="canalplus_fr",

@@ -50,10 +50,10 @@
     "status": "ok",
     "channels": 155,
     "programmes": 16231,
-    "xml_file": "data/epg.xml",
-    "gzip_file": "data/epg.xml.gz"
+    "xml_file": "/home/ubuntu/Cathy-epg/data/epg.xml",
+    "gzip_file": "/home/ubuntu/Cathy-epg/data/epg.xml.gz"
   },
-  "generated_at": "2026-08-27T14:40:50Z",
+  "generated_at": "2026-08-27T15:05:26Z",
   "total_records": 16231,
   "canalplus_fr": {
     "status": "ok",
@@ -62,10 +62,9 @@
       "CANAL+",
       "CANAL+ FOOT"
     ],
-    "allowed_channel_ids": [
-      "canal+.fr",
-      "foot+.fr"
-    ],
+    "translated": true,
+    "translation_mode": "local_versioned_mapping",
+    "days_requested": 7,
     "api": "https://hodor.canalplus.pro/api/v2/mycanal"
   }
 }

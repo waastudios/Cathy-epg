@@ -176,8 +176,8 @@
 
 | tvg-id | tvg-name |
 | --- | --- |
-| `canal+.fr` | CANAL+ |
-| `foot+.fr` | CANAL+ FOOT |
+| `canal+.fr` | CANAL+ (T) |
+| `foot+.fr` | CANAL+ FOOT (T) |
 
 ## 🇹🇷土耳其／🇷🇸塞尔维亚 Eurosport
 | tvg-id | tvg-name |

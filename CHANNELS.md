@@ -176,8 +176,8 @@ The current XMLTV output contains **155 channels**.
 
 | tvg-id | tvg-name |
 | --- | --- |
-| `canal+.fr` | CANAL+ |
-| `foot+.fr` | CANAL+ FOOT |
+| `canal+.fr` | CANAL+ (T) |
+| `foot+.fr` | CANAL+ FOOT (T) |
 
 ## Eurosport
 
