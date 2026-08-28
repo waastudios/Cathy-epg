@@ -1,24 +1,30 @@
 {
   "astro": {
     "status": "ok",
-    "records": 2417
+    "records": 2490
   },
   "now_hk": {
     "status": "ok",
-    "records": 4380
+    "records": 4189
   },
   "allente_se": {
     "status": "ok",
-    "records": 764
+    "records": 778
   },
   "allente_no": {
     "status": "error",
     "records": 0,
-    "message": "Allente Norway 官方 EPG 响应中未找到预期的 TV Norge、REX、FEM、Eurosport Norge 或 Eurosport 1。"
+    "message": "Allente Norway 标题未获得可验证的英文转换：'Det kunne vært verre'"
   },
   "ee_uk": {
     "status": "ok",
-    "records": 6632
+    "records": 6699
+  },
+  "canalplus_fr": {
+    "status": "stale",
+    "records": 313,
+    "message": "403 Client Error: Forbidden for url: https://hodor.canalplus.pro/api/v2/mycanal/channels/b63a43e7548cb1a6e7c7319084f48af8/301/broadcasts/day/0?channelPosition=4&displayAvailabilityIcons=false&displayAccessibilityIcons=false",
+    "fallback": "previous_snapshot"
   },
   "sky_de": {
     "status": "stale",
@@ -39,32 +45,22 @@
     "fallback": "previous_snapshot"
   },
   "sbb_rs": {
-    "status": "ok",
-    "records": 67
+    "status": "stale",
+    "records": 67,
+    "message": "SBB Eurosport 4K 标题未获得可验证的英文转换：'Biciklizam: Turneja po Nemačkoj: Muškarci, Pregled'",
+    "fallback": "previous_snapshot"
   },
   "virgin_uk": {
     "status": "ok",
-    "records": 87
+    "records": 96
   },
   "xmltv": {
     "status": "ok",
     "channels": 155,
-    "programmes": 16231,
-    "xml_file": "/home/ubuntu/Cathy-epg/data/epg.xml",
-    "gzip_file": "/home/ubuntu/Cathy-epg/data/epg.xml.gz"
+    "programmes": 16203,
+    "xml_file": "data/epg.xml",
+    "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-08-27T15:05:26Z",
-  "total_records": 16231,
-  "canalplus_fr": {
-    "status": "ok",
-    "records": 313,
-    "channels": [
-      "CANAL+",
-      "CANAL+ FOOT"
-    ],
-    "translated": true,
-    "translation_mode": "local_versioned_mapping",
-    "days_requested": 7,
-    "api": "https://hodor.canalplus.pro/api/v2/mycanal"
-  }
+  "generated_at": "2026-08-28T03:34:05Z",
+  "total_records": 16203
 }
