@@ -1,15 +1,17 @@
 {
   "astro": {
     "status": "ok",
-    "records": 2490
+    "records": 2444
   },
   "now_hk": {
     "status": "ok",
-    "records": 4189
+    "records": 4194
   },
   "allente_se": {
-    "status": "ok",
-    "records": 778
+    "status": "stale",
+    "records": 778,
+    "message": "Allente Sweden 标题未获得可验证的英文转换：'Formel 1 Highlights: Belgien GP'",
+    "fallback": "previous_snapshot"
   },
   "allente_no": {
     "status": "error",
@@ -18,7 +20,7 @@
   },
   "ee_uk": {
     "status": "ok",
-    "records": 6699
+    "records": 6714
   },
   "canalplus_fr": {
     "status": "stale",
@@ -29,7 +31,7 @@
   "sky_de": {
     "status": "stale",
     "records": 1421,
-    "message": "MagentaTV Sky Germany 标题不在已审校的英文映射或受控词汇范围内：'PL'",
+    "message": "MagentaTV Sky Germany 标题不在已审校的英文映射或受控词汇范围内：'PL: PL Masterclass: Bruno Fernandes & Wayne Rooney'",
     "fallback": "previous_snapshot"
   },
   "digi4k_ro": {
@@ -45,22 +47,20 @@
     "fallback": "previous_snapshot"
   },
   "sbb_rs": {
-    "status": "stale",
-    "records": 67,
-    "message": "SBB Eurosport 4K 标题未获得可验证的英文转换：'Biciklizam: Turneja po Nemačkoj: Muškarci, Pregled'",
-    "fallback": "previous_snapshot"
+    "status": "ok",
+    "records": 47
   },
   "virgin_uk": {
     "status": "ok",
-    "records": 96
+    "records": 98
   },
   "xmltv": {
     "status": "ok",
     "channels": 155,
-    "programmes": 16203,
+    "programmes": 16159,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-08-28T03:34:05Z",
-  "total_records": 16203
+  "generated_at": "2026-08-29T02:05:19Z",
+  "total_records": 16159
 }
