@@ -1,11 +1,11 @@
 {
   "astro": {
     "status": "ok",
-    "records": 2610
+    "records": 2599
   },
   "now_hk": {
     "status": "ok",
-    "records": 4333
+    "records": 4318
   },
   "allente_se": {
     "status": "stale",
@@ -20,7 +20,7 @@
   },
   "ee_uk": {
     "status": "ok",
-    "records": 6711
+    "records": 6707
   },
   "canalplus_fr": {
     "status": "stale",
@@ -31,7 +31,7 @@
   "sky_de": {
     "status": "stale",
     "records": 1421,
-    "message": "MagentaTV Sky Germany 标题不在已审校的英文映射或受控词汇范围内：'PL: PL Masterclass: Bruno Fernandes & Wayne Rooney'",
+    "message": "MagentaTV Sky Germany 标题不在已审校的英文映射或受控词汇范围内：'PL'",
     "fallback": "previous_snapshot"
   },
   "digi4k_ro": {
@@ -42,29 +42,19 @@
   },
   "sbb_rs": {
     "status": "ok",
-    "records": 137,
-    "channels": [
-      "Eurosport 1",
-      "Eurosport 2",
-      "Eurosport 4K"
-    ],
-    "translated": true,
-    "translation_mode": "local_versioned_mapping",
-    "days_requested": 7,
-    "api": "https://epg.sbb.rs/",
-    "api_events": "https://api-web.ug-be.cdn.united.cloud/v1/public/events/epg"
+    "records": 139
   },
   "virgin_uk": {
     "status": "ok",
-    "records": 98
+    "records": 101
   },
   "xmltv": {
     "status": "ok",
     "channels": 155,
-    "programmes": 16514,
+    "programmes": 16489,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-08-30T10:07:04Z",
-  "total_records": 16514
+  "generated_at": "2026-08-30T21:55:29Z",
+  "total_records": 16489
 }
