@@ -179,11 +179,12 @@
 | `canal+.fr` | CANAL+ (T) |
 | `foot+.fr` | CANAL+ FOOT (T) |
 
-## 🇹🇷土耳其／🇷🇸塞尔维亚 Eurosport
+## 🇷🇸塞尔维亚 SBB Eurosport
 | tvg-id | tvg-name |
 | --- | --- |
 | `eurosport.1` | Eurosport 1 (T) |
 | `eurosport.2` | Eurosport 2 (T) |
+| `eurosport.4k` | Eurosport 4K (T) |
 
 
 ## 🇷🇴罗马尼亚 Digi 4K

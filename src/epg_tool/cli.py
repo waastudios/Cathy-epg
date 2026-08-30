@@ -24,8 +24,7 @@ from .sources import (
     collect_ee_uk_channels,
     collect_magenta_tv_sky_de,
     collect_now_hk,
-    collect_sbb_eurosport_4k,
-    collect_tvplus_eurosport,
+    collect_sbb_eurosport,
     collect_virgin_uk_ultra,
 )
 
@@ -68,8 +67,8 @@ def _collect(args: argparse.Namespace) -> int:
         # Telekom MagentaTV 的匿名官方生产节目表；XMLTV ID 使用用户指定 Sky Germany 频道号。
         ("sky_de", lambda: collect_magenta_tv_sky_de(args.days)),
         ("digi4k_ro", lambda: collect_digi4k(args.days)),
-        ("tvplus_tr", lambda: collect_tvplus_eurosport(args.days)),
-        ("sbb_rs", lambda: collect_sbb_eurosport_4k(args.days)),
+        # SBB Public EPG 一次认证后统一采集 Eurosport 1、2 和 4K，避免旧 TV+ 来源重复请求。
+        ("sbb_rs", lambda: collect_sbb_eurosport(args.days)),
         ("virgin_uk", lambda: collect_virgin_uk_ultra(args.days)),
     )
     for provider, collector in collectors:

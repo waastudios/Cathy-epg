@@ -134,10 +134,11 @@ SBB_PUBLIC_EPG_GUIDE = "https://epg.sbb.rs/"
 SBB_PUBLIC_API = "https://api-web.ug-be.cdn.united.cloud"
 SBB_COMMUNITY_ID = "1"
 SBB_LANGUAGE_ID = "404"
-SBB_EUROSPORT_4K_CHANNEL_ID = "1082"
-SBB_EUROSPORT_4K_CHANNEL_NUMBER = "123"
-SBB_EUROSPORT_4K_SOURCE_NAME = "Eurosport 4K IPTV"
-SBB_EUROSPORT_4K_NAME = "Eurosport 4K"
+SBB_EUROSPORT_CHANNELS: tuple[tuple[str, str, str], ...] = (
+    ("84", "Eurosport 1 HD (RS)", "Eurosport 1"),
+    ("85", "Eurosport 2 HD (RS)", "Eurosport 2"),
+    ("1082", "Eurosport 4K IPTV", "Eurosport 4K"),
+)
 # Virgin Media TV Go Guide 在普通匿名页面会话中加载以下官方频道目录与 EPG 时间片。
 VIRGIN_UK_GUIDE = "https://virgintvgo.virginmedia.com/en/epg/initial"
 VIRGIN_UK_CHANNELS = (
@@ -1257,10 +1258,31 @@ _SBB_EUROSPORT_4K_TITLE_EXACT: dict[str, str] = {
     "NFL Hard Knocks": "NFL Hard Knocks",
     "UEC BMX Racing European Championship - Pregled": "UEC BMX Racing European Championship - Highlights",
     "Esport Svetski Kup Show": "Esports World Cup Show",
+    "Biciklizam - Bretanja klasik (M)": "Cycling - Brittany Classic (Men)",
+    "Biciklizam - Grand Prix Plouay (Ž)": "Cycling - Grand Prix Plouay (Women)",
+    "Biciklizam - La Vuelta (M): Etapa 8": "Cycling - La Vuelta (Men): Stage 8",
+    "Biciklizam - La Vuelta (M): Etapa 9": "Cycling - La Vuelta (Men): Stage 9",
+    "Biciklizam - La Vuelta (M): Etapa 10": "Cycling - La Vuelta (Men): Stage 10",
+    "Biciklizam - La Vuelta (M): Etapa 11": "Cycling - La Vuelta (Men): Stage 11",
+    "Biciklizam: Tour of Avenir: Pregled": "Cycling: Tour of Avenir: Highlights",
+    "Brdski biciklizam - Svetski kup, Val di Sole (M): Spust, Elite, Muškarci": "Mountain Biking - World Cup, Val di Sole (Men): Downhill, Elite, Men",
+    "Brdski biciklizam - Svetski kup, Val di Sole (Ž): Spust, Elite, Žene": "Mountain Biking - World Cup, Val di Sole (Women): Downhill, Elite, Women",
+    "Brdski biciklizam - Svetski kup, Val di Sole (M): XC Olympic, Elite, Muškarci": "Mountain Biking - World Cup, Val di Sole (Men): Olympic Cross-Country, Elite, Men",
+    "Brdski biciklizam - Svetski kup, Val di Sole (Ž): XC Olympic, Elite, Žene": "Mountain Biking - World Cup, Val di Sole (Women): Olympic Cross-Country, Elite, Women",
+    "Brdski biciklizam - Svetski kup, Val di Sole (Ž)": "Mountain Biking - World Cup, Val di Sole (Women)",
+    "Endurance Auto Trke - 6 Sati Sao Paola: Trka": "Endurance Auto Racing - 6 Hours of Sao Paulo: Race",
+    "Endurance Uncovered Racing for Excellence": "Endurance Uncovered: Racing for Excellence",
+    "Konjički sport: Svetski Šampionat, Ahen - Pregled": "Equestrian: World Championship, Aachen - Highlights",
+    "Sidnej maraton": "Sydney Marathon",
+    "Snuker - Wuhan Open: Finale": "Snooker - Wuhan Open: Final",
+    "Tenis - US Open: Singl, Runda 1": "Tennis - US Open: Singles, Round 1",
+    "Tenis - US Open: Singl, Muškarci, Finale, Janik Siner - Karlos Alkaraz": "Tennis - US Open: Men's Singles, Final, Jannik Sinner - Carlos Alcaraz",
+    "Tour Championship: Dan 3": "Tour Championship: Day 3",
+    "Tour Championship: Dan 4": "Tour Championship: Day 4",
 }
 
 
-def _translate_sbb_eurosport_4k_title(title: str) -> str:
+def _translate_sbb_eurosport_title(title: str) -> str:
     """把 SBB 公共 EPG 的塞尔维亚语 Eurosport 4K 标题转换为可审计英文。
 
     仅转换明确的运动、赛事、地点、性别与阶段标记；不能可靠确认的词会令整个
@@ -1376,96 +1398,89 @@ def _sbb_events(payload: Any) -> list[dict[str, Any]]:
     return []
 
 
-def collect_sbb_eurosport_4k(days: int = 7) -> list[Programme]:
-    """读取 SBB Public EPG 中 Eurosport 4K IPTV 的匿名公开周排期。
+def collect_sbb_eurosport(days: int = 7) -> list[Programme]:
+    """读取 SBB Public EPG 中 Eurosport 1、2 和 4K 的匿名公开排期。
 
-    SBB 的普通 Public EPG 页面为每次页面加载新建匿名应用令牌。本采集器每次
-    运行都重新获取该公开页面所需令牌，并只在进程内存使用；不保存、重放或读取
-    用户登录、Cookie、订阅或播放权限。所有标题均须通过严格英文转换。
+    一次获取匿名令牌和频道目录，再为三个频道分别请求同一时间窗口的节目事件。
+    所有标题使用本地固定英文映射和确定性词汇替换，不调用在线翻译服务。
     """
     if days not in range(1, 8):
-        raise ValueError("SBB Eurosport 4K 采集天数必须为 1–7。")
+        raise ValueError("SBB Eurosport 采集天数必须为 1–7。")
     session = _sbb_public_epg_session()
     common_params = {"communityId": SBB_COMMUNITY_ID, "languageId": SBB_LANGUAGE_ID}
     directory_response = session.get(
         f"{SBB_PUBLIC_API}/v1/public/channels",
         params={**common_params, "channelType": "TV", "imageSize": "L"},
-        timeout=30,
+        timeout=15,
     )
     directory_response.raise_for_status()
     try:
         directory = directory_response.json()
     except ValueError as exc:
         raise SourceUnavailable("SBB Public EPG 频道目录未返回 JSON。") from exc
-    channels = [
-        item for item in directory if isinstance(item, dict) and str(item.get("id")) == SBB_EUROSPORT_4K_CHANNEL_ID
-    ] if isinstance(directory, list) else []
-    if len(channels) != 1:
-        raise SourceUnavailable("SBB Public EPG 频道目录未返回唯一的 Eurosport 4K IPTV 服务。")
-    channel = channels[0]
-    if (channel.get("name") or "").strip() != SBB_EUROSPORT_4K_SOURCE_NAME:
-        raise SourceUnavailable("SBB Public EPG 的 Eurosport 4K IPTV 原始频道名发生变化。")
-    if str(channel.get("position")) != SBB_EUROSPORT_4K_CHANNEL_NUMBER:
-        raise SourceUnavailable("SBB Public EPG 的 Eurosport 4K IPTV 频道号发生变化。")
+    if not isinstance(directory, list):
+        raise SourceUnavailable("SBB Public EPG 频道目录格式发生变化。")
+    directory_by_id = {str(item.get("id")): item for item in directory if isinstance(item, dict)}
+    for channel_id, expected_name, _display_name in SBB_EUROSPORT_CHANNELS:
+        channel = directory_by_id.get(channel_id)
+        if not channel or str(channel.get("name") or "").strip() != expected_name:
+            raise SourceUnavailable(f"SBB Public EPG 未返回预期频道：{expected_name}。")
 
     zone = ZoneInfo("Europe/Belgrade")
     today = datetime.now(zone).date()
     start = datetime.combine(today, clock_time.min, tzinfo=zone).astimezone(timezone.utc)
     end = datetime.combine(today + timedelta(days=days), clock_time.min, tzinfo=zone).astimezone(timezone.utc) - timedelta(seconds=1)
-    events_response = session.get(
-        f"{SBB_PUBLIC_API}/v1/public/events/epg",
-        params={
-            **common_params,
-            "cid": SBB_EUROSPORT_4K_CHANNEL_ID,
-            "fromTime": start.isoformat(),
-            "toTime": end.isoformat(),
-        },
-        timeout=30,
-    )
-    events_response.raise_for_status()
-    try:
-        events = _sbb_events(events_response.json())
-    except ValueError as exc:
-        raise SourceUnavailable("SBB Public EPG Eurosport 4K 排期未返回 JSON。") from exc
-    if not events:
-        raise SourceUnavailable("SBB Public EPG 未返回 Eurosport 4K IPTV 的节目条目。")
-
     retrieved_at = utc_now_iso()
     records: list[Programme] = []
-    for event in events:
-        source_title = str(event.get("title") or "")
-        title = _translate_sbb_eurosport_4k_title(source_title)
-        start_value = event.get("startTime")
-        end_value = event.get("endTime")
-        if not (isinstance(start_value, str) and isinstance(end_value, str)):
-            continue
+    for channel_id, _source_name, display_name in SBB_EUROSPORT_CHANNELS:
+        events_response = session.get(
+            f"{SBB_PUBLIC_API}/v1/public/events/epg",
+            params={**common_params, "cid": channel_id, "fromTime": start.isoformat(), "toTime": end.isoformat()},
+            timeout=15,
+        )
+        events_response.raise_for_status()
         try:
-            event_start = datetime.fromisoformat(start_value.replace("Z", "+00:00")).astimezone(zone)
-            event_end = datetime.fromisoformat(end_value.replace("Z", "+00:00")).astimezone(zone)
-        except ValueError:
-            continue
-        if event_end <= event_start or not (today <= event_start.date() < today + timedelta(days=days)):
-            continue
-        records.append(
-            Programme(
+            events = _sbb_events(events_response.json())
+        except ValueError as exc:
+            raise SourceUnavailable(f"SBB Public EPG {display_name} 排期未返回 JSON。") from exc
+        if not events:
+            raise SourceUnavailable(f"SBB Public EPG 未返回 {display_name} 的节目条目。")
+        for event in events:
+            source_title = str(event.get("title") or "")
+            title = _translate_sbb_eurosport_title(source_title)
+            start_value = event.get("startTime")
+            end_value = event.get("endTime")
+            if not (isinstance(start_value, str) and isinstance(end_value, str)):
+                continue
+            try:
+                event_start = datetime.fromisoformat(start_value.replace("Z", "+00:00")).astimezone(zone)
+                event_end = datetime.fromisoformat(end_value.replace("Z", "+00:00")).astimezone(zone)
+            except ValueError:
+                continue
+            if event_end <= event_start or not (today <= event_start.date() < today + timedelta(days=days)):
+                continue
+            records.append(Programme(
                 provider="sbb_rs",
                 country="RS",
                 timezone="Europe/Belgrade",
-                channel_id=SBB_EUROSPORT_4K_CHANNEL_ID,
-                channel_number=SBB_EUROSPORT_4K_CHANNEL_ID,
-                channel_name=SBB_EUROSPORT_4K_NAME,
+                channel_id=channel_id,
+                channel_number=channel_id,
+                channel_name=display_name,
                 title=title,
                 start_at=event_start.isoformat(),
                 end_at=event_end.isoformat(),
                 source_url=SBB_PUBLIC_EPG_GUIDE,
                 retrieved_at=retrieved_at,
-            )
-        )
+            ))
     records = _deduplicate(records)
     if not records:
-        raise SourceUnavailable("SBB Public EPG 未返回目标日期范围内可发布的 Eurosport 4K IPTV 节目。")
+        raise SourceUnavailable("SBB Public EPG 未返回三个 Eurosport 频道的可发布节目。")
     return records
 
+
+# 向后兼容旧命令名；新的每日刷新使用 collect_sbb_eurosport。
+def collect_sbb_eurosport_4k(days: int = 7) -> list[Programme]:
+    return [record for record in collect_sbb_eurosport(days) if record.channel_id == "1082"]
 
 def _virgin_uk_segment_starts(today: date, days: int, zone: ZoneInfo) -> list[datetime]:
     """计算覆盖英国本地连续日期的 Virgin 官方六小时时间片（按 UTC 边界请求）。"""

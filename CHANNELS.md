@@ -179,12 +179,13 @@ The current XMLTV output contains **155 channels**.
 | `canal+.fr` | CANAL+ (T) |
 | `foot+.fr` | CANAL+ FOOT (T) |
 
-## Eurosport
+## 🇷🇸 Serbia SBB Eurosport
 
 | tvg-id | tvg-name |
 | --- | --- |
 | `eurosport.1` | Eurosport 1 (T) |
 | `eurosport.2` | Eurosport 2 (T) |
+| `eurosport.4k` | Eurosport 4K (T) |
 
 ## Digi 4K
 
