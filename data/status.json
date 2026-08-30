@@ -40,15 +40,19 @@
     "message": "Digi 4K 标题未获得可验证的英文转换：'Călătoriile lui Darley | ep. 1'",
     "fallback": "previous_snapshot"
   },
-  "tvplus_tr": {
-    "status": "stale",
-    "records": 37,
-    "message": "TV+ Eurosport 标题未获得可验证的英文转换：'2026 Dünya Dağ Bisikleti Şampiyonası'",
-    "fallback": "previous_snapshot"
-  },
   "sbb_rs": {
     "status": "ok",
-    "records": 48
+    "records": 137,
+    "channels": [
+      "Eurosport 1",
+      "Eurosport 2",
+      "Eurosport 4K"
+    ],
+    "translated": true,
+    "translation_mode": "local_versioned_mapping",
+    "days_requested": 7,
+    "api": "https://epg.sbb.rs/",
+    "api_events": "https://api-web.ug-be.cdn.united.cloud/v1/public/events/epg"
   },
   "virgin_uk": {
     "status": "ok",
@@ -57,10 +61,10 @@
   "xmltv": {
     "status": "ok",
     "channels": 155,
-    "programmes": 16462,
+    "programmes": 16514,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-08-29T21:38:38Z",
-  "total_records": 16462
+  "generated_at": "2026-08-30T10:07:04Z",
+  "total_records": 16514
 }

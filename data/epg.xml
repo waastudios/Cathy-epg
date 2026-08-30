@@ -334,11 +334,11 @@
   </channel>
   <channel id="eurosport.1">
     <display-name>Eurosport 1</display-name>
-    <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77</url>
+    <url>https://epg.sbb.rs/</url>
   </channel>
   <channel id="eurosport.2">
     <display-name>Eurosport 2</display-name>
-    <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106</url>
+    <url>https://epg.sbb.rs/</url>
   </channel>
   <channel id="eurosport.4k">
     <display-name>Eurosport 4K</display-name>
@@ -61178,74 +61178,6 @@
     <title>PGA巡迴賽2026 高爾夫球巡迴錦標賽 -第3天</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260829000500 +0200" channel="eurosport.4k" stop="20260829015200 +0200">
-    <title>Snooker - Wuhan Open: 1/2 finals</title>
-    <url>https://epg.sbb.rs/</url>
-  </programme>
-  <programme start="20260829015200 +0200" channel="eurosport.4k" stop="20260829031800 +0200">
-    <title>Cycling - La Vuelta (Men): Stage 7</title>
-    <url>https://epg.sbb.rs/</url>
-  </programme>
-  <programme start="20260829031800 +0200" channel="eurosport.4k" stop="20260829041500 +0200">
-    <title>Formula E - London: Race 1</title>
-    <url>https://epg.sbb.rs/</url>
-  </programme>
-  <programme start="20260829041500 +0200" channel="eurosport.4k" stop="20260829050500 +0200">
-    <title>Formula E - London: Race 2</title>
-    <url>https://epg.sbb.rs/</url>
-  </programme>
-  <programme start="20260829050500 +0200" channel="eurosport.4k" stop="20260829051900 +0200">
-    <title>Magazine: Cycling Show</title>
-    <url>https://epg.sbb.rs/</url>
-  </programme>
-  <programme start="20260829051900 +0200" channel="eurosport.4k" stop="20260829070000 +0200">
-    <title>Cycling - La Vuelta (Men): Stage 7</title>
-    <url>https://epg.sbb.rs/</url>
-  </programme>
-  <programme start="20260829070000 +0200" channel="eurosport.4k" stop="20260829080000 +0200">
-    <title>Snooker - Wuhan Open: 1/2 finals</title>
-    <url>https://epg.sbb.rs/</url>
-  </programme>
-  <programme start="20260829080000 +0200" channel="eurosport.4k" stop="20260829110000 +0200">
-    <title>Snooker - Wuhan Open: Final</title>
-    <url>https://epg.sbb.rs/</url>
-  </programme>
-  <programme start="20260829110000 +0200" channel="eurosport.4k" stop="20260829115900 +0200">
-    <title>Formula E: London, Highlights</title>
-    <url>https://epg.sbb.rs/</url>
-  </programme>
-  <programme start="20260829115900 +0200" channel="eurosport.4k" stop="20260829131200 +0200">
-    <title>Cycling - La Vuelta (Men): Stage 7</title>
-    <url>https://epg.sbb.rs/</url>
-  </programme>
-  <programme start="20260829131200 +0200" channel="eurosport.4k" stop="20260829150200 +0200">
-    <title>Mountain Biking - World Cup, Val di Sole (Women): Downhill, Elite</title>
-    <url>https://epg.sbb.rs/</url>
-  </programme>
-  <programme start="20260829150200 +0200" channel="eurosport.4k" stop="20260829180000 +0200">
-    <title>Cycling - La Vuelta (Men): Stage 8</title>
-    <url>https://epg.sbb.rs/</url>
-  </programme>
-  <programme start="20260829180000 +0200" channel="eurosport.4k" stop="20260829200000 +0200">
-    <title>Tennis - US Open: Singles, Men, Final, Janik Siner - Karlos Alkaraz</title>
-    <url>https://epg.sbb.rs/</url>
-  </programme>
-  <programme start="20260829200000 +0200" channel="eurosport.4k" stop="20260829210000 +0200">
-    <title>Equestrian: World Championship, Aachen - Highlights</title>
-    <url>https://epg.sbb.rs/</url>
-  </programme>
-  <programme start="20260829210000 +0200" channel="eurosport.4k" stop="20260829210800 +0200">
-    <title>Snooker - Wuhan Open: Final</title>
-    <url>https://epg.sbb.rs/</url>
-  </programme>
-  <programme start="20260829210800 +0200" channel="eurosport.4k" stop="20260829221900 +0200">
-    <title>Snooker - Wuhan Open: Final</title>
-    <url>https://epg.sbb.rs/</url>
-  </programme>
-  <programme start="20260829221900 +0200" channel="eurosport.4k" stop="20260830010300 +0200">
-    <title>Sidnej maraton</title>
-    <url>https://epg.sbb.rs/</url>
-  </programme>
   <programme start="20260830010300 +0200" channel="eurosport.4k" stop="20260830013600 +0200">
     <title>Snooker - Wuhan Open: Final</title>
     <url>https://epg.sbb.rs/</url>
@@ -61255,23 +61187,23 @@
     <url>https://epg.sbb.rs/</url>
   </programme>
   <programme start="20260830030400 +0200" channel="eurosport.4k" stop="20260830050000 +0200">
-    <title>Endurance Auto Trke - 6 Sati Sao Paola: Race</title>
+    <title>Endurance Auto Racing - 6 Hours of Sao Paulo: Race</title>
     <url>https://epg.sbb.rs/</url>
   </programme>
   <programme start="20260830050000 +0200" channel="eurosport.4k" stop="20260830070000 +0200">
     <title>Cycling - La Vuelta (Men): Stage 8</title>
     <url>https://epg.sbb.rs/</url>
   </programme>
-  <programme start="20260830070000 +0200" channel="eurosport.4k" stop="20260830074500 +0200">
+  <programme start="20260830070000 +0200" channel="eurosport.4k" stop="20260830074400 +0200">
     <title>Mountain Biking - World Cup, Val di Sole (Women): Downhill, Elite, Women</title>
     <url>https://epg.sbb.rs/</url>
   </programme>
-  <programme start="20260830074500 +0200" channel="eurosport.4k" stop="20260830083000 +0200">
+  <programme start="20260830074400 +0200" channel="eurosport.4k" stop="20260830083500 +0200">
     <title>Mountain Biking - World Cup, Val di Sole (Men): Downhill, Elite, Men</title>
     <url>https://epg.sbb.rs/</url>
   </programme>
-  <programme start="20260830083000 +0200" channel="eurosport.4k" stop="20260830103000 +0200">
-    <title>Sidnej maraton</title>
+  <programme start="20260830083500 +0200" channel="eurosport.4k" stop="20260830103000 +0200">
+    <title>Sydney Marathon</title>
     <url>https://epg.sbb.rs/</url>
   </programme>
   <programme start="20260830103000 +0200" channel="eurosport.4k" stop="20260830120000 +0200">
@@ -61347,11 +61279,11 @@
     <url>https://epg.sbb.rs/</url>
   </programme>
   <programme start="20260901060000 +0200" channel="eurosport.4k" stop="20260901073000 +0200">
-    <title>Sidnej maraton</title>
+    <title>Sydney Marathon</title>
     <url>https://epg.sbb.rs/</url>
   </programme>
   <programme start="20260901073000 +0200" channel="eurosport.4k" stop="20260901083000 +0200">
-    <title>Cycling - Bretanja klasik (Men)</title>
+    <title>Cycling - Brittany Classic (Men)</title>
     <url>https://epg.sbb.rs/</url>
   </programme>
   <programme start="20260901083000 +0200" channel="eurosport.4k" stop="20260901103000 +0200">
@@ -61368,6 +61300,430 @@
   </programme>
   <programme start="20260901144500 +0200" channel="eurosport.4k" stop="20260901174500 +0200">
     <title>Cycling - La Vuelta (Men): Stage 10</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260901174500 +0200" channel="eurosport.4k" stop="20260901193000 +0200">
+    <title>Tennis - US Open: Singles, Round 1</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260901193000 +0200" channel="eurosport.4k" stop="20260901223000 +0200">
+    <title>Tennis - US Open: Singles, Round 1</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260901223000 +0200" channel="eurosport.4k" stop="20260902004500 +0200">
+    <title>Tennis - US Open: Singles, Round 1</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260902004500 +0200" channel="eurosport.4k" stop="20260902040000 +0200">
+    <title>Tennis - US Open: Singles, Round 1</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260902040000 +0200" channel="eurosport.4k" stop="20260902060000 +0200">
+    <title>Tennis - US Open: Singles, Round 1</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260902060000 +0200" channel="eurosport.4k" stop="20260902083000 +0200">
+    <title>Cycling - La Vuelta (Men): Stage 10</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260902083000 +0200" channel="eurosport.4k" stop="20260902093000 +0200">
+    <title>NFL Hard Knocks</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260902093000 +0200" channel="eurosport.4k" stop="20260902100000 +0200">
+    <title>Endurance Uncovered: Racing for Excellence</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260902100000 +0200" channel="eurosport.4k" stop="20260902103000 +0200">
+    <title>Tennis - US Open: Singles, Round 1</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260902103000 +0200" channel="eurosport.4k" stop="20260902130000 +0200">
+    <title>Tennis - US Open: Singles, Round 1</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260902130000 +0200" channel="eurosport.4k" stop="20260902134500 +0200">
+    <title>Cycling - La Vuelta (Men): Stage 10</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260902134500 +0200" channel="eurosport.4k" stop="20260902144500 +0200">
+    <title>Cycling: Tour of Avenir: Highlights</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260902144500 +0200" channel="eurosport.4k" stop="20260902174500 +0200">
+    <title>Cycling - La Vuelta (Men): Stage 11</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260830010300 +0200" channel="eurosport.1" stop="20260830013600 +0200">
+    <title>Snooker - Wuhan Open: Final</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260830013600 +0200" channel="eurosport.1" stop="20260830030400 +0200">
+    <title>Cycling - La Vuelta (Men): Stage 8</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260830030400 +0200" channel="eurosport.1" stop="20260830050000 +0200">
+    <title>Endurance Auto Racing - 6 Hours of Sao Paulo: Race</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260830050000 +0200" channel="eurosport.1" stop="20260830070000 +0200">
+    <title>Cycling - La Vuelta (Men): Stage 8</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260830070000 +0200" channel="eurosport.1" stop="20260830074400 +0200">
+    <title>Mountain Biking - World Cup, Val di Sole (Women): Downhill, Elite, Women</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260830074400 +0200" channel="eurosport.1" stop="20260830083500 +0200">
+    <title>Mountain Biking - World Cup, Val di Sole (Men): Downhill, Elite, Men</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260830083500 +0200" channel="eurosport.1" stop="20260830103000 +0200">
+    <title>Sydney Marathon</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260830103000 +0200" channel="eurosport.1" stop="20260830120000 +0200">
+    <title>Cycling - La Vuelta (Men): Stage 8</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260830120000 +0200" channel="eurosport.1" stop="20260830180000 +0200">
+    <title>Cycling - La Vuelta (Men): Stage 9</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260830180000 +0200" channel="eurosport.1" stop="20260830200000 +0200">
+    <title>Tennis - US Open: Singles, Round 1</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260830200000 +0200" channel="eurosport.1" stop="20260830230000 +0200">
+    <title>Tennis - US Open: Singles, Round 1</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260830230000 +0200" channel="eurosport.1" stop="20260831004500 +0200">
+    <title>Tennis - US Open: Singles, Round 1</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260831004500 +0200" channel="eurosport.1" stop="20260831040000 +0200">
+    <title>Tennis - US Open: Singles, Round 1</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260831040000 +0200" channel="eurosport.1" stop="20260831060000 +0200">
+    <title>Tennis - US Open: Singles, Round 1</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260831060000 +0200" channel="eurosport.1" stop="20260831083000 +0200">
+    <title>Cycling - La Vuelta (Men): Stage 9</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260831083000 +0200" channel="eurosport.1" stop="20260831103000 +0200">
+    <title>Tennis - US Open: Singles, Round 1</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260831103000 +0200" channel="eurosport.1" stop="20260831120000 +0200">
+    <title>Tennis - US Open: Singles, Round 1</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260831120000 +0200" channel="eurosport.1" stop="20260831133000 +0200">
+    <title>Cycling - La Vuelta (Men): Stage 9</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260831133000 +0200" channel="eurosport.1" stop="20260831153000 +0200">
+    <title>Tennis - US Open: Singles, Round 1</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260831153000 +0200" channel="eurosport.1" stop="20260831173000 +0200">
+    <title>Tennis - US Open: Singles, Round 1</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260831173000 +0200" channel="eurosport.1" stop="20260831193000 +0200">
+    <title>Tennis - US Open: Singles, Round 1</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260831193000 +0200" channel="eurosport.1" stop="20260831223000 +0200">
+    <title>Tennis - US Open: Singles, Round 1</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260831223000 +0200" channel="eurosport.1" stop="20260901004500 +0200">
+    <title>Tennis - US Open: Singles, Round 1</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260901004500 +0200" channel="eurosport.1" stop="20260901040000 +0200">
+    <title>Tennis - US Open: Singles, Round 1</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260901040000 +0200" channel="eurosport.1" stop="20260901060000 +0200">
+    <title>Tennis - US Open: Singles, Round 1</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260901060000 +0200" channel="eurosport.1" stop="20260901073000 +0200">
+    <title>Sydney Marathon</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260901073000 +0200" channel="eurosport.1" stop="20260901083000 +0200">
+    <title>Cycling - Brittany Classic (Men)</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260901083000 +0200" channel="eurosport.1" stop="20260901103000 +0200">
+    <title>Tennis - US Open: Singles, Round 1</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260901103000 +0200" channel="eurosport.1" stop="20260901130000 +0200">
+    <title>Tennis - US Open: Singles, Round 1</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260901130000 +0200" channel="eurosport.1" stop="20260901144500 +0200">
+    <title>Cycling - La Vuelta (Men): Stage 9</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260901144500 +0200" channel="eurosport.1" stop="20260901174500 +0200">
+    <title>Cycling - La Vuelta (Men): Stage 10</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260901174500 +0200" channel="eurosport.1" stop="20260901193000 +0200">
+    <title>Tennis - US Open: Singles, Round 1</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260901193000 +0200" channel="eurosport.1" stop="20260901223000 +0200">
+    <title>Tennis - US Open: Singles, Round 1</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260901223000 +0200" channel="eurosport.1" stop="20260902004500 +0200">
+    <title>Tennis - US Open: Singles, Round 1</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260902004500 +0200" channel="eurosport.1" stop="20260902040000 +0200">
+    <title>Tennis - US Open: Singles, Round 1</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260902040000 +0200" channel="eurosport.1" stop="20260902060000 +0200">
+    <title>Tennis - US Open: Singles, Round 1</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260902060000 +0200" channel="eurosport.1" stop="20260902083000 +0200">
+    <title>Cycling - La Vuelta (Men): Stage 10</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260902083000 +0200" channel="eurosport.1" stop="20260902093000 +0200">
+    <title>NFL Hard Knocks</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260902093000 +0200" channel="eurosport.1" stop="20260902100000 +0200">
+    <title>Endurance Uncovered: Racing for Excellence</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260902100000 +0200" channel="eurosport.1" stop="20260902103000 +0200">
+    <title>Tennis - US Open: Singles, Round 1</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260902103000 +0200" channel="eurosport.1" stop="20260902130000 +0200">
+    <title>Tennis - US Open: Singles, Round 1</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260902130000 +0200" channel="eurosport.1" stop="20260902134500 +0200">
+    <title>Cycling - La Vuelta (Men): Stage 10</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260902134500 +0200" channel="eurosport.1" stop="20260902144500 +0200">
+    <title>Cycling: Tour of Avenir: Highlights</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260902144500 +0200" channel="eurosport.1" stop="20260902174500 +0200">
+    <title>Cycling - La Vuelta (Men): Stage 11</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260830010000 +0200" channel="eurosport.2" stop="20260830013000 +0200">
+    <title>Cycling - La Vuelta (Men): Stage 8</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260830013000 +0200" channel="eurosport.2" stop="20260830030100 +0200">
+    <title>Tennis - US Open: Men's Singles, Final, Jannik Sinner - Carlos Alcaraz</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260830030100 +0200" channel="eurosport.2" stop="20260830050000 +0200">
+    <title>Cycling - La Vuelta (Men): Stage 8</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260830050000 +0200" channel="eurosport.2" stop="20260830070000 +0200">
+    <title>Snooker - Wuhan Open: Final</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260830070000 +0200" channel="eurosport.2" stop="20260830085900 +0200">
+    <title>Endurance Auto Racing - 6 Hours of Sao Paulo: Race</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260830085900 +0200" channel="eurosport.2" stop="20260830103000 +0200">
+    <title>Cycling - La Vuelta (Men): Stage 8</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260830103000 +0200" channel="eurosport.2" stop="20260830112900 +0200">
+    <title>Equestrian: World Championship, Aachen - Highlights</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260830112900 +0200" channel="eurosport.2" stop="20260830125000 +0200">
+    <title>Snooker - Wuhan Open: Final</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260830125000 +0200" channel="eurosport.2" stop="20260830143900 +0200">
+    <title>Mountain Biking - World Cup, Val di Sole (Women): Olympic Cross-Country, Elite, Women</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260830143900 +0200" channel="eurosport.2" stop="20260830150500 +0200">
+    <title>Mountain Biking - World Cup, Val di Sole (Men): Downhill, Elite, Men</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260830150500 +0200" channel="eurosport.2" stop="20260830172500 +0200">
+    <title>Mountain Biking - World Cup, Val di Sole (Men): Olympic Cross-Country, Elite, Men</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260830172500 +0200" channel="eurosport.2" stop="20260830180000 +0200">
+    <title>Snooker - Wuhan Open: Final</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260830180000 +0200" channel="eurosport.2" stop="20260831000000 +0200">
+    <title>Tour Championship: Day 4</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260831000000 +0200" channel="eurosport.2" stop="20260831010000 +0200">
+    <title>Tennis - US Open: Singles, Round 1</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260831010000 +0200" channel="eurosport.2" stop="20260831040000 +0200">
+    <title>Tennis - US Open: Singles, Round 1</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260831040000 +0200" channel="eurosport.2" stop="20260831060000 +0200">
+    <title>Tennis - US Open: Singles, Round 1</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260831060000 +0200" channel="eurosport.2" stop="20260831073000 +0200">
+    <title>Tennis - US Open: Singles, Round 1</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260831073000 +0200" channel="eurosport.2" stop="20260831083000 +0200">
+    <title>Tennis - US Open: Singles, Round 1</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260831083000 +0200" channel="eurosport.2" stop="20260831100000 +0200">
+    <title>Cycling - La Vuelta (Men): Stage 9</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260831100000 +0200" channel="eurosport.2" stop="20260831120000 +0200">
+    <title>Sydney Marathon</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260831120000 +0200" channel="eurosport.2" stop="20260831133000 +0200">
+    <title>Tennis - US Open: Singles, Round 1</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260831133000 +0200" channel="eurosport.2" stop="20260831150000 +0200">
+    <title>Cycling - Grand Prix Plouay (Women)</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260831150000 +0200" channel="eurosport.2" stop="20260831163000 +0200">
+    <title>Cycling - Brittany Classic (Men)</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260831163000 +0200" channel="eurosport.2" stop="20260831190000 +0200">
+    <title>Tennis - US Open: Singles, Round 1</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260831190000 +0200" channel="eurosport.2" stop="20260831220000 +0200">
+    <title>Tennis - US Open: Singles, Round 1</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260831220000 +0200" channel="eurosport.2" stop="20260901010000 +0200">
+    <title>Tennis - US Open: Singles, Round 1</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260901010000 +0200" channel="eurosport.2" stop="20260901040000 +0200">
+    <title>Tennis - US Open: Singles, Round 1</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260901040000 +0200" channel="eurosport.2" stop="20260901060000 +0200">
+    <title>Tennis - US Open: Singles, Round 1</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260901060000 +0200" channel="eurosport.2" stop="20260901073000 +0200">
+    <title>Tennis - US Open: Singles, Round 1</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260901073000 +0200" channel="eurosport.2" stop="20260901083000 +0200">
+    <title>Tennis - US Open: Singles, Round 1</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260901083000 +0200" channel="eurosport.2" stop="20260901100000 +0200">
+    <title>Sydney Marathon</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260901100000 +0200" channel="eurosport.2" stop="20260901110000 +0200">
+    <title>NFL Hard Knocks</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260901110000 +0200" channel="eurosport.2" stop="20260901130000 +0200">
+    <title>Cycling - La Vuelta (Men): Stage 9</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260901130000 +0200" channel="eurosport.2" stop="20260901143000 +0200">
+    <title>Tennis - US Open: Singles, Round 1</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260901143000 +0200" channel="eurosport.2" stop="20260901163000 +0200">
+    <title>Tennis - US Open: Singles, Round 1</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260901163000 +0200" channel="eurosport.2" stop="20260901190000 +0200">
+    <title>Tennis - US Open: Singles, Round 1</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260901190000 +0200" channel="eurosport.2" stop="20260901220000 +0200">
+    <title>Tennis - US Open: Singles, Round 1</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260901220000 +0200" channel="eurosport.2" stop="20260902010000 +0200">
+    <title>Tennis - US Open: Singles, Round 1</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260902010000 +0200" channel="eurosport.2" stop="20260902040000 +0200">
+    <title>Tennis - US Open: Singles, Round 1</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260902040000 +0200" channel="eurosport.2" stop="20260902060000 +0200">
+    <title>Tennis - US Open: Singles, Round 1</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260902060000 +0200" channel="eurosport.2" stop="20260902073000 +0200">
+    <title>Tennis - US Open: Singles, Round 1</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260902073000 +0200" channel="eurosport.2" stop="20260902083000 +0200">
+    <title>Tennis - US Open: Singles, Round 1</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260902083000 +0200" channel="eurosport.2" stop="20260902093000 +0200">
+    <title>Mountain Biking - World Cup, Val di Sole (Women)</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260902093000 +0200" channel="eurosport.2" stop="20260902103000 +0200">
+    <title>Mountain Biking - World Cup, Val di Sole (Men): Downhill, Elite, Men</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260902103000 +0200" channel="eurosport.2" stop="20260902123000 +0200">
+    <title>Cycling - La Vuelta (Men): Stage 10</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260902123000 +0200" channel="eurosport.2" stop="20260902130000 +0200">
+    <title>Discovery Golf</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260902130000 +0200" channel="eurosport.2" stop="20260902133000 +0200">
+    <title>Endurance Uncovered: Racing for Excellence</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260902133000 +0200" channel="eurosport.2" stop="20260902143000 +0200">
+    <title>Tennis - US Open: Singles, Round 1</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260902143000 +0200" channel="eurosport.2" stop="20260902163000 +0200">
+    <title>Tennis - US Open: Singles, Round 1</title>
     <url>https://epg.sbb.rs/</url>
   </programme>
   <programme start="20260825002500 +0200" channel="sky_de.201" stop="20260825020000 +0200">
@@ -67053,154 +67409,6 @@
   <programme start="20260831060000 +0200" channel="sky_de.230" stop="20260901060000 +0200">
     <title>Off Air</title>
     <url>https://www.magenta.tv/</url>
-  </programme>
-  <programme start="20260826000000 +0300" channel="eurosport.2" stop="20260826010000 +0300">
-    <title>Wuhan Open</title>
-    <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106</url>
-  </programme>
-  <programme start="20260826010000 +0300" channel="eurosport.2" stop="20260826023000 +0300">
-    <title>La Vuelta a España, Stage 4</title>
-    <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106</url>
-  </programme>
-  <programme start="20260826023000 +0300" channel="eurosport.2" stop="20260826031500 +0300">
-    <title>Formula E World Championship</title>
-    <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106</url>
-  </programme>
-  <programme start="20260826031500 +0300" channel="eurosport.2" stop="20260826040000 +0300">
-    <title>Formula E World Championship</title>
-    <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106</url>
-  </programme>
-  <programme start="20260826040000 +0300" channel="eurosport.2" stop="20260826060000 +0300">
-    <title>La Vuelta a España, Stage 4</title>
-    <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106</url>
-  </programme>
-  <programme start="20260826060000 +0300" channel="eurosport.2" stop="20260826080000 +0300">
-    <title>Wuhan Open</title>
-    <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106</url>
-  </programme>
-  <programme start="20260826080000 +0300" channel="eurosport.2" stop="20260826090000 +0300">
-    <title>Formula E World Championship</title>
-    <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106</url>
-  </programme>
-  <programme start="20260826090000 +0300" channel="eurosport.2" stop="20260826100000 +0300">
-    <title>Formula E World Championship</title>
-    <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106</url>
-  </programme>
-  <programme start="20260826100000 +0300" channel="eurosport.2" stop="20260826120000 +0300">
-    <title>La Vuelta a España, Stage 4</title>
-    <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106</url>
-  </programme>
-  <programme start="20260826120000 +0300" channel="eurosport.2" stop="20260826130000 +0300">
-    <title>UCI Mountain Bike World Series</title>
-    <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106</url>
-  </programme>
-  <programme start="20260826130000 +0300" channel="eurosport.2" stop="20260826140000 +0300">
-    <title>La Vuelta a España, Stage 4</title>
-    <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106</url>
-  </programme>
-  <programme start="20260826140000 +0300" channel="eurosport.2" stop="20260826143000 +0300">
-    <title>Wuhan Open</title>
-    <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106</url>
-  </programme>
-  <programme start="20260826143000 +0300" channel="eurosport.2" stop="20260826173000 +0300">
-    <title>Wuhan Open</title>
-    <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106</url>
-  </programme>
-  <programme start="20260826173000 +0300" channel="eurosport.2" stop="20260826181500 +0300">
-    <title>US Open</title>
-    <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106</url>
-  </programme>
-  <programme start="20260826181500 +0300" channel="eurosport.2" stop="20260826190000 +0300">
-    <title>US Open</title>
-    <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106</url>
-  </programme>
-  <programme start="20260826190000 +0300" channel="eurosport.2" stop="20260826200000 +0300">
-    <title>Hall of Fame, Tokyo 2020</title>
-    <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106</url>
-  </programme>
-  <programme start="20260826200000 +0300" channel="eurosport.2" stop="20260826210000 +0300">
-    <title>2026 Tour of Portugal</title>
-    <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106</url>
-  </programme>
-  <programme start="20260826210000 +0300" channel="eurosport.2" stop="20260826230000 +0300">
-    <title>La Vuelta a España, Stage 5</title>
-    <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106</url>
-  </programme>
-  <programme start="20260826230000 +0300" channel="eurosport.2" stop="20260826233000 +0300">
-    <title>Discovery Golf</title>
-    <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106</url>
-  </programme>
-  <programme start="20260826233000 +0300" channel="eurosport.2" stop="20260827010000 +0300">
-    <title>Wuhan Open</title>
-    <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106</url>
-  </programme>
-  <programme start="20260826000000 +0300" channel="eurosport.1" stop="20260826010000 +0300">
-    <title>La Vuelta a España, Stage 4</title>
-    <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77</url>
-  </programme>
-  <programme start="20260826010000 +0300" channel="eurosport.1" stop="20260826023000 +0300">
-    <title>Wuhan Open</title>
-    <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77</url>
-  </programme>
-  <programme start="20260826023000 +0300" channel="eurosport.1" stop="20260826040000 +0300">
-    <title>La Vuelta a España, Stage 4</title>
-    <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77</url>
-  </programme>
-  <programme start="20260826040000 +0300" channel="eurosport.1" stop="20260826050000 +0300">
-    <title>Formula E World Championship</title>
-    <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77</url>
-  </programme>
-  <programme start="20260826050000 +0300" channel="eurosport.1" stop="20260826060000 +0300">
-    <title>Formula E World Championship</title>
-    <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77</url>
-  </programme>
-  <programme start="20260826060000 +0300" channel="eurosport.1" stop="20260826080000 +0300">
-    <title>La Vuelta a España, Stage 4</title>
-    <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77</url>
-  </programme>
-  <programme start="20260826080000 +0300" channel="eurosport.1" stop="20260826090000 +0300">
-    <title>Wuhan Open</title>
-    <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77</url>
-  </programme>
-  <programme start="20260826090000 +0300" channel="eurosport.1" stop="20260826120000 +0300">
-    <title>Wuhan Open</title>
-    <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77</url>
-  </programme>
-  <programme start="20260826120000 +0300" channel="eurosport.1" stop="20260826130000 +0300">
-    <title>Formula E World Championship</title>
-    <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77</url>
-  </programme>
-  <programme start="20260826130000 +0300" channel="eurosport.1" stop="20260826140000 +0300">
-    <title>Formula E World Championship</title>
-    <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77</url>
-  </programme>
-  <programme start="20260826140000 +0300" channel="eurosport.1" stop="20260826150000 +0300">
-    <title>2026 Tour of Portugal</title>
-    <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77</url>
-  </programme>
-  <programme start="20260826150000 +0300" channel="eurosport.1" stop="20260826154500 +0300">
-    <title>La Vuelta a España, Stage 4</title>
-    <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77</url>
-  </programme>
-  <programme start="20260826154500 +0300" channel="eurosport.1" stop="20260826190000 +0300">
-    <title>La Vuelta a España, Stage 5</title>
-    <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77</url>
-  </programme>
-  <programme start="20260826190000 +0300" channel="eurosport.1" stop="20260826200000 +0300">
-    <title>UCI Mountain Bike World Series</title>
-    <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77</url>
-  </programme>
-  <programme start="20260826200000 +0300" channel="eurosport.1" stop="20260826210000 +0300">
-    <title>Sail GP</title>
-    <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77</url>
-  </programme>
-  <programme start="20260826210000 +0300" channel="eurosport.1" stop="20260826230000 +0300">
-    <title>Wuhan Open</title>
-    <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77</url>
-  </programme>
-  <programme start="20260826230000 +0300" channel="eurosport.1" stop="20260827010000 +0300">
-    <title>La Vuelta a España, Stage 5</title>
-    <url>https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77</url>
   </programme>
   <programme start="20260829060000 +0100" channel="virgin_uk.2258" stop="20260829103000 +0100">
     <title>This is Ultra HD</title>
