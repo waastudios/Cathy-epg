@@ -40,8 +40,7 @@ Every XMLTV `display-name` is the provider’s official channel name unless an e
 | United Kingdom | Selected Sky Sports, TNT Sports, BBC, ITV, Channel 4 and Sky Entertainment services | [EE TV Player Live TV Schedule](https://player.ee.co.uk/#/livetv/schedule) |
 | United Kingdom | Sky Sports Ultra HD 1 and 2 | [Virgin Media TV Go Guide](https://virgintvgo.virginmedia.com/en/epg/initial) |
 | Romania | Digi 4K | [Digi 4K](https://www.digi4k.ro/) |
-| Türkiye | Eurosport 1 and Eurosport 2 | [TV+ Eurosport 1](https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77) and [Eurosport 2](https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106) |
-| Serbia | Eurosport 4K | [SBB / EON Public EPG](https://epg.sbb.rs/) |
+| Serbia | Eurosport 1, Eurosport 2 and Eurosport 4K | [SBB / EON Public EPG](https://epg.sbb.rs/) |
 
 ### Sky Germany via MagentaTV
 
@@ -55,7 +54,7 @@ The EE scope includes **Sky Mix, Sky Arts, Sky Witness, Sky Atlantic, Sky One, S
 
 The United States scope is intentionally restricted to potential future coverage for **ESPN, ESPN2, ESPNEWS, and ESPNU**. ABC, CBS, NBC, FOX, USA Network, and every other US network are excluded. DIRECTV’s public guide confirms the four ESPN services but exposes only current-programme information; Spectrum’s detailed guide requires account and service-address access; and ESPN’s direct schedule does not offer stable per-channel end times. Consequently, **no ESPN records are currently published**. If a compliant guide becomes available, IDs will be provider-prefixed, for example `directv_espn`.
 
-**Eurosport 4K** is published from SBB’s normal anonymous Public EPG as `eurosport.4k`. The source provides a channel directory plus programme titles, start times, and end times. Each source title is converted through strict deterministic Serbian-to-English rules; an unrecognised title fails the SBB source rather than being guessed or published untranslated.
+**Eurosport 1, Eurosport 2 and Eurosport 4K** are published from Serbia’s normal anonymous SBB Public EPG as `eurosport.1`, `eurosport.2` and `eurosport.4k`. The source provides a channel directory plus programme titles, start times, and end times. Each Serbian source title is converted through version-controlled local deterministic rules; an unrecognised title fails the SBB source rather than being guessed or published untranslated.
 
 ## Refresh and validation
 
@@ -82,7 +81,7 @@ epg preview
 epg preview --day tomorrow --provider allente_se --channel 50048
 ```
 
-For TV+ Türkiye Eurosport schedules, a trailing `(T)` or `（T）` marker identifies a Turkish-language source title. The marker is removed before the existing strict title-conversion rules run; the published result must be English, or the source fails instead of publishing an unverified untranslated title.
+For Serbia’s SBB Eurosport schedules, titles are converted during collection using a version-controlled local Serbian-to-English mapping and controlled rules. Daily refreshes do not call an online translation service, so translation does not add network latency.
 
 ## References
 

@@ -40,8 +40,7 @@ https://raw.githubusercontent.com/waastudios/Cathy-epg/master/data/epg.xml.gz
 | 英国 | 指定 Sky Sports、TNT Sports、BBC、ITV、Channel 4 与 Sky 娱乐频道 | [EE TV Player Live TV Schedule](https://player.ee.co.uk/#/livetv/schedule) |
 | 英国 | Sky Sports Ultra HD 1、Sky Sports Ultra HD 2 | [Virgin Media TV Go Guide](https://virgintvgo.virginmedia.com/en/epg/initial) |
 | 罗马尼亚 | Digi 4K | [Digi 4K](https://www.digi4k.ro/) |
-| 土耳其 | Eurosport 1、Eurosport 2 | [TV+ Eurosport 1](https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77) 与 [Eurosport 2](https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106) |
-| 塞尔维亚 | Eurosport 4K | [SBB / EON Public EPG](https://epg.sbb.rs/) |
+| 塞尔维亚 | Eurosport 1、Eurosport 2、Eurosport 4K | [SBB / EON Public EPG](https://epg.sbb.rs/) |
 
 ### 德国 Sky 与 MagentaTV
 
@@ -55,7 +54,7 @@ EE 范围包含 **Sky Mix、Sky Arts、Sky Witness、Sky Atlantic、Sky One、Sk
 
 美国范围刻意限制为未来可能加入的 **ESPN、ESPN2、ESPNEWS、ESPNU**。ABC、CBS、NBC、FOX、USA Network 和其他所有美国频道都已排除。DIRECTV 公开指南确认四个 ESPN 频道，但只提供当前节目；Spectrum 的详细节目表需要账户与服务地址；ESPN 官网排期没有稳定的逐频道结束时间。因此，**当前不发布任何 ESPN 记录**。如日后出现合规节目表，ID 会使用服务商前缀，例如 `directv_espn`。
 
-**Eurosport 4K** 已通过 SBB 的正常匿名 Public EPG 发布，XMLTV ID 为 `eurosport.4k`。该来源提供频道目录、节目标题、开始时间和结束时间。每条原始塞尔维亚语标题均通过严格的确定性规则转换成英文；如果标题无法被可靠识别，SBB 来源会失败，而不是猜测翻译或发布未翻译标题。
+**Eurosport 1、Eurosport 2 和 Eurosport 4K** 均通过塞尔维亚 SBB 的正常匿名 Public EPG 发布，XMLTV ID 分别为 `eurosport.1`、`eurosport.2` 和 `eurosport.4k`。该来源提供频道目录、节目标题、开始时间和结束时间。每条原始塞尔维亚语标题均通过版本控制的本地确定性规则转换成英文；如果标题无法被可靠识别，SBB 来源会失败，而不是猜测翻译或发布未翻译标题。
 
 ## 自动刷新与校验
 
@@ -82,7 +81,7 @@ epg preview
 epg preview --day tomorrow --provider allente_se --channel 50048
 ```
 
-对于土耳其 TV+ Eurosport 节目表，标题末尾的 `(T)` 或 `（T）` 用于标示土耳其语原文。采集器会先移除此标记，再执行已有的严格英文转换规则；结果必须为英文，否则该来源会失败，绝不会发布未经核验的未翻译标题。
+对于塞尔维亚 SBB Eurosport 节目表，标题会在采集阶段通过本地固定的塞尔维亚语到英文映射和受控规则转换；每日刷新不会调用在线翻译服务，因此不会因翻译请求导致额外等待。
 
 ## 参考资料
 
