@@ -1,11 +1,11 @@
 {
   "astro": {
     "status": "ok",
-    "records": 2599
+    "records": 2519
   },
   "now_hk": {
     "status": "ok",
-    "records": 4318
+    "records": 4253
   },
   "allente_se": {
     "status": "stale",
@@ -20,7 +20,7 @@
   },
   "ee_uk": {
     "status": "ok",
-    "records": 6707
+    "records": 6790
   },
   "canalplus_fr": {
     "status": "stale",
@@ -31,7 +31,7 @@
   "sky_de": {
     "status": "stale",
     "records": 1421,
-    "message": "MagentaTV Sky Germany 标题不在已审校的英文映射或受控词汇范围内：'PL'",
+    "message": "MagentaTV Sky Germany 标题不在已审校的英文映射或受控词汇范围内：'PL: My Season: Cristiano Ronaldo (2007/2008)'",
     "fallback": "previous_snapshot"
   },
   "digi4k_ro": {
@@ -42,19 +42,19 @@
   },
   "sbb_rs": {
     "status": "ok",
-    "records": 139
+    "records": 99
   },
   "virgin_uk": {
     "status": "ok",
-    "records": 101
+    "records": 105
   },
   "xmltv": {
     "status": "ok",
     "channels": 155,
-    "programmes": 16489,
+    "programmes": 16391,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-08-30T21:55:29Z",
-  "total_records": 16489
+  "generated_at": "2026-08-31T23:12:41Z",
+  "total_records": 16391
 }
