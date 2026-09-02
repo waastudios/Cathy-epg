@@ -29,10 +29,8 @@
     "fallback": "previous_snapshot"
   },
   "sky_de": {
-    "status": "stale",
-    "records": 1421,
-    "message": "MagentaTV Sky Germany 标题不在已审校的英文映射或受控词汇范围内：'PL: My Season: Cristiano Ronaldo (2007/2008)'",
-    "fallback": "previous_snapshot"
+    "status": "ok",
+    "records": 1359
   },
   "digi4k_ro": {
     "status": "ok",
@@ -49,10 +47,10 @@
   "xmltv": {
     "status": "ok",
     "channels": 155,
-    "programmes": 16406,
+    "programmes": 16344,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-09-02T11:28:13Z",
-  "total_records": 16406
+  "generated_at": "2026-09-02T12:46:16Z",
+  "total_records": 16344
 }

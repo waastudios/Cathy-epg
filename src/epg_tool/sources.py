@@ -198,18 +198,29 @@ class SourceUnavailable(RuntimeError):
 
 _SKY_DE_FALLBACK_REPLACEMENTS: tuple[tuple[str, str], ...] = (
     ("Alle Spiele, alle Tore", "All Matches, All Goals"),
+    ("Alle Spiele, alle Stimmen", "All Matches, All Reactions"),
     ("Die Vodafone Highlight-Show", "The Vodafone Highlights Show"),
+    ("Die Highlight-Show", "The Highlights Show"),
     ("Freitags-Konferenz", "Friday Conference"),
     ("Samstags-Konferenz", "Saturday Conference"),
     ("Sonntags-Konferenz", "Sunday Conference"),
+    ("Die Konferenz", "The Conference"),
+    ("Die Goldene Generation", "The Golden Generation"),
     ("Finaltag", "Final Day"),
     ("Halbfinale", "Semi-final"),
     ("Viertelfinale", "Quarter-final"),
     ("Achtelfinale", "Round of 16"),
     ("Rennen Kompakt", "Race Compact"),
     ("Rennen", "Race"),
+    ("Training", "Practice"),
+    ("GP Italien", "GP Italy"),
+    ("GP Deutschland", "GP Germany"),
+    ("GP Spanien", "GP Spain"),
+    ("GP Österreich", "GP Austria"),
     ("Sendepause", "Off Air"),
     ("Es folgt:", "Coming up:"),
+    ("Der Club der Tennisgiganten", "The Club of Tennis Giants"),
+    ("Es kann nur einen geben", "There Can Be Only One"),
     ("Topspiel", "Top Match"),
     ("Konferenz", "Conference"),
     ("Spieltag", "Matchday"),
@@ -246,8 +257,8 @@ def _translate_magenta_tv_sky_de_title(title: str) -> str:
     """将已收录 Sky Germany 节目标题稳定转换为英文。
 
     优先使用随代码版本控制的精确映射；对未出现过但仅含受控体育词汇的标题
-    使用固定替换。若仍检测到未覆盖的德语，整个 Sky 来源失败而非发布原文，
-    以便在下一次代码更新中显式审校并固定新翻译。
+    使用固定替换。已经是英文的官方标题允许直接发布；只有检测到明确的德语
+    残留时才使来源失败，避免新增英文节目使整条 Sky 频道不必要地回退。
     """
     normalised = unicodedata.normalize("NFC", re.sub(r"\s+", " ", title.strip()))
     if not normalised:
@@ -261,8 +272,6 @@ def _translate_magenta_tv_sky_de_title(title: str) -> str:
     translated = re.sub(r"\b(\d+)\.\s*Tag\b", r"\1 Day", translated)
     translated = re.sub(r"\b(\d+)\.\s*Runde\b", r"\1 Round", translated)
     translated = re.sub(r"\s+", " ", translated).strip()
-    if translated == normalised:
-        raise SourceUnavailable(f"MagentaTV Sky Germany 标题不在已审校的英文映射或受控词汇范围内：{title!r}")
     if _SKY_DE_UNTRANSLATED.search(translated):
         raise SourceUnavailable(f"MagentaTV Sky Germany 标题未获得可验证的英文转换：{title!r}")
     return translated
