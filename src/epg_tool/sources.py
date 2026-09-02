@@ -935,17 +935,27 @@ def _digi4k_time(value: str) -> clock_time | None:
 
 _DIGI4K_TITLE_EXACT: dict[str, str] = {
     "Arome din Yucatan": "Aromas of Yucatán",
+    "Adâncurile Americii de Nord": "The Depths of North America",
+    "Adancurile Americii de Nord": "The Depths of North America",
     "Balistică în spatele casei": "Backyard Ballistics",
     "Balistica în spatele casei": "Backyard Ballistics",
     "Bali: paradisul culinar": "Bali: Culinary Paradise",
     "Cei mai periculoşi vulcani": "The World's Most Dangerous Volcanoes",
+    "Casă pe malul lacului": "House by the Lake",
+    "Casa pe malul lacului": "House by the Lake",
     "Cei mai periculoși vulcani": "The World's Most Dangerous Volcanoes",
     "Cum a intrat sushi în America": "How Sushi Came to America",
+    "Călătoriile lui Darley": "Darley's Travels",
+    "Calatoriile lui Darley": "Darley's Travels",
+    "Egiptul, văzut de sus": "Egypt from Above",
+    "Egiptul, vazut de sus": "Egypt from Above",
     "Cum combatem schimbarea climatului": "How We Fight Climate Change",
     "Fluturii: eroii naturii": "Butterflies: Nature's Heroes",
     "Lucrătorii din sălbăticie": "Wild Workers",
     "Minunile oceanului": "Wonders of the Ocean",
+    "Minuni din Triunghiul Coralilor": "Wonders of the Coral Triangle",
     "Misterele apelor fermecate": "Mysteries of Enchanted Waters",
+    "Moartea unui dictator": "Death of a Dictator",
     "Muzică": "Music",
     "O planetă dinamică": "A Dynamic Planet",
     "O planetǎ de bizarerii": "A Planet of Oddities",
@@ -956,10 +966,17 @@ _DIGI4K_TITLE_EXACT: dict[str, str] = {
     "Orașul de corali": "City of Coral",
     "Oraşul de corali": "City of Coral",
     "Poveste cu leneș": "A Sloth Story",
+    "Revoluţiile care au schimbat lumea": "Revolutions That Changed the World",
+    "Revoluțiile care au schimbat lumea": "Revolutions That Changed the World",
+    "Restaurând planeta": "Restoring the Planet",
+    "Restaurand planeta": "Restoring the Planet",
     "Poveste cu leneş": "A Sloth Story",
     "Tabăra puilor de urs": "Bear Cub Camp",
     "Urangutanii: Şcoala e o junglă": "Orangutans: School Is a Jungle",
     "Urangutanii: Școala e o junglă": "Orangutans: School Is a Jungle",
+    "Prietenul meu, animalul": "My Animal Friend",
+    "Sunt invincibil": "I Am Invincible",
+    "Voiajul Sardiniei": "Sardinia Voyage",
     "Valea Rinului: Reclǎdind natura": "The Rhine Valley: Rebuilding Nature",
     "Valea Rinului: Reclădind natura": "The Rhine Valley: Rebuilding Nature",
     "În Munții Nanling": "In the Nanling Mountains",
@@ -1056,8 +1073,13 @@ def collect_digi4k(days: int = 7) -> list[Programme]:
             # The official schedule inserts the post-midnight programme after the
             # evening items in the same date container. A clock reset is the only
             # authoritative signal required to advance to the following calendar day.
-            if previous_time is not None and start_time <= previous_time:
+            if previous_time is not None and start_time < previous_time:
                 effective_day += timedelta(days=1)
+            elif previous_time is not None and start_time == previous_time:
+                # Digi 4K occasionally publishes conflicting rows with the same
+                # displayed minute. Keep the first official DOM row so XMLTV
+                # never receives a zero-length programme.
+                continue
             entries.append(
                 (
                     datetime.combine(effective_day, start_time, tzinfo=zone),
