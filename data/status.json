@@ -1,16 +1,16 @@
 {
   "astro": {
     "status": "ok",
-    "records": 2484
+    "records": 2473
   },
   "now_hk": {
     "status": "ok",
-    "records": 4233
+    "records": 4182
   },
   "allente_se": {
     "status": "stale",
     "records": 778,
-    "message": "Allente Sweden 标题未获得可验证的英文转换：'Formel 1 Highlights: Belgien GP'",
+    "message": "Allente Sweden 标题未获得可验证的英文转换：'Formula 1: Formel 1 Highlights'",
     "fallback": "previous_snapshot"
   },
   "allente_no": {
@@ -20,7 +20,7 @@
   },
   "ee_uk": {
     "status": "ok",
-    "records": 6804
+    "records": 6844
   },
   "canalplus_fr": {
     "status": "stale",
@@ -30,27 +30,29 @@
   },
   "sky_de": {
     "status": "ok",
-    "records": 1359
+    "records": 1364
   },
   "digi4k_ro": {
-    "status": "ok",
-    "records": 130
+    "status": "stale",
+    "records": 130,
+    "message": "Digi 4K 标题未获得可验证的英文转换：'Planeta, ca o junglă | ep. 1'",
+    "fallback": "previous_snapshot"
   },
   "sbb_rs": {
     "status": "ok",
-    "records": 138
+    "records": 139
   },
   "virgin_uk": {
     "status": "ok",
-    "records": 105
+    "records": 106
   },
   "xmltv": {
     "status": "ok",
     "channels": 155,
-    "programmes": 16344,
+    "programmes": 16329,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-09-02T12:46:16Z",
-  "total_records": 16344
+  "generated_at": "2026-09-02T21:43:34Z",
+  "total_records": 16329
 }
