@@ -1,11 +1,11 @@
 {
   "astro": {
     "status": "ok",
-    "records": 2473
+    "records": 2421
   },
   "now_hk": {
     "status": "ok",
-    "records": 4182
+    "records": 4096
   },
   "allente_se": {
     "status": "stale",
@@ -20,7 +20,7 @@
   },
   "ee_uk": {
     "status": "ok",
-    "records": 6844
+    "records": 6860
   },
   "canalplus_fr": {
     "status": "stale",
@@ -30,7 +30,7 @@
   },
   "sky_de": {
     "status": "ok",
-    "records": 1364
+    "records": 1346
   },
   "digi4k_ro": {
     "status": "stale",
@@ -39,20 +39,22 @@
     "fallback": "previous_snapshot"
   },
   "sbb_rs": {
-    "status": "ok",
-    "records": 139
+    "status": "stale",
+    "records": 139,
+    "message": "SBB Eurosport 4K 标题未获得可验证的英文转换：'Konjički sport: Svetski tur šampiona - Valkensvard'",
+    "fallback": "previous_snapshot"
   },
   "virgin_uk": {
     "status": "ok",
-    "records": 106
+    "records": 105
   },
   "xmltv": {
     "status": "ok",
     "channels": 155,
-    "programmes": 16329,
+    "programmes": 16188,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-09-02T21:43:34Z",
-  "total_records": 16329
+  "generated_at": "2026-09-03T21:38:48Z",
+  "total_records": 16188
 }
