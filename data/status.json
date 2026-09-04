@@ -1,16 +1,16 @@
 {
   "astro": {
     "status": "ok",
-    "records": 2421
+    "records": 2391
   },
   "now_hk": {
     "status": "ok",
-    "records": 4096
+    "records": 4142
   },
   "allente_se": {
     "status": "stale",
     "records": 778,
-    "message": "Allente Sweden 标题未获得可验证的英文转换：'Formula 1: Formel 1 Highlights'",
+    "message": "Allente Sweden 标题未获得可验证的英文转换：'Formel 2: Italien GP - Träning'",
     "fallback": "previous_snapshot"
   },
   "allente_no": {
@@ -20,7 +20,7 @@
   },
   "ee_uk": {
     "status": "ok",
-    "records": 6860
+    "records": 6852
   },
   "canalplus_fr": {
     "status": "stale",
@@ -29,8 +29,10 @@
     "fallback": "previous_snapshot"
   },
   "sky_de": {
-    "status": "ok",
-    "records": 1346
+    "status": "stale",
+    "records": 1346,
+    "message": "MagentaTV Sky Germany 标题未获得可验证的英文转换：'Fußball: Spielmacher Podcast von Sports 360 mit Sebastian Hellmann (Gast: ...)'",
+    "fallback": "previous_snapshot"
   },
   "digi4k_ro": {
     "status": "stale",
@@ -46,15 +48,15 @@
   },
   "virgin_uk": {
     "status": "ok",
-    "records": 105
+    "records": 109
   },
   "xmltv": {
     "status": "ok",
     "channels": 155,
-    "programmes": 16188,
+    "programmes": 16200,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-09-03T21:38:48Z",
-  "total_records": 16188
+  "generated_at": "2026-09-04T21:22:27Z",
+  "total_records": 16200
 }
