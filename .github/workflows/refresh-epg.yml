@@ -34,17 +34,60 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install -e .
 
-      - name: Harden Canal+ official request
+      - name: Harden and patch official collectors
         run: |
           python - <<'PY'
+          import ast
           from pathlib import Path
-          p = Path("src/epg_tool/sources.py")
-          s = p.read_text(encoding="utf-8")
-          s = s.replace(
+
+          path = Path("src/epg_tool/sources.py")
+          source = path.read_text(encoding="utf-8")
+
+          source = source.replace(
               '"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",',
               '"User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0",',
           )
-          p.write_text(s, encoding="utf-8")
+
+          tree = ast.parse(source)
+          targets = {
+              "_translate_allente_se_title": "sv",
+              "_translate_allente_no_title": "no",
+              "_translate_canalplus_fr_title": "fr",
+              "_translate_digi4k_title": "ro",
+              "_translate_tvplus_eurosport_title": "tr",
+              "_translate_sbb_eurosport_title": "sr",
+              "_translate_magenta_tv_sky_de_title": "de",
+          }
+          found = set()
+
+          for node in tree.body:
+              if not isinstance(node, (ast.FunctionDef, ast.AsyncFunctionDef)):
+                  continue
+              if node.name not in targets:
+                  continue
+              found.add(node.name)
+              node.body = [
+                  ast.ImportFrom(
+                      module="epg_tool.translation_fallback",
+                      names=[ast.alias(name="translate_title", asname="_cathy_translate_title")],
+                      level=0,
+                  ),
+                  ast.Return(
+                      value=ast.Call(
+                          func=ast.Name(id="_cathy_translate_title", ctx=ast.Load()),
+                          args=[ast.Name(id="title", ctx=ast.Load()), ast.Constant(value=targets[node.name])],
+                          keywords=[],
+                      )
+                  ),
+              ]
+
+          missing = set(targets) - found
+          if missing:
+              raise SystemExit("Translation functions missing: " + ", ".join(sorted(missing)))
+
+          ast.fix_missing_locations(tree)
+          path.write_text(ast.unparse(tree) + "\n", encoding="utf-8")
+          print("Patched translation functions:", ", ".join(sorted(found)))
           PY
 
       - name: Validate Python sources
@@ -53,8 +96,45 @@ jobs:
       - name: Collect all configured official programme guides
         run: epg collect --days 7
 
-      - name: Force English translation
-        run: python scripts/translate_epg.py
+      - name: Force English translation for target channels
+        run: |
+          python - <<'PY'
+          import xml.etree.ElementTree as ET
+          from pathlib import Path
+          from epg_tool.translation_fallback import translate_title
+
+          path = Path("data/epg.xml")
+          tree = ET.parse(path)
+          root = tree.getroot()
+          languages = {
+              "allente_se.vultra": "sv",
+              "allente_no.euro1": "no",
+              "foot+.fr": "fr",
+              "canal+.fr": "fr",
+              "digi4k_ro": "ro",
+              "tvplus_eurosport_1": "tr",
+              "tvplus_eurosport_2": "tr",
+              "sbb_rs.euro4k": "sr",
+          }
+          inspected = 0
+          changed = 0
+          for programme in root.findall("programme"):
+              channel = programme.get("channel")
+              source = languages.get(channel)
+              if not source:
+                  continue
+              title = programme.find("title")
+              if title is None or not (title.text or "").strip():
+                  continue
+              inspected += 1
+              old = title.text.strip()
+              new = translate_title(old, source)
+              if new and new != old:
+                  title.text = new
+                  changed += 1
+          tree.write(path, encoding="utf-8", xml_declaration=True)
+          print(f"English translation pass: inspected={inspected}, changed={changed}")
+          PY
 
       - name: Rebuild compressed XMLTV snapshot
         run: gzip -9 -c data/epg.xml > data/epg.xml.gz
@@ -92,10 +172,10 @@ jobs:
                   raise SystemExit(f"Critical channel {channel} has no future programmes")
               print(f"Verified {channel}: {count} programmes, {future[channel]} future")
 
-          for provider in ("allente_se", "canalplus_fr"):
+          for provider in ("allente_se", "allente_no", "canalplus_fr"):
               item = status.get(provider, {})
               print(f"{provider}: status={item.get('status')!r}, records={item.get('records')!r}")
-              if item.get("status") != "ok":
+              if item.get("status") not in ("ok",):
                   raise SystemExit(f"Critical provider {provider} failed; refusing stale publish")
           PY
 
