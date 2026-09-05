@@ -42,14 +42,16 @@ jobs:
           s = p.read_text(encoding="utf-8")
 
           # Canal+ Hodor currently rejects Chromium UAs from Linux/GitHub Actions.
-          # Current community reports indicate an Ubuntu Firefox UA is accepted.
+          # Use the currently accepted Ubuntu Firefox fingerprint.
           s = s.replace(
               '"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",',
               '"User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0",',
           )
 
-          # Keep the English-only validation, but cover titles observed in the current official feeds.
+          # The collectors deliberately reject unverified translations. These are exact
+          # titles observed in the current official feeds; keep the validation strict.
           se_entries = {
+              "Formel 1 - Kval: Italian GP: Qualifying - Pitlane Channel": "Formula 1 - Qualifying: Italian GP: Qualifying - Pitlane Channel",
               "Formel 2: Italien GP - Sprint": "Formula 2: Italian GP - Sprint",
               "Formel 2: Italien GP - Kval": "Formula 2: Italian GP - Qualifying",
               "Formel 2: Italien GP - Träning": "Formula 2: Italian GP - Practice",
@@ -63,6 +65,7 @@ jobs:
               "Fanget på politiets kamera Sverige: Innbrudd på TikTok": "Caught on Camera Sweden: Break-in on TikTok",
               "Grensevakten Sverige: Bråk på flyet": "Border Patrol Sweden: Trouble on the Plane",
               "Grensevakten Sverige: Bråk på flyg": "Border Patrol Sweden: Trouble on the Plane",
+              "Grensevakten Sverige: Tatt på fersken": "Border Patrol Sweden: Caught Red-Handed",
           }
 
           marker = '_ALLENTE_SE_TITLE_EXACT: dict[str, str] = {'
@@ -105,7 +108,7 @@ jobs:
                   raise SystemExit(f"Critical channel {channel} has no programmes; refusing to publish.")
               print(f"Verified {channel}: {count} programmes")
 
-          for provider in ("allente_se", "canalplus_fr"):
+          for provider in ("allente_se", "allente_no", "canalplus_fr"):
               item = status.get(provider, {})
               print(f"{provider}: status={item.get('status')!r}, records={item.get('records')!r}, message={item.get('message')!r}")
           PY
