@@ -30,43 +30,34 @@ jobs:
           python-version: "3.11"
 
       - name: Install collector
-        run: python -m pip install --upgrade pip && python -m pip install -e .
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -e .
 
-      - name: Harden target official collectors
+      - name: Harden Canal+ official request
         run: |
           python - <<'PY'
           from pathlib import Path
           p = Path("src/epg_tool/sources.py")
           s = p.read_text(encoding="utf-8")
-
-          # Canal+ Hodor currently rejects Chromium UAs from Linux/GitHub Actions.
           s = s.replace(
               '"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",',
               '"User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0",',
           )
-
-          # Make the translation override part of the same Python process that runs
-          # `epg collect`. It is appended after every collector function definition.
-          marker = "# Cathy-epg resilient translation runtime override"
-          if marker not in s:
-              s += '''
-
-# Cathy-epg resilient translation runtime override
-# Official source retrieval remains strict; only title translation is made best-effort.
-from .translation_fallback import translate_title as _cathy_translate_title
-_translate_allente_se_title = lambda title: _cathy_translate_title(title, "sv")
-_translate_allente_no_title = lambda title: _cathy_translate_title(title, "no")
-_translate_canalplus_fr_title = lambda title: _cathy_translate_title(title, "fr")
-_translate_digi4k_title = lambda title: _cathy_translate_title(title, "ro")
-_translate_tvplus_eurosport_title = lambda title: _cathy_translate_title(title, "tr")
-_translate_sbb_eurosport_title = lambda title: _cathy_translate_title(title, "sr")
-_translate_magenta_tv_sky_de_title = lambda title: _cathy_translate_title(title, "de")
-'''
           p.write_text(s, encoding="utf-8")
           PY
 
+      - name: Validate Python sources
+        run: python -m compileall -q src scripts
+
       - name: Collect all configured official programme guides
         run: epg collect --days 7
+
+      - name: Force English translation
+        run: python scripts/translate_epg.py
+
+      - name: Rebuild compressed XMLTV snapshot
+        run: gzip -9 -c data/epg.xml > data/epg.xml.gz
 
       - name: Verify critical target channels before publishing
         run: |
@@ -79,8 +70,8 @@ _translate_magenta_tv_sky_de_title = lambda title: _cathy_translate_title(title,
           status = json.loads(Path("data/status.json").read_text(encoding="utf-8"))
           root = ET.parse("data/epg.xml").getroot()
           wanted = {"allente_se.vultra": 0, "foot+.fr": 0}
-          now = datetime.now(timezone.utc)
           future = {key: 0 for key in wanted}
+          now = datetime.now(timezone.utc)
 
           for programme in root.findall("programme"):
               channel = programme.get("channel")
@@ -89,26 +80,23 @@ _translate_magenta_tv_sky_de_title = lambda title: _cathy_translate_title(title,
               wanted[channel] += 1
               try:
                   dt = datetime.strptime(programme.get("start", ""), "%Y%m%d%H%M%S %z")
-              except ValueError:
-                  continue
-              if dt >= now:
-                  future[channel] += 1
+                  if dt >= now:
+                      future[channel] += 1
+              except (TypeError, ValueError):
+                  pass
 
           for channel, count in wanted.items():
               if count == 0:
-                  raise SystemExit(f"Critical channel {channel} has no programmes; refusing to publish.")
+                  raise SystemExit(f"Critical channel {channel} has no programmes")
               if future[channel] == 0:
-                  raise SystemExit(f"Critical channel {channel} has no future programmes; refusing to publish.")
+                  raise SystemExit(f"Critical channel {channel} has no future programmes")
               print(f"Verified {channel}: {count} programmes, {future[channel]} future")
 
-          # A stale fallback is never acceptable for the requested providers.
           for provider in ("allente_se", "canalplus_fr"):
               item = status.get(provider, {})
+              print(f"{provider}: status={item.get('status')!r}, records={item.get('records')!r}")
               if item.get("status") != "ok":
-                  raise SystemExit(
-                      f"Critical provider {provider} is {item.get('status')!r}; refusing to publish stale EPG."
-                  )
-              print(f"{provider}: status=ok, records={item.get('records')!r}")
+                  raise SystemExit(f"Critical provider {provider} failed; refusing stale publish")
           PY
 
       - name: Publish refreshed snapshot when it changes
