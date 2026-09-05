@@ -1,26 +1,26 @@
 {
   "astro": {
     "status": "ok",
-    "records": 2391
+    "records": 2497
   },
   "now_hk": {
     "status": "ok",
-    "records": 4142
+    "records": 3700
   },
   "allente_se": {
     "status": "stale",
     "records": 778,
-    "message": "Allente Sweden 标题未获得可验证的英文转换：'Formel 2: Italien GP - Träning'",
+    "message": "Allente Sweden 标题未获得可验证的英文转换：'Formel 3: Italien GP - Sprint'",
     "fallback": "previous_snapshot"
   },
   "allente_no": {
     "status": "error",
     "records": 0,
-    "message": "Allente Norway 标题未获得可验证的英文转换：'Det kunne vært verre'"
+    "message": "Allente Norway 标题未获得可验证的英文转换：'Grensevakten Sverige: Bråk på flyet'"
   },
   "ee_uk": {
     "status": "ok",
-    "records": 6852
+    "records": 6856
   },
   "canalplus_fr": {
     "status": "stale",
@@ -29,10 +29,8 @@
     "fallback": "previous_snapshot"
   },
   "sky_de": {
-    "status": "stale",
-    "records": 1346,
-    "message": "MagentaTV Sky Germany 标题未获得可验证的英文转换：'Fußball: Spielmacher Podcast von Sports 360 mit Sebastian Hellmann (Gast: ...)'",
-    "fallback": "previous_snapshot"
+    "status": "ok",
+    "records": 1367
   },
   "digi4k_ro": {
     "status": "stale",
@@ -53,10 +51,10 @@
   "xmltv": {
     "status": "ok",
     "channels": 155,
-    "programmes": 16200,
+    "programmes": 15889,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-09-04T21:22:27Z",
-  "total_records": 16200
+  "generated_at": "2026-09-05T12:06:44Z",
+  "total_records": 15889
 }
