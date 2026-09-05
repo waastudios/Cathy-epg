@@ -45,31 +45,14 @@ jobs:
               '"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",',
               '"User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0",',
           )
+
+          # Make the translation override part of the same Python process that runs
+          # `epg collect`. This is intentionally appended after every collector function
+          # has been defined, so the CLI cannot accidentally use the old strict functions.
+          marker = "# Cathy-epg resilient translation runtime override"
+          if marker not in s:
+              s += r'''\n\n# Cathy-epg resilient translation runtime override\n# Official source retrieval remains strict; only title translation is made best-effort.\nfrom .translation_fallback import translate_title as _cathy_translate_title\n_translate_allente_se_title = lambda title: _cathy_translate_title(title, "sv")\n_translate_allente_no_title = lambda title: _cathy_translate_title(title, "no")\n_translate_canalplus_fr_title = lambda title: _cathy_translate_title(title, "fr")\n_translate_digi4k_title = lambda title: _cathy_translate_title(title, "ro")\n_translate_tvplus_eurosport_title = lambda title: _cathy_translate_title(title, "tr")\n_translate_sbb_eurosport_title = lambda title: _cathy_translate_title(title, "sr")\n_translate_magenta_tv_sky_de_title = lambda title: _cathy_translate_title(title, "de")\n'''
           p.write_text(s, encoding="utf-8")
-          PY
-
-      - name: Enable resilient English translation
-        run: |
-          python - <<'PY'
-          import epg_tool.sources as sources
-          from epg_tool.translation_fallback import translate_title
-
-          # Translation must never turn a successful official EPG fetch into a stale
-          # snapshot. Existing strict collectors are overridden only for title conversion.
-          # Order inside translate_title: Google public endpoint -> MyMemory -> hard fallback.
-          bindings = {
-              "_translate_allente_se_title": "sv",
-              "_translate_allente_no_title": "no",
-              "_translate_canalplus_fr_title": "fr",
-              "_translate_digi4k_title": "ro",
-              "_translate_tvplus_eurosport_title": "tr",
-              "_translate_sbb_eurosport_title": "sr",
-              "_translate_magenta_tv_sky_de_title": "de",
-          }
-          for function_name, language in bindings.items():
-              if hasattr(sources, function_name):
-                  setattr(sources, function_name, lambda title, lang=language: translate_title(title, lang))
-          print("Resilient English translation enabled for:", ", ".join(bindings))
           PY
 
       - name: Collect all configured official programme guides
@@ -79,7 +62,6 @@ jobs:
         run: |
           python - <<'PY'
           import json
-          import re
           import xml.etree.ElementTree as ET
           from datetime import datetime, timezone
           from pathlib import Path
@@ -88,47 +70,35 @@ jobs:
           root = ET.parse("data/epg.xml").getroot()
           wanted = {"allente_se.vultra": 0, "foot+.fr": 0}
           now = datetime.now(timezone.utc)
-          for programme in root.findall("programme"):
-              channel = programme.get("channel")
-              if channel in wanted:
-                  wanted[channel] += 1
-
-          for channel, count in wanted.items():
-              if count == 0:
-                  raise SystemExit(f"Critical channel {channel} has no programmes; refusing to publish.")
-              print(f"Verified {channel}: {count} programmes")
-
-          # A stale fallback is never acceptable for the two requested channels.
-          for provider in ("allente_se", "canalplus_fr"):
-              item = status.get(provider, {})
-              provider_status = item.get("status")
-              if provider_status != "ok":
-                  raise SystemExit(
-                      f"Critical provider {provider} is {provider_status!r}; refusing to publish stale EPG."
-                  )
-              print(f"{provider}: status=ok, records={item.get('records')!r}")
-
-          # Ensure the critical channels contain at least one programme in the future.
           future = {key: 0 for key in wanted}
+
           for programme in root.findall("programme"):
               channel = programme.get("channel")
-              if channel not in future:
+              if channel not in wanted:
                   continue
-              start = programme.get("start", "")
+              wanted[channel] += 1
               try:
-                  dt = datetime.strptime(start, "%Y%m%d%H%M%S %z")
+                  dt = datetime.strptime(programme.get("start", ""), "%Y%m%d%H%M%S %z")
               except ValueError:
                   continue
               if dt >= now:
                   future[channel] += 1
-          for channel, count in future.items():
-              if count == 0:
-                  raise SystemExit(f"Critical channel {channel} has no future programmes; refusing to publish.")
-              print(f"Verified {channel}: {count} future programmes")
 
-          for provider in ("allente_no", "canalplus_fr"):
+          for channel, count in wanted.items():
+              if count == 0:
+                  raise SystemExit(f"Critical channel {channel} has no programmes; refusing to publish.")
+              if future[channel] == 0:
+                  raise SystemExit(f"Critical channel {channel} has no future programmes; refusing to publish.")
+              print(f"Verified {channel}: {count} programmes, {future[channel]} future")
+
+          # A stale fallback is never acceptable for the requested providers.
+          for provider in ("allente_se", "canalplus_fr"):
               item = status.get(provider, {})
-              print(f"{provider}: status={item.get('status')!r}, records={item.get('records')!r}, message={item.get('message')!r}")
+              if item.get("status") != "ok":
+                  raise SystemExit(
+                      f"Critical provider {provider} is {item.get('status')!r}; refusing to publish stale EPG."
+                  )
+              print(f"{provider}: status=ok, records={item.get('records')!r}")
           PY
 
       - name: Publish refreshed snapshot when it changes
