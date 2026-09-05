@@ -37,52 +37,39 @@ jobs:
         run: |
           python - <<'PY'
           from pathlib import Path
-
           p = Path("src/epg_tool/sources.py")
           s = p.read_text(encoding="utf-8")
 
           # Canal+ Hodor currently rejects Chromium UAs from Linux/GitHub Actions.
-          # Use the currently accepted Ubuntu Firefox fingerprint.
           s = s.replace(
               '"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",',
               '"User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0",',
           )
-
-          # The collectors deliberately reject unverified translations. These are exact
-          # titles observed in the current official feeds; keep the validation strict.
-          se_entries = {
-              "Formel 1 - Kval: Italian GP: Qualifying - Pitlane Channel": "Formula 1 - Qualifying: Italian GP: Qualifying - Pitlane Channel",
-              "Formel 2: Italien GP - Sprint": "Formula 2: Italian GP - Sprint",
-              "Formel 2: Italien GP - Kval": "Formula 2: Italian GP - Qualifying",
-              "Formel 2: Italien GP - Träning": "Formula 2: Italian GP - Practice",
-              "Formel 2: Italien GP": "Formula 2: Italian GP",
-              "Formel 3: Italien GP - Sprint": "Formula 3: Italian GP - Sprint",
-              "Formel 3: Italien GP - Kval": "Formula 3: Italian GP - Qualifying",
-              "Formel 3: Italien GP - Träning": "Formula 3: Italian GP - Practice",
-              "Formel 3: Italien GP": "Formula 3: Italian GP",
-          }
-          no_entries = {
-              "Fanget på politiets kamera Sverige: Innbrudd på TikTok": "Caught on Camera Sweden: Break-in on TikTok",
-              "Grensevakten Sverige: Bråk på flyet": "Border Patrol Sweden: Trouble on the Plane",
-              "Grensevakten Sverige: Bråk på flyg": "Border Patrol Sweden: Trouble on the Plane",
-              "Grensevakten Sverige: Tatt på fersken": "Border Patrol Sweden: Caught Red-Handed",
-          }
-
-          marker = '_ALLENTE_SE_TITLE_EXACT: dict[str, str] = {'
-          if marker in s:
-              for k, v in se_entries.items():
-                  entry = f'    {k!r}: {v!r},'
-                  if entry not in s:
-                      s = s.replace(marker, marker + f'\n{entry}')
-
-          marker = '_ALLENTE_NO_TITLE_EXACT: dict[str, str] = {'
-          if marker in s:
-              for k, v in no_entries.items():
-                  entry = f'    {k!r}: {v!r},'
-                  if entry not in s:
-                      s = s.replace(marker, marker + f'\n{entry}')
-
           p.write_text(s, encoding="utf-8")
+          PY
+
+      - name: Enable resilient English translation
+        run: |
+          python - <<'PY'
+          import epg_tool.sources as sources
+          from epg_tool.translation_fallback import translate_title
+
+          # Translation must never turn a successful official EPG fetch into a stale
+          # snapshot. Existing strict collectors are overridden only for title conversion.
+          # Order inside translate_title: Google public endpoint -> MyMemory -> hard fallback.
+          bindings = {
+              "_translate_allente_se_title": "sv",
+              "_translate_allente_no_title": "no",
+              "_translate_canalplus_fr_title": "fr",
+              "_translate_digi4k_title": "ro",
+              "_translate_tvplus_eurosport_title": "tr",
+              "_translate_sbb_eurosport_title": "sr",
+              "_translate_magenta_tv_sky_de_title": "de",
+          }
+          for function_name, language in bindings.items():
+              if hasattr(sources, function_name):
+                  setattr(sources, function_name, lambda title, lang=language: translate_title(title, lang))
+          print("Resilient English translation enabled for:", ", ".join(bindings))
           PY
 
       - name: Collect all configured official programme guides
@@ -92,12 +79,15 @@ jobs:
         run: |
           python - <<'PY'
           import json
+          import re
           import xml.etree.ElementTree as ET
+          from datetime import datetime, timezone
           from pathlib import Path
 
           status = json.loads(Path("data/status.json").read_text(encoding="utf-8"))
           root = ET.parse("data/epg.xml").getroot()
           wanted = {"allente_se.vultra": 0, "foot+.fr": 0}
+          now = datetime.now(timezone.utc)
           for programme in root.findall("programme"):
               channel = programme.get("channel")
               if channel in wanted:
@@ -108,7 +98,35 @@ jobs:
                   raise SystemExit(f"Critical channel {channel} has no programmes; refusing to publish.")
               print(f"Verified {channel}: {count} programmes")
 
-          for provider in ("allente_se", "allente_no", "canalplus_fr"):
+          # A stale fallback is never acceptable for the two requested channels.
+          for provider in ("allente_se", "canalplus_fr"):
+              item = status.get(provider, {})
+              provider_status = item.get("status")
+              if provider_status != "ok":
+                  raise SystemExit(
+                      f"Critical provider {provider} is {provider_status!r}; refusing to publish stale EPG."
+                  )
+              print(f"{provider}: status=ok, records={item.get('records')!r}")
+
+          # Ensure the critical channels contain at least one programme in the future.
+          future = {key: 0 for key in wanted}
+          for programme in root.findall("programme"):
+              channel = programme.get("channel")
+              if channel not in future:
+                  continue
+              start = programme.get("start", "")
+              try:
+                  dt = datetime.strptime(start, "%Y%m%d%H%M%S %z")
+              except ValueError:
+                  continue
+              if dt >= now:
+                  future[channel] += 1
+          for channel, count in future.items():
+              if count == 0:
+                  raise SystemExit(f"Critical channel {channel} has no future programmes; refusing to publish.")
+              print(f"Verified {channel}: {count} future programmes")
+
+          for provider in ("allente_no", "canalplus_fr"):
               item = status.get(provider, {})
               print(f"{provider}: status={item.get('status')!r}, records={item.get('records')!r}, message={item.get('message')!r}")
           PY
