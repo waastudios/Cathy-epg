@@ -31,8 +31,78 @@ jobs:
       - name: Install collector
         run: python -m pip install --upgrade pip && python -m pip install -e .
 
+      - name: Harden target official collectors
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+
+          p = Path("src/epg_tool/sources.py")
+          s = p.read_text(encoding="utf-8")
+
+          # Canal+ Hodor currently rejects the modern Chromium UA used by the collector.
+          s = s.replace(
+              '"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",',
+              '"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36",',
+          )
+
+          # Keep the English-only validation, but cover the currently observed official titles.
+          se_entries = {
+              "Formel 3: Italien GP - Sprint": "Formula 3: Italian GP - Sprint",
+              "Formel 3: Italien GP - Kval": "Formula 3: Italian GP - Qualifying",
+              "Formel 3: Italien GP": "Formula 3: Italian GP",
+          }
+          no_entries = {
+              "Grensevakten Sverige: Bråk på flyet": "Border Patrol Sweden: Trouble on the Plane",
+              "Grensevakten Sverige: Bråk på flyg": "Border Patrol Sweden: Trouble on the Plane",
+          }
+
+          marker = '_ALLENTE_SE_TITLE_EXACT: dict[str, str] = {'
+          if marker in s:
+              for k, v in se_entries.items():
+                  if f'    {k!r}: {v!r},' not in s:
+                      s = s.replace(marker, marker + f'\n    {k!r}: {v!r},')
+
+          marker = '_ALLENTE_NO_TITLE_EXACT: dict[str, str] = {'
+          if marker in s:
+              for k, v in no_entries.items():
+                  if f'    {k!r}: {v!r},' not in s:
+                      s = s.replace(marker, marker + f'\n    {k!r}: {v!r},')
+
+          p.write_text(s, encoding="utf-8")
+          PY
+
       - name: Collect all configured official programme guides
         run: epg collect --days 7
+
+      - name: Verify critical target channels before publishing
+        run: |
+          python - <<'PY'
+          import json
+          import xml.etree.ElementTree as ET
+          from pathlib import Path
+
+          status = json.loads(Path("data/status.json").read_text(encoding="utf-8"))
+          for provider in ("allente_se", "canalplus_fr"):
+              item = status.get(provider, {})
+              if item.get("status") != "ok":
+                  raise SystemExit(
+                      f"Critical provider {provider} is not fresh: "
+                      f"status={item.get('status')!r}, message={item.get('message')!r}"
+                  )
+
+          root = ET.parse("data/epg.xml").getroot()
+          wanted = {"allente_se.vultra": 0, "foot+.fr": 0}
+          for programme in root.findall("programme"):
+              channel = programme.get("channel")
+              if channel in wanted:
+                  wanted[channel] += 1
+
+          for channel, count in wanted.items():
+              if count == 0:
+                  raise SystemExit(f"Critical channel {channel} has no programmes; refusing to publish.")
+              print(f"Verified {channel}: {count} programmes")
+          PY
 
       - name: Publish refreshed snapshot when it changes
         run: |
