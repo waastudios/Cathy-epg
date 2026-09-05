@@ -10,13 +10,13 @@
   "allente_se": {
     "status": "stale",
     "records": 778,
-    "message": "Allente Sweden 标题未获得可验证的英文转换：'Formel 1 - Kval: Italian GP: Qualifying - Pitlane Channel'",
+    "message": "Allente Sweden 标题未获得可验证的英文转换：'Formel 1 - Kval: Italian GP: Qualifying - Timing'",
     "fallback": "previous_snapshot"
   },
   "allente_no": {
     "status": "error",
     "records": 0,
-    "message": "Allente Norway 标题未获得可验证的英文转换：'Grensevakten Sverige: Tatt på fersken'"
+    "message": "Allente Norway 标题未获得可验证的英文转换：'Mor og datter pusser opp'"
   },
   "ee_uk": {
     "status": "ok",
@@ -55,6 +55,6 @@
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-09-05T12:38:59Z",
+  "generated_at": "2026-09-05T12:44:02Z",
   "total_records": 15883
 }
