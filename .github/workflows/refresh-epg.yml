@@ -2,7 +2,6 @@ name: Refresh official EPG
 
 on:
   schedule:
-    # GitHub Actions cron is UTC: 19:00 UTC = 03:00 China Standard Time (UTC+8) on the next calendar day.
     - cron: "0 19 * * *"
   workflow_dispatch:
   push:
@@ -47,11 +46,22 @@ jobs:
           )
 
           # Make the translation override part of the same Python process that runs
-          # `epg collect`. This is intentionally appended after every collector function
-          # has been defined, so the CLI cannot accidentally use the old strict functions.
+          # `epg collect`. It is appended after every collector function definition.
           marker = "# Cathy-epg resilient translation runtime override"
           if marker not in s:
-              s += r'''\n\n# Cathy-epg resilient translation runtime override\n# Official source retrieval remains strict; only title translation is made best-effort.\nfrom .translation_fallback import translate_title as _cathy_translate_title\n_translate_allente_se_title = lambda title: _cathy_translate_title(title, "sv")\n_translate_allente_no_title = lambda title: _cathy_translate_title(title, "no")\n_translate_canalplus_fr_title = lambda title: _cathy_translate_title(title, "fr")\n_translate_digi4k_title = lambda title: _cathy_translate_title(title, "ro")\n_translate_tvplus_eurosport_title = lambda title: _cathy_translate_title(title, "tr")\n_translate_sbb_eurosport_title = lambda title: _cathy_translate_title(title, "sr")\n_translate_magenta_tv_sky_de_title = lambda title: _cathy_translate_title(title, "de")\n'''
+              s += '''
+
+# Cathy-epg resilient translation runtime override
+# Official source retrieval remains strict; only title translation is made best-effort.
+from .translation_fallback import translate_title as _cathy_translate_title
+_translate_allente_se_title = lambda title: _cathy_translate_title(title, "sv")
+_translate_allente_no_title = lambda title: _cathy_translate_title(title, "no")
+_translate_canalplus_fr_title = lambda title: _cathy_translate_title(title, "fr")
+_translate_digi4k_title = lambda title: _cathy_translate_title(title, "ro")
+_translate_tvplus_eurosport_title = lambda title: _cathy_translate_title(title, "tr")
+_translate_sbb_eurosport_title = lambda title: _cathy_translate_title(title, "sr")
+_translate_magenta_tv_sky_de_title = lambda title: _cathy_translate_title(title, "de")
+'''
           p.write_text(s, encoding="utf-8")
           PY
 
