@@ -5,6 +5,8 @@ on:
     # GitHub Actions cron is UTC: 19:00 UTC = 03:00 China Standard Time (UTC+8) on the next calendar day.
     - cron: "0 19 * * *"
   workflow_dispatch:
+  push:
+    branches: [master]
 
 permissions:
   contents: write
@@ -91,10 +93,6 @@ jobs:
           from pathlib import Path
 
           status = json.loads(Path("data/status.json").read_text(encoding="utf-8"))
-
-          # A provider may temporarily fall back to its previous snapshot because its
-          # official endpoint is blocked from GitHub Actions. Do not discard the entire
-          # daily snapshot for that reason; verify that the target channels still contain data.
           root = ET.parse("data/epg.xml").getroot()
           wanted = {"allente_se.vultra": 0, "foot+.fr": 0}
           for programme in root.findall("programme"):
