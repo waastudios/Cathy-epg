@@ -23,10 +23,9 @@
     "records": 6856
   },
   "canalplus_fr": {
-    "status": "stale",
-    "records": 313,
-    "message": "Canal+ 法语标题没有本地固定英文映射：'Jamel Comedy Club — Invités : Bruno Sanches, Youssef...'",
-    "fallback": "previous_snapshot"
+    "status": "ok",
+    "records": 310,
+    "source": "official_canalplus_api"
   },
   "sky_de": {
     "status": "ok",
@@ -51,10 +50,10 @@
   "xmltv": {
     "status": "ok",
     "channels": 155,
-    "programmes": 15883,
+    "programmes": 15880,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
   "generated_at": "2026-09-05T12:44:02Z",
-  "total_records": 15883
+  "total_records": 15880
 }

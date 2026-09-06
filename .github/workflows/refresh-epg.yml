@@ -52,7 +52,6 @@ jobs:
           targets = {
               "_translate_allente_se_title": "sv",
               "_translate_allente_no_title": "no",
-              "_translate_canalplus_fr_title": "fr",
               "_translate_digi4k_title": "ro",
               "_translate_tvplus_eurosport_title": "tr",
               "_translate_sbb_eurosport_title": "sr",
@@ -109,8 +108,6 @@ jobs:
           languages = {
               "allente_se.vultra": "sv",
               "allente_no.euro1": "no",
-              "foot+.fr": "fr",
-              "canal+.fr": "fr",
               "digi4k_ro": "ro",
               "tvplus_eurosport_1": "tr",
               "tvplus_eurosport_2": "tr",

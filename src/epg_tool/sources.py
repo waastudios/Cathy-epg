@@ -833,7 +833,14 @@ def collect_canalplus_fr(days: int = 7, pause_seconds: float = 0.02) -> list[Pro
                     if end <= start:
                         continue
                     source_display_title = title if not subtitle or subtitle == title else f"{title} — {subtitle}"
-                    display_title = _translate_canalplus_fr_title(source_display_title)
+                    try:
+                        display_title = _translate_canalplus_fr_title(source_display_title)
+                    except SourceUnavailable:
+                        # Official API data must remain refreshable even when an
+                        # optional English translation is unavailable or rate-limited.
+                        # Preserve the exact official French title rather than
+                        # dropping the entire official Canal+ source.
+                        display_title = source_display_title
                     records.append(
                         Programme(
                             provider="canalplus_fr",
