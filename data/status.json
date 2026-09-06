@@ -1,59 +1,53 @@
 {
   "astro": {
     "status": "ok",
-    "records": 2497
+    "records": 2599
   },
   "now_hk": {
     "status": "ok",
-    "records": 3694
+    "records": 3855
   },
   "allente_se": {
-    "status": "stale",
-    "records": 778,
-    "message": "Allente Sweden 标题未获得可验证的英文转换：'Formel 1 - Kval: Italian GP: Qualifying - Timing'",
-    "fallback": "previous_snapshot"
+    "status": "ok",
+    "records": 802
   },
   "allente_no": {
-    "status": "error",
-    "records": 0,
-    "message": "Allente Norway 标题未获得可验证的英文转换：'Mor og datter pusser opp'"
+    "status": "ok",
+    "records": 672
   },
   "ee_uk": {
     "status": "ok",
-    "records": 6856
+    "records": 6857
   },
   "canalplus_fr": {
     "status": "ok",
-    "records": 310,
-    "source": "official_canalplus_api"
+    "records": 310
   },
   "sky_de": {
     "status": "ok",
-    "records": 1367
+    "records": 1375
   },
   "digi4k_ro": {
     "status": "stale",
     "records": 130,
-    "message": "Digi 4K 标题未获得可验证的英文转换：'Planeta, ca o junglă | ep. 1'",
+    "message": "Digi 4K 官网日期容器 2026-09-12 未返回可发布节目。",
     "fallback": "previous_snapshot"
   },
   "sbb_rs": {
-    "status": "stale",
-    "records": 139,
-    "message": "SBB Eurosport 4K 标题未获得可验证的英文转换：'Konjički sport: Svetski tur šampiona - Valkensvard'",
-    "fallback": "previous_snapshot"
+    "status": "ok",
+    "records": 140
   },
   "virgin_uk": {
     "status": "ok",
-    "records": 109
+    "records": 108
   },
   "xmltv": {
     "status": "ok",
-    "channels": 155,
-    "programmes": 15880,
+    "channels": 160,
+    "programmes": 16848,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-09-05T12:44:02Z",
-  "total_records": 15880
+  "generated_at": "2026-09-06T07:00:48Z",
+  "total_records": 16848
 }
