@@ -1,53 +1,51 @@
 {
   "astro": {
     "status": "ok",
-    "records": 2591
+    "records": 2175
   },
   "now_hk": {
     "status": "ok",
-    "records": 4096
+    "records": 4178
   },
   "allente_se": {
     "status": "ok",
-    "records": 802
+    "records": 818
   },
   "allente_no": {
     "status": "ok",
-    "records": 672
+    "records": 770
   },
   "ee_uk": {
     "status": "ok",
-    "records": 6858
+    "records": 6902
   },
   "canalplus_fr": {
     "status": "ok",
-    "records": 310
+    "records": 313
   },
   "sky_de": {
     "status": "ok",
-    "records": 1380
+    "records": 1412
   },
   "digi4k_ro": {
-    "status": "stale",
-    "records": 130,
-    "message": "Digi 4K 官网日期容器 2026-09-13 未返回可发布节目。",
-    "fallback": "previous_snapshot"
+    "status": "ok",
+    "records": 115
   },
   "sbb_rs": {
     "status": "ok",
-    "records": 144
+    "records": 101
   },
   "virgin_uk": {
     "status": "ok",
-    "records": 108
+    "records": 104
   },
   "xmltv": {
     "status": "ok",
     "channels": 160,
-    "programmes": 17091,
+    "programmes": 16888,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-09-06T21:43:32Z",
-  "total_records": 17091
+  "generated_at": "2026-09-08T22:16:55Z",
+  "total_records": 16888
 }
