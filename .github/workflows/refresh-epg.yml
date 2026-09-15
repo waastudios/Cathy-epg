@@ -23,6 +23,18 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Restore sources.py from last known good commit
+        run: |
+          git show c195120:src/epg_tool/sources.py > src/epg_tool/sources.py
+          # Apply the eurosport/canal fix patch if present
+          if [ -f scripts/apply_eurosport_canal_fix.patch ]; then
+            patch -p1 < scripts/apply_eurosport_canal_fix.patch || true
+          fi
+          wc -l src/epg_tool/sources.py
+          head -c 80 src/epg_tool/sources.py
 
       - name: Set up Python
         uses: actions/setup-python@v5
