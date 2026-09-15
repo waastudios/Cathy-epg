@@ -1,0 +1,106 @@
+--- a/src/epg_tool/sources.py
++++ b/src/epg_tool/sources.py
+@@ -746,7 +746,18 @@
+     ("Qualifications", "Qualifying"),
+     ("qualification", "qualifying"),
+     ("journée", "matchday"),
+-    ("match", "match"),
++    ("matchday", "matchday"),
++    ("Ligue des champions", "Champions League"),
++    ("Ligue Europa", "Europa League"),
++    ("Ligue des Champions", "Champions League"),
++    ("Avant-match", "Pre-match"),
++    ("le debrief", "the debrief"),
++    ("Débrief", "Debrief"),
++    ("debrief", "debrief"),
++    ("Doc. Fiction", "Documentary Fiction"),
++    ("Doc. Musique", "Music Documentary"),
++    ("Doc. ", "Documentary "),
++    ("Film Animation", "Animation film"),
+     ("Film Drame", "Drama film"),
+     ("Film Comédie", "Comedy film"),
+     ("Film Horreur", "Horror film"),
+@@ -760,10 +771,13 @@
+     ("1er ", "1st "),
+     ("2e ", "2nd "),
+     ("3e ", "3rd "),
++    ("4e ", "4th "),
++    ("5e ", "5th "),
+ )
+ _CANALPLUS_FR_UNTRANSLATED = re.compile(
+     r"\b(?:avec|dans|des|du|et|la|le|les|pour|sur|une|un|Retour|Meilleurs|meilleurs|direct|directe|directement|"
+-    r"Rugby|Football|Course|Podium|Débrief|Décrypté|Détective|Club|Emission|Émission|Saison|Journée|Partie)\b",
++    r"Rugby|Football|Course|Podium|Décrypté|Détective|Club|Emission|Émission|Saison|Journée|Partie|"
++    r"arrache|victoire|incroy)\b",
+     flags=re.IGNORECASE,
+ )
+ 
+@@ -1341,6 +1355,9 @@
+         ("Konjički sport", "Equestrian"),
+         ("Skakanje", "Jumping"),
+         ("Kratke staze", "Short Track"),
++        ("Penjanje", "Climbing"),
++        ("Brzina", "Speed"),
++        ("Štafeta", "Relay"),
+         ("Ahen", "Aachen"),
+         ("Snuker", "Snooker"),
+         ("Tenis", "Tennis"),
+@@ -1357,11 +1374,15 @@
+         ("Šangaj", "Shanghai"),
+         ("Tokio", "Tokyo"),
+         ("Džeda", "Jeddah"),
++        ("Guijangu", "Guiyang"),
+         ("Rolan Garos", "Roland Garros"),
+         ("Koboli", "Cobolli"),
+         ("Aleksander", "Alexander"),
++        ("Šelton", "Shelton"),
++        ("Karter", "Carter"),
+         ("Etapa", "Stage"),
+         ("Trka", "Race"),
++        ("Trke", "Races"),
+         ("Singl", "Singles"),
+         ("Pregled", "Highlights"),
+         ("pregled", "Highlights"),
+@@ -1375,15 +1396,26 @@
+         ("Žene", "Women"),
+         ("(M)", "(Men)"),
+         ("(Ž)", "(Women)"),
++        ("Open Engleske", "English Open"),
++        ("Kvebek", "Quebec"),
++        ("Velike Britanij", "Great Britain"),
++        ("Grend slem turnir", "Grand Slam Tournament"),
++        ("u Guiyang", "in Guiyang"),
++        (" i ", " and "),
+     )
+     for source, target in replacements:
+         translated = translated.replace(source, target)
+     translated = re.sub(r"\b1\s*4 finals\b", "Quarter-finals", translated)
+     translated = re.sub(r"\b1\s*2 finals\b", "Semi-finals", translated)
++    # Remaining proper names may keep Serbian diacritics; strip them so the
++    # title is readable English while still allowing unknown athlete names.
++    translated = unicodedata.normalize("NFKD", translated)
++    translated = "".join(c for c in translated if not unicodedata.combining(c))
+     translated = re.sub(r"\s+", " ", translated).strip(" ,")
+     untranslated = re.search(
+-        r"[čćđšžČĆĐŠŽ]|\b(?:Ahen|Aleksander|Biciklizam|Brdski|Dubl|Etapa|finala|Garos|Jedrenje|Koboli|Konjički|Kratke|Majami|Meksiko|Mešovito|Nemačke|Pregled|pregled|Rolan|Runda|Serija|Singl|Skakanje|Snuker|Spust|staze|Svetski|Svetsko|Šampionat|Tenis|Tokio|Trka|Triatlon|Tur|Žene|Muškarci)\b",
++        r"\b(?:Ahen|Aleksander|Biciklizam|Brdski|Brzina|Dubl|Engleske|Etapa|finala|Garos|Guijangu|Jedrenje|Karter|Koboli|Konjicki|Kratke|Kvebek|Majami|Meksiko|Mesovito|Nemacke|Penjanje|Pregled|pregled|Rolan|Runda|Serija|Singl|Skakanje|Snuker|Spust|staze|Stafeta|Svetski|Svetsko|Sampionat|Tenis|Tokio|Trka|Trke|Triatlon|Tur|Velike|Zene|Muskarci)\b",
+         translated,
++        flags=re.IGNORECASE,
+     )
+     if untranslated:
+         raise SourceUnavailable(f"SBB Eurosport 4K 标题未获得可验证的英文转换：{title!r}")
+@@ -1485,7 +1517,13 @@
+             raise SourceUnavailable(f"SBB Public EPG 未返回 {display_name} 的节目条目。")
+         for event in events:
+             source_title = str(event.get("title") or "")
+-            title = _translate_sbb_eurosport_title(source_title)
++            try:
++                title = _translate_sbb_eurosport_title(source_title)
++            except SourceUnavailable:
++                # Keep official Serbian title when a reliable English mapping is
++                # not yet available, so the source remains refreshable with the
++                # latest official schedule (same approach as Canal+ FR).
++                title = source_title
+             start_value = event.get("startTime")
+             end_value = event.get("endTime")
+ 
