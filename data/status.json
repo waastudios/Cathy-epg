@@ -1,51 +1,53 @@
 {
   "astro": {
     "status": "ok",
-    "records": 2471
+    "records": 683
   },
   "now_hk": {
     "status": "ok",
-    "records": 4195
+    "records": 730
   },
   "allente_se": {
     "status": "ok",
-    "records": 779
+    "records": 286
   },
   "allente_no": {
     "status": "ok",
-    "records": 674
+    "records": 255
   },
   "ee_uk": {
-    "status": "ok",
-    "records": 6962
+    "status": "stale",
+    "records": 6962,
+    "message": "EE TV Player 服务定位符 http://bds.tv/services/BT_397065_1333_SD 返回了意外频道名 'Sky Sports NFL'。",
+    "fallback": "previous_snapshot"
   },
   "canalplus_fr": {
     "status": "ok",
-    "records": 293
+    "records": 78
   },
   "sky_de": {
     "status": "ok",
-    "records": 1460
+    "records": 409
   },
   "digi4k_ro": {
     "status": "ok",
-    "records": 118
+    "records": 37
   },
   "sbb_rs": {
     "status": "ok",
-    "records": 231
+    "records": 104
   },
   "virgin_uk": {
     "status": "ok",
-    "records": 91
+    "records": 18
   },
   "xmltv": {
     "status": "ok",
-    "channels": 159,
-    "programmes": 17274,
+    "channels": 158,
+    "programmes": 9562,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-09-15T18:12:27Z",
-  "total_records": 17274
+  "generated_at": "2026-09-22T13:15:20Z",
+  "total_records": 9562
 }
