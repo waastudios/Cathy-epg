@@ -18,7 +18,7 @@ jobs:
   refresh:
     name: Collect and publish XMLTV snapshot
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 30
 
     steps:
       - name: Check out repository
@@ -29,7 +29,6 @@ jobs:
       - name: Restore sources.py from last known good commit
         run: |
           git show c195120:src/epg_tool/sources.py > src/epg_tool/sources.py
-          # Apply the eurosport/canal fix patch if present
           if [ -f scripts/apply_eurosport_canal_fix.patch ]; then
             patch -p1 < scripts/apply_eurosport_canal_fix.patch || true
           fi
@@ -104,8 +103,8 @@ jobs:
       - name: Validate Python sources
         run: python -m compileall -q src scripts
 
-      - name: Collect all configured official programme guides
-        run: epg collect --days 7
+      - name: Collect configured official programme guides
+        run: epg collect --days 2
 
       - name: Force English translation for target channels
         run: |
