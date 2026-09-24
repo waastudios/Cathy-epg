@@ -56,7 +56,6 @@ jobs:
               "_translate_allente_no_title": "no",
               "_translate_digi4k_title": "ro",
               "_translate_tvplus_eurosport_title": "tr",
-              "_translate_sbb_eurosport_title": "sr",
               "_translate_magenta_tv_sky_de_title": "de",
           }
           found = set()
