@@ -36,6 +36,7 @@ DEFAULT_XML_GZIP = Path("data/epg.xml.gz")
 
 def _collect(args: argparse.Namespace) -> int:
     records = []
+    collected_by_provider: dict[str, list[Programme]] = {}
     status: dict[str, dict[str, object]] = {}
     previous_records = []
     if args.output.exists():
@@ -74,12 +75,12 @@ def _collect(args: argparse.Namespace) -> int:
     for provider, collector in collectors:
         try:
             result = collector()
-            records.extend(result)
+            collected_by_provider[provider] = result
             status[provider] = {"status": "ok", "records": len(result)}
         except (SourceUnavailable, OSError, ValueError, requests.RequestException) as exc:
             fallback = previous_by_provider.get(provider, [])
             if fallback:
-                records.extend(fallback)
+                collected_by_provider[provider] = fallback
                 status[provider] = {
                     "status": "stale",
                     "records": len(fallback),
@@ -88,6 +89,52 @@ def _collect(args: argparse.Namespace) -> int:
                 }
             else:
                 status[provider] = {"status": "error", "records": 0, "message": str(exc)}
+
+    if args.incremental:
+        # 每次只重新采集“今天”这一日；其余六日沿用上一份快照，形成连续 7 日滚动窗口。
+        provider_zones = {
+            "astro": ZoneInfo("Asia/Kuala_Lumpur"),
+            "now_hk": ZoneInfo("Asia/Hong_Kong"),
+            "allente_se": ZoneInfo("Europe/Stockholm"),
+            "allente_no": ZoneInfo("Europe/Oslo"),
+            "ee_uk": ZoneInfo("Europe/London"),
+            "canalplus_fr": ZoneInfo("Europe/Paris"),
+            "sky_de": ZoneInfo("Europe/Berlin"),
+            "digi4k_ro": ZoneInfo("Europe/Bucharest"),
+            "sbb_rs": ZoneInfo("Europe/Belgrade"),
+            "virgin_uk": ZoneInfo("Europe/London"),
+        }
+
+        def local_date(row: Programme, zone: ZoneInfo):
+            try:
+                return datetime.fromisoformat(row.start_at).astimezone(zone).date()
+            except (TypeError, ValueError):
+                return None
+
+        merged: list[Programme] = []
+        for provider, zone in provider_zones.items():
+            today = datetime.now(zone).date()
+            window_end = today + timedelta(days=7)
+            previous = [
+                row for row in previous_by_provider.get(provider, [])
+                if (day := local_date(row, zone)) is not None and today <= day < window_end
+            ]
+            if status.get(provider, {}).get("status") == "ok":
+                fresh = [
+                    row for row in collected_by_provider.get(provider, [])
+                    if (day := local_date(row, zone)) is not None and today <= day < window_end
+                ]
+                fresh_dates = {local_date(row, zone) for row in fresh}
+                previous = [row for row in previous if local_date(row, zone) not in fresh_dates]
+                merged.extend(previous)
+                merged.extend(fresh)
+            else:
+                # 当天源站失败时，保留上一份 7 日快照，不因一次失败清空未来节目。
+                merged.extend(previous)
+        records = merged
+    else:
+        for provider in [item[0] for item in collectors]:
+            records.extend(collected_by_provider.get(provider, []))
 
     # Do not call third-party guide interfaces during refresh. If a freshly
     # collected UK programme is unchanged, retain its existing direct image link.
@@ -205,6 +252,7 @@ def build_parser() -> argparse.ArgumentParser:
 
     collect = commands.add_parser("collect", help="采集官方节目来源的一周节目表")
     collect.add_argument("--days", type=int, default=7, choices=range(1, 8), metavar="1..7")
+    collect.add_argument("--incremental", action="store_true", help="只刷新今天，并与已有快照合并为连续 7 日窗口")
     collect.add_argument("--output", type=Path, default=DEFAULT_DATASET)
     collect.add_argument("--status", type=Path, default=DEFAULT_STATUS)
     collect.add_argument("--xml-output", type=Path, default=DEFAULT_XML)
