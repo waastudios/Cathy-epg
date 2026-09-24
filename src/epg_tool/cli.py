@@ -24,7 +24,8 @@ from .sources import (
     collect_ee_uk_channels,
     collect_magenta_tv_sky_de,
     collect_now_hk,
-    collect_sbb_eurosport,
+    collect_sbb_eurosport_4k,
+    collect_tvepg_eurosport_1,
     collect_virgin_uk_ultra,
 )
 
@@ -69,7 +70,8 @@ def _collect(args: argparse.Namespace) -> int:
         ("sky_de", lambda: collect_magenta_tv_sky_de(args.days)),
         ("digi4k_ro", lambda: collect_digi4k(args.days)),
         # SBB Public EPG 一次认证后统一采集 Eurosport 1、2 和 4K，避免旧 TV+ 来源重复请求。
-        ("sbb_rs", lambda: collect_sbb_eurosport(args.days)),
+        ("tvepg_eurosport", lambda: collect_tvepg_eurosport_1(args.days)),
+        ("sbb_rs", lambda: collect_sbb_eurosport_4k(args.days)),
         ("virgin_uk", lambda: collect_virgin_uk_ultra(args.days)),
     )
     for provider, collector in collectors:
@@ -102,6 +104,7 @@ def _collect(args: argparse.Namespace) -> int:
             "sky_de": ZoneInfo("Europe/Berlin"),
             "digi4k_ro": ZoneInfo("Europe/Bucharest"),
             "sbb_rs": ZoneInfo("Europe/Belgrade"),
+            "tvepg_eurosport": ZoneInfo("Europe/Zurich"),
             "virgin_uk": ZoneInfo("Europe/London"),
         }
 
