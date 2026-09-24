@@ -1074,6 +1074,79 @@ def collect_tvplus_eurosport(days: int = 7) -> list[Programme]:
     return _deduplicate(records)
 
 
+TVEPG_EUROSPORT_1_GUIDE = "https://tvepg.eu/en/switzerland/channel/eurosport-1-e"
+
+
+def _tvepg_eurosport_programmes_from_html(html: str, target_date: date) -> list[tuple[datetime, str]]:
+    """解析 TVEpg Eurosport 1 指定日期页面的公开节目锚点。"""
+    soup = BeautifulSoup(html, "html.parser")
+    current_date: date | None = None
+    rows: list[tuple[datetime, str]] = []
+    for element in soup.find_all(["h1", "h2", "h3", "h4", "h5", "h6", "a"]):
+        text = re.sub(r"\\s+", " ", element.get_text(" ", strip=True))
+        matched_day = re.match(r"^(?:Today|Tomorrow)\\s*-\\s*(\\d{2})/(\\d{2})/(\\d{4})\\s*-", text, re.IGNORECASE)
+        if matched_day:
+            current_date = date(int(matched_day.group(3)), int(matched_day.group(2)), int(matched_day.group(1)))
+            continue
+        if current_date != target_date or element.name != "a":
+            continue
+        matched = re.match(r"^(\\d{2}):(\\d{2})\\s+(.+?)\\s*$", text)
+        if not matched:
+            continue
+        hour, minute = int(matched.group(1)), int(matched.group(2))
+        title = matched.group(3).strip()
+        if not title:
+            continue
+        href = element.get("href") or ""
+        if "eurosport-1-e" not in href:
+            continue
+        rows.append((datetime.combine(target_date, clock_time(hour, minute), tzinfo=ZoneInfo("Europe/Zurich")), title))
+    deduped: list[tuple[datetime, str]] = []
+    seen: set[tuple[datetime, str]] = set()
+    for row in rows:
+        if row not in seen:
+            seen.add(row)
+            deduped.append(row)
+    return sorted(deduped)
+
+
+def collect_tvepg_eurosport_1(days: int = 7) -> list[Programme]:
+    """读取 TVEpg.eu Switzerland 的 Eurosport 1 E 公开节目表，替代旧 Eurosport 1 来源。"""
+    if days not in range(1, 8):
+        raise ValueError("TVEpg Eurosport 1 采集天数必须为 1–7。")
+    session = _session()
+    zone = ZoneInfo("Europe/Zurich")
+    today = datetime.now(zone).date()
+    retrieved_at = utc_now_iso()
+    records: list[Programme] = []
+    for offset in range(days):
+        target_date = today + timedelta(days=offset)
+        url = f"https://tvepg.eu/en/switzerland/channel/eurosport-1-e/{target_date.isoformat()}"
+        response = session.get(url, timeout=30)
+        response.raise_for_status()
+        programmes = _tvepg_eurosport_programmes_from_html(response.text, target_date)
+        for index, (start, title) in enumerate(programmes):
+            end = programmes[index + 1][0] if index + 1 < len(programmes) else start + timedelta(hours=2)
+            if end <= start:
+                continue
+            records.append(Programme(
+                provider="tvepg_eurosport",
+                country="CH",
+                timezone="Europe/Zurich",
+                channel_id="eurosport.1",
+                channel_number="eurosport.1",
+                channel_name="Eurosport 1",
+                title=title,
+                start_at=start.isoformat(),
+                end_at=end.isoformat(),
+                source_url=url,
+                retrieved_at=retrieved_at,
+            ))
+    if not records:
+        raise SourceUnavailable("TVEpg.eu Eurosport 1 页面未返回可识别的节目记录。")
+    return _deduplicate(records)
+
+
 _SBB_EUROSPORT_4K_TITLE_EXACT: dict[str, str] = {
     "Discovery Golf": "Discovery Golf",
     "Magazin: Cycling Show": "Magazine: Cycling Show",
