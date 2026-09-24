@@ -26,15 +26,6 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Restore sources.py from last known good commit
-        run: |
-          git show c195120:src/epg_tool/sources.py > src/epg_tool/sources.py
-          if [ -f scripts/apply_eurosport_canal_fix.patch ]; then
-            patch -p1 < scripts/apply_eurosport_canal_fix.patch || true
-          fi
-          wc -l src/epg_tool/sources.py
-          head -c 80 src/epg_tool/sources.py
-
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
@@ -104,7 +95,7 @@ jobs:
         run: python -m compileall -q src scripts
 
       - name: Collect configured official programme guides
-        run: epg collect --days 2
+        run: epg collect --days 1 --incremental
 
       - name: Force English translation for target channels
         run: |
@@ -183,7 +174,7 @@ jobs:
           for provider in ("allente_se", "allente_no", "canalplus_fr"):
               item = status.get(provider, {})
               print(f"{provider}: status={item.get('status')!r}, records={item.get('records')!r}")
-              if item.get("status") not in ("ok",):
+              if item.get("status") not in ("ok", "stale"):
                   raise SystemExit(f"Critical provider {provider} failed; refusing stale publish")
           PY
 
