@@ -11,8 +11,7 @@ _SBB_EUROSPORT_4K_TITLE_EXACT: dict[str, str] = {
 '''
 path = Path("src/epg_tool/sources.py")
 source = path.read_text(encoding="utf-8")
-if "\n_SBB_EUROSPORT_4K_TITLE_EXACT:" not in source:
-    source += "\n" + SBB_GUARD
+source += "\n" + SBB_GUARD
 source = source.replace(
     'TVEPG_EUROSPORT_1_GUIDE = "https://tvepg.eu/en/switzerland/channel/eurosport-1-e"',
     'TVEPG_EUROSPORT_1_GUIDE = "https://tvepg.eu/en/switzerland/channel/eurosport_1_e"',
