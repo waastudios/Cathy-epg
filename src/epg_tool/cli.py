@@ -18,7 +18,6 @@ from .sources import (
     SourceUnavailable,
     collect_allente_no,
     collect_allente_v_sport,
-    collect_canalplus_fr,
     collect_astro,
     collect_digi4k,
     collect_ee_uk_channels,
@@ -65,7 +64,6 @@ def _collect(args: argparse.Namespace) -> int:
         ("allente_no", lambda: collect_allente_no(args.days)),
         # EE TV Player 提供完整频道级 start/stop；只保留 SD 主频道，避免 HD／+1 镜像重复。
         ("ee_uk", lambda: collect_ee_uk_channels(args.days)),
-        ("canalplus_fr", lambda: collect_canalplus_fr(args.days)),
         # Telekom MagentaTV 的匿名官方生产节目表；XMLTV ID 使用用户指定 Sky Germany 频道号。
         ("sky_de", lambda: collect_magenta_tv_sky_de(args.days)),
         ("digi4k_ro", lambda: collect_digi4k(args.days)),
@@ -100,7 +98,6 @@ def _collect(args: argparse.Namespace) -> int:
             "allente_se": ZoneInfo("Europe/Stockholm"),
             "allente_no": ZoneInfo("Europe/Oslo"),
             "ee_uk": ZoneInfo("Europe/London"),
-            "canalplus_fr": ZoneInfo("Europe/Paris"),
             "sky_de": ZoneInfo("Europe/Berlin"),
             "digi4k_ro": ZoneInfo("Europe/Bucharest"),
             "sbb_rs": ZoneInfo("Europe/Belgrade"),
