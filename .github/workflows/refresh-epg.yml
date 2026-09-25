@@ -92,7 +92,9 @@ jobs:
           PY
 
       - name: Repair TVEpg Eurosport 1 collector
-        run: python scripts/repair_tvepg.py
+        run: |
+          python scripts/repair_tvepg.py
+          python -m py_compile src/epg_tool/sources.py
 
       - name: Validate Python sources
         run: python -m compileall -q src scripts
