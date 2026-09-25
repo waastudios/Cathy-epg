@@ -14,7 +14,7 @@ source = path.read_text(encoding="utf-8")
 source += "\n" + SBB_GUARD
 source = source.replace(
     'TVEPG_EUROSPORT_1_GUIDE = "https://tvepg.eu/en/switzerland/channel/eurosport-1-e"',
-    'TVEPG_EUROSPORT_1_GUIDE = "https://tvepg.eu/en/switzerland/channel/eurosport_1_e"',
+    'TVEPG_EUROSPORT_1_GUIDE = "https://tvepg.eu/en/switzerland/c/eurosport-1-e"',
 )
 
 start = source.find("def collect_tvepg_eurosport_1(")
@@ -69,8 +69,8 @@ replacement = r'''def collect_tvepg_eurosport_1(days: int = 7) -> list[Programme
                 )
         pending = []
 
-    for element in soup.find_all(["h1", "h2", "h3", "h4", "a"]):
-        if element.name in {"h1", "h2", "h3", "h4"}:
+    for element in soup.find_all(["h1", "h2", "h3", "h4", "h5", "h6", "a"]):
+        if element.name in {"h1", "h2", "h3", "h4", "h5", "h6"}:
             heading = element.get_text(" ", strip=True)
             match = re.search(r"(Today|Tomorrow)\s*-\s*(\d{2}/\d{2}/\d{4})\s*-", heading, re.I)
             if match:
