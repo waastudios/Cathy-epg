@@ -1,7 +1,18 @@
 from pathlib import Path
 
+# The workflow's AST translation hardening can rebuild function bodies; keep the SBB exact map explicit.
+SBB_GUARD = r'''
+_SBB_EUROSPORT_4K_TITLE_EXACT: dict[str, str] = {
+    "Discovery Golf": "Discovery Golf",
+    "Magazin: Cycling Show": "Magazine: Cycling Show",
+    "NFL Hard Knocks": "NFL Hard Knocks",
+    "UEC BMX Racing European Championship - Pregled": "UEC BMX Racing European Championship - Highlights",
+}
+'''
 path = Path("src/epg_tool/sources.py")
 source = path.read_text(encoding="utf-8")
+if "_SBB_EUROSPORT_4K_TITLE_EXACT" not in source:
+    source += "\n" + SBB_GUARD
 source = source.replace(
     'TVEPG_EUROSPORT_1_GUIDE = "https://tvepg.eu/en/switzerland/channel/eurosport-1-e"',
     'TVEPG_EUROSPORT_1_GUIDE = "https://tvepg.eu/en/switzerland/channel/eurosport_1_e"',
