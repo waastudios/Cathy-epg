@@ -34,14 +34,21 @@ replacement = r'''def collect_tvepg_eurosport_1(days: int = 7) -> list[Programme
         "Referer": "https://tvepg.eu/en/switzerland/",
     })
     zone = ZoneInfo("Europe/Zurich")
-    today = datetime.now(zone).date()
-    last_day = today + timedelta(days=days)
-
-    response = session.get(TVEPG_EUROSPORT_1_GUIDE, timeout=30)
-    response.raise_for_status()
+    # TVEpg.eu is protected by Cloudflare; GitHub Actions receives HTTP 403.
+    # Use Jina Reader only as a transport proxy; the EPG source remains TVEpg.eu.
+    try:
+        response = session.get(TVEPG_EUROSPORT_1_GUIDE, timeout=30)
+        if response.status_code == 403:
+            raise requests.HTTPError("TVEpg direct request returned 403")
+        response.raise_for_status()
+    except requests.RequestException:
+        proxy_url = "https://r.jina.ai/http://tvepg.eu/en/switzerland/c/eurosport-1-e"
+        response = session.get(proxy_url, timeout=45)
+        response.raise_for_status()
     soup = BeautifulSoup(response.text, "html.parser")
 
     records: list[Programme] = []
+    page_dates = []
     current_date = None
     pending: list[tuple[datetime, str]] = []
 
@@ -51,7 +58,7 @@ replacement = r'''def collect_tvepg_eurosport_1(days: int = 7) -> list[Programme
             end = pending[index + 1][0] if index + 1 < len(pending) else start + timedelta(hours=2)
             if end <= start:
                 continue
-            if today <= start.date() < last_day:
+            if start.date() in page_dates[:days]:
                 records.append(
                     Programme(
                         provider="tvepg_eurosport",
@@ -76,6 +83,10 @@ replacement = r'''def collect_tvepg_eurosport_1(days: int = 7) -> list[Programme
             if match:
                 flush()
                 current_date = datetime.strptime(match.group(2), "%d/%m/%Y").date()
+                if current_date not in page_dates:
+                    page_dates.append(current_date)
+                if len(page_dates) > days:
+                    current_date = None
             continue
 
         if current_date is None:
