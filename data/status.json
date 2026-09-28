@@ -1,43 +1,47 @@
 {
   "astro": {
     "status": "ok",
-    "records": 2349
+    "records": 2359
   },
   "now_hk": {
     "status": "ok",
-    "records": 4286
+    "records": 4161
   },
   "allente_se": {
-    "status": "ok",
-    "records": 792
+    "status": "stale",
+    "records": 792,
+    "message": "Allente 官方 EPG 响应中未找到任何预期的 V Sport 体育频道。",
+    "fallback": "previous_snapshot"
   },
   "allente_no": {
-    "status": "ok",
-    "records": 693
+    "status": "stale",
+    "records": 693,
+    "message": "Allente Norway 官方 EPG 响应中未找到预期的 TV Norge、REX、FEM、Eurosport Norge 或 Eurosport 1。",
+    "fallback": "previous_snapshot"
   },
   "ee_uk": {
     "status": "ok",
-    "records": 6830
+    "records": 6837
   },
   "sky_de": {
     "status": "ok",
-    "records": 1421
+    "records": 1407
   },
   "digi4k_ro": {
     "status": "ok",
-    "records": 140
+    "records": 142
   },
   "sbb_rs": {
     "status": "ok",
-    "records": 377
+    "records": 279
   },
   "virgin_uk": {
     "status": "ok",
-    "records": 77
+    "records": 75
   },
   "player_pl": {
     "status": "ok",
-    "records": 624
+    "records": 646
   },
   "canalplus_fr": {
     "status": "stale",
@@ -48,10 +52,10 @@
   "xmltv": {
     "status": "ok",
     "channels": 163,
-    "programmes": 17642,
+    "programmes": 17444,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-09-28T18:07:48Z",
-  "total_records": 17642
+  "generated_at": "2026-09-28T23:42:45Z",
+  "total_records": 17444
 }
