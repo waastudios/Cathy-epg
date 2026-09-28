@@ -1,11 +1,11 @@
 {
   "astro": {
     "status": "ok",
-    "records": 2377
+    "records": 2349
   },
   "now_hk": {
     "status": "ok",
-    "records": 3796
+    "records": 4314
   },
   "allente_se": {
     "status": "ok",
@@ -17,11 +17,11 @@
   },
   "ee_uk": {
     "status": "ok",
-    "records": 6828
+    "records": 6829
   },
   "sky_de": {
     "status": "ok",
-    "records": 1420
+    "records": 1421
   },
   "digi4k_ro": {
     "status": "ok",
@@ -29,7 +29,7 @@
   },
   "sbb_rs": {
     "status": "ok",
-    "records": 375
+    "records": 377
   },
   "virgin_uk": {
     "status": "ok",
@@ -39,18 +39,19 @@
     "status": "ok",
     "records": 624
   },
+  "canalplus_fr": {
+    "status": "stale",
+    "records": 53,
+    "message": "403 Client Error: Forbidden for url: https://tvepg.eu/en/france/c/canal-plus",
+    "fallback": "previous_snapshot"
+  },
   "xmltv": {
     "status": "ok",
     "channels": 163,
-    "programmes": 17173,
+    "programmes": 17667,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-09-28T13:09:43Z",
-  "total_records": 17173,
-  "canalplus_fr": {
-    "status": "ok",
-    "records": 53,
-    "source": "tvepg.eu France Canal+ (public listing)"
-  }
+  "generated_at": "2026-09-28T17:29:56Z",
+  "total_records": 17667
 }
