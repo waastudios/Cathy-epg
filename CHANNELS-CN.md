@@ -184,6 +184,16 @@
 | --- | --- |
 | `digi4k_ro` | Digi 4K (T) |
 
+## 🇵🇱波兰 Player.pl
+
+| tvg-id | tvg-name |
+| --- | --- |
+| `ElevenSp.1` | Eleven Sports 1 (T) |
+| `eurosport1.pl` | Eurosport 1 (T) |
+| `eurosport2.pl` | Eurosport 2 (T) |
+| `eurosport3.pl` | Eurosport 3 (T) |
+| `eurosport4.pl` | Eurosport 4 (T) |
+
 ## 🇸🇪瑞典 Allente
 
 | tvg-id | tvg-name |
@@ -211,13 +221,3 @@
 | `allente_no.fem` | FEM (T) |
 | `allente_no.rex` | REX (T) |
 | `allente_no.tvn` | TV Norge (T) |
-
-## 🇵🇱波兰 Player.pl
-
-| tvg-id | tvg-name |
-| --- | --- |
-| `ElevenSp.1` | Eleven Sports 1 (T) |
-| `eurosport1.pl` | Eurosport 1 (T) |
-| `eurosport2.pl` | Eurosport 2 (T) |
-| `eurosport3.pl` | Eurosport 3 (T) |
-| `eurosport4.pl` | Eurosport 4 (T) |

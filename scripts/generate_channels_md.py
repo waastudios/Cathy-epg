@@ -67,8 +67,8 @@ EE_ENT_CN = "🇬🇧英国综合类频道"
 SECTION_ORDER_EN = [
     "Astro Malaysia", "now TV Hong Kong", "Sky Germany", "Sky Sports",
     "Virgin Media UK", "Sky Entertainment", "France Canal+",
-    "🇷🇸 Serbia SBB Eurosport", "Digi 4K", "Allente Sweden", "Allente Norway",
-    "🇵🇱 Poland Player.pl", "Other",
+    "🇷🇸 Serbia SBB Eurosport", "Digi 4K", "🇵🇱 Poland Player.pl",
+    "Allente Sweden", "Allente Norway", "Other",
 ]
 CN_TITLE = {
     "Astro Malaysia": "🇲🇾马来西亚 Astro",
