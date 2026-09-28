@@ -1,39 +1,35 @@
 {
   "astro": {
     "status": "ok",
-    "records": 2359
+    "records": 2349
   },
   "now_hk": {
     "status": "ok",
-    "records": 4161
+    "records": 4314
   },
   "allente_se": {
-    "status": "stale",
-    "records": 792,
-    "message": "Allente 官方 EPG 响应中未找到任何预期的 V Sport 体育频道。",
-    "fallback": "previous_snapshot"
+    "status": "ok",
+    "records": 792
   },
   "allente_no": {
-    "status": "stale",
-    "records": 693,
-    "message": "Allente Norway 官方 EPG 响应中未找到预期的 TV Norge、REX、FEM、Eurosport Norge 或 Eurosport 1。",
-    "fallback": "previous_snapshot"
+    "status": "ok",
+    "records": 693
   },
   "ee_uk": {
     "status": "ok",
-    "records": 6837
+    "records": 6829
   },
   "sky_de": {
     "status": "ok",
-    "records": 1407
+    "records": 1421
   },
   "digi4k_ro": {
     "status": "ok",
-    "records": 142
+    "records": 140
   },
   "sbb_rs": {
     "status": "ok",
-    "records": 279
+    "records": 377
   },
   "virgin_uk": {
     "status": "ok",
@@ -41,21 +37,23 @@
   },
   "player_pl": {
     "status": "ok",
-    "records": 646
+    "records": 624
   },
   "canalplus_fr": {
-    "status": "stale",
+    "status": "ok",
     "records": 53,
-    "message": "403 Client Error: Forbidden for url: https://tvepg.eu/en/france/c/canal-plus",
-    "fallback": "previous_snapshot"
+    "source": "tvepg.eu France Canal+ (fallback, ~2 days)",
+    "notes": [
+      "Canal+ 官方 API 不可用（HTTPSConnectionPool(host='hodor.canalplus.pro', port=443): Read timed out. (read timeout=20)），主频道回退到 tvepg.eu"
+    ]
   },
   "xmltv": {
     "status": "ok",
     "channels": 163,
-    "programmes": 17444,
+    "programmes": 17667,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-09-28T23:42:45Z",
-  "total_records": 17444
+  "generated_at": "2026-09-28T17:29:56Z",
+  "total_records": 17667
 }
