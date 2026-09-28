@@ -1,6 +1,8 @@
-"""Regenerate CHANNELS.md from the currently published data/epg.xml.
+"""Regenerate CHANNELS.md and CHANNELS-CN.md from the currently published data/epg.xml.
 
-Every row mirrors an actual XMLTV <channel> node. Run after a full collect:
+Every row mirrors an actual XMLTV <channel> node. Channels are sorted by
+tvg-id numerically within each section; section order is unchanged. Run after
+a full collect:
     python scripts/generate_channels_md.py
 """
 from __future__ import annotations
@@ -10,9 +12,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 XML_PATH = ROOT / "data" / "epg.xml"
-OUT_PATH = ROOT / "CHANNELS.md"
 
-HEADER = """# Published channel list
+HEADER_EN = """# Published channel list
 
 This inventory is generated directly from the currently published `data/epg.xml`. Every row is an actual XMLTV `<channel>` node: **tvg-id** is `channel/@id` and **tvg-name** is `display-name`.
 
@@ -21,26 +22,72 @@ The current XMLTV output contains **{count} channels**.
 > **Note:** `(T)` means **Translated**. The channel's schedule originates in a non-English market and programme titles are translated into English before publication. This marker appears **only in this inventory**; it is never written to `data/epg.xml`, `data/epg.xml.gz`, or the programme snapshot. XMLTV `display-name` values remain the official provider names.
 """
 
-# tvg-id prefix -> (section title, translated marker)
-SECTIONS: list[tuple[str, str, bool]] = [
-    ("astro.", "Astro Malaysia", False),
-    ("now_hk.", "now TV Hong Kong", False),
-    ("sky_de.", "Sky Germany", True),
-    ("ee_uk.", "Sky Sports", False),  # refined below into sports / entertainment
-    ("virgin_uk.", "Virgin Media UK", False),
-    ("eurosport.", "Serbia SBB Eurosport", True),
-    ("digi4k_ro", "Digi 4K", True),
-    ("allente_se.", "Allente Sweden", True),
-    ("allente_no.", "Allente Norway", True),
+HEADER_CN = """# 已发布频道清单
+
+本清单直接由当前发布的 `data/epg.xml` 生成。每一行均为实际 XMLTV `<channel>` 节点：**tvg-id** 对应 `channel/@id`，**tvg-name** 对应 `display-name`。
+
+当前 XMLTV 输出包含 **{count} 个频道**。
+
+> **注：**频道名称后的 **`(T)`** 表示 **Translated**：该频道的节目表来自非英语地区，原始节目标题已转换为英文后发布。此标记**仅用于本清单展示**，绝不会写入 `data/epg.xml`、`data/epg.xml.gz` 或节目快照；XMLTV 的官方 `display-name` 保持不变。
+"""
+
+# tvg-id prefix -> (english section title, chinese section title, translated marker)
+SECTIONS: list[tuple[str, str, str, bool]] = [
+    ("astro.", "Astro Malaysia", "🇲🇾马来西亚 Astro", False),
+    ("now_hk.", "now TV Hong Kong", "🇭🇰香港 now TV", False),
+    ("sky_de.", "Sky Germany", "🇩🇪德国 Sky Sport", True),
+    ("ee_uk.", "Sky Sports", "🇬🇧英国体育类频道", False),  # refined below into sports / entertainment
+    ("virgin_uk.", "Virgin Media UK", "🇬🇧英国Virgin Media", False),
+    ("canal+.fr", "France Canal+", "🇫🇷法国 Canal+", True),
+    ("foot+.fr", "France Canal+", "🇫🇷法国 Canal+", True),
+    ("eurosport.", "🇷🇸 Serbia SBB Eurosport", "🇷🇸塞尔维亚 SBB Eurosport", True),
+    ("digi4k_ro", "Digi 4K", "🇷🇴罗马尼亚 Digi 4K", True),
+    ("allente_se.", "Allente Sweden", "🇸🇪瑞典 Allente", True),
+    ("allente_no.", "Allente Norway", "🇳🇴挪威 Allente", True),
 ]
 
 # ee_uk channel numbers that belong to the "Sky Sports" section; the rest go
-# to "Sky Entertainment".
+# to "Sky Entertainment" / "🇬🇧英国综合类频道".
 EE_SKY_SPORTS_NUMBERS = {
     "408", "409", "410", "411", "418", "419", "420", "421", "422", "423",
     "424", "425", "426", "427", "428", "429", "433", "450", "451", "452",
     "453", "454", "455", "494",
 }
+EE_SPORTS_EN = "Sky Sports"
+EE_SPORTS_CN = "🇬🇧英国体育类频道"
+EE_ENT_EN = "Sky Entertainment"
+EE_ENT_CN = "🇬🇧英国综合类频道"
+
+# Section order is fixed; "Other" (unmatched) goes last.
+SECTION_ORDER_EN = [
+    "Astro Malaysia", "now TV Hong Kong", "Sky Germany", "Sky Sports",
+    "Virgin Media UK", "Sky Entertainment", "France Canal+",
+    "🇷🇸 Serbia SBB Eurosport", "Digi 4K", "Allente Sweden", "Allente Norway",
+    "Other",
+]
+CN_TITLE = {
+    "Astro Malaysia": "🇲🇾马来西亚 Astro",
+    "now TV Hong Kong": "🇭🇰香港 now TV",
+    "Sky Germany": "🇩🇪德国 Sky Sport",
+    "Sky Sports": "🇬🇧英国体育类频道",
+    "Virgin Media UK": "🇬🇧英国Virgin Media",
+    "Sky Entertainment": "🇬🇧英国综合类频道",
+    "France Canal+": "🇫🇷法国 Canal+",
+    "🇷🇸 Serbia SBB Eurosport": "🇷🇸塞尔维亚 SBB Eurosport",
+    "Digi 4K": "🇷🇴罗马尼亚 Digi 4K",
+    "Allente Sweden": "🇸🇪瑞典 Allente",
+    "Allente Norway": "🇳🇴挪威 Allente",
+    "Other": "其他",
+}
+
+
+def sort_key(channel_id: str) -> tuple[int, int, str]:
+    """Sort tvg-ids numerically by their suffix; non-numeric suffixes sort after."""
+    suffix = channel_id.split(".", 1)[1] if "." in channel_id else ""
+    try:
+        return (0, int(suffix), "")
+    except ValueError:
+        return (1, 0, suffix.lower())
 
 
 def main() -> None:
@@ -52,57 +99,51 @@ def main() -> None:
         name = (name_node.text or "").strip() if name_node is not None else ""
         if channel_id:
             channels.append((channel_id, name))
-    channels.sort(key=lambda item: item[0])
 
     groups: dict[str, list[tuple[str, str, bool]]] = {}
-    order: list[str] = []
 
     def add_row(section: str, channel_id: str, name: str, translated: bool) -> None:
-        if section not in groups:
-            groups[section] = []
-            order.append(section)
-        groups[section].append((channel_id, name, translated))
+        groups.setdefault(section, []).append((channel_id, name, translated))
 
     for channel_id, name in channels:
         matched = False
-        for prefix, section, translated in SECTIONS:
-            if channel_id.startswith(prefix):
+        for prefix, section_en, _section_cn, translated in SECTIONS:
+            if channel_id == prefix or channel_id.startswith(prefix):
                 if prefix == "ee_uk.":
                     number = channel_id.split(".", 1)[1]
-                    if number in EE_SKY_SPORTS_NUMBERS:
-                        add_row("Sky Sports", channel_id, name, False)
-                    else:
-                        add_row("Sky Entertainment", channel_id, name, False)
-                elif prefix == "eurosport.":
-                    add_row("🇷🇸 Serbia SBB Eurosport", channel_id, name, translated)
+                    section = EE_SPORTS_EN if number in EE_SKY_SPORTS_NUMBERS else EE_ENT_EN
+                    add_row(section, channel_id, name, False)
                 else:
-                    add_row(section, channel_id, name, translated)
+                    add_row(section_en, channel_id, name, translated)
                 matched = True
                 break
         if not matched:
             add_row("Other", channel_id, name, False)
 
-    # Keep the historical section order: Sky Sports before Virgin, then
-    # Sky Entertainment right after Virgin.
-    preferred = [
-        "Astro Malaysia", "now TV Hong Kong", "Sky Germany", "Sky Sports",
-        "Virgin Media UK", "Sky Entertainment", "🇷🇸 Serbia SBB Eurosport",
-        "Digi 4K", "Allente Sweden", "Allente Norway", "Other",
-    ]
-    order = [s for s in preferred if s in groups] + [s for s in order if s not in preferred]
+    for rows in groups.values():
+        rows.sort(key=lambda item: sort_key(item[0]))
 
-    lines = [HEADER.format(count=len(channels)).rstrip(), ""]
-    for section in order:
-        lines.append(f"## {section}")
-        lines.append("")
-        lines.append("| tvg-id | tvg-name |")
-        lines.append("| --- | --- |")
-        for channel_id, name, translated in groups[section]:
-            marker = " (T)" if translated else ""
-            lines.append(f"| `{channel_id}` | {name}{marker} |")
-        lines.append("")
-    OUT_PATH.write_text("\n".join(lines), encoding="utf-8")
-    print(f"Wrote {OUT_PATH} with {len(channels)} channels in {len(order)} sections")
+    def render(header: str, order: list[str], title_map: dict[str, str]) -> str:
+        lines = [header.format(count=len(channels)).rstrip(), ""]
+        for section in order:
+            if section not in groups:
+                continue
+            lines.append(f"## {title_map.get(section, section)}")
+            lines.append("")
+            lines.append("| tvg-id | tvg-name |")
+            lines.append("| --- | --- |")
+            for channel_id, name, translated in groups[section]:
+                marker = " (T)" if translated else ""
+                lines.append(f"| `{channel_id}` | {name}{marker} |")
+            lines.append("")
+        return "\n".join(lines)
+
+    en_path = ROOT / "CHANNELS.md"
+    cn_path = ROOT / "CHANNELS-CN.md"
+    en_path.write_text(render(HEADER_EN, SECTION_ORDER_EN, {}), encoding="utf-8")
+    # 中文版沿用英文分组键的顺序，仅标题经 CN_TITLE 映射为中文。
+    cn_path.write_text(render(HEADER_CN, SECTION_ORDER_EN, CN_TITLE), encoding="utf-8")
+    print(f"Wrote {en_path.name} and {cn_path.name}: {len(channels)} channels, {len(groups)} sections")
 
 
 if __name__ == "__main__":

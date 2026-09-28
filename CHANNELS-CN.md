@@ -2,7 +2,7 @@
 
 本清单直接由当前发布的 `data/epg.xml` 生成。每一行均为实际 XMLTV `<channel>` 节点：**tvg-id** 对应 `channel/@id`，**tvg-name** 对应 `display-name`。
 
-当前 XMLTV 输出包含 **155 个频道**。
+当前 XMLTV 输出包含 **156 个频道**。
 
 > **注：**频道名称后的 **`(T)`** 表示 **Translated**：该频道的节目表来自非英语地区，原始节目标题已转换为英文后发布。此标记**仅用于本清单展示**，绝不会写入 `data/epg.xml`、`data/epg.xml.gz` 或节目快照；XMLTV 的官方 `display-name` 保持不变。
 
@@ -19,11 +19,9 @@
 | `astro.810` | Astro Grandstand |
 | `astro.811` | Astro Premier League |
 | `astro.812` | Astro Premier League 2 |
-| `astro.813` | Astro Premier League 3 |
 | `astro.814` | Astro Football |
 | `astro.815` | Astro Badminton |
 | `astro.817` | Astro Sports Plus |
-| `astro.818` | Astro Sports Plus 2 |
 | `astro.819` | Astro Tennis |
 | `astro.820` | beIN SPORTS 1 |
 | `astro.821` | beIN SPORTS 2 |
@@ -117,14 +115,6 @@
 | `ee_uk.409` | TNT Sports 2 |
 | `ee_uk.410` | TNT Sports 3 |
 | `ee_uk.411` | TNT Sports 4 |
-| `ee_uk.433` | TNT Sports Ultimate |
-| `ee_uk.450` | TNT Sports 5 |
-| `ee_uk.451` | TNT Sports 6 |
-| `ee_uk.452` | TNT Sports 7 |
-| `ee_uk.453` | TNT Sports 8 |
-| `ee_uk.454` | TNT Sports 9 |
-| `ee_uk.455` | TNT Sports 10 |
-| `ee_uk.494` | TNT Sports Box Office HD |
 | `ee_uk.418` | Sky Sports News |
 | `ee_uk.419` | Sky Sports Main Event |
 | `ee_uk.420` | Sky Sports Premier League |
@@ -133,10 +123,18 @@
 | `ee_uk.423` | Sky Sports Golf |
 | `ee_uk.424` | Sky Sports F1 |
 | `ee_uk.425` | Sky Sports Tennis |
-| `ee_uk.426` | Sky Sports Action |
+| `ee_uk.426` | Sky Sports NFL |
 | `ee_uk.427` | Sky Sports + |
 | `ee_uk.428` | Sky Sports Racing |
 | `ee_uk.429` | Sky Sports Mix |
+| `ee_uk.433` | TNT Sports Ultimate |
+| `ee_uk.450` | TNT Sports 5 |
+| `ee_uk.451` | TNT Sports 6 |
+| `ee_uk.452` | TNT Sports 7 |
+| `ee_uk.453` | TNT Sports 8 |
+| `ee_uk.454` | TNT Sports 9 |
+| `ee_uk.455` | TNT Sports 10 |
+| `ee_uk.494` | TNT Sports Box Office HD |
 
 ## 🇬🇧英国Virgin Media
 
@@ -172,20 +170,13 @@
 | `ee_uk.353` | Sky History |
 | `ee_uk.354` | Sky Nature |
 
-## 🇫🇷法国 Canal+
-
-| tvg-id | tvg-name |
-| --- | --- |
-| `canal+.fr` | CANAL+ (T) |
-| `foot+.fr` | CANAL+ FOOT (T) |
-
 ## 🇷🇸塞尔维亚 SBB Eurosport
+
 | tvg-id | tvg-name |
 | --- | --- |
 | `eurosport.1` | Eurosport 1 (T) |
 | `eurosport.2` | Eurosport 2 (T) |
 | `eurosport.4k` | Eurosport 4K (T) |
-
 
 ## 🇷🇴罗马尼亚 Digi 4K
 
@@ -210,3 +201,13 @@
 | `allente_se.vpre` | V Sport Premium (T) |
 | `allente_se.vultra` | V Sport UltraHD (T) |
 | `allente_se.vvin` | V Sport Vinter (T) |
+
+## 🇳🇴挪威 Allente
+
+| tvg-id | tvg-name |
+| --- | --- |
+| `allente_no.euro1` | Eurosport 1 (T) |
+| `allente_no.euron` | Eurosport Norge (T) |
+| `allente_no.fem` | FEM (T) |
+| `allente_no.rex` | REX (T) |
+| `allente_no.tvn` | TV Norge (T) |

@@ -148,14 +148,18 @@ The current XMLTV output contains **156 channels**.
 | tvg-id | tvg-name |
 | --- | --- |
 | `ee_uk.1` | BBC One London |
+| `ee_uk.2` | BBC Two |
+| `ee_uk.3` | ITV1 London |
+| `ee_uk.4` | Channel 4 |
+| `ee_uk.6` | ITV2 |
+| `ee_uk.9` | BBC Four |
 | `ee_uk.10` | ITV3 |
 | `ee_uk.11` | Sky Mix |
-| `ee_uk.2` | BBC Two |
 | `ee_uk.23` | BBC Three |
+| `ee_uk.26` | ITV4 |
+| `ee_uk.36` | Sky Arts |
 | `ee_uk.231` | BBC News |
 | `ee_uk.232` | BBC Parliament |
-| `ee_uk.26` | ITV4 |
-| `ee_uk.3` | ITV1 London |
 | `ee_uk.341` | Sky Witness |
 | `ee_uk.342` | Sky Atlantic |
 | `ee_uk.346` | Sky One |
@@ -165,10 +169,6 @@ The current XMLTV output contains **156 channels**.
 | `ee_uk.352` | Sky Documentaries |
 | `ee_uk.353` | Sky History |
 | `ee_uk.354` | Sky Nature |
-| `ee_uk.36` | Sky Arts |
-| `ee_uk.4` | Channel 4 |
-| `ee_uk.6` | ITV2 |
-| `ee_uk.9` | BBC Four |
 
 ## 🇷🇸 Serbia SBB Eurosport
 
