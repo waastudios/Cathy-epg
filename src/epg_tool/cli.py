@@ -19,6 +19,7 @@ from .sources import (
     collect_allente_no,
     collect_allente_v_sport,
     collect_astro,
+    collect_canalplus_fr,
     collect_digi4k,
     collect_ee_uk_channels,
     collect_magenta_tv_sky_de,
@@ -73,6 +74,8 @@ def _collect(args: argparse.Namespace) -> int:
         ("virgin_uk", lambda: collect_virgin_uk_ultra(args.days)),
         # Player.pl 匿名公开 EPG：Eurosport 1–4 与 Eleven Sports 1，波兰语标题译为英文。
         ("player_pl", lambda: collect_player_pl(args.days)),
+        # tvepg.eu 法国区 CANAL+ 主频道公开节目表（当日＋次日），法语标题译为英文。
+        ("canalplus_fr", lambda: collect_canalplus_fr(args.days)),
     )
     for provider, collector in collectors:
         try:
@@ -110,6 +113,7 @@ def _collect(args: argparse.Namespace) -> int:
             "sbb_rs": ZoneInfo("Europe/Belgrade"),
             "virgin_uk": ZoneInfo("Europe/London"),
             "player_pl": ZoneInfo("Europe/Warsaw"),
+            "canalplus_fr": ZoneInfo("Europe/Paris"),
         }
 
         def local_date(row: Programme, zone: ZoneInfo):

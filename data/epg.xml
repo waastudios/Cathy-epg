@@ -156,6 +156,10 @@
     <display-name>Premier Sports</display-name>
     <url>https://www.astro.com.my/content/channels</url>
   </channel>
+  <channel id="canal+.fr">
+    <display-name>CANAL+</display-name>
+    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+  </channel>
   <channel id="digi4k_ro">
     <display-name>Digi 4K</display-name>
     <url>https://www.digi4k.ro/</url>
@@ -16095,6 +16099,218 @@
   <programme start="20261004215500 +0800" channel="astro.833" stop="20261005000200 +0800">
     <title>(L) Gallagher Premiership: Saracens V Sale</title>
     <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20260927232000 +0200" channel="canal+.fr" stop="20260928002900 +0200">
+    <title>Saturday Night Live</title>
+    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+  </programme>
+  <programme start="20260928002900 +0200" channel="canal+.fr" stop="20260928011200 +0200">
+    <title>The Green Mice Gang</title>
+    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+  </programme>
+  <programme start="20260928011200 +0200" channel="canal+.fr" stop="20260928020000 +0200">
+    <title>The Green Mice Gang</title>
+    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+  </programme>
+  <programme start="20260928020000 +0200" channel="canal+.fr" stop="20260928032700 +0200">
+    <title>Primate</title>
+    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+  </programme>
+  <programme start="20260928032700 +0200" channel="canal+.fr" stop="20260928050800 +0200">
+    <title>Together</title>
+    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+  </programme>
+  <programme start="20260928050800 +0200" channel="canal+.fr" stop="20260928051700 +0200">
+    <title>Humanity</title>
+    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+  </programme>
+  <programme start="20260928051700 +0200" channel="canal+.fr" stop="20260928054000 +0200">
+    <title>In the retro</title>
+    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+  </programme>
+  <programme start="20260928054000 +0200" channel="canal+.fr" stop="20260928064800 +0200">
+    <title>Loris Giuliano on a walk</title>
+    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+  </programme>
+  <programme start="20260928064800 +0200" channel="canal+.fr" stop="20260928065000 +0200">
+    <title>The UEFA magazine</title>
+    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+  </programme>
+  <programme start="20260928065000 +0200" channel="canal+.fr" stop="20260928074200 +0200">
+    <title>Click</title>
+    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+  </programme>
+  <programme start="20260928074200 +0200" channel="canal+.fr" stop="20260928081400 +0200">
+    <title>As an aside</title>
+    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+  </programme>
+  <programme start="20260928081400 +0200" channel="canal+.fr" stop="20260928091000 +0200">
+    <title>Journeys at the end of the effort</title>
+    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+  </programme>
+  <programme start="20260928091000 +0200" channel="canal+.fr" stop="20260928100600 +0200">
+    <title>This is not a crime</title>
+    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+  </programme>
+  <programme start="20260928100600 +0200" channel="canal+.fr" stop="20260928105800 +0200">
+    <title>This is not a crime</title>
+    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+  </programme>
+  <programme start="20260928105800 +0200" channel="canal+.fr" stop="20260928115700 +0200">
+    <title>This is not a crime</title>
+    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+  </programme>
+  <programme start="20260928115700 +0200" channel="canal+.fr" stop="20260928120200 +0200">
+    <title>The question box</title>
+    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+  </programme>
+  <programme start="20260928120200 +0200" channel="canal+.fr" stop="20260928123500 +0200">
+    <title>As an aside</title>
+    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+  </programme>
+  <programme start="20260928123500 +0200" channel="canal+.fr" stop="20260928132700 +0200">
+    <title>Click</title>
+    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+  </programme>
+  <programme start="20260928132700 +0200" channel="canal+.fr" stop="20260928155100 +0200">
+    <title>Eddington</title>
+    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+  </programme>
+  <programme start="20260928155100 +0200" channel="canal+.fr" stop="20260928160600 +0200">
+    <title>Head to head(s)</title>
+    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+  </programme>
+  <programme start="20260928160600 +0200" channel="canal+.fr" stop="20260928172200 +0200">
+    <title>Maigret and the dead lover</title>
+    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+  </programme>
+  <programme start="20260928172200 +0200" channel="canal+.fr" stop="20260928172700 +0200">
+    <title>The question box</title>
+    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+  </programme>
+  <programme start="20260928172700 +0200" channel="canal+.fr" stop="20260928180200 +0200">
+    <title>As an aside</title>
+    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+  </programme>
+  <programme start="20260928180200 +0200" channel="canal+.fr" stop="20260928190200 +0200">
+    <title>Click</title>
+    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+  </programme>
+  <programme start="20260928190200 +0200" channel="canal+.fr" stop="20260928203400 +0200">
+    <title>Rugby night</title>
+    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+  </programme>
+  <programme start="20260928203400 +0200" channel="canal+.fr" stop="20260928210900 +0200">
+    <title>As an aside</title>
+    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+  </programme>
+  <programme start="20260928210900 +0200" channel="canal+.fr" stop="20260928215500 +0200">
+    <title>Apollo Has Fallen</title>
+    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+  </programme>
+  <programme start="20260928215500 +0200" channel="canal+.fr" stop="20260928235500 +0200">
+    <title>Guru</title>
+    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+  </programme>
+  <programme start="20260928235500 +0200" channel="canal+.fr" stop="20260929014700 +0200">
+    <title>Connemara</title>
+    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+  </programme>
+  <programme start="20260929014700 +0200" channel="canal+.fr" stop="20260929021800 +0200">
+    <title>My tribe, what binds us</title>
+    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+  </programme>
+  <programme start="20260929021800 +0200" channel="canal+.fr" stop="20260929030500 +0200">
+    <title>The circle</title>
+    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+  </programme>
+  <programme start="20260929030500 +0200" channel="canal+.fr" stop="20260929043200 +0200">
+    <title>Hind Rajab's voice</title>
+    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+  </programme>
+  <programme start="20260929043200 +0200" channel="canal+.fr" stop="20260929044300 +0200">
+    <title>The Man That I Wave At</title>
+    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+  </programme>
+  <programme start="20260929044300 +0200" channel="canal+.fr" stop="20260929053000 +0200">
+    <title>Loris Giuliano at work</title>
+    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+  </programme>
+  <programme start="20260929053000 +0200" channel="canal+.fr" stop="20260929061300 +0200">
+    <title>Strikers</title>
+    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+  </programme>
+  <programme start="20260929061300 +0200" channel="canal+.fr" stop="20260929065200 +0200">
+    <title>Strikers</title>
+    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+  </programme>
+  <programme start="20260929065200 +0200" channel="canal+.fr" stop="20260929074500 +0200">
+    <title>Click</title>
+    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+  </programme>
+  <programme start="20260929074500 +0200" channel="canal+.fr" stop="20260929081800 +0200">
+    <title>As an aside</title>
+    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+  </programme>
+  <programme start="20260929081800 +0200" channel="canal+.fr" stop="20260929101700 +0200">
+    <title>Smashing Machine</title>
+    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+  </programme>
+  <programme start="20260929101700 +0200" channel="canal+.fr" stop="20260929115900 +0200">
+    <title>Free trade</title>
+    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+  </programme>
+  <programme start="20260929115900 +0200" channel="canal+.fr" stop="20260929120400 +0200">
+    <title>The question box</title>
+    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+  </programme>
+  <programme start="20260929120400 +0200" channel="canal+.fr" stop="20260929123600 +0200">
+    <title>As an aside</title>
+    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+  </programme>
+  <programme start="20260929123600 +0200" channel="canal+.fr" stop="20260929133000 +0200">
+    <title>Click</title>
+    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+  </programme>
+  <programme start="20260929133000 +0200" channel="canal+.fr" stop="20260929142600 +0200">
+    <title>This is not a crime</title>
+    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+  </programme>
+  <programme start="20260929142600 +0200" channel="canal+.fr" stop="20260929151800 +0200">
+    <title>This is not a crime</title>
+    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+  </programme>
+  <programme start="20260929151800 +0200" channel="canal+.fr" stop="20260929161700 +0200">
+    <title>This is not a crime</title>
+    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+  </programme>
+  <programme start="20260929161700 +0200" channel="canal+.fr" stop="20260929163200 +0200">
+    <title>Hollywood Weekly</title>
+    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+  </programme>
+  <programme start="20260929163200 +0200" channel="canal+.fr" stop="20260929185300 +0200">
+    <title>The Kremlin Mage</title>
+    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+  </programme>
+  <programme start="20260929185300 +0200" channel="canal+.fr" stop="20260929185700 +0200">
+    <title>The question box</title>
+    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+  </programme>
+  <programme start="20260929185700 +0200" channel="canal+.fr" stop="20260929193300 +0200">
+    <title>As an aside</title>
+    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+  </programme>
+  <programme start="20260929193300 +0200" channel="canal+.fr" stop="20260929203200 +0200">
+    <title>Click</title>
+    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+  </programme>
+  <programme start="20260929203200 +0200" channel="canal+.fr" stop="20260929211000 +0200">
+    <title>As an aside</title>
+    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+  </programme>
+  <programme start="20260929211000 +0200" channel="canal+.fr" stop="20260929233500 +0200">
+    <title>Nuremberg</title>
+    <url>https://tvepg.eu/en/france/c/canal-plus</url>
   </programme>
   <programme start="20260928000000 +0300" channel="digi4k_ro" stop="20260928080000 +0300">
     <title>Music</title>

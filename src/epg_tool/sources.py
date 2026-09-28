@@ -1233,6 +1233,184 @@ def _virgin_uk_segment_starts(today: date, days: int, zone: ZoneInfo) -> list[da
     return starts
 
 
+# 法国 Canal+ 官方节目 API 已对数据中心 IP 封禁（Akamai Access Denied），改用
+# tvepg.eu 法国区 Canal+ 主频道的公开节目表（当日＋次日）。CANAL+ FOOT 暂无
+# 可靠公开来源，保持下线。
+TVEPG_EU_CANALPLUS_URL = "https://tvepg.eu/en/france/c/canal-plus"
+CANALPLUS_FR_TITLE_TRANSLATIONS: dict[str, str] = json.loads(
+    files("epg_tool").joinpath("canalplus_fr_title_translations.json").read_text(encoding="utf-8")
+)
+_CANALPLUS_FR_FALLBACK_REPLACEMENTS: tuple[tuple[str, str], ...] = (
+    ("Émission", "Broadcast"),
+    ("Emission", "Broadcast"),
+    ("Saison", "Season"),
+    ("Episode", "Episode"),
+    ("épisode", "episode"),
+    ("Partie", "Part"),
+    ("partie", "part"),
+    ("Qualifications", "Qualifying"),
+    ("qualification", "qualifying"),
+    ("journée", "matchday"),
+    ("matchday", "matchday"),
+    ("Ligue des champions", "Champions League"),
+    ("Ligue des Champions", "Champions League"),
+    ("Ligue Europa", "Europa League"),
+    ("Avant-match", "Pre-match"),
+    ("le debrief", "the debrief"),
+    ("Débrief", "Debrief"),
+    ("debrief", "debrief"),
+    ("Doc. Fiction", "Documentary Fiction"),
+    ("Doc. Musique", "Music Documentary"),
+    ("Doc. ", "Documentary "),
+    ("Film Animation", "Animation film"),
+    ("Film Drame", "Drama film"),
+    ("Film Comédie", "Comedy film"),
+    ("Film Horreur", "Horror film"),
+    ("Film Policier", "Crime film"),
+    ("Film Action", "Action film"),
+    ("Film Aventure", "Adventure film"),
+    ("Film Fantastique", "Fantasy film"),
+    ("Film Suspense", "Thriller film"),
+    ("Court métrage", "Short film"),
+    ("1re ", "1st "),
+    ("1er ", "1st "),
+    ("2e ", "2nd "),
+    ("3e ", "3rd "),
+    ("4e ", "4th "),
+    ("5e ", "5th "),
+)
+_CANALPLUS_FR_UNTRANSLATED = re.compile(
+    r"\b(?:avec|dans|des|du|et|la|le|les|pour|sur|une|un|Retour|Meilleurs|meilleurs|direct|directe|directement|"
+    r"Rugby|Football|Course|Podium|Décrypté|Détective|Club|Emission|Émission|Saison|Journée|Partie|"
+    r"arrache|victoire|incroy)\b",
+    flags=re.IGNORECASE,
+)
+
+
+def _translate_canalplus_fr_title(title: str) -> str | None:
+    """Canal+ 法语标题的确定性英文映射；无法干净转换时返回 None 走后续流水线。"""
+    normalised = re.sub(r"\s+", " ", title).strip()
+    if not normalised:
+        return None
+    hit = CANALPLUS_FR_TITLE_TRANSLATIONS.get(normalised)
+    if hit:
+        return hit
+    translated = normalised
+    for source, target in _CANALPLUS_FR_FALLBACK_REPLACEMENTS:
+        translated = translated.replace(source, target)
+    translated = re.sub(r"\s+", " ", translated).strip()
+    if translated != normalised and not _CANALPLUS_FR_UNTRANSLATED.search(translated):
+        return translated
+    return None
+
+
+def _parse_tvepg_eu_canalplus(html: str) -> list[tuple[datetime, str]]:
+    """解析 tvepg.eu Canal+ 法国页面的当日＋次日节目（开始时间，本地 Europe/Paris）。
+
+    页面按 "Today - DD/MM/YYYY" / "Tomorrow - DD/MM/YYYY" 分区，每档只有开始
+    时间；结束时间由下一档开始时间推导。分区开头若出现前一晚尾部节目（首个
+    时间晚于第二个），基准日期回退一天并按时间回拨做跨日递增。
+    """
+    soup = BeautifulSoup(html, "html.parser")
+    text = soup.get_text("\n")
+    sections: list[tuple[int, date | None]] = []
+    for match in re.finditer(r"(?:Today|Tomorrow) - (\d{2})/(\d{2})/(\d{4})", text):
+        sections.append((match.start(), date(int(match.group(3)), int(match.group(2)), int(match.group(1)))))
+    if not sections:
+        raise SourceUnavailable("tvepg.eu Canal+ 法国页面未返回节目分区。")
+    sections.append((len(text), None))
+    entries: list[tuple[datetime, str]] = []
+    zone = ZoneInfo("Europe/Paris")
+    for index in range(len(sections) - 1):
+        start, section_date = sections[index]
+        assert section_date is not None
+        chunk = text[start:sections[index + 1][0]]
+        items = [
+            (int(hour), int(minute), title.strip())
+            for hour, minute, title in re.findall(r"(\d{2}):(\d{2})\s+([^\n]+)", chunk)
+            if title.strip() and not re.fullmatch(r"[-–\s]*", title.strip())
+        ]
+        if not items:
+            continue
+        base = section_date
+        if len(items) > 1 and (items[0][0], items[0][1]) > (items[1][0], items[1][1]):
+            base -= timedelta(days=1)
+        current = base
+        previous: tuple[int, int] | None = None
+        for hour, minute, title in items:
+            if previous is not None and (hour, minute) < previous:
+                current += timedelta(days=1)
+            previous = (hour, minute)
+            entries.append((datetime(current.year, current.month, current.day, hour, minute, tzinfo=zone), title))
+    seen: set[tuple[str, str]] = set()
+    unique: list[tuple[datetime, str]] = []
+    for moment, title in sorted(entries):
+        key = (moment.isoformat(), title)
+        if key in seen:
+            continue
+        seen.add(key)
+        unique.append((moment, title))
+    return unique
+
+
+def collect_canalplus_fr(days: int = 7) -> list[Programme]:
+    """读取 tvepg.eu 法国区 CANAL+ 主频道的公开节目表并译为英文。
+
+    数据源仅提供当日＋次日（约 2 天）；days 参数保留接口兼容，超出部分记入
+    notes。单个标题无法翻译只跳过该节目，不会让整个来源失败。
+    """
+    if days not in range(1, 8):
+        raise ValueError("法国 Canal+ 采集天数必须为 1–7。")
+    session = _session()
+    response = session.get(
+        TVEPG_EU_CANALPLUS_URL,
+        headers={"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"},
+        timeout=30,
+    )
+    response.raise_for_status()
+    schedule = _parse_tvepg_eu_canalplus(response.text)
+    if not schedule:
+        raise SourceUnavailable("tvepg.eu Canal+ 法国页面未返回节目记录。")
+    if days > 2:
+        note(f"tvepg.eu 仅提供当日＋次日 Canal+ 节目（约 2 天），days={days} 按可用数据采集")
+    zone = ZoneInfo("Europe/Paris")
+    retrieved_at = utc_now_iso()
+    records: list[Programme] = []
+    skipped = 0
+    for index, (start, source_title) in enumerate(schedule):
+        if index + 1 >= len(schedule):
+            continue  # 最后一档无结束时间，跳过
+        end = schedule[index + 1][0]
+        if end <= start:
+            continue
+        try:
+            title = translate_programme_title(source_title, "fr", _translate_canalplus_fr_title)
+        except TitleUntranslatable:
+            skipped += 1
+            continue
+        records.append(
+            Programme(
+                provider="canalplus_fr",
+                country="FR",
+                timezone="Europe/Paris",
+                channel_id="canal+.fr",
+                channel_number="301",
+                channel_name="CANAL+",
+                title=title,
+                start_at=start.isoformat(),
+                end_at=end.isoformat(),
+                source_url=TVEPG_EU_CANALPLUS_URL,
+                retrieved_at=retrieved_at,
+            )
+        )
+    if skipped:
+        note(f"Canal+ {skipped} 档法语标题无法译为英文，已跳过")
+    records = _deduplicate(records)
+    if not records:
+        raise SourceUnavailable("法国 Canal+ 节目全部无法翻译或解析。")
+    return records
+
+
 def collect_virgin_uk_ultra(days: int = 7, pause_seconds: float = 0.02) -> list[Programme]:
     """读取 Virgin Media TV Go 正常 Guide 页面加载的 Sky Sports Ultra HD 1／2 EPG。
 

@@ -41,11 +41,16 @@
   },
   "xmltv": {
     "status": "ok",
-    "channels": 162,
-    "programmes": 17120,
+    "channels": 163,
+    "programmes": 17173,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
   "generated_at": "2026-09-28T13:09:43Z",
-  "total_records": 17120
+  "total_records": 17173,
+  "canalplus_fr": {
+    "status": "ok",
+    "records": 53,
+    "source": "tvepg.eu France Canal+ (public listing)"
+  }
 }

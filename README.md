@@ -42,6 +42,7 @@ Every XMLTV `display-name` is the provider’s official channel name unless an e
 | Romania | Digi 4K | [Digi 4K](https://www.digi4k.ro/) |
 | Serbia | Eurosport 1, Eurosport 2, Eurosport 4K and Travel XP | [SBB / EON Public EPG](https://epg.sbb.rs/) |
 | Poland | Eurosport 1–4 and Eleven Sports 1 (titles translated to English) | [Player.pl](https://player.pl/) public EPG API |
+| France | CANAL+ main channel (titles translated to English; today + tomorrow only) | [tvepg.eu France Canal+](https://tvepg.eu/en/france/c/canal-plus) public listing |
 
 ### Sky Germany via MagentaTV
 
@@ -61,9 +62,13 @@ The United States scope is intentionally restricted to potential future coverage
 
 **Eurosport 1, Eurosport 2, Eurosport 3, Eurosport 4 and Eleven Sports 1** are published from Poland’s TVN Player.pl anonymous public EPG API. The user-designated XMLTV IDs are `eurosport1.pl`, `eurosport2.pl`, `eurosport3.pl`, `eurosport4.pl` and `ElevenSp.1`. Each Polish source title is converted to English through the tiered pipeline described below (curated Polish sports-term mapping, then the translation memory, then online services); a title that cannot be translated skips that single programme instead of failing the Player.pl source. In [CHANNELS.md](CHANNELS.md) these five channels carry a (T) mark to indicate their guides are translated into English.
 
+### France via tvepg.eu
+
+**CANAL+** (main channel) is published from the tvepg.eu France public listing as `canal+.fr`. The former official Canal+ JSON API now blocks datacenter IPs, and CANAL+ FOOT has no reliable public source, so only the main channel is published. The listing covers today plus tomorrow (about 2 days rather than the usual 7). Each French source title is converted to English through the tiered pipeline described below (curated French mapping, then the translation memory, then online services); a title that cannot be translated skips that single programme instead of failing the source. In [CHANNELS.md](CHANNELS.md) the channel carries a (T) mark to indicate its guide is translated into English.
+
 ### English translation
 
-Programme titles from non-English markets (Swedish, Norwegian, German, Romanian, Serbian, Polish) are published in English; Chinese titles from now TV Hong Kong are kept as-is. Translation runs inside each collector in three tiers:
+Programme titles from non-English markets (Swedish, Norwegian, German, Romanian, Serbian, Polish, French) are published in English; Chinese titles from now TV Hong Kong are kept as-is. Translation runs inside each collector in three tiers:
 
 1. **Version-controlled exact mapping** in `src/epg_tool/sources.py` — curated deterministic rules per source.
 2. **Persistent translation memory** in `src/epg_tool/translation_cache.json` — every online translation is recorded here, so results are stable, auditable, and reused without another network call. The daily workflow commits this file, so the memory grows over time.
@@ -100,6 +105,7 @@ For Serbia’s SBB Eurosport schedules, titles are converted during collection u
 
 ## Changelog
 
+- **2026-09-29** — Restored the France Canal+ main channel as `canal+.fr` from the tvepg.eu France public listing (today + tomorrow, about 2 days). French titles are converted to English through the tiered translation pipeline and marked (T) in CHANNELS.md. The former official Canal+ API now blocks datacenter IPs; CANAL+ FOOT has no reliable public source and stays offline.
 - **2026-09-28** — Added Travel XP (European feed) from the SBB Public EPG as `travelxp.eu`. Titles arrive in English and are published as-is, marked (T) in CHANNELS.md.
 - **2026-09-28** — Added Poland coverage: Eurosport 1–4 and Eleven Sports 1 from the Player.pl public EPG API, with user-designated XMLTV IDs `eurosport1.pl`, `eurosport2.pl`, `eurosport3.pl`, `eurosport4.pl` and `ElevenSp.1`. Polish titles are translated to English through the tiered pipeline and marked (T) in CHANNELS.md.
 
