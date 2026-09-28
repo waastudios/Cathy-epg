@@ -145,10 +145,11 @@ SBB_LANGUAGE_ID = "404"
 # SBB 频道目录实测：Eurosport 1 = 84（"Eurosport 1 HD (RS)"），
 # Eurosport 2 = 85（"Eurosport 2 HD (RS)"），Eurosport 4K = 1082。
 # 元组：(官方源名, 目录位置, XMLTV ID, 展示名)。
-SBB_EUROSPORT_CHANNELS: dict[str, tuple[str, str, str, str]] = {
+SBB_CHANNELS: dict[str, tuple[str, str, str, str]] = {
     "84": ("Eurosport 1 HD (RS)", "121", "eurosport.1", "Eurosport 1"),
     "85": ("Eurosport 2 HD (RS)", "122", "eurosport.2", "Eurosport 2"),
     "1082": ("Eurosport 4K IPTV", "123", "eurosport.4k", "Eurosport 4K"),
+    "2143": ("Travel XP (RS)", "332", "travelxp.eu", "Travel XP"),
 }
 # Virgin Media TV Go Guide 在普通匿名页面会话中加载以下官方频道目录与 EPG 时间片。
 VIRGIN_UK_GUIDE = "https://virgintvgo.virginmedia.com/en/epg/initial"
@@ -1135,7 +1136,7 @@ def collect_sbb_eurosport(days: int = 7) -> list[Programme]:
     retrieved_at = utc_now_iso()
     records: list[Programme] = []
 
-    for channel_id, (source_name, position, xmltv_id, display_name) in SBB_EUROSPORT_CHANNELS.items():
+    for channel_id, (source_name, position, xmltv_id, display_name) in SBB_CHANNELS.items():
         matches = [
             item for item in directory_items
             if isinstance(item, dict) and str(item.get("id")) == channel_id
@@ -1171,11 +1172,17 @@ def collect_sbb_eurosport(days: int = 7) -> list[Programme]:
 
         for event in events:
             source_title = str(event.get("title") or "")
-            try:
-                title = translate_programme_title(source_title, "sr", _translate_sbb_eurosport_title)
-            except TitleUntranslatable:
-                note(f"SBB {display_name} 跳过无法翻译的标题：{source_title!r}")
-                continue
+            if xmltv_id == "travelxp.eu":
+                # Travel XP (RS) 的标题已是英文，无需塞尔维亚语翻译。
+                title = source_title.strip()
+                if not title:
+                    continue
+            else:
+                try:
+                    title = translate_programme_title(source_title, "sr", _translate_sbb_eurosport_title)
+                except TitleUntranslatable:
+                    note(f"SBB {display_name} 跳过无法翻译的标题：{source_title!r}")
+                    continue
             start_value = event.get("startTime")
             end_value = event.get("endTime")
             if not (isinstance(start_value, str) and isinstance(end_value, str)):

@@ -40,7 +40,7 @@ Every XMLTV `display-name` is the provider’s official channel name unless an e
 | United Kingdom | Selected Sky Sports, TNT Sports, BBC, ITV, Channel 4 and Sky Entertainment services | [EE TV Player Live TV Schedule](https://player.ee.co.uk/#/livetv/schedule) |
 | United Kingdom | Sky Sports Ultra HD 1 and 2 | [Virgin Media TV Go Guide](https://virgintvgo.virginmedia.com/en/epg/initial) |
 | Romania | Digi 4K | [Digi 4K](https://www.digi4k.ro/) |
-| Serbia | Eurosport 1, Eurosport 2 and Eurosport 4K | [SBB / EON Public EPG](https://epg.sbb.rs/) |
+| Serbia | Eurosport 1, Eurosport 2, Eurosport 4K and Travel XP | [SBB / EON Public EPG](https://epg.sbb.rs/) |
 | Poland | Eurosport 1–4 and Eleven Sports 1 (titles translated to English) | [Player.pl](https://player.pl/) public EPG API |
 
 ### Sky Germany via MagentaTV
@@ -55,7 +55,7 @@ The EE scope includes **Sky Mix, Sky Arts, Sky Witness, Sky Atlantic, Sky One, S
 
 The United States scope is intentionally restricted to potential future coverage for **ESPN, ESPN2, ESPNEWS, and ESPNU**. ABC, CBS, NBC, FOX, USA Network, and every other US network are excluded. DIRECTV’s public guide confirms the four ESPN services but exposes only current-programme information; Spectrum’s detailed guide requires account and service-address access; and ESPN’s direct schedule does not offer stable per-channel end times. Consequently, **no ESPN records are currently published**. If a compliant guide becomes available, IDs will be provider-prefixed, for example `directv_espn`.
 
-**Eurosport 1, Eurosport 2 and Eurosport 4K** are published from Serbia’s normal anonymous SBB Public EPG as `eurosport.1`, `eurosport.2` and `eurosport.4k`. The source provides a channel directory plus programme titles, start times, and end times. Each Serbian source title is converted to English through the tiered pipeline described below; a title that cannot be translated skips that single programme instead of failing the SBB source.
+**Eurosport 1, Eurosport 2 and Eurosport 4K** are published from Serbia’s normal anonymous SBB Public EPG as `eurosport.1`, `eurosport.2` and `eurosport.4k`. The source provides a channel directory plus programme titles, start times, and end times. Each Serbian source title is converted to English through the tiered pipeline described below; a title that cannot be translated skips that single programme instead of failing the SBB source. **Travel XP** is published from the same SBB Public EPG as `travelxp.eu`; its titles arrive in English and are published as-is.
 
 ### Poland via Player.pl
 
@@ -100,6 +100,7 @@ For Serbia’s SBB Eurosport schedules, titles are converted during collection u
 
 ## Changelog
 
+- **2026-09-28** — Added Travel XP (European feed) from the SBB Public EPG as `travelxp.eu`. Titles arrive in English and are published as-is, marked (T) in CHANNELS.md.
 - **2026-09-28** — Added Poland coverage: Eurosport 1–4 and Eleven Sports 1 from the Player.pl public EPG API, with user-designated XMLTV IDs `eurosport1.pl`, `eurosport2.pl`, `eurosport3.pl`, `eurosport4.pl` and `ElevenSp.1`. Polish titles are translated to English through the tiered pipeline and marked (T) in CHANNELS.md.
 
 ## References

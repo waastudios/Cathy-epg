@@ -29,7 +29,7 @@
   },
   "sbb_rs": {
     "status": "ok",
-    "records": 199
+    "records": 375
   },
   "virgin_uk": {
     "status": "ok",
@@ -41,11 +41,11 @@
   },
   "xmltv": {
     "status": "ok",
-    "channels": 161,
-    "programmes": 16959,
-    "xml_file": "data/epg.xml",
-    "gzip_file": "data/epg.xml.gz"
+    "channels": 162,
+    "programmes": 17135,
+    "xml_file": "/home/hatch/workspace/Cathy-epg/data/epg.xml",
+    "gzip_file": "/home/hatch/workspace/Cathy-epg/data/epg.xml.gz"
   },
-  "generated_at": "2026-09-28T12:58:49Z",
-  "total_records": 16959
+  "generated_at": "2026-09-28T13:07:17Z",
+  "total_records": 17135
 }

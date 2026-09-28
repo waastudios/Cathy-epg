@@ -51,6 +51,7 @@ _SBB_XMLTV_IDS = {
     "84": "eurosport.1",
     "85": "eurosport.2",
     "1082": "eurosport.4k",
+    "2143": "travelxp.eu",
 }
 _CANALPLUS_FR_XMLTV_IDS = {
     "301": "canal+.fr",

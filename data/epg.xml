@@ -636,6 +636,10 @@
     <display-name>Sky Sport 10</display-name>
     <url>https://www.magenta.tv/</url>
   </channel>
+  <channel id="travelxp.eu">
+    <display-name>Travel XP</display-name>
+    <url>https://epg.sbb.rs/</url>
+  </channel>
   <channel id="virgin_uk.2258">
     <display-name>Sky Sports Ultra HD 1</display-name>
     <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
@@ -61954,6 +61958,710 @@
   </programme>
   <programme start="20261001133000 +0200" channel="eurosport.4k" stop="20261001163000 +0200">
     <title>Snooker: Shenzhen Open: Round 4</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260928000000 +0200" channel="travelxp.eu" stop="20260928003000 +0200">
+    <title>Viajar Mexico</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260928003000 +0200" channel="travelxp.eu" stop="20260928010000 +0200">
+    <title>50 States Florida</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260928010000 +0200" channel="travelxp.eu" stop="20260928013000 +0200">
+    <title>50 States Arkansas</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260928013000 +0200" channel="travelxp.eu" stop="20260928020000 +0200">
+    <title>Quest</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260928020000 +0200" channel="travelxp.eu" stop="20260928023000 +0200">
+    <title>City Breaks</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260928023000 +0200" channel="travelxp.eu" stop="20260928030000 +0200">
+    <title>Viajar Mexico</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260928030000 +0200" channel="travelxp.eu" stop="20260928033000 +0200">
+    <title>Route 66</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260928033000 +0200" channel="travelxp.eu" stop="20260928040000 +0200">
+    <title>50 States Florida</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260928040000 +0200" channel="travelxp.eu" stop="20260928043000 +0200">
+    <title>Quest</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260928043000 +0200" channel="travelxp.eu" stop="20260928050000 +0200">
+    <title>Xplore Ireland</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260928050000 +0200" channel="travelxp.eu" stop="20260928053000 +0200">
+    <title>City Breaks</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260928053000 +0200" channel="travelxp.eu" stop="20260928060000 +0200">
+    <title>Viajar Mexico</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260928060000 +0200" channel="travelxp.eu" stop="20260928063000 +0200">
+    <title>Route 66</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260928063000 +0200" channel="travelxp.eu" stop="20260928070000 +0200">
+    <title>50 States Tennessee</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260928070000 +0200" channel="travelxp.eu" stop="20260928073000 +0200">
+    <title>Quest</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260928073000 +0200" channel="travelxp.eu" stop="20260928080000 +0200">
+    <title>Xplore Ireland</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260928080000 +0200" channel="travelxp.eu" stop="20260928083000 +0200">
+    <title>City Breaks</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260928083000 +0200" channel="travelxp.eu" stop="20260928090000 +0200">
+    <title>Viajar Mexico</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260928090000 +0200" channel="travelxp.eu" stop="20260928093000 +0200">
+    <title>Route 66</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260928093000 +0200" channel="travelxp.eu" stop="20260928100000 +0200">
+    <title>50 States Tennessee</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260928100000 +0200" channel="travelxp.eu" stop="20260928103000 +0200">
+    <title>Quest</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260928103000 +0200" channel="travelxp.eu" stop="20260928110000 +0200">
+    <title>Kissed by the Sea</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260928110000 +0200" channel="travelxp.eu" stop="20260928113000 +0200">
+    <title>World Heritage</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260928113000 +0200" channel="travelxp.eu" stop="20260928120000 +0200">
+    <title>Viajar Mexico</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260928120000 +0200" channel="travelxp.eu" stop="20260928123000 +0200">
+    <title>Route 66</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260928123000 +0200" channel="travelxp.eu" stop="20260928130000 +0200">
+    <title>50 States Tennessee</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260928130000 +0200" channel="travelxp.eu" stop="20260928134500 +0200">
+    <title>Bliss</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260928134500 +0200" channel="travelxp.eu" stop="20260928140000 +0200">
+    <title>Best from the Rest</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260928140000 +0200" channel="travelxp.eu" stop="20260928143000 +0200">
+    <title>Kissed by the Sea</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260928143000 +0200" channel="travelxp.eu" stop="20260928150000 +0200">
+    <title>World Heritage</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260928150000 +0200" channel="travelxp.eu" stop="20260928153000 +0200">
+    <title>Viajar Mexico</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260928153000 +0200" channel="travelxp.eu" stop="20260928160000 +0200">
+    <title>World Spas</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260928160000 +0200" channel="travelxp.eu" stop="20260928163000 +0200">
+    <title>Food Stories Singapore</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260928163000 +0200" channel="travelxp.eu" stop="20260928170000 +0200">
+    <title>Food Stories Singapore</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260928170000 +0200" channel="travelxp.eu" stop="20260928173000 +0200">
+    <title>City Breaks</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260928173000 +0200" channel="travelxp.eu" stop="20260928180000 +0200">
+    <title>Viajar Mexico</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260928180000 +0200" channel="travelxp.eu" stop="20260928183000 +0200">
+    <title>Route 66</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260928183000 +0200" channel="travelxp.eu" stop="20260928190000 +0200">
+    <title>50 States Florida</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260928190000 +0200" channel="travelxp.eu" stop="20260928193000 +0200">
+    <title>Quest</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260928193000 +0200" channel="travelxp.eu" stop="20260928200000 +0200">
+    <title>Xplore Ireland</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260928200000 +0200" channel="travelxp.eu" stop="20260928203000 +0200">
+    <title>Route 66</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260928203000 +0200" channel="travelxp.eu" stop="20260928210000 +0200">
+    <title>Xplore Ireland</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260928210000 +0200" channel="travelxp.eu" stop="20260928213000 +0200">
+    <title>Viajar Mexico</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260928213000 +0200" channel="travelxp.eu" stop="20260928220000 +0200">
+    <title>50 States Florida</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260928220000 +0200" channel="travelxp.eu" stop="20260928223000 +0200">
+    <title>Unwind</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260928223000 +0200" channel="travelxp.eu" stop="20260928230000 +0200">
+    <title>Quest</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260928230000 +0200" channel="travelxp.eu" stop="20260928233000 +0200">
+    <title>Route 66</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260928233000 +0200" channel="travelxp.eu" stop="20260929000000 +0200">
+    <title>Xplore Ireland</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260929000000 +0200" channel="travelxp.eu" stop="20260929003000 +0200">
+    <title>Viajar Mexico</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260929003000 +0200" channel="travelxp.eu" stop="20260929010000 +0200">
+    <title>50 States Florida</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260929010000 +0200" channel="travelxp.eu" stop="20260929013000 +0200">
+    <title>Unwind</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260929013000 +0200" channel="travelxp.eu" stop="20260929020000 +0200">
+    <title>Quest</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260929020000 +0200" channel="travelxp.eu" stop="20260929023000 +0200">
+    <title>50 States Tennessee</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260929023000 +0200" channel="travelxp.eu" stop="20260929030000 +0200">
+    <title>Route 66</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260929030000 +0200" channel="travelxp.eu" stop="20260929033000 +0200">
+    <title>City Breaks</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260929033000 +0200" channel="travelxp.eu" stop="20260929040000 +0200">
+    <title>Xplore Ireland</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260929040000 +0200" channel="travelxp.eu" stop="20260929043000 +0200">
+    <title>Viajar Mexico</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260929043000 +0200" channel="travelxp.eu" stop="20260929050000 +0200">
+    <title>Quest</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260929050000 +0200" channel="travelxp.eu" stop="20260929053000 +0200">
+    <title>50 States Tennessee</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260929053000 +0200" channel="travelxp.eu" stop="20260929060000 +0200">
+    <title>Route 66</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260929060000 +0200" channel="travelxp.eu" stop="20260929063000 +0200">
+    <title>City Breaks</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260929063000 +0200" channel="travelxp.eu" stop="20260929070000 +0200">
+    <title>Kissed by the Sea</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260929070000 +0200" channel="travelxp.eu" stop="20260929073000 +0200">
+    <title>Viajar Mexico</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260929073000 +0200" channel="travelxp.eu" stop="20260929080000 +0200">
+    <title>City Breaks</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260929080000 +0200" channel="travelxp.eu" stop="20260929083000 +0200">
+    <title>50 States Tennessee</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260929083000 +0200" channel="travelxp.eu" stop="20260929090000 +0200">
+    <title>Route 66</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260929090000 +0200" channel="travelxp.eu" stop="20260929093000 +0200">
+    <title>World Heritage</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260929093000 +0200" channel="travelxp.eu" stop="20260929100000 +0200">
+    <title>Kissed by the Sea</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260929100000 +0200" channel="travelxp.eu" stop="20260929103000 +0200">
+    <title>Viajar Mexico</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260929103000 +0200" channel="travelxp.eu" stop="20260929111500 +0200">
+    <title>Bliss</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260929111500 +0200" channel="travelxp.eu" stop="20260929113000 +0200">
+    <title>Best from the Rest</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260929113000 +0200" channel="travelxp.eu" stop="20260929120000 +0200">
+    <title>World Spas</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260929120000 +0200" channel="travelxp.eu" stop="20260929123000 +0200">
+    <title>World Heritage</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260929123000 +0200" channel="travelxp.eu" stop="20260929130000 +0200">
+    <title>Food Stories Singapore</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260929130000 +0200" channel="travelxp.eu" stop="20260929133000 +0200">
+    <title>Viajar Mexico</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260929133000 +0200" channel="travelxp.eu" stop="20260929140000 +0200">
+    <title>Food Stories Singapore</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260929140000 +0200" channel="travelxp.eu" stop="20260929143000 +0200">
+    <title>50 States Florida</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260929143000 +0200" channel="travelxp.eu" stop="20260929150000 +0200">
+    <title>Route 66</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260929150000 +0200" channel="travelxp.eu" stop="20260929153000 +0200">
+    <title>City Breaks</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260929153000 +0200" channel="travelxp.eu" stop="20260929160000 +0200">
+    <title>Xplore Ireland</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260929160000 +0200" channel="travelxp.eu" stop="20260929163000 +0200">
+    <title>Viajar Mexico</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260929163000 +0200" channel="travelxp.eu" stop="20260929170000 +0200">
+    <title>Quest</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260929170000 +0200" channel="travelxp.eu" stop="20260929173000 +0200">
+    <title>50 States Florida</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260929173000 +0200" channel="travelxp.eu" stop="20260929180000 +0200">
+    <title>Route 66</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260929180000 +0200" channel="travelxp.eu" stop="20260929183000 +0200">
+    <title>Unwind</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260929183000 +0200" channel="travelxp.eu" stop="20260929190000 +0200">
+    <title>Xplore Ireland</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260929190000 +0200" channel="travelxp.eu" stop="20260929193000 +0200">
+    <title>Viajar Mexico</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260929193000 +0200" channel="travelxp.eu" stop="20260929200000 +0200">
+    <title>Quest</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260929200000 +0200" channel="travelxp.eu" stop="20260929203000 +0200">
+    <title>Route 66</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260929203000 +0200" channel="travelxp.eu" stop="20260929210000 +0200">
+    <title>Xplore Ireland</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260929210000 +0200" channel="travelxp.eu" stop="20260929213000 +0200">
+    <title>Viajar Mexico</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260929213000 +0200" channel="travelxp.eu" stop="20260929220000 +0200">
+    <title>50 States Florida</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260929220000 +0200" channel="travelxp.eu" stop="20260929223000 +0200">
+    <title>City Breaks</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260929223000 +0200" channel="travelxp.eu" stop="20260929230000 +0200">
+    <title>Quest</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260929230000 +0200" channel="travelxp.eu" stop="20260929233000 +0200">
+    <title>Route 66</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260929233000 +0200" channel="travelxp.eu" stop="20260930000000 +0200">
+    <title>Xplore Ireland</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260930000000 +0200" channel="travelxp.eu" stop="20260930003000 +0200">
+    <title>Viajar Mexico</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260930003000 +0200" channel="travelxp.eu" stop="20260930010000 +0200">
+    <title>50 States Florida</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260930010000 +0200" channel="travelxp.eu" stop="20260930013000 +0200">
+    <title>City Breaks</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260930013000 +0200" channel="travelxp.eu" stop="20260930020000 +0200">
+    <title>Quest</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260930020000 +0200" channel="travelxp.eu" stop="20260930023000 +0200">
+    <title>Kissed by the Sea</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260930023000 +0200" channel="travelxp.eu" stop="20260930030000 +0200">
+    <title>50 States Tennessee</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260930030000 +0200" channel="travelxp.eu" stop="20260930033000 +0200">
+    <title>Quest</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260930033000 +0200" channel="travelxp.eu" stop="20260930040000 +0200">
+    <title>Route 66</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260930040000 +0200" channel="travelxp.eu" stop="20260930043000 +0200">
+    <title>50 States Tennessee</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260930043000 +0200" channel="travelxp.eu" stop="20260930050000 +0200">
+    <title>City Breaks</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260930050000 +0200" channel="travelxp.eu" stop="20260930053000 +0200">
+    <title>Kissed by the Sea</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260930053000 +0200" channel="travelxp.eu" stop="20260930060000 +0200">
+    <title>50 States Tennessee</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260930060000 +0200" channel="travelxp.eu" stop="20260930064500 +0200">
+    <title>Bliss</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260930064500 +0200" channel="travelxp.eu" stop="20260930070000 +0200">
+    <title>Best from the Rest</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260930070000 +0200" channel="travelxp.eu" stop="20260930073000 +0200">
+    <title>Route 66</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260930073000 +0200" channel="travelxp.eu" stop="20260930080000 +0200">
+    <title>50 States Tennessee</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260930080000 +0200" channel="travelxp.eu" stop="20260930083000 +0200">
+    <title>World Heritage</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260930083000 +0200" channel="travelxp.eu" stop="20260930090000 +0200">
+    <title>Food Stories Singapore</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260930090000 +0200" channel="travelxp.eu" stop="20260930093000 +0200">
+    <title>World Spas</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260930093000 +0200" channel="travelxp.eu" stop="20260930100000 +0200">
+    <title>Food Stories Singapore</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260930100000 +0200" channel="travelxp.eu" stop="20260930103000 +0200">
+    <title>World Spas</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260930103000 +0200" channel="travelxp.eu" stop="20260930110000 +0200">
+    <title>World Heritage</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260930110000 +0200" channel="travelxp.eu" stop="20260930113000 +0200">
+    <title>Xplore Ireland</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260930113000 +0200" channel="travelxp.eu" stop="20260930120000 +0200">
+    <title>50 States Florida</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260930120000 +0200" channel="travelxp.eu" stop="20260930123000 +0200">
+    <title>Quest</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260930123000 +0200" channel="travelxp.eu" stop="20260930130000 +0200">
+    <title>Route 66</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260930130000 +0200" channel="travelxp.eu" stop="20260930133000 +0200">
+    <title>50 States Florida</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260930133000 +0200" channel="travelxp.eu" stop="20260930140000 +0200">
+    <title>City Breaks</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260930140000 +0200" channel="travelxp.eu" stop="20260930143000 +0200">
+    <title>Xplore Ireland</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260930143000 +0200" channel="travelxp.eu" stop="20260930150000 +0200">
+    <title>50 States Florida</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260930150000 +0200" channel="travelxp.eu" stop="20260930153000 +0200">
+    <title>Quest</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260930153000 +0200" channel="travelxp.eu" stop="20260930160000 +0200">
+    <title>Route 66</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260930160000 +0200" channel="travelxp.eu" stop="20260930163000 +0200">
+    <title>50 States Florida</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260930163000 +0200" channel="travelxp.eu" stop="20260930170000 +0200">
+    <title>Unwind</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260930170000 +0200" channel="travelxp.eu" stop="20260930173000 +0200">
+    <title>Xplore Ireland</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260930173000 +0200" channel="travelxp.eu" stop="20260930180000 +0200">
+    <title>50 States Florida</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260930180000 +0200" channel="travelxp.eu" stop="20260930183000 +0200">
+    <title>Quest</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260930183000 +0200" channel="travelxp.eu" stop="20260930190000 +0200">
+    <title>Route 66</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260930190000 +0200" channel="travelxp.eu" stop="20260930193000 +0200">
+    <title>50 States Florida</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260930193000 +0200" channel="travelxp.eu" stop="20260930200000 +0200">
+    <title>City Breaks</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260930200000 +0200" channel="travelxp.eu" stop="20260930203000 +0200">
+    <title>Route 66</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260930203000 +0200" channel="travelxp.eu" stop="20260930210000 +0200">
+    <title>Xplore Ireland</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260930210000 +0200" channel="travelxp.eu" stop="20260930213000 +0200">
+    <title>Viajar Mexico</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260930213000 +0200" channel="travelxp.eu" stop="20260930220000 +0200">
+    <title>50 States Tennessee</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260930220000 +0200" channel="travelxp.eu" stop="20260930223000 +0200">
+    <title>City Breaks</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260930223000 +0200" channel="travelxp.eu" stop="20260930230000 +0200">
+    <title>Quest</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260930230000 +0200" channel="travelxp.eu" stop="20260930233000 +0200">
+    <title>Route 66</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260930233000 +0200" channel="travelxp.eu" stop="20261001000000 +0200">
+    <title>Xplore Ireland</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20261001000000 +0200" channel="travelxp.eu" stop="20261001003000 +0200">
+    <title>Viajar Mexico</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20261001003000 +0200" channel="travelxp.eu" stop="20261001010000 +0200">
+    <title>50 States Tennessee</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20261001010000 +0200" channel="travelxp.eu" stop="20261001013000 +0200">
+    <title>City Breaks</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20261001013000 +0200" channel="travelxp.eu" stop="20261001020000 +0200">
+    <title>Quest</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20261001020000 +0200" channel="travelxp.eu" stop="20261001023000 +0200">
+    <title>Viajar Mexico</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20261001023000 +0200" channel="travelxp.eu" stop="20261001031500 +0200">
+    <title>Bliss</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20261001031500 +0200" channel="travelxp.eu" stop="20261001033000 +0200">
+    <title>Best from the Rest</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20261001033000 +0200" channel="travelxp.eu" stop="20261001040000 +0200">
+    <title>Kissed by the Sea</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20261001040000 +0200" channel="travelxp.eu" stop="20261001043000 +0200">
+    <title>World Heritage</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20261001043000 +0200" channel="travelxp.eu" stop="20261001050000 +0200">
+    <title>Route 66</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20261001050000 +0200" channel="travelxp.eu" stop="20261001053000 +0200">
+    <title>50 States Tennessee</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20261001053000 +0200" channel="travelxp.eu" stop="20261001060000 +0200">
+    <title>Viajar Mexico</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20261001060000 +0200" channel="travelxp.eu" stop="20261001063000 +0200">
+    <title>Food Stories Singapore</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20261001063000 +0200" channel="travelxp.eu" stop="20261001070000 +0200">
+    <title>Food Stories Singapore</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20261001070000 +0200" channel="travelxp.eu" stop="20261001073000 +0200">
+    <title>World Heritage</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20261001073000 +0200" channel="travelxp.eu" stop="20261001080000 +0200">
+    <title>World Spas</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20261001080000 +0200" channel="travelxp.eu" stop="20261001083000 +0200">
+    <title>Viajar Mexico</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20261001083000 +0200" channel="travelxp.eu" stop="20261001090000 +0200">
+    <title>Quest</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20261001090000 +0200" channel="travelxp.eu" stop="20261001093000 +0200">
+    <title>Xplore Ireland</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20261001093000 +0200" channel="travelxp.eu" stop="20261001100000 +0200">
+    <title>City Breaks</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20261001100000 +0200" channel="travelxp.eu" stop="20261001103000 +0200">
+    <title>Route 66</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20261001103000 +0200" channel="travelxp.eu" stop="20261001110000 +0200">
+    <title>50 States Florida</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20261001110000 +0200" channel="travelxp.eu" stop="20261001113000 +0200">
+    <title>Viajar Mexico</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20261001113000 +0200" channel="travelxp.eu" stop="20261001120000 +0200">
+    <title>Quest</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20261001120000 +0200" channel="travelxp.eu" stop="20261001123000 +0200">
+    <title>Xplore Ireland</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20261001123000 +0200" channel="travelxp.eu" stop="20261001130000 +0200">
+    <title>Unwind</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20261001130000 +0200" channel="travelxp.eu" stop="20261001133000 +0200">
+    <title>Route 66</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20261001133000 +0200" channel="travelxp.eu" stop="20261001140000 +0200">
+    <title>50 States Florida</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20261001140000 +0200" channel="travelxp.eu" stop="20261001143000 +0200">
+    <title>Viajar Mexico</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20261001143000 +0200" channel="travelxp.eu" stop="20261001150000 +0200">
+    <title>Quest</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20261001150000 +0200" channel="travelxp.eu" stop="20261001153000 +0200">
+    <title>Xplore Ireland</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20261001153000 +0200" channel="travelxp.eu" stop="20261001160000 +0200">
+    <title>City Breaks</title>
     <url>https://epg.sbb.rs/</url>
   </programme>
   <programme start="20260928004200 +0200" channel="eurosport.1" stop="20260928010100 +0200">

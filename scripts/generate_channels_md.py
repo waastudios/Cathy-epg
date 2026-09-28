@@ -40,7 +40,8 @@ SECTIONS: list[tuple[str, str, str, bool]] = [
     ("virgin_uk.", "Virgin Media UK", "🇬🇧英国Virgin Media", False),
     ("canal+.fr", "France Canal+", "🇫🇷法国 Canal+", True),
     ("foot+.fr", "France Canal+", "🇫🇷法国 Canal+", True),
-    ("eurosport.", "🇷🇸 Serbia SBB Eurosport", "🇷🇸塞尔维亚 SBB Eurosport", True),
+    ("eurosport.", "🇷🇸 Serbia SBB", "🇷🇸塞尔维亚 SBB", True),
+    ("travelxp.eu", "🇷🇸 Serbia SBB", "🇷🇸塞尔维亚 SBB", True),
     ("digi4k_ro", "Digi 4K", "🇷🇴罗马尼亚 Digi 4K", True),
     ("allente_se.", "Allente Sweden", "🇸🇪瑞典 Allente", True),
     ("allente_no.", "Allente Norway", "🇳🇴挪威 Allente", True),
@@ -67,7 +68,7 @@ EE_ENT_CN = "🇬🇧英国综合类频道"
 SECTION_ORDER_EN = [
     "Astro Malaysia", "now TV Hong Kong", "Sky Germany", "Sky Sports",
     "Virgin Media UK", "Sky Entertainment", "France Canal+",
-    "🇷🇸 Serbia SBB Eurosport", "Digi 4K", "🇵🇱 Poland Player.pl",
+    "🇷🇸 Serbia SBB", "Digi 4K", "🇵🇱 Poland Player.pl",
     "Allente Sweden", "Allente Norway", "Other",
 ]
 CN_TITLE = {
@@ -78,7 +79,7 @@ CN_TITLE = {
     "Virgin Media UK": "🇬🇧英国Virgin Media",
     "Sky Entertainment": "🇬🇧英国综合类频道",
     "France Canal+": "🇫🇷法国 Canal+",
-    "🇷🇸 Serbia SBB Eurosport": "🇷🇸塞尔维亚 SBB Eurosport",
+    "🇷🇸 Serbia SBB": "🇷🇸塞尔维亚 SBB",
     "Digi 4K": "🇷🇴罗马尼亚 Digi 4K",
     "Allente Sweden": "🇸🇪瑞典 Allente",
     "Allente Norway": "🇳🇴挪威 Allente",
