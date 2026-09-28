@@ -40,10 +40,12 @@
     "records": 624
   },
   "canalplus_fr": {
-    "status": "stale",
+    "status": "ok",
     "records": 53,
-    "message": "403 Client Error: Forbidden for url: https://tvepg.eu/en/france/c/canal-plus",
-    "fallback": "previous_snapshot"
+    "source": "tvepg.eu France Canal+ (fallback, ~2 days)",
+    "notes": [
+      "Canal+ 官方 API 不可用（HTTPSConnectionPool(host='hodor.canalplus.pro', port=443): Read timed out. (read timeout=20)），主频道回退到 tvepg.eu"
+    ]
   },
   "xmltv": {
     "status": "ok",

@@ -42,7 +42,7 @@ https://raw.githubusercontent.com/waastudios/Cathy-epg/master/data/epg.xml.gz
 | 罗马尼亚 | Digi 4K | [Digi 4K](https://www.digi4k.ro/) |
 | 塞尔维亚 | Eurosport 1、Eurosport 2、Eurosport 4K、Travel XP | [SBB / EON Public EPG](https://epg.sbb.rs/) |
 | 波兰 | Eurosport 1–4 与 Eleven Sports 1（标题已译为英文） | [Player.pl](https://player.pl/) 公开 EPG 接口 |
-| 法国 | CANAL+ 主频道（标题已译为英文；仅当日＋次日） | [tvepg.eu 法国 Canal+](https://tvepg.eu/en/france/c/canal-plus) 公开节目表 |
+| 法国 | CANAL+ 主频道与 CANAL+ FOOT（标题已译为英文） | [Canal+ 官方 EPG 接口](https://www.canalplus.com/programme-tv/) |
 
 ### 德国 Sky 与 MagentaTV
 
@@ -62,9 +62,9 @@ EE 范围包含 **Sky Mix、Sky Arts、Sky Witness、Sky Atlantic、Sky One、Sk
 
 **Eurosport 1、Eurosport 2、Eurosport 3、Eurosport 4 与 Eleven Sports 1** 均通过波兰 TVN Player.pl 的匿名公开 EPG 接口发布。用户指定的 XMLTV ID 为 `eurosport1.pl`、`eurosport2.pl`、`eurosport3.pl`、`eurosport4.pl` 与 `ElevenSp.1`。每条原始波兰语标题均通过下文的分级流水线转换成英文（波兰语体育术语精确映射 → 翻译记忆 → 在线服务）；无法翻译的标题只会跳过当条节目，不会导致整个 Player.pl 来源失败。在 [CHANNELS-CN.md](CHANNELS-CN.md) 中这五个频道带有（T）标记，表示节目单已翻译为英文。
 
-### 法国 tvepg.eu
+### 法国 Canal+ 官方接口
 
-**CANAL+**（主频道）通过 tvepg.eu 法国区公开节目表发布，XMLTV ID 为 `canal+.fr`。原 Canal+ 官方 JSON 接口已封禁数据中心 IP，且 CANAL+ FOOT 暂无可靠公开来源，因此仅恢复主频道。节目表覆盖当日＋次日（约 2 天，而非常规 7 天）。每条原始法语标题均通过下文的分级流水线转换成英文（法语精确映射 → 翻译记忆 → 在线服务）；无法翻译的标题只会跳过当条节目，不会导致整个来源失败。在 [CHANNELS-CN.md](CHANNELS-CN.md) 中该频道带有（T）标记，表示节目单已翻译为英文。
+**CANAL+**（主频道）与 **CANAL+ FOOT** 均通过 Canal+ 官方 EPG 接口发布，XMLTV ID 为 `canal+.fr` 与 `foot+.fr`。每次采集先经认证接口换取新鲜 token（硬编码 token 会被拒绝）；官方接口有频率限制，请求间隔放慢并带重试。每条原始法语标题均通过下文的分级流水线转换成英文（法语精确映射 → 翻译记忆 → 在线服务）；无法翻译的标题只会跳过当条节目，不会导致整个来源失败。官方接口不可用时，主频道回退到 tvepg.eu 法国区公开节目表（仅当日＋次日）。在 [CHANNELS-CN.md](CHANNELS-CN.md) 中这两个频道带有（T）标记，表示节目单已翻译为英文。
 
 ### 英文翻译
 
@@ -105,7 +105,7 @@ epg preview --day tomorrow --provider allente_se --channel 50048
 
 ## 更新日志
 
-- **2026-09-29** —— 恢复法国 Canal+ 主频道：通过 tvepg.eu 法国区公开节目表发布，XMLTV ID 为 `canal+.fr`（当日＋次日，约 2 天）。法语标题经分级流水线译为英文，并在频道清单中以（T）标记。原官方 Canal+ 接口已封禁数据中心 IP；CANAL+ FOOT 暂无可靠公开来源，保持下线。
+- **2026-09-29** —— 恢复法国 Canal+ 双频道：通过 Canal+ 官方 EPG 接口发布，XMLTV ID 为 `canal+.fr`（CANAL+）与 `foot+.fr`（CANAL+ FOOT），各 7 天。每次采集先经认证接口换取新鲜 token（硬编码 token 会被拒绝）；官方接口有频率限制，请求放慢并带重试。法语标题经分级流水线译为英文，并在频道清单中以（T）标记。官方接口不可用时，主频道回退到 tvepg.eu 法国区公开节目表（仅当日＋次日）。
 - **2026-09-28** —— 新增 Travel XP（欧洲台）：通过 SBB 公开 EPG 发布，XMLTV ID 为 `travelxp.eu`。标题本身为英文，直接发布，并在频道清单中以（T）标记。
 - **2026-09-28** —— 新增波兰覆盖：通过 Player.pl 公开 EPG 接口发布 Eurosport 1–4 与 Eleven Sports 1，用户指定的 XMLTV ID 为 `eurosport1.pl`、`eurosport2.pl`、`eurosport3.pl`、`eurosport4.pl` 与 `ElevenSp.1`。波兰语标题经分级流水线译为英文，并在频道清单中以（T）标记。
 

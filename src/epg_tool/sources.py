@@ -1233,10 +1233,18 @@ def _virgin_uk_segment_starts(today: date, days: int, zone: ZoneInfo) -> list[da
     return starts
 
 
-# 法国 Canal+ 官方节目 API 已对数据中心 IP 封禁（Akamai Access Denied），改用
-# tvepg.eu 法国区 Canal+ 主频道的公开节目表（当日＋次日）。CANAL+ FOOT 暂无
-# 可靠公开来源，保持下线。
-TVEPG_EU_CANALPLUS_URL = "https://tvepg.eu/en/france/c/canal-plus"
+# 法国 Canal+ 官方节目 API（hodor.canalplus.pro）。token 不可硬编码：每次采集
+# 先调 authenticate.json 换取新鲜 token，再按频道拉节目。频道 301 = CANAL+
+# 主频道，19 = CANAL+ FOOT。
+CANALPLUS_FR_AUTH_URL = (
+    "https://hodor.canalplus.pro/api/v2/mycanal/authenticate.json/webapp/6.0"
+    "?experiments=beta-test-one-tv-guide:control"
+)
+CANALPLUS_FR_GUIDE = "https://www.canalplus.com/programme-tv/"
+CANALPLUS_FR_CHANNELS: tuple[tuple[str, str, str, int], ...] = (
+    ("301", "CANAL+", "canal+.fr", 4),
+    ("19", "CANAL+ FOOT", "foot+.fr", 10),
+)
 CANALPLUS_FR_TITLE_TRANSLATIONS: dict[str, str] = json.loads(
     files("epg_tool").joinpath("canalplus_fr_title_translations.json").read_text(encoding="utf-8")
 )
@@ -1304,14 +1312,118 @@ def _translate_canalplus_fr_title(title: str) -> str | None:
     return None
 
 
-def _parse_tvepg_eu_canalplus(html: str) -> list[tuple[datetime, str]]:
-    """解析 tvepg.eu Canal+ 法国页面的当日＋次日节目（开始时间，本地 Europe/Paris）。
+def _canalplus_fr_get(session: requests.Session, url: str, **kwargs) -> requests.Response:
+    """Canal+ 官方 API 的弹性 GET：
 
-    页面按 "Today - DD/MM/YYYY" / "Tomorrow - DD/MM/YYYY" 分区，每档只有开始
-    时间；结束时间由下一档开始时间推导。分区开头若出现前一晚尾部节目（首个
-    时间晚于第二个），基准日期回退一天并按时间回拨做跨日递增。
+    - 403：命中频率限制，静默 65 秒后重试；
+    - 超时/连接错误：瞬时网络抖动，等待 10 秒后重试；
+    - 最多 3 次尝试，仍失败则抛出异常。
     """
-    soup = BeautifulSoup(html, "html.parser")
+    last_error: Exception | None = None
+    for attempt in range(3):
+        try:
+            response = session.get(url, **kwargs)
+        except (requests.exceptions.Timeout, requests.exceptions.ConnectionError) as exc:
+            last_error = exc
+            time.sleep(10)
+            continue
+        if response.status_code == 403:
+            last_error = requests.exceptions.HTTPError(f"403 rate limited: {url}")
+            time.sleep(65)
+            continue
+        response.raise_for_status()
+        return response
+    assert last_error is not None
+    raise last_error
+
+
+def _collect_canalplus_fr_official_channel(
+    session: requests.Session,
+    headers: dict[str, str],
+    token: str,
+    channel: tuple[str, str, str, int],
+    days: int,
+    pause_seconds: float,
+) -> tuple[list[Programme], int]:
+    """经官方 API 拉取单个 Canal+ 频道 days 天节目；返回 (records, skipped)。"""
+    channel_id, channel_name, channel_suffix, channel_position = channel
+    zone = ZoneInfo("Europe/Paris")
+    retrieved_at = utc_now_iso()
+    records: list[Programme] = []
+    skipped = 0
+    for day_offset in range(days):
+        response = _canalplus_fr_get(
+            session,
+            f"https://hodor.canalplus.pro/api/v2/mycanal/channels/{token}/{channel_id}/broadcasts/day/{day_offset}",
+            params={
+                "channelPosition": channel_position,
+                "displayAvailabilityIcons": "false",
+                "displayAccessibilityIcons": "false",
+            },
+            headers=headers,
+            timeout=(5, 20),
+        )
+        payload = response.json()
+        time_slices = payload.get("timeSlices") if isinstance(payload, dict) else None
+        if not isinstance(time_slices, list):
+            raise SourceUnavailable(f"法国 Canal+ {channel_name} 官方 EPG 未返回 timeSlices。")
+        for time_slice in time_slices:
+            contents = time_slice.get("contents") if isinstance(time_slice, dict) else None
+            if not isinstance(contents, list):
+                continue
+            for content in contents:
+                if not isinstance(content, dict):
+                    continue
+                title = str(content.get("title") or "").strip()
+                subtitle = str(content.get("subtitle") or "").strip()
+                start_ms = content.get("startTime")
+                end_ms = content.get("endTime")
+                if not title or not isinstance(start_ms, (int, float)) or not isinstance(end_ms, (int, float)):
+                    continue
+                start = datetime.fromtimestamp(start_ms / 1000, tz=timezone.utc).astimezone(zone)
+                end = datetime.fromtimestamp(end_ms / 1000, tz=timezone.utc).astimezone(zone)
+                if end <= start:
+                    continue
+                source_display_title = title if not subtitle or subtitle == title else f"{title} — {subtitle}"
+                try:
+                    display_title = translate_programme_title(
+                        source_display_title, "fr", _translate_canalplus_fr_title
+                    )
+                except TitleUntranslatable:
+                    skipped += 1
+                    continue
+                records.append(
+                    Programme(
+                        provider="canalplus_fr",
+                        country="FR",
+                        timezone="Europe/Paris",
+                        channel_id=channel_suffix,
+                        channel_number=channel_id,
+                        channel_name=channel_name,
+                        title=display_title,
+                        start_at=start.isoformat(),
+                        end_at=end.isoformat(),
+                        source_url=CANALPLUS_FR_GUIDE,
+                        retrieved_at=retrieved_at,
+                    )
+                )
+        time.sleep(pause_seconds)
+    return records, skipped
+
+
+TVEPG_EU_CANALPLUS_URL = "https://tvepg.eu/en/france/c/canal-plus"
+
+
+def _collect_canalplus_fr_tvepg(session: requests.Session) -> tuple[list[Programme], int]:
+    """tvepg.eu 法国区 CANAL+ 主频道公开节目表（当日＋次日），仅作官方 API
+    不可用时的兜底。"""
+    response = session.get(
+        TVEPG_EU_CANALPLUS_URL,
+        headers={"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"},
+        timeout=30,
+    )
+    response.raise_for_status()
+    soup = BeautifulSoup(response.text, "html.parser")
     text = soup.get_text("\n")
     sections: list[tuple[int, date | None]] = []
     for match in re.finditer(r"(?:Today|Tomorrow) - (\d{2})/(\d{2})/(\d{4})", text):
@@ -1350,37 +1462,13 @@ def _parse_tvepg_eu_canalplus(html: str) -> list[tuple[datetime, str]]:
             continue
         seen.add(key)
         unique.append((moment, title))
-    return unique
-
-
-def collect_canalplus_fr(days: int = 7) -> list[Programme]:
-    """读取 tvepg.eu 法国区 CANAL+ 主频道的公开节目表并译为英文。
-
-    数据源仅提供当日＋次日（约 2 天）；days 参数保留接口兼容，超出部分记入
-    notes。单个标题无法翻译只跳过该节目，不会让整个来源失败。
-    """
-    if days not in range(1, 8):
-        raise ValueError("法国 Canal+ 采集天数必须为 1–7。")
-    session = _session()
-    response = session.get(
-        TVEPG_EU_CANALPLUS_URL,
-        headers={"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"},
-        timeout=30,
-    )
-    response.raise_for_status()
-    schedule = _parse_tvepg_eu_canalplus(response.text)
-    if not schedule:
-        raise SourceUnavailable("tvepg.eu Canal+ 法国页面未返回节目记录。")
-    if days > 2:
-        note(f"tvepg.eu 仅提供当日＋次日 Canal+ 节目（约 2 天），days={days} 按可用数据采集")
-    zone = ZoneInfo("Europe/Paris")
     retrieved_at = utc_now_iso()
     records: list[Programme] = []
     skipped = 0
-    for index, (start, source_title) in enumerate(schedule):
-        if index + 1 >= len(schedule):
-            continue  # 最后一档无结束时间，跳过
-        end = schedule[index + 1][0]
+    for index, (start, source_title) in enumerate(unique):
+        if index + 1 >= len(unique):
+            continue
+        end = unique[index + 1][0]
         if end <= start:
             continue
         try:
@@ -1403,11 +1491,53 @@ def collect_canalplus_fr(days: int = 7) -> list[Programme]:
                 retrieved_at=retrieved_at,
             )
         )
+    return records, skipped
+
+
+def collect_canalplus_fr(days: int = 7, pause_seconds: float = 4.0) -> list[Programme]:
+    """读取法国 Canal+ 官方 EPG（CANAL+ 主频道与 CANAL+ FOOT），法语标题译为英文。
+
+    先经 authenticate.json 换取新鲜 token（硬编码 token 会被官方拒绝），再按
+    频道拉取当日＋未来 6 天节目。官方接口有较严的频率限制，请求间隔默认
+    4 秒。官方 API 不可用时主频道回退到 tvepg.eu 公开节目表（约 2 天）；
+    单个标题无法翻译只跳过该节目，不会让整个来源失败。
+    """
+    if days not in range(1, 8):
+        raise ValueError("法国 Canal+ 采集天数必须为 1–7。")
+    session = _session()
+    headers = {
+        "Accept": "application/json, text/plain, */*",
+        "Origin": "https://www.canalplus.com",
+        "Referer": CANALPLUS_FR_GUIDE,
+        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    }
+    records: list[Programme] = []
+    skipped = 0
+    official_ok = False
+    try:
+        auth = _canalplus_fr_get(session, CANALPLUS_FR_AUTH_URL, headers=headers, timeout=(5, 20))
+        token = auth.json().get("token")
+        if not token:
+            raise SourceUnavailable("法国 Canal+ 官方认证未返回 token。")
+        time.sleep(pause_seconds)
+        for channel in CANALPLUS_FR_CHANNELS:
+            channel_records, channel_skipped = _collect_canalplus_fr_official_channel(
+                session, headers, token, channel, days, pause_seconds
+            )
+            records.extend(channel_records)
+            skipped += channel_skipped
+        official_ok = True
+    except (SourceUnavailable, requests.exceptions.RequestException) as exc:
+        note(f"Canal+ 官方 API 不可用（{exc}），主频道回退到 tvepg.eu")
+    if not official_ok:
+        fallback_records, fallback_skipped = _collect_canalplus_fr_tvepg(session)
+        records.extend(fallback_records)
+        skipped += fallback_skipped
     if skipped:
         note(f"Canal+ {skipped} 档法语标题无法译为英文，已跳过")
     records = _deduplicate(records)
     if not records:
-        raise SourceUnavailable("法国 Canal+ 节目全部无法翻译或解析。")
+        raise SourceUnavailable("法国 Canal+ 未返回节目记录。")
     return records
 
 
