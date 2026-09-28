@@ -14,6 +14,8 @@ from .models import Programme
 
 # 用户指定：TV+ Türkiye 的官方 Eurosport 频道号 77／106 使用跨来源稳定的
 # XMLTV ID，而非默认的 ``tvplus_tr.<channel-number>`` 形式。
+# （2026-09 起 TV+ 采集器已移除，Eurosport 1/2 改由 SBB Public EPG 提供；
+# 此映射保留用于历史快照的 ID 兼容。）
 _TVPLUS_EUROSPORT_XMLTV_IDS = {
     "77": "eurosport.1",
     "106": "eurosport.2",

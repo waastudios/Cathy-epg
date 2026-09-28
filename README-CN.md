@@ -44,7 +44,7 @@ https://raw.githubusercontent.com/waastudios/Cathy-epg/master/data/epg.xml.gz
 
 ### 德国 Sky 与 MagentaTV
 
-德国范围仅包括 MagentaTV 正常公开的生产节目表当前暴露的 29 条 Sky Sport 与 Sky Sport Bundesliga 服务。采集器每次刷新都会动态读取 MagentaTV 的官方频道目录，要求所有映射频道均返回节目记录，并按用户指定的 Sky 频道号导出 `sky_de.201` 至 `sky_de.230`（频道 208 不发布）。仓库已收录的德语节目标题均通过版本控制的本地映射固定转换为英文；新增常规体育标题只会使用受控词汇翻译，若仍包含未经核验的德语，Sky 来源会明确失败而不会发布原文。当前公开目录没有可无歧义映射的一组 Sky Austria 频道，因此不会发布 Sky Austria。
+德国范围仅包括 MagentaTV 正常公开的生产节目表当前暴露的 29 条 Sky Sport 与 Sky Sport Bundesliga 服务。采集器每次刷新都会动态读取 MagentaTV 的官方频道目录，要求所有映射频道均返回节目记录，并按用户指定的 Sky 频道号导出 `sky_de.201` 至 `sky_de.230`（频道 208 不发布）。德语节目标题统一通过下文的分级流水线翻译为英文；无法翻译的标题只会跳过当条节目，不会导致整个 Sky 来源失败。当前公开目录没有可无歧义映射的一组 Sky Austria 频道，因此不会发布 Sky Austria。
 
 ### EE Sky 娱乐频道选择
 
@@ -54,7 +54,17 @@ EE 范围包含 **Sky Mix、Sky Arts、Sky Witness、Sky Atlantic、Sky One、Sk
 
 美国范围刻意限制为未来可能加入的 **ESPN、ESPN2、ESPNEWS、ESPNU**。ABC、CBS、NBC、FOX、USA Network 和其他所有美国频道都已排除。DIRECTV 公开指南确认四个 ESPN 频道，但只提供当前节目；Spectrum 的详细节目表需要账户与服务地址；ESPN 官网排期没有稳定的逐频道结束时间。因此，**当前不发布任何 ESPN 记录**。如日后出现合规节目表，ID 会使用服务商前缀，例如 `directv_espn`。
 
-**Eurosport 1、Eurosport 2 和 Eurosport 4K** 均通过塞尔维亚 SBB 的正常匿名 Public EPG 发布，XMLTV ID 分别为 `eurosport.1`、`eurosport.2` 和 `eurosport.4k`。该来源提供频道目录、节目标题、开始时间和结束时间。每条原始塞尔维亚语标题均通过版本控制的本地确定性规则转换成英文；如果标题无法被可靠识别，SBB 来源会失败，而不是猜测翻译或发布未翻译标题。
+**Eurosport 1、Eurosport 2 和 Eurosport 4K** 均通过塞尔维亚 SBB 的正常匿名 Public EPG 发布，XMLTV ID 分别为 `eurosport.1`、`eurosport.2` 和 `eurosport.4k`。该来源提供频道目录、节目标题、开始时间和结束时间。每条原始塞尔维亚语标题均通过下文的分级流水线转换成英文；无法翻译的标题只会跳过当条节目，不会导致整个 SBB 来源失败。
+
+### 英文翻译
+
+非英语市场（瑞典语、挪威语、德语、罗马尼亚语、塞尔维亚语）的节目标题均以英文发布；香港 now TV 的中文标题保持原样。翻译在各采集器内部按三级流水线进行：
+
+1. **版本控制的精确映射**（`src/epg_tool/sources.py`）——按来源维护的确定性规则。
+2. **持久翻译记忆**（`src/epg_tool/translation_cache.json`）——每次在线翻译的结果都会记录在此，稳定、可审计，无需重复请求网络。每日工作流会提交该文件，记忆随时间增长。
+3. **在线翻译服务**（先 Google，后 MyMemory）——处理前两级未覆盖的标题。
+
+三级都无法翻译的标题只会跳过当条节目（记入 `data/status.json` 中该来源的 `notes`），不会让整个来源失败；单个新标题永远不会清空某个频道的节目表。
 
 ## 自动刷新与校验
 

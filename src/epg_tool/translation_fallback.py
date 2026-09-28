@@ -1,9 +1,12 @@
 """Best-effort English translation with network and deterministic fallbacks."""
 from __future__ import annotations
 
+import json
 import re
 import time
 from functools import lru_cache
+from pathlib import Path
+from typing import Callable
 from urllib.parse import quote
 
 import requests
@@ -11,6 +14,54 @@ import requests
 
 SESSION = requests.Session()
 SESSION.headers.update({"User-Agent": "Cathy-epg/0.2"})
+
+# Persistent translation memory.  Exact local maps in sources.py are consulted
+# first; anything translated through an online service is recorded here so the
+# result is stable, auditable and reused without another network call.  The
+# daily workflow commits this file, so the memory grows over time instead of
+# re-translating the same titles every day.
+_CACHE_PATH = Path(__file__).with_name("translation_cache.json")
+
+
+class TitleUntranslatable(Exception):
+    """A single programme title could not be converted to English.
+
+    Collectors catch this per programme and skip that entry instead of failing
+    the whole provider, so one new title can never wipe out a channel's guide.
+    """
+
+
+_cache: dict[str, dict[str, str]] | None = None
+
+
+def _load_cache() -> dict[str, dict[str, str]]:
+    global _cache
+    if _cache is None:
+        _cache = {}
+        try:
+            raw = json.loads(_CACHE_PATH.read_text(encoding="utf-8"))
+            if isinstance(raw, dict):
+                for lang, table in raw.items():
+                    if isinstance(lang, str) and isinstance(table, dict):
+                        _cache[lang] = {str(k): str(v) for k, v in table.items()}
+        except (OSError, ValueError):
+            _cache = {}
+    return _cache
+
+
+def _save_cache_entry(source_lang: str, original: str, translated: str) -> None:
+    cache = _load_cache()
+    table = cache.setdefault(source_lang, {})
+    if table.get(original) == translated:
+        return
+    table[original] = translated
+    try:
+        _CACHE_PATH.write_text(
+            json.dumps(cache, ensure_ascii=False, indent=1, sort_keys=True) + "\n",
+            encoding="utf-8",
+        )
+    except OSError:
+        pass
 
 # Deterministic fallback for common Nordic/French TV wording.  This is deliberately
 # small: it is a last resort when public translation services are unavailable.
@@ -91,3 +142,59 @@ def translate_title(text: str, source: str | None = None) -> str:
                 if attempt == 0:
                     time.sleep(0.25)
     return _hard_translate(text)
+
+
+def _online_translate_strict(text: str, source_lang: str) -> str | None:
+    """Translate via online services only; None when the network path fails.
+
+    Unlike translate_title(), this never falls back to returning the original
+    text, so callers can tell "translated" apart from "unavailable".
+    """
+    for fn in (_google_translate, _mymemory_translate):
+        for attempt in range(2):
+            try:
+                value = fn(text, source_lang)
+                if value:
+                    return value
+            except Exception:
+                if attempt == 0:
+                    time.sleep(0.25)
+    return None
+
+
+def translate_programme_title(
+    title: str,
+    source_lang: str,
+    exact: Callable[[str], str | None] | None = None,
+) -> str:
+    """Convert one official programme title to English.
+
+    Resolution order:
+      1. ``exact`` -- the version-controlled deterministic mapping for the
+         source.  It returns a translation, or None when the title is not
+         covered by the curated rules.
+      2. Persistent translation memory (``translation_cache.json``).
+      3. Online translation services (Google, then MyMemory); a fresh result
+         is recorded in the translation memory.
+
+    Raises TitleUntranslatable when no tier produces a translation, so the
+    collector can skip that single programme instead of failing the source.
+    """
+    text = (title or "").strip()
+    if not text:
+        raise TitleUntranslatable("official programme object has no title")
+    if exact is not None:
+        try:
+            value = exact(text)
+        except Exception:
+            value = None
+        if value:
+            return value
+    cached = _load_cache().get(source_lang, {}).get(text)
+    if cached:
+        return cached
+    online = _online_translate_strict(text, source_lang)
+    if online:
+        _save_cache_entry(source_lang, text, online)
+        return online
+    raise TitleUntranslatable(f"no English translation available for {text!r}")

@@ -44,7 +44,7 @@ Every XMLTV `display-name` is the provider’s official channel name unless an e
 
 ### Sky Germany via MagentaTV
 
-The Germany scope is limited to the 29 current Sky Sport and Sky Sport Bundesliga services that MagentaTV’s anonymous public production guide exposes. The collector dynamically reads MagentaTV’s official channel directory on every refresh, requires all mapped services to return programme records, and exports the user-designated Sky channel-number IDs `sky_de.201`–`sky_de.230` (with no published channel 208). Each known German programme title is translated through the version-controlled local mapping; controlled sports vocabulary handles new routine titles, while a title that still contains unverified German causes the Sky source to fail rather than publish untranslated text. Sky Austria services are not published because the current public directory does not expose an unambiguous matching set.
+The Germany scope is limited to the 29 current Sky Sport and Sky Sport Bundesliga services that MagentaTV’s anonymous public production guide exposes. The collector dynamically reads MagentaTV’s official channel directory on every refresh, requires all mapped services to return programme records, and exports the user-designated Sky channel-number IDs `sky_de.201`–`sky_de.230` (with no published channel 208). Each German programme title is translated to English through the tiered pipeline described below; a title that cannot be translated skips that single programme instead of failing the Sky source. Sky Austria services are not published because the current public directory does not expose an unambiguous matching set.
 
 ### EE Sky Entertainment selection
 
@@ -54,7 +54,17 @@ The EE scope includes **Sky Mix, Sky Arts, Sky Witness, Sky Atlantic, Sky One, S
 
 The United States scope is intentionally restricted to potential future coverage for **ESPN, ESPN2, ESPNEWS, and ESPNU**. ABC, CBS, NBC, FOX, USA Network, and every other US network are excluded. DIRECTV’s public guide confirms the four ESPN services but exposes only current-programme information; Spectrum’s detailed guide requires account and service-address access; and ESPN’s direct schedule does not offer stable per-channel end times. Consequently, **no ESPN records are currently published**. If a compliant guide becomes available, IDs will be provider-prefixed, for example `directv_espn`.
 
-**Eurosport 1, Eurosport 2 and Eurosport 4K** are published from Serbia’s normal anonymous SBB Public EPG as `eurosport.1`, `eurosport.2` and `eurosport.4k`. The source provides a channel directory plus programme titles, start times, and end times. Each Serbian source title is converted through version-controlled local deterministic rules; an unrecognised title fails the SBB source rather than being guessed or published untranslated.
+**Eurosport 1, Eurosport 2 and Eurosport 4K** are published from Serbia’s normal anonymous SBB Public EPG as `eurosport.1`, `eurosport.2` and `eurosport.4k`. The source provides a channel directory plus programme titles, start times, and end times. Each Serbian source title is converted to English through the tiered pipeline described below; a title that cannot be translated skips that single programme instead of failing the SBB source.
+
+### English translation
+
+Programme titles from non-English markets (Swedish, Norwegian, German, Romanian, Serbian) are published in English; Chinese titles from now TV Hong Kong are kept as-is. Translation runs inside each collector in three tiers:
+
+1. **Version-controlled exact mapping** in `src/epg_tool/sources.py` — curated deterministic rules per source.
+2. **Persistent translation memory** in `src/epg_tool/translation_cache.json` — every online translation is recorded here, so results are stable, auditable, and reused without another network call. The daily workflow commits this file, so the memory grows over time.
+3. **Online translation services** (Google, then MyMemory) for titles the first two tiers do not cover.
+
+A title that no tier can translate skips that single programme (recorded in `data/status.json` under the provider’s `notes`) instead of failing the whole source, so one new title can never wipe out a channel’s guide.
 
 ## Refresh and validation
 

@@ -23,9 +23,9 @@ from .sources import (
     collect_ee_uk_channels,
     collect_magenta_tv_sky_de,
     collect_now_hk,
-    collect_sbb_eurosport_4k,
-    collect_tvepg_eurosport_1,
+    collect_sbb_eurosport,
     collect_virgin_uk_ultra,
+    drain_notes,
 )
 
 DEFAULT_DATASET = Path("data/current_week.jsonl")
@@ -67,18 +67,22 @@ def _collect(args: argparse.Namespace) -> int:
         # Telekom MagentaTV 的匿名官方生产节目表；XMLTV ID 使用用户指定 Sky Germany 频道号。
         ("sky_de", lambda: collect_magenta_tv_sky_de(args.days)),
         ("digi4k_ro", lambda: collect_digi4k(args.days)),
-        # SBB Public EPG 一次认证后统一采集 Eurosport 1、2 和 4K，避免旧 TV+ 来源重复请求。
-        ("tvepg_eurosport", lambda: collect_tvepg_eurosport_1(args.days)),
-        ("sbb_rs", lambda: collect_sbb_eurosport_4k(args.days)),
+        # SBB Public EPG 一次认证后统一采集 Eurosport 1、2 和 4K。
+        ("sbb_rs", lambda: collect_sbb_eurosport(args.days)),
         ("virgin_uk", lambda: collect_virgin_uk_ultra(args.days)),
     )
     for provider, collector in collectors:
         try:
             result = collector()
             collected_by_provider[provider] = result
-            status[provider] = {"status": "ok", "records": len(result)}
+            entry: dict[str, object] = {"status": "ok", "records": len(result)}
+            notes = drain_notes()
+            if notes:
+                entry["notes"] = notes
+            status[provider] = entry
         except (SourceUnavailable, OSError, ValueError, requests.RequestException) as exc:
             fallback = previous_by_provider.get(provider, [])
+            drain_notes()  # 失败来源的 notes 不带入下一个来源
             if fallback:
                 collected_by_provider[provider] = fallback
                 status[provider] = {
@@ -101,7 +105,6 @@ def _collect(args: argparse.Namespace) -> int:
             "sky_de": ZoneInfo("Europe/Berlin"),
             "digi4k_ro": ZoneInfo("Europe/Bucharest"),
             "sbb_rs": ZoneInfo("Europe/Belgrade"),
-            "tvepg_eurosport": ZoneInfo("Europe/Zurich"),
             "virgin_uk": ZoneInfo("Europe/London"),
         }
 
@@ -262,7 +265,7 @@ def build_parser() -> argparse.ArgumentParser:
     search = commands.add_parser("search", help="检索已采集的节目表快照")
     search.add_argument("query", help="节目名或频道名关键词")
     search.add_argument("--input", type=Path, default=DEFAULT_DATASET)
-    search.add_argument("--provider", choices=["astro", "now_hk", "allente_se", "allente_no", "ee_uk", "canalplus_fr", "sky_de", "digi4k_ro", "tvplus_tr", "sbb_rs", "virgin_uk"])
+    search.add_argument("--provider", choices=["astro", "now_hk", "allente_se", "allente_no", "ee_uk", "sky_de", "digi4k_ro", "sbb_rs", "virgin_uk"])
     search.add_argument("--channel")
     search.add_argument("--date", help="节目开始日期，格式 YYYY-MM-DD")
     search.set_defaults(func=_search)
@@ -270,7 +273,7 @@ def build_parser() -> argparse.ArgumentParser:
     preview = commands.add_parser("preview", help="查看今天、明天、后天的节目预告（北京时间）")
     preview.add_argument("--input", type=Path, default=DEFAULT_DATASET)
     preview.add_argument("--day", choices=["today", "tomorrow", "day-after-tomorrow"], help="只查看其中一天；省略时输出三天")
-    preview.add_argument("--provider", choices=["astro", "now_hk", "allente_se", "allente_no", "ee_uk", "canalplus_fr", "sky_de", "digi4k_ro", "tvplus_tr", "sbb_rs", "virgin_uk"])
+    preview.add_argument("--provider", choices=["astro", "now_hk", "allente_se", "allente_no", "ee_uk", "sky_de", "digi4k_ro", "sbb_rs", "virgin_uk"])
     preview.add_argument("--channel")
     preview.set_defaults(func=_preview)
     return parser

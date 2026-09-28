@@ -17,6 +17,24 @@ from bs4 import BeautifulSoup
 import requests
 
 from .models import Programme, utc_now_iso
+from .translation_fallback import TitleUntranslatable, translate_programme_title
+
+# Per-run collector notes (renamed channels, skipped untranslatable programmes,
+# …).  Collected sequentially by cli.py, which drains them into status.json
+# after each provider so one provider's notes never leak into another's.
+_collector_notes: list[str] = []
+
+
+def note(message: str) -> None:
+    """Record a non-fatal observation for the current provider run."""
+    _collector_notes.append(message)
+
+
+def drain_notes() -> list[str]:
+    """Return and clear the notes recorded since the previous drain."""
+    notes = list(_collector_notes)
+    _collector_notes.clear()
+    return notes
 
 USER_AGENT = "Cathy-epg/0.2 (+https://github.com/waastudios/Cathy-epg; official-source-only research tool)"
 ASTRO_API = "https://contenthub-api.eco.astro.com.my/api/v2/search-linear"
@@ -87,7 +105,8 @@ EE_UK_CHANNELS: tuple[tuple[str, str, str], ...] = (
     ("423", "Sky Sports Golf", "http://bds.tv/services/BT_750598_1322_SD"),
     ("424", "Sky Sports F1", "http://bds.tv/services/BT_759963_1306_SD"),
     ("425", "Sky Sports Tennis", "http://bds.tv/services/BT_RBM63515_1284_SD"),
-    ("426", "Sky Sports Action", "http://bds.tv/services/BT_397065_1333_SD"),
+    # 2026-09 起官方服务名由 Sky Sports Action 改为 Sky Sports NFL；定位符未变。
+    ("426", "Sky Sports NFL", "http://bds.tv/services/BT_397065_1333_SD"),
     ("427", "Sky Sports +", "http://bds.tv/services/BT_771051_3839_SD"),
     ("428", "Sky Sports Racing", "http://bds.tv/services/BT_751621_1354_SD"),
     ("429", "Sky Sports Mix", "http://bds.tv/services/BT_770332_4091_SD"),
@@ -118,17 +137,19 @@ EE_UK_CHANNELS: tuple[tuple[str, str, str], ...] = (
     ("354", "Sky Nature", "http://bds.tv/services/BT_772168_1194_SD"),
 )
 DIGI4K_GUIDE = "https://www.digi4k.ro/"
-TVPLUS_EUROSPORT_1_GUIDE = "https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-1-hd--77"
-TVPLUS_EUROSPORT_2_GUIDE = "https://tvplus.com.tr/canli-tv/yayin-akisi/eurosport-2-hd--106"
 # SBB 是塞尔维亚的授权付费电视服务商；以下端点由其匿名 Public EPG 页面正常加载。
 SBB_PUBLIC_EPG_GUIDE = "https://epg.sbb.rs/"
 SBB_PUBLIC_API = "https://api-web.ug-be.cdn.united.cloud"
 SBB_COMMUNITY_ID = "1"
 SBB_LANGUAGE_ID = "404"
-SBB_EUROSPORT_4K_CHANNEL_ID = "1082"
-SBB_EUROSPORT_4K_CHANNEL_NUMBER = "123"
-SBB_EUROSPORT_4K_SOURCE_NAME = "Eurosport 4K IPTV"
-SBB_EUROSPORT_4K_NAME = "Eurosport 4K"
+# SBB 频道目录实测：Eurosport 1 = 84（"Eurosport 1 HD (RS)"），
+# Eurosport 2 = 85（"Eurosport 2 HD (RS)"），Eurosport 4K = 1082。
+# 元组：(官方源名, 目录位置, XMLTV ID, 展示名)。
+SBB_EUROSPORT_CHANNELS: dict[str, tuple[str, str, str, str]] = {
+    "84": ("Eurosport 1 HD (RS)", "121", "eurosport.1", "Eurosport 1"),
+    "85": ("Eurosport 2 HD (RS)", "122", "eurosport.2", "Eurosport 2"),
+    "1082": ("Eurosport 4K IPTV", "123", "eurosport.4k", "Eurosport 4K"),
+}
 # Virgin Media TV Go Guide 在普通匿名页面会话中加载以下官方频道目录与 EPG 时间片。
 VIRGIN_UK_GUIDE = "https://virgintvgo.virginmedia.com/en/epg/initial"
 VIRGIN_UK_CHANNELS = (
@@ -232,16 +253,16 @@ _SKY_DE_UNTRANSLATED = re.compile(
 )
 
 
-def _translate_magenta_tv_sky_de_title(title: str) -> str:
+def _translate_magenta_tv_sky_de_title(title: str) -> str | None:
     """将已收录 Sky Germany 节目标题稳定转换为英文。
 
     优先使用随代码版本控制的精确映射；对未出现过但仅含受控体育词汇的标题
-    使用固定替换。若仍检测到未覆盖的德语，整个 Sky 来源失败而非发布原文，
-    以便在下一次代码更新中显式审校并固定新翻译。
+    使用固定替换。返回 None 表示标题未被受控规则覆盖，调用方将转入
+    翻译记忆／在线翻译。
     """
     normalised = unicodedata.normalize("NFC", re.sub(r"\s+", " ", title.strip()))
     if not normalised:
-        raise SourceUnavailable("MagentaTV Sky Germany 官方节目对象缺少可翻译的标题。")
+        return None
     translated = SKY_DE_TITLE_TRANSLATIONS.get(normalised)
     if translated:
         return translated
@@ -252,9 +273,9 @@ def _translate_magenta_tv_sky_de_title(title: str) -> str:
     translated = re.sub(r"\b(\d+)\.\s*Runde\b", r"\1 Round", translated)
     translated = re.sub(r"\s+", " ", translated).strip()
     if translated == normalised:
-        raise SourceUnavailable(f"MagentaTV Sky Germany 标题不在已审校的英文映射或受控词汇范围内：{title!r}")
+        return None
     if _SKY_DE_UNTRANSLATED.search(translated):
-        raise SourceUnavailable(f"MagentaTV Sky Germany 标题未获得可验证的英文转换：{title!r}")
+        return None
     return translated
 
 
@@ -416,17 +437,17 @@ _ALLENTE_SE_TITLE_EXACT: dict[str, str] = {
 }
 
 
-def _translate_allente_se_title(title: str) -> str:
+def _translate_allente_se_title(title: str) -> str | None:
     """将 Allente Sweden V Sport 官方节目标题转换为可验证的英文。
 
     此函数在每次瑞典 V Sport 采集时对每个官方节目对象调用。仅进行受控的
-    赛事、演播室节目和官方地名转换；未覆盖的瑞典语残留会使来源失败，避免
-    在 XMLTV 中发布瑞典语标题。瑞典语以外的官方专有名词（例如德国或挪威
-    队名）保持原样。
+    赛事、演播室节目和官方地名转换；返回 None 表示标题未被受控规则覆盖，
+    调用方将转入翻译记忆／在线翻译。瑞典语以外的官方专有名词（例如德国或
+    挪威队名）保持原样。
     """
     normalised = unicodedata.normalize("NFC", re.sub(r"\s+", " ", title.strip()))
     if not normalised:
-        raise SourceUnavailable("Allente Sweden 官方节目对象缺少可翻译的标题。")
+        return None
     if normalised in _ALLENTE_SE_TITLE_EXACT:
         return _ALLENTE_SE_TITLE_EXACT[normalised]
 
@@ -455,7 +476,7 @@ def _translate_allente_se_title(title: str) -> str:
         flags=re.IGNORECASE,
     )
     if untranslated:
-        raise SourceUnavailable(f"Allente Sweden 标题未获得可验证的英文转换：{title!r}")
+        return None
     return translated
 
 
@@ -482,7 +503,11 @@ def collect_allente_v_sport(days: int = 7, pause_seconds: float = 0.25) -> list[
             channel_name = ALLENTE_V_SPORT_CHANNELS[channel_id][0]
             for item in channel.get("programs", []):
                 source_title = (item.get("title") or "").strip()
-                title = _translate_allente_se_title(source_title)
+                try:
+                    title = translate_programme_title(source_title, "sv", _translate_allente_se_title)
+                except TitleUntranslatable:
+                    note(f"Allente Sweden {channel_id} 跳过无法翻译的标题：{source_title!r}")
+                    continue
                 start = item.get("eventStart")
                 end = item.get("eventEnd")
                 if not (title and start and end):
@@ -519,16 +544,17 @@ _ALLENTE_NO_TITLE_EXACT: dict[str, str] = {
 }
 
 
-def _translate_allente_no_title(title: str) -> str:
+def _translate_allente_no_title(title: str) -> str | None:
     """将 Allente Norway 官方节目标题转换成可验证的英文。
 
     此函数在每一次挪威频道采集时对每个官方节目对象调用。只进行赛事类别、
     节目正式名称和明确节目属性的受控转换，不添加选手、比分、场地或其他原始
-    页面未提供的细节。若检测到未覆盖的挪威语，来源明确失败而不发布原文。
+    页面未提供的细节。返回 None 表示标题未被受控规则覆盖，调用方将转入
+    翻译记忆／在线翻译。
     """
     normalised = re.sub(r"\s+", " ", title.strip())
     if not normalised:
-        raise SourceUnavailable("Allente Norway 官方节目对象缺少可翻译的标题。")
+        return None
     if normalised in _ALLENTE_NO_TITLE_EXACT:
         return _ALLENTE_NO_TITLE_EXACT[normalised]
 
@@ -634,14 +660,15 @@ def _translate_allente_no_title(title: str) -> str:
     translated = re.sub(r"\s+", " ", translated).strip()
 
     # Norwegian letters and common unambiguous Norwegian programme/sport terms must never
-    # silently enter XMLTV. The source fails so the daily workflow records the issue instead.
+    # silently enter XMLTV.  Titles that still carry them fall through to the
+    # translation memory / online translation instead of failing the source.
     untranslated = re.search(
         r"[æøåÆØÅ]|\b(?:Alpint|Alle|Angrip|Bagasjekrigen|Danskebåten|Direkte|Ditt|E-sport|EM|Etappe|Fabelaktig|FedExCup-kavalkaden|Først|Fotball|Friidrett|Hest|Hestesport|Husdrøm|Husfikserne|Håndball|Helgens|Hjertesorg|Hvordan|Ildere|Ishockey|Kongen|Kvinner|Langrenn|Lottomillionærenes|Løpet|Maraton|Menn|Mor|Nabo|Norge|Norske|Norsk|Nå|Renoveringsdrømmer|Ringenes|Samveldelekene|Seiling|Skiskyting|Skuddveksling|Svømming|Sykkel|Svenske|Terrengsykkel|Triatlon|Veiens|Verdenscup|Verdenscupåpning|VM|øyliv|spesial|tegnspråktolket|timer|ukers)\b",
         translated,
         flags=re.IGNORECASE,
     )
     if untranslated:
-        raise SourceUnavailable(f"Allente Norway 标题未获得可验证的英文转换：{title!r}")
+        return None
     return translated
 
 
@@ -671,7 +698,11 @@ def collect_allente_no(days: int = 7, pause_seconds: float = 0.25) -> list[Progr
             channel_name = ALLENTE_NO_CHANNELS[channel_id][0]
             for item in channel.get("programs", []):
                 source_title = str(item.get("title") or "")
-                title = _translate_allente_no_title(source_title)
+                try:
+                    title = translate_programme_title(source_title, "no", _translate_allente_no_title)
+                except TitleUntranslatable:
+                    note(f"Allente Norway {channel_id} 跳过无法翻译的标题：{source_title!r}")
+                    continue
                 start = item.get("eventStart")
                 end = item.get("eventEnd")
                 if not (title and start and end):
@@ -723,6 +754,9 @@ def collect_ee_uk_channels(days: int = 7, pause_seconds: float = 0.02) -> list[P
 
     for channel_number, channel_name, service_locator in EE_UK_CHANNELS:
         channel_records = 0
+        # 官方偶尔会重命名服务；采用接口返回的官方名并记录，避免单个改名
+        # 让整个 EE 来源失败。
+        resolved_name = channel_name
         for interval_start in intervals:
             interval_token = interval_start.strftime("%Y-%m-%dT%HZ/PT12H")
             response = session.get(
@@ -744,10 +778,12 @@ def collect_ee_uk_channels(days: int = 7, pause_seconds: float = 0.02) -> list[P
                 service_name = ((item.get("serviceSummary") or {}).get("fullName") or "").strip()
                 if not (title and isinstance(published_start, str)):
                     continue
-                if service_name and service_name != channel_name:
-                    raise SourceUnavailable(
-                        f"EE TV Player 服务定位符 {service_locator} 返回了意外频道名 {service_name!r}。"
+                if service_name and service_name != resolved_name:
+                    note(
+                        f"EE TV Player 服务定位符 {service_locator} 的官方频道名"
+                        f"为 {service_name!r}（配置为 {resolved_name!r}），已采用官方名继续采集。"
                     )
+                    resolved_name = service_name
                 try:
                     start = datetime.fromisoformat(published_start.replace("Z", "+00:00")).astimezone(zone)
                 except ValueError:
@@ -762,7 +798,7 @@ def collect_ee_uk_channels(days: int = 7, pause_seconds: float = 0.02) -> list[P
                         timezone="Europe/London",
                         channel_id=channel_number,
                         channel_number=channel_number,
-                        channel_name=channel_name,
+                        channel_name=resolved_name,
                         title=title,
                         start_at=start.isoformat(),
                         end_at=end_at,
@@ -827,16 +863,16 @@ _DIGI4K_TITLE_EXACT: dict[str, str] = {
 }
 
 
-def _translate_digi4k_title(title: str) -> str:
+def _translate_digi4k_title(title: str) -> str | None:
     """将 Digi 4K 官网的罗马尼亚语节目标题转换为可验证的英文。
 
     此函数在每次 Digi 4K 采集时对每个官方标题调用。仅使用受控的节目名称、
-    集数标签和球队名称转换；无法明确转换的罗马尼亚语标题会使该来源失败，
-    从而避免在 XMLTV 中发布罗马尼亚语残留。
+    集数标签和球队名称转换；返回 None 表示标题未被受控规则覆盖，调用方将
+    转入翻译记忆／在线翻译。
     """
     normalised = unicodedata.normalize("NFC", re.sub(r"\s+", " ", title.strip()))
     if not normalised:
-        raise SourceUnavailable("Digi 4K 官方节目对象缺少可翻译的标题。")
+        return None
 
     # The official page appends Romanian episode labels after a vertical bar.
     base, separator, suffix = normalised.partition("|")
@@ -860,7 +896,7 @@ def _translate_digi4k_title(title: str) -> str:
         else:
             matched = re.fullmatch(r"ep\.\s*(\d+)", episode, flags=re.IGNORECASE)
             if not matched:
-                raise SourceUnavailable(f"Digi 4K 标题包含未识别的集数标签：{title!r}")
+                return None
             translated = f"{translated} — Episode {matched.group(1)}"
 
     translated = re.sub(r"\s+", " ", translated).strip()
@@ -870,7 +906,7 @@ def _translate_digi4k_title(title: str) -> str:
         flags=re.IGNORECASE,
     )
     if untranslated:
-        raise SourceUnavailable(f"Digi 4K 标题未获得可验证的英文转换：{title!r}")
+        return None
     return translated
 
 
@@ -900,8 +936,14 @@ def collect_digi4k(days: int = 7) -> list[Programme]:
             row = mark.find_parent("div", class_=lambda classes: classes and "flex" in classes)
             title_node = row.select_one("h3") if row else None
             source_title = title_node.get_text(" ", strip=True) if title_node else ""
-            if start_time and source_title:
-                raw_items.append((start_time, _translate_digi4k_title(source_title)))
+            if not (start_time and source_title):
+                continue
+            try:
+                title = translate_programme_title(source_title, "ro", _translate_digi4k_title)
+            except TitleUntranslatable:
+                note(f"Digi 4K 跳过无法翻译的标题：{source_title!r}")
+                continue
+            raw_items.append((start_time, title))
         if not raw_items:
             continue
         schedule_day = today + timedelta(days=day_offset)
@@ -934,220 +976,7 @@ def collect_digi4k(days: int = 7) -> list[Programme]:
     return _deduplicate(records)
 
 
-def _tvplus_playbills_from_html(html: str) -> list[dict[str, Any]]:
-    """从 TV+ 官方 SSR 页面内嵌的 Next 数据块读取当日节目对象。"""
-    matcher = re.compile(r'self\.__next_f\.push\(\[1,("(?:\\.|[^"\\])*")\]\)')
-    decoder = json.JSONDecoder()
-    marker = '"initialData":{"playbills":'
-    for matched in matcher.finditer(html):
-        try:
-            chunk = json.loads(matched.group(1))
-        except json.JSONDecodeError:
-            continue
-        position = chunk.find(marker)
-        if position < 0:
-            continue
-        try:
-            playbills, _ = decoder.raw_decode(chunk[position + len(marker) :])
-        except json.JSONDecodeError:
-            continue
-        if isinstance(playbills, list):
-            return [item for item in playbills if isinstance(item, dict)]
-    return []
-
-
-_TVPLUS_EUROSPORT_TITLE_EXACT: dict[str, str] = {
-    "Wuhan Açık": "Wuhan Open",
-    "Tırmanış Dünya Serisi": "Climbing World Series",
-    "Dünya Motocross Şampiyonası": "Motocross World Championship",
-    "2026 Avrupa BMX Şampiyonası": "2026 European BMX Championship",
-    "Dünya Formula E Şampiyonası": "Formula E World Championship",
-    "Dünya Binicilik Şampiyonası": "Equestrian World Championship",
-    "UCI Dağ Bisikleti Dünya Serisi": "UCI Mountain Bike World Series",
-}
-
-
-def _translate_tvplus_eurosport_title(title: str) -> str:
-    """将 TV+ 官方土耳其语 Eurosport 标题转换成赛事语义准确的英文。
-
-    该转换在每次 TV+ 刷新时逐条执行。它只翻译公开标题中可明确识别的
-    赛事、运动项目与阶段，不补充选手、比分、场地或未由官方页面提供的细节。
-    已是英语或国际赛事正式名称的内容保持原样。
-    """
-    normalised = re.sub(r"\s*,\s*", ", ", title.strip())
-    normalised = re.sub(r"\s+", " ", normalised)
-    if not normalised:
-        raise SourceUnavailable("TV+ Eurosport 官方节目对象缺少可翻译的标题。")
-    if normalised in _TVPLUS_EUROSPORT_TITLE_EXACT:
-        return _TVPLUS_EUROSPORT_TITLE_EXACT[normalised]
-
-    stage_match = re.fullmatch(r"(.+?),?\s*(\d+)\.\s*Etap", normalised, flags=re.IGNORECASE)
-    if stage_match:
-        event = stage_match.group(1).strip()
-        # 官方标题偶有不带重音的 España；统一为国际赛事常用英文拼写。
-        event = re.sub(r"La Vuelta a Espana", "La Vuelta a España", event, flags=re.IGNORECASE)
-        return f"{event}, Stage {stage_match.group(2)}"
-
-    replacements = (
-        ("UCI Dağ Bisikleti Dünya Serisi", "UCI Mountain Bike World Series"),
-        ("Dağ Bisikleti Dünya Serisi", "Mountain Bike World Series"),
-        ("Dünya Formula E Şampiyonası", "Formula E World Championship"),
-        ("Dünya Binicilik Şampiyonası", "Equestrian World Championship"),
-        ("Avrupa BMX Şampiyonası", "European BMX Championship"),
-        ("Dünya Superbike Şampiyonası", "Superbike World Championship"),
-        ("Dünya Ralli Şampiyonası", "World Rally Championship"),
-        ("Dünya Dayanıklılık Şampiyonası", "World Endurance Championship"),
-        ("Dünya Şampiyonası", "World Championship"),
-        ("Avrupa Şampiyonası", "European Championship"),
-        ("Tırmanış Dünya Serisi", "Climbing World Series"),
-        ("Dünya Motocross Şampiyonası", "Motocross World Championship"),
-        ("Yarı Final", "Semi-final"),
-        ("Final", "Final"),
-        ("Erkekler", "Men"),
-        ("Kadınlar", "Women"),
-        ("Açık", "Open"),
-        ("Etap", "Stage"),
-        ("Tur", "Round"),
-    )
-    translated = normalised
-    for source, target in replacements:
-        translated = translated.replace(source, target)
-    # 不能保证语义准确的残余土耳其语不能静默进入 XMLTV；让来源在状态中明确失败，
-    # 而不是发布用户无法使用的原文标题。已覆盖赛事会通过此门槛。
-    untranslated = re.search(
-        r"[çğıöşüÇĞİÖŞÜ]|\\b(?:Açık|Avrupa|Binicilik|Bisikleti|Bölüm|Canlı|Dağ|Dünya|Erkekler|Etap|Kadınlar|Sezon|Serisi|Şampiyonası|Tekrar|Tırmanış|Tur|Yarı|Özet)\\b",
-        translated,
-    )
-    if untranslated:
-        raise SourceUnavailable(f"TV+ Eurosport 标题未获得可验证的英文转换：{title!r}")
-    return translated
-
-
-def collect_tvplus_eurosport(days: int = 7) -> list[Programme]:
-    """读取土耳其 TV+（官方电视提供商）公开的 Eurosport 1/2 节目页。
-
-    TV+ 的后续日期在匿名网页会话中动态加载。公开 SSR 页稳定提供当日完整
-    `starttime`/`endtime` 表；当匿名会话接口无法由普通 HTTP 客户端合规重放时，
-    本采集器仅发布已公开的当日条目，不伪造未来节目。每个官方土耳其语标题都
-    经过赛事语义英文转换后写入 XMLTV。
-    """
-    session = _session()
-    zone = ZoneInfo("Europe/Istanbul")
-    retrieved_at = utc_now_iso()
-    definitions = (
-        ("77", "Eurosport 1", TVPLUS_EUROSPORT_1_GUIDE),
-        ("106", "Eurosport 2", TVPLUS_EUROSPORT_2_GUIDE),
-    )
-    records: list[Programme] = []
-    for channel_id, channel_name, source_url in definitions:
-        response = session.get(source_url, timeout=30)
-        response.raise_for_status()
-        playbills = _tvplus_playbills_from_html(response.text)
-        if not playbills:
-            raise SourceUnavailable(f"TV+ 官方 {channel_name} 页面未返回可识别的当日节目数据。")
-        for item in playbills:
-            # 每一个来自官方 ``playbills`` 的节目对象都必须先经过翻译函数；
-            # 空标题或残余无法验证的土耳其语会抛出 SourceUnavailable，绝不跳过或原样发布。
-            source_title = str(item.get("name") or "")
-            title = _translate_tvplus_eurosport_title(source_title)
-            start_ms = item.get("starttime")
-            end_ms = item.get("endtime")
-            if not (title and isinstance(start_ms, (int, float)) and isinstance(end_ms, (int, float))):
-                continue
-            records.append(
-                Programme(
-                    provider="tvplus_tr",
-                    country="TR",
-                    timezone="Europe/Istanbul",
-                    channel_id=channel_id,
-                    channel_number=channel_id,
-                    channel_name=channel_name,
-                    title=title,
-                    start_at=datetime.fromtimestamp(start_ms / 1000, tz=zone).isoformat(),
-                    end_at=datetime.fromtimestamp(end_ms / 1000, tz=zone).isoformat(),
-                    source_url=source_url,
-                    retrieved_at=retrieved_at,
-                )
-            )
-    if not records:
-        raise SourceUnavailable("TV+ 官方 Eurosport 1/2 页面没有可发布的节目记录。")
-    return _deduplicate(records)
-
-
-TVEPG_EUROSPORT_1_GUIDE = "https://tvepg.eu/en/switzerland/channel/eurosport-1-e"
-
-
-def _tvepg_eurosport_programmes_from_html(html: str, target_date: date) -> list[tuple[datetime, str]]:
-    """解析 TVEpg Eurosport 1 指定日期页面的公开节目锚点。"""
-    soup = BeautifulSoup(html, "html.parser")
-    current_date: date | None = None
-    rows: list[tuple[datetime, str]] = []
-    for element in soup.find_all(["h1", "h2", "h3", "h4", "h5", "h6", "a"]):
-        text = re.sub(r"\\s+", " ", element.get_text(" ", strip=True))
-        matched_day = re.match(r"^(?:Today|Tomorrow)\\s*-\\s*(\\d{2})/(\\d{2})/(\\d{4})\\s*-", text, re.IGNORECASE)
-        if matched_day:
-            current_date = date(int(matched_day.group(3)), int(matched_day.group(2)), int(matched_day.group(1)))
-            continue
-        if current_date != target_date or element.name != "a":
-            continue
-        matched = re.match(r"^(\\d{2}):(\\d{2})\\s+(.+?)\\s*$", text)
-        if not matched:
-            continue
-        hour, minute = int(matched.group(1)), int(matched.group(2))
-        title = matched.group(3).strip()
-        if not title:
-            continue
-        href = element.get("href") or ""
-        if "eurosport-1-e" not in href:
-            continue
-        rows.append((datetime.combine(target_date, clock_time(hour, minute), tzinfo=ZoneInfo("Europe/Zurich")), title))
-    deduped: list[tuple[datetime, str]] = []
-    seen: set[tuple[datetime, str]] = set()
-    for row in rows:
-        if row not in seen:
-            seen.add(row)
-            deduped.append(row)
-    return sorted(deduped)
-
-
-def collect_tvepg_eurosport_1(days: int = 7) -> list[Programme]:
-    """读取 TVEpg.eu Switzerland 的 Eurosport 1 E 公开节目表，替代旧 Eurosport 1 来源。"""
-    if days not in range(1, 8):
-        raise ValueError("TVEpg Eurosport 1 采集天数必须为 1–7。")
-    session = _session()
-    zone = ZoneInfo("Europe/Zurich")
-    today = datetime.now(zone).date()
-    retrieved_at = utc_now_iso()
-    records: list[Programme] = []
-    for offset in range(days):
-        target_date = today + timedelta(days=offset)
-        url = f"https://tvepg.eu/en/switzerland/channel/eurosport-1-e/{target_date.isoformat()}"
-        response = session.get(url, timeout=30)
-        response.raise_for_status()
-        programmes = _tvepg_eurosport_programmes_from_html(response.text, target_date)
-        for index, (start, title) in enumerate(programmes):
-            end = programmes[index + 1][0] if index + 1 < len(programmes) else start + timedelta(hours=2)
-            if end <= start:
-                continue
-            records.append(Programme(
-                provider="tvepg_eurosport",
-                country="CH",
-                timezone="Europe/Zurich",
-                channel_id="eurosport.1",
-                channel_number="eurosport.1",
-                channel_name="Eurosport 1",
-                title=title,
-                start_at=start.isoformat(),
-                end_at=end.isoformat(),
-                source_url=url,
-                retrieved_at=retrieved_at,
-            ))
-    if not records:
-        raise SourceUnavailable("TVEpg.eu Eurosport 1 页面未返回可识别的节目记录。")
-    return _deduplicate(records)
-
-
-_SBB_EUROSPORT_4K_TITLE_EXACT: dict[str, str] = {
+_SBB_EUROSPORT_TITLE_EXACT: dict[str, str] = {
     "Discovery Golf": "Discovery Golf",
     "Magazin: Cycling Show": "Magazine: Cycling Show",
     "NFL Hard Knocks": "NFL Hard Knocks",
@@ -1155,23 +984,26 @@ _SBB_EUROSPORT_4K_TITLE_EXACT: dict[str, str] = {
 }
 
 
-def _translate_sbb_eurosport_4k_title(title: str) -> str:
-    """把 SBB 公共 EPG 的塞尔维亚语 Eurosport 4K 标题转换为可审计英文。
+def _translate_sbb_eurosport_title(title: str) -> str | None:
+    """把 SBB 公共 EPG 的塞尔维亚语 Eurosport 标题转换为可审计英文。
 
-    仅转换明确的运动、赛事、地点、性别与阶段标记；不能可靠确认的词会令整个
-    来源失败，避免向 XMLTV 写入未经验证的英语细节或原文残余。
+    三个 Eurosport 频道（Eurosport 1/2/4K）共用同一翻译规则。仅转换明确的
+    运动、赛事、地点、性别与阶段标记；返回 None 表示标题未被受控规则覆盖，
+    调用方将转入翻译记忆／在线翻译。
     """
     normalised = re.sub(r"\s*,\s*", ", ", title.strip())
     normalised = re.sub(r"\s+", " ", normalised)
     if not normalised:
-        raise SourceUnavailable("SBB Eurosport 4K 官方节目对象缺少可翻译的标题。")
-    if normalised in _SBB_EUROSPORT_4K_TITLE_EXACT:
-        return _SBB_EUROSPORT_4K_TITLE_EXACT[normalised]
+        return None
+    if normalised in _SBB_EUROSPORT_TITLE_EXACT:
+        return _SBB_EUROSPORT_TITLE_EXACT[normalised]
 
     translated = normalised
     replacements = (
         ("Brdski biciklizam", "Mountain Biking"),
         ("Biciklizam", "Cycling"),
+        ("Drumska trka", "Road Race"),
+        ("drumska trka", "road race"),
         ("Jedrenje", "Sailing"),
         ("Konjički sport", "Equestrian"),
         ("Skakanje", "Jumping"),
@@ -1187,6 +1019,11 @@ def _translate_sbb_eurosport_4k_title(title: str) -> str:
         ("Meksiko Siti", "Mexico City"),
         ("Majami", "Miami"),
         ("Džeda", "Jeddah"),
+        ("Endurance auto trka", "Endurance car race"),
+        ("auto trka", "car race"),
+        ("sati Fudžija", "hours of Fuji"),
+        ("Fudžija", "Fuji"),
+        ("Le Mana", "Le Mans"),
         ("Etapa", "Stage"),
         ("Pregled", "Highlights"),
         ("pregled", "Highlights"),
@@ -1205,13 +1042,16 @@ def _translate_sbb_eurosport_4k_title(title: str) -> str:
         translated = translated.replace(source, target)
     translated = re.sub(r"\b1\s*4 finals\b", "Quarter-finals", translated)
     translated = re.sub(r"\b1\s*2 finals\b", "Semi-finals", translated)
+    # "6 sati" / "24 sata" 都是"小时"的塞尔维亚语形式；用词边界替换避免误伤。
+    translated = re.sub(r"\bsati\b", "hours", translated)
+    translated = re.sub(r"\bsata\b", "hours", translated)
     translated = re.sub(r"\s+", " ", translated).strip(" ,")
     untranslated = re.search(
         r"[čćđšžČĆĐŠŽ]|\b(?:Ahen|Biciklizam|Brdski|Dubl|Etapa|finala|Jedrenje|Konjički|Majami|Meksiko|Mešovito|Pregled|pregled|Runda|Skakanje|Snuker|Spust|Svetski|Svetsko|Šampionat|Tenis|Triatlon|Tur|Žene|Muškarci)\b",
         translated,
     )
     if untranslated:
-        raise SourceUnavailable(f"SBB Eurosport 4K 标题未获得可验证的英文转换：{title!r}")
+        return None
     return translated
 
 
@@ -1261,15 +1101,18 @@ def _sbb_events(payload: Any) -> list[dict[str, Any]]:
     return []
 
 
-def collect_sbb_eurosport_4k(days: int = 7) -> list[Programme]:
-    """读取 SBB Public EPG 中 Eurosport 4K IPTV 的匿名公开周排期。
+def collect_sbb_eurosport(days: int = 7) -> list[Programme]:
+    """读取 SBB Public EPG 中 Eurosport 1/2/4K 的匿名公开周排期。
 
     SBB 的普通 Public EPG 页面为每次页面加载新建匿名应用令牌。本采集器每次
     运行都重新获取该公开页面所需令牌，并只在进程内存使用；不保存、重放或读取
-    用户登录、Cookie、订阅或播放权限。所有标题均须通过严格英文转换。
+    用户登录、Cookie、订阅或播放权限。
+
+    三个 Eurosport 频道一次采集完成；单个频道目录漂移或单个标题无法翻译只会
+    跳过该频道／该节目并记入 notes，不会让整个 SBB 来源失败。
     """
     if days not in range(1, 8):
-        raise ValueError("SBB Eurosport 4K 采集天数必须为 1–7。")
+        raise ValueError("SBB Eurosport 采集天数必须为 1–7。")
     session = _sbb_public_epg_session()
     common_params = {"communityId": SBB_COMMUNITY_ID, "languageId": SBB_LANGUAGE_ID}
     directory_response = session.get(
@@ -1282,73 +1125,86 @@ def collect_sbb_eurosport_4k(days: int = 7) -> list[Programme]:
         directory = directory_response.json()
     except ValueError as exc:
         raise SourceUnavailable("SBB Public EPG 频道目录未返回 JSON。") from exc
-    channels = [
-        item for item in directory if isinstance(item, dict) and str(item.get("id")) == SBB_EUROSPORT_4K_CHANNEL_ID
-    ] if isinstance(directory, list) else []
-    if len(channels) != 1:
-        raise SourceUnavailable("SBB Public EPG 频道目录未返回唯一的 Eurosport 4K IPTV 服务。")
-    channel = channels[0]
-    if (channel.get("name") or "").strip() != SBB_EUROSPORT_4K_SOURCE_NAME:
-        raise SourceUnavailable("SBB Public EPG 的 Eurosport 4K IPTV 原始频道名发生变化。")
-    if str(channel.get("position")) != SBB_EUROSPORT_4K_CHANNEL_NUMBER:
-        raise SourceUnavailable("SBB Public EPG 的 Eurosport 4K IPTV 频道号发生变化。")
+    directory_items = directory if isinstance(directory, list) else []
 
     zone = ZoneInfo("Europe/Belgrade")
     today = datetime.now(zone).date()
-    start = datetime.combine(today, clock_time.min, tzinfo=zone).astimezone(timezone.utc)
-    end = datetime.combine(today + timedelta(days=days), clock_time.min, tzinfo=zone).astimezone(timezone.utc) - timedelta(seconds=1)
-    events_response = session.get(
-        f"{SBB_PUBLIC_API}/v1/public/events/epg",
-        params={
-            **common_params,
-            "cid": SBB_EUROSPORT_4K_CHANNEL_ID,
-            "fromTime": start.isoformat(),
-            "toTime": end.isoformat(),
-        },
-        timeout=30,
-    )
-    events_response.raise_for_status()
-    try:
-        events = _sbb_events(events_response.json())
-    except ValueError as exc:
-        raise SourceUnavailable("SBB Public EPG Eurosport 4K 排期未返回 JSON。") from exc
-    if not events:
-        raise SourceUnavailable("SBB Public EPG 未返回 Eurosport 4K IPTV 的节目条目。")
-
+    last_day = today + timedelta(days=days)
+    window_start = datetime.combine(today, clock_time.min, tzinfo=zone).astimezone(timezone.utc)
+    window_end = datetime.combine(last_day, clock_time.min, tzinfo=zone).astimezone(timezone.utc) - timedelta(seconds=1)
     retrieved_at = utc_now_iso()
     records: list[Programme] = []
-    for event in events:
-        source_title = str(event.get("title") or "")
-        title = _translate_sbb_eurosport_4k_title(source_title)
-        start_value = event.get("startTime")
-        end_value = event.get("endTime")
-        if not (isinstance(start_value, str) and isinstance(end_value, str)):
+
+    for channel_id, (source_name, position, xmltv_id, display_name) in SBB_EUROSPORT_CHANNELS.items():
+        matches = [
+            item for item in directory_items
+            if isinstance(item, dict) and str(item.get("id")) == channel_id
+        ]
+        if len(matches) != 1:
+            note(f"SBB Public EPG 频道目录未返回唯一的频道 {channel_id}（{display_name}），已跳过该频道。")
             continue
-        try:
-            event_start = datetime.fromisoformat(start_value.replace("Z", "+00:00")).astimezone(zone)
-            event_end = datetime.fromisoformat(end_value.replace("Z", "+00:00")).astimezone(zone)
-        except ValueError:
-            continue
-        if event_end <= event_start or not (today <= event_start.date() < today + timedelta(days=days)):
-            continue
-        records.append(
-            Programme(
-                provider="sbb_rs",
-                country="RS",
-                timezone="Europe/Belgrade",
-                channel_id=SBB_EUROSPORT_4K_CHANNEL_ID,
-                channel_number=SBB_EUROSPORT_4K_CHANNEL_ID,
-                channel_name=SBB_EUROSPORT_4K_NAME,
-                title=title,
-                start_at=event_start.isoformat(),
-                end_at=event_end.isoformat(),
-                source_url=SBB_PUBLIC_EPG_GUIDE,
-                retrieved_at=retrieved_at,
-            )
+        channel = matches[0]
+        actual_name = (channel.get("name") or "").strip()
+        if actual_name != source_name:
+            note(f"SBB 频道 {channel_id} 的官方名为 {actual_name!r}（配置为 {source_name!r}），已采用官方名继续采集。")
+        if str(channel.get("position")) != position:
+            note(f"SBB 频道 {channel_id}（{actual_name}）的目录位置发生变化，仍按频道 ID 继续采集。")
+
+        events_response = session.get(
+            f"{SBB_PUBLIC_API}/v1/public/events/epg",
+            params={
+                **common_params,
+                "cid": channel_id,
+                "fromTime": window_start.isoformat(),
+                "toTime": window_end.isoformat(),
+            },
+            timeout=30,
         )
+        events_response.raise_for_status()
+        try:
+            events = _sbb_events(events_response.json())
+        except ValueError as exc:
+            raise SourceUnavailable(f"SBB Public EPG 频道 {channel_id}（{display_name}）排期未返回 JSON。") from exc
+        if not events:
+            note(f"SBB Public EPG 未返回频道 {channel_id}（{display_name}）的节目条目，已跳过该频道。")
+            continue
+
+        for event in events:
+            source_title = str(event.get("title") or "")
+            try:
+                title = translate_programme_title(source_title, "sr", _translate_sbb_eurosport_title)
+            except TitleUntranslatable:
+                note(f"SBB {display_name} 跳过无法翻译的标题：{source_title!r}")
+                continue
+            start_value = event.get("startTime")
+            end_value = event.get("endTime")
+            if not (isinstance(start_value, str) and isinstance(end_value, str)):
+                continue
+            try:
+                event_start = datetime.fromisoformat(start_value.replace("Z", "+00:00")).astimezone(zone)
+                event_end = datetime.fromisoformat(end_value.replace("Z", "+00:00")).astimezone(zone)
+            except ValueError:
+                continue
+            if event_end <= event_start or not (today <= event_start.date() < last_day):
+                continue
+            records.append(
+                Programme(
+                    provider="sbb_rs",
+                    country="RS",
+                    timezone="Europe/Belgrade",
+                    channel_id=channel_id,
+                    channel_number=channel_id,
+                    channel_name=display_name,
+                    title=title,
+                    start_at=event_start.isoformat(),
+                    end_at=event_end.isoformat(),
+                    source_url=SBB_PUBLIC_EPG_GUIDE,
+                    retrieved_at=retrieved_at,
+                )
+            )
     records = _deduplicate(records)
     if not records:
-        raise SourceUnavailable("SBB Public EPG 未返回目标日期范围内可发布的 Eurosport 4K IPTV 节目。")
+        raise SourceUnavailable("SBB Public EPG 未返回目标日期范围内可发布的 Eurosport 节目。")
     return records
 
 
@@ -1604,7 +1460,11 @@ def collect_magenta_tv_sky_de(days: int = 7, pause_seconds: float = 0.05) -> lis
                     continue
                 program = listing.get("program")
                 source_title = (program.get("title") or "").strip() if isinstance(program, dict) else ""
-                title = _translate_magenta_tv_sky_de_title(source_title)
+                try:
+                    title = translate_programme_title(source_title, "de", _translate_magenta_tv_sky_de_title)
+                except TitleUntranslatable:
+                    note(f"MagentaTV Sky Germany {sky_number} 跳过无法翻译的标题：{source_title!r}")
+                    continue
                 start_ms = listing.get("startTime")
                 end_ms = listing.get("endTime")
                 if not (title and isinstance(start_ms, (int, float)) and isinstance(end_ms, (int, float))):
