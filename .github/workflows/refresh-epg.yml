@@ -50,6 +50,9 @@ jobs:
       - name: Rebuild compressed XMLTV snapshot
         run: gzip -9 -c data/epg.xml > data/epg.xml.gz
 
+      - name: Regenerate channel inventory
+        run: python scripts/generate_channels_md.py
+
       - name: Verify critical target channels before publishing
         run: |
           python - <<'PY'
@@ -100,7 +103,7 @@ jobs:
         run: |
           git config user.name "Cathy-epg refresh bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/current_week.jsonl data/epg.xml data/epg.xml.gz data/status.json src/epg_tool/translation_cache.json
+          git add data/current_week.jsonl data/epg.xml data/epg.xml.gz data/status.json src/epg_tool/translation_cache.json CHANNELS.md
           if git diff --cached --quiet; then
             echo "No programme-guide changes to publish."
             exit 0
