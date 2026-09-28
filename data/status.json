@@ -5,7 +5,7 @@
   },
   "now_hk": {
     "status": "ok",
-    "records": 4314
+    "records": 4286
   },
   "allente_se": {
     "status": "ok",
@@ -17,7 +17,7 @@
   },
   "ee_uk": {
     "status": "ok",
-    "records": 6829
+    "records": 6830
   },
   "sky_de": {
     "status": "ok",
@@ -33,27 +33,25 @@
   },
   "virgin_uk": {
     "status": "ok",
-    "records": 75
+    "records": 77
   },
   "player_pl": {
     "status": "ok",
     "records": 624
   },
   "canalplus_fr": {
-    "status": "ok",
+    "status": "stale",
     "records": 53,
-    "source": "tvepg.eu France Canal+ (fallback, ~2 days)",
-    "notes": [
-      "Canal+ 官方 API 不可用（HTTPSConnectionPool(host='hodor.canalplus.pro', port=443): Read timed out. (read timeout=20)），主频道回退到 tvepg.eu"
-    ]
+    "message": "403 Client Error: Forbidden for url: https://tvepg.eu/en/france/c/canal-plus",
+    "fallback": "previous_snapshot"
   },
   "xmltv": {
     "status": "ok",
     "channels": 163,
-    "programmes": 17667,
+    "programmes": 17642,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-09-28T17:29:56Z",
-  "total_records": 17667
+  "generated_at": "2026-09-28T18:07:48Z",
+  "total_records": 17642
 }
