@@ -1504,3 +1504,242 @@ def _deduplicate(records: list[Programme]) -> list[Programme]:
         key = (record.provider, record.channel_id, record.start_at, record.end_at or "", record.title)
         unique[key] = record
     return list(unique.values())
+
+
+# Player.pl 是波兰 TVN 集团的官方流媒体平台；其 playerapi 直播节目接口
+# 匿名可访问、无视地域限制。以下为用户指定的 5 个体育频道及其 live ID。
+PLAYER_PL_GUIDE = "https://player.pl/"
+PLAYER_PL_API = "https://player.pl/playerapi"
+# live ID -> (XMLTV ID, 展示名)
+PLAYER_PL_CHANNELS: dict[int, tuple[str, str]] = {
+    57615: ("eurosport1.pl", "Eurosport 1"),
+    57616: ("eurosport2.pl", "Eurosport 2"),
+    4890061: ("eurosport3.pl", "Eurosport 3"),
+    4890062: ("eurosport4.pl", "Eurosport 4"),
+    57594: ("ElevenSp.1", "Eleven Sports 1"),
+}
+
+
+def _translate_player_pl_title(title: str) -> str | None:
+    """把 Player.pl 的波兰语体育节目标题转换为可审计英文。
+
+    仅转换明确的运动、赛事、阶段与性别标记；返回 None 表示标题未被受控
+    规则覆盖，调用方将转入翻译记忆／在线翻译。
+    """
+    normalised = re.sub(r"\s+", " ", title.strip())
+    if not normalised:
+        return None
+
+    translated = normalised
+    replacements = (
+        # 整词组必须排在成分词之前，避免短词先替换破坏长词组。
+        ("Driftingowe Mistrzostwa Polski", "Polish Drifting Championship"),
+        ("Piłka nożna:", "Football:"),
+        ("Kolarstwo górskie:", "Mountain Biking:"),
+        ("Kolarstwo:", "Cycling:"),
+        ("Tenis:", "Tennis:"),
+        ("Snooker:", "Snooker:"),
+        ("Formuła 1:", "Formula 1:"),
+        ("Formuła 2:", "Formula 2:"),
+        ("Wyścigi samochodowe:", "Motorsport:"),
+        ("Żużel:", "Speedway:"),
+        ("Boks:", "Boxing:"),
+        ("MMA:", "MMA:"),
+        ("Siatkówka:", "Volleyball:"),
+        ("Koszykówka:", "Basketball:"),
+        ("Piłka ręczna:", "Handball:"),
+        ("Hokej:", "Hockey:"),
+        ("Narciarstwo:", "Skiing:"),
+        ("Lekkoatletyka:", "Athletics:"),
+        ("Pływanie:", "Swimming:"),
+        ("Golf:", "Golf:"),
+        ("Dart:", "Darts:"),
+        ("Igrzyska Olimpijskie:", "Olympic Games:"),
+        ("Letnie Igrzyska Olimpijskie", "Summer Olympic Games"),
+        ("Zimowe Igrzyska Olimpijskie", "Winter Olympic Games"),
+        ("Mistrzostwa świata", "World Championship"),
+        ("Mistrzostwa Europy", "European Championship"),
+        ("Mistrzostwa", "Championship"),
+        ("mistrzostwa", "championship"),
+        ("Puchar Świata", "World Cup"),
+        ("Zawody Pucharu Świata", "World Cup"),
+        ("mecz finałowy", "final"),
+        ("Mecz finałowy", "Final"),
+        ("półfinał", "semi-final"),
+        ("Półfinał", "Semi-final"),
+        ("ćwierćfinał", "quarter-final"),
+        ("Ćwierćfinał", "Quarter-final"),
+        ("Wyścig", "Race"),
+        ("wyścig", "race"),
+        ("Grand Prix", "Grand Prix"),
+        ("etap", "stage"),
+        ("Etap", "Stage"),
+        ("dzień", "day"),
+        ("Dzień", "Day"),
+        ("mężczyzn", "men's"),
+        ("kobiet", "women's"),
+        ("gra pojedyncza", "singles"),
+        ("gra podwójna", "doubles"),
+        ("Galeria Sław", "Hall of Fame"),
+        ("Skrót", "Highlights"),
+        ("skrót", "highlights"),
+        ("Magazyn", "Magazine"),
+        ("magazyn", "magazine"),
+        ("na żywo", "live"),
+        ("Na żywo", "Live"),
+        # 波兰语地名 → 英文通用名。
+        ("Monachium", "Munich"),
+        ("Mediolan", "Milan"),
+        ("Lipsk", "Leipzig"),
+        ("Paryż", "Paris"),
+        ("Rzym", "Rome"),
+        ("Londyn", "London"),
+        ("Madryt", "Madrid"),
+        ("Barcelona", "Barcelona"),
+        ("Pekin", "Beijing"),
+        ("Poznań", "Poznan"),
+        ("Poznaniu", "Poznan"),
+        ("Arnhem", "Arnhem"),
+        # 整词组优先（避免短词先替换破坏长词组）。
+        ("Driftingowe", "Drifting"),
+        ("driftingowe", "drifting"),
+        ("runda", "round"),
+        ("Runda", "Round"),
+        ("Polski", "Polish"),
+        ("Polskiej", "Polish"),
+        ("Polska", "Poland"),
+        # 时间表达。
+        ("godzinny", "hour"),
+        ("godzinna", "hour"),
+        ("godzinne", "hour"),
+        ("minutowy", "minute"),
+        ("minutowa", "minute"),
+        # 常见赛事词汇。
+        ("zjazd", "downhill"),
+        ("Zjazd", "Downhill"),
+        ("Turniej", "Tournament"),
+        ("turniej", "tournament"),
+        ("Wielkiej Brytanii", "of Great Britain"),
+        ("Wielka Brytania", "Great Britain"),
+        ("rozgrywki", "competition"),
+        ("Rozgrywki", "Competition"),
+        ("klasie", "class"),
+        ("klasy", "class"),
+    )
+    for source, target in replacements:
+        translated = translated.replace(source, target)
+    # 波兰语介词 "w"（= in/at）单独成词时替换。
+    translated = re.sub(r"\bw\b", "in", translated)
+    # 波兰语序数 "4. dzień" → "Day 4"。
+    translated = re.sub(
+        r"\b(\d+)\.\s+(day|stage|race|Day|Stage|Race)\b",
+        lambda m: f"{m.group(2).capitalize()} {m.group(1)}",
+        translated,
+    )
+    translated = re.sub(r"\s+", " ", translated).strip(" ,")
+    # 仍含波兰语变音符号或常见未覆盖波兰语词 → 交给翻译记忆／在线翻译。
+    untranslated = re.search(
+        r"[ąćęłńóśźżĄĆĘŁŃÓŚŹŻ]|\b(?:Piłka|Kolarstwo|Mistrzostwa|Zawody|mecz|wyścig|etap|dzień|sekret|sekrety|sukces|sukcesu|zjazd|Turniej|turniej|oraz|drużyna|podsumowanie|zapowiedź|relacja|studio|gość|goście)\b",
+        translated,
+        flags=re.IGNORECASE,
+    )
+    if untranslated:
+        return None
+    return translated
+
+
+def _player_pl_epg_request(session: requests.Session, live_ids: list[int], since_ms: int, till_ms: int) -> list[dict]:
+    """调用 Player.pl 公开 EPG 接口，返回原始节目列表。"""
+    params: list[tuple[str, object]] = [("platform", "BROWSER"), ("4K", "true")]
+    params += [("liveId[]", live_id) for live_id in live_ids]
+    params += [("since", since_ms), ("till", till_ms)]
+    query = "&".join(
+        f"{key}={value}" if key != "liveId[]" else "liveId[]=" + str(value)
+        for key, value in params
+    )
+    response = session.get(f"{PLAYER_PL_API}/product/live/epg/list?{query}", timeout=30)
+    response.raise_for_status()
+    try:
+        payload = response.json()
+    except ValueError as exc:
+        raise SourceUnavailable("Player.pl 公开 EPG 接口未返回 JSON。") from exc
+    if not isinstance(payload, list):
+        raise SourceUnavailable("Player.pl 公开 EPG 接口未返回节目列表。")
+    return payload
+
+
+def collect_player_pl(days: int = 7, pause_seconds: float = 0.4) -> list[Programme]:
+    """读取 Player.pl 匿名公开的 Eurosport 1–4 与 Eleven Sports 1 节目表。
+
+    接口按单日时间窗返回数据；波兰语标题经三级流水线（精确映射→翻译记忆→
+    在线 Google/MyMemory）转为英文，单条无法翻译只跳过该节目并记入 notes。
+    """
+    if days not in range(1, 8):
+        raise ValueError("Player.pl 采集天数必须为 1–7。")
+    session = _session()
+    session.headers.update({"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/126.0"})
+    zone = ZoneInfo("Europe/Warsaw")
+    today = datetime.now(zone).date()
+    retrieved_at = utc_now_iso()
+    records: list[Programme] = []
+
+    live_ids = list(PLAYER_PL_CHANNELS)
+    for day_offset in range(days):
+        day_start = datetime.combine(today + timedelta(days=day_offset), clock_time.min, tzinfo=zone)
+        since_ms = int(day_start.timestamp() * 1000)
+        till_ms = int((day_start + timedelta(days=1)).timestamp() * 1000)
+        programmes: list[dict] | None = None
+        last_error: Exception | None = None
+        for attempt in range(3):
+            try:
+                programmes = _player_pl_epg_request(session, live_ids, since_ms, till_ms)
+                break
+            except (requests.RequestException, SourceUnavailable) as exc:
+                last_error = exc
+                time.sleep(2 * (attempt + 1))
+        if programmes is None:
+            raise SourceUnavailable(f"Player.pl 公开 EPG 第 {day_offset + 1} 天请求失败（已重试 3 次）：{last_error}")
+        for item in programmes:
+            if not isinstance(item, dict):
+                continue
+            live = item.get("live") or {}
+            live_id = live.get("id")
+            if live_id not in PLAYER_PL_CHANNELS:
+                continue
+            xmltv_id, display_name = PLAYER_PL_CHANNELS[live_id]
+            source_title = (item.get("title") or "").strip()
+            if not source_title:
+                continue
+            try:
+                title = translate_programme_title(source_title, "pl", _translate_player_pl_title)
+            except TitleUntranslatable:
+                note(f"Player.pl {display_name} 跳过无法翻译的标题：{source_title!r}")
+                continue
+            try:
+                start = datetime.strptime(item["since"], "%Y-%m-%d %H:%M:%S").replace(tzinfo=zone)
+                end = datetime.strptime(item["till"], "%Y-%m-%d %H:%M:%S").replace(tzinfo=zone)
+            except (KeyError, ValueError, TypeError):
+                continue
+            records.append(
+                Programme(
+                    provider="player_pl",
+                    country="PL",
+                    timezone="Europe/Warsaw",
+                    channel_id=xmltv_id,
+                    channel_number=xmltv_id,
+                    channel_name=display_name,
+                    title=title,
+                    start_at=start.isoformat(),
+                    end_at=end.isoformat(),
+                    source_url=PLAYER_PL_GUIDE,
+                    retrieved_at=retrieved_at,
+                )
+            )
+        time.sleep(pause_seconds)
+
+    records = _deduplicate(records)
+    published = {record.channel_id for record in records}
+    missing = [xmltv_id for _, (xmltv_id, _) in PLAYER_PL_CHANNELS.items() if xmltv_id not in published]
+    if missing:
+        raise SourceUnavailable(f"Player.pl 公开 EPG 未返回频道 {', '.join(missing)} 的节目条目。")
+    return records

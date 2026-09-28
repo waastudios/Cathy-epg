@@ -23,6 +23,7 @@ from .sources import (
     collect_ee_uk_channels,
     collect_magenta_tv_sky_de,
     collect_now_hk,
+    collect_player_pl,
     collect_sbb_eurosport,
     collect_virgin_uk_ultra,
     drain_notes,
@@ -70,6 +71,8 @@ def _collect(args: argparse.Namespace) -> int:
         # SBB Public EPG 一次认证后统一采集 Eurosport 1、2 和 4K。
         ("sbb_rs", lambda: collect_sbb_eurosport(args.days)),
         ("virgin_uk", lambda: collect_virgin_uk_ultra(args.days)),
+        # Player.pl 匿名公开 EPG：Eurosport 1–4 与 Eleven Sports 1，波兰语标题译为英文。
+        ("player_pl", lambda: collect_player_pl(args.days)),
     )
     for provider, collector in collectors:
         try:
@@ -106,6 +109,7 @@ def _collect(args: argparse.Namespace) -> int:
             "digi4k_ro": ZoneInfo("Europe/Bucharest"),
             "sbb_rs": ZoneInfo("Europe/Belgrade"),
             "virgin_uk": ZoneInfo("Europe/London"),
+            "player_pl": ZoneInfo("Europe/Warsaw"),
         }
 
         def local_date(row: Programme, zone: ZoneInfo):

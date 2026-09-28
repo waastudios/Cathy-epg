@@ -5,7 +5,7 @@
   },
   "now_hk": {
     "status": "ok",
-    "records": 3847
+    "records": 3858
   },
   "allente_se": {
     "status": "ok",
@@ -37,11 +37,15 @@
   },
   "xmltv": {
     "status": "ok",
-    "channels": 156,
-    "programmes": 16370,
-    "xml_file": "data/epg.xml",
-    "gzip_file": "data/epg.xml.gz"
+    "channels": 161,
+    "programmes": 17005,
+    "xml_file": "/home/hatch/workspace/Cathy-epg/data/epg.xml",
+    "gzip_file": "/home/hatch/workspace/Cathy-epg/data/epg.xml.gz"
   },
-  "generated_at": "2026-09-28T11:42:26Z",
-  "total_records": 16370
+  "generated_at": "2026-09-28T12:38:03Z",
+  "total_records": 17005,
+  "player_pl": {
+    "status": "ok",
+    "records": 624
+  }
 }

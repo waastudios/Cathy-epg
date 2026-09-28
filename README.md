@@ -41,6 +41,7 @@ Every XMLTV `display-name` is the provider’s official channel name unless an e
 | United Kingdom | Sky Sports Ultra HD 1 and 2 | [Virgin Media TV Go Guide](https://virgintvgo.virginmedia.com/en/epg/initial) |
 | Romania | Digi 4K | [Digi 4K](https://www.digi4k.ro/) |
 | Serbia | Eurosport 1, Eurosport 2 and Eurosport 4K | [SBB / EON Public EPG](https://epg.sbb.rs/) |
+| Poland | Eurosport 1–4 and Eleven Sports 1 (titles translated to English) | [Player.pl](https://player.pl/) public EPG API |
 
 ### Sky Germany via MagentaTV
 
@@ -56,9 +57,13 @@ The United States scope is intentionally restricted to potential future coverage
 
 **Eurosport 1, Eurosport 2 and Eurosport 4K** are published from Serbia’s normal anonymous SBB Public EPG as `eurosport.1`, `eurosport.2` and `eurosport.4k`. The source provides a channel directory plus programme titles, start times, and end times. Each Serbian source title is converted to English through the tiered pipeline described below; a title that cannot be translated skips that single programme instead of failing the SBB source.
 
+### Poland via Player.pl
+
+**Eurosport 1, Eurosport 2, Eurosport 3, Eurosport 4 and Eleven Sports 1** are published from Poland’s TVN Player.pl anonymous public EPG API. The user-designated XMLTV IDs are `eurosport1.pl`, `eurosport2.pl`, `eurosport3.pl`, `eurosport4.pl` and `ElevenSp.1`. Each Polish source title is converted to English through the tiered pipeline described below (curated Polish sports-term mapping, then the translation memory, then online services); a title that cannot be translated skips that single programme instead of failing the Player.pl source. In [CHANNELS.md](CHANNELS.md) these five channels carry a (T) mark to indicate their guides are translated into English.
+
 ### English translation
 
-Programme titles from non-English markets (Swedish, Norwegian, German, Romanian, Serbian) are published in English; Chinese titles from now TV Hong Kong are kept as-is. Translation runs inside each collector in three tiers:
+Programme titles from non-English markets (Swedish, Norwegian, German, Romanian, Serbian, Polish) are published in English; Chinese titles from now TV Hong Kong are kept as-is. Translation runs inside each collector in three tiers:
 
 1. **Version-controlled exact mapping** in `src/epg_tool/sources.py` — curated deterministic rules per source.
 2. **Persistent translation memory** in `src/epg_tool/translation_cache.json` — every online translation is recorded here, so results are stable, auditable, and reused without another network call. The daily workflow commits this file, so the memory grows over time.
@@ -92,6 +97,10 @@ epg preview --day tomorrow --provider allente_se --channel 50048
 ```
 
 For Serbia’s SBB Eurosport schedules, titles are converted during collection using a version-controlled local Serbian-to-English mapping and controlled rules. Daily refreshes do not call an online translation service, so translation does not add network latency.
+
+## Changelog
+
+- **2026-09-28** — Added Poland coverage: Eurosport 1–4 and Eleven Sports 1 from the Player.pl public EPG API, with user-designated XMLTV IDs `eurosport1.pl`, `eurosport2.pl`, `eurosport3.pl`, `eurosport4.pl` and `ElevenSp.1`. Polish titles are translated to English through the tiered pipeline and marked (T) in CHANNELS.md.
 
 ## References
 

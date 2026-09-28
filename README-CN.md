@@ -41,6 +41,7 @@ https://raw.githubusercontent.com/waastudios/Cathy-epg/master/data/epg.xml.gz
 | 英国 | Sky Sports Ultra HD 1、Sky Sports Ultra HD 2 | [Virgin Media TV Go Guide](https://virgintvgo.virginmedia.com/en/epg/initial) |
 | 罗马尼亚 | Digi 4K | [Digi 4K](https://www.digi4k.ro/) |
 | 塞尔维亚 | Eurosport 1、Eurosport 2、Eurosport 4K | [SBB / EON Public EPG](https://epg.sbb.rs/) |
+| 波兰 | Eurosport 1–4 与 Eleven Sports 1（标题已译为英文） | [Player.pl](https://player.pl/) 公开 EPG 接口 |
 
 ### 德国 Sky 与 MagentaTV
 
@@ -56,9 +57,13 @@ EE 范围包含 **Sky Mix、Sky Arts、Sky Witness、Sky Atlantic、Sky One、Sk
 
 **Eurosport 1、Eurosport 2 和 Eurosport 4K** 均通过塞尔维亚 SBB 的正常匿名 Public EPG 发布，XMLTV ID 分别为 `eurosport.1`、`eurosport.2` 和 `eurosport.4k`。该来源提供频道目录、节目标题、开始时间和结束时间。每条原始塞尔维亚语标题均通过下文的分级流水线转换成英文；无法翻译的标题只会跳过当条节目，不会导致整个 SBB 来源失败。
 
+### 波兰 Player.pl
+
+**Eurosport 1、Eurosport 2、Eurosport 3、Eurosport 4 与 Eleven Sports 1** 均通过波兰 TVN Player.pl 的匿名公开 EPG 接口发布。用户指定的 XMLTV ID 为 `eurosport1.pl`、`eurosport2.pl`、`eurosport3.pl`、`eurosport4.pl` 与 `ElevenSp.1`。每条原始波兰语标题均通过下文的分级流水线转换成英文（波兰语体育术语精确映射 → 翻译记忆 → 在线服务）；无法翻译的标题只会跳过当条节目，不会导致整个 Player.pl 来源失败。在 [CHANNELS-CN.md](CHANNELS-CN.md) 中这五个频道带有（T）标记，表示节目单已翻译为英文。
+
 ### 英文翻译
 
-非英语市场（瑞典语、挪威语、德语、罗马尼亚语、塞尔维亚语）的节目标题均以英文发布；香港 now TV 的中文标题保持原样。翻译在各采集器内部按三级流水线进行：
+非英语市场（瑞典语、挪威语、德语、罗马尼亚语、塞尔维亚语、波兰语）的节目标题均以英文发布；香港 now TV 的中文标题保持原样。翻译在各采集器内部按三级流水线进行：
 
 1. **版本控制的精确映射**（`src/epg_tool/sources.py`）——按来源维护的确定性规则。
 2. **持久翻译记忆**（`src/epg_tool/translation_cache.json`）——每次在线翻译的结果都会记录在此，稳定、可审计，无需重复请求网络。每日工作流会提交该文件，记忆随时间增长。
@@ -92,6 +97,10 @@ epg preview --day tomorrow --provider allente_se --channel 50048
 ```
 
 对于塞尔维亚 SBB Eurosport 节目表，标题会在采集阶段通过本地固定的塞尔维亚语到英文映射和受控规则转换；每日刷新不会调用在线翻译服务，因此不会因翻译请求导致额外等待。
+
+## 更新日志
+
+- **2026-09-28** —— 新增波兰覆盖：通过 Player.pl 公开 EPG 接口发布 Eurosport 1–4 与 Eleven Sports 1，用户指定的 XMLTV ID 为 `eurosport1.pl`、`eurosport2.pl`、`eurosport3.pl`、`eurosport4.pl` 与 `ElevenSp.1`。波兰语标题经分级流水线译为英文，并在频道清单中以（T）标记。
 
 ## 参考资料
 

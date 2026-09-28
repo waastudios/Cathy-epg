@@ -2,7 +2,7 @@
 
 This inventory is generated directly from the currently published `data/epg.xml`. Every row is an actual XMLTV `<channel>` node: **tvg-id** is `channel/@id` and **tvg-name** is `display-name`.
 
-The current XMLTV output contains **156 channels**.
+The current XMLTV output contains **161 channels**.
 
 > **Note:** `(T)` means **Translated**. The channel's schedule originates in a non-English market and programme titles are translated into English before publication. This marker appears **only in this inventory**; it is never written to `data/epg.xml`, `data/epg.xml.gz`, or the programme snapshot. XMLTV `display-name` values remain the official provider names.
 
@@ -211,3 +211,13 @@ The current XMLTV output contains **156 channels**.
 | `allente_no.fem` | FEM (T) |
 | `allente_no.rex` | REX (T) |
 | `allente_no.tvn` | TV Norge (T) |
+
+## 🇵🇱 Poland Player.pl
+
+| tvg-id | tvg-name |
+| --- | --- |
+| `ElevenSp.1` | Eleven Sports 1 (T) |
+| `eurosport1.pl` | Eurosport 1 (T) |
+| `eurosport2.pl` | Eurosport 2 (T) |
+| `eurosport3.pl` | Eurosport 3 (T) |
+| `eurosport4.pl` | Eurosport 4 (T) |
