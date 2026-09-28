@@ -6616,15 +6616,15 @@
     <title>(L) Hari ke-9: What's Up Jepun</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260928090000 +0800" channel="astro.801" stop="20260928194500 +0800">
+  <programme start="20260928090000 +0800" channel="astro.801" stop="20260928195500 +0800">
     <title>(L) Hari ke-9: Sukan Asia 2026</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260928194500 +0800" channel="astro.801" stop="20260928195500 +0800">
+  <programme start="20260928195500 +0800" channel="astro.801" stop="20260928200500 +0800">
     <title>(L) Nadi Arena</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260928195500 +0800" channel="astro.801" stop="20260928220000 +0800">
+  <programme start="20260928200500 +0800" channel="astro.801" stop="20260928220000 +0800">
     <title>(L) Hari ke-9: Sukan Asia 2026</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
@@ -9174,10 +9174,6 @@
   </programme>
   <programme start="20261004183000 +0800" channel="astro.806" stop="20261004184500 +0800">
     <title>Sport Shot</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20261004184500 +0800" channel="astro.806" stop="20261004210000 +0800">
-    <title>(L): Penutupan Sukan Asia Aichi-nagoya 2026</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
   <programme start="20261004210000 +0800" channel="astro.806" stop="20261004213000 +0800">
@@ -22476,11 +22472,11 @@
     <title>New: The Blame</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260928220000 +0100" channel="ee_uk.3" stop="20260928223000 +0100">
+  <programme start="20260928220000 +0100" channel="ee_uk.3" stop="20260928223500 +0100">
     <title>ITV News at Ten</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260928223000 +0100" channel="ee_uk.3" stop="20260928224500 +0100">
+  <programme start="20260928223500 +0100" channel="ee_uk.3" stop="20260928224500 +0100">
     <title>ITV News London</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
@@ -30124,12 +30120,16 @@
     <title>Titanic: Band of Courage</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20261004190000 +0100" channel="ee_uk.36" stop="20261004220000 +0100">
+  <programme start="20261004190000 +0100" channel="ee_uk.36" stop="20261004213000 +0100">
     <title>New: Cliff Richard: The Blue....</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20261004220000 +0100" channel="ee_uk.36" stop="20261005001500 +0100">
+  <programme start="20261004213000 +0100" channel="ee_uk.36" stop="20261004234500 +0100">
     <title>New: The Who: Amazing Journey - The...</title>
+    <url>https://player.ee.co.uk/#/livetv/schedule</url>
+  </programme>
+  <programme start="20261004234500 +0100" channel="ee_uk.36" stop="20261005004500 +0100">
+    <title>New: Opry Live</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20260928000000 +0100" channel="ee_uk.4" stop="20260928010000 +0100">
@@ -32452,8 +32452,12 @@
     <title>The Club That George Built</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20261001010000 +0100" channel="ee_uk.410" stop="20261001020000 +0100">
+  <programme start="20261001010000 +0100" channel="ee_uk.410" stop="20261001013000 +0100">
     <title>UFC Countdown: 332</title>
+    <url>https://player.ee.co.uk/#/livetv/schedule</url>
+  </programme>
+  <programme start="20261001013000 +0100" channel="ee_uk.410" stop="20261001020000 +0100">
+    <title>TNT Sports Reload</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20261001020000 +0100" channel="ee_uk.410" stop="20261001030000 +0100">
@@ -32721,15 +32725,11 @@
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20261004050000 +0100" channel="ee_uk.410" stop="20261004060000 +0100">
-    <title>Road Race - Elite - Women</title>
+    <title>PL Stories: Roberto Mancini</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20261004060000 +0100" channel="ee_uk.410" stop="20261004063000 +0100">
-    <title>UCI Mountain Bike World Series Women</title>
-    <url>https://player.ee.co.uk/#/livetv/schedule</url>
-  </programme>
-  <programme start="20261004063000 +0100" channel="ee_uk.410" stop="20261004070000 +0100">
-    <title>UCI Mountain Bike World Series Men</title>
+  <programme start="20261004060000 +0100" channel="ee_uk.410" stop="20261004070000 +0100">
+    <title>India v West Indies - 3rd ODI</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20261004070000 +0100" channel="ee_uk.410" stop="20261004100000 +0100">
@@ -43964,10 +43964,6 @@
     <title>One To One: John &amp; Yoko</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260928190000 +0800" channel="now_hk.611" stop="20260928200000 +0800">
-    <title>請留意下場播映賽事</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260928200000 +0800" channel="now_hk.611" stop="20260928210000 +0800">
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -44560,10 +44556,6 @@
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260928180000 +0800" channel="now_hk.612" stop="20260928200000 +0800">
-    <title>請留意下場播映賽事</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260928200000 +0800" channel="now_hk.612" stop="20260928220000 +0800">
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -44864,10 +44856,6 @@
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260928180000 +0800" channel="now_hk.613" stop="20260928200000 +0800">
-    <title>請留意下場播映賽事</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260928200000 +0800" channel="now_hk.613" stop="20260928220000 +0800">
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -45162,14 +45150,6 @@
   </programme>
   <programme start="20261004220000 +0800" channel="now_hk.613" stop="20261005000000 +0800">
     <title>請留意下場播映賽事</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260928190000 +0800" channel="now_hk.620" stop="20260928200000 +0800">
-    <title>英超精華 第5集</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260928200000 +0800" channel="now_hk.620" stop="20260928203000 +0800">
-    <title>好波之人講英超 -路易哥奧</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260928203000 +0800" channel="now_hk.620" stop="20260928210000 +0800">
@@ -46452,10 +46432,6 @@
     <title>英超故事26/27 -文仙尼</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260928160000 +0800" channel="now_hk.622" stop="20260928200000 +0800">
-    <title>請留意下場播映賽事</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260928200000 +0800" channel="now_hk.622" stop="20260929000000 +0800">
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -46601,10 +46577,6 @@
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20261004200000 +0800" channel="now_hk.622" stop="20261005000000 +0800">
-    <title>請留意下場播映賽事</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260928160000 +0800" channel="now_hk.623" stop="20260928200000 +0800">
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
@@ -46756,10 +46728,6 @@
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260928160000 +0800" channel="now_hk.624" stop="20260928200000 +0800">
-    <title>請留意下場播映賽事</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260928200000 +0800" channel="now_hk.624" stop="20260929000000 +0800">
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -46905,10 +46873,6 @@
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20261004200000 +0800" channel="now_hk.624" stop="20261005000000 +0800">
-    <title>請留意下場播映賽事</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260928160000 +0800" channel="now_hk.625" stop="20260928200000 +0800">
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
@@ -47060,10 +47024,6 @@
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260928160000 +0800" channel="now_hk.626" stop="20260928200000 +0800">
-    <title>請留意下場播映賽事</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260928200000 +0800" channel="now_hk.626" stop="20260929000000 +0800">
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -47209,10 +47169,6 @@
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20261004200000 +0800" channel="now_hk.626" stop="20261005000000 +0800">
-    <title>請留意下場播映賽事</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260928160000 +0800" channel="now_hk.627" stop="20260928200000 +0800">
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
@@ -47916,14 +47872,6 @@
     <title>一CUE過百 第184集</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260928170000 +0800" channel="now_hk.631" stop="20260928194500 +0800">
-    <title>FIE 25/26 國際劍聯大奬賽 -卡塔爾站 (重劍)</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260928194500 +0800" channel="now_hk.631" stop="20260928200000 +0800">
-    <title>一CUE過百 第172集</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260928200000 +0800" channel="now_hk.631" stop="20260928204500 +0800">
     <title>WTT 美國大滿貫 2026 -男單決賽</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -48372,10 +48320,6 @@
     <title>PGA巡迴賽: 揮桿為晉級 第30集</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260928173000 +0800" channel="now_hk.632" stop="20260928193000 +0800">
-    <title>2026/27 西班牙甲組足球聯賽 -馬德里體育會 對 皇家馬德里</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260928193000 +0800" channel="now_hk.632" stop="20260928213000 +0800">
     <title>2026/27 西班牙甲組足球聯賽 -切爾達 對 桑坦德</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -48768,26 +48712,6 @@
     <title>西甲未來之星全國錦標賽決賽[直播]</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260928170000 +0800" channel="now_hk.633" stop="20260928191500 +0800">
-    <title>NFL 美式足球賽 26/27 -巴爾的摩烏鴉 @ 達拉斯牛仔</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260928191500 +0800" channel="now_hk.633" stop="20260928193000 +0800">
-    <title>一CUE過百 第162集</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260928193000 +0800" channel="now_hk.633" stop="20260928200000 +0800">
-    <title>Racing on the Edge Season 6 -Flight at Breaking Point</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260928200000 +0800" channel="now_hk.633" stop="20260928201500 +0800">
-    <title>一CUE過百 第162集</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260928201500 +0800" channel="now_hk.633" stop="20260928203000 +0800">
-    <title>一CUE過百 第163集</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260928203000 +0800" channel="now_hk.633" stop="20260928210000 +0800">
     <title>Monster Jam 第1集</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -48876,16 +48800,12 @@
     <title>Racing on the Edge Season 6 -The Art of Risk</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260929180000 +0800" channel="now_hk.633" stop="20260929201500 +0800">
+  <programme start="20260929180000 +0800" channel="now_hk.633" stop="20260929204500 +0800">
     <title>NFL 美式足球賽 26/27 -洛杉磯公羊 @ 丹佛野馬</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260929201500 +0800" channel="now_hk.633" stop="20260929203000 +0800">
+  <programme start="20260929204500 +0800" channel="now_hk.633" stop="20260929210000 +0800">
     <title>一CUE過百 第164集</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260929203000 +0800" channel="now_hk.633" stop="20260929210000 +0800">
-    <title>Monster Jam 第2集</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260929210000 +0800" channel="now_hk.633" stop="20260929231500 +0800">
@@ -49012,16 +48932,12 @@
     <title>Racing on the Edge Season 6 -This Is Us</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20261001000000 +0800" channel="now_hk.633" stop="20261001021500 +0800">
+  <programme start="20261001000000 +0800" channel="now_hk.633" stop="20261001024500 +0800">
     <title>NFL 美式足球賽 26/27 -洛杉磯公羊 @ 丹佛野馬</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20261001021500 +0800" channel="now_hk.633" stop="20261001023000 +0800">
-    <title>一CUE過百 第170集</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20261001023000 +0800" channel="now_hk.633" stop="20261001030000 +0800">
-    <title>Racing on the Edge Season 6 -The Power Of Opportunity</title>
+  <programme start="20261001024500 +0800" channel="now_hk.633" stop="20261001030000 +0800">
+    <title>一CUE過百 第164集</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20261001030000 +0800" channel="now_hk.633" stop="20261001040000 +0800">
@@ -49446,10 +49362,6 @@
   </programme>
   <programme start="20261004213000 +0800" channel="now_hk.633" stop="20261005010000 +0800">
     <title>NFL 美式足球賽 26/27 -印城小馬 @ 華盛頓司令[直播]</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260928173000 +0800" channel="now_hk.634" stop="20260928193000 +0800">
-    <title>WTA 26 新加坡網球公開賽 -決賽</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260928193000 +0800" channel="now_hk.634" stop="20260928213000 +0800">
@@ -51096,14 +51008,6 @@
     <title>WTA全接觸 第4集</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260928190000 +0800" channel="now_hk.637" stop="20260928191500 +0800">
-    <title>一CUE過百 第177集</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260928191500 +0800" channel="now_hk.637" stop="20260928193000 +0800">
-    <title>一CUE過百 第176集</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260928193000 +0800" channel="now_hk.637" stop="20260928223000 +0800">
     <title>深圳桌球公開賽 2026 -64強 - 奧蘇利雲 對 江俊[直播]</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -51968,10 +51872,6 @@
     <title>一CUE過百 第175集</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260928190000 +0800" channel="now_hk.638" stop="20260928200000 +0800">
-    <title>利物浦潮流雜誌 第6集</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260928200000 +0800" channel="now_hk.638" stop="20260928220000 +0800">
     <title>2026 世界一級方程式錦標賽 - 主賽事 第17集 -阿塞拜疆站</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -52490,10 +52390,6 @@
   </programme>
   <programme start="20261004232000 +0800" channel="now_hk.638" stop="20261005013000 +0800">
     <title>英格蘭足總女子超級聯賽 第9集 -曼城 對 阿仙奴[直播]</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260928181500 +0800" channel="now_hk.639" stop="20260928191500 +0800">
-    <title>歐洲卡車錦標賽2026 -法國站主賽事4</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260928191500 +0800" channel="now_hk.639" stop="20260928204500 +0800">
@@ -53078,18 +52974,6 @@
   </programme>
   <programme start="20261004233000 +0800" channel="now_hk.639" stop="20261005010000 +0800">
     <title>板式網球超級聯賽2026 -鹿特丹站男子組決賽[直播]</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260928180000 +0800" channel="now_hk.640" stop="20260928191500 +0800">
-    <title>簡東拿哲理 第2集 -反叛的藝術</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260928191500 +0800" channel="now_hk.640" stop="20260928200000 +0800">
-    <title>紅魔多媒體 第200集 -卡靈頓內幕訪談: 世界之王</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260928200000 +0800" channel="now_hk.640" stop="20260928203000 +0800">
-    <title>英超精華 第2集 -曼聯 對 葉士域治</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260928203000 +0800" channel="now_hk.640" stop="20260928210000 +0800">
@@ -54044,10 +53928,6 @@
     <title>英超精華 第3集 -愛華頓 對 曼聯</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260928180000 +0800" channel="now_hk.641" stop="20260928200000 +0800">
-    <title>請留意下場播映賽事</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260928200000 +0800" channel="now_hk.641" stop="20260928220000 +0800">
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -54724,14 +54604,6 @@
     <title>籃球廣播室 第1集</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260928180000 +0800" channel="now_hk.643" stop="20260928200000 +0800">
-    <title>非洲國家盃外圍賽 第14集 -盧旺達 對 利比里亞</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260928200000 +0800" channel="now_hk.643" stop="20260928203000 +0800">
-    <title>歐洲聯賽冠軍盃雜誌 第4集 -特別節目</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260928203000 +0800" channel="now_hk.643" stop="20260928210000 +0800">
     <title>女子歐洲聯賽冠軍盃精華 第1集 -比賽日1</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -55196,10 +55068,6 @@
     <title>英格蘭女子足球超級聯賽[直播]</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260928160000 +0800" channel="now_hk.644" stop="20260928200000 +0800">
-    <title>請留意下場播映賽事</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260928200000 +0800" channel="now_hk.644" stop="20260929000000 +0800">
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -55345,10 +55213,6 @@
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20261004200000 +0800" channel="now_hk.644" stop="20261005000000 +0800">
-    <title>請留意下場播映賽事</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260928160000 +0800" channel="now_hk.645" stop="20260928200000 +0800">
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
@@ -55500,10 +55364,6 @@
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260928160000 +0800" channel="now_hk.646" stop="20260928200000 +0800">
-    <title>請留意下場播映賽事</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260928200000 +0800" channel="now_hk.646" stop="20260929000000 +0800">
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -55649,10 +55509,6 @@
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20261004200000 +0800" channel="now_hk.646" stop="20261005000000 +0800">
-    <title>請留意下場播映賽事</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260928180000 +0800" channel="now_hk.647" stop="20260928200000 +0800">
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
@@ -55952,10 +55808,6 @@
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260928180000 +0800" channel="now_hk.651" stop="20260928200000 +0800">
-    <title>請留意下場播映賽事</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260928200000 +0800" channel="now_hk.651" stop="20260928220000 +0800">
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -56249,10 +56101,6 @@
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20261004220000 +0800" channel="now_hk.651" stop="20261005000000 +0800">
-    <title>請留意下場播映賽事</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260928180000 +0800" channel="now_hk.652" stop="20260928200000 +0800">
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
@@ -56550,14 +56398,6 @@
   </programme>
   <programme start="20261004220000 +0800" channel="now_hk.652" stop="20261005000000 +0800">
     <title>請留意下場播映賽事</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260928183000 +0800" channel="now_hk.668" stop="20260928193000 +0800">
-    <title>賽後你點睇 -第6集</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260928193000 +0800" channel="now_hk.668" stop="20260928201500 +0800">
-    <title>賽事重溫 -第6集</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260928201500 +0800" channel="now_hk.668" stop="20260928211500 +0800">
@@ -57182,22 +57022,6 @@
   </programme>
   <programme start="20261004235500 +0800" channel="now_hk.668" stop="20261005000000 +0800">
     <title>帶你遊馬房 -「紅運帝王」</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260928184200 +0800" channel="now_hk.674" stop="20260928190500 +0800">
-    <title>Asia Cup 2025 -Best of Asia Cup 2025: PAK vs BAN</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260928190500 +0800" channel="now_hk.674" stop="20260928192900 +0800">
-    <title>CPL 2026 -Highlights: E: BT vs JAK</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260928192900 +0800" channel="now_hk.674" stop="20260928195300 +0800">
-    <title>Afghanistan tour of India, 2026 -Highlights: AFG vs IND, 1st T20I</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260928195300 +0800" channel="now_hk.674" stop="20260928202700 +0800">
-    <title>England tour of Sri Lanka, 2026 -Highlights: ENG vs SL, 3rd ODI</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260928202700 +0800" channel="now_hk.674" stop="20260928210100 +0800">
@@ -58156,10 +57980,6 @@
     <title>South Africa tour of New Zealand, 2026 -Highlights: NZ vs SA, 2nd T20I</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260928183000 +0800" channel="now_hk.679" stop="20260928202000 +0800">
-    <title>United Rugby Championship -Sharks v Ospreys</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260928202000 +0800" channel="now_hk.679" stop="20260928203500 +0800">
     <title>AFLW Highlights -Geelong v Hawthorn</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -58652,10 +58472,6 @@
     <title>Gallagher Premiership -Saracens v Sale[直播]</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260928160000 +0800" channel="now_hk.680" stop="20260928200000 +0800">
-    <title>請留意下場播映賽事</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260928200000 +0800" channel="now_hk.680" stop="20260929000000 +0800">
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -58802,10 +58618,6 @@
   </programme>
   <programme start="20261004200000 +0800" channel="now_hk.680" stop="20261005000000 +0800">
     <title>請留意下場播映賽事</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260928150000 +0800" channel="now_hk.683" stop="20260928200000 +0800">
-    <title>歐洲巡迴賽25/26 法國高爾夫球公開賽 -第4天</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260928200000 +0800" channel="now_hk.683" stop="20260928230000 +0800">
@@ -62176,31 +61988,35 @@
     <title>Snooker: Shenzhen Open: Round 1</title>
     <url>https://epg.sbb.rs/</url>
   </programme>
-  <programme start="20260928131400 +0200" channel="eurosport.1" stop="20260928161400 +0200">
+  <programme start="20260928131400 +0200" channel="eurosport.1" stop="20260928133000 +0200">
     <title>Snooker: Shenzhen Open: Round 2</title>
     <url>https://epg.sbb.rs/</url>
   </programme>
-  <programme start="20260928161400 +0200" channel="eurosport.1" stop="20260928171300 +0200">
+  <programme start="20260928133000 +0200" channel="eurosport.1" stop="20260928163000 +0200">
+    <title>Snooker: Shenzhen Open: Round 2</title>
+    <url>https://epg.sbb.rs/</url>
+  </programme>
+  <programme start="20260928163000 +0200" channel="eurosport.1" stop="20260928172900 +0200">
     <title>Cycling: Mountain Biking - World Cup, Whistler (Men): Downhill, Elite</title>
     <url>https://epg.sbb.rs/</url>
   </programme>
-  <programme start="20260928171300 +0200" channel="eurosport.1" stop="20260928174500 +0200">
+  <programme start="20260928172900 +0200" channel="eurosport.1" stop="20260928180100 +0200">
     <title>Cycling: Grand Prix Montreal (Men): Elite, Road Race</title>
     <url>https://epg.sbb.rs/</url>
   </programme>
-  <programme start="20260928174500 +0200" channel="eurosport.1" stop="20260928194700 +0200">
+  <programme start="20260928180100 +0200" channel="eurosport.1" stop="20260928200300 +0200">
     <title>Equestrian sport - World Tour of Champions, Vienna: Jumping</title>
     <url>https://epg.sbb.rs/</url>
   </programme>
-  <programme start="20260928194700 +0200" channel="eurosport.1" stop="20260928210000 +0200">
+  <programme start="20260928200300 +0200" channel="eurosport.1" stop="20260928210400 +0200">
     <title>Snooker: Shenzhen Open: Round 2</title>
     <url>https://epg.sbb.rs/</url>
   </programme>
-  <programme start="20260928210000 +0200" channel="eurosport.1" stop="20260928220000 +0200">
+  <programme start="20260928210400 +0200" channel="eurosport.1" stop="20260928220100 +0200">
     <title>Trail Running: Great Wall</title>
     <url>https://epg.sbb.rs/</url>
   </programme>
-  <programme start="20260928220000 +0200" channel="eurosport.1" stop="20260928230000 +0200">
+  <programme start="20260928220100 +0200" channel="eurosport.1" stop="20260928230000 +0200">
     <title>Cycling - PRO Serija, Trka oko Hrvatske: Stage 6</title>
     <url>https://epg.sbb.rs/</url>
   </programme>
@@ -62444,15 +62260,15 @@
     <title>Tennis - Lejver kup: London, Dan 3</title>
     <url>https://epg.sbb.rs/</url>
   </programme>
-  <programme start="20260928195900 +0200" channel="eurosport.2" stop="20260928210000 +0200">
+  <programme start="20260928195900 +0200" channel="eurosport.2" stop="20260928205600 +0200">
     <title>Cycling: Mountain Biking - World Cup, Whistler (Men): Downhill, Elite</title>
     <url>https://epg.sbb.rs/</url>
   </programme>
-  <programme start="20260928210000 +0200" channel="eurosport.2" stop="20260928220000 +0200">
+  <programme start="20260928205600 +0200" channel="eurosport.2" stop="20260928215600 +0200">
     <title>Cycling - PRO Serija, Trka oko Hrvatske: Stage 6</title>
     <url>https://epg.sbb.rs/</url>
   </programme>
-  <programme start="20260928220000 +0200" channel="eurosport.2" stop="20260929000000 +0200">
+  <programme start="20260928215600 +0200" channel="eurosport.2" stop="20260929000000 +0200">
     <title>Endurance car race - 6 hours of Fuji: Trka</title>
     <url>https://epg.sbb.rs/</url>
   </programme>
