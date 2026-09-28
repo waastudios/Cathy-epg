@@ -2,7 +2,7 @@
 
 This inventory is generated directly from the currently published `data/epg.xml`. Every row is an actual XMLTV `<channel>` node: **tvg-id** is `channel/@id` and **tvg-name** is `display-name`.
 
-The current XMLTV output contains **155 channels**.
+The current XMLTV output contains **156 channels**.
 
 > **Note:** `(T)` means **Translated**. The channel's schedule originates in a non-English market and programme titles are translated into English before publication. This marker appears **only in this inventory**; it is never written to `data/epg.xml`, `data/epg.xml.gz`, or the programme snapshot. XMLTV `display-name` values remain the official provider names.
 
@@ -19,11 +19,9 @@ The current XMLTV output contains **155 channels**.
 | `astro.810` | Astro Grandstand |
 | `astro.811` | Astro Premier League |
 | `astro.812` | Astro Premier League 2 |
-| `astro.813` | Astro Premier League 3 |
 | `astro.814` | Astro Football |
 | `astro.815` | Astro Badminton |
 | `astro.817` | Astro Sports Plus |
-| `astro.818` | Astro Sports Plus 2 |
 | `astro.819` | Astro Tennis |
 | `astro.820` | beIN SPORTS 1 |
 | `astro.821` | beIN SPORTS 2 |
@@ -125,7 +123,7 @@ The current XMLTV output contains **155 channels**.
 | `ee_uk.423` | Sky Sports Golf |
 | `ee_uk.424` | Sky Sports F1 |
 | `ee_uk.425` | Sky Sports Tennis |
-| `ee_uk.426` | Sky Sports Action |
+| `ee_uk.426` | Sky Sports NFL |
 | `ee_uk.427` | Sky Sports + |
 | `ee_uk.428` | Sky Sports Racing |
 | `ee_uk.429` | Sky Sports Mix |
@@ -172,13 +170,6 @@ The current XMLTV output contains **155 channels**.
 | `ee_uk.6` | ITV2 |
 | `ee_uk.9` | BBC Four |
 
-## France Canal+
-
-| tvg-id | tvg-name |
-| --- | --- |
-| `canal+.fr` | CANAL+ (T) |
-| `foot+.fr` | CANAL+ FOOT (T) |
-
 ## 🇷🇸 Serbia SBB Eurosport
 
 | tvg-id | tvg-name |
@@ -210,3 +201,13 @@ The current XMLTV output contains **155 channels**.
 | `allente_se.vpre` | V Sport Premium (T) |
 | `allente_se.vultra` | V Sport UltraHD (T) |
 | `allente_se.vvin` | V Sport Vinter (T) |
+
+## Allente Norway
+
+| tvg-id | tvg-name |
+| --- | --- |
+| `allente_no.euro1` | Eurosport 1 (T) |
+| `allente_no.euron` | Eurosport Norge (T) |
+| `allente_no.fem` | FEM (T) |
+| `allente_no.rex` | REX (T) |
+| `allente_no.tvn` | TV Norge (T) |
