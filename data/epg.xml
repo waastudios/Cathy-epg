@@ -160,6 +160,10 @@
     <display-name>CANAL+</display-name>
     <url>https://epg.pw/xmltv/epg_FR.xml</url>
   </channel>
+  <channel id="canal+4k.pl">
+    <display-name>CANAL+ 4K ULTRA HD</display-name>
+    <url>https://programtv.naziemna.info/program/stacja/canalplus4kultrahd</url>
+  </channel>
   <channel id="digi4k_ro">
     <display-name>Digi 4K</display-name>
     <url>https://www.digi4k.ro/</url>
@@ -16623,6 +16627,166 @@
   <programme start="20261002065700 +0200" channel="canal+.fr" stop="20261003020000 +0200">
     <title>This is not a crime</title>
     <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20260929000500 +0200" channel="canal+4k.pl" stop="20260929010000 +0200">
+    <title>Nielegalni [DN]</title>
+    <url>https://programtv.naziemna.info/program/stacja/canalplus4kultrahd</url>
+  </programme>
+  <programme start="20260929010000 +0200" channel="canal+4k.pl" stop="20260929015000 +0200">
+    <title>Nielegalni [DN]</title>
+    <url>https://programtv.naziemna.info/program/stacja/canalplus4kultrahd</url>
+  </programme>
+  <programme start="20260929015000 +0200" channel="canal+4k.pl" stop="20260929070000 +0200">
+    <title>Wilk 2 odc. 1</title>
+    <url>https://programtv.naziemna.info/program/stacja/canalplus4kultrahd</url>
+  </programme>
+  <programme start="20260929070000 +0200" channel="canal+4k.pl" stop="20260929091500 +0200">
+    <title>PKO BP Ekstraklasa - Wieczysta Kraków - Lech Poznań</title>
+    <url>https://programtv.naziemna.info/program/stacja/canalplus4kultrahd</url>
+  </programme>
+  <programme start="20260929091500 +0200" channel="canal+4k.pl" stop="20260929104000 +0200">
+    <title>Her Majesty Premier League - round 3</title>
+    <url>https://programtv.naziemna.info/program/stacja/canalplus4kultrahd</url>
+  </programme>
+  <programme start="20260929104000 +0200" channel="canal+4k.pl" stop="20260929113500 +0200">
+    <title>Ekstraklasa po godzinach</title>
+    <url>https://programtv.naziemna.info/program/stacja/canalplus4kultrahd</url>
+  </programme>
+  <programme start="20260929113500 +0200" channel="canal+4k.pl" stop="20260929123500 +0200">
+    <title>The secret life of mangrove forests episode 1</title>
+    <url>https://programtv.naziemna.info/program/stacja/canalplus4kultrahd</url>
+  </programme>
+  <programme start="20260929123500 +0200" channel="canal+4k.pl" stop="20260929132500 +0200">
+    <title>The secret life of mangrove forests episode 2</title>
+    <url>https://programtv.naziemna.info/program/stacja/canalplus4kultrahd</url>
+  </programme>
+  <programme start="20260929132500 +0200" channel="canal+4k.pl" stop="20260929142000 +0200">
+    <title>The secret life of mangrove forests episode 3</title>
+    <url>https://programtv.naziemna.info/program/stacja/canalplus4kultrahd</url>
+  </programme>
+  <programme start="20260929142000 +0200" channel="canal+4k.pl" stop="20260929151500 +0200">
+    <title>Lasy deszczowe Borneo</title>
+    <url>https://programtv.naziemna.info/program/stacja/canalplus4kultrahd</url>
+  </programme>
+  <programme start="20260929151500 +0200" channel="canal+4k.pl" stop="20260929154500 +0200">
+    <title>The Office PL 2 odc. 5 - Wizyta</title>
+    <url>https://programtv.naziemna.info/program/stacja/canalplus4kultrahd</url>
+  </programme>
+  <programme start="20260929154500 +0200" channel="canal+4k.pl" stop="20260929164000 +0200">
+    <title>The Office PL 2 episode 6 - Card for Michał</title>
+    <url>https://programtv.naziemna.info/program/stacja/canalplus4kultrahd</url>
+  </programme>
+  <programme start="20260929164000 +0200" channel="canal+4k.pl" stop="20260929171000 +0200">
+    <title>365 obiadow Mariety Mareckiej 6 (4K) odc. 10 - 365 obiadow Mariety Mareckiej 6 (4K) odc.10</title>
+    <url>https://programtv.naziemna.info/program/stacja/canalplus4kultrahd</url>
+  </programme>
+  <programme start="20260929171000 +0200" channel="canal+4k.pl" stop="20260929173500 +0200">
+    <title>Poland from above. Castles, manor houses, palaces episode 7 - Greater Poland residences</title>
+    <url>https://programtv.naziemna.info/program/stacja/canalplus4kultrahd</url>
+  </programme>
+  <programme start="20260929173500 +0200" channel="canal+4k.pl" stop="20260929180000 +0200">
+    <title>Poland from above. Castles, manor houses, palaces episode 8 - Podkarpacie</title>
+    <url>https://programtv.naziemna.info/program/stacja/canalplus4kultrahd</url>
+  </programme>
+  <programme start="20260929180000 +0200" channel="canal+4k.pl" stop="20260929182500 +0200">
+    <title>Poland from above. Castles, manor houses, palaces episode 9 - Lower Silesia</title>
+    <url>https://programtv.naziemna.info/program/stacja/canalplus4kultrahd</url>
+  </programme>
+  <programme start="20260929182500 +0200" channel="canal+4k.pl" stop="20260929192000 +0200">
+    <title>All the Colors of the World 6 episode 3 - Hokkaido, Japan of the Far North</title>
+    <url>https://programtv.naziemna.info/program/stacja/canalplus4kultrahd</url>
+  </programme>
+  <programme start="20260929192000 +0200" channel="canal+4k.pl" stop="20260929213000 +0200">
+    <title>PKO BP Ekstraklasa - Górnik Zabrze - Lech Poznań</title>
+    <url>https://programtv.naziemna.info/program/stacja/canalplus4kultrahd</url>
+  </programme>
+  <programme start="20260929213000 +0200" channel="canal+4k.pl" stop="20260929223000 +0200">
+    <title>Prosta sprawa odc. 3 - Prosta sprawa odc.3</title>
+    <url>https://programtv.naziemna.info/program/stacja/canalplus4kultrahd</url>
+  </programme>
+  <programme start="20260929223000 +0200" channel="canal+4k.pl" stop="20260929231500 +0200">
+    <title>Sortownia odc. 3</title>
+    <url>https://programtv.naziemna.info/program/stacja/canalplus4kultrahd</url>
+  </programme>
+  <programme start="20260929231500 +0200" channel="canal+4k.pl" stop="20260930003000 +0200">
+    <title>Sortownia odc. 4</title>
+    <url>https://programtv.naziemna.info/program/stacja/canalplus4kultrahd</url>
+  </programme>
+  <programme start="20260930003000 +0200" channel="canal+4k.pl" stop="20260930012500 +0200">
+    <title>Raven. Whispers can be heard after dark ep. 4</title>
+    <url>https://programtv.naziemna.info/program/stacja/canalplus4kultrahd</url>
+  </programme>
+  <programme start="20260930012500 +0200" channel="canal+4k.pl" stop="20260930070000 +0200">
+    <title>Small World odc. 3</title>
+    <url>https://programtv.naziemna.info/program/stacja/canalplus4kultrahd</url>
+  </programme>
+  <programme start="20260930070000 +0200" channel="canal+4k.pl" stop="20260930091000 +0200">
+    <title>PKO BP Ekstraklasa - GKS Katowice - Radomiak Radom</title>
+    <url>https://programtv.naziemna.info/program/stacja/canalplus4kultrahd</url>
+  </programme>
+  <programme start="20260930091000 +0200" channel="canal+4k.pl" stop="20260930111500 +0200">
+    <title>PKO BP Ekstraklasa - Wisła Kraków - Wisła Płock</title>
+    <url>https://programtv.naziemna.info/program/stacja/canalplus4kultrahd</url>
+  </programme>
+  <programme start="20260930111500 +0200" channel="canal+4k.pl" stop="20260930124500 +0200">
+    <title>Wysoki Pressing</title>
+    <url>https://programtv.naziemna.info/program/stacja/canalplus4kultrahd</url>
+  </programme>
+  <programme start="20260930124500 +0200" channel="canal+4k.pl" stop="20260930131000 +0200">
+    <title>Zgrillowani 2 odc. 5 - Kurczak</title>
+    <url>https://programtv.naziemna.info/program/stacja/canalplus4kultrahd</url>
+  </programme>
+  <programme start="20260930131000 +0200" channel="canal+4k.pl" stop="20260930133500 +0200">
+    <title>Grilled 2 episodes 6 - Carp and tuna</title>
+    <url>https://programtv.naziemna.info/program/stacja/canalplus4kultrahd</url>
+  </programme>
+  <programme start="20260930133500 +0200" channel="canal+4k.pl" stop="20260930140000 +0200">
+    <title>ABC of cooking - sweets episode 7 - No baking</title>
+    <url>https://programtv.naziemna.info/program/stacja/canalplus4kultrahd</url>
+  </programme>
+  <programme start="20260930140000 +0200" channel="canal+4k.pl" stop="20260930142500 +0200">
+    <title>ABC of cooking - sweets episode 8 - Cookies</title>
+    <url>https://programtv.naziemna.info/program/stacja/canalplus4kultrahd</url>
+  </programme>
+  <programme start="20260930142500 +0200" channel="canal+4k.pl" stop="20260930152000 +0200">
+    <title>Rozmowa z rekinem</title>
+    <url>https://programtv.naziemna.info/program/stacja/canalplus4kultrahd</url>
+  </programme>
+  <programme start="20260930152000 +0200" channel="canal+4k.pl" stop="20260930161500 +0200">
+    <title>Tepui - a journey to the house of the gods</title>
+    <url>https://programtv.naziemna.info/program/stacja/canalplus4kultrahd</url>
+  </programme>
+  <programme start="20260930161500 +0200" channel="canal+4k.pl" stop="20260930181500 +0200">
+    <title>PKO BP Ekstraklasa - Legia Warszawa - Widzew Łódź</title>
+    <url>https://programtv.naziemna.info/program/stacja/canalplus4kultrahd</url>
+  </programme>
+  <programme start="20260930181500 +0200" channel="canal+4k.pl" stop="20260930200000 +0200">
+    <title>Kiler</title>
+    <url>https://programtv.naziemna.info/program/stacja/canalplus4kultrahd</url>
+  </programme>
+  <programme start="20260930200000 +0200" channel="canal+4k.pl" stop="20260930204500 +0200">
+    <title>Apollo in ogniu odc. 3</title>
+    <url>https://programtv.naziemna.info/program/stacja/canalplus4kultrahd</url>
+  </programme>
+  <programme start="20260930204500 +0200" channel="canal+4k.pl" stop="20260930213000 +0200">
+    <title>Belfer 3 odc. 3</title>
+    <url>https://programtv.naziemna.info/program/stacja/canalplus4kultrahd</url>
+  </programme>
+  <programme start="20260930213000 +0200" channel="canal+4k.pl" stop="20260930222000 +0200">
+    <title>Belfer 3 odc. 4</title>
+    <url>https://programtv.naziemna.info/program/stacja/canalplus4kultrahd</url>
+  </programme>
+  <programme start="20260930222000 +0200" channel="canal+4k.pl" stop="20260930225000 +0200">
+    <title>The Office PL 2 odc. 2 - BHP</title>
+    <url>https://programtv.naziemna.info/program/stacja/canalplus4kultrahd</url>
+  </programme>
+  <programme start="20260930225000 +0200" channel="canal+4k.pl" stop="20260930234000 +0200">
+    <title>Żmijowsko episode 5</title>
+    <url>https://programtv.naziemna.info/program/stacja/canalplus4kultrahd</url>
+  </programme>
+  <programme start="20260930234000 +0200" channel="canal+4k.pl" stop="20261001014000 +0200">
+    <title>Żmijowsko episode 6</title>
+    <url>https://programtv.naziemna.info/program/stacja/canalplus4kultrahd</url>
   </programme>
   <programme start="20260929000000 +0300" channel="digi4k_ro" stop="20260929080000 +0300">
     <title>Music</title>

@@ -101,6 +101,9 @@ def _xmltv_channel_id(record: Programme) -> str:
         configured_id = _PLAYER_PL_XMLTV_IDS.get(record.channel_id)
         if configured_id:
             return configured_id
+    if record.provider == "canalplus_pl_4k":
+        # channel_id 即用户指定的 tvg-id（canal+4k.pl）
+        return record.channel_id
     return record.provider if not record.channel_number else f"{record.provider}.{record.channel_number}"
 
 

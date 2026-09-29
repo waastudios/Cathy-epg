@@ -1534,7 +1534,80 @@ CANALPLUS_PL_GUIDE = "https://www.canalplus.com/pl/program-tv/"
 CANALPLUS_PL_4K_CHANNEL = ("21402", "CANAL+ 4K ULTRA HD", "canal+4k.pl", 149)
 
 
+def _collect_canalplus_pl_4k_naziemna() -> list[Programme]:
+    """从 programtv.naziemna.info 抓取的本地 JSONL 读取 Canal+ 4K 节目（官方 API 被封时的兜底）。
+
+    JSONL 由 scripts/scrape_naziemna_4k.py 生成，每行含 start/end（ISO，Europe/Warsaw）
+    与波兰语原标题。标题走三级翻译流水线译为英文。
+    """
+    from pathlib import Path as _Path
+
+    jsonl_path = _Path(__file__).resolve().parents[2] / "data" / "canalplus_pl_4k.jsonl"
+    if not jsonl_path.exists():
+        raise SourceUnavailable("naziemna.info 本地数据文件不存在。")
+    channel_id, channel_name, channel_suffix, _ = CANALPLUS_PL_4K_CHANNEL
+    zone = ZoneInfo("Europe/Warsaw")
+    retrieved_at = utc_now_iso()
+    records: list[Programme] = []
+    skipped = 0
+    for line in jsonl_path.read_text(encoding="utf-8").splitlines():
+        line = line.strip()
+        if not line:
+            continue
+        try:
+            item = json.loads(line)
+            start = datetime.fromisoformat(item["start"])
+            end = datetime.fromisoformat(item["end"])
+            title = str(item.get("title") or "").strip()
+        except (json.JSONDecodeError, KeyError, ValueError):
+            continue
+        if not title or end <= start:
+            continue
+        if start.tzinfo is None:
+            start = start.replace(tzinfo=zone)
+        if end.tzinfo is None:
+            end = end.replace(tzinfo=zone)
+        try:
+            display_title = translate_programme_title(
+                title, "pl", _translate_player_pl_title
+            )
+        except TitleUntranslatable:
+            skipped += 1
+            continue
+        records.append(
+            Programme(
+                provider="canalplus_pl_4k",
+                country="PL",
+                timezone="Europe/Warsaw",
+                channel_id=channel_suffix,
+                channel_number=channel_id,
+                channel_name=channel_name,
+                title=display_title,
+                start_at=start.isoformat(),
+                end_at=end.isoformat(),
+                source_url="https://programtv.naziemna.info/program/stacja/canalplus4kultrahd",
+                retrieved_at=retrieved_at,
+            )
+        )
+    if skipped:
+        note(f"Canal+ 4K {skipped} 档波兰语标题无法译为英文，已跳过")
+    records = _deduplicate(records)
+    if not records:
+        raise SourceUnavailable("naziemna.info 本地数据无有效节目记录。")
+    note(f"Canal+ 4K 官方 API 不可用，已切换至 naziemna.info 第三方数据（{len(records)} 档）")
+    return records
+
+
 def collect_canalplus_pl_4k(days: int = 7, pause_seconds: float = 90.0) -> list[Programme]:
+    """读取波兰 Canal+ 4K ULTRA HD 节目单：官方 API 优先，封禁时回退 naziemna.info 第三方数据。"""
+    try:
+        return _collect_canalplus_pl_4k_official(days=days, pause_seconds=pause_seconds)
+    except (SourceUnavailable, requests.exceptions.RequestException) as exc:
+        note(f"Canal+ 4K 官方 API 不可用（{exc}），尝试 naziemna.info 兜底")
+        return _collect_canalplus_pl_4k_naziemna()
+
+
+def _collect_canalplus_pl_4k_official(days: int = 7, pause_seconds: float = 90.0) -> list[Programme]:
     """读取波兰 Canal+ 官方 EPG（CANAL+ 4K ULTRA HD），波兰语标题译为英文。
 
     波兰区走 mycanalint 接口（与法国区 mycanal 不同）。先经 authenticate.json

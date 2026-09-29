@@ -1,11 +1,11 @@
 {
   "astro": {
     "status": "ok",
-    "records": 2380
+    "records": 2356
   },
   "now_hk": {
     "status": "ok",
-    "records": 3809
+    "records": 3872
   },
   "allente_se": {
     "status": "ok",
@@ -17,7 +17,7 @@
   },
   "ee_uk": {
     "status": "ok",
-    "records": 6852
+    "records": 6844
   },
   "sky_de": {
     "status": "ok",
@@ -46,18 +46,17 @@
       "Canal+ 官方 API 不可用（403 rate limited: https://hodor.canalplus.pro/api/v2/mycanal/authenticate.json/webapp/6.0?experiments=beta-test-one-tv-guide:control），回退到 epg.pw"
     ]
   },
-  "canalplus_pl_4k": {
-    "status": "error",
-    "records": 0,
-    "message": "403 rate limited: https://hodor.canalplus.pro/api/v2/mycanalint/authenticate.json/webapp/6.0?experiments=beta-test-one-tv-guide:control"
-  },
   "xmltv": {
     "status": "ok",
     "channels": 164,
-    "programmes": 17309,
+    "programmes": 17340,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-09-29T14:31:28Z",
-  "total_records": 17309
+  "generated_at": "2026-09-29T11:46:02Z",
+  "total_records": 17340,
+  "canalplus_pl_4k": {
+    "status": "ok",
+    "records": 40
+  }
 }
