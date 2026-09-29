@@ -7164,7 +7164,7 @@
     <title>ATP 1000 Montreal 2026: Akhir</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20261003040000 +0800" channel="astro.802" stop="20261003060000 +0800">
+  <programme start="20261003030000 +0800" channel="astro.802" stop="20261003060000 +0800">
     <title>MPL MY S18 2026: Match 37</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
@@ -13332,8 +13332,16 @@
     <title>(L) FIA World Rally Championship 2026</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20261003150000 +0800" channel="astro.822" stop="20261003153500 +0800">
+  <programme start="20261003150000 +0800" channel="astro.822" stop="20261003154000 +0800">
     <title>MUTV: Specials</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261003154000 +0800" channel="astro.822" stop="20261003163000 +0800">
+    <title>(L) GT World Challenge Europe 2026</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261003163000 +0800" channel="astro.822" stop="20261003170000 +0800">
+    <title>UCL MAGAZINE SHOW Ep05</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
   <programme start="20261003170000 +0800" channel="astro.822" stop="20261003184000 +0800">
@@ -13396,8 +13404,56 @@
     <title>La Vuelta 2026</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
+  <programme start="20261004070000 +0800" channel="astro.822" stop="20261004073000 +0800">
+    <title>UCL MAGAZINE SHOW Ep05</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261004073000 +0800" channel="astro.822" stop="20261004080000 +0800">
+    <title>UEFA Women's Champions League Highlights 2026/27</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261004080000 +0800" channel="astro.822" stop="20261004083000 +0800">
+    <title>Racing on the Edge</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261004083000 +0800" channel="astro.822" stop="20261004090000 +0800">
+    <title>Bundesliga Special 2026/27</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261004090000 +0800" channel="astro.822" stop="20261004105000 +0800">
+    <title>UEFA Women's Champions League : Austria Wien Vs Inter - MD2</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261004105000 +0800" channel="astro.822" stop="20261004123500 +0800">
+    <title>GT World Challenge Asia 2026</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261004123500 +0800" channel="astro.822" stop="20261004142000 +0800">
+    <title>(L) GT World Challenge Asia 2026</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261004142000 +0800" channel="astro.822" stop="20261004143000 +0800">
+    <title>MUTV: Top 20 Goals</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261004143000 +0800" channel="astro.822" stop="20261004150000 +0800">
+    <title>Bundesliga Special 2026/27</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261004150000 +0800" channel="astro.822" stop="20261004163000 +0800">
+    <title>MUTV: Specials</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
   <programme start="20261004163000 +0800" channel="astro.822" stop="20261004170000 +0800">
     <title>UEFA Women's Champions League Highlights 2026/27</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261004170000 +0800" channel="astro.822" stop="20261004171000 +0800">
+    <title>UEL Classic Matches: Bremen Vs Valencia</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261004171000 +0800" channel="astro.822" stop="20261004180000 +0800">
+    <title>(L) GT World Challenge Europe 2026</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
   <programme start="20261004180000 +0800" channel="astro.822" stop="20261004190000 +0800">
@@ -19472,23 +19528,23 @@
     <title>Newsnight, followed by Weather</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260930230000 +0100" channel="ee_uk.2" stop="20260930233500 +0100">
+  <programme start="20260930230000 +0100" channel="ee_uk.2" stop="20260930233000 +0100">
     <title>Unspun World with John Simpson</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260930233500 +0100" channel="ee_uk.2" stop="20261001003500 +0100">
+  <programme start="20260930233000 +0100" channel="ee_uk.2" stop="20261001003000 +0100">
     <title>The Misadventures of Romesh Ranganathan</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20261001003500 +0100" channel="ee_uk.2" stop="20261001013500 +0100">
+  <programme start="20261001003000 +0100" channel="ee_uk.2" stop="20261001013000 +0100">
     <title>The Split Up</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20261001013500 +0100" channel="ee_uk.2" stop="20261001022000 +0100">
+  <programme start="20261001013000 +0100" channel="ee_uk.2" stop="20261001021500 +0100">
     <title>Hey Beautiful: Anatomy of a Romance Scam</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20261001022000 +0100" channel="ee_uk.2" stop="20261001063000 +0100">
+  <programme start="20261001021500 +0100" channel="ee_uk.2" stop="20261001063000 +0100">
     <title>This is BBC Two</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
@@ -20552,27 +20608,15 @@
     <title>BBC News Now</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260929130000 +0100" channel="ee_uk.231" stop="20260929140000 +0100">
+  <programme start="20260929130000 +0100" channel="ee_uk.231" stop="20260929134500 +0100">
     <title>Signed: BBC News at One</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260929140000 +0100" channel="ee_uk.231" stop="20260929143000 +0100">
-    <title>BBC News Now</title>
+  <programme start="20260929134500 +0100" channel="ee_uk.231" stop="20260929154500 +0100">
+    <title>Politics Live</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260929143000 +0100" channel="ee_uk.231" stop="20260929144500 +0100">
-    <title>Business Today - NYSE Opening Bell</title>
-    <url>https://player.ee.co.uk/#/livetv/schedule</url>
-  </programme>
-  <programme start="20260929144500 +0100" channel="ee_uk.231" stop="20260929150000 +0100">
-    <title>BBC News Now</title>
-    <url>https://player.ee.co.uk/#/livetv/schedule</url>
-  </programme>
-  <programme start="20260929150000 +0100" channel="ee_uk.231" stop="20260929153000 +0100">
-    <title>Verified Live</title>
-    <url>https://player.ee.co.uk/#/livetv/schedule</url>
-  </programme>
-  <programme start="20260929153000 +0100" channel="ee_uk.231" stop="20260929160000 +0100">
+  <programme start="20260929154500 +0100" channel="ee_uk.231" stop="20260929160000 +0100">
     <title>Verified Live</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
@@ -21880,8 +21924,16 @@
     <title>Westminster Hall - Safety of the Jewish Community</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260929103000 +0100" channel="ee_uk.232" stop="20260929130000 +0100">
+  <programme start="20260929103000 +0100" channel="ee_uk.232" stop="20260929111500 +0100">
     <title>Live Northern Ireland Assembly</title>
+    <url>https://player.ee.co.uk/#/livetv/schedule</url>
+  </programme>
+  <programme start="20260929111500 +0100" channel="ee_uk.232" stop="20260929113000 +0100">
+    <title>This is BBC Parliament</title>
+    <url>https://player.ee.co.uk/#/livetv/schedule</url>
+  </programme>
+  <programme start="20260929113000 +0100" channel="ee_uk.232" stop="20260929130000 +0100">
+    <title>Westminster Hall - Fathers and Male Role Models</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20260929130000 +0100" channel="ee_uk.232" stop="20260929133000 +0100">
@@ -22880,31 +22932,31 @@
     <title>UEFA Nations League Czech Republic v England</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260929220500 +0100" channel="ee_uk.3" stop="20260929223500 +0100">
+  <programme start="20260929220500 +0100" channel="ee_uk.3" stop="20260929224000 +0100">
     <title>ITV News at Ten</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260929223500 +0100" channel="ee_uk.3" stop="20260929225000 +0100">
+  <programme start="20260929224000 +0100" channel="ee_uk.3" stop="20260929225500 +0100">
     <title>ITV News London</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260929225000 +0100" channel="ee_uk.3" stop="20260929234500 +0100">
+  <programme start="20260929225500 +0100" channel="ee_uk.3" stop="20260929235000 +0100">
     <title>Fatal Lies: True Crime Presents</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260929234500 +0100" channel="ee_uk.3" stop="20260930001000 +0100">
+  <programme start="20260929235000 +0100" channel="ee_uk.3" stop="20260930001500 +0100">
     <title>The Assembly</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260930001000 +0100" channel="ee_uk.3" stop="20260930030000 +0100">
+  <programme start="20260930001500 +0100" channel="ee_uk.3" stop="20260930030500 +0100">
     <title>Shop on TV</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260930030000 +0100" channel="ee_uk.3" stop="20260930035000 +0100">
+  <programme start="20260930030500 +0100" channel="ee_uk.3" stop="20260930035500 +0100">
     <title>Julia Bradbury's Wonders of the Frozen South</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260930035000 +0100" channel="ee_uk.3" stop="20260930050500 +0100">
+  <programme start="20260930035500 +0100" channel="ee_uk.3" stop="20260930050500 +0100">
     <title>Unwind with ITV</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
@@ -36057,7 +36109,7 @@
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20260929120000 +0100" channel="ee_uk.421" stop="20260929123000 +0100">
-    <title>EFL Cup Highlights</title>
+    <title>EFL Cup Hlts: Colchester v So'ton</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20260929123000 +0100" channel="ee_uk.421" stop="20260929133000 +0100">
@@ -36129,7 +36181,7 @@
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20260929180000 +0100" channel="ee_uk.421" stop="20260929183000 +0100">
-    <title>EFL Cup Highlights</title>
+    <title>EFL Cup Hlts: Colchester v So'ton</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20260929183000 +0100" channel="ee_uk.421" stop="20260929193000 +0100">
@@ -36269,7 +36321,7 @@
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20260930120000 +0100" channel="ee_uk.421" stop="20260930123000 +0100">
-    <title>EFL Cup Highlights</title>
+    <title>EFL Cup Hlts:Mansfield v Sheff Utd</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20260930123000 +0100" channel="ee_uk.421" stop="20260930133000 +0100">
@@ -36341,7 +36393,7 @@
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20260930180000 +0100" channel="ee_uk.421" stop="20260930183000 +0100">
-    <title>EFL Cup Highlights</title>
+    <title>EFL Cup Hlts:Mansfield v Sheff Utd</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20260930183000 +0100" channel="ee_uk.421" stop="20260930193000 +0100">
@@ -36477,7 +36529,7 @@
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20261001120000 +0100" channel="ee_uk.421" stop="20261001123000 +0100">
-    <title>EFL Cup Highlights</title>
+    <title>EFL Cup Hlts: Plymouth v Exeter</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20261001123000 +0100" channel="ee_uk.421" stop="20261001133000 +0100">
@@ -36537,7 +36589,7 @@
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20261001180000 +0100" channel="ee_uk.421" stop="20261001183000 +0100">
-    <title>EFL Cup Highlights</title>
+    <title>EFL Cup Hlts: Colchester v So'ton</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20261001183000 +0100" channel="ee_uk.421" stop="20261001193000 +0100">
@@ -36677,7 +36729,7 @@
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20261002120000 +0100" channel="ee_uk.421" stop="20261002123000 +0100">
-    <title>EFL Cup Highlights</title>
+    <title>EFL Cup Hlts: M'boro v Wrexham</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20261002123000 +0100" channel="ee_uk.421" stop="20261002130000 +0100">
@@ -36749,7 +36801,7 @@
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20261002180000 +0100" channel="ee_uk.421" stop="20261002183000 +0100">
-    <title>EFL Cup Highlights</title>
+    <title>EFL Cup Hlts: Plymouth v Exeter</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20261002183000 +0100" channel="ee_uk.421" stop="20261002190000 +0100">
@@ -36869,15 +36921,15 @@
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20261003100000 +0100" channel="ee_uk.421" stop="20261003103000 +0100">
-    <title>EFL Cup Highlights</title>
+    <title>EFL Cup Hlts: M'boro v Wrexham</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20261003103000 +0100" channel="ee_uk.421" stop="20261003110000 +0100">
-    <title>EFL Cup Highlights</title>
+    <title>EFL Cup Hlts:Mansfield v Sheff Utd</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20261003110000 +0100" channel="ee_uk.421" stop="20261003113000 +0100">
-    <title>EFL Cup Highlights</title>
+    <title>EFL Cup Hlts: Plymouth v Exeter</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20261003113000 +0100" channel="ee_uk.421" stop="20261003120000 +0100">
@@ -36893,7 +36945,7 @@
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20261003173000 +0100" channel="ee_uk.421" stop="20261003180000 +0100">
-    <title>EFL Cup Highlights</title>
+    <title>EFL Cup Hlts: Preston NE v Everton</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20261003180000 +0100" channel="ee_uk.421" stop="20261003200000 +0100">
@@ -36901,19 +36953,19 @@
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20261003200000 +0100" channel="ee_uk.421" stop="20261003203000 +0100">
-    <title>EFL Cup Highlights</title>
+    <title>EFL Cup Hlts: Millwall v Newcastle</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20261003203000 +0100" channel="ee_uk.421" stop="20261003210000 +0100">
-    <title>EFL Cup Highlights</title>
+    <title>EFL Cup Hlts: Chelsea v Leeds Utd</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20261003210000 +0100" channel="ee_uk.421" stop="20261003213000 +0100">
-    <title>EFL Cup Highlights</title>
+    <title>EFL Cup Hlts: N. Forest v Leeds</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20261003213000 +0100" channel="ee_uk.421" stop="20261003220000 +0100">
-    <title>EFL Cup Highlights</title>
+    <title>EFL Cup Hlts: Preston NE v Everton</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20261003220000 +0100" channel="ee_uk.421" stop="20261003221500 +0100">
@@ -36921,7 +36973,7 @@
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20261003221500 +0100" channel="ee_uk.421" stop="20261003224500 +0100">
-    <title>EFL Cup Highlights</title>
+    <title>EFL Cup Hlts: N. Forest v Leeds</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20261003224500 +0100" channel="ee_uk.421" stop="20261003234500 +0100">
@@ -36973,31 +37025,31 @@
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20261004100000 +0100" channel="ee_uk.421" stop="20261004103000 +0100">
-    <title>EFL Cup Highlights</title>
+    <title>EFL Cup Hlts: N. Forest v Leeds</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20261004103000 +0100" channel="ee_uk.421" stop="20261004110000 +0100">
-    <title>EFL Cup Highlights</title>
+    <title>EFL Cup Hlts: Preston NE v Everton</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20261004110000 +0100" channel="ee_uk.421" stop="20261004113000 +0100">
-    <title>EFL Cup Highlights</title>
+    <title>EFL Cup Hlts: Millwall v Newcastle</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20261004113000 +0100" channel="ee_uk.421" stop="20261004120000 +0100">
-    <title>EFL Cup Highlights</title>
+    <title>EFL Cup Hlts: Chelsea v Leeds utd</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20261004120000 +0100" channel="ee_uk.421" stop="20261004123000 +0100">
-    <title>EFL Cup Highlights</title>
+    <title>EFL Cup Hlts: Liverpool v Spurs</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20261004123000 +0100" channel="ee_uk.421" stop="20261004130000 +0100">
-    <title>EFL Cup Highlights</title>
+    <title>EFL Cup Hlts: Man Utd v Brighton</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20261004130000 +0100" channel="ee_uk.421" stop="20261004133000 +0100">
-    <title>EFL Cup Highlights</title>
+    <title>EFL Cup Hlts: Millwall v Newcastle</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20261004133000 +0100" channel="ee_uk.421" stop="20261004160000 +0100">
@@ -37009,11 +37061,11 @@
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20261004161500 +0100" channel="ee_uk.421" stop="20261004164500 +0100">
-    <title>EFL Cup Highlights</title>
+    <title>EFL Cup Hlts: Millwall v Newcastle</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20261004164500 +0100" channel="ee_uk.421" stop="20261004171500 +0100">
-    <title>EFL Cup Highlights</title>
+    <title>EFL Cup Hlts: Chelsea v Leeds Utd</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20261004171500 +0100" channel="ee_uk.421" stop="20261004173000 +0100">
@@ -37157,11 +37209,11 @@
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20261005180000 +0100" channel="ee_uk.421" stop="20261005183000 +0100">
-    <title>EFL Cup Highlights</title>
+    <title>EFL Cup Hlts: N. Forest v Leeds</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20261005183000 +0100" channel="ee_uk.421" stop="20261005190000 +0100">
-    <title>EFL Cup Highlights</title>
+    <title>EFL Cup Hlts: Preston NE v Everton</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20261005190000 +0100" channel="ee_uk.421" stop="20261005193000 +0100">
@@ -37225,7 +37277,7 @@
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20261005233000 +0100" channel="ee_uk.421" stop="20261006000000 +0100">
-    <title>EFL Cup Highlights</title>
+    <title>EFL Cup Hlts: N. Forest v Leeds</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20260929000000 +0100" channel="ee_uk.422" stop="20260929010000 +0100">
@@ -41996,27 +42048,27 @@
     <title>This is TNT Sports 5</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260929060000 +0100" channel="ee_uk.450" stop="20260929175600 +0100">
+  <programme start="20260929060000 +0100" channel="ee_uk.450" stop="20260929130000 +0100">
     <title>This is TNT Sports 5</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260929175600 +0100" channel="ee_uk.450" stop="20260930055600 +0100">
+  <programme start="20260929130000 +0100" channel="ee_uk.450" stop="20260930010000 +0100">
     <title>This is TNT Sports 5</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260930055600 +0100" channel="ee_uk.450" stop="20260930060000 +0100">
+  <programme start="20260930010000 +0100" channel="ee_uk.450" stop="20260930060000 +0100">
     <title>This is TNT Sports 5</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260930060000 +0100" channel="ee_uk.450" stop="20260930175600 +0100">
+  <programme start="20260930060000 +0100" channel="ee_uk.450" stop="20260930130000 +0100">
     <title>This is TNT Sports 5</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260930175600 +0100" channel="ee_uk.450" stop="20261001055600 +0100">
+  <programme start="20260930130000 +0100" channel="ee_uk.450" stop="20261001010000 +0100">
     <title>This is TNT Sports 5</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20261001055600 +0100" channel="ee_uk.450" stop="20261001060000 +0100">
+  <programme start="20261001010000 +0100" channel="ee_uk.450" stop="20261001060000 +0100">
     <title>This is TNT Sports 5</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
@@ -42180,55 +42232,55 @@
     <title>This is TNT Sports 6</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260930060000 +0100" channel="ee_uk.451" stop="20260930140600 +0100">
+  <programme start="20260930060000 +0100" channel="ee_uk.451" stop="20260930130000 +0100">
     <title>This is TNT Sports 6</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260930140600 +0100" channel="ee_uk.451" stop="20261001020600 +0100">
+  <programme start="20260930130000 +0100" channel="ee_uk.451" stop="20261001010000 +0100">
     <title>This is TNT Sports 6</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20261001020600 +0100" channel="ee_uk.451" stop="20261001060000 +0100">
+  <programme start="20261001010000 +0100" channel="ee_uk.451" stop="20261001060000 +0100">
     <title>This is TNT Sports 6</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20261001060000 +0100" channel="ee_uk.451" stop="20261001140600 +0100">
+  <programme start="20261001060000 +0100" channel="ee_uk.451" stop="20261001130000 +0100">
     <title>This is TNT Sports 6</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20261001140600 +0100" channel="ee_uk.451" stop="20261002020600 +0100">
+  <programme start="20261001130000 +0100" channel="ee_uk.451" stop="20261002010000 +0100">
     <title>This is TNT Sports 6</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20261002020600 +0100" channel="ee_uk.451" stop="20261002060000 +0100">
+  <programme start="20261002010000 +0100" channel="ee_uk.451" stop="20261002060000 +0100">
     <title>This is TNT Sports 6</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20261002060000 +0100" channel="ee_uk.451" stop="20261002140600 +0100">
+  <programme start="20261002060000 +0100" channel="ee_uk.451" stop="20261002130000 +0100">
     <title>This is TNT Sports 6</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20261002140600 +0100" channel="ee_uk.451" stop="20261003020600 +0100">
+  <programme start="20261002130000 +0100" channel="ee_uk.451" stop="20261003010000 +0100">
     <title>This is TNT Sports 6</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20261003020600 +0100" channel="ee_uk.451" stop="20261003060000 +0100">
+  <programme start="20261003010000 +0100" channel="ee_uk.451" stop="20261003060000 +0100">
     <title>This is TNT Sports 6</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20261003060000 +0100" channel="ee_uk.451" stop="20261003140000 +0100">
+  <programme start="20261003060000 +0100" channel="ee_uk.451" stop="20261003122000 +0100">
     <title>This is TNT Sports 6</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20261003140000 +0100" channel="ee_uk.451" stop="20261003150000 +0100">
-    <title>Live: Rally Italy Day 3</title>
+  <programme start="20261003122000 +0100" channel="ee_uk.451" stop="20261003164000 +0100">
+    <title>Live: Cycling UEC Road European Championships</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20261003150000 +0100" channel="ee_uk.451" stop="20261004030000 +0100">
+  <programme start="20261003164000 +0100" channel="ee_uk.451" stop="20261004044000 +0100">
     <title>This is TNT Sports 6</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20261004030000 +0100" channel="ee_uk.451" stop="20261004060000 +0100">
+  <programme start="20261004044000 +0100" channel="ee_uk.451" stop="20261004060000 +0100">
     <title>This is TNT Sports 6</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
@@ -42280,55 +42332,59 @@
     <title>This is TNT Sports 7</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260929060000 +0100" channel="ee_uk.452" stop="20260929155700 +0100">
+  <programme start="20260929060000 +0100" channel="ee_uk.452" stop="20260929130000 +0100">
     <title>This is TNT Sports 7</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260929155700 +0100" channel="ee_uk.452" stop="20260930035700 +0100">
+  <programme start="20260929130000 +0100" channel="ee_uk.452" stop="20260930010000 +0100">
     <title>This is TNT Sports 7</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260930035700 +0100" channel="ee_uk.452" stop="20260930060000 +0100">
+  <programme start="20260930010000 +0100" channel="ee_uk.452" stop="20260930060000 +0100">
     <title>This is TNT Sports 7</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260930060000 +0100" channel="ee_uk.452" stop="20260930155700 +0100">
+  <programme start="20260930060000 +0100" channel="ee_uk.452" stop="20260930130000 +0100">
     <title>This is TNT Sports 7</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260930155700 +0100" channel="ee_uk.452" stop="20261001035700 +0100">
+  <programme start="20260930130000 +0100" channel="ee_uk.452" stop="20261001010000 +0100">
     <title>This is TNT Sports 7</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20261001035700 +0100" channel="ee_uk.452" stop="20261001060000 +0100">
+  <programme start="20261001010000 +0100" channel="ee_uk.452" stop="20261001060000 +0100">
     <title>This is TNT Sports 7</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20261001060000 +0100" channel="ee_uk.452" stop="20261001155700 +0100">
+  <programme start="20261001060000 +0100" channel="ee_uk.452" stop="20261001130000 +0100">
     <title>This is TNT Sports 7</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20261001155700 +0100" channel="ee_uk.452" stop="20261002035700 +0100">
+  <programme start="20261001130000 +0100" channel="ee_uk.452" stop="20261002010000 +0100">
     <title>This is TNT Sports 7</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20261002035700 +0100" channel="ee_uk.452" stop="20261002060000 +0100">
+  <programme start="20261002010000 +0100" channel="ee_uk.452" stop="20261002060000 +0100">
     <title>This is TNT Sports 7</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20261002060000 +0100" channel="ee_uk.452" stop="20261002155700 +0100">
+  <programme start="20261002060000 +0100" channel="ee_uk.452" stop="20261002130000 +0100">
     <title>This is TNT Sports 7</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20261002155700 +0100" channel="ee_uk.452" stop="20261003035700 +0100">
+  <programme start="20261002130000 +0100" channel="ee_uk.452" stop="20261003010000 +0100">
     <title>This is TNT Sports 7</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20261003035700 +0100" channel="ee_uk.452" stop="20261003060000 +0100">
+  <programme start="20261003010000 +0100" channel="ee_uk.452" stop="20261003060000 +0100">
     <title>This is TNT Sports 7</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20261003060000 +0100" channel="ee_uk.452" stop="20261003133000 +0100">
+  <programme start="20261003060000 +0100" channel="ee_uk.452" stop="20261003130000 +0100">
+    <title>This is TNT Sports 7</title>
+    <url>https://player.ee.co.uk/#/livetv/schedule</url>
+  </programme>
+  <programme start="20261003130000 +0100" channel="ee_uk.452" stop="20261003133000 +0100">
     <title>This is TNT Sports 7</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
@@ -42400,47 +42456,51 @@
     <title>This is TNT Sports 8</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20261001060000 +0100" channel="ee_uk.453" stop="20261001100900 +0100">
+  <programme start="20261001060000 +0100" channel="ee_uk.453" stop="20261001130000 +0100">
     <title>This is TNT Sports 8</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20261001100900 +0100" channel="ee_uk.453" stop="20261001220900 +0100">
+  <programme start="20261001130000 +0100" channel="ee_uk.453" stop="20261002010000 +0100">
     <title>This is TNT Sports 8</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20261001220900 +0100" channel="ee_uk.453" stop="20261002060000 +0100">
+  <programme start="20261002010000 +0100" channel="ee_uk.453" stop="20261002060000 +0100">
     <title>This is TNT Sports 8</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20261002060000 +0100" channel="ee_uk.453" stop="20261002100900 +0100">
+  <programme start="20261002060000 +0100" channel="ee_uk.453" stop="20261002130000 +0100">
     <title>This is TNT Sports 8</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20261002100900 +0100" channel="ee_uk.453" stop="20261002220900 +0100">
+  <programme start="20261002130000 +0100" channel="ee_uk.453" stop="20261003010000 +0100">
     <title>This is TNT Sports 8</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20261002220900 +0100" channel="ee_uk.453" stop="20261003060000 +0100">
+  <programme start="20261003010000 +0100" channel="ee_uk.453" stop="20261003060000 +0100">
     <title>This is TNT Sports 8</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20261003060000 +0100" channel="ee_uk.453" stop="20261003100900 +0100">
+  <programme start="20261003060000 +0100" channel="ee_uk.453" stop="20261003130000 +0100">
     <title>This is TNT Sports 8</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20261003100900 +0100" channel="ee_uk.453" stop="20261003220900 +0100">
+  <programme start="20261003130000 +0100" channel="ee_uk.453" stop="20261003140000 +0100">
     <title>This is TNT Sports 8</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20261003220900 +0100" channel="ee_uk.453" stop="20261004060000 +0100">
+  <programme start="20261003140000 +0100" channel="ee_uk.453" stop="20261003150000 +0100">
+    <title>Live: Rally Italy Day 3</title>
+    <url>https://player.ee.co.uk/#/livetv/schedule</url>
+  </programme>
+  <programme start="20261003150000 +0100" channel="ee_uk.453" stop="20261004030000 +0100">
     <title>This is TNT Sports 8</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20261004060000 +0100" channel="ee_uk.453" stop="20261004100900 +0100">
+  <programme start="20261004030000 +0100" channel="ee_uk.453" stop="20261004060000 +0100">
     <title>This is TNT Sports 8</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20261004100900 +0100" channel="ee_uk.453" stop="20261004220900 +0100">
+  <programme start="20261004060000 +0100" channel="ee_uk.453" stop="20261004150000 +0100">
     <title>This is TNT Sports 8</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
@@ -42504,35 +42564,35 @@
     <title>This is TNT Sports 9</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20261002060000 +0100" channel="ee_uk.454" stop="20261002122700 +0100">
+  <programme start="20261002060000 +0100" channel="ee_uk.454" stop="20261002130000 +0100">
     <title>This is TNT Sports 9</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20261002122700 +0100" channel="ee_uk.454" stop="20261003002700 +0100">
+  <programme start="20261002130000 +0100" channel="ee_uk.454" stop="20261003010000 +0100">
     <title>This is TNT Sports 9</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20261003002700 +0100" channel="ee_uk.454" stop="20261003060000 +0100">
+  <programme start="20261003010000 +0100" channel="ee_uk.454" stop="20261003060000 +0100">
     <title>This is TNT Sports 9</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20261003060000 +0100" channel="ee_uk.454" stop="20261003122700 +0100">
+  <programme start="20261003060000 +0100" channel="ee_uk.454" stop="20261003121000 +0100">
     <title>This is TNT Sports 9</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20261003122700 +0100" channel="ee_uk.454" stop="20261004002700 +0100">
+  <programme start="20261003121000 +0100" channel="ee_uk.454" stop="20261003171500 +0100">
+    <title>Live: Cycling Sparkassen Münsterland Giro</title>
+    <url>https://player.ee.co.uk/#/livetv/schedule</url>
+  </programme>
+  <programme start="20261003171500 +0100" channel="ee_uk.454" stop="20261004051500 +0100">
     <title>This is TNT Sports 9</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20261004002700 +0100" channel="ee_uk.454" stop="20261004060000 +0100">
+  <programme start="20261004051500 +0100" channel="ee_uk.454" stop="20261004060000 +0100">
     <title>This is TNT Sports 9</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20261004060000 +0100" channel="ee_uk.454" stop="20261004122700 +0100">
-    <title>This is TNT Sports 9</title>
-    <url>https://player.ee.co.uk/#/livetv/schedule</url>
-  </programme>
-  <programme start="20261004122700 +0100" channel="ee_uk.454" stop="20261005002700 +0100">
+  <programme start="20261004060000 +0100" channel="ee_uk.454" stop="20261004171500 +0100">
     <title>This is TNT Sports 9</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
@@ -42540,11 +42600,11 @@
     <title>This is TNT Sports 9</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20261005060000 +0100" channel="ee_uk.454" stop="20261005122700 +0100">
+  <programme start="20261005060000 +0100" channel="ee_uk.454" stop="20261005171500 +0100">
     <title>This is TNT Sports 9</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20261005122700 +0100" channel="ee_uk.454" stop="20261006002700 +0100">
+  <programme start="20261005171500 +0100" channel="ee_uk.454" stop="20261006051500 +0100">
     <title>This is TNT Sports 9</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
@@ -42616,23 +42676,23 @@
     <title>This is TNT Sports 10</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20261004060000 +0100" channel="ee_uk.455" stop="20261004130000 +0100">
+  <programme start="20261004060000 +0100" channel="ee_uk.455" stop="20261004153000 +0100">
     <title>This is TNT Sports 10</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20261004130000 +0100" channel="ee_uk.455" stop="20261005010000 +0100">
+  <programme start="20261004153000 +0100" channel="ee_uk.455" stop="20261005033000 +0100">
     <title>This is TNT Sports 10</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20261005010000 +0100" channel="ee_uk.455" stop="20261005060000 +0100">
+  <programme start="20261005033000 +0100" channel="ee_uk.455" stop="20261005060000 +0100">
     <title>This is TNT Sports 10</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20261005060000 +0100" channel="ee_uk.455" stop="20261005130000 +0100">
+  <programme start="20261005060000 +0100" channel="ee_uk.455" stop="20261005153000 +0100">
     <title>This is TNT Sports 10</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20261005130000 +0100" channel="ee_uk.455" stop="20261006010000 +0100">
+  <programme start="20261005153000 +0100" channel="ee_uk.455" stop="20261006033000 +0100">
     <title>This is TNT Sports 10</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
@@ -44412,10 +44472,6 @@
     <title>New: Gates of Heaven</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260929180000 +0800" channel="now_hk.611" stop="20260929190000 +0800">
-    <title>請留意下場播映賽事</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260929190000 +0800" channel="now_hk.611" stop="20260929200000 +0800">
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -45616,10 +45672,6 @@
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260929183000 +0800" channel="now_hk.620" stop="20260929193000 +0800">
-    <title>英超金球回顧 15/16</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260929193000 +0800" channel="now_hk.620" stop="20260929200000 +0800">
     <title>好波之人講英超 -舒米高父子</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -46430,10 +46482,6 @@
   </programme>
   <programme start="20261005233000 +0800" channel="now_hk.620" stop="20261006000000 +0800">
     <title>英超故事 -阿麥迪亞路</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260929180000 +0800" channel="now_hk.621" stop="20260929190000 +0800">
-    <title>英格蘭超級聯賽精華 -第二週</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260929190000 +0800" channel="now_hk.621" stop="20260929210000 +0800">
@@ -47808,10 +47856,6 @@
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260929183000 +0800" channel="now_hk.630" stop="20260929190000 +0800">
-    <title>WTA全接觸 第5集</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260929190000 +0800" channel="now_hk.630" stop="20260929210000 +0800">
     <title>WTA 26 瓜達拉哈拉網球公開賽 -準決賽(2)</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -48374,10 +48418,6 @@
   </programme>
   <programme start="20261005234500 +0800" channel="now_hk.630" stop="20261006000000 +0800">
     <title>英超金球 -第五週</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260929170000 +0800" channel="now_hk.631" stop="20260929193000 +0800">
-    <title>FIE 25/26 國際劍聯大奬賽 -意大利站 (花劍)</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260929193000 +0800" channel="now_hk.631" stop="20260929200000 +0800">
@@ -49888,10 +49928,6 @@
     <title>2026 Mass Participation -Transvulcania</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260929173000 +0800" channel="now_hk.634" stop="20260929193000 +0800">
-    <title>WTA 26 瓜達拉哈拉網球公開賽 -準決賽(2)</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260929193000 +0800" channel="now_hk.634" stop="20260929213000 +0800">
     <title>WTA 26 新加坡網球公開賽 -半準決賽(4)</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -50624,10 +50660,6 @@
     <title>一CUE過百 第188集</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260929174000 +0800" channel="now_hk.635" stop="20260929191000 +0800">
-    <title>Courmayeur Cup '26 第1集 -SF1 Imoco Conegliano v Novara</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260929191000 +0800" channel="now_hk.635" stop="20260929194000 +0800">
     <title>MP '26 第2集 -Ibiza Marathon, MP '26</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -51078,10 +51110,6 @@
   </programme>
   <programme start="20261005213000 +0800" channel="now_hk.635" stop="20261006003000 +0800">
     <title>WSWC '27 Gr. A 第14集 -Chinese Taipei v Australia</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260929170000 +0800" channel="now_hk.636" stop="20260929190000 +0800">
-    <title>ATP 26 洛斯卡波斯網球公開賽 -準決賽(2)</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260929190000 +0800" channel="now_hk.636" stop="20260929210000 +0800">
@@ -51670,18 +51698,6 @@
   </programme>
   <programme start="20261005230000 +0800" channel="now_hk.636" stop="20261006000000 +0800">
     <title>ATP 26 精華 -辛辛那堤網球公開賽</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260929163000 +0800" channel="now_hk.637" stop="20260929190000 +0800">
-    <title>深圳桌球公開賽 2026 -64強 - 奧蘇利雲 對 江俊</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260929190000 +0800" channel="now_hk.637" stop="20260929191500 +0800">
-    <title>一CUE過百 第143集</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260929191500 +0800" channel="now_hk.637" stop="20260929193000 +0800">
-    <title>滿分 147 第40集</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260929193000 +0800" channel="now_hk.637" stop="20260929223000 +0800">
@@ -53080,10 +53096,6 @@
     <title>意甲全面睇 第3集 -比賽曰 3</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260929174500 +0800" channel="now_hk.639" stop="20260929191500 +0800">
-    <title>利華盃2026 -第3天雙打 - 古保利/文錫 對 迪文拿奧/費歷斯</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260929191500 +0800" channel="now_hk.639" stop="20260929204500 +0800">
     <title>利華盃2026 -第3天單打 - 施華利夫 對 錢亮拿</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -53650,14 +53662,6 @@
   </programme>
   <programme start="20261005230000 +0800" channel="now_hk.639" stop="20261006000000 +0800">
     <title>GT歐洲挑戰賽2026 -西班牙站主賽事2</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260929183000 +0800" channel="now_hk.640" stop="20260929190000 +0800">
-    <title>我在現場 第1集</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260929190000 +0800" channel="now_hk.640" stop="20260929193000 +0800">
-    <title>英超精華 第5集 -富咸 對 曼聯</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260929193000 +0800" channel="now_hk.640" stop="20260929200000 +0800">
@@ -57108,14 +57112,6 @@
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260929175000 +0800" channel="now_hk.668" stop="20260929183500 +0800">
-    <title>賽事重溫 -第6集</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260929183500 +0800" channel="now_hk.668" stop="20260929191500 +0800">
-    <title>賽事重溫 -第5集</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260929191500 +0800" channel="now_hk.668" stop="20260929200000 +0800">
     <title>賽事重溫 -第6集</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -57738,14 +57734,6 @@
   </programme>
   <programme start="20261005230000 +0800" channel="now_hk.668" stop="20261006000500 +0800">
     <title>早着先機 -第9集</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260929182700 +0800" channel="now_hk.674" stop="20260929185100 +0800">
-    <title>Afghanistan tour of India, 2026 -Highlights: AFG vs IND, 3rd T20I</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260929185100 +0800" channel="now_hk.674" stop="20260929191900 +0800">
-    <title>MLC 2026 -Highlights: Final: LAKR vs WF</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260929191900 +0800" channel="now_hk.674" stop="20260929194800 +0800">
@@ -64269,7 +64257,7 @@
     <url>https://www.magenta.tv/</url>
   </programme>
   <programme start="20261002052000 +0200" channel="sky_de.201" stop="20261002070000 +0200">
-    <title>NHL</title>
+    <title>-</title>
     <url>https://www.magenta.tv/</url>
   </programme>
   <programme start="20261002070000 +0200" channel="sky_de.201" stop="20261002080000 +0200">
@@ -64397,7 +64385,7 @@
     <url>https://www.magenta.tv/</url>
   </programme>
   <programme start="20261004050000 +0200" channel="sky_de.201" stop="20261004061500 +0200">
-    <title>Live Moto2: Race - GP Japan</title>
+    <title>Moto2</title>
     <url>https://www.magenta.tv/</url>
   </programme>
   <programme start="20261004061500 +0200" channel="sky_de.201" stop="20261004080000 +0200">
@@ -64440,8 +64428,16 @@
     <title>Live NFL: Detroit Lions @ Carolina Panthers, Week 4 (Sunday Night Football)</title>
     <url>https://www.magenta.tv/</url>
   </programme>
-  <programme start="20261005053000 +0200" channel="sky_de.201" stop="20261005170000 +0200">
-    <title>Live ATP &amp; WTA: Top Matches of the Day</title>
+  <programme start="20261005053000 +0200" channel="sky_de.201" stop="20261005113000 +0200">
+    <title>-</title>
+    <url>https://www.magenta.tv/</url>
+  </programme>
+  <programme start="20261005113000 +0200" channel="sky_de.201" stop="20261005140000 +0200">
+    <title>-</title>
+    <url>https://www.magenta.tv/</url>
+  </programme>
+  <programme start="20261005140000 +0200" channel="sky_de.201" stop="20261005170000 +0200">
+    <title>nfl</title>
     <url>https://www.magenta.tv/</url>
   </programme>
   <programme start="20261005170000 +0200" channel="sky_de.201" stop="20261005173000 +0200">
@@ -65149,7 +65145,7 @@
     <url>https://www.magenta.tv/</url>
   </programme>
   <programme start="20261005180000 +0200" channel="sky_de.202" stop="20261005183000 +0200">
-    <title>Football: Playmaker Podcast of Sports 360 with Sebastian Hellmann (Guest: ...)</title>
+    <title>Football: Playmaker Podcast of Sports 360 with Sebastian Hellmann (Guest: Dino Toppmöller)</title>
     <url>https://www.magenta.tv/</url>
   </programme>
   <programme start="20261005183000 +0200" channel="sky_de.202" stop="20261005193000 +0200">
@@ -65177,7 +65173,7 @@
     <url>https://www.magenta.tv/</url>
   </programme>
   <programme start="20261005223000 +0200" channel="sky_de.202" stop="20261005230000 +0200">
-    <title>Football: Playmaker Podcast of Sports 360 with Sebastian Hellmann (Guest: ...)</title>
+    <title>Football: Playmaker Podcast of Sports 360 with Sebastian Hellmann (Guest: Dino Toppmöller)</title>
     <url>https://www.magenta.tv/</url>
   </programme>
   <programme start="20261005230000 +0200" channel="sky_de.202" stop="20261006000000 +0200">
@@ -66969,7 +66965,7 @@
     <url>https://www.magenta.tv/</url>
   </programme>
   <programme start="20260929053000 +0200" channel="sky_de.205" stop="20260929063000 +0200">
-    <title>MotoGP: Race - GP Österreich</title>
+    <title>MotoGP</title>
     <url>https://www.magenta.tv/</url>
   </programme>
   <programme start="20260929063000 +0200" channel="sky_de.205" stop="20260929083000 +0200">
@@ -67057,7 +67053,7 @@
     <url>https://www.magenta.tv/</url>
   </programme>
   <programme start="20260930040000 +0200" channel="sky_de.205" stop="20260930070000 +0200">
-    <title>Live NHL: Vancouver Canucks @ Edmonton Oilers</title>
+    <title>NHL</title>
     <url>https://www.magenta.tv/</url>
   </programme>
   <programme start="20260930070000 +0200" channel="sky_de.205" stop="20260930090000 +0200">
@@ -67405,7 +67401,7 @@
     <url>https://www.magenta.tv/</url>
   </programme>
   <programme start="20261004050000 +0200" channel="sky_de.205" stop="20261004061500 +0200">
-    <title>Live Moto2: Race - GP Japan</title>
+    <title>Moto2</title>
     <url>https://www.magenta.tv/</url>
   </programme>
   <programme start="20261004061500 +0200" channel="sky_de.205" stop="20261004083000 +0200">
@@ -67489,7 +67485,7 @@
     <url>https://www.magenta.tv/</url>
   </programme>
   <programme start="20261005050000 +0200" channel="sky_de.205" stop="20261005070000 +0200">
-    <title>DFB-Pokal: VfL Osnabrück - FC Bayern München, Nachholspiel, 1 Round</title>
+    <title>DFB-Pokal</title>
     <url>https://www.magenta.tv/</url>
   </programme>
   <programme start="20261005070000 +0200" channel="sky_de.205" stop="20261005090000 +0200">
@@ -67620,8 +67616,12 @@
     <title>ATP 250: D. Medvedev - A. Rublev, Aito Hangzhou Open in Hangzhou (CHN), Final</title>
     <url>https://www.magenta.tv/</url>
   </programme>
-  <programme start="20260930040000 +0200" channel="sky_de.206" stop="20260930170000 +0200">
-    <title>Live ATP &amp; WTA: Top Matches of the Day</title>
+  <programme start="20260930040000 +0200" channel="sky_de.206" stop="20260930160000 +0200">
+    <title>ATP &amp; WTA: The Top Matches of the Day</title>
+    <url>https://www.magenta.tv/</url>
+  </programme>
+  <programme start="20260930160000 +0200" channel="sky_de.206" stop="20260930170000 +0200">
+    <title>ATP &amp; WTA: The Top Matches of the Day</title>
     <url>https://www.magenta.tv/</url>
   </programme>
   <programme start="20260930170000 +0200" channel="sky_de.206" stop="20260930173000 +0200">
@@ -67760,8 +67760,12 @@
     <title>ATP 500: Top Match</title>
     <url>https://www.magenta.tv/</url>
   </programme>
-  <programme start="20261004040000 +0200" channel="sky_de.206" stop="20261004170000 +0200">
-    <title>Live ATP &amp; WTA: Top Matches of the Day</title>
+  <programme start="20261004040000 +0200" channel="sky_de.206" stop="20261004160000 +0200">
+    <title>ATP &amp; WTA: The Top Matches of the Day</title>
+    <url>https://www.magenta.tv/</url>
+  </programme>
+  <programme start="20261004160000 +0200" channel="sky_de.206" stop="20261004170000 +0200">
+    <title>ATP &amp; WTA: The Top Matches of the Day</title>
     <url>https://www.magenta.tv/</url>
   </programme>
   <programme start="20261004170000 +0200" channel="sky_de.206" stop="20261004193000 +0200">
@@ -67793,7 +67797,7 @@
     <url>https://www.magenta.tv/</url>
   </programme>
   <programme start="20261005050000 +0200" channel="sky_de.206" stop="20261005170000 +0200">
-    <title>Live ATP &amp; WTA: Top Matches of the Day</title>
+    <title>ATP &amp; WTA: The Top Matches of the Day</title>
     <url>https://www.magenta.tv/</url>
   </programme>
   <programme start="20261005170000 +0200" channel="sky_de.206" stop="20261005173000 +0200">
@@ -68241,7 +68245,7 @@
     <url>https://www.magenta.tv/</url>
   </programme>
   <programme start="20261005055500 +0200" channel="sky_de.207" stop="20261005061500 +0200">
-    <title>LIV Golf: Highlights Final day Hong Kong 2026</title>
+    <title>LIV GOLF</title>
     <url>https://www.magenta.tv/</url>
   </programme>
   <programme start="20261005061500 +0200" channel="sky_de.207" stop="20261005063500 +0200">
@@ -68385,7 +68389,7 @@
     <url>https://www.magenta.tv/</url>
   </programme>
   <programme start="20260930044000 +0200" channel="sky_de.209" stop="20260930061500 +0200">
-    <title>F1: Benetton Formula</title>
+    <title>Benetton Formula</title>
     <url>https://www.magenta.tv/</url>
   </programme>
   <programme start="20260930061500 +0200" channel="sky_de.209" stop="20260930081500 +0200">
@@ -68617,7 +68621,7 @@
     <url>https://www.magenta.tv/</url>
   </programme>
   <programme start="20261004050000 +0200" channel="sky_de.209" stop="20261004063000 +0200">
-    <title>F1: 3rd Free Practice - GP Bahrain</title>
+    <title>F1</title>
     <url>https://www.magenta.tv/</url>
   </programme>
   <programme start="20261004063000 +0200" channel="sky_de.209" stop="20261004080000 +0200">
@@ -68697,7 +68701,7 @@
     <url>https://www.magenta.tv/</url>
   </programme>
   <programme start="20261005054500 +0200" channel="sky_de.209" stop="20261005074500 +0200">
-    <title>F1: Race - GP Bahrain</title>
+    <title>F1</title>
     <url>https://www.magenta.tv/</url>
   </programme>
   <programme start="20261005074500 +0200" channel="sky_de.209" stop="20261005080000 +0200">
@@ -68721,7 +68725,7 @@
     <url>https://www.magenta.tv/</url>
   </programme>
   <programme start="20260929055000 +0200" channel="sky_de.210" stop="20260929075000 +0200">
-    <title>BL: 1. FC Union Berlin - FC Schalke 04, Flutlicht-Friday, 3. Matchday</title>
+    <title>BL</title>
     <url>https://www.magenta.tv/</url>
   </programme>
   <programme start="20260929075000 +0200" channel="sky_de.210" stop="20260929090000 +0200">
@@ -69281,7 +69285,7 @@
     <url>https://www.magenta.tv/</url>
   </programme>
   <programme start="20260930050000 +0200" channel="sky_de.221" stop="20260930170000 +0200">
-    <title>Live WTA 1000: China Open in Peking (China), 1 Day</title>
+    <title>Tennis: China Open 2026</title>
     <url>https://www.magenta.tv/</url>
   </programme>
   <programme start="20260930170000 +0200" channel="sky_de.221" stop="20261001044000 +0200">
@@ -69353,7 +69357,7 @@
     <url>https://www.magenta.tv/</url>
   </programme>
   <programme start="20261004050000 +0200" channel="sky_de.221" stop="20261004150000 +0200">
-    <title>Live WTA 1000: China Open in Peking (China), 5 Day</title>
+    <title>Tennis: China Open 2026</title>
     <url>https://www.magenta.tv/</url>
   </programme>
   <programme start="20261004150000 +0200" channel="sky_de.221" stop="20261004175500 +0200">
@@ -69385,7 +69389,7 @@
     <url>https://www.magenta.tv/</url>
   </programme>
   <programme start="20261005050000 +0200" channel="sky_de.221" stop="20261005170000 +0200">
-    <title>Live WTA 1000: China Open in Peking (China), 6 Day</title>
+    <title>Tennis: China Open 2026</title>
     <url>https://www.magenta.tv/</url>
   </programme>
   <programme start="20261005170000 +0200" channel="sky_de.221" stop="20261006044000 +0200">
@@ -69413,7 +69417,7 @@
     <url>https://www.magenta.tv/</url>
   </programme>
   <programme start="20260930023000 +0200" channel="sky_de.222" stop="20260930100000 +0200">
-    <title>Live WNBA: Minnesota Lynx @ New York Liberty, Playoffs Viertelfinals, Match 2</title>
+    <title>WNBA</title>
     <url>https://www.magenta.tv/</url>
   </programme>
   <programme start="20260930100000 +0200" channel="sky_de.222" stop="20261001060000 +0200">

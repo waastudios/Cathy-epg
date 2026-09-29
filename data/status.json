@@ -1,11 +1,11 @@
 {
   "astro": {
     "status": "ok",
-    "records": 2342
+    "records": 2356
   },
   "now_hk": {
     "status": "ok",
-    "records": 3890
+    "records": 3872
   },
   "allente_se": {
     "status": "ok",
@@ -17,11 +17,11 @@
   },
   "ee_uk": {
     "status": "ok",
-    "records": 6843
+    "records": 6844
   },
   "sky_de": {
     "status": "ok",
-    "records": 1406
+    "records": 1410
   },
   "digi4k_ro": {
     "status": "ok",
@@ -42,7 +42,6 @@
   "canalplus_fr": {
     "status": "ok",
     "records": 130,
-    "source": "epg.pw France XMLTV (fallback, ~2-3 days)",
     "notes": [
       "Canal+ 官方 API 不可用（403 rate limited: https://hodor.canalplus.pro/api/v2/mycanal/authenticate.json/webapp/6.0?experiments=beta-test-one-tv-guide:control），回退到 epg.pw"
     ]
@@ -50,10 +49,10 @@
   "xmltv": {
     "status": "ok",
     "channels": 164,
-    "programmes": 17339,
+    "programmes": 17340,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-09-29T10:36:57Z",
-  "total_records": 17339
+  "generated_at": "2026-09-29T11:46:02Z",
+  "total_records": 17340
 }
