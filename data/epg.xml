@@ -45936,10 +45936,6 @@
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260929220000 +0800" channel="now_hk.620" stop="20260929223000 +0800">
-    <title>英超精彩重溫 -史高斯</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260929223000 +0800" channel="now_hk.620" stop="20260929230000 +0800">
     <title>英超精彩重溫 -舒米高</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -49112,10 +49108,6 @@
     <title>PGA冠軍巡迴賽學習中心2026 第15集</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260929203000 +0800" channel="now_hk.632" stop="20260929223000 +0800">
-    <title>2026/27 西班牙甲組足球聯賽 -華歷簡奴 對 愛斯賓奴</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260929223000 +0800" channel="now_hk.632" stop="20260929230000 +0800">
     <title>西班牙甲組足球聯賽精華 -第七週</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -50844,10 +50836,6 @@
     <title>一CUE過百 第188集</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260929214000 +0800" channel="now_hk.635" stop="20260929221000 +0800">
-    <title>MP Series '25 第9集 -Cardiff Half Marathon '25 H/L</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260929221000 +0800" channel="now_hk.635" stop="20260930001000 +0800">
     <title>WSWC '27 Gr. A 第11集 -Czechia v Chinese Taipei</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -51870,10 +51858,6 @@
   </programme>
   <programme start="20261005230000 +0800" channel="now_hk.636" stop="20261006000000 +0800">
     <title>ATP 26 精華 -辛辛那堤網球公開賽</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260929193000 +0800" channel="now_hk.637" stop="20260929223000 +0800">
-    <title>深圳桌球公開賽 2026 -32強 - 雷佩凡 對 羅拔臣[直播]</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260929223000 +0800" channel="now_hk.637" stop="20260929224500 +0800">
@@ -55060,10 +55044,6 @@
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260929220000 +0800" channel="now_hk.642" stop="20260929223000 +0800">
-    <title>籃球人物誌 第202集 -卜柏堤</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260929223000 +0800" channel="now_hk.642" stop="20260929230000 +0800">
     <title>Johnny Hoops訪談NBA傳奇 第206集 -卜柏堤</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -57196,14 +57176,6 @@
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260929212500 +0800" channel="now_hk.668" stop="20260929221000 +0800">
-    <title>賽事重溫 -第6集</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260929221000 +0800" channel="now_hk.668" stop="20260929221500 +0800">
-    <title>帶你遊馬房 -黃寶妮</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260929221500 +0800" channel="now_hk.668" stop="20260929230000 +0800">
     <title>賽事重溫 -第6集</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -57806,10 +57778,6 @@
   </programme>
   <programme start="20261005230000 +0800" channel="now_hk.668" stop="20261006000500 +0800">
     <title>早着先機 -第9集</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260929214400 +0800" channel="now_hk.674" stop="20260929221200 +0800">
-    <title>TATA IPL 2026 -Highlights: FINAL: RCB vs GT</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260929221200 +0800" channel="now_hk.674" stop="20260929224000 +0800">
@@ -62620,23 +62588,23 @@
     <title>Snooker: Shenzhen Open: Round 3</title>
     <url>https://epg.sbb.rs/</url>
   </programme>
-  <programme start="20260929163000 +0200" channel="eurosport.4k" stop="20260929171500 +0200">
+  <programme start="20260929163000 +0200" channel="eurosport.4k" stop="20260929171700 +0200">
     <title>Cycling: Mountain Biking - World Cup, Whistler (Women): Downhill, Elite</title>
     <url>https://epg.sbb.rs/</url>
   </programme>
-  <programme start="20260929171500 +0200" channel="eurosport.4k" stop="20260929180000 +0200">
+  <programme start="20260929171700 +0200" channel="eurosport.4k" stop="20260929175800 +0200">
     <title>Cycling: Mountain Biking - World Cup, Whistler (Men): Downhill, Elite</title>
     <url>https://epg.sbb.rs/</url>
   </programme>
-  <programme start="20260929180000 +0200" channel="eurosport.4k" stop="20260929190000 +0200">
+  <programme start="20260929175800 +0200" channel="eurosport.4k" stop="20260929185700 +0200">
     <title>Cycling - World Championship, Montreal, Women: Elite, Road Race</title>
     <url>https://epg.sbb.rs/</url>
   </programme>
-  <programme start="20260929190000 +0200" channel="eurosport.4k" stop="20260929200000 +0200">
+  <programme start="20260929185700 +0200" channel="eurosport.4k" stop="20260929200500 +0200">
     <title>Sportsko penjanje: World Cup - Koper: Lead, Men i Women, Final</title>
     <url>https://epg.sbb.rs/</url>
   </programme>
-  <programme start="20260929200000 +0200" channel="eurosport.4k" stop="20260929220000 +0200">
+  <programme start="20260929200500 +0200" channel="eurosport.4k" stop="20260929220000 +0200">
     <title>Snooker: Shenzhen Open: Round 3</title>
     <url>https://epg.sbb.rs/</url>
   </programme>
@@ -64160,8 +64128,12 @@
     <title>BL: Torparade 4. Matchday</title>
     <url>https://www.magenta.tv/</url>
   </programme>
-  <programme start="20260929130000 +0200" channel="sky_de.201" stop="20260929160000 +0200">
+  <programme start="20260929130000 +0200" channel="sky_de.201" stop="20260929154500 +0200">
     <title>Live ATP 250: Final-Conference Hangzhou &amp; Chengdu (CHN)</title>
+    <url>https://www.magenta.tv/</url>
+  </programme>
+  <programme start="20260929154500 +0200" channel="sky_de.201" stop="20260929160000 +0200">
+    <title>WTA: Greatest 50</title>
     <url>https://www.magenta.tv/</url>
   </programme>
   <programme start="20260929160000 +0200" channel="sky_de.201" stop="20260929163000 +0200">
@@ -67628,8 +67600,12 @@
     <title>ATP 250: N. Basilashvili (GEO) - A. Davidovich Fokina (ESP), Chengdu Open (CHN), HF 1</title>
     <url>https://www.magenta.tv/</url>
   </programme>
-  <programme start="20260929130000 +0200" channel="sky_de.206" stop="20260929160000 +0200">
+  <programme start="20260929130000 +0200" channel="sky_de.206" stop="20260929154000 +0200">
     <title>Live ATP 250: Final-Conference Hangzhou &amp; Chengdu (CHN)</title>
+    <url>https://www.magenta.tv/</url>
+  </programme>
+  <programme start="20260929154000 +0200" channel="sky_de.206" stop="20260929160000 +0200">
+    <title>WTA: Greatest 50</title>
     <url>https://www.magenta.tv/</url>
   </programme>
   <programme start="20260929160000 +0200" channel="sky_de.206" stop="20260929181500 +0200">

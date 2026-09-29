@@ -1,11 +1,11 @@
 {
   "astro": {
     "status": "ok",
-    "records": 2356
+    "records": 2380
   },
   "now_hk": {
     "status": "ok",
-    "records": 3872
+    "records": 3801
   },
   "allente_se": {
     "status": "ok",
@@ -17,11 +17,11 @@
   },
   "ee_uk": {
     "status": "ok",
-    "records": 6844
+    "records": 6852
   },
   "sky_de": {
     "status": "ok",
-    "records": 1410
+    "records": 1412
   },
   "digi4k_ro": {
     "status": "ok",
@@ -46,17 +46,21 @@
       "Canal+ 官方 API 不可用（403 rate limited: https://hodor.canalplus.pro/api/v2/mycanal/authenticate.json/webapp/6.0?experiments=beta-test-one-tv-guide:control），回退到 epg.pw"
     ]
   },
+  "canalplus_pl_4k": {
+    "status": "ok",
+    "records": 40,
+    "notes": [
+      "Canal+ 4K 官方 API 不可用（403 rate limited: https://hodor.canalplus.pro/api/v2/mycanalint/authenticate.json/webapp/6.0?experiments=beta-test-one-tv-guide:control），尝试 naziemna.info 兜底",
+      "Canal+ 4K 官方 API 不可用，已切换至 naziemna.info 第三方数据（40 档）"
+    ]
+  },
   "xmltv": {
     "status": "ok",
-    "channels": 164,
-    "programmes": 17340,
+    "channels": 165,
+    "programmes": 17343,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-09-29T11:46:02Z",
-  "total_records": 17340,
-  "canalplus_pl_4k": {
-    "status": "ok",
-    "records": 40
-  }
+  "generated_at": "2026-09-29T14:57:34Z",
+  "total_records": 17343
 }
