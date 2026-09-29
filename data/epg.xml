@@ -6588,62 +6588,6 @@
     <title>Broadcast Break</title>
     <url>https://www.allente.se/tv-guide/</url>
   </programme>
-  <programme start="20260929000000 +0800" channel="astro.801" stop="20260929030000 +0800">
-    <title>Sukan Asia 2026 Sepak Takraw (M): MAS lwn JPN</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929030000 +0800" channel="astro.801" stop="20260929040000 +0800">
-    <title>Hari ke-8: Aksi Aichi-Nagoya 2026</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929040000 +0800" channel="astro.801" stop="20260929060000 +0800">
-    <title>Sukan Asia 2026 Bolasepak (M): PHI lwn VIE</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929060000 +0800" channel="astro.801" stop="20260929063000 +0800">
-    <title>Sorotan AFF Hyundai 2026: VIE lwn THA</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929063000 +0800" channel="astro.801" stop="20260929073000 +0800">
-    <title>Nadi Arena</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929073000 +0800" channel="astro.801" stop="20260929083000 +0800">
-    <title>Hari ke-9: Aksi Aichi-Nagoya 2026</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929083000 +0800" channel="astro.801" stop="20260929090000 +0800">
-    <title>(L) Hari ke-10: What's Up Jepun</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929090000 +0800" channel="astro.801" stop="20260929194000 +0800">
-    <title>(L) Hari ke-10: Sukan Asia 2026</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929194000 +0800" channel="astro.801" stop="20260929194800 +0800">
-    <title>(L) Nadi Arena</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929194800 +0800" channel="astro.801" stop="20260929205000 +0800">
-    <title>(L) Hari ke-10: Sukan Asia 2026</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929205000 +0800" channel="astro.801" stop="20260929215000 +0800">
-    <title>(L) Nadi Arena</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929215000 +0800" channel="astro.801" stop="20260929222400 +0800">
-    <title>Hari ke-9: Aksi Aichi-Nagoya 2026</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929222400 +0800" channel="astro.801" stop="20260929233000 +0800">
-    <title>Hari ke-10: Aksi Aichi-Nagoya 2026</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929233000 +0800" channel="astro.801" stop="20260930000000 +0800">
-    <title>Sorotan BWF China Masters 2026</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
   <programme start="20260930000000 +0800" channel="astro.801" stop="20260930023000 +0800">
     <title>Sukan Asia 2026: Renang</title>
     <url>https://www.astro.com.my/content/channels</url>
@@ -6996,64 +6940,68 @@
     <title>Nadi Arena</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929010000 +0800" channel="astro.802" stop="20260929013000 +0800">
-    <title>Own The Moment Ep6 - Gojes</title>
+  <programme start="20261006000000 +0800" channel="astro.801" stop="20261006023000 +0800">
+    <title>Sukan Asia 2026: Renang</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929013000 +0800" channel="astro.802" stop="20260929014000 +0800">
-    <title>Kisah Di Sebalik Harimau: Syafiq Ahmad</title>
+  <programme start="20261006023000 +0800" channel="astro.801" stop="20261006060000 +0800">
+    <title>No information available Ep112</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929014000 +0800" channel="astro.802" stop="20260929035500 +0800">
-    <title>AFF Hyundai Cup 2026: VIE lwn THA</title>
+  <programme start="20261006060000 +0800" channel="astro.801" stop="20261006070000 +0800">
+    <title>Hari ke-15: Aksi Aichi-Nagoya 2026</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929035500 +0800" channel="astro.802" stop="20260929060000 +0800">
-    <title>ATP 250 Mallorca 2026: Akhir</title>
+  <programme start="20261006070000 +0800" channel="astro.801" stop="20261006080000 +0800">
+    <title>Nadi Arena</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929060000 +0800" channel="astro.802" stop="20260929080000 +0800">
-    <title>ACLE 2026/27: Jeonbuk lwn Kashiwa</title>
+  <programme start="20261006080000 +0800" channel="astro.801" stop="20261006114500 +0800">
+    <title>No information available Ep102</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929080000 +0800" channel="astro.802" stop="20260929093000 +0800">
-    <title>(L) Sukan Asia 2026: Mobile Legends</title>
+  <programme start="20261006114500 +0800" channel="astro.801" stop="20261006130000 +0800">
+    <title>No information available Ep111</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929093000 +0800" channel="astro.802" stop="20260929160000 +0800">
-    <title>(L) Stage 3: LTDL 2026</title>
+  <programme start="20261006130000 +0800" channel="astro.801" stop="20261006140000 +0800">
+    <title>Nadi Arena</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929160000 +0800" channel="astro.802" stop="20260929180000 +0800">
-    <title>ACL Two 2026/27: Al Wahda lwn Kuwait</title>
+  <programme start="20261006140000 +0800" channel="astro.801" stop="20261006154500 +0800">
+    <title>No information available Ep141</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929180000 +0800" channel="astro.802" stop="20260929190000 +0800">
-    <title>Tekad: Ekspedisi Guthrie Everest 2026</title>
+  <programme start="20261006154500 +0800" channel="astro.801" stop="20261006170000 +0800">
+    <title>No information available Ep134</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929190000 +0800" channel="astro.802" stop="20260929193000 +0800">
-    <title>Sorotan Stage 2: LTDL 2026</title>
+  <programme start="20261006170000 +0800" channel="astro.801" stop="20261006180000 +0800">
+    <title>No information available Ep118</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929193000 +0800" channel="astro.802" stop="20260929214000 +0800">
-    <title>(L) ATP 250 Hangzhou 2026: Akhir</title>
+  <programme start="20261006180000 +0800" channel="astro.801" stop="20261006190000 +0800">
+    <title>Hari ke-13: Aksi Aichi-Nagoya 2026</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929214000 +0800" channel="astro.802" stop="20260929221000 +0800">
-    <title>Sorotan Super School Rugby 2026</title>
+  <programme start="20261006190000 +0800" channel="astro.801" stop="20261006200000 +0800">
+    <title>Nadi Arena</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929221000 +0800" channel="astro.802" stop="20260929224000 +0800">
-    <title>Sorotan Stage 2: LTDL 2026</title>
+  <programme start="20261006200000 +0800" channel="astro.801" stop="20261006210000 +0800">
+    <title>No information available Ep01</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929224000 +0800" channel="astro.802" stop="20260929231000 +0800">
-    <title>Sorotan Stage 3: LTDL 2026</title>
+  <programme start="20261006210000 +0800" channel="astro.801" stop="20261006223000 +0800">
+    <title>No information available Ep02</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929231000 +0800" channel="astro.802" stop="20260930033000 +0800">
-    <title>Stage 2: LTDL 2026</title>
+  <programme start="20261006223000 +0800" channel="astro.801" stop="20261006230000 +0800">
+    <title>Sorotan BWF China Masters 2026</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006230000 +0800" channel="astro.801" stop="20261007000000 +0800">
+    <title>Nadi Arena</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
   <programme start="20260930033000 +0800" channel="astro.802" stop="20260930040000 +0800">
@@ -7326,74 +7274,6 @@
   </programme>
   <programme start="20261005040000 +0800" channel="astro.802" stop="20261005060000 +0800">
     <title>MPL MY S18 2026: Match 42</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929000100 +0800" channel="astro.803" stop="20260929020000 +0800">
-    <title>AFC Champions League Elite 2026/27: Shabab lwn Tractor</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929020000 +0800" channel="astro.803" stop="20260929040000 +0800">
-    <title>AFC Champions League Elite 2026/27: Al Ahli lwn Pakhtakor</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929040000 +0800" channel="astro.803" stop="20260929043000 +0800">
-    <title>Sorotan MSL 2025/26: MEL lwn DPMM</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929043000 +0800" channel="astro.803" stop="20260929050000 +0800">
-    <title>Sorotan MSL 2025/26: PEN lwn KTRW</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929050000 +0800" channel="astro.803" stop="20260929060000 +0800">
-    <title>Bola Dulu Baru Kamu!</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929060000 +0800" channel="astro.803" stop="20260929080000 +0800">
-    <title>MSL 2026/27: MEL lwn NSE</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929080000 +0800" channel="astro.803" stop="20260929100000 +0800">
-    <title>AFC Champions League Two 2026/27: Lion City lwn BG Pathum</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929100000 +0800" channel="astro.803" stop="20260929121000 +0800">
-    <title>AFC Champions League Two 2026/27: Phnom Penh lwn Kuching City</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929121000 +0800" channel="astro.803" stop="20260929142500 +0800">
-    <title>AFC Champions League Two 2026/27: Al Rayyan lwn Al Faisaly</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929142500 +0800" channel="astro.803" stop="20260929143000 +0800">
-    <title>Yang Sudi Tinggal Ep03</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929143000 +0800" channel="astro.803" stop="20260929164000 +0800">
-    <title>AFC Champions League Elite 2026/27: Al Ahli lwn Pakhtakor</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929164000 +0800" channel="astro.803" stop="20260929165000 +0800">
-    <title>Bangkit Semula – Faisal Halim</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929165000 +0800" channel="astro.803" stop="20260929190000 +0800">
-    <title>AFC Champions League Elite 2026/27: Shabab lwn Tractor</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929190000 +0800" channel="astro.803" stop="20260929193000 +0800">
-    <title>Sorotan MSL 2025/26: TER lwn MEL</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929193000 +0800" channel="astro.803" stop="20260929213000 +0800">
-    <title>AFC Champions League Elite 2026/27: Johor lwn Buriram</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929213000 +0800" channel="astro.803" stop="20260929233000 +0800">
-    <title>AFC Champions League Elite 2026/27: Al Shamal lwn Al Itthihad</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929233000 +0800" channel="astro.803" stop="20260930000000 +0800">
-    <title>Sorotan Piala FA 2026/27: TER lwn DPMM</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
   <programme start="20260930000000 +0800" channel="astro.803" stop="20260930020100 +0800">
@@ -7700,52 +7580,52 @@
     <title>Piala FA 2026/27: Suku Akhir: KEL lwn KUC</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929000000 +0800" channel="astro.804" stop="20260929020000 +0800">
-    <title>MSL 2025/26: SAB lwn PEN</title>
+  <programme start="20261006000000 +0800" channel="astro.803" stop="20261006020000 +0800">
+    <title>MSL 2026/27: SAB lwn DPMM</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929020000 +0800" channel="astro.804" stop="20260929040000 +0800">
-    <title>MSL 2025/26: TER lwn KUC</title>
+  <programme start="20261006020000 +0800" channel="astro.803" stop="20261006040000 +0800">
+    <title>AFC Champions League Elite 2026/27: Al Ittihad lwn Shabab Al Ahli</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929040000 +0800" channel="astro.804" stop="20260929060000 +0800">
-    <title>MSL 2025/26: DPMM lwn IFC</title>
+  <programme start="20261006040000 +0800" channel="astro.803" stop="20261006060000 +0800">
+    <title>MSL 2026/27: MEL lwn KUC</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929060000 +0800" channel="astro.804" stop="20260929080000 +0800">
-    <title>Piala Malaysia 2025/26: 1st Leg: UMD lwn TER</title>
+  <programme start="20261006060000 +0800" channel="astro.803" stop="20261006080000 +0800">
+    <title>MSL 2026/27: KLC lwn DPMM</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929080000 +0800" channel="astro.804" stop="20260929100000 +0800">
-    <title>Piala Malaysia 2025/26: 2nd Leg: SEL lwn KTRW</title>
+  <programme start="20261006080000 +0800" channel="astro.803" stop="20261006100000 +0800">
+    <title>MSL 2026/27: JDT lwn SCT</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929100000 +0800" channel="astro.804" stop="20260929120000 +0800">
-    <title>Piala Malaysia 2025/26: 2nd Leg: TER lwn UMD</title>
+  <programme start="20261006100000 +0800" channel="astro.803" stop="20261006120000 +0800">
+    <title>MSL 2026/27: KRW lwn KUC</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929120000 +0800" channel="astro.804" stop="20260929140000 +0800">
-    <title>MSL 2025/26: KLC lwn JDT</title>
+  <programme start="20261006120000 +0800" channel="astro.803" stop="20261006140000 +0800">
+    <title>MSL 2026/27: MEL lwn NSE</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929140000 +0800" channel="astro.804" stop="20260929160000 +0800">
-    <title>MSL 2025/26: KUC lwn MEL</title>
+  <programme start="20261006140000 +0800" channel="astro.803" stop="20261006160000 +0800">
+    <title>MSL 2026/27: DPMM lwn JDT</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929160000 +0800" channel="astro.804" stop="20260929180000 +0800">
-    <title>MSL 2025/26: SAB lwn DPMM</title>
+  <programme start="20261006160000 +0800" channel="astro.803" stop="20261006180000 +0800">
+    <title>MSL 2026/27: KRW lwn KLC</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929180000 +0800" channel="astro.804" stop="20260929200000 +0800">
-    <title>MSL 2025/26: KTRW lwn MEL</title>
+  <programme start="20261006180000 +0800" channel="astro.803" stop="20261006200000 +0800">
+    <title>MSL 2026/27: NSE lwn SCT</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929200000 +0800" channel="astro.804" stop="20260929220000 +0800">
-    <title>AFF Women's Cup 2026: SGP lwn LAO</title>
+  <programme start="20261006200000 +0800" channel="astro.803" stop="20261006220000 +0800">
+    <title>MSL 2026/27: SAB lwn KUC</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929220000 +0800" channel="astro.804" stop="20260930000000 +0800">
-    <title>AFF Women's Cup 2026: MAS lwn SGP</title>
+  <programme start="20261006220000 +0800" channel="astro.803" stop="20261007000000 +0800">
+    <title>MSL 2026/27: TER lwn PEN</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
   <programme start="20260930000000 +0800" channel="astro.804" stop="20260930020000 +0800">
@@ -8116,48 +7996,52 @@
     <title>Piala Malaysia 2025/26: 1st Leg: MEL lwn SAB</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929001500 +0800" channel="astro.805" stop="20260929023000 +0800">
-    <title>PL 26/27: Arsenal vs Coventry City</title>
+  <programme start="20261006000000 +0800" channel="astro.804" stop="20261006020000 +0800">
+    <title>Piala Malaysia 2025/26: 1st Leg: KRW lwn DPMM</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929023000 +0800" channel="astro.805" stop="20260929044500 +0800">
-    <title>PL: Tottenham vs Man City</title>
+  <programme start="20261006020000 +0800" channel="astro.804" stop="20261006040000 +0800">
+    <title>Piala Malaysia 2025/26: 1st Leg: PDRM lwn JDT</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929044500 +0800" channel="astro.805" stop="20260929070000 +0800">
-    <title>PL: Manchester Utd vs Tottenham</title>
+  <programme start="20261006040000 +0800" channel="astro.804" stop="20261006060000 +0800">
+    <title>Piala Malaysia 2025/26: 1st Leg: PRK lwn KLC</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929070000 +0800" channel="astro.805" stop="20260929091500 +0800">
-    <title>PL: Arsenal vs Sunderland</title>
+  <programme start="20261006060000 +0800" channel="astro.804" stop="20261006080000 +0800">
+    <title>AFC Champions League Two 2026/27: Adelaide lwn Tai Po FC</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929091500 +0800" channel="astro.805" stop="20260929113000 +0800">
-    <title>PL 2026/27: Hull City vs Man Utd</title>
+  <programme start="20261006080000 +0800" channel="astro.804" stop="20261006100000 +0800">
+    <title>AFC Champions League Two 2026/27: Lion City lwn BG Pathum</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929113000 +0800" channel="astro.805" stop="20260929134500 +0800">
-    <title>PL 26/27: Brighton vs Arsenal</title>
+  <programme start="20261006100000 +0800" channel="astro.804" stop="20261006120000 +0800">
+    <title>AFC Champions League Two 2026/27: Phnom Penh lwn Kuching City</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929134500 +0800" channel="astro.805" stop="20260929160000 +0800">
-    <title>PL 26/27: Newcastle vs Liverpool</title>
+  <programme start="20261006120000 +0800" channel="astro.804" stop="20261006140000 +0800">
+    <title>Piala Malaysia 2025/26: 1st Leg: UMD lwn TER</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929160000 +0800" channel="astro.805" stop="20260929181500 +0800">
-    <title>PL 26/27: Fulham vs Man Utd</title>
+  <programme start="20261006140000 +0800" channel="astro.804" stop="20261006160000 +0800">
+    <title>Piala Malaysia 2025/26: 2nd Leg: SEL lwn KTRW</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929181500 +0800" channel="astro.805" stop="20260929203000 +0800">
-    <title>PL 26/27: Liverpool vs Nottingham</title>
+  <programme start="20261006160000 +0800" channel="astro.804" stop="20261006180000 +0800">
+    <title>Piala Malaysia 2025/26: 2nd Leg: TER lwn UMD</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929203000 +0800" channel="astro.805" stop="20260929224500 +0800">
-    <title>PL 26/27: Tottenham vs Villa</title>
+  <programme start="20261006180000 +0800" channel="astro.804" stop="20261006200000 +0800">
+    <title>Piala Malaysia 2025/26: 2nd Leg: JDT lwn PDRM</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929224500 +0800" channel="astro.805" stop="20260930010000 +0800">
-    <title>PL 26/27: Manchester Utd vs Ipswich</title>
+  <programme start="20261006200000 +0800" channel="astro.804" stop="20261006220000 +0800">
+    <title>MSL 2025/26: NSE lwn KLC</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006220000 +0800" channel="astro.804" stop="20261007000000 +0800">
+    <title>MSL 2025/26: PDRM lwn SEL</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
   <programme start="20260930010000 +0800" channel="astro.805" stop="20260930031500 +0800">
@@ -8416,120 +8300,48 @@
     <title>PL 26/27: Fulham vs Man Utd</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929000000 +0800" channel="astro.806" stop="20260929001500 +0800">
-    <title>Padu Fizikal Ep03</title>
+  <programme start="20261006001500 +0800" channel="astro.805" stop="20261006023000 +0800">
+    <title>PL 26/27: Newcastle vs Liverpool</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929001500 +0800" channel="astro.806" stop="20260929003000 +0800">
-    <title>Kapsul Rtm Sports</title>
+  <programme start="20261006023000 +0800" channel="astro.805" stop="20261006044500 +0800">
+    <title>PL: Arsenal vs AFC Bournemouth</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929003000 +0800" channel="astro.806" stop="20260929010000 +0800">
-    <title>Aksi Kayuhan Ep03</title>
+  <programme start="20261006044500 +0800" channel="astro.805" stop="20261006070000 +0800">
+    <title>PL: Liverpool vs Fulham</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929010000 +0800" channel="astro.806" stop="20260929013000 +0800">
-    <title>Sentuhan Berbisa Ep10</title>
+  <programme start="20261006070000 +0800" channel="astro.805" stop="20261006091500 +0800">
+    <title>PL 26/27: Tottenham vs Villa</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929013000 +0800" channel="astro.806" stop="20260929020000 +0800">
-    <title>Evolusi Juara Ep06</title>
+  <programme start="20261006091500 +0800" channel="astro.805" stop="20261006113000 +0800">
+    <title>PL 26/27: Newcastle vs Liverpool</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929020000 +0800" channel="astro.806" stop="20260929023000 +0800">
-    <title>Arena Piksel Ep03</title>
+  <programme start="20261006113000 +0800" channel="astro.805" stop="20261006134500 +0800">
+    <title>PL 26/27: Liverpool vs Nottingham</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929023000 +0800" channel="astro.806" stop="20260929030000 +0800">
-    <title>Demi Pertiwi Ep08</title>
+  <programme start="20261006134500 +0800" channel="astro.805" stop="20261006160000 +0800">
+    <title>PL 26/27: Fulham vs Man Utd</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929030000 +0800" channel="astro.806" stop="20260929031500 +0800">
-    <title>Inovasi Prestasi Ep13</title>
+  <programme start="20261006160000 +0800" channel="astro.805" stop="20261006181500 +0800">
+    <title>PL 26/27: Manchester Utd vs Ipswich</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929031500 +0800" channel="astro.806" stop="20260929033000 +0800">
-    <title>Kapsul Rtm Sports</title>
+  <programme start="20261006181500 +0800" channel="astro.805" stop="20261006203000 +0800">
+    <title>PL 26/27: Aston Villa vs Arsenal</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929033000 +0800" channel="astro.806" stop="20260929040000 +0800">
-    <title>Liga Geng Kuiz Ep08</title>
+  <programme start="20261006203000 +0800" channel="astro.805" stop="20261006224500 +0800">
+    <title>PL 26/27: Brighton vs Arsenal</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929040000 +0800" channel="astro.806" stop="20260929050000 +0800">
-    <title>Sorotan Harian Sukan Aichi-nagoya 2026 Ep08</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929050000 +0800" channel="astro.806" stop="20260929053000 +0800">
-    <title>Trek Kembara Ep01</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929053000 +0800" channel="astro.806" stop="20260929060000 +0800">
-    <title>Rutin Sihat Ep01</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929060000 +0800" channel="astro.806" stop="20260929060500 +0800">
-    <title>Klip Negaraku</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929060500 +0800" channel="astro.806" stop="20260929061500 +0800">
-    <title>Kapsul Rtm Sports</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929061500 +0800" channel="astro.806" stop="20260929063000 +0800">
-    <title>Inovasi Prestasi Ep14</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929063000 +0800" channel="astro.806" stop="20260929070000 +0800">
-    <title>Rutin Sihat Ep02</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929070000 +0800" channel="astro.806" stop="20260929074500 +0800">
-    <title>Sorotan Harian Sukan Aichi-nagoya 2026 Ep09</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929074500 +0800" channel="astro.806" stop="20260929080000 +0800">
-    <title>Padu Fizikal Ep04</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929080000 +0800" channel="astro.806" stop="20260929120000 +0800">
-    <title>(L) Laporan Harian Sukan Asia Aichi-nagoya 2026</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929120000 +0800" channel="astro.806" stop="20260929123000 +0800">
-    <title>Jurnal Sukan #sportpedia Ep09</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929123000 +0800" channel="astro.806" stop="20260929130000 +0800">
-    <title>Super Ep03</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929130000 +0800" channel="astro.806" stop="20260929170000 +0800">
-    <title>(L)laporan Harian Sukan Asia Aichi-nagoya 2026</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929170000 +0800" channel="astro.806" stop="20260929173000 +0800">
-    <title>Ratu Padang Wira Balapan Ep12</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929173000 +0800" channel="astro.806" stop="20260929180000 +0800">
-    <title>Demi Pertiwi Ep08</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929180000 +0800" channel="astro.806" stop="20260929210000 +0800">
-    <title>(L) Laporan Harian Sukan Asia Aichi-nagoya 2026</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929210000 +0800" channel="astro.806" stop="20260929220000 +0800">
-    <title>Luncur Emas : Dua Juara Akuatik Malaysia Ep02</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929220000 +0800" channel="astro.806" stop="20260929230000 +0800">
-    <title>Sorotan Harian Sukan Aichi-nagoya 2026 Ep09</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929230000 +0800" channel="astro.806" stop="20260930000000 +0800">
-    <title>Planet Sukan 2026 Ep18</title>
+  <programme start="20261006224500 +0800" channel="astro.805" stop="20261007010000 +0800">
+    <title>PL 26/27: Tottenham vs Villa</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
   <programme start="20260930000000 +0800" channel="astro.806" stop="20260930010000 +0800">
@@ -9164,54 +8976,6 @@
     <title>Rutin Sihat Ep01</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929053000 +0800" channel="astro.810" stop="20260929060000 +0800">
-    <title>UFC Connected: Montel Jackson</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929060000 +0800" channel="astro.810" stop="20260929080000 +0800">
-    <title>AFF Women's Cup: LAO vs MAS</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929080000 +0800" channel="astro.810" stop="20260929090000 +0800">
-    <title>PL Review 2026/27: Week 5</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929090000 +0800" channel="astro.810" stop="20260929100000 +0800">
-    <title>MotoGP 2026: Austria Highlights</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929100000 +0800" channel="astro.810" stop="20260929154000 +0800">
-    <title>(L) Le Tour de Langkawi 2026: Stage 3</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929154000 +0800" channel="astro.810" stop="20260929173000 +0800">
-    <title>Serie A: Atalanta vs Cagliari</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929173000 +0800" channel="astro.810" stop="20260929193000 +0800">
-    <title>AFF Women's Cup: IDN vs CAM</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929193000 +0800" channel="astro.810" stop="20260929200500 +0800">
-    <title>Total Combat 2026: Ep11</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929200500 +0800" channel="astro.810" stop="20260929204000 +0800">
-    <title>Total Combat 2026: Ep12</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929204000 +0800" channel="astro.810" stop="20260929224500 +0800">
-    <title>PL: Crystal Palace vs Man City</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929224500 +0800" channel="astro.810" stop="20260929231500 +0800">
-    <title>Vendée Arctique 2026: Final Program Hls</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929231500 +0800" channel="astro.810" stop="20260930050000 +0800">
-    <title>(D) UFC 2026: Rosas Jr. vs Barcelos</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
   <programme start="20260930050000 +0800" channel="astro.810" stop="20260930060000 +0800">
     <title>UFC Main Event 311: Dvalishvili vs Nurmagomedov</title>
     <url>https://www.astro.com.my/content/channels</url>
@@ -9512,52 +9276,56 @@
     <title>PL: Hull vs Man Utd</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929022000 +0800" channel="astro.811" stop="20260929035000 +0800">
-    <title>Final Whistle: Season 2025/26 Ep03</title>
+  <programme start="20261006003000 +0800" channel="astro.810" stop="20261006033000 +0800">
+    <title>VNL Men's: QFs: SLO vs TUR</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929035000 +0800" channel="astro.811" stop="20260929060000 +0800">
-    <title>PL: Sunderland vs Fulham</title>
+  <programme start="20261006033000 +0800" channel="astro.810" stop="20261006060000 +0800">
+    <title>VNL Men's:: QFs: JPN vs CHN</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929060000 +0800" channel="astro.811" stop="20260929092000 +0800">
-    <title>PL: Everton vs Man Utd</title>
+  <programme start="20261006060000 +0800" channel="astro.810" stop="20261006080000 +0800">
+    <title>PL: Leeds vs Crystal Palace</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929092000 +0800" channel="astro.811" stop="20260929113000 +0800">
-    <title>PL: Aston Villa vs Arsenal</title>
+  <programme start="20261006080000 +0800" channel="astro.810" stop="20261006090000 +0800">
+    <title>MotoGP 2026: Czechia Highlights</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929113000 +0800" channel="astro.811" stop="20260929134000 +0800">
-    <title>PL: Fulham vs Crystal Palace</title>
+  <programme start="20261006090000 +0800" channel="astro.810" stop="20261006111000 +0800">
+    <title>PL: Liverpool vs Nottm Forest</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929134000 +0800" channel="astro.811" stop="20260929155000 +0800">
-    <title>PL: Chelsea vs Hull City</title>
+  <programme start="20261006111000 +0800" channel="astro.810" stop="20261006131000 +0800">
+    <title>PL: Newcastle vs Liverpool</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929155000 +0800" channel="astro.811" stop="20260929180000 +0800">
+  <programme start="20261006131000 +0800" channel="astro.810" stop="20261006141000 +0800">
+    <title>ALULA Tour: Final Program Hls</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006141000 +0800" channel="astro.810" stop="20261006144000 +0800">
+    <title>World's Strongest Man 2024 - Episode 2</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006144000 +0800" channel="astro.810" stop="20261006165000 +0800">
     <title>PL: Everton vs Ipswich</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929180000 +0800" channel="astro.811" stop="20260929183000 +0800">
-    <title>West Ham United vs Newcastle United 2005</title>
+  <programme start="20261006165000 +0800" channel="astro.810" stop="20261006200000 +0800">
+    <title>Friendly: Chelsea vs JDT</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929183000 +0800" channel="astro.811" stop="20260929190000 +0800">
-    <title>Chelsea vs Burnley 2017/18</title>
+  <programme start="20261006200000 +0800" channel="astro.810" stop="20261006210000 +0800">
+    <title>Reaction Sports 2026: January Edition</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929190000 +0800" channel="astro.811" stop="20260929210000 +0800">
-    <title>Final Whistle: Season 2025/26 Ep04</title>
+  <programme start="20261006210000 +0800" channel="astro.810" stop="20261006220000 +0800">
+    <title>PBR Teams 2026</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929210000 +0800" channel="astro.811" stop="20260929233000 +0800">
-    <title>Legends Football Match - Game4Hope 2026</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929233000 +0800" channel="astro.811" stop="20260930000000 +0800">
-    <title>PL Stories 2026/27: Diogo Jota</title>
+  <programme start="20261006220000 +0800" channel="astro.810" stop="20261007040000 +0800">
+    <title>UFC 332: Silva vs Wang</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
   <programme start="20260930000000 +0800" channel="astro.811" stop="20260930034000 +0800">
@@ -9864,144 +9632,68 @@
     <title>PL: Aston Villa vs Nottm Forest</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929000000 +0800" channel="astro.812" stop="20260929003000 +0800">
-    <title>The Big Interview: Ep02: Kai Havertz Ep02</title>
+  <programme start="20261006011000 +0800" channel="astro.811" stop="20261006032000 +0800">
+    <title>PL: Arsenal vs Coventry</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929003000 +0800" channel="astro.812" stop="20260929013000 +0800">
-    <title>PL Masterclass: Ep03</title>
+  <programme start="20261006032000 +0800" channel="astro.811" stop="20261006035000 +0800">
+    <title>PL Rewind 2026/27: Robbie Fowler</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929013000 +0800" channel="astro.812" stop="20260929023000 +0800">
-    <title>PL Masterclass: Ep04</title>
+  <programme start="20261006035000 +0800" channel="astro.811" stop="20261006060000 +0800">
+    <title>PL: Man City vs Coventry</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929023000 +0800" channel="astro.812" stop="20260929033000 +0800">
-    <title>Goals of the Season: 2025/2026 (haaland)</title>
+  <programme start="20261006060000 +0800" channel="astro.811" stop="20261006081000 +0800">
+    <title>PL: Crystal Palace vs Man City</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929033000 +0800" channel="astro.812" stop="20260929040000 +0800">
-    <title>PL Stories: Ep13: Pep - the Legacy Ep13</title>
+  <programme start="20261006081000 +0800" channel="astro.811" stop="20261006084000 +0800">
+    <title>Newcastle vs Crystal Palace 2014/15</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929040000 +0800" channel="astro.812" stop="20260929043000 +0800">
-    <title>PL Stories: Ep16: John Stones Ep16</title>
+  <programme start="20261006084000 +0800" channel="astro.811" stop="20261006091000 +0800">
+    <title>Chelsea vs Arsenal 2013/14</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929043000 +0800" channel="astro.812" stop="20260929050000 +0800">
-    <title>PL Stories: Ep17: Granit Xhaka Ep17</title>
+  <programme start="20261006091000 +0800" channel="astro.811" stop="20261006120000 +0800">
+    <title>PL: Brighton vs Arsenal</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929050000 +0800" channel="astro.812" stop="20260929053000 +0800">
-    <title>The Big Interview: Ep06</title>
+  <programme start="20261006120000 +0800" channel="astro.811" stop="20261006145000 +0800">
+    <title>PL: Liverpool vs Fulham</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929053000 +0800" channel="astro.812" stop="20260929073000 +0800">
-    <title>Review of the Season: 2025/2026 (ars)</title>
+  <programme start="20261006145000 +0800" channel="astro.811" stop="20261006155000 +0800">
+    <title>PL GOATs: North African Goats With Hassan Kachloul</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929073000 +0800" channel="astro.812" stop="20260929080000 +0800">
-    <title>PL Stories: Ep05: Diogo Jota Ep05</title>
+  <programme start="20261006155000 +0800" channel="astro.811" stop="20261006162000 +0800">
+    <title>PL Stories 2026/27: Pep - The Legacy</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929080000 +0800" channel="astro.812" stop="20260929090000 +0800">
-    <title>PL Masterclass: Ep04</title>
+  <programme start="20261006162000 +0800" channel="astro.811" stop="20261006191000 +0800">
+    <title>PL: Chelsea vs Brighton</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929090000 +0800" channel="astro.812" stop="20260929100000 +0800">
-    <title>Goals of the Season: 2025/2026 (haaland)</title>
+  <programme start="20261006191000 +0800" channel="astro.811" stop="20261006194000 +0800">
+    <title>Man United vs Man City 2011/12</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929100000 +0800" channel="astro.812" stop="20260929103000 +0800">
-    <title>PL Stories: Ep52: the Great North London Divide Ep52</title>
+  <programme start="20261006194000 +0800" channel="astro.811" stop="20261006201000 +0800">
+    <title>Crystal Palace vs Norwich City 2004/05</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929103000 +0800" channel="astro.812" stop="20260929110000 +0800">
-    <title>PL Stories: Ep02: Pochettino's Spurs Ep02</title>
+  <programme start="20261006201000 +0800" channel="astro.811" stop="20261006204000 +0800">
+    <title>PL Rewind 2026/27: Yaya Toure: Man City 13/14</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929110000 +0800" channel="astro.812" stop="20260929113000 +0800">
-    <title>PL Stories: Ep17: Granit Xhaka Ep17</title>
+  <programme start="20261006204000 +0800" channel="astro.811" stop="20261006225000 +0800">
+    <title>PL: Man City vs Sunderland</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929113000 +0800" channel="astro.812" stop="20260929120000 +0800">
-    <title>The Big Interview: Ep06</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929120000 +0800" channel="astro.812" stop="20260929123000 +0800">
-    <title>Netbusters: MW05</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929123000 +0800" channel="astro.812" stop="20260929133000 +0800">
-    <title>PL Masterclass: Ep03</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929133000 +0800" channel="astro.812" stop="20260929140000 +0800">
-    <title>The Big Interview: Ep02: Kai Havertz Ep02</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929140000 +0800" channel="astro.812" stop="20260929150000 +0800">
-    <title>Review of the Season: 2025/2026 (ars)</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929150000 +0800" channel="astro.812" stop="20260929153000 +0800">
-    <title>The Big Interview: Ep05: Patrick Vieira Ep05</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929153000 +0800" channel="astro.812" stop="20260929160000 +0800">
-    <title>The Big Interview: Ep04: Peter &amp; Kasper Schmeichel Ep04</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929160000 +0800" channel="astro.812" stop="20260929170000 +0800">
-    <title>The Art Of...: Ep02: Goalkeeping With Petr Cech Ep02</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929170000 +0800" channel="astro.812" stop="20260929173000 +0800">
-    <title>PL Stories: Ep14: Petr Cech Ep14</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929173000 +0800" channel="astro.812" stop="20260929180000 +0800">
-    <title>Rewind: Ep15: Gianfranco Zola: My Chelsea Years Ep15</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929180000 +0800" channel="astro.812" stop="20260929183000 +0800">
-    <title>Rewind: Ep17: Gary Cahill: My Chelsea Years Ep17</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929183000 +0800" channel="astro.812" stop="20260929193000 +0800">
-    <title>Goals of the Season: 2015/2016</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929193000 +0800" channel="astro.812" stop="20260929200000 +0800">
-    <title>The Big Interview: Ep04: Peter &amp; Kasper Schmeichel Ep04</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929200000 +0800" channel="astro.812" stop="20260929210000 +0800">
-    <title>The Art Of...: Ep02: Goalkeeping With Petr Cech Ep02</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929210000 +0800" channel="astro.812" stop="20260929213000 +0800">
-    <title>PL Stories: Ep14: Petr Cech Ep14</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929213000 +0800" channel="astro.812" stop="20260929220000 +0800">
-    <title>PL Stories: Ep15: Amad Diallo Ep15</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929220000 +0800" channel="astro.812" stop="20260929223000 +0800">
-    <title>Rewind: Ep01: Paul Scholes - My Greatest Rivalry Ep01</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929223000 +0800" channel="astro.812" stop="20260929230000 +0800">
-    <title>Rewind: Ep16: Peter Schmeichel: My PL Years Ep16</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929230000 +0800" channel="astro.812" stop="20260929233000 +0800">
-    <title>Rewind: Ep15: Gianfranco Zola: My Chelsea Years Ep15</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929233000 +0800" channel="astro.812" stop="20260930000000 +0800">
-    <title>Rewind: Ep17: Gary Cahill: My Chelsea Years Ep17</title>
+  <programme start="20261006225000 +0800" channel="astro.811" stop="20261007014000 +0800">
+    <title>PL: Man Utd vs Ipswich</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
   <programme start="20260930000000 +0800" channel="astro.812" stop="20260930010000 +0800">
@@ -10784,48 +10476,124 @@
     <title>PL Stories: Ep15: Amad Diallo Ep15</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929010000 +0800" channel="astro.814" stop="20260929030000 +0800">
-    <title>DFB: Dusseldorf vs Freiburg</title>
+  <programme start="20261006000000 +0800" channel="astro.812" stop="20261006003000 +0800">
+    <title>PL Stories: Ep08: a Family United Ep08</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929030000 +0800" channel="astro.814" stop="20260929060000 +0800">
-    <title>DFB: Berlin vs Wolfsburg</title>
+  <programme start="20261006003000 +0800" channel="astro.812" stop="20261006010000 +0800">
+    <title>Classic Match: Mun Vs Tot</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929060000 +0800" channel="astro.814" stop="20260929080000 +0800">
-    <title>Dutch: Ajax vs Willem II</title>
+  <programme start="20261006010000 +0800" channel="astro.812" stop="20261006020000 +0800">
+    <title>PL Moments: Ep06: Dimitar Berbatov Ep06</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929080000 +0800" channel="astro.814" stop="20260929095500 +0800">
-    <title>Dutch: PSV vs Groningen</title>
+  <programme start="20261006020000 +0800" channel="astro.812" stop="20261006023000 +0800">
+    <title>Netbusters: MW05</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929095500 +0800" channel="astro.814" stop="20260929120000 +0800">
-    <title>Dutch: Cambuur vs Feyenoord</title>
+  <programme start="20261006023000 +0800" channel="astro.812" stop="20261006030000 +0800">
+    <title>PL Stories: Ep16: John Stones Ep16</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929120000 +0800" channel="astro.814" stop="20260929140000 +0800">
-    <title>Kirin: Japan vs Venezuela</title>
+  <programme start="20261006030000 +0800" channel="astro.812" stop="20261006033000 +0800">
+    <title>PL Stories: Ep13: Pep - the Legacy Ep13</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929140000 +0800" channel="astro.814" stop="20260929160000 +0800">
-    <title>Dutch: Feyenoord vs Den Haag</title>
+  <programme start="20261006033000 +0800" channel="astro.812" stop="20261006043000 +0800">
+    <title>PL Stories: Ep18: Roberto Mancini Ep18</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929160000 +0800" channel="astro.814" stop="20260929180000 +0800">
-    <title>Dutch: Telstar vs Ajax</title>
+  <programme start="20261006043000 +0800" channel="astro.812" stop="20261006050000 +0800">
+    <title>The Big Interview: Ep07</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929180000 +0800" channel="astro.814" stop="20260929200000 +0800">
-    <title>Dutch: Feyenoord vs GA Eagles</title>
+  <programme start="20261006050000 +0800" channel="astro.812" stop="20261006053000 +0800">
+    <title>The Big Interview: Ep06: Lewie Coyle Ep06</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929200000 +0800" channel="astro.814" stop="20260929220000 +0800">
-    <title>DFB: Hamburg vs Dortmund</title>
+  <programme start="20261006053000 +0800" channel="astro.812" stop="20261006060000 +0800">
+    <title>Rewind: Ep13: Dimitar Berbatov: Mun 10/11 Ep13</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929220000 +0800" channel="astro.814" stop="20260930000000 +0800">
-    <title>DFB: Osnabruck vs Bayern</title>
+  <programme start="20261006060000 +0800" channel="astro.812" stop="20261006080000 +0800">
+    <title>Classic Match: Mun Vs Tot</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006080000 +0800" channel="astro.812" stop="20261006083000 +0800">
+    <title>PL Stories: Ep15: Amad Diallo Ep15</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006083000 +0800" channel="astro.812" stop="20261006090000 +0800">
+    <title>PL Stories: Ep08: a Family United Ep08</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006090000 +0800" channel="astro.812" stop="20261006110000 +0800">
+    <title>Review of the Season: 2017/2018 (mci)</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006110000 +0800" channel="astro.812" stop="20261006113000 +0800">
+    <title>Classic Match: Liv Vs Mci</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006113000 +0800" channel="astro.812" stop="20261006120000 +0800">
+    <title>PL Stories: Ep05: Diogo Jota Ep05</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006120000 +0800" channel="astro.812" stop="20261006140000 +0800">
+    <title>Review of the Season: 2025/2026 (ars)</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006140000 +0800" channel="astro.812" stop="20261006143000 +0800">
+    <title>PL Stories: Ep15: Amad Diallo Ep15</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006143000 +0800" channel="astro.812" stop="20261006150000 +0800">
+    <title>PL Stories: Ep08: a Family United Ep08</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006150000 +0800" channel="astro.812" stop="20261006153000 +0800">
+    <title>Rewind: Ep13: Dimitar Berbatov: Mun 10/11 Ep13</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006153000 +0800" channel="astro.812" stop="20261006160000 +0800">
+    <title>Rewind: Ep01: Robbie Fowler: My Liverpool Years Ep01</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006160000 +0800" channel="astro.812" stop="20261006170000 +0800">
+    <title>1-to-11: Ep03: Robbie Fowler Ep03</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006170000 +0800" channel="astro.812" stop="20261006190000 +0800">
+    <title>Classic Match: Liv Vs Mci</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006190000 +0800" channel="astro.812" stop="20261006200000 +0800">
+    <title>Goals of the Season: 2013/2014</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006200000 +0800" channel="astro.812" stop="20261006210000 +0800">
+    <title>1-to-11: Ep03: Robbie Fowler Ep03</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006210000 +0800" channel="astro.812" stop="20261006213000 +0800">
+    <title>PL Stories: Ep05: Diogo Jota Ep05</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006213000 +0800" channel="astro.812" stop="20261006223000 +0800">
+    <title>PL Stories: Ep18: Roberto Mancini Ep18</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006223000 +0800" channel="astro.812" stop="20261006230000 +0800">
+    <title>Rewind: Ep04: Hassan Kachloul: My Southampton Years Ep04</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006230000 +0800" channel="astro.812" stop="20261006233000 +0800">
+    <title>Rewind: Ep01: Robbie Fowler: My Liverpool Years Ep01</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006233000 +0800" channel="astro.812" stop="20261007000000 +0800">
+    <title>Classic Match: Liv Vs Mci</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
   <programme start="20260930000000 +0800" channel="astro.814" stop="20260930023000 +0800">
@@ -11140,20 +10908,64 @@
     <title>Serie A: Genoa vs Napoli</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929013000 +0800" channel="astro.815" stop="20260929020000 +0800">
-    <title>Badminton Unlimited 2026 -</title>
+  <programme start="20261006000000 +0800" channel="astro.814" stop="20261006020000 +0800">
+    <title>Serie A: Parma vs Cagliari</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929020000 +0800" channel="astro.815" stop="20260929120000 +0800">
-    <title>BWF Indonesia Open: Rd32 (Crt 1)</title>
+  <programme start="20261006020000 +0800" channel="astro.814" stop="20261006040000 +0800">
+    <title>Serie A: Bologna vs Lazio</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929120000 +0800" channel="astro.815" stop="20260929173000 +0800">
-    <title>BWF Indonesia Open: Rd32 (Crt 2)</title>
+  <programme start="20261006040000 +0800" channel="astro.814" stop="20261006060000 +0800">
+    <title>Serie A: Roma vs Fiorentina</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929173000 +0800" channel="astro.815" stop="20260930030000 +0800">
-    <title>BWF Indonesia Open: Rd16 (Crt 1)</title>
+  <programme start="20261006060000 +0800" channel="astro.814" stop="20261006080000 +0800">
+    <title>Serie A: Fiorentina vs Napoli</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006080000 +0800" channel="astro.814" stop="20261006083000 +0800">
+    <title>Inside Serie A:</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006083000 +0800" channel="astro.814" stop="20261006085000 +0800">
+    <title>DFB: Round 1 Highlights Show</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006085000 +0800" channel="astro.814" stop="20261006110000 +0800">
+    <title>Dutch: Feyenoord vs Utrecht</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006110000 +0800" channel="astro.814" stop="20261006113000 +0800">
+    <title>Serie A 2026/27: Full Impact Rd4</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006113000 +0800" channel="astro.814" stop="20261006115000 +0800">
+    <title>This Is Our Time: Ep01</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006115000 +0800" channel="astro.814" stop="20261006140000 +0800">
+    <title>Dutch: Twente vs PSV</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006140000 +0800" channel="astro.814" stop="20261006160000 +0800">
+    <title>Serie A: Frosinone vs Como</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006160000 +0800" channel="astro.814" stop="20261006180000 +0800">
+    <title>Serie A: Juventus vs Atalanta</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006180000 +0800" channel="astro.814" stop="20261006200000 +0800">
+    <title>Serie A: Milan vs Lecce</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006200000 +0800" channel="astro.814" stop="20261006220000 +0800">
+    <title>Serie A: Udinese vs Cagliari</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006220000 +0800" channel="astro.814" stop="20261007000000 +0800">
+    <title>Serie A: Monza vs Sassuolo</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
   <programme start="20260930030000 +0800" channel="astro.815" stop="20260930040000 +0800">
@@ -11344,44 +11156,28 @@
     <title>Thomas Cup: France vs Thailand</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929043000 +0800" channel="astro.817" stop="20260929050000 +0800">
-    <title>UFC Connected: Mauricio Ruffy</title>
+  <programme start="20261006040000 +0800" channel="astro.815" stop="20261006050000 +0800">
+    <title>BWF World Championships: HLS</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929050000 +0800" channel="astro.817" stop="20260929060000 +0800">
-    <title>ELMS 2026: Rd 4: Spa</title>
+  <programme start="20261006050000 +0800" channel="astro.815" stop="20261006060000 +0800">
+    <title>BWF World Championships: HLS</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929060000 +0800" channel="astro.817" stop="20260929100000 +0800">
-    <title>Rolex Grand Slam of Show Jumping: Spruce Meadows Masters</title>
+  <programme start="20261006060000 +0800" channel="astro.815" stop="20261006114500 +0800">
+    <title>Uber Cup: Indonesia vs Denmark</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929100000 +0800" channel="astro.817" stop="20260929140000 +0800">
-    <title>Nascar: Hollywood Casino 400</title>
+  <programme start="20261006114500 +0800" channel="astro.815" stop="20261006180000 +0800">
+    <title>Thomas Cup: Denmark vs Korea</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929140000 +0800" channel="astro.817" stop="20260929143000 +0800">
-    <title>WDSC 2026: Erzincan: HL 2</title>
+  <programme start="20261006180000 +0800" channel="astro.815" stop="20261006223000 +0800">
+    <title>Uber Cup: Thailand vs Bulgaria</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929143000 +0800" channel="astro.817" stop="20260929170000 +0800">
-    <title>(D) Cage Warriors 210 Dublin</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929170000 +0800" channel="astro.817" stop="20260929190000 +0800">
-    <title>FEI LLN 2026: ST. Tropez</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929190000 +0800" channel="astro.817" stop="20260929213000 +0800">
-    <title>(L) ATP 250's Chengdu Open: Day 7: Final</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929213000 +0800" channel="astro.817" stop="20260929223000 +0800">
-    <title>SuperTri League 2026: Jersey HL</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929223000 +0800" channel="astro.817" stop="20260930042000 +0800">
-    <title>Zuffa Boxing 11: Fisher vs Pirotton</title>
+  <programme start="20261006223000 +0800" channel="astro.815" stop="20261007040000 +0800">
+    <title>Uber Cup: Malaysia vs Turkey</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
   <programme start="20260930042000 +0800" channel="astro.817" stop="20260930060000 +0800">
@@ -11620,40 +11416,36 @@
     <title>UFC 332: Silva vs Wang</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929073000 +0800" channel="astro.819" stop="20260929083000 +0800">
-    <title>ATP Tour Review Show 2026: Barcelona Open</title>
+  <programme start="20261006030000 +0800" channel="astro.817" stop="20261006093500 +0800">
+    <title>(D) WSL: Fiji Pro: Day 1</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929083000 +0800" channel="astro.819" stop="20260929093000 +0800">
-    <title>ATP Tour Review Show: Mutua Madrid Open</title>
+  <programme start="20261006093500 +0800" channel="astro.817" stop="20261006110000 +0800">
+    <title>(D) UIM F1H2O GP: Shanghai: Main Race</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929093000 +0800" channel="astro.819" stop="20260929100000 +0800">
-    <title>ATP Tour This Week 2026: Episode 34</title>
+  <programme start="20261006110000 +0800" channel="astro.817" stop="20261006150000 +0800">
+    <title>(D) FIG Trampoline WC 2026: Riccione</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929100000 +0800" channel="astro.819" stop="20260929150000 +0800">
-    <title>ATP 250's Chengdu Open: Day 6: SFs</title>
+  <programme start="20261006150000 +0800" channel="astro.817" stop="20261006170000 +0800">
+    <title>(D) GTWC Europe: Barcelona: Race 2</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929150000 +0800" channel="astro.819" stop="20260929190000 +0800">
-    <title>ATP 250's Hangzhou Open: Day 6: SFs</title>
+  <programme start="20261006170000 +0800" channel="astro.817" stop="20261006190000 +0800">
+    <title>(D) GTWC Asia: Beijing Street Circuit: Race 1</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929190000 +0800" channel="astro.819" stop="20260929193000 +0800">
-    <title>ATP Tour This Week 2026: Episode 36</title>
+  <programme start="20261006190000 +0800" channel="astro.817" stop="20261006210000 +0800">
+    <title>(L) ATP 500's China Open: Day 7: Final</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929193000 +0800" channel="astro.819" stop="20260929214500 +0800">
-    <title>(L) ATP 250's Hangzhou Open: Day 7: Final</title>
+  <programme start="20261006210000 +0800" channel="astro.817" stop="20261006230000 +0800">
+    <title>(D) GTWC Asia: Beijing Street Circuit: Race 2</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929214500 +0800" channel="astro.819" stop="20260929221000 +0800">
-    <title>ATP Tour This Week 2026: Episode 37</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929221000 +0800" channel="astro.819" stop="20260930060000 +0800">
-    <title>ATP 250's Chengdu Open: Day 5: QFs</title>
+  <programme start="20261006230000 +0800" channel="astro.817" stop="20261007010000 +0800">
+    <title>(D) SRO GT Cup: Beijing Street Circuit: Race 1</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
   <programme start="20260930060000 +0800" channel="astro.819" stop="20260930063000 +0800">
@@ -11824,112 +11616,44 @@
     <title>(D) ATP 500's China Open: Day 5: QFs Session 1</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929020000 +0800" channel="astro.820" stop="20260929022200 +0800">
-    <title>LaLiga Goals Galore 2024/25</title>
+  <programme start="20261006000000 +0800" channel="astro.819" stop="20261006040000 +0800">
+    <title>(D) ATP 500's China Open: Day 5: QFs Session 2</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929022200 +0800" channel="astro.820" stop="20260929043000 +0800">
-    <title>(L) LaLiga 2 : Leganes Vs Castellon</title>
+  <programme start="20261006040000 +0800" channel="astro.819" stop="20261006130000 +0800">
+    <title>ATP 500's Kinoshita Group Japan Open: Day 2</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929043000 +0800" channel="astro.820" stop="20260929050000 +0800">
-    <title>Porsche Carrera Cup Germany Highlights 2026</title>
+  <programme start="20261006130000 +0800" channel="astro.819" stop="20261006140000 +0800">
+    <title>ATP Review Show: National Bank Open</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929050000 +0800" channel="astro.820" stop="20260929070000 +0800">
-    <title>Le Mans Cup 2026</title>
+  <programme start="20261006140000 +0800" channel="astro.819" stop="20261006143000 +0800">
+    <title>ATP Tour This Week 2026: Episode 38</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929070000 +0800" channel="astro.820" stop="20260929073000 +0800">
-    <title>Mini Match - LaLiga : Atletico Madrid Vs Villarreal</title>
+  <programme start="20261006143000 +0800" channel="astro.819" stop="20261006170000 +0800">
+    <title>(D) ATP 500's China Open: Day 6: SFs Session 1</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929073000 +0800" channel="astro.820" stop="20260929080000 +0800">
-    <title>Mini Match - LaLiga : Elche Vs Barcelona</title>
+  <programme start="20261006170000 +0800" channel="astro.819" stop="20261006190000 +0800">
+    <title>(L) ATP 500's Kinoshita Group Japan Open: Day 7: Final</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929080000 +0800" channel="astro.820" stop="20260929083000 +0800">
-    <title>Mini Match - LaLiga : Alaves Vs Villarreal</title>
+  <programme start="20261006190000 +0800" channel="astro.819" stop="20261006200000 +0800">
+    <title>ATP Review Show: Cincinnati Open</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929083000 +0800" channel="astro.820" stop="20260929090000 +0800">
-    <title>1st La Liga FC Futures U12 Club World Cup: Boca Juniors Vs Palmeiras</title>
+  <programme start="20261006200000 +0800" channel="astro.819" stop="20261006210000 +0800">
+    <title>ATP Review Show: Mubadala Citi DC Open</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929090000 +0800" channel="astro.820" stop="20260929093000 +0800">
-    <title>1st La Liga FC Futures U12 Club World Cup: River Plate Vs Inter Miami</title>
+  <programme start="20261006210000 +0800" channel="astro.819" stop="20261006233000 +0800">
+    <title>(D) ATP 500's China Open: Day 6: SFs Session 2</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929093000 +0800" channel="astro.820" stop="20260929100000 +0800">
-    <title>1st La Liga FC Futures U12 Club World Cup: Barcelona Vs Valencia</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929100000 +0800" channel="astro.820" stop="20260929104500 +0800">
-    <title>LFCTV Specials 2026/27</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929104500 +0800" channel="astro.820" stop="20260929120000 +0800">
-    <title>LFCTV Classic : Liverpool Vs Man City PL 2024/25</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929120000 +0800" channel="astro.820" stop="20260929130100 +0800">
-    <title>LFC Trending 2026/27</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929130100 +0800" channel="astro.820" stop="20260929143100 +0800">
-    <title>(L) Tour De Langkawi 2026</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929143100 +0800" channel="astro.820" stop="20260929150000 +0800">
-    <title>FIA World Rally Championships Magazine Show 2026</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929150000 +0800" channel="astro.820" stop="20260929153000 +0800">
-    <title>Mini Match - LaLiga : Levante Vs Real Betis</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929153000 +0800" channel="astro.820" stop="20260929160000 +0800">
-    <title>Mini Match - LaLiga : Sevilla Vs Atletico Madrid</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929160000 +0800" channel="astro.820" stop="20260929163000 +0800">
-    <title>Mini Match - LaLiga : Real Madrid Vs Malaga</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929163000 +0800" channel="astro.820" stop="20260929170000 +0800">
-    <title>Off the Grid Origins: Tasanapol Inthraphuvasak</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929170000 +0800" channel="astro.820" stop="20260929173500 +0800">
-    <title>Formula 1 Highlights 2026</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929173500 +0800" channel="astro.820" stop="20260929193000 +0800">
-    <title>LaLiga 2 : Tenerife Vs Cadiz</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929193000 +0800" channel="astro.820" stop="20260929203500 +0800">
-    <title>FIA Formula 2 Championship Feature Race 2026</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929203500 +0800" channel="astro.820" stop="20260929204500 +0800">
-    <title>LaLiga Goals Galore 2024/25</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929204500 +0800" channel="astro.820" stop="20260929230000 +0800">
-    <title>(L) TotalEnergies Africa Cup of Nations Qualifiers : Lesotho Vs Morocco</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929230000 +0800" channel="astro.820" stop="20260929231000 +0800">
-    <title>LaLiga Goals Galore 2024/25</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929231000 +0800" channel="astro.820" stop="20260929234500 +0800">
-    <title>Formula 1 Highlights 2026</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929234500 +0800" channel="astro.820" stop="20260930020000 +0800">
-    <title>(L) TotalEnergies Africa Cup of Nations Qualifiers : Ghana Vs Gambia</title>
+  <programme start="20261006233000 +0800" channel="astro.819" stop="20261007083000 +0800">
+    <title>ATP 500's Kinoshita Group Japan Open: Day 3</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
   <programme start="20260930020000 +0800" channel="astro.820" stop="20260930023000 +0800">
@@ -12580,76 +12304,104 @@
     <title>Gran Turismo World Series 2026</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929020000 +0800" channel="astro.821" stop="20260929022000 +0800">
-    <title>HSBC SVNS Series : Australia Vs New Zealand - Singapore Day 2, Women</title>
+  <programme start="20261006000500 +0800" channel="astro.820" stop="20261006020000 +0800">
+    <title>LaLiga Archive: Barcelona Vs Real Madrid - 2011/12</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929022000 +0800" channel="astro.821" stop="20260929024500 +0800">
-    <title>HSBC SVNS Series : Fiji Vs France - Singapore Day 2, Men</title>
+  <programme start="20261006020000 +0800" channel="astro.820" stop="20261006030000 +0800">
+    <title>FIA World Rally Championship Highlights 2026</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929024500 +0800" channel="astro.821" stop="20260929050000 +0800">
-    <title>(L) TotalEnergies Africa Cup of Nations Qualifiers : Tunisia Vs Botswana</title>
+  <programme start="20261006030000 +0800" channel="astro.820" stop="20261006040000 +0800">
+    <title>Ferrari Challenge Europe Highlights 2026</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929050000 +0800" channel="astro.821" stop="20260929051000 +0800">
-    <title>Premier Padel Match Highlights (2026)</title>
+  <programme start="20261006040000 +0800" channel="astro.820" stop="20261006050000 +0800">
+    <title>DTM Highlights 2026</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929051000 +0800" channel="astro.821" stop="20260929070000 +0800">
-    <title>World Rugby Junior World Championship : Scotland Vs Wales - 5th Place Play-off</title>
+  <programme start="20261006050000 +0800" channel="astro.820" stop="20261006065000 +0800">
+    <title>UYL : Real Madrid Vs Inter - MD1</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929070000 +0800" channel="astro.821" stop="20260929085500 +0800">
-    <title>World Rugby Junior World Championship : New Zealand Vs England - 3rd Place Play-off</title>
+  <programme start="20261006065000 +0800" channel="astro.820" stop="20261006085000 +0800">
+    <title>LFCTV Classic 2026/27</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929085500 +0800" channel="astro.821" stop="20260929102500 +0800">
-    <title>Premier Padel (2026)</title>
+  <programme start="20261006085000 +0800" channel="astro.820" stop="20261006095000 +0800">
+    <title>LFC Trending 2026/27</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929102500 +0800" channel="astro.821" stop="20260929115500 +0800">
-    <title>Laver Cup (2026)</title>
+  <programme start="20261006095000 +0800" channel="astro.820" stop="20261006102000 +0800">
+    <title>1st La Liga FC Futures U12 Club World Cup: Villarreal Vs Shanghai Port</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929115500 +0800" channel="astro.821" stop="20260929132500 +0800">
-    <title>Laver Cup (2026)</title>
+  <programme start="20261006102000 +0800" channel="astro.820" stop="20261006105000 +0800">
+    <title>1st La Liga FC Futures U12 Club World Cup: Arsenal Vs Inter</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929132500 +0800" channel="astro.821" stop="20260929145500 +0800">
-    <title>Laver Cup (2026)</title>
+  <programme start="20261006105000 +0800" channel="astro.820" stop="20261006112000 +0800">
+    <title>1st La Liga FC Futures U12 Club World Cup: Real Betis Vs WAC</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929145500 +0800" channel="astro.821" stop="20260929162500 +0800">
-    <title>Laver Cup (2026)</title>
+  <programme start="20261006112000 +0800" channel="astro.820" stop="20261006132000 +0800">
+    <title>Formula 1 Main Race 2026</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929162500 +0800" channel="astro.821" stop="20260929175500 +0800">
-    <title>Laver Cup (2026)</title>
+  <programme start="20261006132000 +0800" channel="astro.820" stop="20261006142000 +0800">
+    <title>Ligier European Series 2026</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929175500 +0800" channel="astro.821" stop="20260929194500 +0800">
-    <title>Women's Super League : Chelsea Vs Arsenal</title>
+  <programme start="20261006142000 +0800" channel="astro.820" stop="20261006145000 +0800">
+    <title>1st La Liga FC Futures U12 Club World Cup: Flamengo Vs Inter</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929194500 +0800" channel="astro.821" stop="20260929204500 +0800">
-    <title>Women's Super League Highlights 2026/27</title>
+  <programme start="20261006145000 +0800" channel="astro.820" stop="20261006152000 +0800">
+    <title>1st La Liga FC Futures U12 Club World Cup: Sevilla Vs Real Madrid</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929204500 +0800" channel="astro.821" stop="20260929230000 +0800">
-    <title>(L) TotalEnergies Africa Cup of Nations Qualifiers : South Sudan Vs Egypt</title>
+  <programme start="20261006152000 +0800" channel="astro.820" stop="20261006155000 +0800">
+    <title>1st La Liga FC Futures U12 Club World Cup: Arsenal Vs PSG</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929230000 +0800" channel="astro.821" stop="20260929231500 +0800">
-    <title>Roland Garros Match Highlights</title>
+  <programme start="20261006155000 +0800" channel="astro.820" stop="20261006162500 +0800">
+    <title>Formula 1 Highlights 2026</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929231500 +0800" channel="astro.821" stop="20260929234500 +0800">
-    <title>Mini Match - Australian Open (2026)</title>
+  <programme start="20261006162500 +0800" channel="astro.820" stop="20261006164000 +0800">
+    <title>Chasing the Dream 8</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929234500 +0800" channel="astro.821" stop="20260930020000 +0800">
-    <title>(L) TotalEnergies Africa Cup of Nations Qualifiers : Guinea-Bissau Vs Nigeria</title>
+  <programme start="20261006164000 +0800" channel="astro.820" stop="20261006170000 +0800">
+    <title>LaLiga Rookies 2026/27</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006170000 +0800" channel="astro.820" stop="20261006173000 +0800">
+    <title>Gearing up 2026</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006173000 +0800" channel="astro.820" stop="20261006180000 +0800">
+    <title>Formula Regional European Championship Highlights 2026</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006180000 +0800" channel="astro.820" stop="20261006190000 +0800">
+    <title>Goodwood Highlights 2026</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006190000 +0800" channel="astro.820" stop="20261006210000 +0800">
+    <title>Formula 1 Singapore Airlines Singapore Grand Prix</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006210000 +0800" channel="astro.820" stop="20261006213000 +0800">
+    <title>Le Mans Cup Highlights 2026</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006213000 +0800" channel="astro.820" stop="20261006223000 +0800">
+    <title>European Le Mans Series Highlights 2026</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006223000 +0800" channel="astro.820" stop="20261007000000 +0800">
+    <title>Gran Turismo World Series 2026</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
   <programme start="20260930020000 +0800" channel="astro.821" stop="20260930022000 +0800">
@@ -13128,84 +12880,72 @@
     <title>Women's Super League : Man United Vs Liverpool</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929020000 +0800" channel="astro.822" stop="20260929040000 +0800">
-    <title>TotalEnergies CAF Confederation Cup : Kaizer Chiefs Vs Zesco</title>
+  <programme start="20261006004000 +0800" channel="astro.821" stop="20261006015000 +0800">
+    <title>Premier Padel (2026)</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929040000 +0800" channel="astro.822" stop="20260929060000 +0800">
-    <title>TotalEnergies Women's Africa Cup of Nations, Morocco : Tanzania Vs Ivory Coast</title>
+  <programme start="20261006015000 +0800" channel="astro.821" stop="20261006032000 +0800">
+    <title>Premier Padel (2026)</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929060000 +0800" channel="astro.822" stop="20260929063000 +0800">
-    <title>MUTV: Treble Twenty: Leicester Vs Man Utd</title>
+  <programme start="20261006032000 +0800" channel="astro.821" stop="20261006043500 +0800">
+    <title>Premier Padel (2026)</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929063000 +0800" channel="astro.822" stop="20260929073000 +0800">
-    <title>UCL Highlights Ep06</title>
+  <programme start="20261006043500 +0800" channel="astro.821" stop="20261006060500 +0800">
+    <title>Premier Padel (2026)</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929073000 +0800" channel="astro.822" stop="20260929083000 +0800">
-    <title>MUTV: Specials</title>
+  <programme start="20261006060500 +0800" channel="astro.821" stop="20261006073500 +0800">
+    <title>Premier Padel (2026)</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929083000 +0800" channel="astro.822" stop="20260929093000 +0800">
-    <title>MUTV: Specials</title>
+  <programme start="20261006073500 +0800" channel="astro.821" stop="20261006093000 +0800">
+    <title>Pacific Nations Cup : Canada Vs USA - Third Place Play-off</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929093000 +0800" channel="astro.822" stop="20260929103000 +0800">
-    <title>MUTV: Specials</title>
+  <programme start="20261006093000 +0800" channel="astro.821" stop="20261006110000 +0800">
+    <title>Premier Padel (2026)</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929103000 +0800" channel="astro.822" stop="20260929110000 +0800">
-    <title>The Sports Rundown 2026</title>
+  <programme start="20261006110000 +0800" channel="astro.821" stop="20261006113000 +0800">
+    <title>La Vuelta Highlights (2026)</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929110000 +0800" channel="astro.822" stop="20260929111000 +0800">
-    <title>UEL Classic Matches: Tottenham Vs Benfica</title>
+  <programme start="20261006113000 +0800" channel="astro.821" stop="20261006120000 +0800">
+    <title>La Vuelta Highlights (2026)</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929111000 +0800" channel="astro.822" stop="20260929130000 +0800">
-    <title>UCL : Slovan Bratislava Vs Celje - Play-Offs,1st Leg</title>
+  <programme start="20261006120000 +0800" channel="astro.821" stop="20261006135000 +0800">
+    <title>Women's Super League : Man United Vs Liverpool</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929130000 +0800" channel="astro.822" stop="20260929150000 +0800">
-    <title>UCI Women's World Tour 2026</title>
+  <programme start="20261006135000 +0800" channel="astro.821" stop="20261006154000 +0800">
+    <title>Women's Super League : Man City Vs Arsenal</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929150000 +0800" channel="astro.822" stop="20260929160000 +0800">
-    <title>UEFA Europa/Conference League Highlights 2026/27</title>
+  <programme start="20261006154000 +0800" channel="astro.821" stop="20261006171000 +0800">
+    <title>Premier Padel (2026)</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929160000 +0800" channel="astro.822" stop="20260929170000 +0800">
-    <title>UCL Highlights Ep07</title>
+  <programme start="20261006171000 +0800" channel="astro.821" stop="20261006190000 +0800">
+    <title>Women's Super League : Man United Vs Liverpool</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929170000 +0800" channel="astro.822" stop="20260929200000 +0800">
-    <title>ONE Friday Fights 2026</title>
+  <programme start="20261006190000 +0800" channel="astro.821" stop="20261006200000 +0800">
+    <title>Women's Super League Highlights 2026/27</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929200000 +0800" channel="astro.822" stop="20260929203000 +0800">
-    <title>MUTV: Treble Twenty: Man Utd Vs Liverpool</title>
+  <programme start="20261006200000 +0800" channel="astro.821" stop="20261006213000 +0800">
+    <title>(L) Premier Padel (2026)</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929203000 +0800" channel="astro.822" stop="20260929204500 +0800">
-    <title>MUTV: Top Ten</title>
+  <programme start="20261006213000 +0800" channel="astro.821" stop="20261006230000 +0800">
+    <title>(L) Premier Padel (2026)</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929204500 +0800" channel="astro.822" stop="20260929230000 +0800">
-    <title>(L) TotalEnergies Africa Cup of Nations Qualifiers : Ethiopia Vs Senegal</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929230000 +0800" channel="astro.822" stop="20260929233000 +0800">
-    <title>MUTV: Treble Twenty: Leicester Vs Man Utd</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929233000 +0800" channel="astro.822" stop="20260929234500 +0800">
-    <title>MUTV: Top Ten</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929234500 +0800" channel="astro.822" stop="20260930020000 +0800">
-    <title>(L) TotalEnergies Africa Cup of Nations Qualifiers : Cape Verde Vs Rwanda</title>
+  <programme start="20261006230000 +0800" channel="astro.821" stop="20261007003000 +0800">
+    <title>(L) Premier Padel (2026)</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
   <programme start="20260930020000 +0800" channel="astro.822" stop="20260930023000 +0800">
@@ -13284,10 +13024,6 @@
     <title>TotalEnergies Women's Africa Cup of Nations, Morocco : Malawi Vs Zambia</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20261001070000 +0800" channel="astro.822" stop="20261001073000 +0800">
-    <title>Bundesliga Special 2026/27</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
   <programme start="20261001073000 +0800" channel="astro.822" stop="20261001092000 +0800">
     <title>UCL : Fenerbahce Vs Lyon - Play-Offs,1st Leg</title>
     <url>https://www.astro.com.my/content/channels</url>
@@ -13304,10 +13040,6 @@
     <title>(D) UEFA Women's Champions League : Hacken Vs Juventus - MD2</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20261001150000 +0800" channel="astro.822" stop="20261001153000 +0800">
-    <title>Bundesliga Special 2026/27</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
   <programme start="20261001153000 +0800" channel="astro.822" stop="20261001183000 +0800">
     <title>La Vuelta 2026</title>
     <url>https://www.astro.com.my/content/channels</url>
@@ -13322,10 +13054,6 @@
   </programme>
   <programme start="20261001221000 +0800" channel="astro.822" stop="20261002000000 +0800">
     <title>UEFA Women's Champions League : OL Lyonnes Vs Chelsea - MD2</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20261002000000 +0800" channel="astro.822" stop="20261002004000 +0800">
-    <title>MUTV: Specials</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
   <programme start="20261002004000 +0800" channel="astro.822" stop="20261002025500 +0800">
@@ -13644,72 +13372,60 @@
     <title>MUTV: the United Archives: Liverpool Vs Man Utd FAC Final 95/96</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929010000 +0800" channel="astro.826" stop="20260929013000 +0800">
-    <title>MP Series 25</title>
+  <programme start="20261006000000 +0800" channel="astro.822" stop="20261006020000 +0800">
+    <title>TotalEnergies CAF Champions League : JS Kabylie Vs Young Africans</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929013000 +0800" channel="astro.826" stop="20260929033000 +0800">
-    <title>Serie a Women 2026/27</title>
+  <programme start="20261006020000 +0800" channel="astro.822" stop="20261006040000 +0800">
+    <title>TotalEnergies CAF Confederation Cup : Olympic Club Safi Vs FC San Pedro</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929033000 +0800" channel="astro.826" stop="20260929040000 +0800">
-    <title>Heroines</title>
+  <programme start="20261006040000 +0800" channel="astro.822" stop="20261006060000 +0800">
+    <title>TotalEnergies Women's Africa Cup of Nations, Morocco : Tanzania Vs Ivory Coast</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929040000 +0800" channel="astro.826" stop="20260929052500 +0800">
-    <title>Netball Super League 26</title>
+  <programme start="20261006060000 +0800" channel="astro.822" stop="20261006073000 +0800">
+    <title>MUTV: the United Archives: Man Utd Vs Milan UCL 09/10</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929052500 +0800" channel="astro.826" stop="20260929055500 +0800">
-    <title>Titan Desert Almeria 25</title>
+  <programme start="20261006073000 +0800" channel="astro.822" stop="20261006090000 +0800">
+    <title>MUTV: the United Archives: Liverpool Vs Man Utd FAC Final 95/96</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929055500 +0800" channel="astro.826" stop="20260929081000 +0800">
-    <title>WSWC 27 Gr. B</title>
+  <programme start="20261006090000 +0800" channel="astro.822" stop="20261006105000 +0800">
+    <title>UEFA Women's Champions League : Hacken Vs Juventus - MD2</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929081000 +0800" channel="astro.826" stop="20260929110000 +0800">
-    <title>Supertri Final Jersey 26</title>
+  <programme start="20261006105000 +0800" channel="astro.822" stop="20261006124000 +0800">
+    <title>UEL : Omonoia Vs Celta Vigo - MD1</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929110000 +0800" channel="astro.826" stop="20260929130000 +0800">
-    <title>WSWC 27 Gr. C</title>
+  <programme start="20261006124000 +0800" channel="astro.822" stop="20261006143000 +0800">
+    <title>TotalEnergies CAF Confederation Cup : Olympic Club Safi Vs USM Alger</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929130000 +0800" channel="astro.826" stop="20260929140000 +0800">
-    <title>CSI Dinard 26 Highlights</title>
+  <programme start="20261006143000 +0800" channel="astro.822" stop="20261006173000 +0800">
+    <title>La Vuelta 2026</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929140000 +0800" channel="astro.826" stop="20260929153000 +0800">
-    <title>Malaysian NSL 26</title>
+  <programme start="20261006173000 +0800" channel="astro.822" stop="20261006180000 +0800">
+    <title>MUTV: Specials</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929153000 +0800" channel="astro.826" stop="20260929160000 +0800">
-    <title>Heroines</title>
+  <programme start="20261006180000 +0800" channel="astro.822" stop="20261006195000 +0800">
+    <title>UCL : Club Brugge Vs Aston Villa - MD1</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929160000 +0800" channel="astro.826" stop="20260929184000 +0800">
-    <title>WBWC 26 Gr. Rockford</title>
+  <programme start="20261006195000 +0800" channel="astro.822" stop="20261006200000 +0800">
+    <title>UCL Specials Ep14</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929184000 +0800" channel="astro.826" stop="20260929201000 +0800">
-    <title>Courmayeur Cup 26</title>
+  <programme start="20261006200000 +0800" channel="astro.822" stop="20261006230000 +0800">
+    <title>ONE Friday Fights 2026</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929201000 +0800" channel="astro.826" stop="20260929204000 +0800">
-    <title>MP 26</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929204000 +0800" channel="astro.826" stop="20260929224000 +0800">
-    <title>Global Champions League 26</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929224000 +0800" channel="astro.826" stop="20260929231000 +0800">
-    <title>MP Series 25</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929231000 +0800" channel="astro.826" stop="20260930011000 +0800">
-    <title>WSWC 27 Gr. a</title>
+  <programme start="20261006230000 +0800" channel="astro.822" stop="20261007000000 +0800">
+    <title>Mass Participation 2026</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
   <programme start="20260930011000 +0800" channel="astro.826" stop="20260930031000 +0800">
@@ -14148,32 +13864,52 @@
     <title>WSWC 27 Gr. a</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929000000 +0800" channel="astro.831" stop="20260929052500 +0800">
-    <title>Presidents Cup 2026 Day 2</title>
+  <programme start="20261006013000 +0800" channel="astro.826" stop="20261006020000 +0800">
+    <title>Sports Woman</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929052500 +0800" channel="astro.831" stop="20260929060000 +0800">
-    <title>BMW PGA Championship Hls</title>
+  <programme start="20261006020000 +0800" channel="astro.826" stop="20261006040500 +0800">
+    <title>Serie a Women 2026/27</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929060000 +0800" channel="astro.831" stop="20260929121500 +0800">
-    <title>FedEx Open de France Day 2</title>
+  <programme start="20261006040500 +0800" channel="astro.826" stop="20261006053500 +0800">
+    <title>Malaysia Regional Cup 26</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929121500 +0800" channel="astro.831" stop="20260929130000 +0800">
-    <title>Sanford International 2026 Hls</title>
+  <programme start="20261006053500 +0800" channel="astro.826" stop="20261006101500 +0800">
+    <title>Tour Down Under 26</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929130000 +0800" channel="astro.831" stop="20260929140000 +0800">
-    <title>Presidents Cup 2026 Hls</title>
+  <programme start="20261006101500 +0800" channel="astro.826" stop="20261006121500 +0800">
+    <title>WSWC 27 Gr. C</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929140000 +0800" channel="astro.831" stop="20260929162500 +0800">
-    <title>(D) Walmart NW Arkansas Championship Day 2</title>
+  <programme start="20261006121500 +0800" channel="astro.826" stop="20261006140000 +0800">
+    <title>Spartan Race 25</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929162500 +0800" channel="astro.831" stop="20260930040300 +0800">
-    <title>Presidents Cup 2026 Day 3</title>
+  <programme start="20261006140000 +0800" channel="astro.826" stop="20261006143000 +0800">
+    <title>Sports Woman</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006143000 +0800" channel="astro.826" stop="20261006160000 +0800">
+    <title>Malaysian NSL 26</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006160000 +0800" channel="astro.826" stop="20261006184500 +0800">
+    <title>Barcelona Marathon 26</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006184500 +0800" channel="astro.826" stop="20261006201500 +0800">
+    <title>Jump Saudi 25</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006201500 +0800" channel="astro.826" stop="20261006221500 +0800">
+    <title>Serie a Women 2026/27</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006221500 +0800" channel="astro.826" stop="20261007001500 +0800">
+    <title>Global Champions League 26</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
   <programme start="20260930040300 +0800" channel="astro.831" stop="20260930053000 +0800">
@@ -14444,184 +14180,44 @@
     <title>Jefferson Lehigh Valley Classic Day 1</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929000000 +0800" channel="astro.832" stop="20260929003100 +0800">
-    <title>TATA IPL Highlights: M2: MI Vs KKR</title>
+  <programme start="20261006000000 +0800" channel="astro.831" stop="20261006030000 +0800">
+    <title>Walmart NW Arkansas Championship Day 1</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929003100 +0800" channel="astro.832" stop="20260929010300 +0800">
-    <title>CPL Highlights: M4: JAK Vs BT</title>
+  <programme start="20261006030000 +0800" channel="astro.831" stop="20261006060000 +0800">
+    <title>Nationwide Children's Hospital C'ship Day 2</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929010300 +0800" channel="astro.832" stop="20260929013100 +0800">
-    <title>TATA IPL Highlights: M30: GT Vs MI</title>
+  <programme start="20261006060000 +0800" channel="astro.831" stop="20261006070000 +0800">
+    <title>Kaulig Companies Championship Hls</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929013100 +0800" channel="astro.832" stop="20260929020200 +0800">
-    <title>New Zealand Tour of India Highlights: IND Vs NZ, 1st ODI</title>
+  <programme start="20261006070000 +0800" channel="astro.831" stop="20261006080000 +0800">
+    <title>45th GS Caltex Maekyung Open Hls</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929020200 +0800" channel="astro.832" stop="20260929022800 +0800">
-    <title>TATA IPL Highlights: M3: RR Vs CSK</title>
+  <programme start="20261006080000 +0800" channel="astro.831" stop="20261006090000 +0800">
+    <title>Presidents Cup Selection Show</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929022800 +0800" channel="astro.832" stop="20260929025700 +0800">
-    <title>MLC Highlights: M24: WF Vs LAKR</title>
+  <programme start="20261006090000 +0800" channel="astro.831" stop="20261006140000 +0800">
+    <title>Alfred Dunhill Links C'ship Day 3</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929025700 +0800" channel="astro.832" stop="20260929044700 +0800">
-    <title>Pakistan Tour of West Indies Highlights: WI Vs PAK, 1st Test</title>
+  <programme start="20261006140000 +0800" channel="astro.831" stop="20261006170000 +0800">
+    <title>Bank of Utah Championship Day 1</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929044700 +0800" channel="astro.832" stop="20260929051600 +0800">
-    <title>Asia Cup Best of Asia Cup 2025: IND Vs SL</title>
+  <programme start="20261006170000 +0800" channel="astro.831" stop="20261006200000 +0800">
+    <title>Bank of Utah Championship Day 2</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929051600 +0800" channel="astro.832" stop="20260929054600 +0800">
-    <title>CPL Highlights: M18: STKNP Vs JAK</title>
+  <programme start="20261006200000 +0800" channel="astro.831" stop="20261006210000 +0800">
+    <title>Bank of Utah Championship Hls</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929054600 +0800" channel="astro.832" stop="20260929060800 +0800">
-    <title>Asia Cup Best of Asia Cup 2025: PAK Vs BAN</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929060800 +0800" channel="astro.832" stop="20260929063900 +0800">
-    <title>Sri Lanka Tour of West Indies Highlights: WI Vs SL, 1st ODI</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929063900 +0800" channel="astro.832" stop="20260929070700 +0800">
-    <title>Asia Cup Best of Asia Cup 2025: SL Vs BAN</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929070700 +0800" channel="astro.832" stop="20260929073700 +0800">
-    <title>TATA IPL Highlights: M49: SRH Vs PBKS</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929073700 +0800" channel="astro.832" stop="20260929075800 +0800">
-    <title>MLC Best of MLC, Ep02</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929075800 +0800" channel="astro.832" stop="20260929082500 +0800">
-    <title>Asia Cup Best of Asia Cup 2025: BAN Vs AFG</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929082500 +0800" channel="astro.832" stop="20260929085000 +0800">
-    <title>Asia Cup Highlights: Final: IND Vs PAK</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929085000 +0800" channel="astro.832" stop="20260929091400 +0800">
-    <title>CPL Highlights: Final</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929091400 +0800" channel="astro.832" stop="20260929094800 +0800">
-    <title>West Indies Tour of India Highlights: IND Vs WI, 1st ODI</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929094800 +0800" channel="astro.832" stop="20260929102200 +0800">
-    <title>England Tour of Sri Lanka Highlights: ENG Vs SL, 3rd ODI</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929102200 +0800" channel="astro.832" stop="20260929105600 +0800">
-    <title>Afghanistan Tour of India Highlights: AFG Vs IND, 2nd T20I</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929105600 +0800" channel="astro.832" stop="20260929112000 +0800">
-    <title>England Tour of Sri Lanka Highlights: ENG Vs SL, 1st ODI</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929112000 +0800" channel="astro.832" stop="20260929114400 +0800">
-    <title>CPL Highlights: Q2, CPL 2026</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929114400 +0800" channel="astro.832" stop="20260929122400 +0800">
-    <title>Afghanistan Tour of India Highlights: IND Vs AFG, 2nd ODI</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929122400 +0800" channel="astro.832" stop="20260929125100 +0800">
-    <title>TATA IPL Highlights: M50: LSG VS RCB</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929125100 +0800" channel="astro.832" stop="20260929143900 +0800">
-    <title>India Tour of Sri Lanka Highlights: SL Vs IND, 2nd Test</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929143900 +0800" channel="astro.832" stop="20260929151300 +0800">
-    <title>West Indies Tour of India Highlights: IND Vs WI, 1st ODI</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929151300 +0800" channel="astro.832" stop="20260929154300 +0800">
-    <title>CPL Highlights: M18: STKNP Vs JAK</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929154300 +0800" channel="astro.832" stop="20260929160800 +0800">
-    <title>Asia Cup Highlights: Final: IND Vs PAK</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929160800 +0800" channel="astro.832" stop="20260929162800 +0800">
-    <title>New Zealand Tour of West Indies Highlights: WI Vs NZ, 3rd ODI</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929162800 +0800" channel="astro.832" stop="20260929165600 +0800">
-    <title>TATA IPL Highlights: M52: RR VS GT</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929165600 +0800" channel="astro.832" stop="20260929172900 +0800">
-    <title>TATA IPL Highlights: E: SRH Vs RR</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929172900 +0800" channel="astro.832" stop="20260929175300 +0800">
-    <title>Afghanistan Tour of India Highlights: AFG Vs IND, 1st T20I</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929175300 +0800" channel="astro.832" stop="20260929182700 +0800">
-    <title>England Tour of Sri Lanka Highlights: ENG Vs SL, 2nd ODI</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929182700 +0800" channel="astro.832" stop="20260929185100 +0800">
-    <title>Afghanistan Tour of India Highlights: AFG Vs IND, 3rd T20I</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929185100 +0800" channel="astro.832" stop="20260929191900 +0800">
-    <title>MLC Highlights: Final: LAKR Vs WF</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929191900 +0800" channel="astro.832" stop="20260929194800 +0800">
-    <title>Asia Cup Best of Asia Cup 2025: IND Vs SL</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929194800 +0800" channel="astro.832" stop="20260929201200 +0800">
-    <title>CPL Highlights: Q2, CPL 2026</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929201200 +0800" channel="astro.832" stop="20260929204600 +0800">
-    <title>West Indies Tour of India Highlights: IND Vs WI, 1st ODI</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929204600 +0800" channel="astro.832" stop="20260929212000 +0800">
-    <title>England Tour of Sri Lanka Highlights: ENG Vs SL, 3rd ODI</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929212000 +0800" channel="astro.832" stop="20260929214400 +0800">
-    <title>Afghanistan Tour of India Highlights: AFG Vs IND, 1st T20I</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929214400 +0800" channel="astro.832" stop="20260929221200 +0800">
-    <title>TATA IPL Highlights: FINAL: RCB Vs GT</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929221200 +0800" channel="astro.832" stop="20260929224000 +0800">
-    <title>New Zealand Tour of West Indies Highlights: WI Vs NZ, 1st ODI</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929224000 +0800" channel="astro.832" stop="20260929225900 +0800">
-    <title>MLC Best of MLC, Ep01</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929225900 +0800" channel="astro.832" stop="20260929233300 +0800">
-    <title>West Indies Tour of India Highlights: IND Vs WI, 1st ODI</title>
-    <url>https://www.astro.com.my/content/channels</url>
-  </programme>
-  <programme start="20260929233300 +0800" channel="astro.832" stop="20260930000000 +0800">
-    <title>Asia Cup Best of Asia Cup 2025: BAN Vs AFG</title>
+  <programme start="20261006210000 +0800" channel="astro.831" stop="20261007000000 +0800">
+    <title>Jefferson Lehigh Valley Classic Day 2</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
   <programme start="20260930000000 +0800" channel="astro.832" stop="20260930012500 +0800">
@@ -15556,120 +15152,172 @@
     <title>CPL Highlights: Q1: GAW Vs ABF</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929003200 +0800" channel="astro.833" stop="20260929022200 +0800">
-    <title>Gallagher Premiership: Exeter V Gloucester</title>
+  <programme start="20261006000000 +0800" channel="astro.832" stop="20261006003400 +0800">
+    <title>CPL Highlights: M4: JAK Vs BT</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929022200 +0800" channel="astro.833" stop="20260929023700 +0800">
-    <title>AFLW Highlights: Geelong V Hawthorn</title>
+  <programme start="20261006003400 +0800" channel="astro.832" stop="20261006010300 +0800">
+    <title>TATA IPL Highlights: M49: SRH Vs PBKS</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929023700 +0800" channel="astro.833" stop="20260929025200 +0800">
-    <title>AFLW Highlights: Essendon V West Coast</title>
+  <programme start="20261006010300 +0800" channel="astro.832" stop="20261006012700 +0800">
+    <title>MLC Highlights: M15: SFU Vs WF</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929025200 +0800" channel="astro.833" stop="20260929030700 +0800">
-    <title>AFLW Highlights: Bulldogs V Port Adelaide</title>
+  <programme start="20261006012700 +0800" channel="astro.832" stop="20261006015500 +0800">
+    <title>TATA IPL Highlights: M50: LSG VS RCB</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929030700 +0800" channel="astro.833" stop="20260929032200 +0800">
-    <title>AFLW Highlights: Carlton V Richmond</title>
+  <programme start="20261006015500 +0800" channel="astro.832" stop="20261006022000 +0800">
+    <title>CPL Highlights: M5: SLK Vs STKNP</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929032200 +0800" channel="astro.833" stop="20260929033700 +0800">
-    <title>AFLW Highlights: Melbourne V North Melbourne</title>
+  <programme start="20261006022000 +0800" channel="astro.832" stop="20261006023800 +0800">
+    <title>MLC Highlights: M16: LAKR Vs WF</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929033700 +0800" channel="astro.833" stop="20260929035200 +0800">
-    <title>AFLW Highlights: Adelaide V Fremantle</title>
+  <programme start="20261006023800 +0800" channel="astro.832" stop="20261006035900 +0800">
+    <title>Pakistan Tour of West Indies Highlights: WI Vs PAK, 2nd Test</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929035200 +0800" channel="astro.833" stop="20260929040700 +0800">
-    <title>AFLW Highlights: Collingwood V GWS Giants</title>
+  <programme start="20261006035900 +0800" channel="astro.832" stop="20261006042800 +0800">
+    <title>Afghanistan Tour of India Highlights: IND Vs AFG, 3rd ODI</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929040700 +0800" channel="astro.833" stop="20260929042200 +0800">
-    <title>AFLW Highlights: Sydney V Brisbane</title>
+  <programme start="20261006042800 +0800" channel="astro.832" stop="20261006045400 +0800">
+    <title>India Tour of Ireland Highlights: IRE Vs IND, 1st T20I</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929042200 +0800" channel="astro.833" stop="20260929044200 +0800">
-    <title>AFLW Highlights: Gold Coast V St Kilda</title>
+  <programme start="20261006045400 +0800" channel="astro.832" stop="20261006051600 +0800">
+    <title>CPL Highlights: M11: SLK Vs GAW</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929044200 +0800" channel="astro.833" stop="20260929063200 +0800">
-    <title>SANZAAR International Tour Serie: Australia V South Africa</title>
+  <programme start="20261006051600 +0800" channel="astro.832" stop="20261006054000 +0800">
+    <title>Sri Lanka Tour of West Indies Highlights: WI Vs SL, 3rd T20I</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929063200 +0800" channel="astro.833" stop="20260929070200 +0800">
-    <title>Top 14 Highlights: Round 4</title>
+  <programme start="20261006054000 +0800" channel="astro.832" stop="20261006061100 +0800">
+    <title>New Zealand Tour of West Indies Highlights: WI Vs NZ, 5th ODI</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929070200 +0800" channel="astro.833" stop="20260929071700 +0800">
-    <title>AFLW Highlights: Geelong V Hawthorn</title>
+  <programme start="20261006061100 +0800" channel="astro.832" stop="20261006063600 +0800">
+    <title>TATA IPL Highlights: M54: RCB Vs MI</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929071700 +0800" channel="astro.833" stop="20260929073200 +0800">
-    <title>AFLW Highlights: Essendon V West Coast</title>
+  <programme start="20261006063600 +0800" channel="astro.832" stop="20261006065600 +0800">
+    <title>MLC Best of MLC, Ep01</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929073200 +0800" channel="astro.833" stop="20260929074700 +0800">
-    <title>AFLW Highlights: Bulldogs V Port Adelaide</title>
+  <programme start="20261006065600 +0800" channel="astro.832" stop="20261006071600 +0800">
+    <title>MLC Best of MLC, Ep02</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929074700 +0800" channel="astro.833" stop="20260929080200 +0800">
-    <title>AFLW Highlights: Carlton V Richmond</title>
+  <programme start="20261006071600 +0800" channel="astro.832" stop="20261006074400 +0800">
+    <title>CPL Highlights: M12: ABF Vs STKNP</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929080200 +0800" channel="astro.833" stop="20260929082200 +0800">
-    <title>AFLW Highlights: Melbourne V North Melbourne</title>
+  <programme start="20261006074400 +0800" channel="astro.832" stop="20261006081200 +0800">
+    <title>Afghanistan Tour of India Highlights: IND Vs AFG, 1st ODI</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929082200 +0800" channel="astro.833" stop="20260929101200 +0800">
-    <title>Top 14: Perpignan V Bordeaux Begles</title>
+  <programme start="20261006081200 +0800" channel="astro.832" stop="20261006084100 +0800">
+    <title>CPL Highlights: Q2: JAK Vs GAW</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929101200 +0800" channel="astro.833" stop="20260929120200 +0800">
-    <title>Top 14: Stade Francais V Lyon</title>
+  <programme start="20261006084100 +0800" channel="astro.832" stop="20261006090500 +0800">
+    <title>CPL Highlights: Final: ABF Vs JAK</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929120200 +0800" channel="astro.833" stop="20260929130200 +0800">
-    <title>5 &amp; 6 Nations: Legends</title>
+  <programme start="20261006090500 +0800" channel="astro.832" stop="20261006093900 +0800">
+    <title>West Indies Tour of India Highlights: IND Vs WI, 3rd ODI</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929130200 +0800" channel="astro.833" stop="20260929133200 +0800">
-    <title>Top 14 Highlights: Round 4</title>
+  <programme start="20261006093900 +0800" channel="astro.832" stop="20261006100700 +0800">
+    <title>Afghanistan Tour of India Highlights: AFG Vs IND, 3rd T20I</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929133200 +0800" channel="astro.833" stop="20260929143200 +0800">
-    <title>5 &amp; 6 Nations: Classic Tries</title>
+  <programme start="20261006100700 +0800" channel="astro.832" stop="20261006104100 +0800">
+    <title>England Tour of Sri Lanka Highlights: ENG Vs SL, 3rd ODI</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929143200 +0800" channel="astro.833" stop="20260929145200 +0800">
-    <title>AFLW Highlights: Adelaide V Fremantle</title>
+  <programme start="20261006104100 +0800" channel="astro.832" stop="20261006110500 +0800">
+    <title>CPL Highlights: Final: ABF Vs JAK</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929145200 +0800" channel="astro.833" stop="20260929164200 +0800">
-    <title>SANZAAR International Tour Serie: Australia V South Africa</title>
+  <programme start="20261006110500 +0800" channel="astro.832" stop="20261006113900 +0800">
+    <title>West Indies Tour of India Highlights: IND Vs WI, 2nd ODI</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929164200 +0800" channel="astro.833" stop="20260929183200 +0800">
-    <title>Gallagher Premiership: Northampton V Newcastle</title>
+  <programme start="20261006113900 +0800" channel="astro.832" stop="20261006120800 +0800">
+    <title>CPL Highlights: Q2: JAK Vs GAW</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929183200 +0800" channel="astro.833" stop="20260929202200 +0800">
-    <title>Gallagher Premiership: Exeter V Gloucester</title>
+  <programme start="20261006120800 +0800" channel="astro.832" stop="20261006135800 +0800">
+    <title>India Tour of Sri Lanka Highlights: SL Vs IND, 1st Test</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929202200 +0800" channel="astro.833" stop="20260929205200 +0800">
-    <title>Top 14 Highlights: Round 4</title>
+  <programme start="20261006135800 +0800" channel="astro.832" stop="20261006143200 +0800">
+    <title>West Indies Tour of India Highlights: IND Vs WI, 1st ODI</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929205200 +0800" channel="astro.833" stop="20260929224200 +0800">
-    <title>NRL: Dolphins V Roosters</title>
+  <programme start="20261006143200 +0800" channel="astro.832" stop="20261006150500 +0800">
+    <title>MLC Highlights: C: SFU Vs WF</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260929224200 +0800" channel="astro.833" stop="20260930003200 +0800">
-    <title>NRL: Panthers V Knights</title>
+  <programme start="20261006150500 +0800" channel="astro.832" stop="20261006153900 +0800">
+    <title>West Indies Tour of India Highlights: IND Vs WI, 3rd ODI</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006153900 +0800" channel="astro.832" stop="20261006161100 +0800">
+    <title>TATA IPL Highlights: E: SRH Vs RR</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006161100 +0800" channel="astro.832" stop="20261006163600 +0800">
+    <title>Afghanistan Tour of India Highlights: AFG Vs IND, 2nd T20I</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006163600 +0800" channel="astro.832" stop="20261006171000 +0800">
+    <title>England Tour of Sri Lanka Highlights: ENG Vs SL, 2nd ODI</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006171000 +0800" channel="astro.832" stop="20261006173000 +0800">
+    <title>CPL Highlights: E: BT Vs JAK</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006173000 +0800" channel="astro.832" stop="20261006175800 +0800">
+    <title>MLC Highlights: Final: LAKR Vs WF</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006175800 +0800" channel="astro.832" stop="20261006183200 +0800">
+    <title>West Indies Tour of India Highlights: IND Vs WI, 2nd ODI</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006183200 +0800" channel="astro.832" stop="20261006185600 +0800">
+    <title>CPL Highlights: Final: ABF Vs JAK</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006185600 +0800" channel="astro.832" stop="20261006191700 +0800">
+    <title>MLC Best of MLC, Ep02</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006191700 +0800" channel="astro.832" stop="20261006194500 +0800">
+    <title>TATA IPL Highlights: FINAL: RCB Vs GT</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006194500 +0800" channel="astro.832" stop="20261006201900 +0800">
+    <title>West Indies Tour of India Highlights: IND Vs WI, 1st ODI</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006201900 +0800" channel="astro.832" stop="20261006204400 +0800">
+    <title>CPL Highlights: Final: ABF Vs JAK</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006204400 +0800" channel="astro.832" stop="20261006212000 +0800">
+    <title>West Indies Tour of India Highlights: IND Vs WI, 3rd ODI</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006212000 +0800" channel="astro.832" stop="20261007013000 +0800">
+    <title>LIVE: West Indies Tour of India IND Vs WI, 1st T20I</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
   <programme start="20260930003200 +0800" channel="astro.833" stop="20260930005200 +0800">
@@ -16106,6 +15754,126 @@
   </programme>
   <programme start="20261005233200 +0800" channel="astro.833" stop="20261006012200 +0800">
     <title>United Rugby Championship: Sharks V Leinster</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006012200 +0800" channel="astro.833" stop="20261006031200 +0800">
+    <title>United Rugby Championship: Glasgow Warriors V Ulster</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006031200 +0800" channel="astro.833" stop="20261006034200 +0800">
+    <title>Top 14 Highlights: Round 5</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006034200 +0800" channel="astro.833" stop="20261006035700 +0800">
+    <title>AFLW Highlights: Carlton V Hawthorn</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006035700 +0800" channel="astro.833" stop="20261006041200 +0800">
+    <title>AFLW Highlights: Richmond V Geelong</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006041200 +0800" channel="astro.833" stop="20261006042700 +0800">
+    <title>AFLW Highlights: GWS Giants V Essendon</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006042700 +0800" channel="astro.833" stop="20261006044200 +0800">
+    <title>AFLW Highlights: Bulldogs V St Kilda</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006044200 +0800" channel="astro.833" stop="20261006045700 +0800">
+    <title>AFLW Highlights: Brisbane V Gold Coast</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006045700 +0800" channel="astro.833" stop="20261006051200 +0800">
+    <title>AFLW Highlights: Port Adelaide V Adelaide</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006051200 +0800" channel="astro.833" stop="20261006052700 +0800">
+    <title>AFLW Highlights: North Melbourne V Sydney</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006052700 +0800" channel="astro.833" stop="20261006054200 +0800">
+    <title>AFLW Highlights: Collingwood V Melbourne</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006054200 +0800" channel="astro.833" stop="20261006060200 +0800">
+    <title>AFLW Highlights: West Coast V Fremantle</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006060200 +0800" channel="astro.833" stop="20261006075200 +0800">
+    <title>Top 14: Bordeuax Begles V Lyon</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006075200 +0800" channel="astro.833" stop="20261006094200 +0800">
+    <title>Top 14: La Rochelle V Clermont</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006094200 +0800" channel="astro.833" stop="20261006095700 +0800">
+    <title>AFLW Highlights: Carlton V Hawthorn</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006095700 +0800" channel="astro.833" stop="20261006101200 +0800">
+    <title>AFLW Highlights: Richmond V Geelong</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006101200 +0800" channel="astro.833" stop="20261006102700 +0800">
+    <title>AFLW Highlights: GWS Giants V Essendon</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006102700 +0800" channel="astro.833" stop="20261006104200 +0800">
+    <title>AFLW Highlights: Bulldogs V St Kilda</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006104200 +0800" channel="astro.833" stop="20261006105700 +0800">
+    <title>AFLW Highlights: Brisbane V Gold Coast</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006105700 +0800" channel="astro.833" stop="20261006111200 +0800">
+    <title>AFLW Highlights: Port Adelaide V Adelaide</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006111200 +0800" channel="astro.833" stop="20261006112700 +0800">
+    <title>AFLW Highlights: North Melbourne V Sydney</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006112700 +0800" channel="astro.833" stop="20261006114200 +0800">
+    <title>AFLW Highlights: Collingwood V Melbourne</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006114200 +0800" channel="astro.833" stop="20261006120200 +0800">
+    <title>AFLW Highlights: West Coast V Fremantle</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006120200 +0800" channel="astro.833" stop="20261006135200 +0800">
+    <title>Gallagher Premiership: Saracens V Sale</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006135200 +0800" channel="astro.833" stop="20261006142200 +0800">
+    <title>Top 14 Highlights: Round 5</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006142200 +0800" channel="astro.833" stop="20261006161200 +0800">
+    <title>United Rugby Championship: Munster V Bulls</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006161200 +0800" channel="astro.833" stop="20261006180200 +0800">
+    <title>Top 14: Castres V Toulouse</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006180200 +0800" channel="astro.833" stop="20261006195200 +0800">
+    <title>Top 14: Montpellier V Toulon</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006195200 +0800" channel="astro.833" stop="20261006214200 +0800">
+    <title>NRL: Grand Final</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006214200 +0800" channel="astro.833" stop="20261006221200 +0800">
+    <title>Top 14 Highlights: Round 5</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme start="20261006221200 +0800" channel="astro.833" stop="20261007000200 +0800">
+    <title>Gallagher Premiership: Bath V Exeter</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
   <programme start="20260929023800 +0200" channel="foot+.fr" stop="20260929032100 +0200">
@@ -22204,11 +21972,23 @@
     <title>Live Welsh First Minister's Questions</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260929143000 +0100" channel="ee_uk.232" stop="20260929190000 +0100">
+  <programme start="20260929143000 +0100" channel="ee_uk.232" stop="20260929172000 +0100">
     <title>Live Senedd Cymru - Welsh Parliament</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260929190000 +0100" channel="ee_uk.232" stop="20260929192000 +0100">
+  <programme start="20260929172000 +0100" channel="ee_uk.232" stop="20260929175000 +0100">
+    <title>Northern Ireland Assembly - Members' Statements</title>
+    <url>https://player.ee.co.uk/#/livetv/schedule</url>
+  </programme>
+  <programme start="20260929175000 +0100" channel="ee_uk.232" stop="20260929180000 +0100">
+    <title>Northern Ireland Assembly -...</title>
+    <url>https://player.ee.co.uk/#/livetv/schedule</url>
+  </programme>
+  <programme start="20260929180000 +0100" channel="ee_uk.232" stop="20260929185500 +0100">
+    <title>Northern Ireland Assembly - Communities Questions</title>
+    <url>https://player.ee.co.uk/#/livetv/schedule</url>
+  </programme>
+  <programme start="20260929185500 +0100" channel="ee_uk.232" stop="20260929192000 +0100">
     <title>Scottish Parliament - General Questions</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
@@ -22216,43 +21996,87 @@
     <title>Scottish First Minister's Questions</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260929195000 +0100" channel="ee_uk.232" stop="20260929223000 +0100">
-    <title>Scottish Parliament</title>
+  <programme start="20260929195000 +0100" channel="ee_uk.232" stop="20260929203000 +0100">
+    <title>Scottish Parliament -...</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260929223000 +0100" channel="ee_uk.232" stop="20260929233000 +0100">
+  <programme start="20260929203000 +0100" channel="ee_uk.232" stop="20260929224000 +0100">
+    <title>Scottish Parliament -...</title>
+    <url>https://player.ee.co.uk/#/livetv/schedule</url>
+  </programme>
+  <programme start="20260929224000 +0100" channel="ee_uk.232" stop="20260929231000 +0100">
+    <title>Scottish Parliament - Breast...</title>
+    <url>https://player.ee.co.uk/#/livetv/schedule</url>
+  </programme>
+  <programme start="20260929231000 +0100" channel="ee_uk.232" stop="20260930001000 +0100">
     <title>Welsh First Minister's Questions</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260929233000 +0100" channel="ee_uk.232" stop="20260930020000 +0100">
-    <title>Northern Ireland Assembly</title>
+  <programme start="20260930001000 +0100" channel="ee_uk.232" stop="20260930004000 +0100">
+    <title>Northern Ireland Assembly - Members' Statements</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260930020000 +0100" channel="ee_uk.232" stop="20260930022000 +0100">
+  <programme start="20260930004000 +0100" channel="ee_uk.232" stop="20260930005000 +0100">
+    <title>Northern Ireland Assembly -...</title>
+    <url>https://player.ee.co.uk/#/livetv/schedule</url>
+  </programme>
+  <programme start="20260930005000 +0100" channel="ee_uk.232" stop="20260930014500 +0100">
+    <title>Northern Ireland Assembly - Communities Questions</title>
+    <url>https://player.ee.co.uk/#/livetv/schedule</url>
+  </programme>
+  <programme start="20260930014500 +0100" channel="ee_uk.232" stop="20260930021000 +0100">
     <title>Scottish Parliament - General Questions</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260930022000 +0100" channel="ee_uk.232" stop="20260930025000 +0100">
+  <programme start="20260930021000 +0100" channel="ee_uk.232" stop="20260930024500 +0100">
     <title>Scottish First Minister's Questions</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260930025000 +0100" channel="ee_uk.232" stop="20260930053000 +0100">
-    <title>Scottish Parliament</title>
+  <programme start="20260930024500 +0100" channel="ee_uk.232" stop="20260930032500 +0100">
+    <title>Scottish Parliament -...</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260930053000 +0100" channel="ee_uk.232" stop="20260930100000 +0100">
-    <title>Senedd Cymru - Welsh Parliament</title>
+  <programme start="20260930032500 +0100" channel="ee_uk.232" stop="20260930053500 +0100">
+    <title>Scottish Parliament -...</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260930100000 +0100" channel="ee_uk.232" stop="20260930140000 +0100">
-    <title>Select Committees</title>
+  <programme start="20260930053500 +0100" channel="ee_uk.232" stop="20260930061500 +0100">
+    <title>Scottish Parliament - Breast...</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260930140000 +0100" channel="ee_uk.232" stop="20260930173000 +0100">
+  <programme start="20260930061500 +0100" channel="ee_uk.232" stop="20260930064500 +0100">
+    <title>Senedd Cymru - Senedd Business Statement</title>
+    <url>https://player.ee.co.uk/#/livetv/schedule</url>
+  </programme>
+  <programme start="20260930064500 +0100" channel="ee_uk.232" stop="20260930073000 +0100">
+    <title>Senedd Cymru - Escalation and...</title>
+    <url>https://player.ee.co.uk/#/livetv/schedule</url>
+  </programme>
+  <programme start="20260930073000 +0100" channel="ee_uk.232" stop="20260930081500 +0100">
+    <title>Senedd Cymru - National Development Framework</title>
+    <url>https://player.ee.co.uk/#/livetv/schedule</url>
+  </programme>
+  <programme start="20260930081500 +0100" channel="ee_uk.232" stop="20260930090000 +0100">
+    <title>Senedd Cymru - Bliss Baby Charter</title>
+    <url>https://player.ee.co.uk/#/livetv/schedule</url>
+  </programme>
+  <programme start="20260930090000 +0100" channel="ee_uk.232" stop="20260930100000 +0100">
+    <title>Welsh First Minister's Questions</title>
+    <url>https://player.ee.co.uk/#/livetv/schedule</url>
+  </programme>
+  <programme start="20260930100000 +0100" channel="ee_uk.232" stop="20260930121000 +0100">
+    <title>Edtech and Artificial Intelligence Committee</title>
+    <url>https://player.ee.co.uk/#/livetv/schedule</url>
+  </programme>
+  <programme start="20260930121000 +0100" channel="ee_uk.232" stop="20260930140000 +0100">
+    <title>Lords Science and Technology Committee on ARIA</title>
+    <url>https://player.ee.co.uk/#/livetv/schedule</url>
+  </programme>
+  <programme start="20260930140000 +0100" channel="ee_uk.232" stop="20260930183000 +0100">
     <title>Live Scottish Parliament</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260930173000 +0100" channel="ee_uk.232" stop="20260930230000 +0100">
+  <programme start="20260930183000 +0100" channel="ee_uk.232" stop="20260930230000 +0100">
     <title>Senedd Cymru - Welsh Parliament</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
@@ -24405,11 +24229,11 @@
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20261004020000 +0100" channel="ee_uk.341" stop="20261004030000 +0100">
-    <title>The Force: Manchester</title>
+    <title>Send In The Dogs UK</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20261004030000 +0100" channel="ee_uk.341" stop="20261004040000 +0100">
-    <title>Send In The Dogs UK</title>
+    <title>The Force: Manchester</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20261004040000 +0100" channel="ee_uk.341" stop="20261004050000 +0100">
@@ -31924,20 +31748,28 @@
     <title>Live Snooker: Shenzhen Open</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20261001100000 +0100" channel="ee_uk.408" stop="20261001120000 +0100">
+  <programme start="20261001100000 +0100" channel="ee_uk.408" stop="20261001121500 +0100">
     <title>Live AFLW: Carlton v Hawthorn</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20261001120000 +0100" channel="ee_uk.408" stop="20261001123000 +0100">
-    <title>The WRC Magazine</title>
+  <programme start="20261001121500 +0100" channel="ee_uk.408" stop="20261001123000 +0100">
+    <title>The Gallagher PREM - The Wrap Up</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20261001123000 +0100" channel="ee_uk.408" stop="20261001153000 +0100">
     <title>Live Snooker: Shenzhen Open</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20261001153000 +0100" channel="ee_uk.408" stop="20261001170000 +0100">
-    <title>Ultimate Pool</title>
+  <programme start="20261001153000 +0100" channel="ee_uk.408" stop="20261001163000 +0100">
+    <title>Live WRC: Rally Italy</title>
+    <url>https://player.ee.co.uk/#/livetv/schedule</url>
+  </programme>
+  <programme start="20261001163000 +0100" channel="ee_uk.408" stop="20261001164500 +0100">
+    <title>World Superbike Rewind</title>
+    <url>https://player.ee.co.uk/#/livetv/schedule</url>
+  </programme>
+  <programme start="20261001164500 +0100" channel="ee_uk.408" stop="20261001170000 +0100">
+    <title>TNT Sports Reload</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20261001170000 +0100" channel="ee_uk.408" stop="20261001173000 +0100">
@@ -31957,43 +31789,27 @@
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20261001183000 +0100" channel="ee_uk.408" stop="20261001184500 +0100">
-    <title>The Breakdown: Spurs</title>
+    <title>The Breakdown: Harry Kane</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20261001184500 +0100" channel="ee_uk.408" stop="20261001190000 +0100">
-    <title>The Gruppetto</title>
+    <title>The Breakdown: Spurs</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20261001190000 +0100" channel="ee_uk.408" stop="20261001200000 +0100">
-    <title>MotoGP Breakdown Show</title>
-    <url>https://player.ee.co.uk/#/livetv/schedule</url>
-  </programme>
-  <programme start="20261001200000 +0100" channel="ee_uk.408" stop="20261001210000 +0100">
-    <title>World Superbike Highlights</title>
-    <url>https://player.ee.co.uk/#/livetv/schedule</url>
-  </programme>
-  <programme start="20261001210000 +0100" channel="ee_uk.408" stop="20261001213000 +0100">
-    <title>The UFC Breakdown: UFC 332</title>
-    <url>https://player.ee.co.uk/#/livetv/schedule</url>
-  </programme>
-  <programme start="20261001213000 +0100" channel="ee_uk.408" stop="20261001220000 +0100">
-    <title>UFC Fight Flashback</title>
-    <url>https://player.ee.co.uk/#/livetv/schedule</url>
-  </programme>
-  <programme start="20261001220000 +0100" channel="ee_uk.408" stop="20261002013000 +0100">
+  <programme start="20261001190000 +0100" channel="ee_uk.408" stop="20261001220000 +0100">
     <title>MLB Postseason</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20261002013000 +0100" channel="ee_uk.408" stop="20261002020000 +0100">
-    <title>TNT Sports Reload</title>
-    <url>https://player.ee.co.uk/#/livetv/schedule</url>
-  </programme>
-  <programme start="20261002020000 +0100" channel="ee_uk.408" stop="20261002053000 +0100">
+  <programme start="20261001220000 +0100" channel="ee_uk.408" stop="20261002010000 +0100">
     <title>MLB Postseason</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20261002053000 +0100" channel="ee_uk.408" stop="20261002060000 +0100">
-    <title>MLB Plays of the Week</title>
+  <programme start="20261002010000 +0100" channel="ee_uk.408" stop="20261002040000 +0100">
+    <title>MLB Postseason</title>
+    <url>https://player.ee.co.uk/#/livetv/schedule</url>
+  </programme>
+  <programme start="20261002040000 +0100" channel="ee_uk.408" stop="20261002060000 +0100">
+    <title>MLB Postseason</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20261002060000 +0100" channel="ee_uk.408" stop="20261002061600 +0100">
@@ -32072,8 +31888,12 @@
     <title>The UFC Breakdown: UFC 332</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20261003023000 +0100" channel="ee_uk.408" stop="20261003033000 +0100">
+  <programme start="20261003023000 +0100" channel="ee_uk.408" stop="20261003030000 +0100">
     <title>UFC Countdown: 332</title>
+    <url>https://player.ee.co.uk/#/livetv/schedule</url>
+  </programme>
+  <programme start="20261003030000 +0100" channel="ee_uk.408" stop="20261003033000 +0100">
+    <title>UEFA Champions League Magazine</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20261003033000 +0100" channel="ee_uk.408" stop="20261003040000 +0100">
@@ -32144,16 +31964,12 @@
     <title>Live: UFC 332 Prelims</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20261004010000 +0100" channel="ee_uk.408" stop="20261004043000 +0100">
+  <programme start="20261004010000 +0100" channel="ee_uk.408" stop="20261004050000 +0100">
     <title>Live: UFC 332</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20261004043000 +0100" channel="ee_uk.408" stop="20261004053000 +0100">
+  <programme start="20261004050000 +0100" channel="ee_uk.408" stop="20261004060000 +0100">
     <title>Sparkassen Munsterland Giro</title>
-    <url>https://player.ee.co.uk/#/livetv/schedule</url>
-  </programme>
-  <programme start="20261004053000 +0100" channel="ee_uk.408" stop="20261004060000 +0100">
-    <title>World Rally Championship - Italy</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20261004060000 +0100" channel="ee_uk.408" stop="20261004063000 +0100">
@@ -32164,11 +31980,11 @@
     <title>UCI Mountain Bike World Series Men</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20261004070000 +0100" channel="ee_uk.408" stop="20261004073000 +0100">
-    <title>World Rally Championship - Italy</title>
+  <programme start="20261004070000 +0100" channel="ee_uk.408" stop="20261004071500 +0100">
+    <title>TNT Sports Reload</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20261004073000 +0100" channel="ee_uk.408" stop="20261004083000 +0100">
+  <programme start="20261004071500 +0100" channel="ee_uk.408" stop="20261004083000 +0100">
     <title>Live WRC: Rally Italy</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
@@ -32176,20 +31992,20 @@
     <title>UEFA Champions League Magazine</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20261004090000 +0100" channel="ee_uk.408" stop="20261004113000 +0100">
-    <title>Live WRC: Rally Italy</title>
+  <programme start="20261004090000 +0100" channel="ee_uk.408" stop="20261004100000 +0100">
+    <title>India v West Indies - 3rd ODI</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20261004113000 +0100" channel="ee_uk.408" stop="20261004120000 +0100">
-    <title>British Superbikes</title>
+  <programme start="20261004100000 +0100" channel="ee_uk.408" stop="20261004101500 +0100">
+    <title>TNT Sports Reload</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20261004120000 +0100" channel="ee_uk.408" stop="20261004130000 +0100">
-    <title>MLB Highlights</title>
+  <programme start="20261004101500 +0100" channel="ee_uk.408" stop="20261004111500 +0100">
+    <title>Road Race - Elite - Women</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20261004130000 +0100" channel="ee_uk.408" stop="20261004143000 +0100">
-    <title>Live WRC: Rally Italy</title>
+  <programme start="20261004111500 +0100" channel="ee_uk.408" stop="20261004143000 +0100">
+    <title>Live: Road Race - Elite - Men</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20261004143000 +0100" channel="ee_uk.408" stop="20261004173000 +0100">
@@ -32200,11 +32016,11 @@
     <title>Live: Mountain Bike World Series</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20261004190000 +0100" channel="ee_uk.408" stop="20261004211600 +0100">
+  <programme start="20261004190000 +0100" channel="ee_uk.408" stop="20261004211500 +0100">
     <title>Live: Mountain Bike World Series</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20261004211600 +0100" channel="ee_uk.408" stop="20261005003000 +0100">
+  <programme start="20261004211500 +0100" channel="ee_uk.408" stop="20261005003000 +0100">
     <title>MLB Postseason</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
@@ -40869,7 +40685,7 @@
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20260929120000 +0100" channel="ee_uk.427" stop="20260929143000 +0100">
-    <title>Live: ATP Finals</title>
+    <title>Live: ATP Chengdu Final</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
   <programme start="20260929143000 +0100" channel="ee_uk.427" stop="20260929150000 +0100">
@@ -44764,18 +44580,6 @@
     <title>New: Gates of Heaven</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme start="20260929220000 +0800" channel="now_hk.611" stop="20260929230000 +0800">
-    <title>請留意下場播映賽事</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260929230000 +0800" channel="now_hk.611" stop="20260930000000 +0800">
-    <title>請留意下場播映賽事</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260930000000 +0800" channel="now_hk.611" stop="20260930010000 +0800">
-    <title>請留意下場播映賽事</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260930010000 +0800" channel="now_hk.611" stop="20260930020000 +0800">
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -45348,10 +45152,6 @@
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260929220000 +0800" channel="now_hk.612" stop="20260930000000 +0800">
-    <title>請留意下場播映賽事</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260930000000 +0800" channel="now_hk.612" stop="20260930020000 +0800">
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -45644,10 +45444,6 @@
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260929220000 +0800" channel="now_hk.613" stop="20260930000000 +0800">
-    <title>請留意下場播映賽事</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260930000000 +0800" channel="now_hk.613" stop="20260930020000 +0800">
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -45934,22 +45730,6 @@
   </programme>
   <programme start="20261005220000 +0800" channel="now_hk.613" stop="20261006000000 +0800">
     <title>請留意下場播映賽事</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260929223000 +0800" channel="now_hk.620" stop="20260929230000 +0800">
-    <title>英超精彩重溫 -舒米高</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260929230000 +0800" channel="now_hk.620" stop="20260929233000 +0800">
-    <title>英超精彩重溫 -蘇拿</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260929233000 +0800" channel="now_hk.620" stop="20260930000000 +0800">
-    <title>英超精彩重溫 -加利卡希爾</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260930000000 +0800" channel="now_hk.620" stop="20260930010000 +0800">
-    <title>中堅的藝術: 尼史葛</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260930010000 +0800" channel="now_hk.620" stop="20260930020000 +0800">
@@ -46728,22 +46508,6 @@
     <title>英超故事 -阿麥迪亞路</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260929210000 +0800" channel="now_hk.621" stop="20260929230000 +0800">
-    <title>英格蘭超級聯賽 -水晶宮 對 曼城</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260929230000 +0800" channel="now_hk.621" stop="20260929231500 +0800">
-    <title>英超金球 -第四週</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260929231500 +0800" channel="now_hk.621" stop="20260929233000 +0800">
-    <title>英超金球 -第五週</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260929233000 +0800" channel="now_hk.621" stop="20260930000000 +0800">
-    <title>英超故事26/27 -加列沙卡</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260930000000 +0800" channel="now_hk.621" stop="20260930020000 +0800">
     <title>英格蘭超級聯賽 -阿仙奴 對 車路士</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -47184,10 +46948,6 @@
     <title>英超故事26/27 -史東斯</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260929200000 +0800" channel="now_hk.622" stop="20260930000000 +0800">
-    <title>請留意下場播映賽事</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260930000000 +0800" channel="now_hk.622" stop="20260930040000 +0800">
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -47329,10 +47089,6 @@
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20261005200000 +0800" channel="now_hk.622" stop="20261006000000 +0800">
-    <title>請留意下場播映賽事</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260929200000 +0800" channel="now_hk.623" stop="20260930000000 +0800">
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
@@ -47480,10 +47236,6 @@
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260929200000 +0800" channel="now_hk.624" stop="20260930000000 +0800">
-    <title>請留意下場播映賽事</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260930000000 +0800" channel="now_hk.624" stop="20260930040000 +0800">
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -47625,10 +47377,6 @@
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20261005200000 +0800" channel="now_hk.624" stop="20261006000000 +0800">
-    <title>請留意下場播映賽事</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260929200000 +0800" channel="now_hk.625" stop="20260930000000 +0800">
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
@@ -47776,10 +47524,6 @@
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260929200000 +0800" channel="now_hk.626" stop="20260930000000 +0800">
-    <title>請留意下場播映賽事</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260930000000 +0800" channel="now_hk.626" stop="20260930040000 +0800">
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -47921,10 +47665,6 @@
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20261005200000 +0800" channel="now_hk.626" stop="20261006000000 +0800">
-    <title>請留意下場播映賽事</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260929200000 +0800" channel="now_hk.627" stop="20260930000000 +0800">
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
@@ -48070,14 +47810,6 @@
   </programme>
   <programme start="20261005200000 +0800" channel="now_hk.627" stop="20261006000000 +0800">
     <title>請留意下場播映賽事</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260929220000 +0800" channel="now_hk.630" stop="20260930000000 +0800">
-    <title>WTA 26 瓜達拉哈拉網球公開賽 -決賽</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260930000000 +0800" channel="now_hk.630" stop="20260930010000 +0800">
-    <title>PGA巡迴賽精華2026 -聖裘德聯邦快遞高爾夫球錦標賽</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260930010000 +0800" channel="now_hk.630" stop="20260930040000 +0800">
@@ -48628,10 +48360,6 @@
     <title>英超金球 -第五週</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260929210000 +0800" channel="now_hk.631" stop="20260930000000 +0800">
-    <title>FIE 25/26 國際劍聯大奬賽 -中國站 (花劍)</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260930000000 +0800" channel="now_hk.631" stop="20260930020000 +0800">
     <title>ATP 26 杭州網球公開賽 -半準決賽 (1)</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -49108,14 +48836,6 @@
     <title>PGA冠軍巡迴賽學習中心2026 第15集</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260929223000 +0800" channel="now_hk.632" stop="20260929230000 +0800">
-    <title>西班牙甲組足球聯賽精華 -第七週</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260929230000 +0800" channel="now_hk.632" stop="20260930010000 +0800">
-    <title>2026/27 西班牙甲組足球聯賽 -艾拉維斯 對 華倫西亞</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260930010000 +0800" channel="now_hk.632" stop="20260930030000 +0800">
     <title>2026/27 西班牙甲組足球聯賽 -艾爾切 對 皇家馬德里</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -49482,18 +49202,6 @@
   </programme>
   <programme start="20261005220000 +0800" channel="now_hk.632" stop="20261006000000 +0800">
     <title>2026/27 西班牙甲組足球聯賽 -西維爾 對 巴塞隆拿</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260929210000 +0800" channel="now_hk.633" stop="20260929231500 +0800">
-    <title>NFL 美式足球賽 26/27 -費城老鷹 @ 芝加哥熊</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260929231500 +0800" channel="now_hk.633" stop="20260929233000 +0800">
-    <title>一CUE過百 第163集</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260929233000 +0800" channel="now_hk.633" stop="20260930000000 +0800">
-    <title>Racing on the Edge Season 6 -The Art of Risk</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260930000000 +0800" channel="now_hk.633" stop="20260930021500 +0800">
@@ -50110,14 +49818,6 @@
   </programme>
   <programme start="20261005233000 +0800" channel="now_hk.633" stop="20261006000000 +0800">
     <title>2026 Mass Participation -Transvulcania</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260929220000 +0800" channel="now_hk.634" stop="20260929233000 +0800">
-    <title>WTA 26 蒙特雷網球公開賽 -半準決賽(1)</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260929233000 +0800" channel="now_hk.634" stop="20260930000000 +0800">
-    <title>WTA 2026 決賽精華 -意大利網球公開賽</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260930000000 +0800" channel="now_hk.634" stop="20260930014500 +0800">
@@ -50836,10 +50536,6 @@
     <title>一CUE過百 第188集</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260929221000 +0800" channel="now_hk.635" stop="20260930001000 +0800">
-    <title>WSWC '27 Gr. A 第11集 -Czechia v Chinese Taipei</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260930001000 +0800" channel="now_hk.635" stop="20260930021000 +0800">
     <title>Serie A Women 2026/27 第1集 -Juventus v Napoli</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -51274,14 +50970,6 @@
   </programme>
   <programme start="20261005213000 +0800" channel="now_hk.635" stop="20261006003000 +0800">
     <title>WSWC '27 Gr. A 第14集 -Chinese Taipei v Australia</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260929210000 +0800" channel="now_hk.636" stop="20260929231500 +0800">
-    <title>ATP 26 羅渣士網球盃 -決賽</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260929231500 +0800" channel="now_hk.636" stop="20260930000000 +0800">
-    <title>擂台之王 -布力克</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260930000000 +0800" channel="now_hk.636" stop="20260930020000 +0800">
@@ -51858,54 +51546,6 @@
   </programme>
   <programme start="20261005230000 +0800" channel="now_hk.636" stop="20261006000000 +0800">
     <title>ATP 26 精華 -辛辛那堤網球公開賽</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260929223000 +0800" channel="now_hk.637" stop="20260929224500 +0800">
-    <title>一CUE過百 第168集</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260929224500 +0800" channel="now_hk.637" stop="20260929230000 +0800">
-    <title>一CUE過百 第170集</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260929230000 +0800" channel="now_hk.637" stop="20260929231500 +0800">
-    <title>一CUE過百 第171集</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260929231500 +0800" channel="now_hk.637" stop="20260929233000 +0800">
-    <title>滿分 147 第40集</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260929233000 +0800" channel="now_hk.637" stop="20260929234500 +0800">
-    <title>一CUE過百 第141集</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260929234500 +0800" channel="now_hk.637" stop="20260930000000 +0800">
-    <title>一CUE過百 第142集</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260930000000 +0800" channel="now_hk.637" stop="20260930001500 +0800">
-    <title>一CUE過百 第163集</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260930001500 +0800" channel="now_hk.637" stop="20260930003000 +0800">
-    <title>一CUE過百 第164集</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260930003000 +0800" channel="now_hk.637" stop="20260930004500 +0800">
-    <title>滿分 147 第40集</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260930004500 +0800" channel="now_hk.637" stop="20260930010000 +0800">
-    <title>一CUE過百 第167集</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260930010000 +0800" channel="now_hk.637" stop="20260930011500 +0800">
-    <title>一CUE過百 第168集</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260930011500 +0800" channel="now_hk.637" stop="20260930013000 +0800">
-    <title>滿分 147 第40集</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260930013000 +0800" channel="now_hk.637" stop="20260930014500 +0800">
@@ -52724,18 +52364,6 @@
     <title>一CUE過百 第181集</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260929204500 +0800" channel="now_hk.638" stop="20260929230000 +0800">
-    <title>2027 非洲國家盃外圍賽 第27集 -南蘇丹 對 埃及[直播]</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260929230000 +0800" channel="now_hk.638" stop="20260929233000 +0800">
-    <title>2026 FIA 世界越野拉力錦標賽雜誌 第13集 -義大利撒丁島拉力賽</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260929233000 +0800" channel="now_hk.638" stop="20260929234500 +0800">
-    <title>意甲經典賽事資料庫 第47集 -拉素 對 拿玻里 - 2016/17</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260929234500 +0800" channel="now_hk.638" stop="20260930020000 +0800">
     <title>2027 非洲國家盃外圍賽 第32集 -加納 對 岡比亞[直播]</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -53238,18 +52866,6 @@
   </programme>
   <programme start="20261005233500 +0800" channel="now_hk.638" stop="20261006000500 +0800">
     <title>意甲全面睇 第3集 -比賽曰 3</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260929204500 +0800" channel="now_hk.639" stop="20260929230000 +0800">
-    <title>非洲國家盃2027外圍賽 -萊索托 對 摩洛哥[直播]</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260929230000 +0800" channel="now_hk.639" stop="20260929233000 +0800">
-    <title>德甲賽事精華 -拜仁慕尼黑 對 史特加</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260929233000 +0800" channel="now_hk.639" stop="20260929234500 +0800">
-    <title>德甲經典賽事 -多蒙特 對 拜仁慕尼黑 - 2023/24</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260929234500 +0800" channel="now_hk.639" stop="20260930020000 +0800">
@@ -53802,18 +53418,6 @@
   </programme>
   <programme start="20261005230000 +0800" channel="now_hk.639" stop="20261006000000 +0800">
     <title>GT歐洲挑戰賽2026 -西班牙站主賽事2</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260929210000 +0800" channel="now_hk.640" stop="20260929224500 +0800">
-    <title>英超 26/27 第5集 -富咸 對 曼聯</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260929224500 +0800" channel="now_hk.640" stop="20260929230000 +0800">
-    <title>紅魔全入球 第40集 -曼聯女子隊走進奧脫福</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260929230000 +0800" channel="now_hk.640" stop="20260930010000 +0800">
-    <title>英超 26/27 第2集 -曼聯 對 葉士域治</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260930010000 +0800" channel="now_hk.640" stop="20260930030000 +0800">
@@ -54752,10 +54356,6 @@
     <title>曼聯資料庫 第2022集</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260929220000 +0800" channel="now_hk.641" stop="20260930000000 +0800">
-    <title>請留意下場播映賽事</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260930000000 +0800" channel="now_hk.641" stop="20260930020000 +0800">
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -55042,18 +54642,6 @@
   </programme>
   <programme start="20261005220000 +0800" channel="now_hk.641" stop="20261006000000 +0800">
     <title>請留意下場播映賽事</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260929223000 +0800" channel="now_hk.642" stop="20260929230000 +0800">
-    <title>Johnny Hoops訪談NBA傳奇 第206集 -卜柏堤</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260929230000 +0800" channel="now_hk.642" stop="20260930000000 +0800">
-    <title>籃球廣播室 第136集</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260930000000 +0800" channel="now_hk.642" stop="20260930013000 +0800">
-    <title>WNBA經典重溫</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260930013000 +0800" channel="now_hk.642" stop="20260930033000 +0800">
@@ -55382,18 +54970,6 @@
   </programme>
   <programme start="20261005113000 +0800" channel="now_hk.642" stop="20261005223000 +0800">
     <title>籃球聯盟 -媒體日特輯</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260929204500 +0800" channel="now_hk.643" stop="20260929230000 +0800">
-    <title>非洲國家盃外圍賽 第30集 -埃塞俄比亞 對 塞內加爾[直播]</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260929230000 +0800" channel="now_hk.643" stop="20260929231500 +0800">
-    <title>歐聯特輯 第21集 -歐聯全入球 - 巴黎(包括決賽)2025/26</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260929231500 +0800" channel="now_hk.643" stop="20260929234500 +0800">
-    <title>歐聯賽事精華 第17集 -拜仁慕尼黑 對 博德基林 (比賽日1)</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260929234500 +0800" channel="now_hk.643" stop="20260930020000 +0800">
@@ -55856,10 +55432,6 @@
     <title>法國甲組足球聯賽</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260929200000 +0800" channel="now_hk.644" stop="20260930000000 +0800">
-    <title>請留意下場播映賽事</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260930000000 +0800" channel="now_hk.644" stop="20260930040000 +0800">
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -56001,10 +55573,6 @@
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20261005200000 +0800" channel="now_hk.644" stop="20261006000000 +0800">
-    <title>請留意下場播映賽事</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260929200000 +0800" channel="now_hk.645" stop="20260930000000 +0800">
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
@@ -56152,10 +55720,6 @@
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260929200000 +0800" channel="now_hk.646" stop="20260930000000 +0800">
-    <title>請留意下場播映賽事</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260930000000 +0800" channel="now_hk.646" stop="20260930040000 +0800">
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -56297,10 +55861,6 @@
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20261005200000 +0800" channel="now_hk.646" stop="20261006000000 +0800">
-    <title>請留意下場播映賽事</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260929220000 +0800" channel="now_hk.647" stop="20260930000000 +0800">
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
@@ -56592,10 +56152,6 @@
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260929220000 +0800" channel="now_hk.651" stop="20260930000000 +0800">
-    <title>請留意下場播映賽事</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260930000000 +0800" channel="now_hk.651" stop="20260930020000 +0800">
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -56881,10 +56437,6 @@
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20261005220000 +0800" channel="now_hk.651" stop="20261006000000 +0800">
-    <title>請留意下場播映賽事</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260929220000 +0800" channel="now_hk.652" stop="20260930000000 +0800">
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
@@ -57174,18 +56726,6 @@
   </programme>
   <programme start="20261005220000 +0800" channel="now_hk.652" stop="20261006000000 +0800">
     <title>請留意下場播映賽事</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260929221500 +0800" channel="now_hk.668" stop="20260929230000 +0800">
-    <title>賽事重溫 -第6集</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260929230000 +0800" channel="now_hk.668" stop="20260930001500 +0800">
-    <title>早着先機 -第7集</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260930001500 +0800" channel="now_hk.668" stop="20260930010000 +0800">
-    <title>賽事重溫 -第6集</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260930010000 +0800" channel="now_hk.668" stop="20260930021500 +0800">
@@ -57778,26 +57318,6 @@
   </programme>
   <programme start="20261005230000 +0800" channel="now_hk.668" stop="20261006000500 +0800">
     <title>早着先機 -第9集</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260929221200 +0800" channel="now_hk.674" stop="20260929224000 +0800">
-    <title>New Zealand tour of West Indies, 2026 -Highlights: WI vs NZ, 1st ODI</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260929224000 +0800" channel="now_hk.674" stop="20260929225900 +0800">
-    <title>MLC 2026 -Best of MLC, EP 1</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260929225900 +0800" channel="now_hk.674" stop="20260929233300 +0800">
-    <title>West Indies tour of India, 2026 -Highlights: IND vs WI, 1st ODI</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260929233300 +0800" channel="now_hk.674" stop="20260930000000 +0800">
-    <title>Asia Cup 2025 -Best of Asia Cup 2025: BAN vs AFG</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260930000000 +0800" channel="now_hk.674" stop="20260930012500 +0800">
-    <title>Sri Lanka tour of West Indies, 2026 -Highlights: WI vs SL, 2nd Test</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260930012500 +0800" channel="now_hk.674" stop="20260930014600 +0800">
@@ -58728,22 +58248,6 @@
     <title>CPL 2026 -Highlights: Q1: GAW vs ABF</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260929205000 +0800" channel="now_hk.679" stop="20260929224000 +0800">
-    <title>NRL -Dolphins v Roosters</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260929224000 +0800" channel="now_hk.679" stop="20260930003000 +0800">
-    <title>NRL -Panthers v Knights</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260930003000 +0800" channel="now_hk.679" stop="20260930005000 +0800">
-    <title>AFLW Highlights -Essendon v West Coast</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260930005000 +0800" channel="now_hk.679" stop="20260930012000 +0800">
-    <title>Top 14 Highlights -Round 4</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260930012000 +0800" channel="now_hk.679" stop="20260930015000 +0800">
     <title>5 and 6 Nations Classics -1999 - Wales v England</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -59172,10 +58676,6 @@
     <title>United Rugby Championship -Sharks v Leinster</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme start="20260929200000 +0800" channel="now_hk.680" stop="20260930000000 +0800">
-    <title>請留意下場播映賽事</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme start="20260930000000 +0800" channel="now_hk.680" stop="20260930040000 +0800">
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -59318,22 +58818,6 @@
   </programme>
   <programme start="20261005200000 +0800" channel="now_hk.680" stop="20261006000000 +0800">
     <title>請留意下場播映賽事</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260929183000 +0800" channel="now_hk.683" stop="20260929230000 +0800">
-    <title>歐洲巡迴賽25/26 法國高爾夫球公開賽 -第3天</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260929230000 +0800" channel="now_hk.683" stop="20260930000000 +0800">
-    <title>PGA巡迴賽精華2026 -北卡羅萊納阿什維爾高爾夫球錦標賽</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260930000000 +0800" channel="now_hk.683" stop="20260930003000 +0800">
-    <title>歐洲巡迴賽精華25/26 -寶馬PGA高爾夫球錦標賽</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260930003000 +0800" channel="now_hk.683" stop="20260930013000 +0800">
-    <title>PGA冠軍巡迴賽精華2026 -南達科他高爾夫球國際賽</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260930013000 +0800" channel="now_hk.683" stop="20260930060000 +0800">
@@ -59658,14 +59142,6 @@
   </programme>
   <programme start="20261005233000 +0800" channel="now_hk.683" stop="20261006000000 +0800">
     <title>歐洲巡迴賽精華25/26 -寶馬PGA高爾夫球錦標賽</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260929180000 +0800" channel="now_hk.684" stop="20260929230000 +0800">
-    <title>總統盃2026 -第2天</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme start="20260929230000 +0800" channel="now_hk.684" stop="20260930000000 +0800">
-    <title>總統盃2026精華</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme start="20260930000000 +0800" channel="now_hk.684" stop="20260930063000 +0800">
@@ -67987,11 +67463,11 @@
     <title>ATP 250: N. Basilashvili (GEO) - A. Davidovich Fokina (ESP), Chengdu Open (CHN), HF 1</title>
     <url>https://www.magenta.tv/</url>
   </programme>
-  <programme start="20260929130000 +0200" channel="sky_de.206" stop="20260929154000 +0200">
+  <programme start="20260929130000 +0200" channel="sky_de.206" stop="20260929154500 +0200">
     <title>Live ATP 250: Final-Conference Hangzhou &amp; Chengdu (CHN)</title>
     <url>https://www.magenta.tv/</url>
   </programme>
-  <programme start="20260929154000 +0200" channel="sky_de.206" stop="20260929160000 +0200">
+  <programme start="20260929154500 +0200" channel="sky_de.206" stop="20260929160000 +0200">
     <title>WTA: Greatest 50</title>
     <url>https://www.magenta.tv/</url>
   </programme>

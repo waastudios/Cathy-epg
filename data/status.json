@@ -1,11 +1,11 @@
 {
   "astro": {
     "status": "ok",
-    "records": 2380
+    "records": 2322
   },
   "now_hk": {
     "status": "ok",
-    "records": 3801
+    "records": 3716
   },
   "allente_se": {
     "status": "ok",
@@ -17,7 +17,7 @@
   },
   "ee_uk": {
     "status": "ok",
-    "records": 6852
+    "records": 6864
   },
   "sky_de": {
     "status": "ok",
@@ -57,10 +57,10 @@
   "xmltv": {
     "status": "ok",
     "channels": 165,
-    "programmes": 17344,
-    "xml_file": "/home/hatch/workspace/Cathy-epg/data/epg.xml",
-    "gzip_file": "/home/hatch/workspace/Cathy-epg/data/epg.xml.gz"
+    "programmes": 17213,
+    "xml_file": "data/epg.xml",
+    "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-09-29T17:47:33Z",
-  "total_records": 17344
+  "generated_at": "2026-09-29T17:58:37Z",
+  "total_records": 17213
 }
