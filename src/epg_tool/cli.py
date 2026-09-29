@@ -74,7 +74,7 @@ def _collect(args: argparse.Namespace) -> int:
         ("virgin_uk", lambda: collect_virgin_uk_ultra(args.days)),
         # Player.pl 匿名公开 EPG：Eurosport 1–4 与 Eleven Sports 1，波兰语标题译为英文。
         ("player_pl", lambda: collect_player_pl(args.days)),
-        # tvepg.eu 法国区 CANAL+ 主频道公开节目表（当日＋次日），法语标题译为英文。
+        # 法国 Canal+ 官方 API：CANAL+ 主频道与 CANAL+ FOOT，法语标题译为英文。
         ("canalplus_fr", lambda: collect_canalplus_fr(args.days)),
     )
     for provider, collector in collectors:

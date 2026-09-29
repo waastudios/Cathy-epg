@@ -14,9 +14,10 @@ GZIP = Path("data/epg.xml.gz")
 
 # The programme source is the official Canal+ EPG API (hodor.canalplus.pro).
 # A fresh token is fetched from the authenticate endpoint on every run because
-# hard-coded tokens are rejected.  French titles are converted to English
-# through the three-tier translation pipeline, and a title that cannot be
-# translated only skips that programme, so this refresh never waits on a
+# hard-coded tokens are rejected.  Requests are paced 90 seconds apart because
+# the official API rate-limits aggressively.  French titles are converted to
+# English through the three-tier translation pipeline, and a title that cannot
+# be translated only skips that programme, so this refresh never waits on a
 # third-party translation service.
 new_records = sources.collect_canalplus_fr(days=7)
 if not new_records:
@@ -28,14 +29,8 @@ kept = [item for item in previous if item.provider != "canalplus_fr"]
 records = kept + new_records
 write_jsonl(records, DATA)
 channels, programme_count = write_xmltv(records, XML, GZIP)
-# source_url 区分实际走的是官方 API 还是 tvepg.eu 兜底。
-source_urls = {row.source_url for row in new_records}
-if all(url == sources.TVEPG_EU_CANALPLUS_URL for url in source_urls):
-    actual_source = "tvepg.eu France Canal+ (fallback, ~2 days)"
-else:
-    actual_source = "official_canalplus_epg_api"
 status = json.loads(STATUS.read_text(encoding="utf-8"))
-entry = {"status": "ok", "records": len(new_records), "source": actual_source}
+entry = {"status": "ok", "records": len(new_records), "source": "official_canalplus_epg_api"}
 if notes:
     entry["notes"] = notes
 status["canalplus_fr"] = entry

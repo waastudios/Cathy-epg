@@ -64,7 +64,7 @@ The United States scope is intentionally restricted to potential future coverage
 
 ### France via the official Canal+ API
 
-**CANAL+** (main channel) and **CANAL+ FOOT** are published from the official Canal+ EPG API as `canal+.fr` and `foot+.fr`. A fresh token is fetched from the authenticate endpoint on every run because hard-coded tokens are rejected; the API is rate-limited, so requests are paced and retried. Each French source title is converted to English through the tiered pipeline described below (curated French mapping, then the translation memory, then online services); a title that cannot be translated skips that single programme instead of failing the source. If the official API is unreachable, the main channel falls back to the tvepg.eu France public listing (today + tomorrow only). In [CHANNELS.md](CHANNELS.md) both channels carry a (T) mark to indicate their guides are translated into English.
+**CANAL+** (main channel) and **CANAL+ FOOT** are published from the official Canal+ EPG API as `canal+.fr` and `foot+.fr`. A fresh token is fetched from the authenticate endpoint on every run because hard-coded tokens are rejected; the API is aggressively rate-limited, so requests are paced 90 seconds apart and retried. Each French source title is converted to English through the tiered pipeline described below (curated French mapping, then the translation memory, then online services); a title that cannot be translated skips that single programme instead of failing the source. Only the official API is used, no third-party fallback. In [CHANNELS.md](CHANNELS.md) both channels carry a (T) mark to indicate their guides are translated into English.
 
 ### English translation
 
@@ -105,7 +105,7 @@ For Serbia’s SBB Eurosport schedules, titles are converted during collection u
 
 ## Changelog
 
-- **2026-09-29** — Restored both France Canal+ channels from the official Canal+ EPG API as `canal+.fr` (CANAL+) and `foot+.fr` (CANAL+ FOOT), 7 days each. A fresh token is fetched from the authenticate endpoint on every run (hard-coded tokens are rejected); the API is rate-limited so requests are paced with retries. French titles are converted to English through the tiered translation pipeline and marked (T) in CHANNELS.md. If the official API is unreachable, the main channel falls back to the tvepg.eu France public listing (today + tomorrow).
+- **2026-09-29** — Restored both France Canal+ channels from the official Canal+ EPG API as `canal+.fr` (CANAL+) and `foot+.fr` (CANAL+ FOOT), 7 days each. A fresh token is fetched from the authenticate endpoint on every run (hard-coded tokens are rejected); the API is aggressively rate-limited so requests are paced 90 seconds apart with retries. French titles are converted to English through the tiered translation pipeline and marked (T) in CHANNELS.md. Only the official API is used, no third-party fallback.
 - **2026-09-28** — Added Travel XP (European feed) from the SBB Public EPG as `travelxp.eu`. Titles arrive in English and are published as-is, marked (T) in CHANNELS.md.
 - **2026-09-28** — Added Poland coverage: Eurosport 1–4 and Eleven Sports 1 from the Player.pl public EPG API, with user-designated XMLTV IDs `eurosport1.pl`, `eurosport2.pl`, `eurosport3.pl`, `eurosport4.pl` and `ElevenSp.1`. Polish titles are translated to English through the tiered pipeline and marked (T) in CHANNELS.md.
 

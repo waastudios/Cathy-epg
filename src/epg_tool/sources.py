@@ -1411,128 +1411,38 @@ def _collect_canalplus_fr_official_channel(
     return records, skipped
 
 
-TVEPG_EU_CANALPLUS_URL = "https://tvepg.eu/en/france/c/canal-plus"
 
-
-def _collect_canalplus_fr_tvepg(session: requests.Session) -> tuple[list[Programme], int]:
-    """tvepg.eu 法国区 CANAL+ 主频道公开节目表（当日＋次日），仅作官方 API
-    不可用时的兜底。"""
-    response = session.get(
-        TVEPG_EU_CANALPLUS_URL,
-        headers={"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"},
-        timeout=30,
-    )
-    response.raise_for_status()
-    soup = BeautifulSoup(response.text, "html.parser")
-    text = soup.get_text("\n")
-    sections: list[tuple[int, date | None]] = []
-    for match in re.finditer(r"(?:Today|Tomorrow) - (\d{2})/(\d{2})/(\d{4})", text):
-        sections.append((match.start(), date(int(match.group(3)), int(match.group(2)), int(match.group(1)))))
-    if not sections:
-        raise SourceUnavailable("tvepg.eu Canal+ 法国页面未返回节目分区。")
-    sections.append((len(text), None))
-    entries: list[tuple[datetime, str]] = []
-    zone = ZoneInfo("Europe/Paris")
-    for index in range(len(sections) - 1):
-        start, section_date = sections[index]
-        assert section_date is not None
-        chunk = text[start:sections[index + 1][0]]
-        items = [
-            (int(hour), int(minute), title.strip())
-            for hour, minute, title in re.findall(r"(\d{2}):(\d{2})\s+([^\n]+)", chunk)
-            if title.strip() and not re.fullmatch(r"[-–\s]*", title.strip())
-        ]
-        if not items:
-            continue
-        base = section_date
-        if len(items) > 1 and (items[0][0], items[0][1]) > (items[1][0], items[1][1]):
-            base -= timedelta(days=1)
-        current = base
-        previous: tuple[int, int] | None = None
-        for hour, minute, title in items:
-            if previous is not None and (hour, minute) < previous:
-                current += timedelta(days=1)
-            previous = (hour, minute)
-            entries.append((datetime(current.year, current.month, current.day, hour, minute, tzinfo=zone), title))
-    seen: set[tuple[str, str]] = set()
-    unique: list[tuple[datetime, str]] = []
-    for moment, title in sorted(entries):
-        key = (moment.isoformat(), title)
-        if key in seen:
-            continue
-        seen.add(key)
-        unique.append((moment, title))
-    retrieved_at = utc_now_iso()
-    records: list[Programme] = []
-    skipped = 0
-    for index, (start, source_title) in enumerate(unique):
-        if index + 1 >= len(unique):
-            continue
-        end = unique[index + 1][0]
-        if end <= start:
-            continue
-        try:
-            title = translate_programme_title(source_title, "fr", _translate_canalplus_fr_title)
-        except TitleUntranslatable:
-            skipped += 1
-            continue
-        records.append(
-            Programme(
-                provider="canalplus_fr",
-                country="FR",
-                timezone="Europe/Paris",
-                channel_id="canal+.fr",
-                channel_number="301",
-                channel_name="CANAL+",
-                title=title,
-                start_at=start.isoformat(),
-                end_at=end.isoformat(),
-                source_url=TVEPG_EU_CANALPLUS_URL,
-                retrieved_at=retrieved_at,
-            )
-        )
-    return records, skipped
-
-
-def collect_canalplus_fr(days: int = 7, pause_seconds: float = 4.0) -> list[Programme]:
+def collect_canalplus_fr(days: int = 7, pause_seconds: float = 90.0) -> list[Programme]:
     """读取法国 Canal+ 官方 EPG（CANAL+ 主频道与 CANAL+ FOOT），法语标题译为英文。
 
     先经 authenticate.json 换取新鲜 token（硬编码 token 会被官方拒绝），再按
-    频道拉取当日＋未来 6 天节目。官方接口有较严的频率限制，请求间隔默认
-    4 秒。官方 API 不可用时主频道回退到 tvepg.eu 公开节目表（约 2 天）；
-    单个标题无法翻译只跳过该节目，不会让整个来源失败。
+    频道拉取当日＋未来 6 天节目。官方接口频率限制极严，请求间隔默认 90 秒，
+    完整采集约需 20 分钟。仅使用官方 API，不设第三方兜底；单个标题无法翻译
+    只跳过该节目，不会让整个来源失败。
     """
     if days not in range(1, 8):
         raise ValueError("法国 Canal+ 采集天数必须为 1–7。")
     session = _session()
     headers = {
         "Accept": "application/json, text/plain, */*",
+        "Accept-Language": "fr-FR,fr;q=0.6",
         "Origin": "https://www.canalplus.com",
         "Referer": CANALPLUS_FR_GUIDE,
-        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
     }
     records: list[Programme] = []
     skipped = 0
-    official_ok = False
-    try:
-        auth = _canalplus_fr_get(session, CANALPLUS_FR_AUTH_URL, headers=headers, timeout=(5, 20))
-        token = auth.json().get("token")
-        if not token:
-            raise SourceUnavailable("法国 Canal+ 官方认证未返回 token。")
-        time.sleep(pause_seconds)
-        for channel in CANALPLUS_FR_CHANNELS:
-            channel_records, channel_skipped = _collect_canalplus_fr_official_channel(
-                session, headers, token, channel, days, pause_seconds
-            )
-            records.extend(channel_records)
-            skipped += channel_skipped
-        official_ok = True
-    except (SourceUnavailable, requests.exceptions.RequestException) as exc:
-        note(f"Canal+ 官方 API 不可用（{exc}），主频道回退到 tvepg.eu")
-    if not official_ok:
-        fallback_records, fallback_skipped = _collect_canalplus_fr_tvepg(session)
-        records.extend(fallback_records)
-        skipped += fallback_skipped
+    auth = _canalplus_fr_get(session, CANALPLUS_FR_AUTH_URL, headers=headers, timeout=(5, 20))
+    token = auth.json().get("token")
+    if not token:
+        raise SourceUnavailable("法国 Canal+ 官方认证未返回 token。")
+    time.sleep(pause_seconds)
+    for channel in CANALPLUS_FR_CHANNELS:
+        channel_records, channel_skipped = _collect_canalplus_fr_official_channel(
+            session, headers, token, channel, days, pause_seconds
+        )
+        records.extend(channel_records)
+        skipped += channel_skipped
     if skipped:
         note(f"Canal+ {skipped} 档法语标题无法译为英文，已跳过")
     records = _deduplicate(records)
