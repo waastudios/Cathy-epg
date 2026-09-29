@@ -1,35 +1,35 @@
 {
   "astro": {
     "status": "ok",
-    "records": 2349
+    "records": 2342
   },
   "now_hk": {
     "status": "ok",
-    "records": 4314
+    "records": 3890
   },
   "allente_se": {
     "status": "ok",
-    "records": 792
+    "records": 799
   },
   "allente_no": {
     "status": "ok",
-    "records": 693
+    "records": 683
   },
   "ee_uk": {
     "status": "ok",
-    "records": 6829
+    "records": 6843
   },
   "sky_de": {
     "status": "ok",
-    "records": 1421
+    "records": 1406
   },
   "digi4k_ro": {
     "status": "ok",
-    "records": 140
+    "records": 142
   },
   "sbb_rs": {
     "status": "ok",
-    "records": 377
+    "records": 383
   },
   "virgin_uk": {
     "status": "ok",
@@ -37,23 +37,21 @@
   },
   "player_pl": {
     "status": "ok",
-    "records": 624
+    "records": 646
   },
   "canalplus_fr": {
-    "status": "ok",
+    "status": "stale",
     "records": 53,
-    "source": "tvepg.eu France Canal+ (fallback, ~2 days)",
-    "notes": [
-      "Canal+ 官方 API 不可用（HTTPSConnectionPool(host='hodor.canalplus.pro', port=443): Read timed out. (read timeout=20)），主频道回退到 tvepg.eu"
-    ]
+    "message": "403 rate limited: https://hodor.canalplus.pro/api/v2/mycanal/authenticate.json/webapp/6.0?experiments=beta-test-one-tv-guide:control",
+    "fallback": "previous_snapshot"
   },
   "xmltv": {
     "status": "ok",
     "channels": 163,
-    "programmes": 17667,
+    "programmes": 17262,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-09-28T17:29:56Z",
-  "total_records": 17667
+  "generated_at": "2026-09-29T10:36:57Z",
+  "total_records": 17262
 }
