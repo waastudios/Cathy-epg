@@ -13024,6 +13024,10 @@
     <title>TotalEnergies Women's Africa Cup of Nations, Morocco : Malawi Vs Zambia</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
+  <programme channel="astro.822" start="20261001070000 +0800" stop="20261001073000 +0800">
+    <title>Bundesliga Special 2026/27</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
   <programme channel="astro.822" start="20261001073000 +0800" stop="20261001092000 +0800">
     <title>UCL : Fenerbahce Vs Lyon - Play-Offs,1st Leg</title>
     <url>https://www.astro.com.my/content/channels</url>
@@ -13040,6 +13044,10 @@
     <title>(D) UEFA Women's Champions League : Hacken Vs Juventus - MD2</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
+  <programme channel="astro.822" start="20261001150000 +0800" stop="20261001153000 +0800">
+    <title>Bundesliga Special 2026/27</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
   <programme channel="astro.822" start="20261001153000 +0800" stop="20261001183000 +0800">
     <title>La Vuelta 2026</title>
     <url>https://www.astro.com.my/content/channels</url>
@@ -13054,6 +13062,10 @@
   </programme>
   <programme channel="astro.822" start="20261001221000 +0800" stop="20261002000000 +0800">
     <title>UEFA Women's Champions League : OL Lyonnes Vs Chelsea - MD2</title>
+    <url>https://www.astro.com.my/content/channels</url>
+  </programme>
+  <programme channel="astro.822" start="20261002000000 +0800" stop="20261002004000 +0800">
+    <title>MUTV: Specials</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
   <programme channel="astro.822" start="20261002004000 +0800" stop="20261002025500 +0800">
@@ -44580,10 +44592,6 @@
     <title>New: Gates of Heaven</title>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
   </programme>
-  <programme channel="now_hk.611" start="20260930010000 +0800" stop="20260930020000 +0800">
-    <title>請留意下場播映賽事</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme channel="now_hk.611" start="20260930020000 +0800" stop="20260930030000 +0800">
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -45152,10 +45160,6 @@
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme channel="now_hk.612" start="20260930000000 +0800" stop="20260930020000 +0800">
-    <title>請留意下場播映賽事</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme channel="now_hk.612" start="20260930020000 +0800" stop="20260930040000 +0800">
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -45444,10 +45448,6 @@
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme channel="now_hk.613" start="20260930000000 +0800" stop="20260930020000 +0800">
-    <title>請留意下場播映賽事</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme channel="now_hk.613" start="20260930020000 +0800" stop="20260930040000 +0800">
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -45730,10 +45730,6 @@
   </programme>
   <programme channel="now_hk.613" start="20261005220000 +0800" stop="20261006000000 +0800">
     <title>請留意下場播映賽事</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme channel="now_hk.620" start="20260930010000 +0800" stop="20260930020000 +0800">
-    <title>門將的藝術: 施治</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme channel="now_hk.620" start="20260930020000 +0800" stop="20260930023000 +0800">
@@ -46506,10 +46502,6 @@
   </programme>
   <programme channel="now_hk.620" start="20261005233000 +0800" stop="20261006000000 +0800">
     <title>英超故事 -阿麥迪亞路</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme channel="now_hk.621" start="20260930000000 +0800" stop="20260930020000 +0800">
-    <title>英格蘭超級聯賽 -阿仙奴 對 車路士</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme channel="now_hk.621" start="20260930020000 +0800" stop="20260930040000 +0800">
@@ -48360,10 +48352,6 @@
     <title>英超金球 -第五週</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme channel="now_hk.631" start="20260930000000 +0800" stop="20260930020000 +0800">
-    <title>ATP 26 杭州網球公開賽 -半準決賽 (1)</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme channel="now_hk.631" start="20260930020000 +0800" stop="20260930023000 +0800">
     <title>英超故事26/27 -加列沙卡</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -49820,14 +49808,6 @@
     <title>2026 Mass Participation -Transvulcania</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme channel="now_hk.634" start="20260930000000 +0800" stop="20260930014500 +0800">
-    <title>WTA 26 瓜達拉哈拉網球公開賽 -準決賽(1)</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme channel="now_hk.634" start="20260930014500 +0800" stop="20260930020000 +0800">
-    <title>一CUE過百 第162集</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme channel="now_hk.634" start="20260930020000 +0800" stop="20260930034500 +0800">
     <title>WTA 26 新加坡網球公開賽 -半準決賽(3)</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -50972,10 +50952,6 @@
     <title>WSWC '27 Gr. A 第14集 -Chinese Taipei v Australia</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme channel="now_hk.636" start="20260930000000 +0800" stop="20260930020000 +0800">
-    <title>ATP 26 博斯塔德網球公開賽 -決賽</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme channel="now_hk.636" start="20260930020000 +0800" stop="20260930034500 +0800">
     <title>ATP 26 洛斯卡波斯網球公開賽 -半準決賽(1) - 黃澤林 對 布祿斯比</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -51546,10 +51522,6 @@
   </programme>
   <programme channel="now_hk.636" start="20261005230000 +0800" stop="20261006000000 +0800">
     <title>ATP 26 精華 -辛辛那堤網球公開賽</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme channel="now_hk.637" start="20260930013000 +0800" stop="20260930014500 +0800">
-    <title>一CUE過百 第163集</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme channel="now_hk.637" start="20260930014500 +0800" stop="20260930040000 +0800">
@@ -52364,10 +52336,6 @@
     <title>一CUE過百 第181集</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme channel="now_hk.638" start="20260929234500 +0800" stop="20260930020000 +0800">
-    <title>2027 非洲國家盃外圍賽 第32集 -加納 對 岡比亞[直播]</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme channel="now_hk.638" start="20260930020000 +0800" stop="20260930023000 +0800">
     <title>意甲賽事精華 第3集 -拖連奴 對 AC米蘭</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -52866,10 +52834,6 @@
   </programme>
   <programme channel="now_hk.638" start="20261005233500 +0800" stop="20261006000500 +0800">
     <title>意甲全面睇 第3集 -比賽曰 3</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme channel="now_hk.639" start="20260929234500 +0800" stop="20260930020000 +0800">
-    <title>非洲國家盃2027外圍賽 -畿內亞比紹 對 尼日利亞[直播]</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme channel="now_hk.639" start="20260930020000 +0800" stop="20260930023000 +0800">
@@ -54356,10 +54320,6 @@
     <title>曼聯資料庫 第2022集</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme channel="now_hk.641" start="20260930000000 +0800" stop="20260930020000 +0800">
-    <title>請留意下場播映賽事</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme channel="now_hk.641" start="20260930020000 +0800" stop="20260930040000 +0800">
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -54970,10 +54930,6 @@
   </programme>
   <programme channel="now_hk.642" start="20261005113000 +0800" stop="20261005223000 +0800">
     <title>籃球聯盟 -媒體日特輯</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme channel="now_hk.643" start="20260929234500 +0800" stop="20260930020000 +0800">
-    <title>非洲國家盃外圍賽 第36集 -佛得角 對 盧旺達[直播]</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme channel="now_hk.643" start="20260930020000 +0800" stop="20260930021500 +0800">
@@ -55864,10 +55820,6 @@
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme channel="now_hk.647" start="20260930000000 +0800" stop="20260930020000 +0800">
-    <title>請留意下場播映賽事</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme channel="now_hk.647" start="20260930020000 +0800" stop="20260930040000 +0800">
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -56152,10 +56104,6 @@
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
-  <programme channel="now_hk.651" start="20260930000000 +0800" stop="20260930020000 +0800">
-    <title>請留意下場播映賽事</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
   <programme channel="now_hk.651" start="20260930020000 +0800" stop="20260930040000 +0800">
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
@@ -56437,10 +56385,6 @@
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme channel="now_hk.651" start="20261005220000 +0800" stop="20261006000000 +0800">
-    <title>請留意下場播映賽事</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme channel="now_hk.652" start="20260930000000 +0800" stop="20260930020000 +0800">
     <title>請留意下場播映賽事</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
@@ -57318,10 +57262,6 @@
   </programme>
   <programme channel="now_hk.668" start="20261005230000 +0800" stop="20261006000500 +0800">
     <title>早着先機 -第9集</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme channel="now_hk.674" start="20260930012500 +0800" stop="20260930014600 +0800">
-    <title>MLC 2026 -Best of MLC, EP 1</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme channel="now_hk.674" start="20260930014600 +0800" stop="20260930020800 +0800">
@@ -58246,10 +58186,6 @@
   </programme>
   <programme channel="now_hk.674" start="20261005234300 +0800" stop="20261006000000 +0800">
     <title>CPL 2026 -Highlights: Q1: GAW vs ABF</title>
-    <url>https://nowplayer.now.com/tvguide?filterType=all</url>
-  </programme>
-  <programme channel="now_hk.679" start="20260930012000 +0800" stop="20260930015000 +0800">
-    <title>5 and 6 Nations Classics -1999 - Wales v England</title>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
   </programme>
   <programme channel="now_hk.679" start="20260930015000 +0800" stop="20260930034000 +0800">
@@ -69823,43 +69759,39 @@
     <title>This is Ultra HD</title>
     <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
   </programme>
-  <programme channel="virgin_uk.2265" start="20261002013000 +0100" stop="20261002040000 +0100">
+  <programme channel="virgin_uk.2265" start="20261002013000 +0100" stop="20261002073000 +0100">
     <title>This is Ultra HD</title>
     <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
   </programme>
-  <programme channel="virgin_uk.2265" start="20261002040000 +0100" stop="20261002100000 +0100">
+  <programme channel="virgin_uk.2265" start="20261002073000 +0100" stop="20261002133000 +0100">
     <title>This is Ultra HD</title>
     <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
   </programme>
-  <programme channel="virgin_uk.2265" start="20261002100000 +0100" stop="20261002160000 +0100">
+  <programme channel="virgin_uk.2265" start="20261002133000 +0100" stop="20261002193000 +0100">
     <title>This is Ultra HD</title>
     <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
   </programme>
-  <programme channel="virgin_uk.2265" start="20261002160000 +0100" stop="20261002220000 +0100">
+  <programme channel="virgin_uk.2265" start="20261002193000 +0100" stop="20261003013000 +0100">
     <title>This is Ultra HD</title>
     <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
   </programme>
-  <programme channel="virgin_uk.2265" start="20261002220000 +0100" stop="20261003013000 +0100">
+  <programme channel="virgin_uk.2265" start="20261003013000 +0100" stop="20261003040000 +0100">
     <title>This is Ultra HD</title>
     <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
   </programme>
-  <programme channel="virgin_uk.2265" start="20261003013000 +0100" stop="20261003073000 +0100">
+  <programme channel="virgin_uk.2265" start="20261003040000 +0100" stop="20261003100000 +0100">
     <title>This is Ultra HD</title>
     <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
   </programme>
-  <programme channel="virgin_uk.2265" start="20261003073000 +0100" stop="20261003133000 +0100">
+  <programme channel="virgin_uk.2265" start="20261003100000 +0100" stop="20261003160000 +0100">
     <title>This is Ultra HD</title>
     <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
   </programme>
-  <programme channel="virgin_uk.2265" start="20261003133000 +0100" stop="20261003193000 +0100">
+  <programme channel="virgin_uk.2265" start="20261003160000 +0100" stop="20261003220000 +0100">
     <title>This is Ultra HD</title>
     <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
   </programme>
-  <programme channel="virgin_uk.2265" start="20261003193000 +0100" stop="20261004013000 +0100">
-    <title>This is Ultra HD</title>
-    <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
-  </programme>
-  <programme channel="virgin_uk.2265" start="20261004013000 +0100" stop="20261004040000 +0100">
+  <programme channel="virgin_uk.2265" start="20261003220000 +0100" stop="20261004040000 +0100">
     <title>This is Ultra HD</title>
     <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
   </programme>
