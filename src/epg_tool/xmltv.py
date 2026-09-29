@@ -135,9 +135,11 @@ def write_xmltv(records: Iterable[Programme], xml_path: Path, gzip_path: Path) -
         ET.SubElement(channel, "url").text = first.source_url
 
     for programme in programmes:
+        # 属性顺序与 epgshare01 对齐（channel, start, stop）：标准 XML 解析器
+        # 不在乎顺序，但某些客户端用正则/顺序敏感方式解析，先写 channel 最稳妥。
         attributes = {
-            "start": _xmltv_timestamp(programme.start_at),
             "channel": _xmltv_channel_id(programme),
+            "start": _xmltv_timestamp(programme.start_at),
         }
         if programme.end_at:
             attributes["stop"] = _xmltv_timestamp(programme.end_at)
@@ -151,7 +153,10 @@ def write_xmltv(records: Iterable[Programme], xml_path: Path, gzip_path: Path) -
     tree = ET.ElementTree(root)
     ET.indent(tree, space="  ")
     xml_path.parent.mkdir(parents=True, exist_ok=True)
-    tree.write(xml_path, encoding="utf-8", xml_declaration=True)
+    # XML 声明与 epgshare01 对齐：双引号、大写 UTF-8，避免顺序敏感的解析器误判。
+    with xml_path.open("w", encoding="utf-8", newline="\n") as handle:
+        handle.write('<?xml version="1.0" encoding="UTF-8"?>\n')
+        handle.write(ET.tostring(root, encoding="unicode"))
     with xml_path.open("rb") as source, gzip_path.open("wb") as destination:
         with gzip.GzipFile(filename="epg.xml", mode="wb", fileobj=destination, mtime=0) as compressed:
             while chunk := source.read(1024 * 1024):
