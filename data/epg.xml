@@ -158,7 +158,7 @@
   </channel>
   <channel id="canal+.fr">
     <display-name>CANAL+</display-name>
-    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
   </channel>
   <channel id="digi4k_ro">
     <display-name>Digi 4K</display-name>
@@ -375,6 +375,10 @@
   <channel id="eurosport4.pl">
     <display-name>Eurosport 4</display-name>
     <url>https://player.pl/</url>
+  </channel>
+  <channel id="foot+.fr">
+    <display-name>CANAL+ FOOT</display-name>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
   </channel>
   <channel id="now_hk.611">
     <display-name>Now Sports 4K 1</display-name>
@@ -15948,217 +15952,525 @@
     <title>United Rugby Championship: Sharks V Leinster</title>
     <url>https://www.astro.com.my/content/channels</url>
   </programme>
-  <programme start="20260927232000 +0200" channel="canal+.fr" stop="20260928002900 +0200">
-    <title>Saturday Night Live</title>
-    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+  <programme start="20260929023800 +0200" channel="foot+.fr" stop="20260929032100 +0200">
+    <title>Cityzen Pep</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
   </programme>
-  <programme start="20260928002900 +0200" channel="canal+.fr" stop="20260928011200 +0200">
-    <title>The Green Mice Gang</title>
-    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+  <programme start="20260929032100 +0200" channel="foot+.fr" stop="20260929040000 +0200">
+    <title>Cityzen Pep</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
   </programme>
-  <programme start="20260928011200 +0200" channel="canal+.fr" stop="20260928020000 +0200">
-    <title>The Green Mice Gang</title>
-    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+  <programme start="20260929040000 +0200" channel="foot+.fr" stop="20260929044300 +0200">
+    <title>Football day</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
   </programme>
-  <programme start="20260928020000 +0200" channel="canal+.fr" stop="20260928032700 +0200">
-    <title>Primate</title>
-    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+  <programme start="20260929044300 +0200" channel="foot+.fr" stop="20260929052600 +0200">
+    <title>Strikers</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
   </programme>
-  <programme start="20260928032700 +0200" channel="canal+.fr" stop="20260928050800 +0200">
-    <title>Together</title>
-    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+  <programme start="20260929052600 +0200" channel="foot+.fr" stop="20260929060900 +0200">
+    <title>Strikers</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
   </programme>
-  <programme start="20260928050800 +0200" channel="canal+.fr" stop="20260928051700 +0200">
-    <title>Humanity</title>
-    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+  <programme start="20260929060900 +0200" channel="foot+.fr" stop="20260929064000 +0200">
+    <title>5000 to 1, 10 years of Leicester's title</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
   </programme>
-  <programme start="20260928051700 +0200" channel="canal+.fr" stop="20260928054000 +0200">
-    <title>In the retro</title>
-    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+  <programme start="20260929064000 +0200" channel="foot+.fr" stop="20260929074100 +0200">
+    <title>Late Football Club</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
   </programme>
-  <programme start="20260928054000 +0200" channel="canal+.fr" stop="20260928064800 +0200">
-    <title>Loris Giuliano on a walk</title>
-    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+  <programme start="20260929074100 +0200" channel="foot+.fr" stop="20260929091600 +0200">
+    <title>History of Champions</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
   </programme>
-  <programme start="20260928064800 +0200" channel="canal+.fr" stop="20260928065000 +0200">
-    <title>The UEFA magazine</title>
-    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+  <programme start="20260929091600 +0200" channel="foot+.fr" stop="20260929094200 +0200">
+    <title>Champions League Weekly</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
   </programme>
-  <programme start="20260928065000 +0200" channel="canal+.fr" stop="20260928074200 +0200">
+  <programme start="20260929094200 +0200" channel="foot+.fr" stop="20260929111900 +0200">
+    <title>Fulham / Manchester United</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20260929111900 +0200" channel="foot+.fr" stop="20260929153500 +0200">
+    <title>End of programs</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20260929153500 +0200" channel="foot+.fr" stop="20260929163600 +0200">
+    <title>Late Football Club</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20260929163600 +0200" channel="foot+.fr" stop="20260929173000 +0200">
+    <title>Premier League Review</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20260929173000 +0200" channel="foot+.fr" stop="20260929181300 +0200">
+    <title>Strikers</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20260929181300 +0200" channel="foot+.fr" stop="20260929185800 +0200">
+    <title>Strikers</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20260929185800 +0200" channel="foot+.fr" stop="20260929204100 +0200">
+    <title>FC Porto / Manchester City</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20260929204100 +0200" channel="foot+.fr" stop="20260929210800 +0200">
+    <title>The Club</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20260929210800 +0200" channel="foot+.fr" stop="20260929213800 +0200">
+    <title>The Club</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20260929213800 +0200" channel="foot+.fr" stop="20260929224000 +0200">
+    <title>Late Football Club</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20260929224000 +0200" channel="foot+.fr" stop="20260929233000 +0200">
+    <title>Detective Mathoux</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20260929233000 +0200" channel="foot+.fr" stop="20260929235600 +0200">
+    <title>Champions League Weekly</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20260929235600 +0200" channel="foot+.fr" stop="20260930013900 +0200">
+    <title>Lille / Betis Sevilla</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20260930013900 +0200" channel="foot+.fr" stop="20260930031600 +0200">
+    <title>Paris-SG / Slovan Bratislava</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20260930031600 +0200" channel="foot+.fr" stop="20260930042000 +0200">
+    <title>Late Football Club</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20260930042000 +0200" channel="foot+.fr" stop="20260930045400 +0200">
+    <title>Football day</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20260930045400 +0200" channel="foot+.fr" stop="20260930062100 +0200">
+    <title>History of Champions</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20260930062100 +0200" channel="foot+.fr" stop="20260930070000 +0200">
+    <title>Canal Football Manager</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20260930070000 +0200" channel="foot+.fr" stop="20260930080100 +0200">
+    <title>Late Football Club</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20260930080100 +0200" channel="foot+.fr" stop="20260930094300 +0200">
+    <title>Manchester City/Sunderland</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20260930094300 +0200" channel="foot+.fr" stop="20260930152100 +0200">
+    <title>End of programs</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20260930152100 +0200" channel="foot+.fr" stop="20260930162200 +0200">
+    <title>Late Football Club</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20260930162200 +0200" channel="foot+.fr" stop="20260930164100 +0200">
+    <title>05/06/2027 On the way to Madrid</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20260930164100 +0200" channel="foot+.fr" stop="20260930182600 +0200">
+    <title>Slavia Prague / Lens</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20260930182600 +0200" channel="foot+.fr" stop="20260930185400 +0200">
+    <title>Premier League Stories</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20260930185400 +0200" channel="foot+.fr" stop="20260930203500 +0200">
+    <title>Lille / Betis Sevilla</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20260930203500 +0200" channel="foot+.fr" stop="20260930213600 +0200">
+    <title>Late Football Club</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20260930213600 +0200" channel="foot+.fr" stop="20260930220600 +0200">
+    <title>Platini</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20260930220600 +0200" channel="foot+.fr" stop="20260930223700 +0200">
+    <title>Platini</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20260930223700 +0200" channel="foot+.fr" stop="20260930231000 +0200">
+    <title>Platini</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20260930231000 +0200" channel="foot+.fr" stop="20261001000100 +0200">
+    <title>Detective Mathoux</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20261001000100 +0200" channel="foot+.fr" stop="20261001013600 +0200">
+    <title>History of Champions</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20261001013600 +0200" channel="foot+.fr" stop="20261001031700 +0200">
+    <title>Real Madrid/Inter Milan</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20261001031700 +0200" channel="foot+.fr" stop="20261001042000 +0200">
+    <title>Late Football Club</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20261001042000 +0200" channel="foot+.fr" stop="20261001045500 +0200">
+    <title>Football day</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20261001045500 +0200" channel="foot+.fr" stop="20261001061600 +0200">
+    <title>Giroud: The 40th birthday dinner</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20261001061600 +0200" channel="foot+.fr" stop="20261001064600 +0200">
+    <title>Canal Football Manager</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20261001064600 +0200" channel="foot+.fr" stop="20261001070000 +0200">
+    <title>UEFA: What you didn't see</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20261001070000 +0200" channel="foot+.fr" stop="20261001080100 +0200">
+    <title>Late Football Club</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20261001080100 +0200" channel="foot+.fr" stop="20261002020000 +0200">
+    <title>Brighton &amp; Hove Albion / Arsenal</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20260929020200 +0200" channel="canal+.fr" stop="20260929030200 +0200">
     <title>Click</title>
-    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
   </programme>
-  <programme start="20260928074200 +0200" channel="canal+.fr" stop="20260928081400 +0200">
-    <title>As an aside</title>
-    <url>https://tvepg.eu/en/france/c/canal-plus</url>
-  </programme>
-  <programme start="20260928081400 +0200" channel="canal+.fr" stop="20260928091000 +0200">
-    <title>Journeys at the end of the effort</title>
-    <url>https://tvepg.eu/en/france/c/canal-plus</url>
-  </programme>
-  <programme start="20260928091000 +0200" channel="canal+.fr" stop="20260928100600 +0200">
-    <title>This is not a crime</title>
-    <url>https://tvepg.eu/en/france/c/canal-plus</url>
-  </programme>
-  <programme start="20260928100600 +0200" channel="canal+.fr" stop="20260928105800 +0200">
-    <title>This is not a crime</title>
-    <url>https://tvepg.eu/en/france/c/canal-plus</url>
-  </programme>
-  <programme start="20260928105800 +0200" channel="canal+.fr" stop="20260928115700 +0200">
-    <title>This is not a crime</title>
-    <url>https://tvepg.eu/en/france/c/canal-plus</url>
-  </programme>
-  <programme start="20260928115700 +0200" channel="canal+.fr" stop="20260928120200 +0200">
-    <title>The question box</title>
-    <url>https://tvepg.eu/en/france/c/canal-plus</url>
-  </programme>
-  <programme start="20260928120200 +0200" channel="canal+.fr" stop="20260928123500 +0200">
-    <title>As an aside</title>
-    <url>https://tvepg.eu/en/france/c/canal-plus</url>
-  </programme>
-  <programme start="20260928123500 +0200" channel="canal+.fr" stop="20260928132700 +0200">
-    <title>Click</title>
-    <url>https://tvepg.eu/en/france/c/canal-plus</url>
-  </programme>
-  <programme start="20260928132700 +0200" channel="canal+.fr" stop="20260928155100 +0200">
-    <title>Eddington</title>
-    <url>https://tvepg.eu/en/france/c/canal-plus</url>
-  </programme>
-  <programme start="20260928155100 +0200" channel="canal+.fr" stop="20260928160600 +0200">
-    <title>Head to head(s)</title>
-    <url>https://tvepg.eu/en/france/c/canal-plus</url>
-  </programme>
-  <programme start="20260928160600 +0200" channel="canal+.fr" stop="20260928172200 +0200">
-    <title>Maigret and the dead lover</title>
-    <url>https://tvepg.eu/en/france/c/canal-plus</url>
-  </programme>
-  <programme start="20260928172200 +0200" channel="canal+.fr" stop="20260928172700 +0200">
-    <title>The question box</title>
-    <url>https://tvepg.eu/en/france/c/canal-plus</url>
-  </programme>
-  <programme start="20260928172700 +0200" channel="canal+.fr" stop="20260928180200 +0200">
-    <title>As an aside</title>
-    <url>https://tvepg.eu/en/france/c/canal-plus</url>
-  </programme>
-  <programme start="20260928180200 +0200" channel="canal+.fr" stop="20260928190200 +0200">
-    <title>Click</title>
-    <url>https://tvepg.eu/en/france/c/canal-plus</url>
-  </programme>
-  <programme start="20260928190200 +0200" channel="canal+.fr" stop="20260928203400 +0200">
+  <programme start="20260929030200 +0200" channel="canal+.fr" stop="20260929043400 +0200">
     <title>Rugby night</title>
-    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
   </programme>
-  <programme start="20260928203400 +0200" channel="canal+.fr" stop="20260928210900 +0200">
+  <programme start="20260929043400 +0200" channel="canal+.fr" stop="20260929050900 +0200">
     <title>As an aside</title>
-    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
   </programme>
-  <programme start="20260928210900 +0200" channel="canal+.fr" stop="20260928215500 +0200">
+  <programme start="20260929050900 +0200" channel="canal+.fr" stop="20260929055500 +0200">
     <title>Apollo Has Fallen</title>
-    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
   </programme>
-  <programme start="20260928215500 +0200" channel="canal+.fr" stop="20260928235500 +0200">
+  <programme start="20260929055500 +0200" channel="canal+.fr" stop="20260929075500 +0200">
     <title>Guru</title>
-    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
   </programme>
-  <programme start="20260928235500 +0200" channel="canal+.fr" stop="20260929014700 +0200">
+  <programme start="20260929075500 +0200" channel="canal+.fr" stop="20260929094700 +0200">
     <title>Connemara</title>
-    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
   </programme>
-  <programme start="20260929014700 +0200" channel="canal+.fr" stop="20260929021800 +0200">
+  <programme start="20260929094700 +0200" channel="canal+.fr" stop="20260929101800 +0200">
     <title>My tribe, what binds us</title>
-    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
   </programme>
-  <programme start="20260929021800 +0200" channel="canal+.fr" stop="20260929030500 +0200">
+  <programme start="20260929101800 +0200" channel="canal+.fr" stop="20260929101900 +0200">
     <title>The circle</title>
-    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
   </programme>
-  <programme start="20260929030500 +0200" channel="canal+.fr" stop="20260929043200 +0200">
-    <title>Hind Rajab's voice</title>
-    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+  <programme start="20260929101900 +0200" channel="canal+.fr" stop="20260929110600 +0200">
+    <title>The circle</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
   </programme>
-  <programme start="20260929043200 +0200" channel="canal+.fr" stop="20260929044300 +0200">
-    <title>The Man That I Wave At</title>
-    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+  <programme start="20260929110600 +0200" channel="canal+.fr" stop="20260929123200 +0200">
+    <title>The Voice of Hind Rajab</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
   </programme>
-  <programme start="20260929044300 +0200" channel="canal+.fr" stop="20260929053000 +0200">
+  <programme start="20260929123200 +0200" channel="canal+.fr" stop="20260929123300 +0200">
+    <title>Erogenesis</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20260929123300 +0200" channel="canal+.fr" stop="20260929124800 +0200">
+    <title>Erogenesis</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20260929124800 +0200" channel="canal+.fr" stop="20260929133400 +0200">
     <title>Loris Giuliano at work</title>
-    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
   </programme>
-  <programme start="20260929053000 +0200" channel="canal+.fr" stop="20260929061300 +0200">
+  <programme start="20260929133400 +0200" channel="canal+.fr" stop="20260929141200 +0200">
     <title>Strikers</title>
-    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
   </programme>
-  <programme start="20260929061300 +0200" channel="canal+.fr" stop="20260929065200 +0200">
+  <programme start="20260929141200 +0200" channel="canal+.fr" stop="20260929145500 +0200">
     <title>Strikers</title>
-    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
   </programme>
-  <programme start="20260929065200 +0200" channel="canal+.fr" stop="20260929074500 +0200">
+  <programme start="20260929145500 +0200" channel="canal+.fr" stop="20260929154900 +0200">
     <title>Click</title>
-    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
   </programme>
-  <programme start="20260929074500 +0200" channel="canal+.fr" stop="20260929081800 +0200">
+  <programme start="20260929154900 +0200" channel="canal+.fr" stop="20260929162100 +0200">
     <title>As an aside</title>
-    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
   </programme>
-  <programme start="20260929081800 +0200" channel="canal+.fr" stop="20260929101700 +0200">
+  <programme start="20260929162100 +0200" channel="canal+.fr" stop="20260929182100 +0200">
     <title>Smashing Machine</title>
-    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
   </programme>
-  <programme start="20260929101700 +0200" channel="canal+.fr" stop="20260929115900 +0200">
+  <programme start="20260929182100 +0200" channel="canal+.fr" stop="20260929200300 +0200">
     <title>Free trade</title>
-    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
   </programme>
-  <programme start="20260929115900 +0200" channel="canal+.fr" stop="20260929120400 +0200">
+  <programme start="20260929200300 +0200" channel="canal+.fr" stop="20260929200700 +0200">
     <title>The question box</title>
-    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
   </programme>
-  <programme start="20260929120400 +0200" channel="canal+.fr" stop="20260929123600 +0200">
+  <programme start="20260929200700 +0200" channel="canal+.fr" stop="20260929203900 +0200">
     <title>As an aside</title>
-    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
   </programme>
-  <programme start="20260929123600 +0200" channel="canal+.fr" stop="20260929133000 +0200">
+  <programme start="20260929203900 +0200" channel="canal+.fr" stop="20260929213300 +0200">
     <title>Click</title>
-    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
   </programme>
-  <programme start="20260929133000 +0200" channel="canal+.fr" stop="20260929142600 +0200">
+  <programme start="20260929213300 +0200" channel="canal+.fr" stop="20260929222900 +0200">
     <title>This is not a crime</title>
-    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
   </programme>
-  <programme start="20260929142600 +0200" channel="canal+.fr" stop="20260929151800 +0200">
+  <programme start="20260929222900 +0200" channel="canal+.fr" stop="20260929232200 +0200">
     <title>This is not a crime</title>
-    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
   </programme>
-  <programme start="20260929151800 +0200" channel="canal+.fr" stop="20260929161700 +0200">
+  <programme start="20260929232200 +0200" channel="canal+.fr" stop="20260930002000 +0200">
     <title>This is not a crime</title>
-    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
   </programme>
-  <programme start="20260929161700 +0200" channel="canal+.fr" stop="20260929163200 +0200">
+  <programme start="20260930002000 +0200" channel="canal+.fr" stop="20260930003400 +0200">
     <title>Hollywood Weekly</title>
-    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
   </programme>
-  <programme start="20260929163200 +0200" channel="canal+.fr" stop="20260929185300 +0200">
-    <title>The Kremlin Mage</title>
-    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+  <programme start="20260930003400 +0200" channel="canal+.fr" stop="20260930025400 +0200">
+    <title>The Mage of the Kremlin</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
   </programme>
-  <programme start="20260929185300 +0200" channel="canal+.fr" stop="20260929185700 +0200">
+  <programme start="20260930025400 +0200" channel="canal+.fr" stop="20260930025900 +0200">
     <title>The question box</title>
-    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
   </programme>
-  <programme start="20260929185700 +0200" channel="canal+.fr" stop="20260929193300 +0200">
+  <programme start="20260930025900 +0200" channel="canal+.fr" stop="20260930033400 +0200">
     <title>As an aside</title>
-    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
   </programme>
-  <programme start="20260929193300 +0200" channel="canal+.fr" stop="20260929203200 +0200">
+  <programme start="20260930033400 +0200" channel="canal+.fr" stop="20260930043300 +0200">
     <title>Click</title>
-    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
   </programme>
-  <programme start="20260929203200 +0200" channel="canal+.fr" stop="20260929211000 +0200">
+  <programme start="20260930043300 +0200" channel="canal+.fr" stop="20260930051000 +0200">
     <title>As an aside</title>
-    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
   </programme>
-  <programme start="20260929211000 +0200" channel="canal+.fr" stop="20260929233500 +0200">
+  <programme start="20260930051000 +0200" channel="canal+.fr" stop="20260930073500 +0200">
     <title>Nuremberg</title>
-    <url>https://tvepg.eu/en/france/c/canal-plus</url>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20260930073500 +0200" channel="canal+.fr" stop="20260930080600 +0200">
+    <title>Great plan</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20260930080600 +0200" channel="canal+.fr" stop="20260930094700 +0200">
+    <title>The lucky star</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20260930094700 +0200" channel="canal+.fr" stop="20260930114500 +0200">
+    <title>Touch - Our past embraces</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20260930114500 +0200" channel="canal+.fr" stop="20260930132900 +0200">
+    <title>Rembrandt</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20260930132900 +0200" channel="canal+.fr" stop="20260930134200 +0200">
+    <title>Bad seed</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20260930134200 +0200" channel="canal+.fr" stop="20260930145100 +0200">
+    <title>Saturday Night Live</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20260930145100 +0200" channel="canal+.fr" stop="20260930154500 +0200">
+    <title>Click</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20260930154500 +0200" channel="canal+.fr" stop="20260930161600 +0200">
+    <title>As an aside</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20260930161600 +0200" channel="canal+.fr" stop="20260930175700 +0200">
+    <title>The Bad Guys 2</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20260930175700 +0200" channel="canal+.fr" stop="20260930195700 +0200">
+    <title>Guru</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20260930195700 +0200" channel="canal+.fr" stop="20260930200200 +0200">
+    <title>The question box</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20260930200200 +0200" channel="canal+.fr" stop="20260930203300 +0200">
+    <title>As an aside</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20260930203300 +0200" channel="canal+.fr" stop="20260930212700 +0200">
+    <title>Click</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20260930212700 +0200" channel="canal+.fr" stop="20260930230800 +0200">
+    <title>The crime on the 3rd floor</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20260930230800 +0200" channel="canal+.fr" stop="20261001000400 +0200">
+    <title>Chamouxland: reconstruction</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20261001000400 +0200" channel="canal+.fr" stop="20261001004000 +0200">
+    <title>Hot Ones</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20261001004000 +0200" channel="canal+.fr" stop="20261001021100 +0200">
+    <title>The Infiltrator</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20261001021100 +0200" channel="canal+.fr" stop="20261001024100 +0200">
+    <title>Hot Ones</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20261001024100 +0200" channel="canal+.fr" stop="20261001024600 +0200">
+    <title>The question box</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20261001024600 +0200" channel="canal+.fr" stop="20261001030000 +0200">
+    <title>One-on-one(s)</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20261001030000 +0200" channel="canal+.fr" stop="20261001033500 +0200">
+    <title>As an aside</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20261001033500 +0200" channel="canal+.fr" stop="20261001043300 +0200">
+    <title>Click</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20261001043300 +0200" channel="canal+.fr" stop="20261001050900 +0200">
+    <title>As an aside</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20261001050900 +0200" channel="canal+.fr" stop="20261001055700 +0200">
+    <title>The Green Mice Gang</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20261001055700 +0200" channel="canal+.fr" stop="20261001064700 +0200">
+    <title>The Green Mice Gang</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20261001064700 +0200" channel="canal+.fr" stop="20261001085200 +0200">
+    <title>The Bojarski affair</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20261001085200 +0200" channel="canal+.fr" stop="20261001093800 +0200">
+    <title>Apollo Has Fallen</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20261001093800 +0200" channel="canal+.fr" stop="20261001113700 +0200">
+    <title>Smashing Machine</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20261001113700 +0200" channel="canal+.fr" stop="20261001134900 +0200">
+    <title>Conjuring: Judgment Hour</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20261001134900 +0200" channel="canal+.fr" stop="20261001141800 +0200">
+    <title>The last snows</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20261001141800 +0200" channel="canal+.fr" stop="20261001144900 +0200">
+    <title>Great plan</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20261001144900 +0200" channel="canal+.fr" stop="20261001154200 +0200">
+    <title>Click</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20261001154200 +0200" channel="canal+.fr" stop="20261001161400 +0200">
+    <title>As an aside</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20261001161400 +0200" channel="canal+.fr" stop="20261001180300 +0200">
+    <title>My brother</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20261001180300 +0200" channel="canal+.fr" stop="20261001200300 +0200">
+    <title>Downton Abbey III: The Grand Finale</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20261001200300 +0200" channel="canal+.fr" stop="20261001200700 +0200">
+    <title>The question box</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20261001200700 +0200" channel="canal+.fr" stop="20261001203900 +0200">
+    <title>As an aside</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20261001203900 +0200" channel="canal+.fr" stop="20261001213200 +0200">
+    <title>Click</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20261001213200 +0200" channel="canal+.fr" stop="20261001221700 +0200">
+    <title>Apollo Has Fallen</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20261001221700 +0200" channel="canal+.fr" stop="20261001230300 +0200">
+    <title>Apollo Has Fallen</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20261001230300 +0200" channel="canal+.fr" stop="20261002012700 +0200">
+    <title>Eddington</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20261002012700 +0200" channel="canal+.fr" stop="20261002025500 +0200">
+    <title>Last Stop: Yuma County</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20261002025500 +0200" channel="canal+.fr" stop="20261002025900 +0200">
+    <title>The question box</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20261002025900 +0200" channel="canal+.fr" stop="20261002033400 +0200">
+    <title>As an aside</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20261002033400 +0200" channel="canal+.fr" stop="20261002043300 +0200">
+    <title>Click</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20261002043300 +0200" channel="canal+.fr" stop="20261002050900 +0200">
+    <title>As an aside</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20261002050900 +0200" channel="canal+.fr" stop="20261002060500 +0200">
+    <title>This is not a crime</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20261002060500 +0200" channel="canal+.fr" stop="20261002065700 +0200">
+    <title>This is not a crime</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
+  </programme>
+  <programme start="20261002065700 +0200" channel="canal+.fr" stop="20261003020000 +0200">
+    <title>This is not a crime</title>
+    <url>https://epg.pw/xmltv/epg_FR.xml</url>
   </programme>
   <programme start="20260929000000 +0300" channel="digi4k_ro" stop="20260929080000 +0300">
     <title>Music</title>

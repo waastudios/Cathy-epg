@@ -40,18 +40,20 @@
     "records": 646
   },
   "canalplus_fr": {
-    "status": "stale",
-    "records": 53,
-    "message": "403 rate limited: https://hodor.canalplus.pro/api/v2/mycanal/authenticate.json/webapp/6.0?experiments=beta-test-one-tv-guide:control",
-    "fallback": "previous_snapshot"
+    "status": "ok",
+    "records": 130,
+    "source": "epg.pw France XMLTV (fallback, ~2-3 days)",
+    "notes": [
+      "Canal+ 官方 API 不可用（403 rate limited: https://hodor.canalplus.pro/api/v2/mycanal/authenticate.json/webapp/6.0?experiments=beta-test-one-tv-guide:control），回退到 epg.pw"
+    ]
   },
   "xmltv": {
     "status": "ok",
-    "channels": 163,
-    "programmes": 17262,
+    "channels": 164,
+    "programmes": 17339,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
   "generated_at": "2026-09-29T10:36:57Z",
-  "total_records": 17262
+  "total_records": 17339
 }

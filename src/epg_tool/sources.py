@@ -1412,13 +1412,78 @@ def _collect_canalplus_fr_official_channel(
 
 
 
+EPGPW_FR_URL = "https://epg.pw/xmltv/epg_FR.xml"
+# epg.pw 法国包中的 Canal+ 频道 ID（display-name 匹配验证）。
+EPGPW_CANALPLUS_CHANNELS = (
+    ("459189", "Canal+", "canal+.fr", "301", "CANAL+"),
+    ("557557", "CANAL+FOOT", "foot+.fr", "19", "CANAL+ FOOT"),
+)
+
+
+def _collect_canalplus_fr_epgpw(session: requests.Session) -> tuple[list[Programme], int]:
+    """epg.pw 法国区 XMLTV 中的 CANAL+ 主频道与 CANAL+ FOOT（约 2–3 天）。
+
+    官方 API 被限流时的临时兜底。标题为法语，经三级流水线译为英文。
+    """
+    response = session.get(
+        EPGPW_FR_URL,
+        headers={"User-Agent": "Mozilla/5.0"},
+        timeout=60,
+    )
+    response.raise_for_status()
+    root = ET.fromstring(response.content)
+    zone = ZoneInfo("Europe/Paris")
+    retrieved_at = utc_now_iso()
+    records: list[Programme] = []
+    skipped = 0
+    for epgpw_id, display_name, channel_suffix, channel_number, channel_name in EPGPW_CANALPLUS_CHANNELS:
+        for prog in root.iter("programme"):
+            if prog.get("channel") != epgpw_id:
+                continue
+            start_raw = prog.get("start")
+            stop_raw = prog.get("stop")
+            title_elem = prog.find("title")
+            source_title = (title_elem.text or "").strip() if title_elem is not None else ""
+            if not start_raw or not source_title:
+                continue
+            try:
+                # 格式如 "20260929003800 +0000"
+                start = datetime.strptime(start_raw, "%Y%m%d%H%M%S %z").astimezone(zone)
+                end = datetime.strptime(stop_raw, "%Y%m%d%H%M%S %z").astimezone(zone) if stop_raw else None
+            except ValueError:
+                continue
+            if end is not None and end <= start:
+                continue
+            try:
+                title = translate_programme_title(source_title, "fr", _translate_canalplus_fr_title)
+            except TitleUntranslatable:
+                skipped += 1
+                continue
+            records.append(
+                Programme(
+                    provider="canalplus_fr",
+                    country="FR",
+                    timezone="Europe/Paris",
+                    channel_id=channel_suffix,
+                    channel_number=channel_number,
+                    channel_name=channel_name,
+                    title=title,
+                    start_at=start.isoformat(),
+                    end_at=end.isoformat() if end else None,
+                    source_url=EPGPW_FR_URL,
+                    retrieved_at=retrieved_at,
+                )
+            )
+    return records, skipped
+
+
 def collect_canalplus_fr(days: int = 7, pause_seconds: float = 90.0) -> list[Programme]:
     """读取法国 Canal+ 官方 EPG（CANAL+ 主频道与 CANAL+ FOOT），法语标题译为英文。
 
     先经 authenticate.json 换取新鲜 token（硬编码 token 会被官方拒绝），再按
     频道拉取当日＋未来 6 天节目。官方接口频率限制极严，请求间隔默认 90 秒，
-    完整采集约需 20 分钟。仅使用官方 API，不设第三方兜底；单个标题无法翻译
-    只跳过该节目，不会让整个来源失败。
+    完整采集约需 20 分钟。官方 API 不可用时回退到 epg.pw 法国区 XMLTV
+    （约 2–3 天）；单个标题无法翻译只跳过该节目，不会让整个来源失败。
     """
     if days not in range(1, 8):
         raise ValueError("法国 Canal+ 采集天数必须为 1–7。")
@@ -1432,17 +1497,26 @@ def collect_canalplus_fr(days: int = 7, pause_seconds: float = 90.0) -> list[Pro
     }
     records: list[Programme] = []
     skipped = 0
-    auth = _canalplus_fr_get(session, CANALPLUS_FR_AUTH_URL, headers=headers, timeout=(5, 20))
-    token = auth.json().get("token")
-    if not token:
-        raise SourceUnavailable("法国 Canal+ 官方认证未返回 token。")
-    time.sleep(pause_seconds)
-    for channel in CANALPLUS_FR_CHANNELS:
-        channel_records, channel_skipped = _collect_canalplus_fr_official_channel(
-            session, headers, token, channel, days, pause_seconds
-        )
-        records.extend(channel_records)
-        skipped += channel_skipped
+    official_ok = False
+    try:
+        auth = _canalplus_fr_get(session, CANALPLUS_FR_AUTH_URL, headers=headers, timeout=(5, 20))
+        token = auth.json().get("token")
+        if not token:
+            raise SourceUnavailable("法国 Canal+ 官方认证未返回 token。")
+        time.sleep(pause_seconds)
+        for channel in CANALPLUS_FR_CHANNELS:
+            channel_records, channel_skipped = _collect_canalplus_fr_official_channel(
+                session, headers, token, channel, days, pause_seconds
+            )
+            records.extend(channel_records)
+            skipped += channel_skipped
+        official_ok = True
+    except (SourceUnavailable, requests.exceptions.RequestException) as exc:
+        note(f"Canal+ 官方 API 不可用（{exc}），回退到 epg.pw")
+    if not official_ok:
+        fallback_records, fallback_skipped = _collect_canalplus_fr_epgpw(session)
+        records.extend(fallback_records)
+        skipped += fallback_skipped
     if skipped:
         note(f"Canal+ {skipped} 档法语标题无法译为英文，已跳过")
     records = _deduplicate(records)
