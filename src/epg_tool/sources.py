@@ -1525,6 +1525,107 @@ def collect_canalplus_fr(days: int = 7, pause_seconds: float = 90.0) -> list[Pro
     return records
 
 
+CANALPLUS_PL_AUTH_URL = (
+    "https://hodor.canalplus.pro/api/v2/mycanalint/authenticate.json/webapp/6.0"
+    "?experiments=beta-test-one-tv-guide:control"
+)
+CANALPLUS_PL_GUIDE = "https://www.canalplus.com/pl/program-tv/"
+# (官方频道 ID, 展示名, tvg-id, 频道序号)
+CANALPLUS_PL_4K_CHANNEL = ("21402", "CANAL+ 4K ULTRA HD", "canal+4k.pl", 149)
+
+
+def collect_canalplus_pl_4k(days: int = 7, pause_seconds: float = 90.0) -> list[Programme]:
+    """读取波兰 Canal+ 官方 EPG（CANAL+ 4K ULTRA HD），波兰语标题译为英文。
+
+    波兰区走 mycanalint 接口（与法国区 mycanal 不同）。先经 authenticate.json
+    换取新鲜 token，再拉取当日＋未来 6 天节目。官方接口频率限制极严，请求
+    间隔默认 90 秒。单个标题无法翻译只跳过该节目，不会让整个来源失败。
+    """
+    if days not in range(1, 8):
+        raise ValueError("波兰 Canal+ 4K 采集天数必须为 1–7。")
+    session = _session()
+    headers = {
+        "Accept": "application/json, text/plain, */*",
+        "Accept-Language": "pl-PL,pl;q=0.6",
+        "Origin": "https://www.canalplus.com",
+        "Referer": CANALPLUS_PL_GUIDE,
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+    }
+    channel_id, channel_name, channel_suffix, channel_position = CANALPLUS_PL_4K_CHANNEL
+    zone = ZoneInfo("Europe/Warsaw")
+    retrieved_at = utc_now_iso()
+    records: list[Programme] = []
+    skipped = 0
+    auth = _canalplus_fr_get(session, CANALPLUS_PL_AUTH_URL, headers=headers, timeout=(5, 20))
+    token = auth.json().get("token")
+    if not token:
+        raise SourceUnavailable("波兰 Canal+ 官方认证未返回 token。")
+    time.sleep(pause_seconds)
+    for day_offset in range(days):
+        response = _canalplus_fr_get(
+            session,
+            f"https://hodor.canalplus.pro/api/v2/mycanalint/channels/{token}/{channel_id}/broadcasts/day/{day_offset}",
+            params={
+                "channelPosition": channel_position,
+                "displayAvailabilityIcons": "false",
+                "displayAccessibilityIcons": "false",
+            },
+            headers=headers,
+            timeout=(5, 20),
+        )
+        payload = response.json()
+        time_slices = payload.get("timeSlices") if isinstance(payload, dict) else None
+        if not isinstance(time_slices, list):
+            raise SourceUnavailable(f"波兰 Canal+ 4K 官方 EPG 未返回 timeSlices。")
+        for time_slice in time_slices:
+            contents = time_slice.get("contents") if isinstance(time_slice, dict) else None
+            if not isinstance(contents, list):
+                continue
+            for content in contents:
+                if not isinstance(content, dict):
+                    continue
+                title = str(content.get("title") or "").strip()
+                subtitle = str(content.get("subtitle") or "").strip()
+                start_ms = content.get("startTime")
+                end_ms = content.get("endTime")
+                if not title or not isinstance(start_ms, (int, float)) or not isinstance(end_ms, (int, float)):
+                    continue
+                start = datetime.fromtimestamp(start_ms / 1000, tz=timezone.utc).astimezone(zone)
+                end = datetime.fromtimestamp(end_ms / 1000, tz=timezone.utc).astimezone(zone)
+                if end <= start:
+                    continue
+                source_display_title = title if not subtitle or subtitle == title else f"{title} — {subtitle}"
+                try:
+                    display_title = translate_programme_title(
+                        source_display_title, "pl", _translate_player_pl_title
+                    )
+                except TitleUntranslatable:
+                    skipped += 1
+                    continue
+                records.append(
+                    Programme(
+                        provider="canalplus_pl_4k",
+                        country="PL",
+                        timezone="Europe/Warsaw",
+                        channel_id=channel_suffix,
+                        channel_number=channel_id,
+                        channel_name=channel_name,
+                        title=display_title,
+                        start_at=start.isoformat(),
+                        end_at=end.isoformat(),
+                        source_url=CANALPLUS_PL_GUIDE,
+                        retrieved_at=retrieved_at,
+                    )
+                )
+        time.sleep(pause_seconds)
+    if skipped:
+        note(f"Canal+ 4K {skipped} 档波兰语标题无法译为英文，已跳过")
+    records = _deduplicate(records)
+    if not records:
+        raise SourceUnavailable("波兰 Canal+ 4K 未返回节目记录。")
+    return records
+
+
 def collect_virgin_uk_ultra(days: int = 7, pause_seconds: float = 0.02) -> list[Programme]:
     """读取 Virgin Media TV Go 正常 Guide 页面加载的 Sky Sports Ultra HD 1／2 EPG。
 
