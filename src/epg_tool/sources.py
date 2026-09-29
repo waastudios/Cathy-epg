@@ -140,6 +140,10 @@ DIGI4K_GUIDE = "https://www.digi4k.ro/"
 # SBB 是塞尔维亚的授权付费电视服务商；以下端点由其匿名 Public EPG 页面正常加载。
 SBB_PUBLIC_EPG_GUIDE = "https://epg.sbb.rs/"
 SBB_PUBLIC_API = "https://api-web.ug-be.cdn.united.cloud"
+# SBB 节目图的官方 CDN 基址（由其前端 JS 公开配置得出）；事件 images 数组里的
+# path 为相对路径，拼接后即为可直接引用的官方节目背景图。图片仅做链接引用，
+# 不转存。
+SBB_IMAGE_CDN = "https://images-web.ug-be.cdn.united.cloud"
 SBB_COMMUNITY_ID = "1"
 SBB_LANGUAGE_ID = "404"
 # SBB 频道目录实测：Eurosport 1 = 84（"Eurosport 1 HD (RS)"），
@@ -1102,6 +1106,31 @@ def _sbb_events(payload: Any) -> list[dict[str, Any]]:
     return []
 
 
+def _sbb_event_image_url(event: dict[str, Any]) -> str | None:
+    """从 SBB 事件的 images 数组提取官方节目背景图 URL。
+
+    优先取 XL（1920x1080），没有则依次降级到 L / M / S。返回 None 表示该事件
+    无可用图片，调用方应省略 image_url 而非填占位图。
+    """
+    images = event.get("images")
+    if not isinstance(images, list):
+        return None
+    # 按清晰度从高到低的偏好顺序
+    preference = ("XL", "L", "M", "S", "STB_XL", "STB_FHD")
+    by_size: dict[str, str] = {}
+    for image in images:
+        if not isinstance(image, dict):
+            continue
+        path = str(image.get("path") or "").strip()
+        size = str(image.get("size") or "").strip()
+        if path.startswith("/") and size and size not in by_size:
+            by_size[size] = path
+    for size in preference:
+        if size in by_size:
+            return f"{SBB_IMAGE_CDN}{by_size[size]}"
+    return None
+
+
 def collect_sbb_eurosport(days: int = 7) -> list[Programme]:
     """读取 SBB Public EPG 中 Eurosport 1/2/4K 的匿名公开周排期。
 
@@ -1194,6 +1223,7 @@ def collect_sbb_eurosport(days: int = 7) -> list[Programme]:
                 continue
             if event_end <= event_start or not (today <= event_start.date() < last_day):
                 continue
+            image_url = _sbb_event_image_url(event)
             records.append(
                 Programme(
                     provider="sbb_rs",
@@ -1207,6 +1237,8 @@ def collect_sbb_eurosport(days: int = 7) -> list[Programme]:
                     end_at=event_end.isoformat(),
                     source_url=SBB_PUBLIC_EPG_GUIDE,
                     retrieved_at=retrieved_at,
+                    image_url=image_url,
+                    image_source_url=SBB_PUBLIC_EPG_GUIDE if image_url else None,
                 )
             )
     records = _deduplicate(records)
