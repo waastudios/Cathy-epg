@@ -81,6 +81,54 @@ ALLENTE_NO_CHANNELS: dict[str, tuple[str, str]] = {
 ALLENTE_NO_CHANNEL_IDS = frozenset(ALLENTE_NO_CHANNELS)
 EE_TV_PLAYER_GUIDE = "https://player.ee.co.uk/#/livetv/schedule"
 EE_TV_SCHEDULE = "https://api.youview.tv/metadata/linear/v2/schedule/by-servicelocator"
+# tvguide.co.uk 公开 listings API：节目条目自带 image_url（Press Association CDN），
+# 用于给 EE TV 系列频道补节目背景图（YouView/EE 官方接口无图片字段）。
+TVGUIDE_UK_LISTINGS = "https://api-2.tvguide.co.uk/listings"
+TVGUIDE_UK_GUIDE = "https://www.tvguide.co.uk/"
+# EE 频道号 -> tvguide.co.uk 频道标题（精确匹配，2026-10-01 实测）。
+# TNT Sports 5-10 为溢出频道，tvguide.co.uk 未收录，仍走 EE 官方接口（无图）。
+TVGUIDE_UK_EE_CHANNELS: dict[str, str] = {
+    "408": "TNT Sports 1 HD",
+    "409": "TNT Sports 2 HD",
+    "410": "TNT Sports 3 HD",
+    "411": "TNT Sports 4 HD",
+    "433": "TNT Sports Ultimate",
+    "494": "TNT Sports Box Office",
+    "418": "Sky Sports News",
+    "419": "Sky Sports Main Event HD",
+    "420": "Sky Sports Premier League HD",
+    "421": "Sky Sports Football HD",
+    "422": "Sky Sports Cricket HD",
+    "423": "Sky Sports Golf HD",
+    "424": "Sky Sports F1 HD",
+    "425": "Sky Sports Tennis HD",
+    "426": "Sky Sports NFL HD",
+    "427": "Sky Sports + HD",
+    "428": "Sky Sports Racing HD",
+    "429": "Sky Sports Mix",
+    "1": "BBC One London HD",
+    "2": "BBC Two HD",
+    "3": "ITV1 London",
+    "4": "Channel 4",
+    "6": "ITV2 HD",
+    "9": "BBC Four HD",
+    "10": "ITV3 HD",
+    "23": "BBC Three HD",
+    "26": "ITV4 HD",
+    "231": "BBC News HD",
+    "232": "BBC Parliament",
+    "11": "Sky Mix HD",
+    "36": "Sky Arts",
+    "341": "Sky Witness",
+    "342": "Sky Atlantic",
+    "346": "Sky One",
+    "347": "Sky Comedy",
+    "348": "Sky Sci-Fi",
+    "349": "Sky Crime",
+    "sky-doc": "Sky Documentaries",
+    "353": "Sky History",
+    "354": "Sky Nature",
+}
 # 以下映射来自 EE TV Player 匿名公开的线性频道目录；保留用户指定的 TNT Sports SD/UHD 主频道。
 # 同一节目流的 HD、+1、字幕／音频描述镜像明确排除，防止跨馈源重复频道。
 EE_UK_CHANNELS: tuple[tuple[str, str, str], ...] = (
@@ -744,12 +792,16 @@ def _ee_interval_starts(today: date, days: int, zone: ZoneInfo) -> list[datetime
     return intervals
 
 
-def collect_ee_uk_channels(days: int = 7, pause_seconds: float = 0.02) -> list[Programme]:
+def collect_ee_uk_channels(
+    days: int = 7, pause_seconds: float = 0.02, only_numbers: set[str] | None = None
+) -> list[Programme]:
     """读取 EE TV Player 匿名公开的目标英国标准清晰度频道节目表。
 
     EE 的 Live TV Schedule 正常加载 YouView 官方节目端点，公开返回单频道的
     ``publishedStartTime`` 与 ``publishedDuration``。频道列表只使用 EE 的 SD
     逻辑频道号，特意排除同一线性流的 HD、+1 及辅助服务镜像，避免重复。
+    ``only_numbers`` 传入时只采集指定频道号（用于 tvguide.co.uk 未收录的
+    溢出频道补采）。
     """
     if days not in range(1, 8):
         raise ValueError("EE TV Player 采集天数必须为 1–7。")
@@ -761,6 +813,8 @@ def collect_ee_uk_channels(days: int = 7, pause_seconds: float = 0.02) -> list[P
     records: list[Programme] = []
 
     for channel_number, channel_name, service_locator in EE_UK_CHANNELS:
+        if only_numbers is not None and channel_number not in only_numbers:
+            continue
         channel_records = 0
         # 官方偶尔会重命名服务；采用接口返回的官方名并记录，避免单个改名
         # 让整个 EE 来源失败。
@@ -820,6 +874,105 @@ def collect_ee_uk_channels(days: int = 7, pause_seconds: float = 0.02) -> list[P
             raise SourceUnavailable(f"EE TV Player 未返回 {channel_name}（CH {channel_number}）的公开节目条目。")
 
     return _deduplicate(records)
+
+
+def collect_tvguide_uk(days: int = 7, pause_seconds: float = 0.25) -> list[Programme]:
+    """从 tvguide.co.uk 公开 listings API 采集 EE TV 系列频道节目单。
+
+    tvguide.co.uk 的节目条目自带 ``image_url``（Press Association CDN），而
+    EE/YouView 官方接口无图片字段，因此 EE TV 系列频道改走 tvguide.co.uk。
+    每个请求返回约 6 小时窗口，每天请求 0/6/12/18 四个窗口；频道映射见
+    ``TVGUIDE_UK_EE_CHANNELS``（TNT Sports 5-10 未被 tvguide 收录，不在此列）。
+    标题本身为英文，无需翻译。``provider`` 保持 ``ee_uk`` 以便快照合并时
+    整体替换旧 EE 记录。
+    """
+    if days not in range(1, 8):
+        raise ValueError("tvguide.co.uk 采集天数必须为 1–7。")
+    session = _session()
+    zone = ZoneInfo("Europe/London")
+    today = datetime.now(zone).date()
+    retrieved_at = utc_now_iso()
+    wanted = set(TVGUIDE_UK_EE_CHANNELS.values())
+    ee_names = {num: name for num, name, _ in EE_UK_CHANNELS}
+    records: list[Programme] = []
+    seen: set[str] = set()
+    for day_offset in range(days):
+        day = today + timedelta(days=day_offset)
+        for hour in (0, 6, 12, 18):
+            response = session.get(
+                TVGUIDE_UK_LISTINGS,
+                params={
+                    "platform": "sky",
+                    "region": "london",
+                    "view": "grid",
+                    "date": day.isoformat(),
+                    "hour": str(hour),
+                    "details": "false",
+                },
+                timeout=30,
+            )
+            response.raise_for_status()
+            payload = response.json()
+            if not isinstance(payload, list):
+                raise SourceUnavailable("tvguide.co.uk listings 响应不是频道列表。")
+            for channel in payload:
+                if not isinstance(channel, dict) or channel.get("title") not in wanted:
+                    continue
+                tv_title = channel["title"]
+                # 反查 EE 频道号与频道名，保持 XMLTV 频道标识不变
+                ee_number = next(num for num, t in TVGUIDE_UK_EE_CHANNELS.items() if t == tv_title)
+                channel_name = ee_names.get(ee_number, tv_title)
+                for item in channel.get("schedules", []):
+                    if not isinstance(item, dict):
+                        continue
+                    pa_id = item.get("pa_id")
+                    if not pa_id or pa_id in seen:
+                        continue
+                    seen.add(pa_id)
+                    title = (item.get("title") or "").strip()
+                    start_raw = item.get("start_at") or ""
+                    try:
+                        start = datetime.fromisoformat(start_raw.replace("Z", "+00:00")).astimezone(zone)
+                    except ValueError:
+                        continue
+                    if not title:
+                        continue
+                    duration = item.get("duration")
+                    end_at: str | None = None
+                    if isinstance(duration, (int, float)) and duration > 0:
+                        end_at = (start + timedelta(minutes=duration)).isoformat()
+                    image_url = (item.get("image_url") or "").strip() or None
+                    records.append(
+                        Programme(
+                            provider="ee_uk",
+                            country="GB",
+                            timezone="Europe/London",
+                            channel_id=ee_number,
+                            channel_number=ee_number,
+                            channel_name=channel_name,
+                            title=title,
+                            start_at=start.isoformat(),
+                            end_at=end_at,
+                            image_url=image_url,
+                            image_source_url=TVGUIDE_UK_GUIDE if image_url else None,
+                            source_url=TVGUIDE_UK_GUIDE,
+                            retrieved_at=retrieved_at,
+                        )
+                    )
+            time.sleep(pause_seconds)
+    if not records:
+        raise SourceUnavailable("tvguide.co.uk 未返回任何 EE 频道节目条目。")
+    note(f"tvguide.co.uk 采集 {len(records)} 条（{len(seen)} 去重），其中有图 {sum(1 for r in records if r.image_url)} 条。")
+    return _deduplicate(records)
+
+
+def collect_ee_uk_with_tvguide(days: int = 7) -> list[Programme]:
+    """ee_uk 来源：tvguide.co.uk 采集 40 个匹配频道（含节目图），EE 官方 API
+    只补采 tvguide.co.uk 未收录的 6 个 TNT Sports 溢出频道（无图）。"""
+    tvguide_records = collect_tvguide_uk(days)
+    unmatched = {num for num, _, _ in EE_UK_CHANNELS if num not in TVGUIDE_UK_EE_CHANNELS}
+    ee_records = collect_ee_uk_channels(days, only_numbers=unmatched)
+    return _deduplicate(tvguide_records + ee_records)
 
 
 def _digi4k_time(value: str) -> clock_time | None:

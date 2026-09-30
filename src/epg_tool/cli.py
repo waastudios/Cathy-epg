@@ -22,7 +22,7 @@ from .sources import (
     collect_canalplus_fr,
     collect_canalplus_pl_4k,
     collect_digi4k,
-    collect_ee_uk_channels,
+    collect_ee_uk_with_tvguide,
     collect_magenta_tv_sky_de,
     collect_now_hk,
     collect_player_pl,
@@ -65,8 +65,9 @@ def _collect(args: argparse.Namespace) -> int:
         ("now_hk", lambda: collect_now_hk(args.days)),
         ("allente_se", lambda: collect_allente_v_sport(args.days)),
         ("allente_no", lambda: collect_allente_no(args.days)),
-        # EE TV Player 提供完整频道级 start/stop；只保留 SD 主频道，避免 HD／+1 镜像重复。
-        ("ee_uk", lambda: collect_ee_uk_channels(args.days)),
+        # EE TV 系列改走 tvguide.co.uk（40 频道，节目自带背景图）；tvguide 未收录的
+        # 6 个 TNT Sports 溢出频道仍用 EE 官方接口补采。
+        ("ee_uk", lambda: collect_ee_uk_with_tvguide(args.days)),
         # Telekom MagentaTV 的匿名官方生产节目表；XMLTV ID 使用用户指定 Sky Germany 频道号。
         ("sky_de", lambda: collect_magenta_tv_sky_de(args.days)),
         ("digi4k_ro", lambda: collect_digi4k(args.days)),
