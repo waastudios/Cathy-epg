@@ -1,665 +1,664 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE tv SYSTEM "xmltv.dtd">
-<tv generator-info-name="official-epg-search" generator-info-url="https://github.com/waastudios/official-epg-search">
+<?xml version="1.0" encoding="UTF-8" ?>
+<tv generator-info-name="none" generator-info-url="none">
   <channel id="ElevenSp.1">
-    <display-name>Eleven Sports 1</display-name>
     <url>https://player.pl/</url>
+    <display-name lang="en">Eleven Sports 1</display-name>
   </channel>
   <channel id="allente_no.euro1">
-    <display-name>Eurosport 1</display-name>
     <url>https://www.allente.no/tv-guide/</url>
+    <display-name lang="en">Eurosport 1</display-name>
   </channel>
   <channel id="allente_no.euron">
-    <display-name>Eurosport Norge</display-name>
     <url>https://www.allente.no/tv-guide/</url>
+    <display-name lang="en">Eurosport Norge</display-name>
   </channel>
   <channel id="allente_no.fem">
-    <display-name>FEM</display-name>
     <url>https://www.allente.no/tv-guide/</url>
+    <display-name lang="en">FEM</display-name>
   </channel>
   <channel id="allente_no.rex">
-    <display-name>REX</display-name>
     <url>https://www.allente.no/tv-guide/</url>
+    <display-name lang="en">REX</display-name>
   </channel>
   <channel id="allente_no.tvn">
-    <display-name>TV Norge</display-name>
     <url>https://www.allente.no/tv-guide/</url>
+    <display-name lang="en">TV Norge</display-name>
   </channel>
   <channel id="allente_se.v1">
-    <display-name>V Sport 1</display-name>
     <url>https://www.allente.se/tv-guide/</url>
+    <display-name lang="en">V Sport 1</display-name>
   </channel>
   <channel id="allente_se.vextra">
-    <display-name>V Sport Extra</display-name>
     <url>https://www.allente.se/tv-guide/</url>
+    <display-name lang="en">V Sport Extra</display-name>
   </channel>
   <channel id="allente_se.vfoot">
-    <display-name>V Sport Football</display-name>
     <url>https://www.allente.se/tv-guide/</url>
+    <display-name lang="en">V Sport Football</display-name>
   </channel>
   <channel id="allente_se.vgolf">
-    <display-name>V Sport Golf</display-name>
     <url>https://www.allente.se/tv-guide/</url>
+    <display-name lang="en">V Sport Golf</display-name>
   </channel>
   <channel id="allente_se.vl1">
-    <display-name>V Sport Live 1</display-name>
     <url>https://www.allente.se/tv-guide/</url>
+    <display-name lang="en">V Sport Live 1</display-name>
   </channel>
   <channel id="allente_se.vl2">
-    <display-name>V Sport Live 2</display-name>
     <url>https://www.allente.se/tv-guide/</url>
+    <display-name lang="en">V Sport Live 2</display-name>
   </channel>
   <channel id="allente_se.vl3">
-    <display-name>V Sport Live 3</display-name>
     <url>https://www.allente.se/tv-guide/</url>
+    <display-name lang="en">V Sport Live 3</display-name>
   </channel>
   <channel id="allente_se.vl4">
-    <display-name>V Sport Live 4</display-name>
     <url>https://www.allente.se/tv-guide/</url>
+    <display-name lang="en">V Sport Live 4</display-name>
   </channel>
   <channel id="allente_se.vl5">
-    <display-name>V Sport Live 5</display-name>
     <url>https://www.allente.se/tv-guide/</url>
+    <display-name lang="en">V Sport Live 5</display-name>
   </channel>
   <channel id="allente_se.vmotor">
-    <display-name>V Sport Motor</display-name>
     <url>https://www.allente.se/tv-guide/</url>
+    <display-name lang="en">V Sport Motor</display-name>
   </channel>
   <channel id="allente_se.vpre">
-    <display-name>V Sport Premium</display-name>
     <url>https://www.allente.se/tv-guide/</url>
+    <display-name lang="en">V Sport Premium</display-name>
   </channel>
   <channel id="allente_se.vultra">
-    <display-name>V Sport UltraHD</display-name>
     <url>https://www.allente.se/tv-guide/</url>
+    <display-name lang="en">V Sport UltraHD</display-name>
   </channel>
   <channel id="allente_se.vvin">
-    <display-name>V Sport Vinter</display-name>
     <url>https://www.allente.se/tv-guide/</url>
+    <display-name lang="en">V Sport Vinter</display-name>
   </channel>
   <channel id="astro.801">
-    <display-name>Astro Arena</display-name>
     <url>https://www.astro.com.my/content/channels</url>
+    <display-name lang="en">Astro Arena</display-name>
   </channel>
   <channel id="astro.802">
-    <display-name>Stadium Astro</display-name>
     <url>https://www.astro.com.my/content/channels</url>
+    <display-name lang="en">Stadium Astro</display-name>
   </channel>
   <channel id="astro.803">
-    <display-name>Arena Bola</display-name>
     <url>https://www.astro.com.my/content/channels</url>
+    <display-name lang="en">Arena Bola</display-name>
   </channel>
   <channel id="astro.804">
-    <display-name>Arena Bola 2</display-name>
     <url>https://www.astro.com.my/content/channels</url>
+    <display-name lang="en">Arena Bola 2</display-name>
   </channel>
   <channel id="astro.805">
-    <display-name>Astro Sports UHD 805</display-name>
     <url>https://www.astro.com.my/content/channels</url>
+    <display-name lang="en">Astro Sports UHD 805</display-name>
   </channel>
   <channel id="astro.806">
-    <display-name>Sukan+</display-name>
     <url>https://www.astro.com.my/content/channels</url>
+    <display-name lang="en">Sukan+</display-name>
   </channel>
   <channel id="astro.810">
-    <display-name>Astro Grandstand</display-name>
     <url>https://www.astro.com.my/content/channels</url>
+    <display-name lang="en">Astro Grandstand</display-name>
   </channel>
   <channel id="astro.811">
-    <display-name>Astro Premier League</display-name>
     <url>https://www.astro.com.my/content/channels</url>
+    <display-name lang="en">Astro Premier League</display-name>
   </channel>
   <channel id="astro.812">
-    <display-name>Astro Premier League 2</display-name>
     <url>https://www.astro.com.my/content/channels</url>
+    <display-name lang="en">Astro Premier League 2</display-name>
   </channel>
   <channel id="astro.814">
-    <display-name>Astro Football</display-name>
     <url>https://www.astro.com.my/content/channels</url>
+    <display-name lang="en">Astro Football</display-name>
   </channel>
   <channel id="astro.815">
-    <display-name>Astro Badminton</display-name>
     <url>https://www.astro.com.my/content/channels</url>
+    <display-name lang="en">Astro Badminton</display-name>
   </channel>
   <channel id="astro.817">
-    <display-name>Astro Sports Plus</display-name>
     <url>https://www.astro.com.my/content/channels</url>
+    <display-name lang="en">Astro Sports Plus</display-name>
   </channel>
   <channel id="astro.819">
-    <display-name>Astro Tennis</display-name>
     <url>https://www.astro.com.my/content/channels</url>
+    <display-name lang="en">Astro Tennis</display-name>
   </channel>
   <channel id="astro.820">
-    <display-name>beIN SPORTS 1</display-name>
     <url>https://www.astro.com.my/content/channels</url>
+    <display-name lang="en">beIN SPORTS 1</display-name>
   </channel>
   <channel id="astro.821">
-    <display-name>beIN SPORTS 2</display-name>
     <url>https://www.astro.com.my/content/channels</url>
+    <display-name lang="en">beIN SPORTS 2</display-name>
   </channel>
   <channel id="astro.822">
-    <display-name>beIN SPORTS 3</display-name>
     <url>https://www.astro.com.my/content/channels</url>
+    <display-name lang="en">beIN SPORTS 3</display-name>
   </channel>
   <channel id="astro.826">
-    <display-name>W-Sport</display-name>
     <url>https://www.astro.com.my/content/channels</url>
+    <display-name lang="en">W-Sport</display-name>
   </channel>
   <channel id="astro.831">
-    <display-name>Astro Golf</display-name>
     <url>https://www.astro.com.my/content/channels</url>
+    <display-name lang="en">Astro Golf</display-name>
   </channel>
   <channel id="astro.832">
-    <display-name>CricBuzz</display-name>
     <url>https://www.astro.com.my/content/channels</url>
+    <display-name lang="en">CricBuzz</display-name>
   </channel>
   <channel id="astro.833">
-    <display-name>Premier Sports</display-name>
     <url>https://www.astro.com.my/content/channels</url>
+    <display-name lang="en">Premier Sports</display-name>
   </channel>
   <channel id="canal+.fr">
-    <display-name>CANAL+</display-name>
     <url>https://epg.pw/xmltv/epg_FR.xml</url>
+    <display-name lang="en">CANAL+</display-name>
   </channel>
   <channel id="canal+4k.pl">
-    <display-name>CANAL+ 4K ULTRA HD</display-name>
     <url>https://programtv.naziemna.info/program/stacja/canalplus4kultrahd</url>
+    <display-name lang="en">CANAL+ 4K ULTRA HD</display-name>
   </channel>
   <channel id="digi4k_ro">
-    <display-name>Digi 4K</display-name>
     <url>https://www.digi4k.ro/</url>
+    <display-name lang="en">Digi 4K</display-name>
   </channel>
   <channel id="ee_uk.1">
-    <display-name>BBC One London</display-name>
     <url>https://www.tvguide.co.uk/</url>
+    <display-name lang="en">BBC One London</display-name>
   </channel>
   <channel id="ee_uk.10">
-    <display-name>ITV3</display-name>
     <url>https://www.tvguide.co.uk/</url>
+    <display-name lang="en">ITV3</display-name>
   </channel>
   <channel id="ee_uk.11">
-    <display-name>Sky Mix</display-name>
     <url>https://www.tvguide.co.uk/</url>
+    <display-name lang="en">Sky Mix</display-name>
   </channel>
   <channel id="ee_uk.2">
-    <display-name>BBC Two</display-name>
     <url>https://www.tvguide.co.uk/</url>
+    <display-name lang="en">BBC Two</display-name>
   </channel>
   <channel id="ee_uk.23">
-    <display-name>BBC Three</display-name>
     <url>https://www.tvguide.co.uk/</url>
+    <display-name lang="en">BBC Three</display-name>
   </channel>
   <channel id="ee_uk.231">
-    <display-name>BBC News</display-name>
     <url>https://www.tvguide.co.uk/</url>
+    <display-name lang="en">BBC News</display-name>
   </channel>
   <channel id="ee_uk.232">
-    <display-name>BBC Parliament</display-name>
     <url>https://www.tvguide.co.uk/</url>
+    <display-name lang="en">BBC Parliament</display-name>
   </channel>
   <channel id="ee_uk.26">
-    <display-name>ITV4</display-name>
     <url>https://www.tvguide.co.uk/</url>
+    <display-name lang="en">ITV4</display-name>
   </channel>
   <channel id="ee_uk.3">
-    <display-name>ITV1 London</display-name>
     <url>https://www.tvguide.co.uk/</url>
+    <display-name lang="en">ITV1 London</display-name>
   </channel>
   <channel id="ee_uk.341">
-    <display-name>Sky Witness</display-name>
     <url>https://www.tvguide.co.uk/</url>
+    <display-name lang="en">Sky Witness</display-name>
   </channel>
   <channel id="ee_uk.342">
-    <display-name>Sky Atlantic</display-name>
     <url>https://www.tvguide.co.uk/</url>
+    <display-name lang="en">Sky Atlantic</display-name>
   </channel>
   <channel id="ee_uk.346">
-    <display-name>Sky One</display-name>
     <url>https://www.tvguide.co.uk/</url>
+    <display-name lang="en">Sky One</display-name>
   </channel>
   <channel id="ee_uk.347">
-    <display-name>Sky Comedy</display-name>
     <url>https://www.tvguide.co.uk/</url>
+    <display-name lang="en">Sky Comedy</display-name>
   </channel>
   <channel id="ee_uk.348">
-    <display-name>Sky Sci-Fi</display-name>
     <url>https://www.tvguide.co.uk/</url>
+    <display-name lang="en">Sky Sci-Fi</display-name>
   </channel>
   <channel id="ee_uk.349">
-    <display-name>Sky Crime</display-name>
     <url>https://www.tvguide.co.uk/</url>
+    <display-name lang="en">Sky Crime</display-name>
   </channel>
   <channel id="ee_uk.352">
-    <display-name>Sky Documentaries</display-name>
     <url>https://www.tvguide.co.uk/</url>
+    <display-name lang="en">Sky Documentaries</display-name>
   </channel>
   <channel id="ee_uk.353">
-    <display-name>Sky History</display-name>
     <url>https://www.tvguide.co.uk/</url>
+    <display-name lang="en">Sky History</display-name>
   </channel>
   <channel id="ee_uk.354">
-    <display-name>Sky Nature</display-name>
     <url>https://www.tvguide.co.uk/</url>
+    <display-name lang="en">Sky Nature</display-name>
   </channel>
   <channel id="ee_uk.36">
-    <display-name>Sky Arts</display-name>
     <url>https://www.tvguide.co.uk/</url>
+    <display-name lang="en">Sky Arts</display-name>
   </channel>
   <channel id="ee_uk.4">
-    <display-name>Channel 4</display-name>
     <url>https://www.tvguide.co.uk/</url>
+    <display-name lang="en">Channel 4</display-name>
   </channel>
   <channel id="ee_uk.408">
-    <display-name>TNT Sports 1</display-name>
     <url>https://www.tvguide.co.uk/</url>
+    <display-name lang="en">TNT Sports 1</display-name>
   </channel>
   <channel id="ee_uk.409">
-    <display-name>TNT Sports 2</display-name>
     <url>https://www.tvguide.co.uk/</url>
+    <display-name lang="en">TNT Sports 2</display-name>
   </channel>
   <channel id="ee_uk.410">
-    <display-name>TNT Sports 3</display-name>
     <url>https://www.tvguide.co.uk/</url>
+    <display-name lang="en">TNT Sports 3</display-name>
   </channel>
   <channel id="ee_uk.411">
-    <display-name>TNT Sports 4</display-name>
     <url>https://www.tvguide.co.uk/</url>
+    <display-name lang="en">TNT Sports 4</display-name>
   </channel>
   <channel id="ee_uk.418">
-    <display-name>Sky Sports News</display-name>
     <url>https://www.tvguide.co.uk/</url>
+    <display-name lang="en">Sky Sports News</display-name>
   </channel>
   <channel id="ee_uk.419">
-    <display-name>Sky Sports Main Event</display-name>
     <url>https://www.tvguide.co.uk/</url>
+    <display-name lang="en">Sky Sports Main Event</display-name>
   </channel>
   <channel id="ee_uk.420">
-    <display-name>Sky Sports Premier League</display-name>
     <url>https://www.tvguide.co.uk/</url>
+    <display-name lang="en">Sky Sports Premier League</display-name>
   </channel>
   <channel id="ee_uk.421">
-    <display-name>Sky Sports Football</display-name>
     <url>https://www.tvguide.co.uk/</url>
+    <display-name lang="en">Sky Sports Football</display-name>
   </channel>
   <channel id="ee_uk.422">
-    <display-name>Sky Sports Cricket</display-name>
     <url>https://www.tvguide.co.uk/</url>
+    <display-name lang="en">Sky Sports Cricket</display-name>
   </channel>
   <channel id="ee_uk.423">
-    <display-name>Sky Sports Golf</display-name>
     <url>https://www.tvguide.co.uk/</url>
+    <display-name lang="en">Sky Sports Golf</display-name>
   </channel>
   <channel id="ee_uk.424">
-    <display-name>Sky Sports F1</display-name>
     <url>https://www.tvguide.co.uk/</url>
+    <display-name lang="en">Sky Sports F1</display-name>
   </channel>
   <channel id="ee_uk.425">
-    <display-name>Sky Sports Tennis</display-name>
     <url>https://www.tvguide.co.uk/</url>
+    <display-name lang="en">Sky Sports Tennis</display-name>
   </channel>
   <channel id="ee_uk.426">
-    <display-name>Sky Sports NFL</display-name>
     <url>https://www.tvguide.co.uk/</url>
+    <display-name lang="en">Sky Sports NFL</display-name>
   </channel>
   <channel id="ee_uk.427">
-    <display-name>Sky Sports +</display-name>
     <url>https://www.tvguide.co.uk/</url>
+    <display-name lang="en">Sky Sports +</display-name>
   </channel>
   <channel id="ee_uk.428">
-    <display-name>Sky Sports Racing</display-name>
     <url>https://www.tvguide.co.uk/</url>
+    <display-name lang="en">Sky Sports Racing</display-name>
   </channel>
   <channel id="ee_uk.429">
-    <display-name>Sky Sports Mix</display-name>
     <url>https://www.tvguide.co.uk/</url>
+    <display-name lang="en">Sky Sports Mix</display-name>
   </channel>
   <channel id="ee_uk.433">
-    <display-name>TNT Sports Ultimate</display-name>
     <url>https://www.tvguide.co.uk/</url>
+    <display-name lang="en">TNT Sports Ultimate</display-name>
   </channel>
   <channel id="ee_uk.450">
-    <display-name>TNT Sports 5</display-name>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
+    <display-name lang="en">TNT Sports 5</display-name>
   </channel>
   <channel id="ee_uk.451">
-    <display-name>TNT Sports 6</display-name>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
+    <display-name lang="en">TNT Sports 6</display-name>
   </channel>
   <channel id="ee_uk.452">
-    <display-name>TNT Sports 7</display-name>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
+    <display-name lang="en">TNT Sports 7</display-name>
   </channel>
   <channel id="ee_uk.453">
-    <display-name>TNT Sports 8</display-name>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
+    <display-name lang="en">TNT Sports 8</display-name>
   </channel>
   <channel id="ee_uk.454">
-    <display-name>TNT Sports 9</display-name>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
+    <display-name lang="en">TNT Sports 9</display-name>
   </channel>
   <channel id="ee_uk.455">
-    <display-name>TNT Sports 10</display-name>
     <url>https://player.ee.co.uk/#/livetv/schedule</url>
+    <display-name lang="en">TNT Sports 10</display-name>
   </channel>
   <channel id="ee_uk.494">
-    <display-name>TNT Sports Box Office HD</display-name>
     <url>https://www.tvguide.co.uk/</url>
+    <display-name lang="en">TNT Sports Box Office HD</display-name>
   </channel>
   <channel id="ee_uk.6">
-    <display-name>ITV2</display-name>
     <url>https://www.tvguide.co.uk/</url>
+    <display-name lang="en">ITV2</display-name>
   </channel>
   <channel id="ee_uk.9">
-    <display-name>BBC Four</display-name>
     <url>https://www.tvguide.co.uk/</url>
+    <display-name lang="en">BBC Four</display-name>
   </channel>
   <channel id="eurosport.1">
-    <display-name>Eurosport 1</display-name>
     <url>https://epg.sbb.rs/</url>
+    <display-name lang="en">Eurosport 1</display-name>
   </channel>
   <channel id="eurosport.2">
-    <display-name>Eurosport 2</display-name>
     <url>https://epg.sbb.rs/</url>
+    <display-name lang="en">Eurosport 2</display-name>
   </channel>
   <channel id="eurosport.4k">
-    <display-name>Eurosport 4K</display-name>
     <url>https://epg.sbb.rs/</url>
+    <display-name lang="en">Eurosport 4K</display-name>
   </channel>
   <channel id="eurosport1.pl">
-    <display-name>Eurosport 1</display-name>
     <url>https://player.pl/</url>
+    <display-name lang="en">Eurosport 1</display-name>
   </channel>
   <channel id="eurosport2.pl">
-    <display-name>Eurosport 2</display-name>
     <url>https://player.pl/</url>
+    <display-name lang="en">Eurosport 2</display-name>
   </channel>
   <channel id="eurosport3.pl">
-    <display-name>Eurosport 3</display-name>
     <url>https://player.pl/</url>
+    <display-name lang="en">Eurosport 3</display-name>
   </channel>
   <channel id="eurosport4.pl">
-    <display-name>Eurosport 4</display-name>
     <url>https://player.pl/</url>
+    <display-name lang="en">Eurosport 4</display-name>
   </channel>
   <channel id="foot+.fr">
-    <display-name>CANAL+ FOOT</display-name>
     <url>https://epg.pw/xmltv/epg_FR.xml</url>
+    <display-name lang="en">CANAL+ FOOT</display-name>
   </channel>
   <channel id="now_hk.611">
-    <display-name>Now Sports 4K 1</display-name>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
+    <display-name lang="en">Now Sports 4K 1</display-name>
   </channel>
   <channel id="now_hk.612">
-    <display-name>Now Sports 4K 2</display-name>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
+    <display-name lang="en">Now Sports 4K 2</display-name>
   </channel>
   <channel id="now_hk.613">
-    <display-name>Now Sports 4K 3</display-name>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
+    <display-name lang="en">Now Sports 4K 3</display-name>
   </channel>
   <channel id="now_hk.620">
-    <display-name>Now Sports Premier League TV</display-name>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
+    <display-name lang="en">Now Sports Premier League TV</display-name>
   </channel>
   <channel id="now_hk.621">
-    <display-name>Now Sports 英超1台</display-name>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
+    <display-name lang="en">Now Sports 英超1台</display-name>
   </channel>
   <channel id="now_hk.622">
-    <display-name>Now Sports 英超2台</display-name>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
+    <display-name lang="en">Now Sports 英超2台</display-name>
   </channel>
   <channel id="now_hk.623">
-    <display-name>Now Sports 英超3台</display-name>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
+    <display-name lang="en">Now Sports 英超3台</display-name>
   </channel>
   <channel id="now_hk.624">
-    <display-name>Now Sports 英超4台</display-name>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
+    <display-name lang="en">Now Sports 英超4台</display-name>
   </channel>
   <channel id="now_hk.625">
-    <display-name>Now Sports 英超5台</display-name>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
+    <display-name lang="en">Now Sports 英超5台</display-name>
   </channel>
   <channel id="now_hk.626">
-    <display-name>Now Sports 英超6台</display-name>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
+    <display-name lang="en">Now Sports 英超6台</display-name>
   </channel>
   <channel id="now_hk.627">
-    <display-name>Now Sports 英超7台</display-name>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
+    <display-name lang="en">Now Sports 英超7台</display-name>
   </channel>
   <channel id="now_hk.630">
-    <display-name>Now Sports 精選</display-name>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
+    <display-name lang="en">Now Sports 精選</display-name>
   </channel>
   <channel id="now_hk.631">
-    <display-name>Now Sports 1</display-name>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
+    <display-name lang="en">Now Sports 1</display-name>
   </channel>
   <channel id="now_hk.632">
-    <display-name>Now Sports 2</display-name>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
+    <display-name lang="en">Now Sports 2</display-name>
   </channel>
   <channel id="now_hk.633">
-    <display-name>Now Sports 3</display-name>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
+    <display-name lang="en">Now Sports 3</display-name>
   </channel>
   <channel id="now_hk.634">
-    <display-name>Now Sports 4</display-name>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
+    <display-name lang="en">Now Sports 4</display-name>
   </channel>
   <channel id="now_hk.635">
-    <display-name>Now Sports 5</display-name>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
+    <display-name lang="en">Now Sports 5</display-name>
   </channel>
   <channel id="now_hk.636">
-    <display-name>Now Sports 6</display-name>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
+    <display-name lang="en">Now Sports 6</display-name>
   </channel>
   <channel id="now_hk.637">
-    <display-name>Now Sports 7</display-name>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
+    <display-name lang="en">Now Sports 7</display-name>
   </channel>
   <channel id="now_hk.638">
-    <display-name>beIN SPORTS 1</display-name>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
+    <display-name lang="en">beIN SPORTS 1</display-name>
   </channel>
   <channel id="now_hk.639">
-    <display-name>beIN SPORTS 2</display-name>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
+    <display-name lang="en">beIN SPORTS 2</display-name>
   </channel>
   <channel id="now_hk.640">
-    <display-name>曼聯電視頻道</display-name>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
+    <display-name lang="en">曼聯電視頻道</display-name>
   </channel>
   <channel id="now_hk.641">
-    <display-name>Now Sports 641</display-name>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
+    <display-name lang="en">Now Sports 641</display-name>
   </channel>
   <channel id="now_hk.642">
-    <display-name>NBA TV</display-name>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
+    <display-name lang="en">NBA TV</display-name>
   </channel>
   <channel id="now_hk.643">
-    <display-name>beIN SPORTS 3</display-name>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
+    <display-name lang="en">beIN SPORTS 3</display-name>
   </channel>
   <channel id="now_hk.644">
-    <display-name>beIN SPORTS 4</display-name>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
+    <display-name lang="en">beIN SPORTS 4</display-name>
   </channel>
   <channel id="now_hk.645">
-    <display-name>beIN SPORTS 5</display-name>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
+    <display-name lang="en">beIN SPORTS 5</display-name>
   </channel>
   <channel id="now_hk.646">
-    <display-name>beIN SPORTS 6</display-name>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
+    <display-name lang="en">beIN SPORTS 6</display-name>
   </channel>
   <channel id="now_hk.647">
-    <display-name>Now Sports 647</display-name>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
+    <display-name lang="en">Now Sports 647</display-name>
   </channel>
   <channel id="now_hk.651">
-    <display-name>Now Sports 651</display-name>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
+    <display-name lang="en">Now Sports 651</display-name>
   </channel>
   <channel id="now_hk.652">
-    <display-name>Now Sports 652</display-name>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
+    <display-name lang="en">Now Sports 652</display-name>
   </channel>
   <channel id="now_hk.668">
-    <display-name>Now668</display-name>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
+    <display-name lang="en">Now668</display-name>
   </channel>
   <channel id="now_hk.674">
-    <display-name>Cricbuzz</display-name>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
+    <display-name lang="en">Cricbuzz</display-name>
   </channel>
   <channel id="now_hk.679">
-    <display-name>Premier Sports</display-name>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
+    <display-name lang="en">Premier Sports</display-name>
   </channel>
   <channel id="now_hk.680">
-    <display-name>Now Sports Plus</display-name>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
+    <display-name lang="en">Now Sports Plus</display-name>
   </channel>
   <channel id="now_hk.683">
-    <display-name>Now Golf 2</display-name>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
+    <display-name lang="en">Now Golf 2</display-name>
   </channel>
   <channel id="now_hk.684">
-    <display-name>Now Golf 3</display-name>
     <url>https://nowplayer.now.com/tvguide?filterType=all</url>
+    <display-name lang="en">Now Golf 3</display-name>
   </channel>
   <channel id="sky_de.201">
-    <display-name>Sky Sport Top Event</display-name>
     <url>https://www.magenta.tv/</url>
+    <display-name lang="en">Sky Sport Top Event</display-name>
   </channel>
   <channel id="sky_de.202">
-    <display-name>Sky Sport Bundesliga</display-name>
     <url>https://www.magenta.tv/</url>
+    <display-name lang="en">Sky Sport Bundesliga</display-name>
   </channel>
   <channel id="sky_de.203">
-    <display-name>Sky Sport F1</display-name>
     <url>https://www.magenta.tv/</url>
+    <display-name lang="en">Sky Sport F1</display-name>
   </channel>
   <channel id="sky_de.204">
-    <display-name>Sky Sport Premier League</display-name>
     <url>https://www.magenta.tv/</url>
+    <display-name lang="en">Sky Sport Premier League</display-name>
   </channel>
   <channel id="sky_de.205">
-    <display-name>Sky Sport Mix</display-name>
     <url>https://www.magenta.tv/</url>
+    <display-name lang="en">Sky Sport Mix</display-name>
   </channel>
   <channel id="sky_de.206">
-    <display-name>Sky Sport Tennis</display-name>
     <url>https://www.magenta.tv/</url>
+    <display-name lang="en">Sky Sport Tennis</display-name>
   </channel>
   <channel id="sky_de.207">
-    <display-name>Sky Sport Golf</display-name>
     <url>https://www.magenta.tv/</url>
+    <display-name lang="en">Sky Sport Golf</display-name>
   </channel>
   <channel id="sky_de.209">
-    <display-name>Sky Sport UHD</display-name>
     <url>https://www.magenta.tv/</url>
+    <display-name lang="en">Sky Sport UHD</display-name>
   </channel>
   <channel id="sky_de.210">
-    <display-name>Sky Sport Bundesliga UHD</display-name>
     <url>https://www.magenta.tv/</url>
+    <display-name lang="en">Sky Sport Bundesliga UHD</display-name>
   </channel>
   <channel id="sky_de.211">
-    <display-name>Sky Sport Bundesliga 1</display-name>
     <url>https://www.magenta.tv/</url>
+    <display-name lang="en">Sky Sport Bundesliga 1</display-name>
   </channel>
   <channel id="sky_de.212">
-    <display-name>Sky Sport Bundesliga 2</display-name>
     <url>https://www.magenta.tv/</url>
+    <display-name lang="en">Sky Sport Bundesliga 2</display-name>
   </channel>
   <channel id="sky_de.213">
-    <display-name>Sky Sport Bundesliga 3</display-name>
     <url>https://www.magenta.tv/</url>
+    <display-name lang="en">Sky Sport Bundesliga 3</display-name>
   </channel>
   <channel id="sky_de.214">
-    <display-name>Sky Sport Bundesliga 4</display-name>
     <url>https://www.magenta.tv/</url>
+    <display-name lang="en">Sky Sport Bundesliga 4</display-name>
   </channel>
   <channel id="sky_de.215">
-    <display-name>Sky Sport Bundesliga 5</display-name>
     <url>https://www.magenta.tv/</url>
+    <display-name lang="en">Sky Sport Bundesliga 5</display-name>
   </channel>
   <channel id="sky_de.216">
-    <display-name>Sky Sport Bundesliga 6</display-name>
     <url>https://www.magenta.tv/</url>
+    <display-name lang="en">Sky Sport Bundesliga 6</display-name>
   </channel>
   <channel id="sky_de.217">
-    <display-name>Sky Sport Bundesliga 7</display-name>
     <url>https://www.magenta.tv/</url>
+    <display-name lang="en">Sky Sport Bundesliga 7</display-name>
   </channel>
   <channel id="sky_de.218">
-    <display-name>Sky Sport Bundesliga 8</display-name>
     <url>https://www.magenta.tv/</url>
+    <display-name lang="en">Sky Sport Bundesliga 8</display-name>
   </channel>
   <channel id="sky_de.219">
-    <display-name>Sky Sport Bundesliga 9</display-name>
     <url>https://www.magenta.tv/</url>
+    <display-name lang="en">Sky Sport Bundesliga 9</display-name>
   </channel>
   <channel id="sky_de.220">
-    <display-name>Sky Sport Bundesliga 10</display-name>
     <url>https://www.magenta.tv/</url>
+    <display-name lang="en">Sky Sport Bundesliga 10</display-name>
   </channel>
   <channel id="sky_de.221">
-    <display-name>Sky Sport 1</display-name>
     <url>https://www.magenta.tv/</url>
+    <display-name lang="en">Sky Sport 1</display-name>
   </channel>
   <channel id="sky_de.222">
-    <display-name>Sky Sport 2</display-name>
     <url>https://www.magenta.tv/</url>
+    <display-name lang="en">Sky Sport 2</display-name>
   </channel>
   <channel id="sky_de.223">
-    <display-name>Sky Sport 3</display-name>
     <url>https://www.magenta.tv/</url>
+    <display-name lang="en">Sky Sport 3</display-name>
   </channel>
   <channel id="sky_de.224">
-    <display-name>Sky Sport 4</display-name>
     <url>https://www.magenta.tv/</url>
+    <display-name lang="en">Sky Sport 4</display-name>
   </channel>
   <channel id="sky_de.225">
-    <display-name>Sky Sport 5</display-name>
     <url>https://www.magenta.tv/</url>
+    <display-name lang="en">Sky Sport 5</display-name>
   </channel>
   <channel id="sky_de.226">
-    <display-name>Sky Sport 6</display-name>
     <url>https://www.magenta.tv/</url>
+    <display-name lang="en">Sky Sport 6</display-name>
   </channel>
   <channel id="sky_de.227">
-    <display-name>Sky Sport 7</display-name>
     <url>https://www.magenta.tv/</url>
+    <display-name lang="en">Sky Sport 7</display-name>
   </channel>
   <channel id="sky_de.228">
-    <display-name>Sky Sport 8</display-name>
     <url>https://www.magenta.tv/</url>
+    <display-name lang="en">Sky Sport 8</display-name>
   </channel>
   <channel id="sky_de.229">
-    <display-name>Sky Sport 9</display-name>
     <url>https://www.magenta.tv/</url>
+    <display-name lang="en">Sky Sport 9</display-name>
   </channel>
   <channel id="sky_de.230">
-    <display-name>Sky Sport 10</display-name>
     <url>https://www.magenta.tv/</url>
+    <display-name lang="en">Sky Sport 10</display-name>
   </channel>
   <channel id="travelxp.eu">
-    <display-name>Travel XP</display-name>
     <url>https://epg.sbb.rs/</url>
+    <display-name lang="en">Travel XP</display-name>
   </channel>
   <channel id="virgin_uk.2258">
-    <display-name>Sky Sports Ultra HD 1</display-name>
     <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+    <display-name lang="en">Sky Sports Ultra HD 1</display-name>
   </channel>
   <channel id="virgin_uk.2265">
-    <display-name>Sky Sports Ultra HD 2</display-name>
     <url>https://virgintvgo.virginmedia.com/en/epg/initial</url>
+    <display-name lang="en">Sky Sports Ultra HD 2</display-name>
   </channel>
   <programme channel="allente_no.tvn" start="20260930073000 +0800" stop="20260930084500 +0800">
     <title lang="en">Mord i paradis: Ye of Little Faith</title>

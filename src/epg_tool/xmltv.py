@@ -133,14 +133,14 @@ def write_xmltv(records: Iterable[Programme], xml_path: Path, gzip_path: Path) -
     for programme in programmes:
         channels[_xmltv_channel_id(programme)].append(programme)
 
-    root = ET.Element("tv", {"generator-info-name": "official-epg-search", "generator-info-url": "https://github.com/waastudios/official-epg-search"})
+    root = ET.Element("tv", {"generator-info-name": "none", "generator-info-url": "none"})
     for channel_id in sorted(channels):
         first = channels[channel_id][0]
         channel = ET.SubElement(root, "channel", {"id": channel_id})
-        # display-name / tvg-name 必须是官方频道名称；稳定 ID 已由 channel/@id 承担，
-        # 不再额外输出诸如 `CH 138` 的号码显示名，以免客户端错误将其作为频道名称。
-        ET.SubElement(channel, "display-name").text = first.channel_name
+        # 节点顺序与 epgshare01 对齐：url -> display-name（epgshare 的 icon 在最前，
+        # 但我们没有频道级台标数据，只对齐我们有的节点顺序）。
         ET.SubElement(channel, "url").text = first.source_url
+        ET.SubElement(channel, "display-name", {"lang": "en"}).text = first.channel_name
 
     for programme in programmes:
         # 属性顺序与 epgshare01 对齐（channel, start, stop）：标准 XML 解析器
@@ -169,11 +169,11 @@ def write_xmltv(records: Iterable[Programme], xml_path: Path, gzip_path: Path) -
     tree = ET.ElementTree(root)
     ET.indent(tree, space="  ")
     xml_path.parent.mkdir(parents=True, exist_ok=True)
-    # XML 声明与 epgshare01 对齐：双引号、大写 UTF-8，避免顺序敏感的解析器误判。
-    # DOCTYPE 声明：标准 XMLTV 头，TiviMate 等播放器据此识别文档类型。
+    # XML 声明与 epgshare01 逐字节对齐：双引号、大写 UTF-8，?> 前有空格。
+    # 不输出 DOCTYPE：epgshare01（WebGrab+Plus 生成、NanoTV 实测可显示背景图）
+    # 没有 DOCTYPE 行，完全仿照它以避免顺序敏感的解析器误判。
     with xml_path.open("w", encoding="utf-8", newline="\n") as handle:
-        handle.write('<?xml version="1.0" encoding="UTF-8"?>\n')
-        handle.write('<!DOCTYPE tv SYSTEM "xmltv.dtd">\n')
+        handle.write('<?xml version="1.0" encoding="UTF-8" ?>\n')
         handle.write(ET.tostring(root, encoding="unicode"))
     with xml_path.open("rb") as source, gzip_path.open("wb") as destination:
         with gzip.GzipFile(filename="epg.xml", mode="wb", fileobj=destination, mtime=0) as compressed:
