@@ -24,7 +24,9 @@ class Programme:
     end_at: str | None
     source_url: str
     retrieved_at: str
-    # Optional direct programme artwork URL. Images are linked, never re-hosted.
+    # Optional direct programme artwork URL. SBB posters are mirrored into
+    # data/posters/ and served via jsDelivr (see epg_tool.posters); the
+    # original CDN URL stays in image_source_url for provenance.
     image_url: str | None = None
     # TVGuide detail page that supplied image_url, retained for provenance.
     image_source_url: str | None = None

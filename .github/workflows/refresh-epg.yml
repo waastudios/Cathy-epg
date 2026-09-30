@@ -103,7 +103,7 @@ jobs:
         run: |
           git config user.name "Cathy-epg refresh bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/current_week.jsonl data/epg.xml data/epg.xml.gz data/status.json src/epg_tool/translation_cache.json CHANNELS.md CHANNELS-CN.md
+          git add data/current_week.jsonl data/epg.xml data/epg.xml.gz data/posters data/status.json src/epg_tool/translation_cache.json CHANNELS.md CHANNELS-CN.md
           if git diff --cached --quiet; then
             echo "No programme-guide changes to publish."
             exit 0

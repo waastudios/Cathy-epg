@@ -1244,7 +1244,29 @@ def collect_sbb_eurosport(days: int = 7) -> list[Programme]:
     records = _deduplicate(records)
     if not records:
         raise SourceUnavailable("SBB Public EPG 未返回目标日期范围内可发布的 Eurosport 节目。")
-    return records
+    # 海报镜像到仓库 data/posters/ 并改用 jsDelivr 输出（绕开 SBB 小众 CDN
+    # 在部分播放器/网络下的图片加载问题）；同时清理标题中的零宽字符。
+    return _mirror_sbb_posters(records)
+
+
+def _mirror_sbb_posters(records: list[Programme]) -> list[Programme]:
+    """把 SBB 节目海报下载到仓库并改写 image_url 为 jsDelivr 镜像地址。"""
+    from dataclasses import replace
+
+    from .posters import mirror_poster, sanitize_title
+
+    session = _session()
+    mirrored: list[Programme] = []
+    for record in records:
+        title = sanitize_title(record.title)
+        image_url = record.image_url
+        if image_url:
+            image_url = mirror_poster(image_url, session=session)
+        if title == record.title and image_url == record.image_url:
+            mirrored.append(record)
+        else:
+            mirrored.append(replace(record, title=title, image_url=image_url))
+    return mirrored
 
 
 def _virgin_uk_segment_starts(today: date, days: int, zone: ZoneInfo) -> list[datetime]:
