@@ -5103,8 +5103,11 @@
   <programme channel="astro.801" start="20260930083000 +0800" stop="20260930090000 +0800">
     <title>(L) Hari ke-11: What's Up Jepun</title>
   </programme>
-  <programme channel="astro.801" start="20260930090000 +0800" stop="20260930193000 +0800">
+  <programme channel="astro.801" start="20260930090000 +0800" stop="20260930183000 +0800">
     <title>(L) Hari ke-11: Sukan Asia 2026</title>
+  </programme>
+  <programme channel="astro.801" start="20260930183000 +0800" stop="20260930193000 +0800">
+    <title>Hari ke-10: Aksi Aichi-Nagoya 2026</title>
   </programme>
   <programme channel="astro.801" start="20260930193000 +0800" stop="20260930203000 +0800">
     <title>(L) Nadi Arena</title>
@@ -8745,11 +8748,8 @@
   <programme channel="astro.819" start="20260930073000 +0800" stop="20260930100000 +0800">
     <title>ATP 250's Hangzhou Open: Day 7: Final</title>
   </programme>
-  <programme channel="astro.819" start="20260930100000 +0800" stop="20260930190000 +0800">
+  <programme channel="astro.819" start="20260930100000 +0800" stop="20260930193000 +0800">
     <title>(L) ATP 500's Kinoshita Group Japan Open: Day 1</title>
-  </programme>
-  <programme channel="astro.819" start="20260930190000 +0800" stop="20260930193000 +0800">
-    <title>ATP Tour This Week 2026: Episode 37</title>
   </programme>
   <programme channel="astro.819" start="20260930193000 +0800" stop="20260930233000 +0800">
     <title>ATP 250's Hangzhou Open: Day 6: SFs</title>
@@ -10294,7 +10294,7 @@
     <title>Dutch Masters Grand Slam 26</title>
   </programme>
   <programme channel="astro.826" start="20261001045000 +0800" stop="20261001050500 +0800">
-    <title>World Climbing Series 26 HL</title>
+    <title>On Her Shoulders: Interviews</title>
   </programme>
   <programme channel="astro.826" start="20261001050500 +0800" stop="20261001053500 +0800">
     <title>Heroines</title>
@@ -10329,14 +10329,11 @@
   <programme channel="astro.826" start="20261001160000 +0800" stop="20261001192500 +0800">
     <title>WBWC 26 Gr. Rockford</title>
   </programme>
-  <programme channel="astro.826" start="20261001192500 +0800" stop="20261001205500 +0800">
+  <programme channel="astro.826" start="20261001192500 +0800" stop="20261001212500 +0800">
     <title>Courmayeur Cup 26</title>
   </programme>
-  <programme channel="astro.826" start="20261001205500 +0800" stop="20261001212500 +0800">
-    <title>Melbourne Cup 25 HL</title>
-  </programme>
   <programme channel="astro.826" start="20261001212500 +0800" stop="20261001215000 +0800">
-    <title>World Climbing Series 26 HL</title>
+    <title>On Her Shoulders: Interviews</title>
   </programme>
   <programme channel="astro.826" start="20261001215000 +0800" stop="20261001225000 +0800">
     <title>MP 26</title>
@@ -10350,11 +10347,11 @@
   <programme channel="astro.826" start="20261002013000 +0800" stop="20261002020000 +0800">
     <title>LGCT 26</title>
   </programme>
-  <programme channel="astro.826" start="20261002020000 +0800" stop="20261002044500 +0800">
+  <programme channel="astro.826" start="20261002020000 +0800" stop="20261002045000 +0800">
     <title>Barcelona Marathon 26</title>
   </programme>
-  <programme channel="astro.826" start="20261002044500 +0800" stop="20261002051500 +0800">
-    <title>Sports Woman</title>
+  <programme channel="astro.826" start="20261002045000 +0800" stop="20261002051500 +0800">
+    <title>On Her Shoulders: Interviews</title>
   </programme>
   <programme channel="astro.826" start="20261002051500 +0800" stop="20261002071500 +0800">
     <title>WSWC 27 Gr. B</title>
@@ -10368,8 +10365,11 @@
   <programme channel="astro.826" start="20261002094500 +0800" stop="20261002104500 +0800">
     <title>MP 26</title>
   </programme>
-  <programme channel="astro.826" start="20261002104500 +0800" stop="20261002124500 +0800">
+  <programme channel="astro.826" start="20261002104500 +0800" stop="20261002121500 +0800">
     <title>WSWC 27 Gr. C</title>
+  </programme>
+  <programme channel="astro.826" start="20261002121500 +0800" stop="20261002124500 +0800">
+    <title>Melbourne Cup 25 HL</title>
   </programme>
   <programme channel="astro.826" start="20261002124500 +0800" stop="20261002140000 +0800">
     <title>Dutch Masters Grand Slam 26</title>
@@ -10383,10 +10383,7 @@
   <programme channel="astro.826" start="20261002160000 +0800" stop="20261002184000 +0800">
     <title>Dutch Masters Grand Slam 26</title>
   </programme>
-  <programme channel="astro.826" start="20261002184000 +0800" stop="20261002191000 +0800">
-    <title>LGCT 26</title>
-  </programme>
-  <programme channel="astro.826" start="20261002191000 +0800" stop="20261002204000 +0800">
+  <programme channel="astro.826" start="20261002184000 +0800" stop="20261002204000 +0800">
     <title>Courmayeur Cup 26</title>
   </programme>
   <programme channel="astro.826" start="20261002204000 +0800" stop="20261002234000 +0800">
@@ -10395,8 +10392,11 @@
   <programme channel="astro.826" start="20261002234000 +0800" stop="20261003013000 +0800">
     <title>WSWC 27 Gr. a</title>
   </programme>
-  <programme channel="astro.826" start="20261003013000 +0800" stop="20261003040000 +0800">
+  <programme channel="astro.826" start="20261003013000 +0800" stop="20261003034500 +0800">
     <title>2026 ATHLOS Season</title>
+  </programme>
+  <programme channel="astro.826" start="20261003034500 +0800" stop="20261003040000 +0800">
+    <title>LGCT 26</title>
   </programme>
   <programme channel="astro.826" start="20261003040000 +0800" stop="20261003050000 +0800">
     <title>MP 26</title>
@@ -10405,34 +10405,37 @@
     <title>WSWC 27 Gr. B</title>
   </programme>
   <programme channel="astro.826" start="20261003062500 +0800" stop="20261003064500 +0800">
-    <title>World Climbing Series 26 HL</title>
+    <title>On Her Shoulders: Interviews</title>
   </programme>
-  <programme channel="astro.826" start="20261003064500 +0800" stop="20261003081500 +0800">
+  <programme channel="astro.826" start="20261003064500 +0800" stop="20261003080500 +0800">
     <title>Malaysia Regional Cup 26</title>
   </programme>
-  <programme channel="astro.826" start="20261003081500 +0800" stop="20261003112000 +0800">
+  <programme channel="astro.826" start="20261003080500 +0800" stop="20261003082500 +0800">
+    <title>LGCT 26</title>
+  </programme>
+  <programme channel="astro.826" start="20261003082500 +0800" stop="20261003113000 +0800">
     <title>Valencia Marathon 25</title>
   </programme>
-  <programme channel="astro.826" start="20261003112000 +0800" stop="20261003132000 +0800">
+  <programme channel="astro.826" start="20261003113000 +0800" stop="20261003133000 +0800">
     <title>WSWC 27 Gr. C</title>
   </programme>
-  <programme channel="astro.826" start="20261003132000 +0800" stop="20261003140000 +0800">
-    <title>Melbourne Cup 25 HL</title>
+  <programme channel="astro.826" start="20261003133000 +0800" stop="20261003140000 +0800">
+    <title>Heroines (S3E)</title>
   </programme>
-  <programme channel="astro.826" start="20261003140000 +0800" stop="20261003153000 +0800">
+  <programme channel="astro.826" start="20261003140000 +0800" stop="20261003152500 +0800">
     <title>Malaysian NSL 26</title>
   </programme>
-  <programme channel="astro.826" start="20261003153000 +0800" stop="20261003160000 +0800">
-    <title>Heroines</title>
+  <programme channel="astro.826" start="20261003152500 +0800" stop="20261003155500 +0800">
+    <title>Vendee Arctique 26 HL</title>
   </programme>
-  <programme channel="astro.826" start="20261003160000 +0800" stop="20261003192500 +0800">
+  <programme channel="astro.826" start="20261003155500 +0800" stop="20261003192000 +0800">
     <title>WBWC 26 Gr. Rockford</title>
   </programme>
-  <programme channel="astro.826" start="20261003192500 +0800" stop="20261003212500 +0800">
+  <programme channel="astro.826" start="20261003192000 +0800" stop="20261003212000 +0800">
     <title>Serie a Women 2026/27</title>
   </programme>
-  <programme channel="astro.826" start="20261003212500 +0800" stop="20261003215500 +0800">
-    <title>Vendee Arctique 26 HL</title>
+  <programme channel="astro.826" start="20261003212000 +0800" stop="20261003215500 +0800">
+    <title>On Her Shoulders: Interviews</title>
   </programme>
   <programme channel="astro.826" start="20261003215500 +0800" stop="20261004000000 +0800">
     <title>(L) Serie a Women 2026/27</title>
@@ -10441,7 +10444,7 @@
     <title>Heroines</title>
   </programme>
   <programme channel="astro.826" start="20261004003000 +0800" stop="20261004005500 +0800">
-    <title>World Climbing Series 26 HL</title>
+    <title>On Her Shoulders: Interviews</title>
   </programme>
   <programme channel="astro.826" start="20261004005500 +0800" stop="20261004030000 +0800">
     <title>(L) Serie a Women 2026/27</title>
@@ -10495,7 +10498,7 @@
     <title>Global Champions League 26</title>
   </programme>
   <programme channel="astro.826" start="20261005000000 +0800" stop="20261005002500 +0800">
-    <title>World Climbing Series 26 HL</title>
+    <title>On Her Shoulders: Interviews</title>
   </programme>
   <programme channel="astro.826" start="20261005002500 +0800" stop="20261005020000 +0800">
     <title>Global Champions League 26</title>
@@ -10512,11 +10515,14 @@
   <programme channel="astro.826" start="20261005033000 +0800" stop="20261005040000 +0800">
     <title>MP 26</title>
   </programme>
-  <programme channel="astro.826" start="20261005040000 +0800" stop="20261005050000 +0800">
+  <programme channel="astro.826" start="20261005040000 +0800" stop="20261005041500 +0800">
+    <title>On Her Shoulders: Interviews</title>
+  </programme>
+  <programme channel="astro.826" start="20261005041500 +0800" stop="20261005051500 +0800">
     <title>MP Series 25</title>
   </programme>
-  <programme channel="astro.826" start="20261005050000 +0800" stop="20261005053000 +0800">
-    <title>Sports Woman</title>
+  <programme channel="astro.826" start="20261005051500 +0800" stop="20261005053000 +0800">
+    <title>On Her Shoulders: Interviews</title>
   </programme>
   <programme channel="astro.826" start="20261005053000 +0800" stop="20261005060000 +0800">
     <title>MP 26</title>
@@ -10561,7 +10567,7 @@
     <title>WSWC 27 Gr. a</title>
   </programme>
   <programme channel="astro.826" start="20261006013000 +0800" stop="20261006020000 +0800">
-    <title>Sports Woman</title>
+    <title>On Her Shoulders: Interviews</title>
   </programme>
   <programme channel="astro.826" start="20261006020000 +0800" stop="20261006040500 +0800">
     <title>Serie a Women 2026/27</title>
@@ -11808,6 +11814,15 @@
   <programme channel="astro.833" start="20261003045200 +0800" stop="20261003065200 +0800">
     <title>SANZAAR International Tour Serie: Australia V South Africa</title>
   </programme>
+  <programme channel="astro.833" start="20261003065200 +0800" stop="20261003084200 +0800">
+    <title>United Rugby Championship: Cardiff V Zebre Parma</title>
+  </programme>
+  <programme channel="astro.833" start="20261003084200 +0800" stop="20261003103200 +0800">
+    <title>United Rugby Championship: Edinburgh V Stormers</title>
+  </programme>
+  <programme channel="astro.833" start="20261003103200 +0800" stop="20261003122200 +0800">
+    <title>United Rugby Championship: Benetton V Connacht</title>
+  </programme>
   <programme channel="astro.833" start="20261003122200 +0800" stop="20261003141200 +0800">
     <title>Gallagher Premiership: Bath V Exeter</title>
   </programme>
@@ -11816,6 +11831,15 @@
   </programme>
   <programme channel="astro.833" start="20261003144200 +0800" stop="20261003154200 +0800">
     <title>URC in 60: Round 1</title>
+  </programme>
+  <programme channel="astro.833" start="20261003154200 +0800" stop="20261003173200 +0800">
+    <title>United Rugby Championship: Cardiff V Zebre Parma</title>
+  </programme>
+  <programme channel="astro.833" start="20261003173200 +0800" stop="20261003191500 +0800">
+    <title>United Rugby Championship: Edinburgh V Stormers</title>
+  </programme>
+  <programme channel="astro.833" start="20261003191500 +0800" stop="20261003214700 +0800">
+    <title>(L) United Rugby Championship: Lions V Ospreys</title>
   </programme>
   <programme channel="astro.833" start="20261003214700 +0800" stop="20261003220000 +0800">
     <title>Premier Sports Extra</title>
@@ -11838,8 +11862,20 @@
   <programme channel="astro.833" start="20261004044700 +0800" stop="20261004050200 +0800">
     <title>Premier Sports Extra</title>
   </programme>
+  <programme channel="astro.833" start="20261004050200 +0800" stop="20261004065200 +0800">
+    <title>United Rugby Championship: Dragons V Scarlets</title>
+  </programme>
+  <programme channel="astro.833" start="20261004065200 +0800" stop="20261004084200 +0800">
+    <title>United Rugby Championship: Sharks V Leinster</title>
+  </programme>
+  <programme channel="astro.833" start="20261004084200 +0800" stop="20261004103200 +0800">
+    <title>Super League: Warrington V Wakefield</title>
+  </programme>
   <programme channel="astro.833" start="20261004103200 +0800" stop="20261004110200 +0800">
     <title>NRL Try Time</title>
+  </programme>
+  <programme channel="astro.833" start="20261004110200 +0800" stop="20261004125200 +0800">
+    <title>United Rugby Championship: Glasgow Warriors V Ulster</title>
   </programme>
   <programme channel="astro.833" start="20261004125200 +0800" stop="20261004130200 +0800">
     <title>Premier Sports Extra</title>
@@ -11850,8 +11886,17 @@
   <programme channel="astro.833" start="20261004133200 +0800" stop="20261004140000 +0800">
     <title>5 and 6 Nations Classics: 2004 - Ireland V Scotland</title>
   </programme>
-  <programme channel="astro.833" start="20261004140000 +0800" stop="20261004160200 +0800">
+  <programme channel="astro.833" start="20261004140000 +0800" stop="20261004160000 +0800">
     <title>(L) AFLW: West Coast V Fremantle</title>
+  </programme>
+  <programme channel="astro.833" start="20261004160000 +0800" stop="20261004190200 +0800">
+    <title>(L) NRL: Roosters V Knights</title>
+  </programme>
+  <programme channel="astro.833" start="20261004190200 +0800" stop="20261004193200 +0800">
+    <title>5 and 6 Nations Classics: 1997 - Ireland V England</title>
+  </programme>
+  <programme channel="astro.833" start="20261004193200 +0800" stop="20261004200200 +0800">
+    <title>5 and 6 Nations Classics: 1998 - Scotland V France</title>
   </programme>
   <programme channel="astro.833" start="20261004200200 +0800" stop="20261004203200 +0800">
     <title>5 and 6 Nations Classics: 2001 - Wales V England</title>
@@ -11871,17 +11916,41 @@
   <programme channel="astro.833" start="20261005003200 +0800" stop="20261005010200 +0800">
     <title>5 and 6 Nations Classics: 2009 - Wales V Ireland</title>
   </programme>
+  <programme channel="astro.833" start="20261005010200 +0800" stop="20261005030000 +0800">
+    <title>NRL: Roosters V Knights</title>
+  </programme>
+  <programme channel="astro.833" start="20261005030000 +0800" stop="20261005050200 +0800">
+    <title>(L) Top 14: Montpellier V Toulon</title>
+  </programme>
   <programme channel="astro.833" start="20261005050200 +0800" stop="20261005065200 +0800">
     <title>Top 14: La Rochelle V Clermont</title>
+  </programme>
+  <programme channel="astro.833" start="20261005065200 +0800" stop="20261005084200 +0800">
+    <title>Top 14: Castres V Toulouse</title>
   </programme>
   <programme channel="astro.833" start="20261005084200 +0800" stop="20261005091200 +0800">
     <title>5 and 6 Nations Classics: 2000 - Ireland V Scotland</title>
   </programme>
+  <programme channel="astro.833" start="20261005091200 +0800" stop="20261005110200 +0800">
+    <title>Top 14: Bordeuax Begles V Lyon</title>
+  </programme>
+  <programme channel="astro.833" start="20261005110200 +0800" stop="20261005125200 +0800">
+    <title>United Rugby Championship: Munster V Bulls</title>
+  </programme>
   <programme channel="astro.833" start="20261005125200 +0800" stop="20261005144200 +0800">
     <title>Gallagher Premiership: Newcastle V Leicester</title>
   </programme>
+  <programme channel="astro.833" start="20261005144200 +0800" stop="20261005163200 +0800">
+    <title>NRL: Roosters V Knights</title>
+  </programme>
   <programme channel="astro.833" start="20261005163200 +0800" stop="20261005170200 +0800">
     <title>5 and 6 Nations Classics: 2007 - Scotland V Italy</title>
+  </programme>
+  <programme channel="astro.833" start="20261005170200 +0800" stop="20261005185200 +0800">
+    <title>United Rugby Championship: Lions V Ospreys</title>
+  </programme>
+  <programme channel="astro.833" start="20261005185200 +0800" stop="20261005204200 +0800">
+    <title>United Rugby Championship: Dragons V Scarlets</title>
   </programme>
   <programme channel="astro.833" start="20261005204200 +0800" stop="20261005211200 +0800">
     <title>Top 14 Highlights: Round 5</title>
@@ -11912,6 +11981,12 @@
   </programme>
   <programme channel="astro.833" start="20261005231200 +0800" stop="20261005233200 +0800">
     <title>AFLW Highlights: West Coast V Fremantle</title>
+  </programme>
+  <programme channel="astro.833" start="20261005233200 +0800" stop="20261006012200 +0800">
+    <title>United Rugby Championship: Sharks V Leinster</title>
+  </programme>
+  <programme channel="astro.833" start="20261006012200 +0800" stop="20261006031200 +0800">
+    <title>United Rugby Championship: Glasgow Warriors V Ulster</title>
   </programme>
   <programme channel="astro.833" start="20261006031200 +0800" stop="20261006034200 +0800">
     <title>Top 14 Highlights: Round 5</title>
@@ -15528,11 +15603,8 @@
   <programme channel="ee_uk.231" start="20260930173000 +0800" stop="20260930180000 +0800">
     <title>BBC News</title>
   </programme>
-  <programme channel="ee_uk.231" start="20260930180000 +0800" stop="20260930183000 +0800">
+  <programme channel="ee_uk.231" start="20260930180000 +0800" stop="20260930184500 +0800">
     <title>BBC News</title>
-  </programme>
-  <programme channel="ee_uk.231" start="20260930183000 +0800" stop="20260930184500 +0800">
-    <title>Business Today</title>
   </programme>
   <programme channel="ee_uk.231" start="20260930184500 +0800" stop="20260930190000 +0800">
     <title>BBC News</title>
@@ -26550,11 +26622,8 @@
   <programme channel="ee_uk.420" start="20261001010000 +0800" stop="20261001020000 +0800">
     <title>Live: The Premier League Show</title>
   </programme>
-  <programme channel="ee_uk.420" start="20261001020000 +0800" stop="20261001023000 +0800">
+  <programme channel="ee_uk.420" start="20261001020000 +0800" stop="20261001030000 +0800">
     <title>PL Stories: Roberto Mancini</title>
-  </programme>
-  <programme channel="ee_uk.420" start="20261001023000 +0800" stop="20261001030000 +0800">
-    <title>The Big Interview:</title>
   </programme>
   <programme channel="ee_uk.420" start="20261001030000 +0800" stop="20261001040000 +0800">
     <title>Premier League Review</title>
@@ -26562,10 +26631,7 @@
   <programme channel="ee_uk.420" start="20261001040000 +0800" stop="20261001050000 +0800">
     <title>Football, Cancer And Me</title>
   </programme>
-  <programme channel="ee_uk.420" start="20261001050000 +0800" stop="20261001053000 +0800">
-    <title>Premier League Netbusters</title>
-  </programme>
-  <programme channel="ee_uk.420" start="20261001053000 +0800" stop="20261001060000 +0800">
+  <programme channel="ee_uk.420" start="20261001050000 +0800" stop="20261001060000 +0800">
     <title>PL Stories: Roberto Mancini</title>
   </programme>
   <programme channel="ee_uk.420" start="20261001060000 +0800" stop="20261001080000 +0800">
@@ -26665,16 +26731,13 @@
     <title>Premier League The Big Interview</title>
   </programme>
   <programme channel="ee_uk.420" start="20261002023000 +0800" stop="20261002030000 +0800">
-    <title>PL Stories: Roberto Mancini</title>
+    <title>PL Stories: Petr Cech</title>
   </programme>
   <programme channel="ee_uk.420" start="20261002030000 +0800" stop="20261002040000 +0800">
     <title>Premier League Review</title>
   </programme>
-  <programme channel="ee_uk.420" start="20261002040000 +0800" stop="20261002043000 +0800">
-    <title>Gary Neville's Soccerbox</title>
-  </programme>
-  <programme channel="ee_uk.420" start="20261002043000 +0800" stop="20261002050000 +0800">
-    <title>Gary Neville's Soccerbox</title>
+  <programme channel="ee_uk.420" start="20261002040000 +0800" stop="20261002050000 +0800">
+    <title>PL Stories: Roberto Mancini</title>
   </programme>
   <programme channel="ee_uk.420" start="20261002050000 +0800" stop="20261002053000 +0800">
     <title>Premier League Netbusters</title>
@@ -26698,7 +26761,7 @@
     <title>PL Greatest Games:Chelsea/Wigan'10</title>
   </programme>
   <programme channel="ee_uk.420" start="20261002104500 +0800" stop="20261002110000 +0800">
-    <title>PL Greatest: Man City/Man Utd '13</title>
+    <title>PL Greatest: Man City/Man Utd  '13</title>
   </programme>
   <programme channel="ee_uk.420" start="20261002110000 +0800" stop="20261002120000 +0800">
     <title>Best Premier League Goals</title>
@@ -26775,17 +26838,14 @@
   <programme channel="ee_uk.420" start="20261003010000 +0800" stop="20261003020000 +0800">
     <title>Live: The Premier League Show</title>
   </programme>
-  <programme channel="ee_uk.420" start="20261003020000 +0800" stop="20261003023000 +0800">
+  <programme channel="ee_uk.420" start="20261003020000 +0800" stop="20261003030000 +0800">
     <title>PL Stories: Roberto Mancini</title>
-  </programme>
-  <programme channel="ee_uk.420" start="20261003023000 +0800" stop="20261003030000 +0800">
-    <title>Premier League The Big Interview</title>
   </programme>
   <programme channel="ee_uk.420" start="20261003030000 +0800" stop="20261003040000 +0800">
     <title>Premier League Review</title>
   </programme>
   <programme channel="ee_uk.420" start="20261003040000 +0800" stop="20261003043000 +0800">
-    <title>Gary Neville's Soccerbox</title>
+    <title>Premier League The Big Interview</title>
   </programme>
   <programme channel="ee_uk.420" start="20261003043000 +0800" stop="20261003050000 +0800">
     <title>Gary Neville's Soccerbox</title>
@@ -26842,7 +26902,7 @@
     <title>Saturday Social - Live</title>
   </programme>
   <programme channel="ee_uk.420" start="20261003170000 +0800" stop="20261003173000 +0800">
-    <title>PL Stories: Roberto Mancini</title>
+    <title>PL Stories: Kevin Keegan</title>
   </programme>
   <programme channel="ee_uk.420" start="20261003173000 +0800" stop="20261003180000 +0800">
     <title>Premier League The Big Interview</title>
@@ -26865,11 +26925,8 @@
   <programme channel="ee_uk.420" start="20261004013000 +0800" stop="20261004020000 +0800">
     <title>Cult Heroes: Nani</title>
   </programme>
-  <programme channel="ee_uk.420" start="20261004020000 +0800" stop="20261004023000 +0800">
+  <programme channel="ee_uk.420" start="20261004020000 +0800" stop="20261004030000 +0800">
     <title>PL Stories: Roberto Mancini</title>
-  </programme>
-  <programme channel="ee_uk.420" start="20261004023000 +0800" stop="20261004030000 +0800">
-    <title>Premier League The Big Interview</title>
   </programme>
   <programme channel="ee_uk.420" start="20261004030000 +0800" stop="20261004040000 +0800">
     <title>How Brazil Changed The Premier League</title>
@@ -26919,11 +26976,8 @@
   <programme channel="ee_uk.420" start="20261004140000 +0800" stop="20261004150000 +0800">
     <title>Best Premier League Goals</title>
   </programme>
-  <programme channel="ee_uk.420" start="20261004150000 +0800" stop="20261004153000 +0800">
+  <programme channel="ee_uk.420" start="20261004150000 +0800" stop="20261004160000 +0800">
     <title>PL Stories: Roberto Mancini</title>
-  </programme>
-  <programme channel="ee_uk.420" start="20261004153000 +0800" stop="20261004160000 +0800">
-    <title>Premier League The Big Interview</title>
   </programme>
   <programme channel="ee_uk.420" start="20261004160000 +0800" stop="20261004180000 +0800">
     <title>Sunday Supplement</title>
@@ -26944,7 +26998,7 @@
     <title>Live WSL: Man City v Arsenal</title>
   </programme>
   <programme channel="ee_uk.420" start="20261005020000 +0800" stop="20261005023000 +0800">
-    <title>PL Stories: Roberto Mancini</title>
+    <title>PL Stories: John Stones</title>
   </programme>
   <programme channel="ee_uk.420" start="20261005023000 +0800" stop="20261005030000 +0800">
     <title>Premier League The Big Interview</title>
@@ -27085,7 +27139,7 @@
     <title>PL 100: Paul Scholes</title>
   </programme>
   <programme channel="ee_uk.420" start="20261006130000 +0800" stop="20261006131500 +0800">
-    <title>PL Greatest Games:Leics/Man U '14</title>
+    <title>PL Greatest Games:Leics/Man U  '14</title>
   </programme>
   <programme channel="ee_uk.420" start="20261006131500 +0800" stop="20261006133000 +0800">
     <title>PL Greatest Games:Man Utd/Derby'97</title>
@@ -27571,7 +27625,7 @@
     <title>EFL 26/27: Birmingham v Wolves</title>
   </programme>
   <programme channel="ee_uk.421" start="20261002231500 +0800" stop="20261002234500 +0800">
-    <title>Best League 1&amp;2 Moments 1993-2019</title>
+    <title>Best League 1&amp;2  Moments 1993-2019</title>
   </programme>
   <programme channel="ee_uk.421" start="20261002234500 +0800" stop="20261003000000 +0800">
     <title>Scottish Premiership Round Up Show</title>
@@ -27628,7 +27682,7 @@
     <title>Scottish Premiership Round Up Show</title>
   </programme>
   <programme channel="ee_uk.421" start="20261003053000 +0800" stop="20261003060000 +0800">
-    <title>Best League 1&amp;2 Moments 1993-2019</title>
+    <title>Best League 1&amp;2  Moments 1993-2019</title>
   </programme>
   <programme channel="ee_uk.421" start="20261003060000 +0800" stop="20261003063000 +0800">
     <title>EFL League One Goals Show</title>
@@ -27682,7 +27736,7 @@
     <title>EFL Cup Hlts: Plymouth v Exeter</title>
   </programme>
   <programme channel="ee_uk.421" start="20261003183000 +0800" stop="20261003190000 +0800">
-    <title>Best League 1&amp;2 Moments 1993-2019</title>
+    <title>Best League 1&amp;2  Moments 1993-2019</title>
   </programme>
   <programme channel="ee_uk.421" start="20261003190000 +0800" stop="20261003220000 +0800">
     <title>Live EFL: Chesterfield v Tranmere</title>
@@ -31123,7 +31177,7 @@
     <title>PL Greatest : Man U/Man City 2009</title>
   </programme>
   <programme channel="ee_uk.429" start="20261001131500 +0800" stop="20261001133000 +0800">
-    <title>PL Greatest Games:Leics/Man U '14</title>
+    <title>PL Greatest Games:Leics/Man U  '14</title>
   </programme>
   <programme channel="ee_uk.429" start="20261001133000 +0800" stop="20261001134500 +0800">
     <title>PL Greatest Games:Man Utd/Derby'97</title>
@@ -31948,7 +32002,7 @@
     <title>This is TNT Sports 8</title>
   </programme>
   <programme channel="ee_uk.453" start="20261003210000 +0800" stop="20261003220000 +0800">
-    <title>Live: Rally Italy Day 3</title>
+    <title>Live: WRC Italy Day 3</title>
   </programme>
   <programme channel="ee_uk.453" start="20261003220000 +0800" stop="20261004100000 +0800">
     <title>This is TNT Sports 8</title>
@@ -33447,9 +33501,6 @@
   <programme channel="ee_uk.352" start="20261007060000 +0800" stop="20261007080000 +0800">
     <title>Bobby Robson: More Than A Manager</title>
   </programme>
-  <programme channel="now_hk.611" start="20260930180000 +0800" stop="20260930190000 +0800">
-    <title>請留意下場播映賽事</title>
-  </programme>
   <programme channel="now_hk.611" start="20260930190000 +0800" stop="20260930200000 +0800">
     <title>請留意下場播映賽事</title>
   </programme>
@@ -34350,9 +34401,6 @@
   <programme channel="now_hk.613" start="20261006220000 +0800" stop="20261007000000 +0800">
     <title>請留意下場播映賽事</title>
   </programme>
-  <programme channel="now_hk.620" start="20260930183000 +0800" stop="20260930190000 +0800">
-    <title>動感英超 第5集</title>
-  </programme>
   <programme channel="now_hk.620" start="20260930190000 +0800" stop="20260930200000 +0800">
     <title>英超金球回顧 25/26</title>
   </programme>
@@ -34946,9 +34994,6 @@
   </programme>
   <programme channel="now_hk.620" start="20261006233000 +0800" stop="20261007000000 +0800">
     <title>英超經典賽事 -利物浦 4-3 曼城 17/18</title>
-  </programme>
-  <programme channel="now_hk.621" start="20260930180000 +0800" stop="20260930190000 +0800">
-    <title>英格蘭超級聯賽精華 -第三週</title>
   </programme>
   <programme channel="now_hk.621" start="20260930190000 +0800" stop="20260930210000 +0800">
     <title>英格蘭超級聯賽 -諾定咸森林 對 熱刺</title>
@@ -35973,9 +36018,6 @@
   <programme channel="now_hk.627" start="20261006200000 +0800" stop="20261007000000 +0800">
     <title>請留意下場播映賽事</title>
   </programme>
-  <programme channel="now_hk.630" start="20260930100000 +0800" stop="20260930190000 +0800">
-    <title>ATP 26 日本網球公開賽 -第1圈(A)[直播]</title>
-  </programme>
   <programme channel="now_hk.630" start="20260930190000 +0800" stop="20260930191500 +0800">
     <title>英超金球 -第五週</title>
   </programme>
@@ -36438,12 +36480,6 @@
   <programme channel="now_hk.630" start="20261006233000 +0800" stop="20261007000000 +0800">
     <title>WTA全接觸 第5集</title>
   </programme>
-  <programme channel="now_hk.631" start="20260930170000 +0800" stop="20260930184500 +0800">
-    <title>ATP 26 杭州網球公開賽 -準決賽 (1)</title>
-  </programme>
-  <programme channel="now_hk.631" start="20260930184500 +0800" stop="20260930190000 +0800">
-    <title>一CUE過百 第176集</title>
-  </programme>
   <programme channel="now_hk.631" start="20260930190000 +0800" stop="20260930193000 +0800">
     <title>英超故事26/27 -加列沙卡</title>
   </programme>
@@ -36616,7 +36652,7 @@
     <title>英超故事26/27 -加列沙卡</title>
   </programme>
   <programme channel="now_hk.631" start="20261003230000 +0800" stop="20261004000000 +0800">
-    <title>WTT 冠軍賽 多哈站 2026 -女單決賽</title>
+    <title>WTT 冠軍賽  多哈站 2026 -女單決賽</title>
   </programme>
   <programme channel="now_hk.631" start="20261004000000 +0800" stop="20261004020000 +0800">
     <title>ATP 26 埃斯托里爾網球公開賽 -決賽</title>
@@ -36833,9 +36869,6 @@
   </programme>
   <programme channel="now_hk.631" start="20261006233000 +0800" stop="20261007000000 +0800">
     <title>PGA冠軍巡迴賽學習中心2026 第16集</title>
-  </programme>
-  <programme channel="now_hk.632" start="20260930170000 +0800" stop="20260930190000 +0800">
-    <title>2026/27 西班牙甲組足球聯賽 -艾爾切 對 皇家馬德里</title>
   </programme>
   <programme channel="now_hk.632" start="20260930190000 +0800" stop="20260930210000 +0800">
     <title>2026/27 西班牙甲組足球聯賽 -巴塞隆拿 對 桑坦德</title>
@@ -37094,9 +37127,6 @@
   </programme>
   <programme channel="now_hk.632" start="20261006070000 +0800" stop="20261006180000 +0800">
     <title>2026/27 西班牙甲組足球聯賽 -華倫西亞 對 皇家蘇斯達</title>
-  </programme>
-  <programme channel="now_hk.633" start="20260930180000 +0800" stop="20260930190000 +0800">
-    <title>SailGP Season 6 Highlights -Spain Sail Grand Prix Valencia</title>
   </programme>
   <programme channel="now_hk.633" start="20260930190000 +0800" stop="20260930200000 +0800">
     <title>2026 Mass Participation -UK Challenge</title>
@@ -38988,9 +39018,6 @@
   <programme channel="now_hk.636" start="20261006233000 +0800" stop="20261007000000 +0800">
     <title>拿度一哥的故事</title>
   </programme>
-  <programme channel="now_hk.637" start="20260930163000 +0800" stop="20260930190000 +0800">
-    <title>深圳桌球公開賽 2026 -32強 - 雷佩凡 對 羅拔臣</title>
-  </programme>
   <programme channel="now_hk.637" start="20260930190000 +0800" stop="20260930191500 +0800">
     <title>一CUE過百 第163集</title>
   </programme>
@@ -39985,7 +40012,7 @@
     <title>利物浦潮流雜誌 第7集</title>
   </programme>
   <programme channel="now_hk.638" start="20261006030000 +0800" stop="20261006033000 +0800">
-    <title>意甲賽事精華 第31集 -拖連奴 對 拿玻里</title>
+    <title>意甲賽事精華 第31集 -拖連奴  對 拿玻里</title>
   </programme>
   <programme channel="now_hk.638" start="20261006033000 +0800" stop="20261006040000 +0800">
     <title>意甲賽事精華 第32集 -羅馬 對 國際米蘭</title>
@@ -40236,10 +40263,13 @@
   <programme channel="now_hk.639" start="20261003151000 +0800" stop="20261003152000 +0800">
     <title>德甲經典賽事 -拜仁慕尼黑 對 利華古遜 - 2023/24</title>
   </programme>
-  <programme channel="now_hk.639" start="20261003152000 +0800" stop="20261003170000 +0800">
+  <programme channel="now_hk.639" start="20261003152000 +0800" stop="20261003170500 +0800">
     <title>GT亞洲挑戰賽2026 -北京站主賽事1[直播]</title>
   </programme>
-  <programme channel="now_hk.639" start="20261003173000 +0800" stop="20261003174500 +0800">
+  <programme channel="now_hk.639" start="20261003170500 +0800" stop="20261003173500 +0800">
+    <title>德甲賽事精華 -多蒙特 對 柏達邦</title>
+  </programme>
+  <programme channel="now_hk.639" start="20261003173500 +0800" stop="20261003174500 +0800">
     <title>德甲經典賽事 -奧格斯堡 對 萊比錫 - 2022/23</title>
   </programme>
   <programme channel="now_hk.639" start="20261003174500 +0800" stop="20261003180000 +0800">
@@ -40255,7 +40285,7 @@
     <title>歐洲卡車錦標賽精華2026 -法國站</title>
   </programme>
   <programme channel="now_hk.639" start="20261003203000 +0800" stop="20261003213500 +0800">
-    <title>FIA世界越野汽車拉力錦標賽2026 -意大利站 SS11 Lerno-Monti di Ala' 2[直播]</title>
+    <title>FIA世界越野汽車拉力錦標賽2026 -意大利站 SS11 Lerno - Sa Conchedda - Monti di Ala' 2[直播]</title>
   </programme>
   <programme channel="now_hk.639" start="20261003213500 +0800" stop="20261003223500 +0800">
     <title>歐洲卡車錦標賽2026 -西班牙站主賽事1[直播]</title>
@@ -40267,7 +40297,7 @@
     <title>德甲經典賽事 -多蒙特 對 拜仁慕尼黑 - 2023/24</title>
   </programme>
   <programme channel="now_hk.639" start="20261003230000 +0800" stop="20261003233000 +0800">
-    <title>德甲特輯2026/27 第5集</title>
+    <title>德甲特輯2026/27 第5集 -奧拉斯</title>
   </programme>
   <programme channel="now_hk.639" start="20261003233000 +0800" stop="20261004000000 +0800">
     <title>德甲賽事精華 -拜仁慕尼黑 對 柏林聯</title>
@@ -40303,7 +40333,7 @@
     <title>利華盃2026 -第2天單打 - 施華利夫 對 迪文拿奧</title>
   </programme>
   <programme channel="now_hk.639" start="20261004123000 +0800" stop="20261004140000 +0800">
-    <title>利華盃2026 -第2天單打賽事7</title>
+    <title>利華盃2026 -第2天單打 - 艾卡拿斯 對 費歷斯</title>
   </programme>
   <programme channel="now_hk.639" start="20261004140000 +0800" stop="20261004153000 +0800">
     <title>環馬來西亞單車賽2026 -第8站[直播]</title>
@@ -40366,7 +40396,7 @@
     <title>利華盃2026 -第2天雙打 - 魯迪/施華利夫 對 布力克/中島布蘭登</title>
   </programme>
   <programme channel="now_hk.639" start="20261005113000 +0800" stop="20261005130000 +0800">
-    <title>利華盃2026 -第3天雙打賽事9</title>
+    <title>利華盃2026 -第3天雙打 - 古保利/文錫 對 迪文拿奧/費歷斯</title>
   </programme>
   <programme channel="now_hk.639" start="20261005130000 +0800" stop="20261005145000 +0800">
     <title>德國甲組足球聯賽 -史浩克04 對 拜仁慕尼黑</title>
@@ -43049,9 +43079,6 @@
   </programme>
   <programme channel="now_hk.652" start="20261006220000 +0800" stop="20261007000000 +0800">
     <title>請留意下場播映賽事</title>
-  </programme>
-  <programme channel="now_hk.668" start="20260930181500 +0800" stop="20260930190000 +0800">
-    <title>賽事重溫 -第6集</title>
   </programme>
   <programme channel="now_hk.668" start="20260930190000 +0800" stop="20260930201500 +0800">
     <title>早着先機 -第7集</title>
