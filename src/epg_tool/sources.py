@@ -712,6 +712,7 @@ def collect_allente_no(days: int = 7, pause_seconds: float = 0.25) -> list[Progr
                 end = item.get("eventEnd")
                 if not (title and start and end):
                     continue
+                splash = (item.get("splashImageUri") or "").strip() or None
                 records.append(
                     Programme(
                         provider="allente_no",
@@ -723,6 +724,8 @@ def collect_allente_no(days: int = 7, pause_seconds: float = 0.25) -> list[Progr
                         title=title,
                         start_at=_to_local_iso(start, zone),
                         end_at=_to_local_iso(end, zone),
+                        image_url=splash,
+                        image_source_url=ALLENTE_NO_GUIDE if splash else None,
                         source_url=ALLENTE_NO_GUIDE,
                         retrieved_at=retrieved_at,
                     )
@@ -935,12 +938,14 @@ def collect_digi4k(days: int = 7) -> list[Programme]:
     retrieved_at = utc_now_iso()
     records: list[Programme] = []
     for day_offset, day_node in enumerate(day_nodes[:days]):
-        raw_items: list[tuple[clock_time, str]] = []
+        raw_items: list[tuple[clock_time, str, str | None]] = []
         for mark in day_node.select("mark.schedule-days-item-hour"):
             start_time = _digi4k_time(mark.get_text(" ", strip=True))
             row = mark.find_parent("div", class_=lambda classes: classes and "flex" in classes)
             title_node = row.select_one("h3") if row else None
             source_title = title_node.get_text(" ", strip=True) if title_node else ""
+            img_node = row.select_one(".col-7 figure img") if row else None
+            image_url = (img_node.get("src") or "").strip() or None
             if not (start_time and source_title):
                 continue
             try:
@@ -948,12 +953,12 @@ def collect_digi4k(days: int = 7) -> list[Programme]:
             except TitleUntranslatable:
                 note(f"Digi 4K 跳过无法翻译的标题：{source_title!r}")
                 continue
-            raw_items.append((start_time, title))
+            raw_items.append((start_time, title, image_url))
         if not raw_items:
             continue
         schedule_day = today + timedelta(days=day_offset)
         raw_items.sort(key=lambda item: item[0])
-        for index, (start_time, title) in enumerate(raw_items):
+        for index, (start_time, title, image_url) in enumerate(raw_items):
             start = datetime.combine(schedule_day, start_time, tzinfo=zone)
             end_at: str | None = None
             if index + 1 < len(raw_items):
@@ -972,6 +977,8 @@ def collect_digi4k(days: int = 7) -> list[Programme]:
                     title=title,
                     start_at=start.isoformat(),
                     end_at=end_at,
+                    image_url=image_url,
+                    image_source_url=DIGI4K_GUIDE if image_url else None,
                     source_url=DIGI4K_GUIDE,
                     retrieved_at=retrieved_at,
                 )
