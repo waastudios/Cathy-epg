@@ -1,11 +1,11 @@
 {
   "astro": {
     "status": "ok",
-    "records": 2331
+    "records": 2289
   },
   "now_hk": {
     "status": "ok",
-    "records": 3911
+    "records": 4297
   },
   "allente_se": {
     "status": "ok",
@@ -13,17 +13,20 @@
   },
   "allente_no": {
     "status": "stale",
-    "records": 683,
+    "records": 566,
     "message": "Allente Norway 官方 EPG 响应中未找到预期的 TV Norge、REX、FEM、Eurosport Norge 或 Eurosport 1。",
     "fallback": "previous_snapshot"
   },
   "ee_uk": {
     "status": "ok",
-    "records": 6843
+    "records": 6834,
+    "notes": [
+      "tvguide.co.uk 采集 6669 条（6669 去重），其中有图 6638 条。"
+    ]
   },
   "sky_de": {
     "status": "ok",
-    "records": 1395
+    "records": 1394
   },
   "digi4k_ro": {
     "status": "ok",
@@ -59,10 +62,10 @@
   "xmltv": {
     "status": "ok",
     "channels": 165,
-    "programmes": 17377,
+    "programmes": 17594,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-09-30T11:57:34Z",
-  "total_records": 17377
+  "generated_at": "2026-09-30T17:21:02Z",
+  "total_records": 17594
 }
