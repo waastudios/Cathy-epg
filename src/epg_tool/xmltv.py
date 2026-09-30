@@ -6,10 +6,17 @@ from collections import defaultdict
 from datetime import datetime
 import gzip
 from pathlib import Path
+from zoneinfo import ZoneInfo
 import xml.etree.ElementTree as ET
 from typing import Iterable
 
 from .models import Programme
+
+
+# XMLTV 输出统一使用的时区：北京时间。NanoTV 经实测不解析时间中的时区偏移
+# （按设备本地时间直接理解时间戳），因此所有来源的时间都转换为 +0800 输出，
+# 保证"正在播出"与实际一致。对正确解析偏移的播放器而言，转换前后是同一时刻，无影响。
+_XMLTV_OUTPUT_ZONE = ZoneInfo("Asia/Shanghai")
 
 
 # 用户指定：TV+ Türkiye 的官方 Eurosport 频道号 77／106 使用跨来源稳定的
@@ -108,11 +115,11 @@ def _xmltv_channel_id(record: Programme) -> str:
 
 
 def _xmltv_timestamp(value: str) -> str:
-    """把 ISO 8601 含时区时间转换为 XMLTV 的时间格式。"""
+    """把 ISO 8601 含时区时间转换为 XMLTV 的时间格式（统一转为北京时间 +0800 输出）。"""
     parsed = datetime.fromisoformat(value)
     if parsed.tzinfo is None:
         raise ValueError(f"XMLTV 时间必须带时区：{value}")
-    return parsed.strftime("%Y%m%d%H%M%S %z")
+    return parsed.astimezone(_XMLTV_OUTPUT_ZONE).strftime("%Y%m%d%H%M%S %z")
 
 
 def write_xmltv(records: Iterable[Programme], xml_path: Path, gzip_path: Path) -> tuple[int, int]:
