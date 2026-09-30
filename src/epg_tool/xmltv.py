@@ -147,8 +147,8 @@ def write_xmltv(records: Iterable[Programme], xml_path: Path, gzip_path: Path) -
         ET.SubElement(item, "title").text = programme.title
         if programme.image_url:
             # NanoTV template-compatible programme-level poster reference.
+            # programme 下不输出 <url>：NanoTV 作者确认其不需要，保持与 epgshare01 一致。
             ET.SubElement(item, "icon", {"src": programme.image_url})
-        ET.SubElement(item, "url").text = programme.source_url
 
     tree = ET.ElementTree(root)
     ET.indent(tree, space="  ")
