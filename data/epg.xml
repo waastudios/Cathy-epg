@@ -27825,11 +27825,8 @@
   <programme channel="ee_uk.421" start="20261004200000 +0800" stop="20261004203000 +0800">
     <title>EFL Cup Hlts: Millwall v Newcastle</title>
   </programme>
-  <programme channel="ee_uk.421" start="20261004203000 +0800" stop="20261004230000 +0800">
+  <programme channel="ee_uk.421" start="20261004203000 +0800" stop="20261004231500 +0800">
     <title>Live WSL: Spurs v London City</title>
-  </programme>
-  <programme channel="ee_uk.421" start="20261004230000 +0800" stop="20261004231500 +0800">
-    <title>EFL 26/27: Chesterfield v Tranmere</title>
   </programme>
   <programme channel="ee_uk.421" start="20261004231500 +0800" stop="20261004234500 +0800">
     <title>EFL Cup Hlts: Millwall v Newcastle</title>
@@ -27840,11 +27837,14 @@
   <programme channel="ee_uk.421" start="20261005001500 +0800" stop="20261005003000 +0800">
     <title>EFL 26/27: Chesterfield v Tranmere</title>
   </programme>
-  <programme channel="ee_uk.421" start="20261005003000 +0800" stop="20261005041500 +0800">
-    <title>Live NFL Sunday Game 1</title>
+  <programme channel="ee_uk.421" start="20261005003000 +0800" stop="20261005010000 +0800">
+    <title>EFL Cup Hlts: Man Utd v Brighton</title>
+  </programme>
+  <programme channel="ee_uk.421" start="20261005010000 +0800" stop="20261005041500 +0800">
+    <title>Live NFL Rams @ Eagles</title>
   </programme>
   <programme channel="ee_uk.421" start="20261005041500 +0800" stop="20261005073000 +0800">
-    <title>Live NFL Sunday Game 2</title>
+    <title>Live NFL Chiefs @ Raiders</title>
   </programme>
   <programme channel="ee_uk.421" start="20261005073000 +0800" stop="20261005080000 +0800">
     <title>EFL League One Goals Show</title>
@@ -27934,7 +27934,7 @@
     <title>EFL 26/27: Norwich v Birmingham</title>
   </programme>
   <programme channel="ee_uk.421" start="20261005234500 +0800" stop="20261006000000 +0800">
-    <title>EFL 26/27: Wolves v Portsmouth</title>
+    <title>EFL 26/27:Middlesbrough v Millwall</title>
   </programme>
   <programme channel="ee_uk.421" start="20261006000000 +0800" stop="20261006003000 +0800">
     <title>EFL League One Goals Show</title>
@@ -27985,7 +27985,7 @@
     <title>EFL 26/27: Norwich v Birmingham</title>
   </programme>
   <programme channel="ee_uk.421" start="20261006051500 +0800" stop="20261006053000 +0800">
-    <title>EFL 26/27: Wolves v Portsmouth</title>
+    <title>EFL 26/27: Southampton v Swansea</title>
   </programme>
   <programme channel="ee_uk.421" start="20261006053000 +0800" stop="20261006060000 +0800">
     <title>EFL League One Goals Show</title>
@@ -36018,12 +36018,6 @@
   <programme channel="now_hk.627" start="20261006200000 +0800" stop="20261007000000 +0800">
     <title>請留意下場播映賽事</title>
   </programme>
-  <programme channel="now_hk.630" start="20260930190000 +0800" stop="20260930191500 +0800">
-    <title>英超金球 -第五週</title>
-  </programme>
-  <programme channel="now_hk.630" start="20260930191500 +0800" stop="20260930193000 +0800">
-    <title>一CUE過百 第188集</title>
-  </programme>
   <programme channel="now_hk.630" start="20260930193000 +0800" stop="20260930200000 +0800">
     <title>WTA全接觸 第5集</title>
   </programme>
@@ -36479,9 +36473,6 @@
   </programme>
   <programme channel="now_hk.630" start="20261006233000 +0800" stop="20261007000000 +0800">
     <title>WTA全接觸 第5集</title>
-  </programme>
-  <programme channel="now_hk.631" start="20260930190000 +0800" stop="20260930193000 +0800">
-    <title>英超故事26/27 -加列沙卡</title>
   </programme>
   <programme channel="now_hk.631" start="20260930193000 +0800" stop="20260930200000 +0800">
     <title>WTA 2026 決賽精華 -辛辛那堤網球公開賽</title>
@@ -37598,12 +37589,6 @@
   </programme>
   <programme channel="now_hk.633" start="20261006233000 +0800" stop="20261007000000 +0800">
     <title>羽毛球無界限 第45集</title>
-  </programme>
-  <programme channel="now_hk.634" start="20260930173000 +0800" stop="20260930191500 +0800">
-    <title>WTA 26 韓國網球公開賽 -半準決賽(2)</title>
-  </programme>
-  <programme channel="now_hk.634" start="20260930191500 +0800" stop="20260930193000 +0800">
-    <title>一CUE過百 第162集</title>
   </programme>
   <programme channel="now_hk.634" start="20260930193000 +0800" stop="20260930213000 +0800">
     <title>WTA 26 韓國網球公開賽 -半準決賽(3)</title>
@@ -39018,12 +39003,6 @@
   <programme channel="now_hk.636" start="20261006233000 +0800" stop="20261007000000 +0800">
     <title>拿度一哥的故事</title>
   </programme>
-  <programme channel="now_hk.637" start="20260930190000 +0800" stop="20260930191500 +0800">
-    <title>一CUE過百 第163集</title>
-  </programme>
-  <programme channel="now_hk.637" start="20260930191500 +0800" stop="20260930193000 +0800">
-    <title>一CUE過百 第158集</title>
-  </programme>
   <programme channel="now_hk.637" start="20260930193000 +0800" stop="20260930223000 +0800">
     <title>深圳桌球公開賽 2026 -32強 - 徐思 對 吳宜澤[直播]</title>
   </programme>
@@ -40068,9 +40047,6 @@
   <programme channel="now_hk.638" start="20261006220000 +0800" stop="20261007000000 +0800">
     <title>利物浦電視經典賽事 第2集</title>
   </programme>
-  <programme channel="now_hk.639" start="20260930180000 +0800" stop="20260930193000 +0800">
-    <title>板式網球超級聯賽2026 -鹿特丹站第2天賽事1[直播]</title>
-  </programme>
   <programme channel="now_hk.639" start="20260930193000 +0800" stop="20260930210000 +0800">
     <title>板式網球超級聯賽2026 -鹿特丹站第2天賽事2[直播]</title>
   </programme>
@@ -40478,9 +40454,6 @@
   </programme>
   <programme channel="now_hk.639" start="20261006230000 +0800" stop="20261007003000 +0800">
     <title>板式網球超級聯賽2026 -德國站第1天賽事3[直播]</title>
-  </programme>
-  <programme channel="now_hk.640" start="20260930183000 +0800" stop="20260930193000 +0800">
-    <title>紅魔全入球 第47集</title>
   </programme>
   <programme channel="now_hk.640" start="20260930193000 +0800" stop="20260930200000 +0800">
     <title>紅魔全入球 第48集</title>
@@ -45741,10 +45714,10 @@
   <programme channel="eurosport1.pl" start="20260930170000 +0800" stop="20260930174500 +0800">
     <title>Climbing: Guiyang World Series - Men's and Women's Speed - Finals</title>
   </programme>
-  <programme channel="eurosport1.pl" start="20260930174500 +0800" stop="20260930183000 +0800">
+  <programme channel="eurosport1.pl" start="20260930174500 +0800" stop="20260930183600 +0800">
     <title>Climbing: Guiyang World Series - speed par - finals</title>
   </programme>
-  <programme channel="eurosport1.pl" start="20260930183000 +0800" stop="20260930193000 +0800">
+  <programme channel="eurosport1.pl" start="20260930183600 +0800" stop="20260930193000 +0800">
     <title>Snooker: Shenzhen Open - Day 3</title>
   </programme>
   <programme channel="eurosport1.pl" start="20260930193000 +0800" stop="20260930223000 +0800">
@@ -47239,7 +47212,7 @@
     <title>Olympic Games: Barcelona Hall of Fame 1992</title>
   </programme>
   <programme channel="eurosport.4k" start="20260930064100 +0800" stop="20260930073400 +0800">
-    <title>Climbing: Guiyang World Cup: Speed Relay, Men and Women, Final</title>
+    <title>Climbing: Guiyang World Cup: Speed ​​Relay, Men and Women, Final</title>
     <icon src="https://images-web.ug-be.cdn.united.cloud/4762a8b8/2026/09/15/5556a86d_6483_4c80_99b7_a701ccddef68_xl.jpg" />
   </programme>
   <programme channel="eurosport.4k" start="20260930073400 +0800" stop="20260930090800 +0800">
@@ -47271,7 +47244,7 @@
     <icon src="https://images-web.ug-be.cdn.united.cloud/4762a8b8/2025/09/09/bc0e1d42-5d95-4858-b69b-5174bca9e1dc_xl.jpg" />
   </programme>
   <programme channel="eurosport.4k" start="20260930174500 +0800" stop="20260930183600 +0800">
-    <title>Climbing: Guiyang World Cup: Speed Relay, Men and Women, Final</title>
+    <title>Climbing: Guiyang World Cup: Speed ​​Relay, Men and Women, Final</title>
     <icon src="https://images-web.ug-be.cdn.united.cloud/4762a8b8/2026/09/15/5556a86d_6483_4c80_99b7_a701ccddef68_xl.jpg" />
   </programme>
   <programme channel="eurosport.4k" start="20260930183600 +0800" stop="20260930193000 +0800">
@@ -47291,7 +47264,7 @@
     <icon src="https://images-web.ug-be.cdn.united.cloud/4762a8b8/2025/09/09/bc0e1d42-5d95-4858-b69b-5174bca9e1dc_xl.jpg" />
   </programme>
   <programme channel="eurosport.4k" start="20261001013000 +0800" stop="20261001020000 +0800">
-    <title>Climbing: Guiyang World Cup: Speed Relay, Men and Women, Final</title>
+    <title>Climbing: Guiyang World Cup: Speed ​​Relay, Men and Women, Final</title>
     <icon src="https://images-web.ug-be.cdn.united.cloud/4762a8b8/2026/09/15/5556a86d_6483_4c80_99b7_a701ccddef68_xl.jpg" />
   </programme>
   <programme channel="eurosport.4k" start="20261001020000 +0800" stop="20261001040000 +0800">
@@ -47311,11 +47284,11 @@
     <icon src="https://images-web.ug-be.cdn.united.cloud/4762a8b8/2025/09/22/40ae1f33-0f5e-44e8-9467-2cbc5501c4db_xl.jpg" />
   </programme>
   <programme channel="eurosport.4k" start="20261001060000 +0800" stop="20261001064500 +0800">
-    <title>Climbing: World Series, Chongqing: Speed Relay, Men and Women, Final</title>
+    <title>Climbing: World Series, Chongqing: Speed ​​Relay, Men and Women, Final</title>
     <icon src="https://images-web.ug-be.cdn.united.cloud/4762a8b8/2026/09/18/4f1e8132_7f46_4112_a02b_2e0a0ca69de1_xl.jpg" />
   </programme>
   <programme channel="eurosport.4k" start="20261001064500 +0800" stop="20261001073000 +0800">
-    <title>Climbing: World Series, Chongqing: Speed Relay, Mixed, Final</title>
+    <title>Climbing: World Series, Chongqing: Speed ​​Relay, Mixed, Final</title>
     <icon src="https://images-web.ug-be.cdn.united.cloud/4762a8b8/2026/09/18/4f1e8132_7f46_4112_a02b_2e0a0ca69de1_xl.jpg" />
   </programme>
   <programme channel="eurosport.4k" start="20261001073000 +0800" stop="20261001090000 +0800">
@@ -47343,11 +47316,11 @@
     <icon src="https://images-web.ug-be.cdn.united.cloud/4762a8b8/2026/09/28/268a9765_e564_4d1d_9eb1_59b1c8ab12b6_xl.jpg" />
   </programme>
   <programme channel="eurosport.4k" start="20261001170000 +0800" stop="20261001174500 +0800">
-    <title>Climbing: World Series, Chongqing: Speed Relay, Mixed, Final</title>
+    <title>Climbing: World Series, Chongqing: Speed ​​Relay, Mixed, Final</title>
     <icon src="https://images-web.ug-be.cdn.united.cloud/4762a8b8/2026/09/18/4f1e8132_7f46_4112_a02b_2e0a0ca69de1_xl.jpg" />
   </programme>
   <programme channel="eurosport.4k" start="20261001174500 +0800" stop="20261001183000 +0800">
-    <title>Climbing: World Series, Chongqing: Speed Relay, Men and Women, Final</title>
+    <title>Climbing: World Series, Chongqing: Speed ​​Relay, Men and Women, Final</title>
     <icon src="https://images-web.ug-be.cdn.united.cloud/4762a8b8/2026/09/18/4f1e8132_7f46_4112_a02b_2e0a0ca69de1_xl.jpg" />
   </programme>
   <programme channel="eurosport.4k" start="20261001183000 +0800" stop="20261001193000 +0800">
@@ -47359,11 +47332,11 @@
     <icon src="https://images-web.ug-be.cdn.united.cloud/4762a8b8/2026/09/28/268a9765_e564_4d1d_9eb1_59b1c8ab12b6_xl.jpg" />
   </programme>
   <programme channel="eurosport.4k" start="20261001223000 +0800" stop="20261001231500 +0800">
-    <title>Climbing: World Series, Chongqing: Speed Relay, Mixed, Final</title>
+    <title>Climbing: World Series, Chongqing: Speed ​​Relay, Mixed, Final</title>
     <icon src="https://images-web.ug-be.cdn.united.cloud/4762a8b8/2026/09/18/4f1e8132_7f46_4112_a02b_2e0a0ca69de1_xl.jpg" />
   </programme>
   <programme channel="eurosport.4k" start="20261001231500 +0800" stop="20261002000000 +0800">
-    <title>Climbing: World Series, Chongqing: Speed Relay, Men and Women, Final</title>
+    <title>Climbing: World Series, Chongqing: Speed ​​Relay, Men and Women, Final</title>
     <icon src="https://images-web.ug-be.cdn.united.cloud/4762a8b8/2026/09/18/4f1e8132_7f46_4112_a02b_2e0a0ca69de1_xl.jpg" />
   </programme>
   <programme channel="eurosport.4k" start="20261002000000 +0800" stop="20261002010000 +0800">
@@ -48219,7 +48192,7 @@
     <icon src="https://images-web.ug-be.cdn.united.cloud/4762a8b8/2026/06/24/c62fefe5_5a7f_49d9_b80c_0953148f70a6_xl.jpg" />
   </programme>
   <programme channel="eurosport.1" start="20260930064100 +0800" stop="20260930073400 +0800">
-    <title>Climbing: Guiyang World Cup: Speed Relay, Men and Women, Final</title>
+    <title>Climbing: Guiyang World Cup: Speed ​​Relay, Men and Women, Final</title>
     <icon src="https://images-web.ug-be.cdn.united.cloud/4762a8b8/2026/09/15/e81faf76_7603_4a72_abfb_ae57724246ac_xl.jpg" />
   </programme>
   <programme channel="eurosport.1" start="20260930073400 +0800" stop="20260930090800 +0800">
@@ -48251,7 +48224,7 @@
     <icon src="https://images-web.ug-be.cdn.united.cloud/4762a8b8/2025/09/15/0973121c-aabd-4b32-b06e-f58cf7ba9aa4_xl.jpg" />
   </programme>
   <programme channel="eurosport.1" start="20260930175100 +0800" stop="20260930184100 +0800">
-    <title>Climbing: Guiyang World Cup: Speed Relay, Men and Women, Final</title>
+    <title>Climbing: Guiyang World Cup: Speed ​​Relay, Men and Women, Final</title>
     <icon src="https://images-web.ug-be.cdn.united.cloud/4762a8b8/2026/09/15/e81faf76_7603_4a72_abfb_ae57724246ac_xl.jpg" />
   </programme>
   <programme channel="eurosport.1" start="20260930184100 +0800" stop="20260930193500 +0800">
@@ -48271,7 +48244,7 @@
     <icon src="https://images-web.ug-be.cdn.united.cloud/4762a8b8/2025/09/15/0973121c-aabd-4b32-b06e-f58cf7ba9aa4_xl.jpg" />
   </programme>
   <programme channel="eurosport.1" start="20261001013000 +0800" stop="20261001020000 +0800">
-    <title>Climbing: Guiyang World Cup: Speed Relay, Men and Women, Final</title>
+    <title>Climbing: Guiyang World Cup: Speed ​​Relay, Men and Women, Final</title>
     <icon src="https://images-web.ug-be.cdn.united.cloud/4762a8b8/2026/09/15/e81faf76_7603_4a72_abfb_ae57724246ac_xl.jpg" />
   </programme>
   <programme channel="eurosport.1" start="20261001020000 +0800" stop="20261001040000 +0800">
@@ -48291,11 +48264,11 @@
     <icon src="https://images-web.ug-be.cdn.united.cloud/4762a8b8/2025/09/22/40ae1f33-0f5e-44e8-9467-2cbc5501c4db_xl.jpg" />
   </programme>
   <programme channel="eurosport.1" start="20261001060000 +0800" stop="20261001064500 +0800">
-    <title>Climbing: World Series, Chongqing: Speed Relay, Men and Women, Final</title>
+    <title>Climbing: World Series, Chongqing: Speed ​​Relay, Men and Women, Final</title>
     <icon src="https://images-web.ug-be.cdn.united.cloud/4762a8b8/2026/09/17/1f252dba_d396_47f6_af22_e91c8cecf315_xl.jpg" />
   </programme>
   <programme channel="eurosport.1" start="20261001064500 +0800" stop="20261001073000 +0800">
-    <title>Climbing: World Series, Chongqing: Speed Relay, Mixed, Final</title>
+    <title>Climbing: World Series, Chongqing: Speed ​​Relay, Mixed, Final</title>
     <icon src="https://images-web.ug-be.cdn.united.cloud/4762a8b8/2026/09/17/1f252dba_d396_47f6_af22_e91c8cecf315_xl.jpg" />
   </programme>
   <programme channel="eurosport.1" start="20261001073000 +0800" stop="20261001090000 +0800">
@@ -48323,11 +48296,11 @@
     <icon src="https://images-web.ug-be.cdn.united.cloud/4762a8b8/2026/09/28/268a9765_e564_4d1d_9eb1_59b1c8ab12b6_xl.jpg" />
   </programme>
   <programme channel="eurosport.1" start="20261001170000 +0800" stop="20261001174500 +0800">
-    <title>Climbing: World Series, Chongqing: Speed Relay, Mixed, Final</title>
+    <title>Climbing: World Series, Chongqing: Speed ​​Relay, Mixed, Final</title>
     <icon src="https://images-web.ug-be.cdn.united.cloud/4762a8b8/2026/09/17/1f252dba_d396_47f6_af22_e91c8cecf315_xl.jpg" />
   </programme>
   <programme channel="eurosport.1" start="20261001174500 +0800" stop="20261001183000 +0800">
-    <title>Climbing: World Series, Chongqing: Speed Relay, Men and Women, Final</title>
+    <title>Climbing: World Series, Chongqing: Speed ​​Relay, Men and Women, Final</title>
     <icon src="https://images-web.ug-be.cdn.united.cloud/4762a8b8/2026/09/17/1f252dba_d396_47f6_af22_e91c8cecf315_xl.jpg" />
   </programme>
   <programme channel="eurosport.1" start="20261001183000 +0800" stop="20261001193000 +0800">
@@ -48339,11 +48312,11 @@
     <icon src="https://images-web.ug-be.cdn.united.cloud/4762a8b8/2026/09/28/268a9765_e564_4d1d_9eb1_59b1c8ab12b6_xl.jpg" />
   </programme>
   <programme channel="eurosport.1" start="20261001223000 +0800" stop="20261001231500 +0800">
-    <title>Climbing: World Series, Chongqing: Speed Relay, Mixed, Final</title>
+    <title>Climbing: World Series, Chongqing: Speed ​​Relay, Mixed, Final</title>
     <icon src="https://images-web.ug-be.cdn.united.cloud/4762a8b8/2026/09/17/1f252dba_d396_47f6_af22_e91c8cecf315_xl.jpg" />
   </programme>
   <programme channel="eurosport.1" start="20261001231500 +0800" stop="20261002000000 +0800">
-    <title>Climbing: World Series, Chongqing: Speed Relay, Men and Women, Final</title>
+    <title>Climbing: World Series, Chongqing: Speed ​​Relay, Men and Women, Final</title>
     <icon src="https://images-web.ug-be.cdn.united.cloud/4762a8b8/2026/09/17/1f252dba_d396_47f6_af22_e91c8cecf315_xl.jpg" />
   </programme>
   <programme channel="eurosport.1" start="20261002000000 +0800" stop="20261002010000 +0800">
@@ -48499,7 +48472,7 @@
     <icon src="https://images-web.ug-be.cdn.united.cloud/4762a8b8/2025/09/15/0973121c-aabd-4b32-b06e-f58cf7ba9aa4_xl.jpg" />
   </programme>
   <programme channel="eurosport.2" start="20260930081300 +0800" stop="20260930090100 +0800">
-    <title>Climbing: Guiyang World Cup: Speed Relay, Men and Women, Final</title>
+    <title>Climbing: Guiyang World Cup: Speed ​​Relay, Men and Women, Final</title>
     <icon src="https://images-web.ug-be.cdn.united.cloud/4762a8b8/2026/09/15/e81faf76_7603_4a72_abfb_ae57724246ac_xl.jpg" />
   </programme>
   <programme channel="eurosport.2" start="20260930090100 +0800" stop="20260930110000 +0800">
@@ -48519,7 +48492,7 @@
     <icon src="https://images-web.ug-be.cdn.united.cloud/4762a8b8/2025/09/15/0973121c-aabd-4b32-b06e-f58cf7ba9aa4_xl.jpg" />
   </programme>
   <programme channel="eurosport.2" start="20260930132900 +0800" stop="20260930143200 +0800">
-    <title>Climbing: Guiyang World Cup: Speed Relay, Men and Women, Final</title>
+    <title>Climbing: Guiyang World Cup: Speed ​​Relay, Men and Women, Final</title>
     <icon src="https://images-web.ug-be.cdn.united.cloud/4762a8b8/2026/09/15/e81faf76_7603_4a72_abfb_ae57724246ac_xl.jpg" />
   </programme>
   <programme channel="eurosport.2" start="20260930143200 +0800" stop="20260930155800 +0800">
@@ -48543,7 +48516,7 @@
     <icon src="https://images-web.ug-be.cdn.united.cloud/4762a8b8/2025/09/15/0973121c-aabd-4b32-b06e-f58cf7ba9aa4_xl.jpg" />
   </programme>
   <programme channel="eurosport.2" start="20260930200000 +0800" stop="20260930210200 +0800">
-    <title>Climbing: Guiyang World Cup: Speed Relay, Men and Women, Final</title>
+    <title>Climbing: Guiyang World Cup: Speed ​​Relay, Men and Women, Final</title>
     <icon src="https://images-web.ug-be.cdn.united.cloud/4762a8b8/2026/09/15/e81faf76_7603_4a72_abfb_ae57724246ac_xl.jpg" />
   </programme>
   <programme channel="eurosport.2" start="20260930210200 +0800" stop="20260930220000 +0800">
@@ -48583,7 +48556,7 @@
     <icon src="https://images-web.ug-be.cdn.united.cloud/4762a8b8/2025/09/15/0973121c-aabd-4b32-b06e-f58cf7ba9aa4_xl.jpg" />
   </programme>
   <programme channel="eurosport.2" start="20261001044500 +0800" stop="20261001053000 +0800">
-    <title>Climbing: Guiyang World Cup: Speed Relay, Men and Women, Final</title>
+    <title>Climbing: Guiyang World Cup: Speed ​​Relay, Men and Women, Final</title>
     <icon src="https://images-web.ug-be.cdn.united.cloud/4762a8b8/2026/09/15/e81faf76_7603_4a72_abfb_ae57724246ac_xl.jpg" />
   </programme>
   <programme channel="eurosport.2" start="20261001053000 +0800" stop="20261001060000 +0800">
@@ -48595,7 +48568,7 @@
     <icon src="https://images-web.ug-be.cdn.united.cloud/4762a8b8/2026/09/28/268a9765_e564_4d1d_9eb1_59b1c8ab12b6_xl.jpg" />
   </programme>
   <programme channel="eurosport.2" start="20261001073000 +0800" stop="20261001080000 +0800">
-    <title>Climbing: World Series, Chongqing: Speed Relay, Mixed, Final</title>
+    <title>Climbing: World Series, Chongqing: Speed ​​Relay, Mixed, Final</title>
     <icon src="https://images-web.ug-be.cdn.united.cloud/4762a8b8/2026/09/17/1f252dba_d396_47f6_af22_e91c8cecf315_xl.jpg" />
   </programme>
   <programme channel="eurosport.2" start="20261001080000 +0800" stop="20261001090000 +0800">
@@ -48615,11 +48588,11 @@
     <icon src="https://images-web.ug-be.cdn.united.cloud/4762a8b8/2022/03/02/f856d9b4-9fcf-487e-be50-e65dc69207a2_xl.jpg" />
   </programme>
   <programme channel="eurosport.2" start="20261001123000 +0800" stop="20261001133000 +0800">
-    <title>Climbing: World Series, Chongqing: Speed Relay, Men and Women, Final</title>
+    <title>Climbing: World Series, Chongqing: Speed ​​Relay, Men and Women, Final</title>
     <icon src="https://images-web.ug-be.cdn.united.cloud/4762a8b8/2026/09/17/1f252dba_d396_47f6_af22_e91c8cecf315_xl.jpg" />
   </programme>
   <programme channel="eurosport.2" start="20261001133000 +0800" stop="20261001143000 +0800">
-    <title>Climbing: World Series, Chongqing: Speed Relay, Mixed, Final</title>
+    <title>Climbing: World Series, Chongqing: Speed ​​Relay, Mixed, Final</title>
     <icon src="https://images-web.ug-be.cdn.united.cloud/4762a8b8/2026/09/17/1f252dba_d396_47f6_af22_e91c8cecf315_xl.jpg" />
   </programme>
   <programme channel="eurosport.2" start="20261001143000 +0800" stop="20261001150000 +0800">
@@ -48643,11 +48616,11 @@
     <icon src="https://images-web.ug-be.cdn.united.cloud/4762a8b8/2025/09/22/4bd51071-2ee5-4739-90ef-cb9087bd8065_xl.jpg" />
   </programme>
   <programme channel="eurosport.2" start="20261001190000 +0800" stop="20261001200000 +0800">
-    <title>Climbing: World Series, Chongqing: Speed Relay, Men and Women, Final</title>
+    <title>Climbing: World Series, Chongqing: Speed ​​Relay, Men and Women, Final</title>
     <icon src="https://images-web.ug-be.cdn.united.cloud/4762a8b8/2026/09/17/1f252dba_d396_47f6_af22_e91c8cecf315_xl.jpg" />
   </programme>
   <programme channel="eurosport.2" start="20261001200000 +0800" stop="20261001210000 +0800">
-    <title>Climbing: World Series, Chongqing: Speed Relay, Mixed, Final</title>
+    <title>Climbing: World Series, Chongqing: Speed ​​Relay, Mixed, Final</title>
     <icon src="https://images-web.ug-be.cdn.united.cloud/4762a8b8/2026/09/17/1f252dba_d396_47f6_af22_e91c8cecf315_xl.jpg" />
   </programme>
   <programme channel="eurosport.2" start="20261001210000 +0800" stop="20261001213000 +0800">
@@ -48667,11 +48640,11 @@
     <icon src="https://images-web.ug-be.cdn.united.cloud/4762a8b8/2025/09/19/fcbc9578-f0e0-4671-8938-ebe150a56af3_xl.jpg" />
   </programme>
   <programme channel="eurosport.2" start="20261002000000 +0800" stop="20261002010000 +0800">
-    <title>Climbing: World Series, Chongqing: Speed Relay, Mixed, Final</title>
+    <title>Climbing: World Series, Chongqing: Speed ​​Relay, Mixed, Final</title>
     <icon src="https://images-web.ug-be.cdn.united.cloud/4762a8b8/2026/09/17/1f252dba_d396_47f6_af22_e91c8cecf315_xl.jpg" />
   </programme>
   <programme channel="eurosport.2" start="20261002010000 +0800" stop="20261002020000 +0800">
-    <title>Climbing: World Series, Chongqing: Speed Relay, Men and Women, Final</title>
+    <title>Climbing: World Series, Chongqing: Speed ​​Relay, Men and Women, Final</title>
     <icon src="https://images-web.ug-be.cdn.united.cloud/4762a8b8/2026/09/17/1f252dba_d396_47f6_af22_e91c8cecf315_xl.jpg" />
   </programme>
   <programme channel="eurosport.2" start="20261002020000 +0800" stop="20261002050000 +0800">

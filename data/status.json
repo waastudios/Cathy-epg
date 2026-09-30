@@ -5,7 +5,7 @@
   },
   "now_hk": {
     "status": "ok",
-    "records": 3920
+    "records": 3911
   },
   "allente_se": {
     "status": "ok",
@@ -59,10 +59,10 @@
   "xmltv": {
     "status": "ok",
     "channels": 165,
-    "programmes": 17386,
+    "programmes": 17377,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-09-30T11:33:49Z",
-  "total_records": 17386
+  "generated_at": "2026-09-30T11:57:34Z",
+  "total_records": 17377
 }
