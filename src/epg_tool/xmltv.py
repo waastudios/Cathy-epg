@@ -5,6 +5,7 @@ from __future__ import annotations
 from collections import defaultdict
 from datetime import datetime
 import gzip
+import html
 from pathlib import Path
 from zoneinfo import ZoneInfo
 import xml.etree.ElementTree as ET
@@ -151,7 +152,15 @@ def write_xmltv(records: Iterable[Programme], xml_path: Path, gzip_path: Path) -
         if programme.end_at:
             attributes["stop"] = _xmltv_timestamp(programme.end_at)
         item = ET.SubElement(root, "programme", attributes)
-        ET.SubElement(item, "title").text = programme.title
+        # 节点顺序与 EPGShare 规范对齐：title -> desc -> icon。
+        # 标题统一英文输出（采集流水线已做翻译），补 lang 属性。
+        title_el = ET.SubElement(item, "title", {"lang": "en"})
+        # 源站/翻译接口（如 Google 翻译）可能返回 HTML 实体（&#39; 之类）：
+        # 先解一次再交由 ElementTree 统一转义，避免出现 &amp;#39; 双重转义。
+        title_el.text = html.unescape(programme.title)
+        # desc 即便为空也写入占位，否则 TiviMate 等播放器不渲染详情背景图面板。
+        desc_el = ET.SubElement(item, "desc", {"lang": "en"})
+        desc_el.text = "-"
         if programme.image_url:
             # NanoTV template-compatible programme-level poster reference.
             # programme 下不输出 <url>：NanoTV 作者确认其不需要，保持与 epgshare01 一致。
@@ -161,8 +170,10 @@ def write_xmltv(records: Iterable[Programme], xml_path: Path, gzip_path: Path) -
     ET.indent(tree, space="  ")
     xml_path.parent.mkdir(parents=True, exist_ok=True)
     # XML 声明与 epgshare01 对齐：双引号、大写 UTF-8，避免顺序敏感的解析器误判。
+    # DOCTYPE 声明：标准 XMLTV 头，TiviMate 等播放器据此识别文档类型。
     with xml_path.open("w", encoding="utf-8", newline="\n") as handle:
         handle.write('<?xml version="1.0" encoding="UTF-8"?>\n')
+        handle.write('<!DOCTYPE tv SYSTEM "xmltv.dtd">\n')
         handle.write(ET.tostring(root, encoding="unicode"))
     with xml_path.open("rb") as source, gzip_path.open("wb") as destination:
         with gzip.GzipFile(filename="epg.xml", mode="wb", fileobj=destination, mtime=0) as compressed:

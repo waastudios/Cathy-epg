@@ -760,7 +760,11 @@ def collect_allente_no(days: int = 7, pause_seconds: float = 0.25) -> list[Progr
                 end = item.get("eventEnd")
                 if not (title and start and end):
                     continue
-                splash = (item.get("splashImageUri") or "").strip() or None
+                raw_splash = (item.get("splashImageUri") or "").strip() or None
+                # Allente 下发的 Akamai 链接自带 ?im=Resize,width=600, height=338
+                # 裁剪参数：逗号后的空格被编码成 %20 后 CDN 直接回 400。
+                # 去掉裁剪参数，直接输出纯净原图链接。
+                splash = raw_splash.split("?")[0] if raw_splash else None
                 records.append(
                     Programme(
                         provider="allente_no",
