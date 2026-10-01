@@ -5,13 +5,11 @@
   },
   "now_hk": {
     "status": "ok",
-    "records": 4161
+    "records": 4131
   },
   "allente_se": {
-    "status": "stale",
-    "records": 791,
-    "message": "Allente 官方 EPG 响应中未找到任何预期的 V Sport 体育频道。",
-    "fallback": "previous_snapshot"
+    "status": "ok",
+    "records": 785
   },
   "allente_no": {
     "status": "stale",
@@ -36,7 +34,7 @@
   },
   "sbb_rs": {
     "status": "ok",
-    "records": 285
+    "records": 380
   },
   "virgin_uk": {
     "status": "ok",
@@ -64,10 +62,10 @@
   "xmltv": {
     "status": "ok",
     "channels": 165,
-    "programmes": 17351,
+    "programmes": 17410,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-10-01T00:05:48Z",
-  "total_records": 17351
+  "generated_at": "2026-10-01T00:32:06Z",
+  "total_records": 17410
 }
