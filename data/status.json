@@ -5,7 +5,7 @@
   },
   "now_hk": {
     "status": "ok",
-    "records": 4179
+    "records": 4161
   },
   "allente_se": {
     "status": "stale",
@@ -21,9 +21,9 @@
   },
   "ee_uk": {
     "status": "ok",
-    "records": 6834,
+    "records": 6850,
     "notes": [
-      "tvguide.co.uk 采集 6669 条（6669 去重），其中有图 6638 条。"
+      "tvguide.co.uk 采集 6685 条（6685 去重），其中有图 6654 条。"
     ]
   },
   "sky_de": {
@@ -32,7 +32,7 @@
   },
   "digi4k_ro": {
     "status": "ok",
-    "records": 122
+    "records": 142
   },
   "sbb_rs": {
     "status": "ok",
@@ -40,7 +40,7 @@
   },
   "virgin_uk": {
     "status": "ok",
-    "records": 72
+    "records": 70
   },
   "player_pl": {
     "status": "ok",
@@ -64,10 +64,10 @@
   "xmltv": {
     "status": "ok",
     "channels": 165,
-    "programmes": 17335,
+    "programmes": 17351,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-09-30T22:51:18Z",
-  "total_records": 17335
+  "generated_at": "2026-10-01T00:05:48Z",
+  "total_records": 17351
 }
