@@ -13881,9 +13881,14 @@
     <desc lang="en">ATP Tour Review Show 2026: BMW Open on Astro Tennis.</desc>
     <category lang="en">Entertainment</category>
   </programme>
-  <programme channel="astro.819" start="20261001200000 +0800" stop="20261002060000 +0800">
+  <programme channel="astro.819" start="20261001200000 +0800" stop="20261002050000 +0800">
     <title lang="en">ATP 500's China Open 2026: Day 1</title>
     <desc lang="en">ATP 500's China Open 2026: Day 1 on Astro Tennis.</desc>
+    <category lang="en">Entertainment</category>
+  </programme>
+  <programme channel="astro.819" start="20261002050000 +0800" stop="20261002060000 +0800">
+    <title lang="en">ATP Review Show: Cincinnati Open</title>
+    <desc lang="en">ATP Review Show: Cincinnati Open on Astro Tennis.</desc>
     <category lang="en">Entertainment</category>
   </programme>
   <programme channel="astro.819" start="20261002060000 +0800" stop="20261002083000 +0800">
@@ -19431,101 +19436,6 @@
     <desc lang="en">United Rugby Championship: Dragons V Scarlets — sports coverage on Premier Sports.</desc>
     <category lang="en">Sports</category>
   </programme>
-  <programme channel="foot+.fr" start="20260930091600 +0800" stop="20260930102000 +0800">
-    <title lang="en">Late Football Club</title>
-    <desc lang="en">Late Football Club on CANAL+ FOOT.</desc>
-    <category lang="en">Entertainment</category>
-  </programme>
-  <programme channel="foot+.fr" start="20260930102000 +0800" stop="20260930105400 +0800">
-    <title lang="en">Football day</title>
-    <desc lang="en">Football day on CANAL+ FOOT.</desc>
-    <category lang="en">Entertainment</category>
-  </programme>
-  <programme channel="foot+.fr" start="20260930105400 +0800" stop="20260930122100 +0800">
-    <title lang="en">History of Champions</title>
-    <desc lang="en">History of Champions on CANAL+ FOOT.</desc>
-    <category lang="en">Entertainment</category>
-  </programme>
-  <programme channel="foot+.fr" start="20260930122100 +0800" stop="20260930130000 +0800">
-    <title lang="en">Canal Football Manager</title>
-    <desc lang="en">Canal Football Manager on CANAL+ FOOT.</desc>
-    <category lang="en">Entertainment</category>
-  </programme>
-  <programme channel="foot+.fr" start="20260930130000 +0800" stop="20260930140100 +0800">
-    <title lang="en">Late Football Club</title>
-    <desc lang="en">Late Football Club on CANAL+ FOOT.</desc>
-    <category lang="en">Entertainment</category>
-  </programme>
-  <programme channel="foot+.fr" start="20260930140100 +0800" stop="20260930154300 +0800">
-    <title lang="en">Manchester City/Sunderland</title>
-    <desc lang="en">Manchester City/Sunderland on CANAL+ FOOT.</desc>
-    <category lang="en">Entertainment</category>
-  </programme>
-  <programme channel="foot+.fr" start="20260930154300 +0800" stop="20260930212100 +0800">
-    <title lang="en">End of programs</title>
-    <desc lang="en">End of programs on CANAL+ FOOT.</desc>
-    <category lang="en">Entertainment</category>
-  </programme>
-  <programme channel="foot+.fr" start="20260930212100 +0800" stop="20260930222200 +0800">
-    <title lang="en">Late Football Club</title>
-    <desc lang="en">Late Football Club on CANAL+ FOOT.</desc>
-    <category lang="en">Entertainment</category>
-  </programme>
-  <programme channel="foot+.fr" start="20260930222200 +0800" stop="20260930224100 +0800">
-    <title lang="en">05/06/2027 On the way to Madrid</title>
-    <desc lang="en">05/06/2027 On the way to Madrid on CANAL+ FOOT.</desc>
-    <category lang="en">Entertainment</category>
-  </programme>
-  <programme channel="foot+.fr" start="20260930224100 +0800" stop="20261001002600 +0800">
-    <title lang="en">Slavia Prague / Lens</title>
-    <desc lang="en">Slavia Prague / Lens on CANAL+ FOOT.</desc>
-    <category lang="en">Entertainment</category>
-  </programme>
-  <programme channel="foot+.fr" start="20261001002600 +0800" stop="20261001005400 +0800">
-    <title lang="en">Premier League Stories</title>
-    <desc lang="en">Premier League Stories — sports coverage on CANAL+ FOOT.</desc>
-    <category lang="en">Sports</category>
-  </programme>
-  <programme channel="foot+.fr" start="20261001005400 +0800" stop="20261001023500 +0800">
-    <title lang="en">Lille / Betis Sevilla</title>
-    <desc lang="en">Lille / Betis Sevilla on CANAL+ FOOT.</desc>
-    <category lang="en">Entertainment</category>
-  </programme>
-  <programme channel="foot+.fr" start="20261001023500 +0800" stop="20261001033600 +0800">
-    <title lang="en">Late Football Club</title>
-    <desc lang="en">Late Football Club on CANAL+ FOOT.</desc>
-    <category lang="en">Entertainment</category>
-  </programme>
-  <programme channel="foot+.fr" start="20261001033600 +0800" stop="20261001040600 +0800">
-    <title lang="en">Platini</title>
-    <desc lang="en">Platini on CANAL+ FOOT.</desc>
-    <category lang="en">Entertainment</category>
-  </programme>
-  <programme channel="foot+.fr" start="20261001040600 +0800" stop="20261001043700 +0800">
-    <title lang="en">Platini</title>
-    <desc lang="en">Platini on CANAL+ FOOT.</desc>
-    <category lang="en">Entertainment</category>
-  </programme>
-  <programme channel="foot+.fr" start="20261001043700 +0800" stop="20261001051000 +0800">
-    <title lang="en">Platini</title>
-    <desc lang="en">Platini on CANAL+ FOOT.</desc>
-    <category lang="en">Entertainment</category>
-  </programme>
-  <programme channel="foot+.fr" start="20261001051000 +0800" stop="20261001060100 +0800">
-    <title lang="en">Detective Mathoux</title>
-    <desc lang="en">Detective Mathoux on CANAL+ FOOT.</desc>
-    <category lang="en">Entertainment</category>
-  </programme>
-  <programme channel="foot+.fr" start="20261001060100 +0800" stop="20261001073600 +0800">
-    <title lang="en">History of Champions</title>
-    <desc lang="en">History of Champions on CANAL+ FOOT.</desc>
-    <category lang="en">Entertainment</category>
-  </programme>
-  <programme channel="foot+.fr" start="20261001073600 +0800" stop="20261001091700 +0800">
-    <title lang="en">Real Madrid/Inter Milan</title>
-    <desc lang="en">Real Madrid/Inter Milan on CANAL+ FOOT.</desc>
-    <category lang="en">Entertainment</category>
-  </programme>
   <programme channel="foot+.fr" start="20261001091700 +0800" stop="20261001102000 +0800">
     <title lang="en">Late Football Club</title>
     <desc lang="en">Late Football Club on CANAL+ FOOT.</desc>
@@ -19636,120 +19546,125 @@
     <desc lang="en">Late Football Club on CANAL+ FOOT.</desc>
     <category lang="en">Entertainment</category>
   </programme>
-  <programme channel="foot+.fr" start="20261002140100 +0800" stop="20261003080000 +0800">
+  <programme channel="foot+.fr" start="20261002140100 +0800" stop="20261002154300 +0800">
     <title lang="en">Bournemouth/Liverpool</title>
     <desc lang="en">Bournemouth/Liverpool on CANAL+ FOOT.</desc>
     <category lang="en">Entertainment</category>
   </programme>
-  <programme channel="canal+.fr" start="20260930085400 +0800" stop="20260930085900 +0800">
-    <title lang="en">The question box</title>
-    <desc lang="en">The question box on CANAL+.</desc>
+  <programme channel="foot+.fr" start="20261002154300 +0800" stop="20261002211200 +0800">
+    <title lang="en">End of programs</title>
+    <desc lang="en">End of programs on CANAL+ FOOT.</desc>
     <category lang="en">Entertainment</category>
   </programme>
-  <programme channel="canal+.fr" start="20260930085900 +0800" stop="20260930093400 +0800">
-    <title lang="en">As an aside</title>
-    <desc lang="en">As an aside on CANAL+.</desc>
+  <programme channel="foot+.fr" start="20261002211200 +0800" stop="20261002221300 +0800">
+    <title lang="en">Late Football Club</title>
+    <desc lang="en">Late Football Club on CANAL+ FOOT.</desc>
     <category lang="en">Entertainment</category>
   </programme>
-  <programme channel="canal+.fr" start="20260930093400 +0800" stop="20260930103300 +0800">
-    <title lang="en">Click</title>
-    <desc lang="en">Click on CANAL+.</desc>
+  <programme channel="foot+.fr" start="20261002221300 +0800" stop="20261002224100 +0800">
+    <title lang="en">Football acrobats</title>
+    <desc lang="en">Football acrobats on CANAL+ FOOT.</desc>
     <category lang="en">Entertainment</category>
   </programme>
-  <programme channel="canal+.fr" start="20260930103300 +0800" stop="20260930111000 +0800">
-    <title lang="en">As an aside</title>
-    <desc lang="en">As an aside on CANAL+.</desc>
+  <programme channel="foot+.fr" start="20261002224100 +0800" stop="20261002230000 +0800">
+    <title lang="en">05/06/2027 On the way to Madrid</title>
+    <desc lang="en">05/06/2027 On the way to Madrid on CANAL+ FOOT.</desc>
     <category lang="en">Entertainment</category>
   </programme>
-  <programme channel="canal+.fr" start="20260930111000 +0800" stop="20260930133500 +0800">
-    <title lang="en">Nuremberg</title>
-    <desc lang="en">Nuremberg on CANAL+.</desc>
+  <programme channel="foot+.fr" start="20261002230000 +0800" stop="20261003003200 +0800">
+    <title lang="en">History of Champions</title>
+    <desc lang="en">History of Champions on CANAL+ FOOT.</desc>
     <category lang="en">Entertainment</category>
   </programme>
-  <programme channel="canal+.fr" start="20260930133500 +0800" stop="20260930140600 +0800">
-    <title lang="en">Great plan</title>
-    <desc lang="en">Great plan on CANAL+.</desc>
+  <programme channel="foot+.fr" start="20261003003200 +0800" stop="20261003005600 +0800">
+    <title lang="en">decrypted</title>
+    <desc lang="en">decrypted on CANAL+ FOOT.</desc>
     <category lang="en">Entertainment</category>
   </programme>
-  <programme channel="canal+.fr" start="20260930140600 +0800" stop="20260930154700 +0800">
-    <title lang="en">The lucky star</title>
-    <desc lang="en">The lucky star on CANAL+.</desc>
+  <programme channel="foot+.fr" start="20261003005600 +0800" stop="20261003012200 +0800">
+    <title lang="en">Champions League Weekly</title>
+    <desc lang="en">Champions League Weekly — sports coverage on CANAL+ FOOT.</desc>
+    <category lang="en">Sports</category>
+  </programme>
+  <programme channel="foot+.fr" start="20261003012200 +0800" stop="20261003030600 +0800">
+    <title lang="en">Slavia Prague / Lens</title>
+    <desc lang="en">Slavia Prague / Lens on CANAL+ FOOT.</desc>
     <category lang="en">Entertainment</category>
   </programme>
-  <programme channel="canal+.fr" start="20260930154700 +0800" stop="20260930174500 +0800">
-    <title lang="en">Touch - Our past embraces</title>
-    <desc lang="en">Touch - Our past embraces on CANAL+.</desc>
+  <programme channel="foot+.fr" start="20261003030600 +0800" stop="20261003040800 +0800">
+    <title lang="en">Late Football Club</title>
+    <desc lang="en">Late Football Club on CANAL+ FOOT.</desc>
     <category lang="en">Entertainment</category>
   </programme>
-  <programme channel="canal+.fr" start="20260930174500 +0800" stop="20260930192900 +0800">
-    <title lang="en">Rembrandt</title>
-    <desc lang="en">Rembrandt on CANAL+.</desc>
+  <programme channel="foot+.fr" start="20261003040800 +0800" stop="20261003054600 +0800">
+    <title lang="en">Paris-SG / Slovan Bratislava</title>
+    <desc lang="en">Paris-SG / Slovan Bratislava on CANAL+ FOOT.</desc>
     <category lang="en">Entertainment</category>
   </programme>
-  <programme channel="canal+.fr" start="20260930192900 +0800" stop="20260930194200 +0800">
-    <title lang="en">Bad seed</title>
-    <desc lang="en">Bad seed on CANAL+.</desc>
+  <programme channel="foot+.fr" start="20261003054600 +0800" stop="20261003071400 +0800">
+    <title lang="en">History of Champions</title>
+    <desc lang="en">History of Champions on CANAL+ FOOT.</desc>
     <category lang="en">Entertainment</category>
   </programme>
-  <programme channel="canal+.fr" start="20260930194200 +0800" stop="20260930205100 +0800">
-    <title lang="en">Saturday Night Live</title>
-    <desc lang="en">Saturday Night Live on CANAL+.</desc>
+  <programme channel="foot+.fr" start="20261003071400 +0800" stop="20261003072500 +0800">
+    <title lang="en">UEFA: What you didn't see</title>
+    <desc lang="en">UEFA: What you didn't see on CANAL+ FOOT.</desc>
     <category lang="en">Entertainment</category>
   </programme>
-  <programme channel="canal+.fr" start="20260930205100 +0800" stop="20260930214500 +0800">
-    <title lang="en">Click</title>
-    <desc lang="en">Click on CANAL+.</desc>
+  <programme channel="foot+.fr" start="20261003072500 +0800" stop="20261003085600 +0800">
+    <title lang="en">History of Champions</title>
+    <desc lang="en">History of Champions on CANAL+ FOOT.</desc>
     <category lang="en">Entertainment</category>
   </programme>
-  <programme channel="canal+.fr" start="20260930214500 +0800" stop="20260930221600 +0800">
-    <title lang="en">As an aside</title>
-    <desc lang="en">As an aside on CANAL+.</desc>
+  <programme channel="foot+.fr" start="20261003085600 +0800" stop="20261003100000 +0800">
+    <title lang="en">Late Football Club</title>
+    <desc lang="en">Late Football Club on CANAL+ FOOT.</desc>
     <category lang="en">Entertainment</category>
   </programme>
-  <programme channel="canal+.fr" start="20260930221600 +0800" stop="20260930235700 +0800">
-    <title lang="en">The Bad Guys 2</title>
-    <desc lang="en">The Bad Guys 2 on CANAL+.</desc>
+  <programme channel="foot+.fr" start="20261003100000 +0800" stop="20261003104400 +0800">
+    <title lang="en">Football day</title>
+    <desc lang="en">Football day on CANAL+ FOOT.</desc>
     <category lang="en">Entertainment</category>
   </programme>
-  <programme channel="canal+.fr" start="20260930235700 +0800" stop="20261001015700 +0800">
-    <title lang="en">Guru</title>
-    <desc lang="en">Guru on CANAL+.</desc>
+  <programme channel="foot+.fr" start="20261003104400 +0800" stop="20261003110900 +0800">
+    <title lang="en">Premier League Stories</title>
+    <desc lang="en">Premier League Stories — sports coverage on CANAL+ FOOT.</desc>
+    <category lang="en">Sports</category>
+  </programme>
+  <programme channel="foot+.fr" start="20261003110900 +0800" stop="20261003113600 +0800">
+    <title lang="en">Premier League Stories</title>
+    <desc lang="en">Premier League Stories — sports coverage on CANAL+ FOOT.</desc>
+    <category lang="en">Sports</category>
+  </programme>
+  <programme channel="foot+.fr" start="20261003113600 +0800" stop="20261003121100 +0800">
+    <title lang="en">Canal Football Manager</title>
+    <desc lang="en">Canal Football Manager on CANAL+ FOOT.</desc>
     <category lang="en">Entertainment</category>
   </programme>
-  <programme channel="canal+.fr" start="20261001015700 +0800" stop="20261001020200 +0800">
-    <title lang="en">The question box</title>
-    <desc lang="en">The question box on CANAL+.</desc>
+  <programme channel="foot+.fr" start="20261003121100 +0800" stop="20261003124000 +0800">
+    <title lang="en">Premier League Stories</title>
+    <desc lang="en">Premier League Stories — sports coverage on CANAL+ FOOT.</desc>
+    <category lang="en">Sports</category>
+  </programme>
+  <programme channel="foot+.fr" start="20261003124000 +0800" stop="20261003134100 +0800">
+    <title lang="en">Late Football Club</title>
+    <desc lang="en">Late Football Club on CANAL+ FOOT.</desc>
     <category lang="en">Entertainment</category>
   </programme>
-  <programme channel="canal+.fr" start="20261001020200 +0800" stop="20261001023300 +0800">
-    <title lang="en">As an aside</title>
-    <desc lang="en">As an aside on CANAL+.</desc>
+  <programme channel="foot+.fr" start="20261003134100 +0800" stop="20261003135900 +0800">
+    <title lang="en">05/06/2027 On the way to Madrid</title>
+    <desc lang="en">05/06/2027 On the way to Madrid on CANAL+ FOOT.</desc>
     <category lang="en">Entertainment</category>
   </programme>
-  <programme channel="canal+.fr" start="20261001023300 +0800" stop="20261001032700 +0800">
-    <title lang="en">Click</title>
-    <desc lang="en">Click on CANAL+.</desc>
+  <programme channel="foot+.fr" start="20261003135900 +0800" stop="20261003141500 +0800">
+    <title lang="en">05/06/2027 On the way to Madrid</title>
+    <desc lang="en">05/06/2027 On the way to Madrid on CANAL+ FOOT.</desc>
     <category lang="en">Entertainment</category>
   </programme>
-  <programme channel="canal+.fr" start="20261001032700 +0800" stop="20261001050800 +0800">
-    <title lang="en">The crime on the 3rd floor</title>
-    <desc lang="en">The crime on the 3rd floor on CANAL+.</desc>
-    <category lang="en">Entertainment</category>
-  </programme>
-  <programme channel="canal+.fr" start="20261001050800 +0800" stop="20261001060400 +0800">
-    <title lang="en">Chamouxland: reconstruction</title>
-    <desc lang="en">Chamouxland: reconstruction on CANAL+.</desc>
-    <category lang="en">Entertainment</category>
-  </programme>
-  <programme channel="canal+.fr" start="20261001060400 +0800" stop="20261001064000 +0800">
-    <title lang="en">Hot Ones</title>
-    <desc lang="en">Hot Ones on CANAL+.</desc>
-    <category lang="en">Entertainment</category>
-  </programme>
-  <programme channel="canal+.fr" start="20261001064000 +0800" stop="20261001081100 +0800">
-    <title lang="en">The Infiltrator</title>
-    <desc lang="en">The Infiltrator on CANAL+.</desc>
-    <category lang="en">Entertainment</category>
+  <programme channel="foot+.fr" start="20261003141500 +0800" stop="20261004080000 +0800">
+    <title lang="en">Premier League Review</title>
+    <desc lang="en">Premier League Review — sports coverage on CANAL+ FOOT.</desc>
+    <category lang="en">Sports</category>
   </programme>
   <programme channel="canal+.fr" start="20261001081100 +0800" stop="20261001084100 +0800">
     <title lang="en">Hot Ones</title>
@@ -20011,9 +19926,139 @@
     <desc lang="en">Great plan on CANAL+.</desc>
     <category lang="en">Entertainment</category>
   </programme>
-  <programme channel="canal+.fr" start="20261003111000 +0800" stop="20261004080000 +0800">
+  <programme channel="canal+.fr" start="20261003111000 +0800" stop="20261003123600 +0800">
     <title lang="en">Dear Parents</title>
     <desc lang="en">Dear Parents on CANAL+.</desc>
+    <category lang="en">Entertainment</category>
+  </programme>
+  <programme channel="canal+.fr" start="20261003123600 +0800" stop="20261003141800 +0800">
+    <title lang="en">The crime on the 3rd floor</title>
+    <desc lang="en">The crime on the 3rd floor on CANAL+.</desc>
+    <category lang="en">Entertainment</category>
+  </programme>
+  <programme channel="canal+.fr" start="20261003141800 +0800" stop="20261003161800 +0800">
+    <title lang="en">Guru</title>
+    <desc lang="en">Guru on CANAL+.</desc>
+    <category lang="en">Entertainment</category>
+  </programme>
+  <programme channel="canal+.fr" start="20261003161800 +0800" stop="20261003180400 +0800">
+    <title lang="en">No One Will Know</title>
+    <desc lang="en">No One Will Know on CANAL+.</desc>
+    <category lang="en">Entertainment</category>
+  </programme>
+  <programme channel="canal+.fr" start="20261003180400 +0800" stop="20261003194100 +0800">
+    <title lang="en">In the days to come</title>
+    <desc lang="en">In the days to come on CANAL+.</desc>
+    <category lang="en">Entertainment</category>
+  </programme>
+  <programme channel="canal+.fr" start="20261003194100 +0800" stop="20261003200300 +0800">
+    <title lang="en">Red Flag</title>
+    <desc lang="en">Red Flag on CANAL+.</desc>
+    <category lang="en">Entertainment</category>
+  </programme>
+  <programme channel="canal+.fr" start="20261003200300 +0800" stop="20261003203400 +0800">
+    <title lang="en">Great plan</title>
+    <desc lang="en">Great plan on CANAL+.</desc>
+    <category lang="en">Entertainment</category>
+  </programme>
+  <programme channel="canal+.fr" start="20261003203400 +0800" stop="20261003213000 +0800">
+    <title lang="en">Jérôme, eyes in the blue</title>
+    <desc lang="en">Jérôme, eyes in the blue on CANAL+.</desc>
+    <category lang="en">Entertainment</category>
+  </programme>
+  <programme channel="canal+.fr" start="20261003213000 +0800" stop="20261003220200 +0800">
+    <title lang="en">As an aside</title>
+    <desc lang="en">As an aside on CANAL+.</desc>
+    <category lang="en">Entertainment</category>
+  </programme>
+  <programme channel="canal+.fr" start="20261003220200 +0800" stop="20261003224800 +0800">
+    <title lang="en">Apollo Has Fallen</title>
+    <desc lang="en">Apollo Has Fallen on CANAL+.</desc>
+    <category lang="en">Entertainment</category>
+  </programme>
+  <programme channel="canal+.fr" start="20261003224800 +0800" stop="20261004002900 +0800">
+    <title lang="en">The lucky star</title>
+    <desc lang="en">The lucky star on CANAL+.</desc>
+    <category lang="en">Entertainment</category>
+  </programme>
+  <programme channel="canal+.fr" start="20261004002900 +0800" stop="20261004015400 +0800">
+    <title lang="en">Dear Parents</title>
+    <desc lang="en">Dear Parents on CANAL+.</desc>
+    <category lang="en">Entertainment</category>
+  </programme>
+  <programme channel="canal+.fr" start="20261004015400 +0800" stop="20261004021100 +0800">
+    <title lang="en">Hollywood Weekly</title>
+    <desc lang="en">Hollywood Weekly on CANAL+.</desc>
+    <category lang="en">Entertainment</category>
+  </programme>
+  <programme channel="canal+.fr" start="20261004021100 +0800" stop="20261004022500 +0800">
+    <title lang="en">One-on-one(s)</title>
+    <desc lang="en">One-on-one(s) on CANAL+.</desc>
+    <category lang="en">Entertainment</category>
+  </programme>
+  <programme channel="canal+.fr" start="20261004022500 +0800" stop="20261004031500 +0800">
+    <title lang="en">The circle</title>
+    <desc lang="en">The circle on CANAL+.</desc>
+    <category lang="en">Entertainment</category>
+  </programme>
+  <programme channel="canal+.fr" start="20261004031500 +0800" stop="20261004041500 +0800">
+    <title lang="en">Sports Saturday</title>
+    <desc lang="en">Sports Saturday on CANAL+.</desc>
+    <category lang="en">Entertainment</category>
+  </programme>
+  <programme channel="canal+.fr" start="20261004041500 +0800" stop="20261004043000 +0800">
+    <title lang="en">Pre-match Top 14</title>
+    <desc lang="en">Pre-match Top 14 on CANAL+.</desc>
+    <category lang="en">Entertainment</category>
+  </programme>
+  <programme channel="canal+.fr" start="20261004043000 +0800" stop="20261004062700 +0800">
+    <title lang="en">Bordeaux-Bègles / Lyon</title>
+    <desc lang="en">Bordeaux-Bègles / Lyon on CANAL+.</desc>
+    <category lang="en">Entertainment</category>
+  </programme>
+  <programme channel="canal+.fr" start="20261004062700 +0800" stop="20261004083500 +0800">
+    <title lang="en">Multiplex</title>
+    <desc lang="en">Multiplex on CANAL+.</desc>
+    <category lang="en">Entertainment</category>
+  </programme>
+  <programme channel="canal+.fr" start="20261004083500 +0800" stop="20261004085100 +0800">
+    <title lang="en">Debrief Top 14</title>
+    <desc lang="en">Debrief Top 14 on CANAL+.</desc>
+    <category lang="en">Entertainment</category>
+  </programme>
+  <programme channel="canal+.fr" start="20261004085100 +0800" stop="20261004085500 +0800">
+    <title lang="en">Sports Saturday</title>
+    <desc lang="en">Sports Saturday on CANAL+.</desc>
+    <category lang="en">Entertainment</category>
+  </programme>
+  <programme channel="canal+.fr" start="20261004085500 +0800" stop="20261004093900 +0800">
+    <title lang="en">On Board F1</title>
+    <desc lang="en">On Board F1 on CANAL+.</desc>
+    <category lang="en">Entertainment</category>
+  </programme>
+  <programme channel="canal+.fr" start="20261004093900 +0800" stop="20261004105500 +0800">
+    <title lang="en">Canal Rugby Club - 1st edition</title>
+    <desc lang="en">Canal Rugby Club - 1st edition on CANAL+.</desc>
+    <category lang="en">Entertainment</category>
+  </programme>
+  <programme channel="canal+.fr" start="20261004105500 +0800" stop="20261004110000 +0800">
+    <title lang="en">Pre-match Top 14</title>
+    <desc lang="en">Pre-match Top 14 on CANAL+.</desc>
+    <category lang="en">Entertainment</category>
+  </programme>
+  <programme channel="canal+.fr" start="20261004110000 +0800" stop="20261004125700 +0800">
+    <title lang="en">Castres / Toulouse</title>
+    <desc lang="en">Castres / Toulouse on CANAL+.</desc>
+    <category lang="en">Entertainment</category>
+  </programme>
+  <programme channel="canal+.fr" start="20261004125700 +0800" stop="20261004131600 +0800">
+    <title lang="en">Canal Rugby Club debriefing</title>
+    <desc lang="en">Canal Rugby Club debriefing on CANAL+.</desc>
+    <category lang="en">Entertainment</category>
+  </programme>
+  <programme channel="canal+.fr" start="20261004131600 +0800" stop="20261005080000 +0800">
+    <title lang="en">X-click</title>
+    <desc lang="en">X-click on CANAL+.</desc>
     <category lang="en">Entertainment</category>
   </programme>
   <programme channel="canal+4k.pl" start="20260929060500 +0800" stop="20260929070000 +0800">
@@ -61972,16 +62017,6 @@
     <category lang="en">Movie</category>
     <icon src="https://tv.assets.pressassociation.io/9dcfcd2e-38a4-5c1b-bbc8-5df30250f9c5.jpg" />
   </programme>
-  <programme channel="now_hk.611" start="20261001080000 +0800" stop="20261001090000 +0800">
-    <title lang="en">請留意下場播映賽事</title>
-    <desc lang="en">請留意下場播映賽事 on Now Sports 4K 1.</desc>
-    <category lang="en">Entertainment</category>
-  </programme>
-  <programme channel="now_hk.611" start="20261001090000 +0800" stop="20261001100000 +0800">
-    <title lang="en">請留意下場播映賽事</title>
-    <desc lang="en">請留意下場播映賽事 on Now Sports 4K 1.</desc>
-    <category lang="en">Entertainment</category>
-  </programme>
   <programme channel="now_hk.611" start="20261001100000 +0800" stop="20261001110000 +0800">
     <title lang="en">請留意下場播映賽事</title>
     <desc lang="en">請留意下場播映賽事 on Now Sports 4K 1.</desc>
@@ -62772,11 +62807,6 @@
     <desc lang="en">請留意下場播映賽事 on Now Sports 4K 1.</desc>
     <category lang="en">Entertainment</category>
   </programme>
-  <programme channel="now_hk.612" start="20261001080000 +0800" stop="20261001100000 +0800">
-    <title lang="en">請留意下場播映賽事</title>
-    <desc lang="en">請留意下場播映賽事 on Now Sports 4K 2.</desc>
-    <category lang="en">Entertainment</category>
-  </programme>
   <programme channel="now_hk.612" start="20261001100000 +0800" stop="20261001120000 +0800">
     <title lang="en">請留意下場播映賽事</title>
     <desc lang="en">請留意下場播映賽事 on Now Sports 4K 2.</desc>
@@ -63177,11 +63207,6 @@
     <desc lang="en">請留意下場播映賽事 on Now Sports 4K 2.</desc>
     <category lang="en">Entertainment</category>
   </programme>
-  <programme channel="now_hk.613" start="20261001080000 +0800" stop="20261001100000 +0800">
-    <title lang="en">請留意下場播映賽事</title>
-    <desc lang="en">請留意下場播映賽事 on Now Sports 4K 3.</desc>
-    <category lang="en">Entertainment</category>
-  </programme>
   <programme channel="now_hk.613" start="20261001100000 +0800" stop="20261001120000 +0800">
     <title lang="en">請留意下場播映賽事</title>
     <desc lang="en">請留意下場播映賽事 on Now Sports 4K 3.</desc>
@@ -63575,16 +63600,6 @@
   <programme channel="now_hk.613" start="20261007220000 +0800" stop="20261008090000 +0800">
     <title lang="en">請留意下場播映賽事</title>
     <desc lang="en">請留意下場播映賽事 on Now Sports 4K 3.</desc>
-    <category lang="en">Entertainment</category>
-  </programme>
-  <programme channel="now_hk.620" start="20261001080000 +0800" stop="20261001090000 +0800">
-    <title lang="en">英超追蹤 -賽季短評</title>
-    <desc lang="en">英超追蹤 -賽季短評 on Now Sports Premier League TV.</desc>
-    <category lang="en">Entertainment</category>
-  </programme>
-  <programme channel="now_hk.620" start="20261001090000 +0800" stop="20261001100000 +0800">
-    <title lang="en">門將的藝術: 施治</title>
-    <desc lang="en">門將的藝術: 施治 on Now Sports Premier League TV.</desc>
     <category lang="en">Entertainment</category>
   </programme>
   <programme channel="now_hk.620" start="20261001100000 +0800" stop="20261001103000 +0800">
@@ -64645,21 +64660,6 @@
   <programme channel="now_hk.620" start="20261007230000 +0800" stop="20261008010000 +0800">
     <title lang="en">英超經典賽事 -利物浦 3-2 曼城 13/14</title>
     <desc lang="en">英超經典賽事 -利物浦 3-2 曼城 13/14 on Now Sports Premier League TV.</desc>
-    <category lang="en">Entertainment</category>
-  </programme>
-  <programme channel="now_hk.621" start="20261001080000 +0800" stop="20261001083000 +0800">
-    <title lang="en">英超故事26/27 -加列沙卡</title>
-    <desc lang="en">英超故事26/27 -加列沙卡 on Now Sports 英超1台.</desc>
-    <category lang="en">Entertainment</category>
-  </programme>
-  <programme channel="now_hk.621" start="20261001083000 +0800" stop="20261001084500 +0800">
-    <title lang="en">英超金球 -第四週</title>
-    <desc lang="en">英超金球 -第四週 on Now Sports 英超1台.</desc>
-    <category lang="en">Entertainment</category>
-  </programme>
-  <programme channel="now_hk.621" start="20261001084500 +0800" stop="20261001090000 +0800">
-    <title lang="en">英超金球 -第五週</title>
-    <desc lang="en">英超金球 -第五週 on Now Sports 英超1台.</desc>
     <category lang="en">Entertainment</category>
   </programme>
   <programme channel="now_hk.621" start="20261001090000 +0800" stop="20261001110000 +0800">
@@ -66457,26 +66457,6 @@
     <desc lang="en">請留意下場播映賽事 on Now Sports 英超7台.</desc>
     <category lang="en">Entertainment</category>
   </programme>
-  <programme channel="now_hk.630" start="20261001020000 +0800" stop="20261001090000 +0800">
-    <title lang="en">ATP 26 日本網球公開賽 -第1圈(A)</title>
-    <desc lang="en">ATP 26 日本網球公開賽 -第1圈(A) on Now Sports 精選.</desc>
-    <category lang="en">Entertainment</category>
-  </programme>
-  <programme channel="now_hk.630" start="20261001090000 +0800" stop="20261001093000 +0800">
-    <title lang="en">WTA全接觸 第5集</title>
-    <desc lang="en">WTA全接觸 第5集 on Now Sports 精選.</desc>
-    <category lang="en">Entertainment</category>
-  </programme>
-  <programme channel="now_hk.630" start="20261001093000 +0800" stop="20261001094500 +0800">
-    <title lang="en">一CUE過百 第185集</title>
-    <desc lang="en">一CUE過百 第185集 on Now Sports 精選.</desc>
-    <category lang="en">Entertainment</category>
-  </programme>
-  <programme channel="now_hk.630" start="20261001094500 +0800" stop="20261001100000 +0800">
-    <title lang="en">英超金球 -第五週</title>
-    <desc lang="en">英超金球 -第五週 on Now Sports 精選.</desc>
-    <category lang="en">Entertainment</category>
-  </programme>
   <programme channel="now_hk.630" start="20261001100000 +0800" stop="20261001190000 +0800">
     <title lang="en">ATP 26 日本網球公開賽 -第1圈(B)[直播]</title>
     <desc lang="en">ATP 26 日本網球公開賽 -第1圈(B)[直播] on Now Sports 精選.</desc>
@@ -67237,16 +67217,6 @@
     <desc lang="en">英超故事26/27 -加列沙卡 on Now Sports 精選.</desc>
     <category lang="en">Entertainment</category>
   </programme>
-  <programme channel="now_hk.631" start="20261001073000 +0800" stop="20261001090000 +0800">
-    <title lang="en">ATP 26 馬略卡網球錦標賽 -半準決賽 (4)</title>
-    <desc lang="en">ATP 26 馬略卡網球錦標賽 -半準決賽 (4) on Now Sports 1.</desc>
-    <category lang="en">Entertainment</category>
-  </programme>
-  <programme channel="now_hk.631" start="20261001090000 +0800" stop="20261001100000 +0800">
-    <title lang="en">PGA巡迴賽精華2026 -高爾夫球巡迴錦標賽</title>
-    <desc lang="en">PGA巡迴賽精華2026 -高爾夫球巡迴錦標賽 on Now Sports 1.</desc>
-    <category lang="en">Entertainment</category>
-  </programme>
   <programme channel="now_hk.631" start="20261001100000 +0800" stop="20261001130000 +0800">
     <title lang="en">FIE 25/26 國際劍聯大奬賽 -匈牙利站 (重劍)</title>
     <desc lang="en">FIE 25/26 國際劍聯大奬賽 -匈牙利站 (重劍) on Now Sports 1.</desc>
@@ -67967,11 +67937,6 @@
     <desc lang="en">PGA冠軍巡迴賽學習中心2026 第17集 on Now Sports 1.</desc>
     <category lang="en">Entertainment</category>
   </programme>
-  <programme channel="now_hk.632" start="20261001080000 +0800" stop="20261001100000 +0800">
-    <title lang="en">2026/27 西班牙甲組足球聯賽 -維拉利爾 對 利雲特</title>
-    <desc lang="en">2026/27 西班牙甲組足球聯賽 -維拉利爾 對 利雲特 on Now Sports 2.</desc>
-    <category lang="en">Entertainment</category>
-  </programme>
   <programme channel="now_hk.632" start="20261001100000 +0800" stop="20261001120000 +0800">
     <title lang="en">2026/27 西班牙甲組足球聯賽 -華倫西亞 對 皇家蘇斯達</title>
     <desc lang="en">2026/27 西班牙甲組足球聯賽 -華倫西亞 對 皇家蘇斯達 on Now Sports 2.</desc>
@@ -68350,16 +68315,6 @@
   <programme channel="now_hk.632" start="20261006070000 +0800" stop="20261006180000 +0800">
     <title lang="en">2026/27 西班牙甲組足球聯賽 -華倫西亞 對 皇家蘇斯達</title>
     <desc lang="en">2026/27 西班牙甲組足球聯賽 -華倫西亞 對 皇家蘇斯達 on Now Sports 2.</desc>
-    <category lang="en">Entertainment</category>
-  </programme>
-  <programme channel="now_hk.633" start="20261001080000 +0800" stop="20261001090000 +0800">
-    <title lang="en">世界羽聯巡迴賽2026 印尼大師賽 -男雙決賽</title>
-    <desc lang="en">世界羽聯巡迴賽2026 印尼大師賽 -男雙決賽 on Now Sports 3.</desc>
-    <category lang="en">Entertainment</category>
-  </programme>
-  <programme channel="now_hk.633" start="20261001090000 +0800" stop="20261001100000 +0800">
-    <title lang="en">2026 Mass Participation -UK Challenge</title>
-    <desc lang="en">2026 Mass Participation -UK Challenge on Now Sports 3.</desc>
     <category lang="en">Entertainment</category>
   </programme>
   <programme channel="now_hk.633" start="20261001100000 +0800" stop="20261001110000 +0800">
@@ -69205,11 +69160,6 @@
   <programme channel="now_hk.633" start="20261007233000 +0800" stop="20261008103000 +0800">
     <title lang="en">Monster Jam 第8集</title>
     <desc lang="en">Monster Jam 第8集 on Now Sports 3.</desc>
-    <category lang="en">Entertainment</category>
-  </programme>
-  <programme channel="now_hk.634" start="20261001063000 +0800" stop="20261001083000 +0800">
-    <title lang="en">WTA 26 孟菲斯網球經典賽 -決賽</title>
-    <desc lang="en">WTA 26 孟菲斯網球經典賽 -決賽 on Now Sports 4.</desc>
     <category lang="en">Entertainment</category>
   </programme>
   <programme channel="now_hk.634" start="20261001083000 +0800" stop="20261001103000 +0800">
@@ -70282,11 +70232,6 @@
     <desc lang="en">一CUE過百 第188集 on Now Sports 4.</desc>
     <category lang="en">Entertainment</category>
   </programme>
-  <programme channel="now_hk.635" start="20261001073500 +0800" stop="20261001090500 +0800">
-    <title lang="en">Jump Saudi '25 第2集 -CSI4 World Cup</title>
-    <desc lang="en">Jump Saudi '25 第2集 -CSI4 World Cup on Now Sports 5.</desc>
-    <category lang="en">Entertainment</category>
-  </programme>
   <programme channel="now_hk.635" start="20261001090500 +0800" stop="20261001103500 +0800">
     <title lang="en">Malaysia Regional Cup '26 第2集 -Marvels v Wildcats</title>
     <desc lang="en">Malaysia Regional Cup '26 第2集 -Marvels v Wildcats — sports coverage on Now Sports 5.</desc>
@@ -70850,21 +70795,6 @@
   <programme channel="now_hk.635" start="20261007235000 +0800" stop="20261008002000 +0800">
     <title lang="en">Women's Football Weekly 第4集 -Women's Football Weekly</title>
     <desc lang="en">Women's Football Weekly 第4集 -Women's Football Weekly on Now Sports 5.</desc>
-    <category lang="en">Entertainment</category>
-  </programme>
-  <programme channel="now_hk.636" start="20261001033000 +0800" stop="20261001093000 +0800">
-    <title lang="en">ATP 26 中國網球公開賽 -第一圈(A)</title>
-    <desc lang="en">ATP 26 中國網球公開賽 -第一圈(A) on Now Sports 6.</desc>
-    <category lang="en">Entertainment</category>
-  </programme>
-  <programme channel="now_hk.636" start="20261001093000 +0800" stop="20261001094500 +0800">
-    <title lang="en">一CUE過百 第170集</title>
-    <desc lang="en">一CUE過百 第170集 on Now Sports 6.</desc>
-    <category lang="en">Entertainment</category>
-  </programme>
-  <programme channel="now_hk.636" start="20261001094500 +0800" stop="20261001100000 +0800">
-    <title lang="en">一CUE過百 第171集</title>
-    <desc lang="en">一CUE過百 第171集 on Now Sports 6.</desc>
     <category lang="en">Entertainment</category>
   </programme>
   <programme channel="now_hk.636" start="20261001100000 +0800" stop="20261001110000 +0800">
@@ -71730,11 +71660,6 @@
   <programme channel="now_hk.636" start="20261007233000 +0800" stop="20261008103000 +0800">
     <title lang="en">今週ATP 2026 第38集</title>
     <desc lang="en">今週ATP 2026 第38集 on Now Sports 6.</desc>
-    <category lang="en">Entertainment</category>
-  </programme>
-  <programme channel="now_hk.637" start="20261001073000 +0800" stop="20261001100000 +0800">
-    <title lang="en">深圳桌球公開賽 2026 -32強 - 徐思 對 吳宜澤</title>
-    <desc lang="en">深圳桌球公開賽 2026 -32強 - 徐思 對 吳宜澤 on Now Sports 7.</desc>
     <category lang="en">Entertainment</category>
   </programme>
   <programme channel="now_hk.637" start="20261001100000 +0800" stop="20261001101500 +0800">
@@ -72807,16 +72732,6 @@
     <desc lang="en">一CUE過百 第176集 on Now Sports 7.</desc>
     <category lang="en">Entertainment</category>
   </programme>
-  <programme channel="now_hk.638" start="20261001080000 +0800" stop="20261001084500 +0800">
-    <title lang="en">利物浦電視特輯 第2集 -隊長</title>
-    <desc lang="en">利物浦電視特輯 第2集 -隊長 — sports coverage on beIN SPORTS 1.</desc>
-    <category lang="en">Sports</category>
-  </programme>
-  <programme channel="now_hk.638" start="20261001084500 +0800" stop="20261001100000 +0800">
-    <title lang="en">利物浦電視經典賽事 第1集 -英超24/25 - 利物浦 對 曼城</title>
-    <desc lang="en">利物浦電視經典賽事 第1集 -英超24/25 - 利物浦 對 曼城 — sports coverage on beIN SPORTS 1.</desc>
-    <category lang="en">Sports</category>
-  </programme>
   <programme channel="now_hk.638" start="20261001100000 +0800" stop="20261001110000 +0800">
     <title lang="en">利物浦潮流雜誌 第6集</title>
     <desc lang="en">利物浦潮流雜誌 第6集 — sports coverage on beIN SPORTS 1.</desc>
@@ -73532,16 +73447,6 @@
     <desc lang="en">2026 世界一級方程式錦標賽 - 主賽事 第4集 -巴林站 (馬來西亞雪邦賽道) — sports coverage on beIN SPORTS 1.</desc>
     <category lang="en">Sports</category>
   </programme>
-  <programme channel="now_hk.639" start="20261001075500 +0800" stop="20261001092500 +0800">
-    <title lang="en">環馬來西亞單車賽2026 -第4站</title>
-    <desc lang="en">環馬來西亞單車賽2026 -第4站 — sports coverage on beIN SPORTS 2.</desc>
-    <category lang="en">Sports</category>
-  </programme>
-  <programme channel="now_hk.639" start="20261001092500 +0800" stop="20261001093500 +0800">
-    <title lang="en">德甲經典賽事 -多蒙特 對 奧格斯堡 - 2018/19</title>
-    <desc lang="en">德甲經典賽事 -多蒙特 對 奧格斯堡 - 2018/19 — sports coverage on beIN SPORTS 2.</desc>
-    <category lang="en">Sports</category>
-  </programme>
   <programme channel="now_hk.639" start="20261001093500 +0800" stop="20261001103500 +0800">
     <title lang="en">世界馬術錦標賽2026 -傷健策騎盛裝舞步賽</title>
     <desc lang="en">世界馬術錦標賽2026 -傷健策騎盛裝舞步賽 — sports coverage on beIN SPORTS 2.</desc>
@@ -74236,31 +74141,6 @@
     <title lang="en">板式網球超級聯賽2026 -德國站第2天賽事6[直播]</title>
     <desc lang="en">板式網球超級聯賽2026 -德國站第2天賽事6[直播] — sports coverage on beIN SPORTS 2.</desc>
     <category lang="en">Sports</category>
-  </programme>
-  <programme channel="now_hk.640" start="20261001080000 +0800" stop="20261001084000 +0800">
-    <title lang="en">告別卡斯美路 第1集</title>
-    <desc lang="en">告別卡斯美路 第1集 on 曼聯電視頻道.</desc>
-    <category lang="en">Entertainment</category>
-  </programme>
-  <programme channel="now_hk.640" start="20261001084000 +0800" stop="20261001090000 +0800">
-    <title lang="en">紅魔全入球 第55集 -卡斯美路</title>
-    <desc lang="en">紅魔全入球 第55集 -卡斯美路 on 曼聯電視頻道.</desc>
-    <category lang="en">Entertainment</category>
-  </programme>
-  <programme channel="now_hk.640" start="20261001090000 +0800" stop="20261001093000 +0800">
-    <title lang="en">紅魔多媒體 第196集 -卡靈頓內幕訪談: 阿米什馬內克與麥莊遜</title>
-    <desc lang="en">紅魔多媒體 第196集 -卡靈頓內幕訪談: 阿米什馬內克與麥莊遜 on 曼聯電視頻道.</desc>
-    <category lang="en">Entertainment</category>
-  </programme>
-  <programme channel="now_hk.640" start="20261001093000 +0800" stop="20261001094500 +0800">
-    <title lang="en">生活一天 第1集 -施蓮比薛</title>
-    <desc lang="en">生活一天 第1集 -施蓮比薛 on 曼聯電視頻道.</desc>
-    <category lang="en">Entertainment</category>
-  </programme>
-  <programme channel="now_hk.640" start="20261001094500 +0800" stop="20261001100000 +0800">
-    <title lang="en">球員焦點 第36集 -朗尼: 獨家專訪</title>
-    <desc lang="en">球員焦點 第36集 -朗尼: 獨家專訪 on 曼聯電視頻道.</desc>
-    <category lang="en">Entertainment</category>
   </programme>
   <programme channel="now_hk.640" start="20261001100000 +0800" stop="20261001103000 +0800">
     <title lang="en">英超精華 第5集 -富咸 對 曼聯</title>
@@ -75437,11 +75317,6 @@
     <desc lang="en">曼聯資料庫 第1949集 on 曼聯電視頻道.</desc>
     <category lang="en">Entertainment</category>
   </programme>
-  <programme channel="now_hk.641" start="20261001080000 +0800" stop="20261001100000 +0800">
-    <title lang="en">請留意下場播映賽事</title>
-    <desc lang="en">請留意下場播映賽事 on Now Sports 641.</desc>
-    <category lang="en">Entertainment</category>
-  </programme>
   <programme channel="now_hk.641" start="20261001100000 +0800" stop="20261001120000 +0800">
     <title lang="en">請留意下場播映賽事</title>
     <desc lang="en">請留意下場播映賽事 on Now Sports 641.</desc>
@@ -75852,16 +75727,6 @@
     <desc lang="en">請留意下場播映賽事 on Now Sports 641.</desc>
     <category lang="en">Entertainment</category>
   </programme>
-  <programme channel="now_hk.642" start="20261001080000 +0800" stop="20261001083000 +0800">
-    <title lang="en">NBA故事集 -羅拔荷利</title>
-    <desc lang="en">NBA故事集 -羅拔荷利 on NBA TV.</desc>
-    <category lang="en">Entertainment</category>
-  </programme>
-  <programme channel="now_hk.642" start="20261001083000 +0800" stop="20261001090000 +0800">
-    <title lang="en">拿殊與魯域斯基 -籃球友情</title>
-    <desc lang="en">拿殊與魯域斯基 -籃球友情 on NBA TV.</desc>
-    <category lang="en">Entertainment</category>
-  </programme>
   <programme channel="now_hk.642" start="20261001090000 +0800" stop="20261001110000 +0800">
     <title lang="en">籃球聯盟[直播]</title>
     <desc lang="en">籃球聯盟[直播] on NBA TV.</desc>
@@ -76161,11 +76026,6 @@
     <title lang="en">籃球聯盟 -媒體日特輯</title>
     <desc lang="en">籃球聯盟 -媒體日特輯 on NBA TV.</desc>
     <category lang="en">Entertainment</category>
-  </programme>
-  <programme channel="now_hk.643" start="20261001080000 +0800" stop="20261001100000 +0800">
-    <title lang="en">女子歐洲聯賽冠軍盃 第10集 -羅馬 對 巴塞隆拿 (比賽日2)</title>
-    <desc lang="en">女子歐洲聯賽冠軍盃 第10集 -羅馬 對 巴塞隆拿 (比賽日2) — sports coverage on beIN SPORTS 3.</desc>
-    <category lang="en">Sports</category>
   </programme>
   <programme channel="now_hk.643" start="20261001100000 +0800" stop="20261001120000 +0800">
     <title lang="en">女子歐洲聯賽冠軍盃 第12集 -巴黎會 對 阿仙奴 (比賽日2)</title>
@@ -77462,11 +77322,6 @@
     <desc lang="en">請留意下場播映賽事 — sports coverage on beIN SPORTS 6.</desc>
     <category lang="en">Sports</category>
   </programme>
-  <programme channel="now_hk.647" start="20261001080000 +0800" stop="20261001100000 +0800">
-    <title lang="en">請留意下場播映賽事</title>
-    <desc lang="en">請留意下場播映賽事 on Now Sports 647.</desc>
-    <category lang="en">Entertainment</category>
-  </programme>
   <programme channel="now_hk.647" start="20261001100000 +0800" stop="20261001120000 +0800">
     <title lang="en">請留意下場播映賽事</title>
     <desc lang="en">請留意下場播映賽事 on Now Sports 647.</desc>
@@ -77860,11 +77715,6 @@
   <programme channel="now_hk.647" start="20261007220000 +0800" stop="20261008090000 +0800">
     <title lang="en">請留意下場播映賽事</title>
     <desc lang="en">請留意下場播映賽事 on Now Sports 647.</desc>
-    <category lang="en">Entertainment</category>
-  </programme>
-  <programme channel="now_hk.651" start="20261001080000 +0800" stop="20261001100000 +0800">
-    <title lang="en">請留意下場播映賽事</title>
-    <desc lang="en">請留意下場播映賽事 on Now Sports 651.</desc>
     <category lang="en">Entertainment</category>
   </programme>
   <programme channel="now_hk.651" start="20261001100000 +0800" stop="20261001120000 +0800">
@@ -78262,11 +78112,6 @@
     <desc lang="en">請留意下場播映賽事 on Now Sports 651.</desc>
     <category lang="en">Entertainment</category>
   </programme>
-  <programme channel="now_hk.652" start="20261001080000 +0800" stop="20261001100000 +0800">
-    <title lang="en">請留意下場播映賽事</title>
-    <desc lang="en">請留意下場播映賽事 on Now Sports 652.</desc>
-    <category lang="en">Entertainment</category>
-  </programme>
   <programme channel="now_hk.652" start="20261001100000 +0800" stop="20261001120000 +0800">
     <title lang="en">請留意下場播映賽事</title>
     <desc lang="en">請留意下場播映賽事 on Now Sports 652.</desc>
@@ -78660,16 +78505,6 @@
   <programme channel="now_hk.652" start="20261007220000 +0800" stop="20261008090000 +0800">
     <title lang="en">請留意下場播映賽事</title>
     <desc lang="en">請留意下場播映賽事 on Now Sports 652.</desc>
-    <category lang="en">Entertainment</category>
-  </programme>
-  <programme channel="now_hk.668" start="20261001070000 +0800" stop="20261001082500 +0800">
-    <title lang="en">賽馬預測 -第7集</title>
-    <desc lang="en">賽馬預測 -第7集 on Now668.</desc>
-    <category lang="en">Entertainment</category>
-  </programme>
-  <programme channel="now_hk.668" start="20261001082500 +0800" stop="20261001091000 +0800">
-    <title lang="en">賽事重溫 -第6集</title>
-    <desc lang="en">賽事重溫 -第6集 on Now668.</desc>
     <category lang="en">Entertainment</category>
   </programme>
   <programme channel="now_hk.668" start="20261001091000 +0800" stop="20261001103500 +0800">
@@ -79446,26 +79281,6 @@
     <title lang="en">賽事重溫 -第9集</title>
     <desc lang="en">賽事重溫 -第9集 on Now668.</desc>
     <category lang="en">Entertainment</category>
-  </programme>
-  <programme channel="now_hk.674" start="20261001074200 +0800" stop="20261001080200 +0800">
-    <title lang="en">MLC 2026 -Best of MLC, EP 1</title>
-    <desc lang="en">MLC 2026 -Best of MLC, EP 1 on Cricbuzz.</desc>
-    <category lang="en">Entertainment</category>
-  </programme>
-  <programme channel="now_hk.674" start="20261001080200 +0800" stop="20261001082500 +0800">
-    <title lang="en">Asia Cup 2025 -Highlights: Final: IND vs PAK</title>
-    <desc lang="en">Asia Cup 2025 -Highlights: Final: IND vs PAK — sports coverage on Cricbuzz.</desc>
-    <category lang="en">Sports</category>
-  </programme>
-  <programme channel="now_hk.674" start="20261001082500 +0800" stop="20261001085900 +0800">
-    <title lang="en">West Indies tour of India, 2026 -Cricbuzz Live</title>
-    <desc lang="en">West Indies tour of India, 2026 -Cricbuzz Live on Cricbuzz.</desc>
-    <category lang="en">Entertainment</category>
-  </programme>
-  <programme channel="now_hk.674" start="20261001085900 +0800" stop="20261001093300 +0800">
-    <title lang="en">West Indies tour of India, 2026 -Highlights: IND vs WI, 2nd ODI</title>
-    <desc lang="en">West Indies tour of India, 2026 -Highlights: IND vs WI, 2nd ODI — sports coverage on Cricbuzz.</desc>
-    <category lang="en">Sports</category>
   </programme>
   <programme channel="now_hk.674" start="20261001093300 +0800" stop="20261001100700 +0800">
     <title lang="en">England tour of Sri Lanka, 2026 -Highlights: ENG vs SL, 3rd ODI</title>
@@ -80817,11 +80632,6 @@
     <desc lang="en">West Indies tour of India, 2026 -Highlights: IND vs WI, 1st T20I — sports coverage on Cricbuzz.</desc>
     <category lang="en">Sports</category>
   </programme>
-  <programme channel="now_hk.679" start="20261001075000 +0800" stop="20261001095000 +0800">
-    <title lang="en">SANZAAR International Tour Serie -Australia v South Africa</title>
-    <desc lang="en">SANZAAR International Tour Serie -Australia v South Africa — sports coverage on Premier Sports.</desc>
-    <category lang="en">Sports</category>
-  </programme>
   <programme channel="now_hk.679" start="20261001095000 +0800" stop="20261001113500 +0800">
     <title lang="en">Gallagher Premiership -Northampton v Newcastle</title>
     <desc lang="en">Gallagher Premiership -Northampton v Newcastle — sports coverage on Premier Sports.</desc>
@@ -81720,11 +81530,6 @@
   <programme channel="now_hk.680" start="20261007200000 +0800" stop="20261008070000 +0800">
     <title lang="en">請留意下場播映賽事</title>
     <desc lang="en">請留意下場播映賽事 on Now Sports Plus.</desc>
-    <category lang="en">Entertainment</category>
-  </programme>
-  <programme channel="now_hk.683" start="20261001070000 +0800" stop="20261001100000 +0800">
-    <title lang="en">LPGA 2026 阿肯色女子高爾夫球錦標賽 -第3天</title>
-    <desc lang="en">LPGA 2026 阿肯色女子高爾夫球錦標賽 -第3天 on Now Golf 2.</desc>
     <category lang="en">Entertainment</category>
   </programme>
   <programme channel="now_hk.683" start="20261001100000 +0800" stop="20261001150000 +0800">

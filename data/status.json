@@ -1,11 +1,11 @@
 {
   "astro": {
     "status": "ok",
-    "records": 2290
+    "records": 2291
   },
   "now_hk": {
     "status": "ok",
-    "records": 4131
+    "records": 4083
   },
   "allente_se": {
     "status": "ok",
@@ -18,11 +18,10 @@
     "fallback": "previous_snapshot"
   },
   "ee_uk": {
-    "status": "ok",
+    "status": "stale",
     "records": 6850,
-    "notes": [
-      "tvguide.co.uk 采集 6685 条（6685 去重），其中有图 6654 条。"
-    ]
+    "message": "HTTPSConnectionPool(host='api-2.tvguide.co.uk', port=443): Read timed out. (read timeout=30)",
+    "fallback": "previous_snapshot"
   },
   "sky_de": {
     "status": "ok",
@@ -46,7 +45,7 @@
   },
   "canalplus_fr": {
     "status": "ok",
-    "records": 117,
+    "records": 125,
     "notes": [
       "Canal+ 官方 API 不可用（403 rate limited: https://hodor.canalplus.pro/api/v2/mycanal/authenticate.json/webapp/6.0?experiments=beta-test-one-tv-guide:control），回退到 epg.pw"
     ]
@@ -62,10 +61,10 @@
   "xmltv": {
     "status": "ok",
     "channels": 165,
-    "programmes": 17410,
+    "programmes": 17371,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-10-01T00:32:06Z",
-  "total_records": 17410
+  "generated_at": "2026-10-01T02:35:53Z",
+  "total_records": 17371
 }
