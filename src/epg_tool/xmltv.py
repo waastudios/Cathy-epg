@@ -193,8 +193,39 @@ def write_xmltv(records: Iterable[Programme], xml_path: Path, gzip_path: Path) -
     with xml_path.open("w", encoding="utf-8", newline="\n") as handle:
         handle.write('<?xml version="1.0" encoding="UTF-8" ?>\n')
         handle.write(ET.tostring(root, encoding="unicode"))
-    with xml_path.open("rb") as source, gzip_path.open("wb") as destination:
-        with gzip.GzipFile(filename="epg.xml", mode="wb", fileobj=destination, mtime=0) as compressed:
-            while chunk := source.read(1024 * 1024):
-                compressed.write(chunk)
+    _write_gzip_verified(xml_path, gzip_path)
     return len(channels), len(programmes)
+
+
+def _write_gzip_verified(xml_path: Path, gzip_path: Path) -> None:
+    """将 XML 压缩为 .gz，写入完成前做合法性校验。
+
+    防坏包三件套：
+    1. XML 为空或不存在直接抛异常，严禁生成空压缩包；
+    2. 先写临时文件，校验通过后再原子替换目标文件；
+    3. 校验 .gz 可正常解压且解压内容与源 XML 逐字节一致。
+    任何一步失败都抛异常，调用方不得提交损坏文件。
+    """
+    if not xml_path.is_file():
+        raise ValueError(f"XML 源文件不存在，拒绝生成 gzip：{xml_path}")
+    xml_bytes = xml_path.read_bytes()
+    if not xml_bytes:
+        raise ValueError(f"XML 源文件为空，拒绝生成 gzip：{xml_path}")
+    tmp_path = gzip_path.with_suffix(gzip_path.suffix + ".tmp")
+    try:
+        with tmp_path.open("wb") as raw:
+            # mtime=0：确定性输出，同一内容每次生成字节一致。
+            with gzip.GzipFile(filename="epg.xml", mode="wb", fileobj=raw, mtime=0) as f:
+                f.write(xml_bytes)
+                f.flush()
+        # 校验：可解压且内容与源一致。
+        with gzip.open(tmp_path, "rb") as f:
+            roundtrip = f.read()
+        if roundtrip != xml_bytes:
+            raise ValueError("gzip 回读校验失败：解压内容与源 XML 不一致")
+        if tmp_path.stat().st_size == 0:
+            raise ValueError("生成的 gzip 文件为 0 字节")
+        tmp_path.replace(gzip_path)
+    except Exception:
+        tmp_path.unlink(missing_ok=True)
+        raise

@@ -1,0 +1,4 @@
+# data/epg.xml.gz 必须作为普通 Git 二进制文件直接提交，
+# 严禁接入 Git LFS（否则 raw.githubusercontent.com 只返回文本指针，
+# 播放器下载后 gzip 解码失败）。
+data/epg.xml.gz -text -diff -merge
