@@ -12,6 +12,7 @@ import xml.etree.ElementTree as ET
 from typing import Iterable
 
 from .models import Programme
+from .richmeta import build_description, infer_category
 
 
 # XMLTV 输出统一使用的时区：北京时间。NanoTV 经实测不解析时间中的时区偏移
@@ -152,15 +153,32 @@ def write_xmltv(records: Iterable[Programme], xml_path: Path, gzip_path: Path) -
         if programme.end_at:
             attributes["stop"] = _xmltv_timestamp(programme.end_at)
         item = ET.SubElement(root, "programme", attributes)
-        # 节点顺序与 EPGShare 规范对齐：title -> desc -> icon。
-        # 标题统一英文输出（采集流水线已做翻译），补 lang 属性。
+        # 子节点严格顺序（对齐 EPGShare / XMLTV DTD）：
+        # title -> sub-title -> desc -> category -> icon -> episode-num -> rating。
+        # 严禁乱序；所有文本标签统一 lang="en"。
         title_el = ET.SubElement(item, "title", {"lang": "en"})
         # 源站/翻译接口（如 Google 翻译）可能返回 HTML 实体（&#39; 之类）：
         # 先解一次再交由 ElementTree 统一转义，避免出现 &amp;#39; 双重转义。
         title_el.text = html.unescape(programme.title)
-        # desc 即便为空也写入占位，否则 TiviMate 等播放器不渲染详情背景图面板。
+        # 副标题（上游有则输出）。
+        sub_title = getattr(programme, "sub_title", None)
+        if sub_title and sub_title.strip():
+            sub_el = ET.SubElement(item, "sub-title", {"lang": "en"})
+            sub_el.text = html.unescape(sub_title.strip())
+        # 简介：有上游简介用之，否则生成语义化基础描述；
+        # 严禁输出 "-" 占位符（播放器会因此折叠海报面板）。
+        category = getattr(programme, "category", None) or infer_category(
+            programme.channel_name, programme.title, programme.provider
+        )
         desc_el = ET.SubElement(item, "desc", {"lang": "en"})
-        desc_el.text = "-"
+        desc_el.text = build_description(
+            html.unescape(programme.title),
+            programme.channel_name,
+            category,
+            getattr(programme, "description", None),
+        )
+        # 分类标签。
+        ET.SubElement(item, "category", {"lang": "en"}).text = category
         if programme.image_url:
             # NanoTV template-compatible programme-level poster reference.
             # programme 下不输出 <url>：NanoTV 作者确认其不需要，保持与 epgshare01 一致。

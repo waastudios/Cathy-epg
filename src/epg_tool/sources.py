@@ -946,6 +946,9 @@ def collect_tvguide_uk(days: int = 7, pause_seconds: float = 0.25) -> list[Progr
                     if isinstance(duration, (int, float)) and duration > 0:
                         end_at = (start + timedelta(minutes=duration)).isoformat()
                     image_url = (item.get("image_url") or "").strip() or None
+                    # tvguide 的 type 字段：'movie' -> Movie 分类，其余走标题/频道推断。
+                    item_type = (item.get("type") or "").strip().lower()
+                    item_category = "Movie" if item_type == "movie" else None
                     records.append(
                         Programme(
                             provider="ee_uk",
@@ -959,6 +962,7 @@ def collect_tvguide_uk(days: int = 7, pause_seconds: float = 0.25) -> list[Progr
                             end_at=end_at,
                             image_url=image_url,
                             image_source_url=TVGUIDE_UK_GUIDE if image_url else None,
+                            category=item_category,
                             source_url=TVGUIDE_UK_GUIDE,
                             retrieved_at=retrieved_at,
                         )

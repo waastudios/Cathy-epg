@@ -28,6 +28,13 @@ class Programme:
     image_url: str | None = None
     # TVGuide detail page that supplied image_url, retained for provenance.
     image_source_url: str | None = None
+    # Optional programme synopsis from the upstream source. When absent,
+    # the XMLTV writer generates a semantic fallback (never a "-" placeholder).
+    description: str | None = None
+    # Optional programme category/genre (e.g. Sports, Movie, News).
+    category: str | None = None
+    # Optional sub-title / episode title.
+    sub_title: str | None = None
 
     def to_dict(self) -> dict[str, str | None]:
         return asdict(self)
