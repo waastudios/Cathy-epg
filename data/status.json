@@ -1,15 +1,17 @@
 {
   "astro": {
     "status": "ok",
-    "records": 2402
+    "records": 2352
   },
   "now_hk": {
     "status": "ok",
-    "records": 4250
+    "records": 4213
   },
   "allente_se": {
-    "status": "ok",
-    "records": 790
+    "status": "stale",
+    "records": 790,
+    "message": "Allente 官方 EPG 响应中未找到任何预期的 V Sport 体育频道。",
+    "fallback": "previous_snapshot"
   },
   "allente_no": {
     "status": "stale",
@@ -19,34 +21,34 @@
   },
   "ee_uk": {
     "status": "ok",
-    "records": 6982,
+    "records": 7018,
     "notes": [
-      "tvguide.co.uk 采集 6811 条（6811 去重），其中有图 6790 条。"
+      "tvguide.co.uk 采集 6862 条（6862 去重），其中有图 6841 条。"
     ]
   },
   "sky_de": {
     "status": "ok",
-    "records": 1376
+    "records": 1394
   },
   "digi4k_ro": {
     "status": "ok",
-    "records": 137
+    "records": 116
   },
   "sbb_rs": {
     "status": "ok",
-    "records": 374
+    "records": 285
   },
   "virgin_uk": {
     "status": "ok",
-    "records": 69
+    "records": 68
   },
   "player_pl": {
     "status": "ok",
-    "records": 639
+    "records": 641
   },
   "canalplus_fr": {
     "status": "ok",
-    "records": 129,
+    "records": 130,
     "notes": [
       "Canal+ 官方 API 不可用（403 rate limited: https://hodor.canalplus.pro/api/v2/mycanal/authenticate.json/webapp/6.0?experiments=beta-test-one-tv-guide:control），回退到 epg.pw"
     ]
@@ -62,10 +64,10 @@
   "xmltv": {
     "status": "ok",
     "channels": 166,
-    "programmes": 17754,
+    "programmes": 17613,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-10-03T22:02:44Z",
-  "total_records": 17754
+  "generated_at": "2026-10-04T22:12:57Z",
+  "total_records": 17613
 }
