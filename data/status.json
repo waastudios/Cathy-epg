@@ -1,48 +1,46 @@
 {
   "astro": {
     "status": "ok",
-    "records": 2350
+    "records": 2235
   },
   "now_hk": {
     "status": "ok",
-    "records": 3962
+    "records": 4148
   },
   "allente_se": {
     "status": "ok",
-    "records": 781
+    "records": 791
   },
   "allente_no": {
-    "status": "stale",
-    "records": 566,
-    "message": "Allente Norway 官方 EPG 响应中未找到预期的 TV Norge、REX、FEM、Eurosport Norge 或 Eurosport 1。",
-    "fallback": "previous_snapshot"
+    "status": "ok",
+    "records": 706
   },
   "ee_uk": {
     "status": "ok",
-    "records": 7044,
+    "records": 7043,
     "notes": [
-      "tvguide.co.uk 采集 6900 条（6900 去重），其中有图 6879 条。"
+      "tvguide.co.uk 采集 6900 条（6900 去重），其中有图 6878 条。"
     ]
   },
   "sky_de": {
     "status": "ok",
-    "records": 1391
+    "records": 1379
   },
   "digi4k_ro": {
     "status": "ok",
-    "records": 116
+    "records": 128
   },
   "sbb_rs": {
     "status": "ok",
-    "records": 387
+    "records": 380
   },
   "virgin_uk": {
     "status": "ok",
-    "records": 68
+    "records": 70
   },
   "player_pl": {
     "status": "ok",
-    "records": 641
+    "records": 623
   },
   "canalplus_fr": {
     "status": "ok",
@@ -62,10 +60,10 @@
   "xmltv": {
     "status": "ok",
     "channels": 166,
-    "programmes": 17470,
+    "programmes": 17667,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-10-05T08:53:58Z",
-  "total_records": 17470
+  "generated_at": "2026-10-06T00:36:12Z",
+  "total_records": 17667
 }
