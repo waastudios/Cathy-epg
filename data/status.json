@@ -1,50 +1,54 @@
 {
   "astro": {
     "status": "ok",
-    "records": 2235
+    "records": 2228
   },
   "now_hk": {
     "status": "ok",
-    "records": 4148
+    "records": 4208
   },
   "allente_se": {
-    "status": "ok",
-    "records": 791
+    "status": "stale",
+    "records": 791,
+    "message": "Allente 官方 EPG 响应中未找到任何预期的 V Sport 体育频道。",
+    "fallback": "previous_snapshot"
   },
   "allente_no": {
-    "status": "ok",
-    "records": 706
+    "status": "stale",
+    "records": 706,
+    "message": "Allente Norway 官方 EPG 响应中未找到预期的 TV Norge、REX、FEM、Eurosport Norge 或 Eurosport 1。",
+    "fallback": "previous_snapshot"
   },
   "ee_uk": {
     "status": "ok",
-    "records": 7043,
+    "records": 7038,
     "notes": [
-      "tvguide.co.uk 采集 6900 条（6900 去重），其中有图 6878 条。"
+      "tvguide.co.uk 采集 6893 条（6893 去重），其中有图 6873 条。"
     ]
   },
   "sky_de": {
     "status": "ok",
-    "records": 1379
+    "records": 1387
   },
   "digi4k_ro": {
     "status": "ok",
-    "records": 128
+    "records": 108
   },
   "sbb_rs": {
     "status": "ok",
-    "records": 380
+    "records": 270
   },
   "virgin_uk": {
     "status": "ok",
-    "records": 70
+    "records": 68
   },
   "player_pl": {
     "status": "ok",
-    "records": 623
+    "records": 607
   },
   "canalplus_fr": {
     "status": "ok",
-    "records": 124,
+    "records": 127,
     "notes": [
       "Canal+ 官方 API 不可用（403 rate limited: https://hodor.canalplus.pro/api/v2/mycanal/authenticate.json/webapp/6.0?experiments=beta-test-one-tv-guide:control），回退到 epg.pw"
     ]
@@ -60,10 +64,10 @@
   "xmltv": {
     "status": "ok",
     "channels": 166,
-    "programmes": 17667,
+    "programmes": 17578,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-10-06T00:36:12Z",
-  "total_records": 17667
+  "generated_at": "2026-10-06T23:00:36Z",
+  "total_records": 17578
 }
