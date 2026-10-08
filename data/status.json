@@ -1,11 +1,11 @@
 {
   "astro": {
     "status": "ok",
-    "records": 2279
+    "records": 1990
   },
   "now_hk": {
     "status": "ok",
-    "records": 4183
+    "records": 4182
   },
   "allente_se": {
     "status": "stale",
@@ -21,34 +21,34 @@
   },
   "ee_uk": {
     "status": "ok",
-    "records": 7030,
+    "records": 7042,
     "notes": [
-      "tvguide.co.uk 采集 6854 条（6854 去重），其中有图 6831 条。"
+      "tvguide.co.uk 采集 6841 条（6841 去重），其中有图 6824 条。"
     ]
   },
   "sky_de": {
     "status": "ok",
-    "records": 1409
+    "records": 1426
   },
   "digi4k_ro": {
     "status": "ok",
-    "records": 123
+    "records": 121
   },
   "sbb_rs": {
     "status": "ok",
-    "records": 260
+    "records": 258
   },
   "virgin_uk": {
     "status": "ok",
-    "records": 74
+    "records": 78
   },
   "player_pl": {
     "status": "ok",
-    "records": 605
+    "records": 604
   },
   "canalplus_fr": {
     "status": "ok",
-    "records": 121,
+    "records": 129,
     "notes": [
       "Canal+ 官方 API 不可用（403 rate limited: https://hodor.canalplus.pro/api/v2/mycanal/authenticate.json/webapp/6.0?experiments=beta-test-one-tv-guide:control），回退到 epg.pw"
     ]
@@ -64,10 +64,10 @@
   "xmltv": {
     "status": "ok",
     "channels": 166,
-    "programmes": 17621,
+    "programmes": 17367,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-10-07T23:31:06Z",
-  "total_records": 17621
+  "generated_at": "2026-10-08T23:52:00Z",
+  "total_records": 17367
 }
