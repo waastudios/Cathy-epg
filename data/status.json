@@ -1,11 +1,11 @@
 {
   "astro": {
     "status": "ok",
-    "records": 2548
+    "records": 2500
   },
   "now_hk": {
     "status": "ok",
-    "records": 4194
+    "records": 4181
   },
   "allente_se": {
     "status": "stale",
@@ -20,35 +20,34 @@
     "fallback": "previous_snapshot"
   },
   "ee_uk": {
-    "status": "ok",
+    "status": "stale",
     "records": 7075,
-    "notes": [
-      "tvguide.co.uk 采集 6869 条（6869 去重），其中有图 6835 条。"
-    ]
+    "message": "HTTPSConnectionPool(host='api-2.tvguide.co.uk', port=443): Read timed out. (read timeout=30)",
+    "fallback": "previous_snapshot"
   },
   "sky_de": {
     "status": "ok",
-    "records": 1418
+    "records": 1408
   },
   "digi4k_ro": {
     "status": "ok",
-    "records": 122
+    "records": 107
   },
   "sbb_rs": {
     "status": "ok",
-    "records": 254
+    "records": 248
   },
   "virgin_uk": {
     "status": "ok",
-    "records": 80
+    "records": 81
   },
   "player_pl": {
     "status": "ok",
-    "records": 600
+    "records": 592
   },
   "canalplus_fr": {
     "status": "ok",
-    "records": 134,
+    "records": 137,
     "notes": [
       "Canal+ 官方 API 不可用（403 rate limited: https://hodor.canalplus.pro/api/v2/mycanal/authenticate.json/webapp/6.0?experiments=beta-test-one-tv-guide:control），回退到 epg.pw"
     ]
@@ -64,10 +63,10 @@
   "xmltv": {
     "status": "ok",
     "channels": 166,
-    "programmes": 17962,
+    "programmes": 17866,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-10-09T23:06:52Z",
-  "total_records": 17962
+  "generated_at": "2026-10-10T22:13:19Z",
+  "total_records": 17866
 }
