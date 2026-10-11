@@ -17,6 +17,7 @@ from bs4 import BeautifulSoup
 import requests
 
 from .models import Programme, utc_now_iso
+from .f1_titles import adapt_f1_title
 from .translation_fallback import TitleUntranslatable, translate_programme_title
 
 # Per-run collector notes (renamed channels, skipped untranslatable programmes,
@@ -309,13 +310,18 @@ _SKY_DE_UNTRANSLATED = re.compile(
 def _translate_magenta_tv_sky_de_title(title: str) -> str | None:
     """将已收录 Sky Germany 节目标题稳定转换为英文。
 
-    优先使用随代码版本控制的精确映射；对未出现过但仅含受控体育词汇的标题
-    使用固定替换。返回 None 表示标题未被受控规则覆盖，调用方将转入
-    翻译记忆／在线翻译。
+    F1 频道标题优先走专属适配（``f1_titles.adapt_f1_title``）：F1/F2/F3/F1 Academy
+    的德语标题句式固定，在线翻译对同一句式会产出多种不一致版本（"Azerbaijan GP"
+    vs "GP Azerbaijan"、"1. Race" vs "1st Race"），专属适配保证确定性输出。
+    其余标题沿用：精确映射 -> 受控固定替换 -> 翻译记忆／在线翻译。
+    返回 None 表示标题未被受控规则覆盖，调用方将转入翻译记忆／在线翻译。
     """
     normalised = unicodedata.normalize("NFC", re.sub(r"\s+", " ", title.strip()))
     if not normalised:
         return None
+    f1_adapted = adapt_f1_title(normalised)
+    if f1_adapted:
+        return f1_adapted
     translated = SKY_DE_TITLE_TRANSLATIONS.get(normalised)
     if translated:
         return translated
