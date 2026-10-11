@@ -1,15 +1,17 @@
 {
   "astro": {
     "status": "ok",
-    "records": 2501
+    "records": 2373
   },
   "now_hk": {
     "status": "ok",
-    "records": 3899
+    "records": 4166
   },
   "allente_se": {
-    "status": "ok",
-    "records": 783
+    "status": "stale",
+    "records": 783,
+    "message": "Allente 官方 EPG 响应中未找到任何预期的 V Sport 体育频道。",
+    "fallback": "previous_snapshot"
   },
   "allente_no": {
     "status": "stale",
@@ -19,22 +21,22 @@
   },
   "ee_uk": {
     "status": "ok",
-    "records": 7054,
+    "records": 7051,
     "notes": [
       "tvguide.co.uk 采集 6840 条（6840 去重），其中有图 6813 条。"
     ]
   },
   "sky_de": {
     "status": "ok",
-    "records": 1407
+    "records": 1400
   },
   "digi4k_ro": {
     "status": "ok",
-    "records": 121
+    "records": 106
   },
   "sbb_rs": {
     "status": "ok",
-    "records": 347
+    "records": 249
   },
   "virgin_uk": {
     "status": "ok",
@@ -42,7 +44,7 @@
   },
   "player_pl": {
     "status": "ok",
-    "records": 592
+    "records": 591
   },
   "canalplus_fr": {
     "status": "ok",
@@ -61,11 +63,11 @@
   },
   "xmltv": {
     "status": "ok",
-    "channels": 166,
-    "programmes": 17673,
+    "channels": 167,
+    "programmes": 17688,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-10-11T09:41:59Z",
-  "total_records": 17673
+  "generated_at": "2026-10-11T22:42:51Z",
+  "total_records": 17688
 }
