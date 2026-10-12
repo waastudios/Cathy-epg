@@ -20,13 +20,13 @@ from .sources import (
     collect_allente_v_sport,
     collect_astro,
     collect_canalplus_fr,
-    collect_canalplus_pl_4k,
     collect_digi4k,
     collect_ee_uk_with_tvguide,
     collect_magenta_tv_sky_de,
     collect_now_hk,
     collect_player_pl,
     collect_sbb_eurosport,
+    collect_telus_tvplus,
     collect_virgin_uk_ultra,
     drain_notes,
 )
@@ -78,8 +78,8 @@ def _collect(args: argparse.Namespace) -> int:
         ("player_pl", lambda: collect_player_pl(args.days)),
         # 法国 Canal+ 官方 API：CANAL+ 主频道与 CANAL+ FOOT，法语标题译为英文。
         ("canalplus_fr", lambda: collect_canalplus_fr(args.days)),
-        # 波兰 Canal+ 官方 API：CANAL+ 4K ULTRA HD，波兰语标题译为英文。
-        ("canalplus_pl_4k", lambda: collect_canalplus_pl_4k(args.days)),
+        # Telus TV+（Optik TV）官方指南：Love Nature 与 Travelxp 4K，标题本身为英文。
+        ("telus_tvplus", lambda: collect_telus_tvplus(args.days)),
     )
     for provider, collector in collectors:
         try:
@@ -118,7 +118,7 @@ def _collect(args: argparse.Namespace) -> int:
             "virgin_uk": ZoneInfo("Europe/London"),
             "player_pl": ZoneInfo("Europe/Warsaw"),
             "canalplus_fr": ZoneInfo("Europe/Paris"),
-            "canalplus_pl_4k": ZoneInfo("Europe/Warsaw"),
+            "telus_tvplus": ZoneInfo("UTC"),
         }
 
         def local_date(row: Programme, zone: ZoneInfo):

@@ -60,7 +60,6 @@ _SBB_XMLTV_IDS = {
     "84": "eurosport.1",
     "85": "eurosport.2",
     "1082": "eurosport.4k",
-    "2143": "travelxp.eu",
 }
 _CANALPLUS_FR_XMLTV_IDS = {
     "301": "canal+.fr",
@@ -110,8 +109,8 @@ def _xmltv_channel_id(record: Programme) -> str:
         configured_id = _PLAYER_PL_XMLTV_IDS.get(record.channel_id)
         if configured_id:
             return configured_id
-    if record.provider == "canalplus_pl_4k":
-        # channel_id 即用户指定的 tvg-id（canal+4k.pl）
+    if record.provider == "telus_tvplus":
+        # channel_id 即采集器配置的 tvg-id（telus.713 / telus.716）
         return record.channel_id
     return record.provider if not record.channel_number else f"{record.provider}.{record.channel_number}"
 

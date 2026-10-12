@@ -41,7 +41,6 @@ SECTIONS: list[tuple[str, str, str, bool]] = [
     ("canal+.fr", "France Canal+", "🇫🇷法国 Canal+", True),
     ("foot+.fr", "France Canal+", "🇫🇷法国 Canal+", True),
     ("eurosport.", "🇷🇸 Serbia SBB", "🇷🇸塞尔维亚 SBB", True),
-    ("travelxp.eu", "🇷🇸 Serbia SBB", "🇷🇸塞尔维亚 SBB", True),
     ("digi4k_ro", "Digi 4K", "🇷🇴罗马尼亚 Digi 4K", True),
     ("allente_se.", "Allente Sweden", "🇸🇪瑞典 Allente", True),
     ("allente_no.", "Allente Norway", "🇳🇴挪威 Allente", True),
@@ -50,6 +49,7 @@ SECTIONS: list[tuple[str, str, str, bool]] = [
     ("eurosport3.pl", "🇵🇱 Poland Player.pl", "🇵🇱波兰 Player.pl", True),
     ("eurosport4.pl", "🇵🇱 Poland Player.pl", "🇵🇱波兰 Player.pl", True),
     ("ElevenSp.1", "🇵🇱 Poland Player.pl", "🇵🇱波兰 Player.pl", True),
+    ("telus.", "🇨🇦 Canada Telus TV+", "🇨🇦加拿大 Telus TV+", False),
 ]
 
 # ee_uk channel numbers that belong to the "Sky Sports" section; the rest go

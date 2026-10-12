@@ -202,7 +202,6 @@ SBB_CHANNELS: dict[str, tuple[str, str, str, str]] = {
     "84": ("Eurosport 1 HD (RS)", "121", "eurosport.1", "Eurosport 1"),
     "85": ("Eurosport 2 HD (RS)", "122", "eurosport.2", "Eurosport 2"),
     "1082": ("Eurosport 4K IPTV", "123", "eurosport.4k", "Eurosport 4K"),
-    "2143": ("Travel XP (RS)", "332", "travelxp.eu", "Travel XP"),
 }
 # Virgin Media TV Go Guide 在普通匿名页面会话中加载以下官方频道目录与 EPG 时间片。
 VIRGIN_UK_GUIDE = "https://virgintvgo.virginmedia.com/en/epg/initial"
@@ -1375,17 +1374,11 @@ def collect_sbb_eurosport(days: int = 7) -> list[Programme]:
 
         for event in events:
             source_title = str(event.get("title") or "")
-            if xmltv_id == "travelxp.eu":
-                # Travel XP (RS) 的标题已是英文，无需塞尔维亚语翻译。
-                title = source_title.strip()
-                if not title:
-                    continue
-            else:
-                try:
-                    title = translate_programme_title(source_title, "sr", _translate_sbb_eurosport_title)
-                except TitleUntranslatable:
-                    note(f"SBB {display_name} 跳过无法翻译的标题：{source_title!r}")
-                    continue
+            try:
+                title = translate_programme_title(source_title, "sr", _translate_sbb_eurosport_title)
+            except TitleUntranslatable:
+                note(f"SBB {display_name} 跳过无法翻译的标题：{source_title!r}")
+                continue
             start_value = event.get("startTime")
             end_value = event.get("endTime")
             if not (isinstance(start_value, str) and isinstance(end_value, str)):
@@ -1728,180 +1721,6 @@ def collect_canalplus_fr(days: int = 7, pause_seconds: float = 90.0) -> list[Pro
     records = _deduplicate(records)
     if not records:
         raise SourceUnavailable("法国 Canal+ 未返回节目记录。")
-    return records
-
-
-CANALPLUS_PL_AUTH_URL = (
-    "https://hodor.canalplus.pro/api/v2/mycanalint/authenticate.json/webapp/6.0"
-    "?experiments=beta-test-one-tv-guide:control"
-)
-CANALPLUS_PL_GUIDE = "https://www.canalplus.com/pl/program-tv/"
-# (官方频道 ID, 展示名, tvg-id, 频道序号)
-CANALPLUS_PL_4K_CHANNEL = ("21402", "CANAL+ 4K ULTRA HD", "canal+4k.pl", 149)
-
-
-def _collect_canalplus_pl_4k_naziemna() -> list[Programme]:
-    """从 programtv.naziemna.info 抓取的本地 JSONL 读取 Canal+ 4K 节目（官方 API 被封时的兜底）。
-
-    JSONL 由 scripts/scrape_naziemna_4k.py 生成，每行含 start/end（ISO，Europe/Warsaw）
-    与波兰语原标题。标题走三级翻译流水线译为英文。
-    """
-    from pathlib import Path as _Path
-
-    jsonl_path = _Path(__file__).resolve().parents[2] / "data" / "canalplus_pl_4k.jsonl"
-    if not jsonl_path.exists():
-        raise SourceUnavailable("naziemna.info 本地数据文件不存在。")
-    channel_id, channel_name, channel_suffix, _ = CANALPLUS_PL_4K_CHANNEL
-    zone = ZoneInfo("Europe/Warsaw")
-    retrieved_at = utc_now_iso()
-    records: list[Programme] = []
-    skipped = 0
-    for line in jsonl_path.read_text(encoding="utf-8").splitlines():
-        line = line.strip()
-        if not line:
-            continue
-        try:
-            item = json.loads(line)
-            start = datetime.fromisoformat(item["start"])
-            end = datetime.fromisoformat(item["end"])
-            title = str(item.get("title") or "").strip()
-        except (json.JSONDecodeError, KeyError, ValueError):
-            continue
-        if not title or end <= start:
-            continue
-        if start.tzinfo is None:
-            start = start.replace(tzinfo=zone)
-        if end.tzinfo is None:
-            end = end.replace(tzinfo=zone)
-        try:
-            display_title = translate_programme_title(
-                title, "pl", _translate_player_pl_title
-            )
-        except TitleUntranslatable:
-            skipped += 1
-            continue
-        records.append(
-            Programme(
-                provider="canalplus_pl_4k",
-                country="PL",
-                timezone="Europe/Warsaw",
-                channel_id=channel_suffix,
-                channel_number=channel_id,
-                channel_name=channel_name,
-                title=display_title,
-                start_at=start.isoformat(),
-                end_at=end.isoformat(),
-                source_url="https://programtv.naziemna.info/program/stacja/canalplus4kultrahd",
-                retrieved_at=retrieved_at,
-            )
-        )
-    if skipped:
-        note(f"Canal+ 4K {skipped} 档波兰语标题无法译为英文，已跳过")
-    records = _deduplicate(records)
-    if not records:
-        raise SourceUnavailable("naziemna.info 本地数据无有效节目记录。")
-    note(f"Canal+ 4K 官方 API 不可用，已切换至 naziemna.info 第三方数据（{len(records)} 档）")
-    return records
-
-
-def collect_canalplus_pl_4k(days: int = 7, pause_seconds: float = 90.0) -> list[Programme]:
-    """读取波兰 Canal+ 4K ULTRA HD 节目单：官方 API 优先，封禁时回退 naziemna.info 第三方数据。"""
-    try:
-        return _collect_canalplus_pl_4k_official(days=days, pause_seconds=pause_seconds)
-    except (SourceUnavailable, requests.exceptions.RequestException) as exc:
-        note(f"Canal+ 4K 官方 API 不可用（{exc}），尝试 naziemna.info 兜底")
-        return _collect_canalplus_pl_4k_naziemna()
-
-
-def _collect_canalplus_pl_4k_official(days: int = 7, pause_seconds: float = 90.0) -> list[Programme]:
-    """读取波兰 Canal+ 官方 EPG（CANAL+ 4K ULTRA HD），波兰语标题译为英文。
-
-    波兰区走 mycanalint 接口（与法国区 mycanal 不同）。先经 authenticate.json
-    换取新鲜 token，再拉取当日＋未来 6 天节目。官方接口频率限制极严，请求
-    间隔默认 90 秒。单个标题无法翻译只跳过该节目，不会让整个来源失败。
-    """
-    if days not in range(1, 8):
-        raise ValueError("波兰 Canal+ 4K 采集天数必须为 1–7。")
-    session = _session()
-    headers = {
-        "Accept": "application/json, text/plain, */*",
-        "Accept-Language": "pl-PL,pl;q=0.6",
-        "Origin": "https://www.canalplus.com",
-        "Referer": CANALPLUS_PL_GUIDE,
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
-    }
-    channel_id, channel_name, channel_suffix, channel_position = CANALPLUS_PL_4K_CHANNEL
-    zone = ZoneInfo("Europe/Warsaw")
-    retrieved_at = utc_now_iso()
-    records: list[Programme] = []
-    skipped = 0
-    auth = _canalplus_fr_get(session, CANALPLUS_PL_AUTH_URL, headers=headers, timeout=(5, 20))
-    token = auth.json().get("token")
-    if not token:
-        raise SourceUnavailable("波兰 Canal+ 官方认证未返回 token。")
-    time.sleep(pause_seconds)
-    for day_offset in range(days):
-        response = _canalplus_fr_get(
-            session,
-            f"https://hodor.canalplus.pro/api/v2/mycanalint/channels/{token}/{channel_id}/broadcasts/day/{day_offset}",
-            params={
-                "channelPosition": channel_position,
-                "displayAvailabilityIcons": "false",
-                "displayAccessibilityIcons": "false",
-            },
-            headers=headers,
-            timeout=(5, 20),
-        )
-        payload = response.json()
-        time_slices = payload.get("timeSlices") if isinstance(payload, dict) else None
-        if not isinstance(time_slices, list):
-            raise SourceUnavailable(f"波兰 Canal+ 4K 官方 EPG 未返回 timeSlices。")
-        for time_slice in time_slices:
-            contents = time_slice.get("contents") if isinstance(time_slice, dict) else None
-            if not isinstance(contents, list):
-                continue
-            for content in contents:
-                if not isinstance(content, dict):
-                    continue
-                title = str(content.get("title") or "").strip()
-                subtitle = str(content.get("subtitle") or "").strip()
-                start_ms = content.get("startTime")
-                end_ms = content.get("endTime")
-                if not title or not isinstance(start_ms, (int, float)) or not isinstance(end_ms, (int, float)):
-                    continue
-                start = datetime.fromtimestamp(start_ms / 1000, tz=timezone.utc).astimezone(zone)
-                end = datetime.fromtimestamp(end_ms / 1000, tz=timezone.utc).astimezone(zone)
-                if end <= start:
-                    continue
-                source_display_title = title if not subtitle or subtitle == title else f"{title} — {subtitle}"
-                try:
-                    display_title = translate_programme_title(
-                        source_display_title, "pl", _translate_player_pl_title
-                    )
-                except TitleUntranslatable:
-                    skipped += 1
-                    continue
-                records.append(
-                    Programme(
-                        provider="canalplus_pl_4k",
-                        country="PL",
-                        timezone="Europe/Warsaw",
-                        channel_id=channel_suffix,
-                        channel_number=channel_id,
-                        channel_name=channel_name,
-                        title=display_title,
-                        start_at=start.isoformat(),
-                        end_at=end.isoformat(),
-                        source_url=CANALPLUS_PL_GUIDE,
-                        retrieved_at=retrieved_at,
-                    )
-                )
-        time.sleep(pause_seconds)
-    if skipped:
-        note(f"Canal+ 4K {skipped} 档波兰语标题无法译为英文，已跳过")
-    records = _deduplicate(records)
-    if not records:
-        raise SourceUnavailable("波兰 Canal+ 4K 未返回节目记录。")
     return records
 
 
@@ -2421,4 +2240,192 @@ def collect_player_pl(days: int = 7, pause_seconds: float = 0.4) -> list[Program
     missing = [xmltv_id for _, (xmltv_id, _) in PLAYER_PL_CHANNELS.items() if xmltv_id not in published]
     if missing:
         raise SourceUnavailable(f"Player.pl 公开 EPG 未返回频道 {', '.join(missing)} 的节目条目。")
+    return records
+
+
+# Telus TV+（Optik TV）官方网页指南的公开 EPG 接口（AVS 平台）。
+# 网页版指南 https://telustvplus.com/#/guide 可匿名加载节目数据；接口需
+# restful: yes 请求头。生产环境经 Cloudflare 保护，CI 若被拦截则回退 QA 环境。
+TELUS_TVPLUS_HOSTS = (
+    "telus.prod.g.telustvplus.com",
+    "telus.qa.watchoptiktv.com",
+)
+TELUS_TVPLUS_AGL_VERSION = "T7.3"
+TELUS_TVPLUS_PLATFORM = "CHROME_FIREFOX_HTML5"
+TELUS_TVPLUS_GUIDE = "https://telustvplus.com/#/guide"
+# （Telus 官方频道号，官方频道名，tvg-id，展示名）
+TELUS_CHANNELS: tuple[tuple[str, str, str, str], ...] = (
+    ("713", "Love Nature", "telus.713", "Love Nature"),
+    ("716", "Travelxp 4K HDR", "telus.716", "Travelxp 4K"),
+)
+
+
+def _telus_tvplus_api(host: str, path: str, params: dict[str, str]) -> dict:
+    """调用 Telus TV+ AVS 接口，返回解析后的 JSON。"""
+    session = _session()
+    session.headers.update({"restful": "yes", "Accept": "application/json"})
+    url = (
+        f"https://{host}/TELUS/{TELUS_TVPLUS_AGL_VERSION}/A/en/"
+        f"{TELUS_TVPLUS_PLATFORM}/OPTIK{path}"
+    )
+    try:
+        response = session.get(url, params=params, timeout=30)
+    except requests.RequestException as exc:
+        raise SourceUnavailable(f"Telus TV+ 接口 {host} 连接失败：{exc}") from exc
+    if response.status_code in (401, 403):
+        raise SourceUnavailable(f"Telus TV+ 接口 {host} 拒绝访问（HTTP {response.status_code}）。")
+    try:
+        response.raise_for_status()
+    except requests.RequestException as exc:
+        raise SourceUnavailable(f"Telus TV+ 接口 {host} 返回 HTTP {response.status_code}。") from exc
+    try:
+        data = response.json()
+    except ValueError as exc:
+        raise SourceUnavailable(f"Telus TV+ 接口 {host} 未返回 JSON。") from exc
+    if not isinstance(data, dict) or data.get("resultCode") != "OK":
+        raise SourceUnavailable(f"Telus TV+ 接口 {host} 返回异常：{str(data)[:120]}")
+    return data
+
+
+def _telus_tvplus_find_channels(host: str) -> dict[str, dict]:
+    """在指定环境频道目录中按官方名定位目标频道，返回 {tvg-id: channel_meta}。"""
+    data = _telus_tvplus_api(
+        host, "/TRAY/LIVECHANNELS", {"orderBy": "orderId", "sortOrder": "asc"}
+    )
+    containers = (data.get("resultObj") or {}).get("containers") or []
+    by_name: dict[str, dict] = {}
+    for container in containers:
+        metadata = container.get("metadata") or {}
+        name = str(metadata.get("channelName") or "").strip()
+        if name:
+            by_name[name.lower()] = metadata
+    found: dict[str, dict] = {}
+    for number, official_name, xmltv_id, display_name in TELUS_CHANNELS:
+        metadata = by_name.get(official_name.lower())
+        if metadata is None:
+            # Travelxp 在指南中的名称可能带 HDR 后缀，做前缀匹配兜底。
+            candidates = [
+                meta for name, meta in by_name.items()
+                if name.startswith(official_name.lower().split(" hdr")[0])
+            ]
+            metadata = candidates[0] if len(candidates) == 1 else None
+        if metadata is None:
+            note(f"Telus TV+（{host}）频道目录未找到 {official_name}，已跳过该频道。")
+            continue
+        actual_number = str(metadata.get("defaultChannelNumber") or "")
+        if actual_number and actual_number != number:
+            note(f"Telus {official_name} 的频道号为 {actual_number}（配置为 {number}），仍按频道名继续采集。")
+        found[xmltv_id] = metadata
+    return found
+
+
+def collect_telus_tvplus(days: int = 7, pause_seconds: float = 1.0) -> list[Programme]:
+    """读取 Telus TV+ 官方指南中 Love Nature 与 Travelxp 4K 的节目单。
+
+    两个频道标题本身为英文，直接发布。生产环境优先；若被 Cloudflare 拦截则
+    回退 QA 环境（频道阵容为测试用，按频道名匹配）。单个频道缺失只跳过该
+    频道并记入 notes，不会让整个来源失败。
+    """
+    if days not in range(1, 8):
+        raise ValueError("Telus TV+ 采集天数必须为 1–7。")
+    channels: dict[str, dict] = {}
+    used_host = ""
+    last_error = ""
+    for host in TELUS_TVPLUS_HOSTS:
+        try:
+            channels = _telus_tvplus_find_channels(host)
+        except SourceUnavailable as exc:
+            last_error = str(exc)
+            note(f"Telus TV+（{host}）不可用：{exc}")
+            continue
+        if channels:
+            used_host = host
+            break
+        note(f"Telus TV+（{host}）未找到目标频道，尝试下一个环境。")
+    if not channels:
+        raise SourceUnavailable(f"Telus TV+ 所有环境均不可用：{last_error}")
+    if used_host != TELUS_TVPLUS_HOSTS[0]:
+        note(f"Telus TV+ 生产环境不可用，已回退至 {used_host}（测试频道阵容）。")
+
+    zone_utc = timezone.utc
+    now = datetime.now(zone_utc)
+    # 按 24 小时切片拉取，避免单次响应过大。
+    retrieved_at = utc_now_iso()
+    records: list[Programme] = []
+    channel_ids = {str(meta.get("channelId")) for meta in channels.values()}
+    for day_offset in range(days):
+        window_start = (now + timedelta(days=day_offset)).replace(
+            hour=0, minute=0, second=0, microsecond=0
+        )
+        window_end = window_start + timedelta(days=1)
+        try:
+            data = _telus_tvplus_api(
+                used_host,
+                "/TRAY/EPG",
+                {
+                    "filter_startTime": str(int(window_start.timestamp() * 1000)),
+                    "filter_endTime": str(int(window_end.timestamp() * 1000)),
+                },
+            )
+        except SourceUnavailable as exc:
+            raise SourceUnavailable(f"Telus TV+（{used_host}）EPG 拉取失败：{exc}") from exc
+        containers = (data.get("resultObj") or {}).get("containers") or []
+        for container in containers:
+            channel_id = str((container.get("metadata") or {}).get("channelId") or "")
+            if channel_id not in channel_ids:
+                continue
+            xmltv_id = next(
+                xmltv for xmltv, meta in channels.items()
+                if str(meta.get("channelId")) == channel_id
+            )
+            _, _, _, display_name = next(
+                item for item in TELUS_CHANNELS if item[2] == xmltv_id
+            )
+            for programme in container.get("containers") or []:
+                meta = programme.get("metadata") or {}
+                title = str(meta.get("title") or "").strip()
+                if not title:
+                    continue
+                try:
+                    start_ms = int(meta["airingStartTime"])
+                    end_ms = int(meta["airingEndTime"])
+                except (KeyError, TypeError, ValueError):
+                    continue
+                start = datetime.fromtimestamp(start_ms / 1000, tz=zone_utc)
+                end = datetime.fromtimestamp(end_ms / 1000, tz=zone_utc)
+                if end <= start:
+                    continue
+                sub_title = str(meta.get("episodeTitle") or "").strip() or None
+                description = str(meta.get("longDescription") or "").strip() or None
+                genres = meta.get("genres") or []
+                category = str(genres[0]).strip() if genres else None
+                image_url = str(meta.get("pictureUrl") or "").strip() or None
+                records.append(
+                    Programme(
+                        provider="telus_tvplus",
+                        country="CA",
+                        timezone="UTC",
+                        channel_id=xmltv_id,
+                        channel_number="",
+                        channel_name=display_name,
+                        title=title,
+                        start_at=start.isoformat(),
+                        end_at=end.isoformat(),
+                        source_url=TELUS_TVPLUS_GUIDE,
+                        retrieved_at=retrieved_at,
+                        image_url=image_url,
+                        description=description,
+                        category=category,
+                        sub_title=sub_title,
+                    )
+                )
+        time.sleep(pause_seconds)
+
+    records = _deduplicate(records)
+    published = {record.channel_id for record in records}
+    missing = [xmltv_id for _, _, xmltv_id, _ in TELUS_CHANNELS if xmltv_id not in published]
+    if missing:
+        note(f"Telus TV+ 未返回频道 {', '.join(missing)} 的节目条目。")
+    if not records:
+        raise SourceUnavailable("Telus TV+ 未返回有效节目记录。")
     return records

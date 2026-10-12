@@ -40,9 +40,10 @@ https://raw.githubusercontent.com/waastudios/Cathy-epg/master/data/epg.xml.gz
 | 英国 | 指定 Sky Sports、TNT Sports、BBC、ITV、Channel 4 与 Sky 娱乐频道 | [EE TV Player Live TV Schedule](https://player.ee.co.uk/#/livetv/schedule) |
 | 英国 | Sky Sports Ultra HD 1、Sky Sports Ultra HD 2 | [Virgin Media TV Go Guide](https://virgintvgo.virginmedia.com/en/epg/initial) |
 | 罗马尼亚 | Digi 4K | [Digi 4K](https://www.digi4k.ro/) |
-| 塞尔维亚 | Eurosport 1、Eurosport 2、Eurosport 4K、Travel XP | [SBB / EON Public EPG](https://epg.sbb.rs/) |
+| 塞尔维亚 | Eurosport 1、Eurosport 2 与 Eurosport 4K | [SBB / EON 公开 EPG](https://epg.sbb.rs/) |
 | 波兰 | Eurosport 1–4 与 Eleven Sports 1（标题已译为英文） | [Player.pl](https://player.pl/) 公开 EPG 接口 |
 | 法国 | CANAL+ 主频道与 CANAL+ FOOT（标题已译为英文） | [Canal+ 官方 EPG 接口](https://www.canalplus.com/programme-tv/) |
+| 加拿大 | 爱自然（Love Nature）与 Travelxp 4K | [TELUS TV+ 节目指南](https://telustvplus.com/#/guide) |
 
 ### 德国 Sky 与 MagentaTV
 
@@ -56,7 +57,9 @@ EE 范围包含 **Sky Mix、Sky Arts、Sky Witness、Sky Atlantic、Sky One、Sk
 
 美国范围刻意限制为未来可能加入的 **ESPN、ESPN2、ESPNEWS、ESPNU**。ABC、CBS、NBC、FOX、USA Network 和其他所有美国频道都已排除。DIRECTV 公开指南确认四个 ESPN 频道，但只提供当前节目；Spectrum 的详细节目表需要账户与服务地址；ESPN 官网排期没有稳定的逐频道结束时间。因此，**当前不发布任何 ESPN 记录**。如日后出现合规节目表，ID 会使用服务商前缀，例如 `directv_espn`。
 
-**Eurosport 1、Eurosport 2 和 Eurosport 4K** 均通过塞尔维亚 SBB 的正常匿名 Public EPG 发布，XMLTV ID 分别为 `eurosport.1`、`eurosport.2` 和 `eurosport.4k`。该来源提供频道目录、节目标题、开始时间和结束时间。每条原始塞尔维亚语标题均通过下文的分级流水线转换成英文；无法翻译的标题只会跳过当条节目，不会导致整个 SBB 来源失败。**Travel XP** 通过同一 SBB Public EPG 发布，XMLTV ID 为 `travelxp.eu`；其标题本身为英文，直接发布。
+**Eurosport 1、Eurosport 2 和 Eurosport 4K** 均通过塞尔维亚 SBB 的正常匿名 Public EPG 发布，XMLTV ID 分别为 `eurosport.1`、`eurosport.2` 和 `eurosport.4k`。该来源提供频道目录、节目标题、开始时间和结束时间。每条原始塞尔维亚语标题均通过下文的分级流水线转换成英文；无法翻译的标题只会跳过当条节目，不会导致整个 SBB 来源失败。
+
+**爱自然（Love Nature）** 与 **Travelxp 4K** 通过加拿大 TELUS TV+（Optik TV）官方网页指南发布，XMLTV ID 分别为 `telus.713` 与 `telus.716`。指南的公开 AVS 接口可匿名查询（优先生产环境，失败回退 QA 环境）；节目标题本身为英文，直接发布。
 
 ### 波兰 Player.pl
 

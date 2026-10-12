@@ -40,9 +40,10 @@ Every XMLTV `display-name` is the provider’s official channel name unless an e
 | United Kingdom | Selected Sky Sports, TNT Sports, BBC, ITV, Channel 4 and Sky Entertainment services | [EE TV Player Live TV Schedule](https://player.ee.co.uk/#/livetv/schedule) |
 | United Kingdom | Sky Sports Ultra HD 1 and 2 | [Virgin Media TV Go Guide](https://virgintvgo.virginmedia.com/en/epg/initial) |
 | Romania | Digi 4K | [Digi 4K](https://www.digi4k.ro/) |
-| Serbia | Eurosport 1, Eurosport 2, Eurosport 4K and Travel XP | [SBB / EON Public EPG](https://epg.sbb.rs/) |
+| Serbia | Eurosport 1, Eurosport 2 and Eurosport 4K | [SBB / EON Public EPG](https://epg.sbb.rs/) |
 | Poland | Eurosport 1–4 and Eleven Sports 1 (titles translated to English) | [Player.pl](https://player.pl/) public EPG API |
 | France | CANAL+ main channel and CANAL+ FOOT (titles translated to English) | [Canal+ official EPG API](https://www.canalplus.com/programme-tv/) |
+| Canada | Love Nature and Travelxp 4K | [TELUS TV+ guide](https://telustvplus.com/#/guide) |
 
 ### Sky Germany via MagentaTV
 
@@ -56,7 +57,9 @@ The EE scope includes **Sky Mix, Sky Arts, Sky Witness, Sky Atlantic, Sky One, S
 
 The United States scope is intentionally restricted to potential future coverage for **ESPN, ESPN2, ESPNEWS, and ESPNU**. ABC, CBS, NBC, FOX, USA Network, and every other US network are excluded. DIRECTV’s public guide confirms the four ESPN services but exposes only current-programme information; Spectrum’s detailed guide requires account and service-address access; and ESPN’s direct schedule does not offer stable per-channel end times. Consequently, **no ESPN records are currently published**. If a compliant guide becomes available, IDs will be provider-prefixed, for example `directv_espn`.
 
-**Eurosport 1, Eurosport 2 and Eurosport 4K** are published from Serbia’s normal anonymous SBB Public EPG as `eurosport.1`, `eurosport.2` and `eurosport.4k`. The source provides a channel directory plus programme titles, start times, and end times. Each Serbian source title is converted to English through the tiered pipeline described below; a title that cannot be translated skips that single programme instead of failing the SBB source. **Travel XP** is published from the same SBB Public EPG as `travelxp.eu`; its titles arrive in English and are published as-is.
+**Eurosport 1, Eurosport 2 and Eurosport 4K** are published from Serbia’s normal anonymous SBB Public EPG as `eurosport.1`, `eurosport.2` and `eurosport.4k`. The source provides a channel directory plus programme titles, start times, and end times. Each Serbian source title is converted to English through the tiered pipeline described below; a title that cannot be translated skips that single programme instead of failing the SBB source.
+
+**Love Nature** and **Travelxp 4K** are published from Canada’s TELUS TV+ (Optik TV) official web guide as `telus.713` and `telus.716`. The guide’s public AVS API is queried anonymously (production first, QA fallback); programme titles arrive in English and are published as-is.
 
 ### Poland via Player.pl
 
