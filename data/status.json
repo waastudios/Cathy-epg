@@ -1,17 +1,15 @@
 {
   "astro": {
     "status": "ok",
-    "records": 2373
+    "records": 2402
   },
   "now_hk": {
     "status": "ok",
-    "records": 4166
+    "records": 3748
   },
   "allente_se": {
-    "status": "stale",
-    "records": 783,
-    "message": "Allente 官方 EPG 响应中未找到任何预期的 V Sport 体育频道。",
-    "fallback": "previous_snapshot"
+    "status": "ok",
+    "records": 783
   },
   "allente_no": {
     "status": "stale",
@@ -21,22 +19,22 @@
   },
   "ee_uk": {
     "status": "ok",
-    "records": 7051,
+    "records": 7062,
     "notes": [
-      "tvguide.co.uk 采集 6840 条（6840 去重），其中有图 6813 条。"
+      "tvguide.co.uk 采集 6851 条（6851 去重），其中有图 6819 条。"
     ]
   },
   "sky_de": {
     "status": "ok",
-    "records": 1400
+    "records": 1399
   },
   "digi4k_ro": {
     "status": "ok",
-    "records": 106
+    "records": 121
   },
   "sbb_rs": {
     "status": "ok",
-    "records": 249
+    "records": 172
   },
   "virgin_uk": {
     "status": "ok",
@@ -44,30 +42,31 @@
   },
   "player_pl": {
     "status": "ok",
-    "records": 591
+    "records": 590
   },
   "canalplus_fr": {
     "status": "ok",
-    "records": 136,
+    "records": 158,
     "notes": [
       "Canal+ 官方 API 不可用（403 rate limited: https://hodor.canalplus.pro/api/v2/mycanal/authenticate.json/webapp/6.0?experiments=beta-test-one-tv-guide:control），回退到 epg.pw"
     ]
   },
-  "canalplus_pl_4k": {
+  "telus_tvplus": {
     "status": "ok",
-    "records": 40,
+    "records": 198,
     "notes": [
-      "Canal+ 4K 官方 API 不可用（403 rate limited: https://hodor.canalplus.pro/api/v2/mycanalint/authenticate.json/webapp/6.0?experiments=beta-test-one-tv-guide:control），尝试 naziemna.info 兜底",
-      "Canal+ 4K 官方 API 不可用，已切换至 naziemna.info 第三方数据（40 档）"
+      "Telus Love Nature 的频道号为 15130（配置为 713），仍按频道名继续采集。",
+      "Telus TV+（telus.prod.g.telustvplus.com）频道目录未找到 Travelxp 4K HDR，已跳过该频道。",
+      "Telus TV+ 未返回频道 telus.716 的节目条目。"
     ]
   },
   "xmltv": {
     "status": "ok",
-    "channels": 167,
-    "programmes": 17688,
+    "channels": 166,
+    "programmes": 17426,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-10-11T22:42:51Z",
-  "total_records": 17688
+  "generated_at": "2026-10-12T14:30:02Z",
+  "total_records": 17426
 }

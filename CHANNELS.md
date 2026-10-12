@@ -2,7 +2,7 @@
 
 This inventory is generated directly from the currently published `data/epg.xml`. Every row is an actual XMLTV `<channel>` node: **tvg-id** is `channel/@id` and **tvg-name** is `display-name`.
 
-The current XMLTV output contains **167 channels**.
+The current XMLTV output contains **166 channels**.
 
 > **Note:** `(T)` means **Translated**. The channel's schedule originates in a non-English market and programme titles are translated into English before publication. This marker appears **only in this inventory**; it is never written to `data/epg.xml`, `data/epg.xml.gz`, or the programme snapshot. XMLTV `display-name` values remain the official provider names.
 
@@ -186,7 +186,6 @@ The current XMLTV output contains **167 channels**.
 | `eurosport.1` | Eurosport 1 (T) |
 | `eurosport.2` | Eurosport 2 (T) |
 | `eurosport.4k` | Eurosport 4K (T) |
-| `travelxp.eu` | Travel XP (T) |
 
 ## Digi 4K
 
@@ -231,9 +230,3 @@ The current XMLTV output contains **167 channels**.
 | `allente_no.fem` | FEM (T) |
 | `allente_no.rex` | REX (T) |
 | `allente_no.tvn` | TV Norge (T) |
-
-## Other
-
-| tvg-id | tvg-name |
-| --- | --- |
-| `canal+4k.pl` | CANAL+ 4K ULTRA HD |

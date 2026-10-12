@@ -2,7 +2,7 @@
 
 本清单直接由当前发布的 `data/epg.xml` 生成。每一行均为实际 XMLTV `<channel>` 节点：**tvg-id** 对应 `channel/@id`，**tvg-name** 对应 `display-name`。
 
-当前 XMLTV 输出包含 **167 个频道**。
+当前 XMLTV 输出包含 **166 个频道**。
 
 > **注：**频道名称后的 **`(T)`** 表示 **Translated**：该频道的节目表来自非英语地区，原始节目标题已转换为英文后发布。此标记**仅用于本清单展示**，绝不会写入 `data/epg.xml`、`data/epg.xml.gz` 或节目快照；XMLTV 的官方 `display-name` 保持不变。
 
@@ -186,7 +186,6 @@
 | `eurosport.1` | Eurosport 1 (T) |
 | `eurosport.2` | Eurosport 2 (T) |
 | `eurosport.4k` | Eurosport 4K (T) |
-| `travelxp.eu` | Travel XP (T) |
 
 ## 🇷🇴罗马尼亚 Digi 4K
 
@@ -231,9 +230,3 @@
 | `allente_no.fem` | FEM (T) |
 | `allente_no.rex` | REX (T) |
 | `allente_no.tvn` | TV Norge (T) |
-
-## 其他
-
-| tvg-id | tvg-name |
-| --- | --- |
-| `canal+4k.pl` | CANAL+ 4K ULTRA HD |
