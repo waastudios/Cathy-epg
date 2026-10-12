@@ -108,6 +108,7 @@ For Serbia’s SBB Eurosport schedules, titles are converted during collection u
 
 ## Changelog
 
+- **2026-10-12** — Added Canada coverage: Love Nature (`telus.713`) and Travelxp 4K (`telus.716`) from the TELUS TV+ (Optik TV) official web guide's public AVS API, queried anonymously (production first, QA fallback). Titles arrive in English and are published as-is. Removed Poland's CANAL+ 4K ULTRA HD (`canal+4k.pl`) and the SBB European Travel XP feed (`travelxp.eu`); Travelxp 4K on TELUS replaces the SBB feed.
 - **2026-09-29** — Restored both France Canal+ channels from the official Canal+ EPG API as `canal+.fr` (CANAL+) and `foot+.fr` (CANAL+ FOOT), 7 days each. A fresh token is fetched from the authenticate endpoint on every run (hard-coded tokens are rejected); the API is aggressively rate-limited so requests are paced 90 seconds apart with retries. French titles are converted to English through the tiered translation pipeline and marked (T) in CHANNELS.md. Only the official API is used, no third-party fallback.
 - **2026-09-28** — Added Travel XP (European feed) from the SBB Public EPG as `travelxp.eu`. Titles arrive in English and are published as-is, marked (T) in CHANNELS.md.
 - **2026-09-28** — Added Poland coverage: Eurosport 1–4 and Eleven Sports 1 from the Player.pl public EPG API, with user-designated XMLTV IDs `eurosport1.pl`, `eurosport2.pl`, `eurosport3.pl`, `eurosport4.pl` and `ElevenSp.1`. Polish titles are translated to English through the tiered pipeline and marked (T) in CHANNELS.md.

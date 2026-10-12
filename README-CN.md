@@ -108,6 +108,7 @@ epg preview --day tomorrow --provider allente_se --channel 50048
 
 ## 更新日志
 
+- **2026-10-12** —— 新增加拿大覆盖：通过 TELUS TV+（Optik TV）官方网页指南的公开 AVS 接口发布爱自然（Love Nature，`telus.713`）与 Travelxp 4K（`telus.716`），可匿名查询（优先生产环境，失败回退 QA 环境）。标题本身为英文，直接发布。删除波兰 CANAL+ 4K ULTRA HD（`canal+4k.pl`）与 SBB 欧洲 Travel XP（`travelxp.eu`）；Telus 的 Travelxp 4K 接替 SBB 台。
 - **2026-09-29** —— 恢复法国 Canal+ 双频道：通过 Canal+ 官方 EPG 接口发布，XMLTV ID 为 `canal+.fr`（CANAL+）与 `foot+.fr`（CANAL+ FOOT），各 7 天。每次采集先经认证接口换取新鲜 token（硬编码 token 会被拒绝）；官方接口频率限制极严，请求间隔 90 秒并带重试。法语标题经分级流水线译为英文，并在频道清单中以（T）标记。仅使用官方接口，无第三方兜底。
 - **2026-09-28** —— 新增 Travel XP（欧洲台）：通过 SBB 公开 EPG 发布，XMLTV ID 为 `travelxp.eu`。标题本身为英文，直接发布，并在频道清单中以（T）标记。
 - **2026-09-28** —— 新增波兰覆盖：通过 Player.pl 公开 EPG 接口发布 Eurosport 1–4 与 Eleven Sports 1，用户指定的 XMLTV ID 为 `eurosport1.pl`、`eurosport2.pl`、`eurosport3.pl`、`eurosport4.pl` 与 `ElevenSp.1`。波兰语标题经分级流水线译为英文，并在频道清单中以（T）标记。
