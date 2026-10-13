@@ -1,27 +1,25 @@
 {
   "astro": {
     "status": "ok",
-    "records": 2402
+    "records": 2273
   },
   "now_hk": {
     "status": "ok",
-    "records": 3748
+    "records": 4035
   },
   "allente_se": {
     "status": "ok",
-    "records": 783
+    "records": 801
   },
   "allente_no": {
-    "status": "stale",
-    "records": 706,
-    "message": "Allente Norway 官方 EPG 响应中未找到预期的 TV Norge、REX、FEM、Eurosport Norge 或 Eurosport 1。",
-    "fallback": "previous_snapshot"
+    "status": "ok",
+    "records": 682
   },
   "ee_uk": {
     "status": "ok",
-    "records": 7062,
+    "records": 7027,
     "notes": [
-      "tvguide.co.uk 采集 6851 条（6851 去重），其中有图 6819 条。"
+      "tvguide.co.uk 采集 6817 条（6817 去重），其中有图 6779 条。"
     ]
   },
   "sky_de": {
@@ -30,30 +28,30 @@
   },
   "digi4k_ro": {
     "status": "ok",
-    "records": 121
+    "records": 122
   },
   "sbb_rs": {
     "status": "ok",
-    "records": 172
+    "records": 175
   },
   "virgin_uk": {
     "status": "ok",
-    "records": 87
+    "records": 81
   },
   "player_pl": {
     "status": "ok",
-    "records": 590
+    "records": 594
   },
   "canalplus_fr": {
     "status": "ok",
-    "records": 158,
+    "records": 140,
     "notes": [
       "Canal+ 官方 API 不可用（403 rate limited: https://hodor.canalplus.pro/api/v2/mycanal/authenticate.json/webapp/6.0?experiments=beta-test-one-tv-guide:control），回退到 epg.pw"
     ]
   },
   "telus_tvplus": {
     "status": "ok",
-    "records": 198,
+    "records": 201,
     "notes": [
       "Telus Love Nature 的频道号为 15130（配置为 713），仍按频道名继续采集。",
       "Telus TV+（telus.prod.g.telustvplus.com）频道目录未找到 Travelxp 4K HDR，已跳过该频道。",
@@ -63,10 +61,10 @@
   "xmltv": {
     "status": "ok",
     "channels": 166,
-    "programmes": 17426,
+    "programmes": 17530,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-10-12T14:30:02Z",
-  "total_records": 17426
+  "generated_at": "2026-10-13T01:08:56Z",
+  "total_records": 17530
 }
