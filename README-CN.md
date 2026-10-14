@@ -43,7 +43,8 @@ https://raw.githubusercontent.com/waastudios/Cathy-epg/master/data/epg.xml.gz
 | 塞尔维亚 | Eurosport 1、Eurosport 2 与 Eurosport 4K | [SBB / EON 公开 EPG](https://epg.sbb.rs/) |
 | 波兰 | Eurosport 1–4 与 Eleven Sports 1（标题已译为英文） | [Player.pl](https://player.pl/) 公开 EPG 接口 |
 | 法国 | CANAL+ 主频道与 CANAL+ FOOT（标题已译为英文） | [Canal+ 官方 EPG 接口](https://www.canalplus.com/programme-tv/) |
-| 加拿大 | 爱自然（Love Nature）与 Travelxp 4K | [TELUS TV+ 节目指南](https://telustvplus.com/#/guide) |
+| 加拿大 | 爱自然（Love Nature）、Travelxp 4K 与 TSN 1–5 | [TELUS TV+ 节目指南](https://telustvplus.com/#/guide) |
+| 美国 | Tennis Channel 2 | [Peacock 频道指南](https://www.peacocktv.com/channels/tennis-channel-2/8969135442586836117) |
 
 ### 德国 Sky 与 MagentaTV
 
@@ -55,11 +56,13 @@ EE 范围包含 **Sky Mix、Sky Arts、Sky Witness、Sky Atlantic、Sky One、Sk
 
 ### ESPN 状态
 
-美国范围刻意限制为未来可能加入的 **ESPN、ESPN2、ESPNEWS、ESPNU**。ABC、CBS、NBC、FOX、USA Network 和其他所有美国频道都已排除。DIRECTV 公开指南确认四个 ESPN 频道，但只提供当前节目；Spectrum 的详细节目表需要账户与服务地址；ESPN 官网排期没有稳定的逐频道结束时间。因此，**当前不发布任何 ESPN 记录**。如日后出现合规节目表，ID 会使用服务商前缀，例如 `directv_espn`。
+**ESPN、ESPN2、ESPNEWS、ESPNU** 仍在评估未来可能加入。ABC、CBS、NBC、FOX、USA Network 和其他所有美国广播频道都已排除。DIRECTV 公开指南确认四个 ESPN 频道，但只提供当前节目；Spectrum 的详细节目表需要账户与服务地址；ESPN 官网排期没有稳定的逐频道结束时间。因此，**当前不发布任何 ESPN 记录**。如日后出现合规节目表，ID 会使用服务商前缀，例如 `directv_espn`。下文介绍实际发布的美国流媒体来源（Peacock）。
 
 **Eurosport 1、Eurosport 2 和 Eurosport 4K** 均通过塞尔维亚 SBB 的正常匿名 Public EPG 发布，XMLTV ID 分别为 `eurosport.1`、`eurosport.2` 和 `eurosport.4k`。该来源提供频道目录、节目标题、开始时间和结束时间。每条原始塞尔维亚语标题均通过下文的分级流水线转换成英文；无法翻译的标题只会跳过当条节目，不会导致整个 SBB 来源失败。
 
-**爱自然（Love Nature）** 与 **Travelxp 4K** 通过加拿大 TELUS TV+（Optik TV）官方网页指南发布，XMLTV ID 分别为 `telus.713` 与 `telus.716`。指南的公开 AVS 接口可匿名查询（优先生产环境，失败回退 QA 环境）；节目标题本身为英文，直接发布。
+**爱自然（Love Nature）**、**Travelxp 4K** 与 **TSN 1–5** 通过加拿大 TELUS TV+（Optik TV）官方网页指南发布，XMLTV ID 分别为 `telus.713`、`telus.716` 与 `telus.900`–`telus.904`。指南的公开 AVS 接口可匿名查询（优先生产环境，失败回退 QA 环境）；按官方频道名匹配频道，绝不使用 TSN 的地区黑屏（Blackout）变体。节目标题本身为英文，直接发布。
+
+**Tennis Channel 2** 通过 Peacock 官方 BFF 频道指南发布，XMLTV ID 为 `TC2.us`。该指南携带 Peacock 自家客户端使用的 Sky OTT 平台请求头即可匿名查询，无需账号。接口的起始时间只能在过去 1 天至未来 2 天之间、单次返回约 30 小时，采集器以四个错开的窗口拼接（约 4 天滚动覆盖），而非一次拉满 7 天。节目标题本身为英文，直接发布。
 
 ### 波兰 Player.pl
 
@@ -108,6 +111,7 @@ epg preview --day tomorrow --provider allente_se --channel 50048
 
 ## 更新日志
 
+- **2026-10-14** —— 通过 TELUS TV+ 官方指南新增 TSN 1–5（`telus.900`–`telus.904`）；频道按官方名匹配（忽略空格与大小写，这也让 Travelxp 4K 能兼容指南中的 "Travel XP 4K" 写法），并排除 TSN 的地区黑屏（Blackout）变体。通过 Peacock 官方 BFF 频道指南新增 Tennis Channel 2（`TC2.us`），可匿名查询；该接口为滚动窗口（起始时间限过去 1 天至未来 2 天、单次约 30 小时），采集器以四个错开的窗口拼接约 4 天覆盖。另修复频道清单生成器：加拿大分区此前不在排序表中，Telus 频道一直未显示在 CHANNELS 清单中。
 - **2026-10-12** —— 新增加拿大覆盖：通过 TELUS TV+（Optik TV）官方网页指南的公开 AVS 接口发布爱自然（Love Nature，`telus.713`）与 Travelxp 4K（`telus.716`），可匿名查询（优先生产环境，失败回退 QA 环境）。标题本身为英文，直接发布。删除波兰 CANAL+ 4K ULTRA HD（`canal+4k.pl`）与 SBB 欧洲 Travel XP（`travelxp.eu`）；Telus 的 Travelxp 4K 接替 SBB 台。
 - **2026-09-29** —— 恢复法国 Canal+ 双频道：通过 Canal+ 官方 EPG 接口发布，XMLTV ID 为 `canal+.fr`（CANAL+）与 `foot+.fr`（CANAL+ FOOT），各 7 天。每次采集先经认证接口换取新鲜 token（硬编码 token 会被拒绝）；官方接口频率限制极严，请求间隔 90 秒并带重试。法语标题经分级流水线译为英文，并在频道清单中以（T）标记。仅使用官方接口，无第三方兜底。
 - **2026-09-28** —— 新增 Travel XP（欧洲台）：通过 SBB 公开 EPG 发布，XMLTV ID 为 `travelxp.eu`。标题本身为英文，直接发布，并在频道清单中以（T）标记。
