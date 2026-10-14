@@ -24,6 +24,7 @@ from .sources import (
     collect_ee_uk_with_tvguide,
     collect_magenta_tv_sky_de,
     collect_now_hk,
+    collect_peacock,
     collect_player_pl,
     collect_sbb_eurosport,
     collect_telus_tvplus,
@@ -78,8 +79,11 @@ def _collect(args: argparse.Namespace) -> int:
         ("player_pl", lambda: collect_player_pl(args.days)),
         # 法国 Canal+ 官方 API：CANAL+ 主频道与 CANAL+ FOOT，法语标题译为英文。
         ("canalplus_fr", lambda: collect_canalplus_fr(args.days)),
-        # Telus TV+（Optik TV）官方指南：Love Nature 与 Travelxp 4K，标题本身为英文。
+        # Telus TV+（Optik TV）官方指南：Love Nature、Travelxp 4K 与 TSN 1–5，标题本身为英文。
         ("telus_tvplus", lambda: collect_telus_tvplus(args.days)),
+        # Peacock 官方 BFF 指南：Tennis Channel 2（TC2.us），标题本身为英文；
+        # 接口单次窗口约 30 小时，靠四个错开起点拼接滚动覆盖。
+        ("peacock", lambda: collect_peacock(args.days)),
     )
     for provider, collector in collectors:
         try:
@@ -119,6 +123,7 @@ def _collect(args: argparse.Namespace) -> int:
             "player_pl": ZoneInfo("Europe/Warsaw"),
             "canalplus_fr": ZoneInfo("Europe/Paris"),
             "telus_tvplus": ZoneInfo("UTC"),
+            "peacock": ZoneInfo("UTC"),
         }
 
         def local_date(row: Programme, zone: ZoneInfo):
