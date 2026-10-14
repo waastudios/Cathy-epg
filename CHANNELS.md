@@ -2,7 +2,7 @@
 
 This inventory is generated directly from the currently published `data/epg.xml`. Every row is an actual XMLTV `<channel>` node: **tvg-id** is `channel/@id` and **tvg-name** is `display-name`.
 
-The current XMLTV output contains **166 channels**.
+The current XMLTV output contains **173 channels**.
 
 > **Note:** `(T)` means **Translated**. The channel's schedule originates in a non-English market and programme titles are translated into English before publication. This marker appears **only in this inventory**; it is never written to `data/epg.xml`, `data/epg.xml.gz`, or the programme snapshot. XMLTV `display-name` values remain the official provider names.
 
@@ -230,3 +230,21 @@ The current XMLTV output contains **166 channels**.
 | `allente_no.fem` | FEM (T) |
 | `allente_no.rex` | REX (T) |
 | `allente_no.tvn` | TV Norge (T) |
+
+## 🇨🇦 Canada Telus TV+
+
+| tvg-id | tvg-name |
+| --- | --- |
+| `telus.713` | Love Nature |
+| `telus.716` | Travelxp 4K |
+| `telus.900` | TSN1 |
+| `telus.901` | TSN2 |
+| `telus.902` | TSN3 |
+| `telus.903` | TSN4 |
+| `telus.904` | TSN5 |
+
+## 🇺🇸 USA Peacock
+
+| tvg-id | tvg-name |
+| --- | --- |
+| `TC2.us` | Tennis Channel 2 |
