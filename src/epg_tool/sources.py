@@ -2601,3 +2601,111 @@ def collect_peacock(days: int = 7, pause_seconds: float = 1.0) -> list[Programme
     if not records:
         raise SourceUnavailable("Peacock 指南未返回 Tennis Channel 2 的节目条目。")
     return records
+
+
+# Pluto TV 官方节目单接口。Pluto TV 是 Paramount Global 自家的免费流媒体
+# 平台，其网页端与 App 的指南由该接口驱动，可匿名调用。CBS Sports Golazo
+# Network 在 Pluto TV 阵容中名为 "Golazo Network"（slug: golazo-network）。
+# Paramount+ 自家 apps-api 仅登录态可用（匿名请求被网关以 400 拒绝），故
+# Golazo 改走同属 Paramount 的 Pluto TV 官方指南，用户指定 tvg-id 为
+# GolazoNet.us。注意 Pluto 对该频道只提前约 1–2 天发布逐节目明细，更远的
+# 日期只有官方发布的整段 "Golazo Network" 占位块，如实收录。
+PLUTO_GUIDE_API = "https://api.pluto.tv/v2/channels"
+PLUTO_GOLAZO_PAGE = "https://pluto.tv/us/live-tv/golazo-network"
+PLUTO_GOLAZO_SLUG = "golazo-network"
+PLUTO_GOLAZO_XMLTV_ID = "GolazoNet.us"
+
+
+def _pluto_guide_window(start: datetime, stop: datetime) -> list[dict]:
+    """调用 Pluto TV 指南接口拉取一个时间窗，返回 Golazo 的 timelines 列表。"""
+    session = _session()
+    fmt = "%Y-%m-%dT%H:%M:%SZ"
+    try:
+        response = session.get(
+            PLUTO_GUIDE_API,
+            params={"start": start.strftime(fmt), "stop": stop.strftime(fmt)},
+            timeout=60,
+        )
+    except requests.RequestException as exc:
+        raise SourceUnavailable(f"Pluto TV 指南接口连接失败：{exc}") from exc
+    if response.status_code != 200:
+        raise SourceUnavailable(
+            f"Pluto TV 指南接口返回 HTTP {response.status_code}。"
+        )
+    try:
+        data = response.json()
+    except ValueError as exc:
+        raise SourceUnavailable("Pluto TV 指南接口未返回 JSON。") from exc
+    if not isinstance(data, list):
+        raise SourceUnavailable("Pluto TV 指南接口返回结构异常。")
+    channel = next(
+        (item for item in data if item.get("slug") == PLUTO_GOLAZO_SLUG), None
+    )
+    if channel is None:
+        raise SourceUnavailable("Pluto TV 指南未包含 Golazo Network 频道。")
+    return channel.get("timelines") or []
+
+
+def collect_pluto_tv(days: int = 7, pause_seconds: float = 0.5) -> list[Programme]:
+    """读取 Pluto TV 官方指南中 Golazo Network 的节目单（tvg-id：GolazoNet.us）。
+
+    标题本身为英文，直接发布。接口按 start/stop 时间窗返回时间线，单窗
+    覆盖有限，按 24 小时分窗逐日拉取 days 天并去重合并。
+    """
+    if days not in range(1, 8):
+        raise ValueError("Pluto TV 采集天数必须为 1–7。")
+    zone_utc = timezone.utc
+    now = datetime.now(zone_utc).replace(minute=0, second=0, microsecond=0)
+    retrieved_at = utc_now_iso()
+    records: list[Programme] = []
+    for day_offset in range(days):
+        window_start = now + timedelta(days=day_offset)
+        window_stop = window_start + timedelta(days=1)
+        timelines = _pluto_guide_window(window_start, window_stop)
+        for item in timelines:
+            episode = item.get("episode") or {}
+            title = str(item.get("title") or episode.get("name") or "").strip()
+            if not title:
+                continue
+            try:
+                start = datetime.fromisoformat(
+                    str(item["start"]).replace("Z", "+00:00")
+                )
+                stop = datetime.fromisoformat(
+                    str(item["stop"]).replace("Z", "+00:00")
+                )
+            except (KeyError, TypeError, ValueError):
+                continue
+            if stop <= start:
+                continue
+            episode_name = str(episode.get("name") or "").strip()
+            sub_title = episode_name if episode_name and episode_name != title else None
+            description = str(episode.get("description") or "").strip() or None
+            category = str(episode.get("genre") or "").strip() or None
+            poster = episode.get("poster16_9") or episode.get("poster") or {}
+            image_url = str(poster.get("path") or "").strip() or None
+            records.append(
+                Programme(
+                    provider="pluto_tv",
+                    country="US",
+                    timezone="UTC",
+                    channel_id=PLUTO_GOLAZO_XMLTV_ID,
+                    channel_number="",
+                    channel_name="Golazo Network",
+                    title=title,
+                    start_at=start.isoformat(),
+                    end_at=stop.isoformat(),
+                    source_url=PLUTO_GOLAZO_PAGE,
+                    retrieved_at=retrieved_at,
+                    image_url=image_url,
+                    description=description,
+                    category=category,
+                    sub_title=sub_title,
+                )
+            )
+        time.sleep(pause_seconds)
+
+    records = _deduplicate(records)
+    if not records:
+        raise SourceUnavailable("Pluto TV 指南未返回 Golazo Network 的节目条目。")
+    return records
