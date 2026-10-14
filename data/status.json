@@ -1,17 +1,15 @@
 {
   "astro": {
     "status": "ok",
-    "records": 2342
+    "records": 2384
   },
   "now_hk": {
     "status": "ok",
-    "records": 4092
+    "records": 3735
   },
   "allente_se": {
-    "status": "stale",
-    "records": 801,
-    "message": "Allente 官方 EPG 响应中未找到任何预期的 V Sport 体育频道。",
-    "fallback": "previous_snapshot"
+    "status": "ok",
+    "records": 796
   },
   "allente_no": {
     "status": "stale",
@@ -21,14 +19,14 @@
   },
   "ee_uk": {
     "status": "ok",
-    "records": 6992,
+    "records": 7016,
     "notes": [
-      "tvguide.co.uk 采集 6789 条（6789 去重），其中有图 6746 条。"
+      "tvguide.co.uk 采集 6803 条（6803 去重），其中有图 6766 条。"
     ]
   },
   "sky_de": {
     "status": "ok",
-    "records": 1363
+    "records": 1362
   },
   "digi4k_ro": {
     "status": "ok",
@@ -36,7 +34,7 @@
   },
   "sbb_rs": {
     "status": "ok",
-    "records": 136
+    "records": 187
   },
   "virgin_uk": {
     "status": "ok",
@@ -44,31 +42,40 @@
   },
   "player_pl": {
     "status": "ok",
-    "records": 598
+    "records": 601
   },
   "canalplus_fr": {
     "status": "ok",
-    "records": 140,
+    "records": 131,
     "notes": [
       "Canal+ 官方 API 不可用（403 rate limited: https://hodor.canalplus.pro/api/v2/mycanal/authenticate.json/webapp/6.0?experiments=beta-test-one-tv-guide:control），回退到 epg.pw"
     ]
   },
   "telus_tvplus": {
     "status": "ok",
-    "records": 201,
+    "records": 1000,
     "notes": [
       "Telus Love Nature 的频道号为 15130（配置为 713），仍按频道名继续采集。",
       "Telus TV+（telus.prod.g.telustvplus.com）频道目录未找到 Travelxp 4K HDR，已跳过该频道。",
+      "Telus TSN1 的频道号为 15225（配置为 900），仍按频道名继续采集。",
+      "Telus TSN2 的频道号为 15227（配置为 901），仍按频道名继续采集。",
+      "Telus TSN3 的频道号为 16200（配置为 902），仍按频道名继续采集。",
+      "Telus TSN4 的频道号为 16201（配置为 903），仍按频道名继续采集。",
+      "Telus TSN5 的频道号为 16202（配置为 904），仍按频道名继续采集。",
       "Telus TV+ 未返回频道 telus.716 的节目条目。"
     ]
   },
+  "peacock": {
+    "status": "ok",
+    "records": 37
+  },
   "xmltv": {
     "status": "ok",
-    "channels": 166,
-    "programmes": 17559,
+    "channels": 172,
+    "programmes": 18143,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-10-13T23:17:04Z",
-  "total_records": 17559
+  "generated_at": "2026-10-14T15:04:50Z",
+  "total_records": 18143
 }
