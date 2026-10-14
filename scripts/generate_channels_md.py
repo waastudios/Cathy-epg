@@ -51,6 +51,7 @@ SECTIONS: list[tuple[str, str, str, bool]] = [
     ("ElevenSp.1", "🇵🇱 Poland Player.pl", "🇵🇱波兰 Player.pl", True),
     ("telus.", "🇨🇦 Canada Telus TV+", "🇨🇦加拿大 Telus TV+", False),
     ("TC2.us", "🇺🇸 USA Peacock", "🇺🇸美国 Peacock", False),
+    ("GolazoNet.us", "🇺🇸 USA Pluto TV", "🇺🇸美国 Pluto TV", False),
 ]
 
 # ee_uk channel numbers that belong to the "Sky Sports" section; the rest go
@@ -71,7 +72,7 @@ SECTION_ORDER_EN = [
     "Virgin Media UK", "Sky Entertainment", "France Canal+",
     "🇷🇸 Serbia SBB", "Digi 4K", "🇵🇱 Poland Player.pl",
     "Allente Sweden", "Allente Norway", "🇨🇦 Canada Telus TV+",
-    "🇺🇸 USA Peacock", "Other",
+    "🇺🇸 USA Peacock", "🇺🇸 USA Pluto TV", "Other",
 ]
 CN_TITLE = {
     "Astro Malaysia": "🇲🇾马来西亚 Astro",
@@ -88,6 +89,7 @@ CN_TITLE = {
     "🇵🇱 Poland Player.pl": "🇵🇱波兰 Player.pl",
     "🇨🇦 Canada Telus TV+": "🇨🇦加拿大 Telus TV+",
     "🇺🇸 USA Peacock": "🇺🇸美国 Peacock",
+    "🇺🇸 USA Pluto TV": "🇺🇸美国 Pluto TV",
     "Other": "其他",
 }
 
