@@ -26,6 +26,7 @@ from .sources import (
     collect_now_hk,
     collect_peacock,
     collect_player_pl,
+    collect_pluto_tv,
     collect_sbb_eurosport,
     collect_telus_tvplus,
     collect_virgin_uk_ultra,
@@ -84,6 +85,9 @@ def _collect(args: argparse.Namespace) -> int:
         # Peacock 官方 BFF 指南：Tennis Channel 2（TC2.us），标题本身为英文；
         # 接口单次窗口约 30 小时，靠四个错开起点拼接滚动覆盖。
         ("peacock", lambda: collect_peacock(args.days)),
+        # Pluto TV（Paramount 自家平台）官方指南：Golazo Network（GolazoNet.us），
+        # 标题本身为英文；按 24 小时分窗逐日拉取。
+        ("pluto_tv", lambda: collect_pluto_tv(args.days)),
     )
     for provider, collector in collectors:
         try:
@@ -124,6 +128,7 @@ def _collect(args: argparse.Namespace) -> int:
             "canalplus_fr": ZoneInfo("Europe/Paris"),
             "telus_tvplus": ZoneInfo("UTC"),
             "peacock": ZoneInfo("UTC"),
+            "pluto_tv": ZoneInfo("UTC"),
         }
 
         def local_date(row: Programme, zone: ZoneInfo):
