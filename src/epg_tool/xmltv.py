@@ -110,7 +110,10 @@ def _xmltv_channel_id(record: Programme) -> str:
         if configured_id:
             return configured_id
     if record.provider == "telus_tvplus":
-        # channel_id 即采集器配置的 tvg-id（telus.713 / telus.716）
+        # channel_id 即采集器配置的 tvg-id（telus.713 / telus.716 / telus.900–904）
+        return record.channel_id
+    if record.provider == "peacock":
+        # channel_id 即用户指定 tvg-id（TC2.us）
         return record.channel_id
     return record.provider if not record.channel_number else f"{record.provider}.{record.channel_number}"
 
