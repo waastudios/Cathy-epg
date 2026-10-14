@@ -2257,7 +2257,28 @@ TELUS_TVPLUS_GUIDE = "https://telustvplus.com/#/guide"
 TELUS_CHANNELS: tuple[tuple[str, str, str, str], ...] = (
     ("713", "Love Nature", "telus.713", "Love Nature"),
     ("716", "Travelxp 4K HDR", "telus.716", "Travelxp 4K"),
+    ("900", "TSN1", "telus.900", "TSN1"),
+    ("901", "TSN2", "telus.901", "TSN2"),
+    ("902", "TSN3", "telus.902", "TSN3"),
+    ("903", "TSN4", "telus.903", "TSN4"),
+    ("904", "TSN5", "telus.904", "TSN5"),
 )
+# TSN 主频道在 QA 测试阵容中的别名与 channelId。QA 目录只列出 TSN HD／TSN
+# （即 TSN1）与 TSN2 HD，TSN3–TSN5 的主 feed 不出现在目录中，但它们的 EPG
+# 容器存在（channelId 625／627／629），故 QA 环境按 channelId 兜底定位；
+# 相邻的偶数 channelId（624／626／628）是地区黑屏（Blackout）变体，切勿使用。
+# 生产环境目录按官方名 TSN1–TSN5 匹配，不走此兜底。
+TELUS_TSN_ALIASES: dict[str, tuple[str, ...]] = {
+    "telus.900": ("TSN HD", "TSN"),
+    "telus.901": ("TSN2 HD",),
+}
+TELUS_TSN_QA_CHANNEL_IDS: dict[str, str] = {
+    "telus.900": "619",
+    "telus.901": "621",
+    "telus.902": "625",
+    "telus.903": "627",
+    "telus.904": "629",
+}
 
 
 def _telus_tvplus_api(host: str, path: str, params: dict[str, str]) -> dict:
@@ -2287,6 +2308,11 @@ def _telus_tvplus_api(host: str, path: str, params: dict[str, str]) -> dict:
     return data
 
 
+def _telus_name_key(name: str) -> str:
+    """频道名归一化键：去空格与符号后小写，兼容 "Travel XP 4K" 这类写法差异。"""
+    return re.sub(r"[^a-z0-9]", "", name.lower())
+
+
 def _telus_tvplus_find_channels(host: str) -> dict[str, dict]:
     """在指定环境频道目录中按官方名定位目标频道，返回 {tvg-id: channel_meta}。"""
     data = _telus_tvplus_api(
@@ -2298,15 +2324,28 @@ def _telus_tvplus_find_channels(host: str) -> dict[str, dict]:
         metadata = container.get("metadata") or {}
         name = str(metadata.get("channelName") or "").strip()
         if name:
-            by_name[name.lower()] = metadata
+            by_name[_telus_name_key(name)] = metadata
+    is_qa = host == TELUS_TVPLUS_HOSTS[1]
     found: dict[str, dict] = {}
     for number, official_name, xmltv_id, display_name in TELUS_CHANNELS:
-        metadata = by_name.get(official_name.lower())
-        if metadata is None:
-            # Travelxp 在指南中的名称可能带 HDR 后缀，做前缀匹配兜底。
+        metadata = None
+        # 先按官方名与已知别名精确匹配（归一化比较，顺序即优先序）。
+        for candidate in (official_name, *TELUS_TSN_ALIASES.get(xmltv_id, ())):
+            metadata = by_name.get(_telus_name_key(candidate))
+            if metadata is not None:
+                break
+        if metadata is None and xmltv_id in TELUS_TSN_QA_CHANNEL_IDS and is_qa:
+            # QA 目录缺少 TSN3–TSN5 主 feed 条目，按实测 channelId 兜底。
+            metadata = {
+                "channelId": TELUS_TSN_QA_CHANNEL_IDS[xmltv_id],
+                "channelName": official_name,
+                "defaultChannelNumber": number,
+            }
+        if metadata is None and xmltv_id not in TELUS_TSN_QA_CHANNEL_IDS:
+            # Travelxp 在指南中的名称可能带 HDR 后缀或空格差异，做前缀匹配兜底。
+            base = _telus_name_key(official_name.split(" HDR")[0])
             candidates = [
-                meta for name, meta in by_name.items()
-                if name.startswith(official_name.lower().split(" hdr")[0])
+                meta for name, meta in by_name.items() if name.startswith(base)
             ]
             metadata = candidates[0] if len(candidates) == 1 else None
         if metadata is None:
@@ -2320,11 +2359,12 @@ def _telus_tvplus_find_channels(host: str) -> dict[str, dict]:
 
 
 def collect_telus_tvplus(days: int = 7, pause_seconds: float = 1.0) -> list[Programme]:
-    """读取 Telus TV+ 官方指南中 Love Nature 与 Travelxp 4K 的节目单。
+    """读取 Telus TV+ 官方指南中 Love Nature、Travelxp 4K 与 TSN 1–5 的节目单。
 
-    两个频道标题本身为英文，直接发布。生产环境优先；若被 Cloudflare 拦截则
-    回退 QA 环境（频道阵容为测试用，按频道名匹配）。单个频道缺失只跳过该
-    频道并记入 notes，不会让整个来源失败。
+    频道标题本身为英文，直接发布。生产环境优先；若被 Cloudflare 拦截则
+    回退 QA 环境（频道阵容为测试用，按频道名匹配，TSN3–TSN5 按实测
+    channelId 兜底）。单个频道缺失只跳过该频道并记入 notes，不会让整个
+    来源失败。
     """
     if days not in range(1, 8):
         raise ValueError("Telus TV+ 采集天数必须为 1–7。")
@@ -2428,4 +2468,136 @@ def collect_telus_tvplus(days: int = 7, pause_seconds: float = 1.0) -> list[Prog
         note(f"Telus TV+ 未返回频道 {', '.join(missing)} 的节目条目。")
     if not records:
         raise SourceUnavailable("Telus TV+ 未返回有效节目记录。")
+    return records
+
+
+# Peacock（NBCUniversal）官方 BFF 频道指南接口。网页端与 App 的频道指南均由
+# 该接口驱动，可匿名调用（无账号、无 token），仅需 Sky OTT 平台请求头。
+# Tennis Channel 2 是 Peacock 阵容中的线性频道（其阵容内只有 TC2，没有
+# Tennis Channel 1），按 serviceKey 定位，用户指定 tvg-id 为 TC2.us。
+PEACOCK_GUIDE_API = "https://bff-ext.clients.peacocktv.com/bff/channel_guide"
+PEACOCK_GUIDE_PAGE = (
+    "https://www.peacocktv.com/channels/tennis-channel-2/8969135442586836117"
+)
+PEACOCK_TC2_SERVICE_KEY = "8969135442586836117"
+PEACOCK_TC2_XMLTV_ID = "TC2.us"
+PEACOCK_HEADERS = {
+    "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+        "(KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+    ),
+    "X-SkyOTT-Device": "COMPUTER",
+    "X-SkyOTT-Language": "en",
+    "X-SkyOTT-Platform": "PC",
+    "X-SkyOTT-Proposition": "NBCUOTT",
+    "X-SkyOTT-Territory": "US",
+}
+# 接口约束：startTime 只能在过去 1 天至未来 2 天之间，单次返回约 30 小时
+# 窗口。用四个错开的起点拼接出约「过去 1 天 + 未来 3 天」的滚动覆盖，
+# 每日刷新时与增量合并形成持续节目单（该源本身不提供 7 天一次拉满）。
+PEACOCK_START_OFFSETS_HOURS = (-23, 1, 25, 47)
+
+
+def _peacock_channel_guide(start: datetime) -> dict:
+    """调用 Peacock BFF 频道指南接口，返回解析后的 JSON。"""
+    session = _session()
+    session.headers.update(PEACOCK_HEADERS)
+    # startTime 需 ISO8601 且完整 URL 编码；向最近的 5 分钟取整以贴合其缓存粒度。
+    rounded = start.replace(
+        minute=(start.minute // 5) * 5, second=0, microsecond=0
+    )
+    iso = rounded.strftime("%Y-%m-%dT%H:%M+00:00")
+    try:
+        response = session.get(
+            PEACOCK_GUIDE_API,
+            params={"startTime": iso, "contentSegments": "D2C,Free"},
+            timeout=60,
+        )
+    except requests.RequestException as exc:
+        raise SourceUnavailable(f"Peacock 指南接口连接失败：{exc}") from exc
+    if response.status_code != 200:
+        raise SourceUnavailable(
+            f"Peacock 指南接口返回 HTTP {response.status_code}：{response.text[:120]}"
+        )
+    try:
+        data = response.json()
+    except ValueError as exc:
+        raise SourceUnavailable("Peacock 指南接口未返回 JSON。") from exc
+    if not isinstance(data, dict) or not isinstance(data.get("channels"), list):
+        raise SourceUnavailable("Peacock 指南接口返回结构异常。")
+    return data
+
+
+def collect_peacock(days: int = 7, pause_seconds: float = 1.0) -> list[Programme]:
+    """读取 Peacock 官方指南中 Tennis Channel 2 的节目单（tvg-id：TC2.us）。
+
+    标题本身为英文，直接发布。接口单次窗口约 30 小时且起点受限（过去 1 天
+    至未来 2 天），因此 days 参数不改变其可达范围：固定以四个错开起点拉取
+    并去重合并。某个起点失败只记 notes，其余窗口仍可用。
+    """
+    zone_utc = timezone.utc
+    now = datetime.now(zone_utc)
+    retrieved_at = utc_now_iso()
+    records: list[Programme] = []
+    successes = 0
+    for offset_hours in PEACOCK_START_OFFSETS_HOURS:
+        start = now + timedelta(hours=offset_hours)
+        try:
+            data = _peacock_channel_guide(start)
+        except SourceUnavailable as exc:
+            note(f"Peacock 指南窗口（{offset_hours:+d}h）拉取失败：{exc}")
+            continue
+        successes += 1
+        channel = next(
+            (
+                item
+                for item in data["channels"]
+                if str(item.get("serviceKey") or "") == PEACOCK_TC2_SERVICE_KEY
+            ),
+            None,
+        )
+        if channel is None:
+            note(f"Peacock 指南窗口（{offset_hours:+d}h）未包含 Tennis Channel 2。")
+            continue
+        for item in channel.get("scheduleItems") or []:
+            meta = item.get("data") or {}
+            title = str(meta.get("title") or "").strip()
+            if not title:
+                continue
+            try:
+                start_ts = int(item["startTimeUTC"])
+                duration = int(item["durationSeconds"])
+            except (KeyError, TypeError, ValueError):
+                continue
+            if duration <= 0:
+                continue
+            begin = datetime.fromtimestamp(start_ts, tz=zone_utc)
+            end = begin + timedelta(seconds=duration)
+            description = str(meta.get("description") or "").strip() or None
+            images = meta.get("images") or {}
+            image_url = str(images.get("16-9") or "").strip() or None
+            records.append(
+                Programme(
+                    provider="peacock",
+                    country="US",
+                    timezone="UTC",
+                    channel_id=PEACOCK_TC2_XMLTV_ID,
+                    channel_number="",
+                    channel_name="Tennis Channel 2",
+                    title=title,
+                    start_at=begin.isoformat(),
+                    end_at=end.isoformat(),
+                    source_url=PEACOCK_GUIDE_PAGE,
+                    retrieved_at=retrieved_at,
+                    image_url=image_url,
+                    description=description,
+                )
+            )
+        time.sleep(pause_seconds)
+
+    records = _deduplicate(records)
+    if not successes:
+        raise SourceUnavailable("Peacock 指南接口全部窗口均拉取失败。")
+    if not records:
+        raise SourceUnavailable("Peacock 指南未返回 Tennis Channel 2 的节目条目。")
     return records
