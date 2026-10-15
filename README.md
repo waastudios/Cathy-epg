@@ -44,7 +44,7 @@ Every XMLTV `display-name` is the provider’s official channel name unless an e
 | Poland | Eurosport 1–4 and Eleven Sports 1 (titles translated to English) | [Player.pl](https://player.pl/) public EPG API |
 | France | CANAL+ main channel and CANAL+ FOOT (titles translated to English) | [Canal+ official EPG API](https://www.canalplus.com/programme-tv/) |
 | Canada | Love Nature, Travelxp 4K and TSN 1–5 | [TELUS TV+ guide](https://telustvplus.com/#/guide) |
-| United States | Tennis Channel 2 | [Peacock channel guide](https://www.peacocktv.com/channels/tennis-channel-2/8969135442586836117) |
+| United States | Tennis Channel 2 and Telemundo Deportes Ahora | [Peacock channel guide](https://www.peacocktv.com/channels/tennis-channel-2/8969135442586836117), [Telemundo Deportes Ahora](https://www.peacocktv.com/channels/telemundo-deportes-ahora/5923023667697108117) |
 | United States | CBS Sports Golazo Network | [Pluto TV guide](https://pluto.tv/us/live-tv/golazo-network) |
 
 ### Sky Germany via MagentaTV
@@ -65,6 +65,8 @@ The EE scope includes **Sky Mix, Sky Arts, Sky Witness, Sky Atlantic, Sky One, S
 
 **Tennis Channel 2** is published from Peacock’s official BFF channel guide as `TC2.us`. The guide is queried anonymously with the Sky OTT platform headers Peacock’s own clients send; no account is required. The API accepts a start time only within one day in the past to two days in the future and returns roughly 30 hours per call, so the collector stitches four staggered windows (about four days of rolling coverage) instead of a single 7-day pull. Programme titles arrive in English and are published as-is.
 
+**Telemundo Deportes Ahora** is published from the same Peacock BFF channel guide as `TDA.us`, collected in the same anonymous pass as Tennis Channel 2. Each Spanish source title is converted to English through the tiered pipeline described below (curated Spanish sports-show mapping, then the translation memory, then online services); a title that cannot be translated skips that single programme instead of failing the Peacock source. In [CHANNELS.md](CHANNELS.md) this channel carries a (T) mark to indicate its guide is translated into English.
+
 **CBS Sports Golazo Network** is published from Pluto TV’s official guide API as `GolazoNet.us`. Pluto TV is Paramount’s own free streaming platform and carries the channel as “Golazo Network”; its guide API is queried anonymously in 24-hour windows. (Paramount+’s own apps-api guide is not usable here: it rejects anonymous requests.) Pluto publishes full per-programme detail only about one to two days ahead; beyond that it publishes whole-day “Golazo Network” blocks, which are reproduced as-is. Programme titles arrive in English and are published as-is.
 
 ### Poland via Player.pl
@@ -77,7 +79,7 @@ The EE scope includes **Sky Mix, Sky Arts, Sky Witness, Sky Atlantic, Sky One, S
 
 ### English translation
 
-Programme titles from non-English markets (Swedish, Norwegian, German, Romanian, Serbian, Polish, French) are published in English; Chinese titles from now TV Hong Kong are kept as-is. Translation runs inside each collector in three tiers:
+Programme titles from non-English markets (Swedish, Norwegian, German, Romanian, Serbian, Polish, French, Spanish) are published in English; Chinese titles from now TV Hong Kong are kept as-is. Translation runs inside each collector in three tiers:
 
 1. **Version-controlled exact mapping** in `src/epg_tool/sources.py` — curated deterministic rules per source.
 2. **Persistent translation memory** in `src/epg_tool/translation_cache.json` — every online translation is recorded here, so results are stable, auditable, and reused without another network call. The daily workflow commits this file, so the memory grows over time.
@@ -114,6 +116,7 @@ For Serbia’s SBB Eurosport schedules, titles are converted during collection u
 
 ## Changelog
 
+- **2026-10-15** — Added Telemundo Deportes Ahora (`TDA.us`) from Peacock's official BFF channel guide, collected anonymously in the same pass as Tennis Channel 2. The channel's Spanish programme titles are converted to English through the tiered translation pipeline; a title that cannot be translated skips that single programme.
 - **2026-10-14** — Added CBS Sports Golazo Network (`GolazoNet.us`) from Pluto TV's official guide API, queried anonymously in 24-hour windows. Pluto TV is Paramount's own free streaming platform (Paramount+'s own apps-api guide rejects anonymous requests, so it cannot be used). Pluto publishes full programme detail about one to two days ahead; later days carry its published whole-day "Golazo Network" blocks.
 - **2026-10-14** — Added TSN 1–5 (`telus.900`–`telus.904`) from the TELUS TV+ official guide; channels are matched by official name (space/case-insensitive, which also makes Travelxp 4K matching robust against the guide's "Travel XP 4K" spelling) and TSN's regional blackout variants are excluded. Added Tennis Channel 2 (`TC2.us`) from Peacock's official BFF channel guide, queried anonymously; the API's rolling window (start time within −1/+2 days, ~30 hours per call) is stitched from four staggered calls for about four days of coverage. Also fixed the channel-inventory generator: the Canada section was missing from the section order, so TELUS channels never rendered in CHANNELS.md.
 - **2026-10-12** — Added Canada coverage: Love Nature (`telus.713`) and Travelxp 4K (`telus.716`) from the TELUS TV+ (Optik TV) official web guide's public AVS API, queried anonymously (production first, QA fallback). Titles arrive in English and are published as-is. Removed Poland's CANAL+ 4K ULTRA HD (`canal+4k.pl`) and the SBB European Travel XP feed (`travelxp.eu`); Travelxp 4K on TELUS replaces the SBB feed.
