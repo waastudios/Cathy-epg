@@ -1,11 +1,11 @@
 {
   "astro": {
     "status": "ok",
-    "records": 2291
+    "records": 2313
   },
   "now_hk": {
     "status": "ok",
-    "records": 4109
+    "records": 3649
   },
   "allente_se": {
     "status": "ok",
@@ -19,41 +19,41 @@
   },
   "ee_uk": {
     "status": "ok",
-    "records": 7016,
+    "records": 7012,
     "notes": [
-      "tvguide.co.uk 采集 6803 条（6803 去重），其中有图 6766 条。"
+      "tvguide.co.uk 采集 6801 条（6801 去重），其中有图 6764 条。"
     ]
   },
   "sky_de": {
     "status": "ok",
-    "records": 1379
+    "records": 1378
   },
   "digi4k_ro": {
     "status": "ok",
-    "records": 107
+    "records": 121
   },
   "sbb_rs": {
     "status": "ok",
-    "records": 132
+    "records": 179
   },
   "virgin_uk": {
     "status": "ok",
-    "records": 87
+    "records": 82
   },
   "player_pl": {
     "status": "ok",
-    "records": 604
+    "records": 603
   },
   "canalplus_fr": {
     "status": "ok",
-    "records": 131,
+    "records": 125,
     "notes": [
       "Canal+ 官方 API 不可用（403 rate limited: https://hodor.canalplus.pro/api/v2/mycanal/authenticate.json/webapp/6.0?experiments=beta-test-one-tv-guide:control），回退到 epg.pw"
     ]
   },
   "telus_tvplus": {
     "status": "ok",
-    "records": 1000,
+    "records": 996,
     "notes": [
       "Telus Love Nature 的频道号为 15130（配置为 713），仍按频道名继续采集。",
       "Telus TV+（telus.prod.g.telustvplus.com）频道目录未找到 Travelxp 4K HDR，已跳过该频道。",
@@ -67,19 +67,19 @@
   },
   "peacock": {
     "status": "ok",
-    "records": 38
+    "records": 120
   },
   "pluto_tv": {
     "status": "ok",
-    "records": 17
+    "records": 16
   },
   "xmltv": {
     "status": "ok",
-    "channels": 173,
-    "programmes": 18389,
+    "channels": 174,
+    "programmes": 18072,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-10-14T22:06:19Z",
-  "total_records": 18389
+  "generated_at": "2026-10-15T16:03:17Z",
+  "total_records": 18072
 }
