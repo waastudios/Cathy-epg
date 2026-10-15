@@ -2475,12 +2475,20 @@ def collect_telus_tvplus(days: int = 7, pause_seconds: float = 1.0) -> list[Prog
 # 该接口驱动，可匿名调用（无账号、无 token），仅需 Sky OTT 平台请求头。
 # Tennis Channel 2 是 Peacock 阵容中的线性频道（其阵容内只有 TC2，没有
 # Tennis Channel 1），按 serviceKey 定位，用户指定 tvg-id 为 TC2.us。
+# Telemundo Deportes Ahora 同为 Peacock 阵容中的西语体育线性频道，同样按
+# serviceKey 定位，用户指定 tvg-id 为 TDA.us；其节目标题为西班牙语。
 PEACOCK_GUIDE_API = "https://bff-ext.clients.peacocktv.com/bff/channel_guide"
 PEACOCK_GUIDE_PAGE = (
     "https://www.peacocktv.com/channels/tennis-channel-2/8969135442586836117"
 )
 PEACOCK_TC2_SERVICE_KEY = "8969135442586836117"
 PEACOCK_TC2_XMLTV_ID = "TC2.us"
+PEACOCK_TDA_GUIDE_PAGE = (
+    "https://www.peacocktv.com/channels/"
+    "telemundo-deportes-ahora/5923023667697108117"
+)
+PEACOCK_TDA_SERVICE_KEY = "5923023667697108117"
+PEACOCK_TDA_XMLTV_ID = "TDA.us"
 PEACOCK_HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
@@ -2528,18 +2536,59 @@ def _peacock_channel_guide(start: datetime) -> dict:
     return data
 
 
-def collect_peacock(days: int = 7, pause_seconds: float = 1.0) -> list[Programme]:
-    """读取 Peacock 官方指南中 Tennis Channel 2 的节目单（tvg-id：TC2.us）。
+# Telemundo Deportes Ahora 的常驻节目名确定性映射；未覆盖的标题继续走
+# 翻译记忆与在线服务，仍无法译出时跳过该条（与其它翻译源一致）。
+PEACOCK_ES_TITLE_TRANSLATIONS = {
+    "Historias de la Premier League": "Premier League Stories",
+    "Lo mejor del Mundial": "Best of the World Cup",
+    "Previa de la Bundesliga": "Bundesliga Preview",
+    "Repaso de la Bundesliga": "Bundesliga Review",
+    "Repaso de la Serie A": "Serie A Review",
+}
 
-    标题本身为英文，直接发布。接口单次窗口约 30 小时且起点受限（过去 1 天
-    至未来 2 天），因此 days 参数不改变其可达范围：固定以四个错开起点拉取
-    并去重合并。某个起点失败只记 notes，其余窗口仍可用。
+
+def _translate_peacock_es_title(title: str) -> str | None:
+    """Telemundo Deportes Ahora 西语标题的确定性英文映射；未覆盖返回 None。"""
+    normalised = re.sub(r"\s+", " ", title).strip()
+    return PEACOCK_ES_TITLE_TRANSLATIONS.get(normalised)
+
+
+# Peacock 目标频道：（serviceKey、用户指定 tvg-id、官方频道名、指南页、
+# 标题源语言）。源语言为 None 表示标题本身为英文、直接发布；否则逐条经
+# 分层管线译为英文后发布。
+PEACOCK_CHANNELS = (
+    (
+        PEACOCK_TC2_SERVICE_KEY,
+        PEACOCK_TC2_XMLTV_ID,
+        "Tennis Channel 2",
+        PEACOCK_GUIDE_PAGE,
+        None,
+    ),
+    (
+        PEACOCK_TDA_SERVICE_KEY,
+        PEACOCK_TDA_XMLTV_ID,
+        "Telemundo Deportes Ahora",
+        PEACOCK_TDA_GUIDE_PAGE,
+        "es",
+    ),
+)
+
+
+def collect_peacock(days: int = 7, pause_seconds: float = 1.0) -> list[Programme]:
+    """读取 Peacock 官方指南中目标频道的节目单。
+
+    目标频道为 Tennis Channel 2（TC2.us，标题本身为英文，直接发布）与
+    Telemundo Deportes Ahora（TDA.us，标题为西班牙语，逐条译为英文）。
+    接口单次窗口约 30 小时且起点受限（过去 1 天至未来 2 天），因此 days
+    参数不改变其可达范围：固定以四个错开起点拉取并去重合并。某个起点
+    失败只记 notes，其余窗口仍可用。
     """
     zone_utc = timezone.utc
     now = datetime.now(zone_utc)
     retrieved_at = utc_now_iso()
     records: list[Programme] = []
     successes = 0
+    per_channel: dict[str, int] = {entry[1]: 0 for entry in PEACOCK_CHANNELS}
     for offset_hours in PEACOCK_START_OFFSETS_HOURS:
         start = now + timedelta(hours=offset_hours)
         try:
@@ -2548,58 +2597,81 @@ def collect_peacock(days: int = 7, pause_seconds: float = 1.0) -> list[Programme
             note(f"Peacock 指南窗口（{offset_hours:+d}h）拉取失败：{exc}")
             continue
         successes += 1
-        channel = next(
-            (
-                item
-                for item in data["channels"]
-                if str(item.get("serviceKey") or "") == PEACOCK_TC2_SERVICE_KEY
-            ),
-            None,
-        )
-        if channel is None:
-            note(f"Peacock 指南窗口（{offset_hours:+d}h）未包含 Tennis Channel 2。")
-            continue
-        for item in channel.get("scheduleItems") or []:
-            meta = item.get("data") or {}
-            title = str(meta.get("title") or "").strip()
-            if not title:
-                continue
-            try:
-                start_ts = int(item["startTimeUTC"])
-                duration = int(item["durationSeconds"])
-            except (KeyError, TypeError, ValueError):
-                continue
-            if duration <= 0:
-                continue
-            begin = datetime.fromtimestamp(start_ts, tz=zone_utc)
-            end = begin + timedelta(seconds=duration)
-            description = str(meta.get("description") or "").strip() or None
-            images = meta.get("images") or {}
-            image_url = str(images.get("16-9") or "").strip() or None
-            records.append(
-                Programme(
-                    provider="peacock",
-                    country="US",
-                    timezone="UTC",
-                    channel_id=PEACOCK_TC2_XMLTV_ID,
-                    channel_number="",
-                    channel_name="Tennis Channel 2",
-                    title=title,
-                    start_at=begin.isoformat(),
-                    end_at=end.isoformat(),
-                    source_url=PEACOCK_GUIDE_PAGE,
-                    retrieved_at=retrieved_at,
-                    image_url=image_url,
-                    description=description,
-                )
+        for (
+            service_key,
+            xmltv_id,
+            channel_name,
+            guide_page,
+            source_lang,
+        ) in PEACOCK_CHANNELS:
+            channel = next(
+                (
+                    item
+                    for item in data["channels"]
+                    if str(item.get("serviceKey") or "") == service_key
+                ),
+                None,
             )
+            if channel is None:
+                note(
+                    f"Peacock 指南窗口（{offset_hours:+d}h）未包含 {channel_name}。"
+                )
+                continue
+            for item in channel.get("scheduleItems") or []:
+                meta = item.get("data") or {}
+                title = str(meta.get("title") or "").strip()
+                if not title:
+                    continue
+                if source_lang is not None:
+                    try:
+                        title = translate_programme_title(
+                            title, source_lang, _translate_peacock_es_title
+                        )
+                    except TitleUntranslatable:
+                        note(
+                            f"Peacock {channel_name} 跳过无法翻译的标题：{title!r}"
+                        )
+                        continue
+                try:
+                    start_ts = int(item["startTimeUTC"])
+                    duration = int(item["durationSeconds"])
+                except (KeyError, TypeError, ValueError):
+                    continue
+                if duration <= 0:
+                    continue
+                begin = datetime.fromtimestamp(start_ts, tz=zone_utc)
+                end = begin + timedelta(seconds=duration)
+                description = str(meta.get("description") or "").strip() or None
+                images = meta.get("images") or {}
+                image_url = str(images.get("16-9") or "").strip() or None
+                records.append(
+                    Programme(
+                        provider="peacock",
+                        country="US",
+                        timezone="UTC",
+                        channel_id=xmltv_id,
+                        channel_number="",
+                        channel_name=channel_name,
+                        title=title,
+                        start_at=begin.isoformat(),
+                        end_at=end.isoformat(),
+                        source_url=guide_page,
+                        retrieved_at=retrieved_at,
+                        image_url=image_url,
+                        description=description,
+                    )
+                )
+                per_channel[xmltv_id] += 1
         time.sleep(pause_seconds)
 
     records = _deduplicate(records)
     if not successes:
         raise SourceUnavailable("Peacock 指南接口全部窗口均拉取失败。")
-    if not records:
-        raise SourceUnavailable("Peacock 指南未返回 Tennis Channel 2 的节目条目。")
+    for _service_key, xmltv_id, channel_name, _guide_page, _lang in PEACOCK_CHANNELS:
+        if not per_channel[xmltv_id]:
+            raise SourceUnavailable(
+                f"Peacock 指南未返回 {channel_name} 的节目条目。"
+            )
     return records
 
 
