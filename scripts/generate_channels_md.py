@@ -51,6 +51,7 @@ SECTIONS: list[tuple[str, str, str, bool]] = [
     ("ElevenSp.1", "🇵🇱 Poland Player.pl", "🇵🇱波兰 Player.pl", True),
     ("telus.", "🇨🇦 Canada Telus TV+", "🇨🇦加拿大 Telus TV+", False),
     ("TC2.us", "🇺🇸 USA Peacock", "🇺🇸美国 Peacock", False),
+    ("TDA.us", "🇺🇸 USA Peacock", "🇺🇸美国 Peacock", True),
     ("GolazoNet.us", "🇺🇸 USA Pluto TV", "🇺🇸美国 Pluto TV", False),
 ]
 
