@@ -1,11 +1,11 @@
 {
   "astro": {
     "status": "ok",
-    "records": 2313
+    "records": 2209
   },
   "now_hk": {
     "status": "ok",
-    "records": 3649
+    "records": 4051
   },
   "allente_se": {
     "status": "ok",
@@ -26,11 +26,11 @@
   },
   "sky_de": {
     "status": "ok",
-    "records": 1378
+    "records": 1382
   },
   "digi4k_ro": {
     "status": "ok",
-    "records": 121
+    "records": 102
   },
   "sbb_rs": {
     "status": "ok",
@@ -38,7 +38,7 @@
   },
   "virgin_uk": {
     "status": "ok",
-    "records": 82
+    "records": 83
   },
   "player_pl": {
     "status": "ok",
@@ -71,15 +71,15 @@
   },
   "pluto_tv": {
     "status": "ok",
-    "records": 16
+    "records": 21
   },
   "xmltv": {
     "status": "ok",
     "channels": 174,
-    "programmes": 18072,
+    "programmes": 18361,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-10-15T16:03:17Z",
-  "total_records": 18072
+  "generated_at": "2026-10-15T21:59:21Z",
+  "total_records": 18361
 }
