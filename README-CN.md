@@ -44,7 +44,7 @@ https://raw.githubusercontent.com/waastudios/Cathy-epg/master/data/epg.xml.gz
 | 波兰 | Eurosport 1–4 与 Eleven Sports 1（标题已译为英文） | [Player.pl](https://player.pl/) 公开 EPG 接口 |
 | 法国 | CANAL+ 主频道与 CANAL+ FOOT（标题已译为英文） | [Canal+ 官方 EPG 接口](https://www.canalplus.com/programme-tv/) |
 | 加拿大 | 爱自然（Love Nature）、Travelxp 4K 与 TSN 1–5 | [TELUS TV+ 节目指南](https://telustvplus.com/#/guide) |
-| 美国 | Tennis Channel 2 | [Peacock 频道指南](https://www.peacocktv.com/channels/tennis-channel-2/8969135442586836117) |
+| 美国 | Tennis Channel 2 与 Telemundo Deportes Ahora | [Peacock 频道指南](https://www.peacocktv.com/channels/tennis-channel-2/8969135442586836117)、[Telemundo Deportes Ahora](https://www.peacocktv.com/channels/telemundo-deportes-ahora/5923023667697108117) |
 | 美国 | CBS Sports Golazo Network | [Pluto TV 指南](https://pluto.tv/us/live-tv/golazo-network) |
 
 ### 德国 Sky 与 MagentaTV
@@ -65,6 +65,8 @@ EE 范围包含 **Sky Mix、Sky Arts、Sky Witness、Sky Atlantic、Sky One、Sk
 
 **Tennis Channel 2** 通过 Peacock 官方 BFF 频道指南发布，XMLTV ID 为 `TC2.us`。该指南携带 Peacock 自家客户端使用的 Sky OTT 平台请求头即可匿名查询，无需账号。接口的起始时间只能在过去 1 天至未来 2 天之间、单次返回约 30 小时，采集器以四个错开的窗口拼接（约 4 天滚动覆盖），而非一次拉满 7 天。节目标题本身为英文，直接发布。
 
+**Telemundo Deportes Ahora** 通过同一个 Peacock BFF 频道指南发布，XMLTV ID 为 `TDA.us`，与 Tennis Channel 2 在同一次匿名采集内完成。每条原始西班牙语标题均通过下文的分级流水线转换成英文（西语体育节目名精确映射 → 翻译记忆 → 在线服务）；无法翻译的标题只会跳过当条节目，不会导致整个 Peacock 来源失败。在 [CHANNELS-CN.md](CHANNELS-CN.md) 中该频道带有（T）标记，表示节目单已翻译为英文。
+
 **CBS Sports Golazo Network** 通过 Pluto TV 官方指南接口发布，XMLTV ID 为 `GolazoNet.us`。Pluto TV 是 Paramount 自家的免费流媒体平台，该频道在其阵容中名为 “Golazo Network”；指南接口可匿名查询，按 24 小时分窗拉取。（Paramount+ 自家的 apps-api 指南无法使用：匿名请求会被拒绝。）Pluto 对该频道只提前约 1–2 天发布逐节目明细，更远的日期只有其官方发布的整段 “Golazo Network” 占位块，如实收录。节目标题本身为英文，直接发布。
 
 ### 波兰 Player.pl
@@ -77,7 +79,7 @@ EE 范围包含 **Sky Mix、Sky Arts、Sky Witness、Sky Atlantic、Sky One、Sk
 
 ### 英文翻译
 
-非英语市场（瑞典语、挪威语、德语、罗马尼亚语、塞尔维亚语、波兰语、法语）的节目标题均以英文发布；香港 now TV 的中文标题保持原样。翻译在各采集器内部按三级流水线进行：
+非英语市场（瑞典语、挪威语、德语、罗马尼亚语、塞尔维亚语、波兰语、法语、西班牙语）的节目标题均以英文发布；香港 now TV 的中文标题保持原样。翻译在各采集器内部按三级流水线进行：
 
 1. **版本控制的精确映射**（`src/epg_tool/sources.py`）——按来源维护的确定性规则。
 2. **持久翻译记忆**（`src/epg_tool/translation_cache.json`）——每次在线翻译的结果都会记录在此，稳定、可审计，无需重复请求网络。每日工作流会提交该文件，记忆随时间增长。
@@ -114,6 +116,7 @@ epg preview --day tomorrow --provider allente_se --channel 50048
 
 ## 更新日志
 
+- **2026-10-15** —— 通过 Peacock 官方 BFF 频道指南新增 Telemundo Deportes Ahora（`TDA.us`），可匿名查询，与 Tennis Channel 2 同一次采集完成。该频道节目标题为西班牙语，按分级流水线译为英文发布；无法翻译的标题只跳过当条节目。
 - **2026-10-14** —— 通过 Pluto TV 官方指南接口新增 CBS Sports Golazo Network（`GolazoNet.us`），可匿名查询、按 24 小时分窗拉取。Pluto TV 是 Paramount 自家的免费流媒体平台（Paramount+ 自家的 apps-api 指南拒绝匿名请求，无法使用）。Pluto 对该频道只提前约 1–2 天发布逐节目明细，之后的日期为其官方发布的整段 “Golazo Network” 占位块。
 - **2026-10-14** —— 通过 TELUS TV+ 官方指南新增 TSN 1–5（`telus.900`–`telus.904`）；频道按官方名匹配（忽略空格与大小写，这也让 Travelxp 4K 能兼容指南中的 "Travel XP 4K" 写法），并排除 TSN 的地区黑屏（Blackout）变体。通过 Peacock 官方 BFF 频道指南新增 Tennis Channel 2（`TC2.us`），可匿名查询；该接口为滚动窗口（起始时间限过去 1 天至未来 2 天、单次约 30 小时），采集器以四个错开的窗口拼接约 4 天覆盖。另修复频道清单生成器：加拿大分区此前不在排序表中，Telus 频道一直未显示在 CHANNELS 清单中。
 - **2026-10-12** —— 新增加拿大覆盖：通过 TELUS TV+（Optik TV）官方网页指南的公开 AVS 接口发布爱自然（Love Nature，`telus.713`）与 Travelxp 4K（`telus.716`），可匿名查询（优先生产环境，失败回退 QA 环境）。标题本身为英文，直接发布。删除波兰 CANAL+ 4K ULTRA HD（`canal+4k.pl`）与 SBB 欧洲 Travel XP（`travelxp.eu`）；Telus 的 Travelxp 4K 接替 SBB 台。
