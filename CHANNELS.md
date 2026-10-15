@@ -2,7 +2,7 @@
 
 This inventory is generated directly from the currently published `data/epg.xml`. Every row is an actual XMLTV `<channel>` node: **tvg-id** is `channel/@id` and **tvg-name** is `display-name`.
 
-The current XMLTV output contains **173 channels**.
+The current XMLTV output contains **174 channels**.
 
 > **Note:** `(T)` means **Translated**. The channel's schedule originates in a non-English market and programme titles are translated into English before publication. This marker appears **only in this inventory**; it is never written to `data/epg.xml`, `data/epg.xml.gz`, or the programme snapshot. XMLTV `display-name` values remain the official provider names.
 
@@ -247,6 +247,7 @@ The current XMLTV output contains **173 channels**.
 | tvg-id | tvg-name |
 | --- | --- |
 | `TC2.us` | Tennis Channel 2 |
+| `TDA.us` | Telemundo Deportes Ahora (T) |
 
 ## 🇺🇸 USA Pluto TV
 
