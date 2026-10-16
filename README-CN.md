@@ -116,6 +116,7 @@ epg preview --day tomorrow --provider allente_se --channel 50048
 
 ## 更新日志
 
+- **2026-10-16** —— 修复 Travelxp 4K（`telus.716`）节目为空的问题：TELUS TV+ 采集器改为按频道回退（不再是整表二选一环境）。该台在生产目录中始终匹配不到，生产环境一旦可用它便一直为空；现在生产缺失（或拉取失败）的频道由 QA 环境逐台补齐——QA 目录中该台为 “Travel XP 4K”（callLetter TXP4KHDR），7 天节目单完整。
 - **2026-10-15** —— 通过 Peacock 官方 BFF 频道指南新增 Telemundo Deportes Ahora（`TDA.us`），可匿名查询，与 Tennis Channel 2 同一次采集完成。该频道节目标题为西班牙语，按分级流水线译为英文发布；无法翻译的标题只跳过当条节目。
 - **2026-10-14** —— 通过 Pluto TV 官方指南接口新增 CBS Sports Golazo Network（`GolazoNet.us`），可匿名查询、按 24 小时分窗拉取。Pluto TV 是 Paramount 自家的免费流媒体平台（Paramount+ 自家的 apps-api 指南拒绝匿名请求，无法使用）。Pluto 对该频道只提前约 1–2 天发布逐节目明细，之后的日期为其官方发布的整段 “Golazo Network” 占位块。
 - **2026-10-14** —— 通过 TELUS TV+ 官方指南新增 TSN 1–5（`telus.900`–`telus.904`）；频道按官方名匹配（忽略空格与大小写，这也让 Travelxp 4K 能兼容指南中的 "Travel XP 4K" 写法），并排除 TSN 的地区黑屏（Blackout）变体。通过 Peacock 官方 BFF 频道指南新增 Tennis Channel 2（`TC2.us`），可匿名查询；该接口为滚动窗口（起始时间限过去 1 天至未来 2 天、单次约 30 小时），采集器以四个错开的窗口拼接约 4 天覆盖。另修复频道清单生成器：加拿大分区此前不在排序表中，Telus 频道一直未显示在 CHANNELS 清单中。
