@@ -5,7 +5,7 @@
   },
   "now_hk": {
     "status": "ok",
-    "records": 3639
+    "records": 3633
   },
   "allente_se": {
     "status": "ok",
@@ -53,7 +53,7 @@
   },
   "telus_tvplus": {
     "status": "ok",
-    "records": 1360,
+    "records": 1023,
     "notes": [
       "Telus Love Nature 的频道号为 15130（配置为 713），仍按频道名继续采集。",
       "Telus TV+（telus.prod.g.telustvplus.com）频道目录未找到 Travelxp 4K HDR，已跳过该频道。",
@@ -66,7 +66,9 @@
       "Telus Travelxp 4K HDR 的频道号为 7619（配置为 716），仍按频道名继续采集。",
       "Telus TSN1 的频道号为 7624（配置为 900），仍按频道名继续采集。",
       "Telus TSN2 的频道号为 7627（配置为 901），仍按频道名继续采集。",
-      "Telus TV+ 频道 telus.716 由 QA 环境补齐（生产环境缺失或不可用）。"
+      "Telus TV+ 频道 telus.716 由 QA 环境补齐（生产环境缺失或不可用）。",
+      "Telus TV+（telus.qa.watchoptiktv.com）EPG 拉取失败：Telus TV+（telus.qa.watchoptiktv.com）EPG 拉取失败：Telus TV+ 接口 telus.qa.watchoptiktv.com 返回 HTTP 503。",
+      "Telus TV+ 未返回频道 telus.716 的节目条目。"
     ]
   },
   "peacock": {
@@ -83,11 +85,11 @@
   },
   "xmltv": {
     "status": "ok",
-    "channels": 180,
-    "programmes": 18985,
+    "channels": 179,
+    "programmes": 18642,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-10-16T14:18:27Z",
-  "total_records": 18985
+  "generated_at": "2026-10-16T14:42:17Z",
+  "total_records": 18642
 }
