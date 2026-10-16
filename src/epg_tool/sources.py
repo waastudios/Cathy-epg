@@ -43,7 +43,7 @@ USER_AGENT = "Cathy-epg/0.2 (+https://github.com/waastudios/Cathy-epg; official-
 ASTRO_API = "https://contenthub-api.eco.astro.com.my/api/v2/search-linear"
 ASTRO_GUIDE = "https://www.astro.com.my/content/channels"
 # 用户要求仅保留 Astro 官方体育区当前有排期的频道；不按节目标题猜测体育属性。
-ASTRO_SPORT_CHANNEL_NUMBERS = frozenset({"801", "802", "803", "804", "805", "806", "810", "811", "812", "813", "814", "815", "817", "818", "819", "820", "821", "822", "826", "831", "832", "833"})
+ASTRO_SPORT_CHANNEL_NUMBERS = frozenset({"801", "802", "803", "804", "805", "806", "810", "811", "812", "813", "814", "815", "816", "817", "818", "819", "820", "821", "822", "826", "831", "832", "833"})
 NOW_HK_GUIDE = "https://nowplayer.now.com/tvguide?filterType=all"
 NOW_HK_CHANNELS_ZH = "https://nowplayer.now.com/channels?lang=zh&filterType=all"
 NOW_HK_EPG = "https://nowplayer.now.com/tvguide/epglist"
