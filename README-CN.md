@@ -46,6 +46,7 @@ https://raw.githubusercontent.com/waastudios/Cathy-epg/master/data/epg.xml.gz
 | 加拿大 | 爱自然（Love Nature）、Travelxp 4K 与 TSN 1–5 | [TELUS TV+ 节目指南](https://telustvplus.com/#/guide) |
 | 美国 | Tennis Channel 2 与 Telemundo Deportes Ahora | [Peacock 频道指南](https://www.peacocktv.com/channels/tennis-channel-2/8969135442586836117)、[Telemundo Deportes Ahora](https://www.peacocktv.com/channels/telemundo-deportes-ahora/5923023667697108117) |
 | 美国 | CBS Sports Golazo Network | [Pluto TV 指南](https://pluto.tv/us/live-tv/golazo-network) |
+| 美国 | NBC Sports 湾区、波士顿、费城与加州 | [EPGShare 美国节目文件](https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz) |
 
 ### 德国 Sky 与 MagentaTV
 
@@ -68,6 +69,8 @@ EE 范围包含 **Sky Mix、Sky Arts、Sky Witness、Sky Atlantic、Sky One、Sk
 **Telemundo Deportes Ahora** 通过同一个 Peacock BFF 频道指南发布，XMLTV ID 为 `TDA.us`，与 Tennis Channel 2 在同一次匿名采集内完成。每条原始西班牙语标题均通过下文的分级流水线转换成英文（西语体育节目名精确映射 → 翻译记忆 → 在线服务）；无法翻译的标题只会跳过当条节目，不会导致整个 Peacock 来源失败。在 [CHANNELS-CN.md](CHANNELS-CN.md) 中该频道带有（T）标记，表示节目单已翻译为英文。
 
 **CBS Sports Golazo Network** 通过 Pluto TV 官方指南接口发布，XMLTV ID 为 `GolazoNet.us`。Pluto TV 是 Paramount 自家的免费流媒体平台，该频道在其阵容中名为 “Golazo Network”；指南接口可匿名查询，按 24 小时分窗拉取。（Paramount+ 自家的 apps-api 指南无法使用：匿名请求会被拒绝。）Pluto 对该频道只提前约 1–2 天发布逐节目明细，更远的日期只有其官方发布的整段 “Golazo Network” 占位块，如实收录。节目标题本身为英文，直接发布。
+
+**NBC Sports 湾区（Bay Area）、波士顿（Boston）、费城（Philadelphia）与加州（California）** 以 `NBCSpBay.us`、`NBCSpBos.us`、`NBCSpPhilly.us`、`NBCSpCali.us` 发布。这四个台在 Peacock 上为付费附加包，其官方指南不对匿名查询开放（已逐一核查官方指南接口、官网与站点地图），因此作为本项目官方源原则的一项明确例外，其节目单改用 EPGShare 的 US2 XMLTV 文件；该文件每日更新、约 4 天滚动覆盖。每台取主 feed（HD feed；加州在该文件中无 HD feed，取 SAT feed），不取 Outer Market 黑屏变体与 Plus 溢出频道。节目标题本身为英文，直接发布。
 
 ### 波兰 Player.pl
 
@@ -116,6 +119,7 @@ epg preview --day tomorrow --provider allente_se --channel 50048
 
 ## 更新日志
 
+- **2026-10-16** —— 通过 EPGShare 的 US2 XMLTV 文件新增四个 NBC Sports 地区频道（`NBCSpBay.us`、`NBCSpBos.us`、`NBCSpPhilly.us`、`NBCSpCali.us`）。这四个台是 Peacock 付费附加包、官方指南无法匿名取得，故为这四个台明确破例使用 EPGShare；只取主 feed，约 4 天滚动覆盖。
 - **2026-10-16** —— 修复 Travelxp 4K（`telus.716`）节目为空的问题：TELUS TV+ 采集器改为按频道回退（不再是整表二选一环境）。该台在生产目录中始终匹配不到，生产环境一旦可用它便一直为空；现在生产缺失（或拉取失败）的频道由 QA 环境逐台补齐——QA 目录中该台为 “Travel XP 4K”（callLetter TXP4KHDR），7 天节目单完整。
 - **2026-10-15** —— 通过 Peacock 官方 BFF 频道指南新增 Telemundo Deportes Ahora（`TDA.us`），可匿名查询，与 Tennis Channel 2 同一次采集完成。该频道节目标题为西班牙语，按分级流水线译为英文发布；无法翻译的标题只跳过当条节目。
 - **2026-10-14** —— 通过 Pluto TV 官方指南接口新增 CBS Sports Golazo Network（`GolazoNet.us`），可匿名查询、按 24 小时分窗拉取。Pluto TV 是 Paramount 自家的免费流媒体平台（Paramount+ 自家的 apps-api 指南拒绝匿名请求，无法使用）。Pluto 对该频道只提前约 1–2 天发布逐节目明细，之后的日期为其官方发布的整段 “Golazo Network” 占位块。
