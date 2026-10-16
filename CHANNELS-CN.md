@@ -257,7 +257,7 @@
 | --- | --- |
 | `GolazoNet.us` | Golazo Network |
 
-## 🇺🇸美国 EPGShare
+## 🇺🇸美国NBC Sports地方台（EPGShare）
 
 | tvg-id | tvg-name |
 | --- | --- |
