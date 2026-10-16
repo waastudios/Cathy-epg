@@ -2,7 +2,7 @@
 
 This inventory is generated directly from the currently published `data/epg.xml`. Every row is an actual XMLTV `<channel>` node: **tvg-id** is `channel/@id` and **tvg-name** is `display-name`.
 
-The current XMLTV output contains **179 channels**.
+The current XMLTV output contains **181 channels**.
 
 > **Note:** `(T)` means **Translated**. The channel's schedule originates in a non-English market and programme titles are translated into English before publication. This marker appears **only in this inventory**; it is never written to `data/epg.xml`, `data/epg.xml.gz`, or the programme snapshot. XMLTV `display-name` values remain the official provider names.
 
@@ -264,3 +264,10 @@ The current XMLTV output contains **179 channels**.
 | `NBCSpBos.us` | NBC Sports Boston |
 | `NBCSpCali.us` | NBC Sports California |
 | `NBCSpPhilly.us` | NBC Sports Philadelphia |
+
+## 🇺🇸 USA Local Stations (EPGShare)
+
+| tvg-id | tvg-name |
+| --- | --- |
+| `WNBC.us` | NBC 4 New York |
+| `WSCV.us` | Telemundo 51 (T) |
