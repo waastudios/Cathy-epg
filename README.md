@@ -32,7 +32,7 @@ Every XMLTV `display-name` is the provider’s official channel name unless an e
 
 | Market | Published services | Official source |
 | --- | --- | --- |
-| Malaysia | Astro: 22 explicitly allow-listed sports channels | [Astro Content Guide](https://www.astro.com.my/content/channels) |
+| Malaysia | Astro: 23 explicitly allow-listed sports channels | [Astro Content Guide](https://www.astro.com.my/content/channels) |
 | Hong Kong | now TV: 37 explicitly allow-listed sports channels | [now TV Guide](https://nowplayer.now.com/tvguide) and [official Chinese channel directory](https://nowplayer.now.com/channels?lang=zh&filterType=all) |
 | Germany | 29 Sky Sport and Sky Sport Bundesliga channels, including UHD | [Telekom MagentaTV](https://www.magenta.tv/) public programme guide |
 | Sweden | 13 V Sport services, including V Sport UltraHD | [Allente TV Guide](https://www.allente.se/tv-guide/) |
@@ -119,6 +119,7 @@ For Serbia’s SBB Eurosport schedules, titles are converted during collection u
 
 ## Changelog
 
+- **2026-10-16** — Added Astro Badminton 2 (`astro.816`) to the Astro sports allow-list (now 23 channels). It is Astro’s ad hoc channel for concurrent live badminton matches; a check against the official directory also confirmed no renames or removals among the existing 22 Astro sports channels.
 - **2026-10-16** — Added the four NBC Sports regional networks (`NBCSpBay.us`, `NBCSpBos.us`, `NBCSpPhilly.us`, `NBCSpCali.us`) from EPGShare’s US2 XMLTV file. The networks are Peacock add-ons whose official guide is not available anonymously, so EPGShare is used as a deliberate exception for these channels; main feeds only, about four days of rolling coverage.
 - **2026-10-16** — Fixed Travelxp 4K (`telus.716`) returning no programmes: the TELUS TV+ collector now falls back per channel instead of picking one environment for the whole lineup. The channel could not be matched in the production guide listing, so it silently stayed empty whenever production answered; any channel missing (or failing) in production is now filled from the QA environment, whose listing carries it as "Travel XP 4K" (call sign TXP4KHDR) with a full 7-day schedule.
 - **2026-10-15** — Added Telemundo Deportes Ahora (`TDA.us`) from Peacock's official BFF channel guide, collected anonymously in the same pass as Tennis Channel 2. The channel's Spanish programme titles are converted to English through the tiered translation pipeline; a title that cannot be translated skips that single programme.
