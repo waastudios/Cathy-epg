@@ -243,20 +243,7 @@
 | `telus.903` | TSN4 |
 | `telus.904` | TSN5 |
 
-## 🇺🇸美国 Peacock
-
-| tvg-id | tvg-name |
-| --- | --- |
-| `TC2.us` | Tennis Channel 2 |
-| `TDA.us` | Telemundo Deportes Ahora (T) |
-
-## 🇺🇸美国 Pluto TV
-
-| tvg-id | tvg-name |
-| --- | --- |
-| `GolazoNet.us` | Golazo Network |
-
-## 🇺🇸美国NBC Sports地方台（EPGShare）
+## 🇺🇸美国NBC（EPGShare）
 
 | tvg-id | tvg-name |
 | --- | --- |
@@ -264,10 +251,13 @@
 | `NBCSpBos.us` | NBC Sports Boston |
 | `NBCSpCali.us` | NBC Sports California |
 | `NBCSpPhilly.us` | NBC Sports Philadelphia |
+| `WNBC.us` | NBC 4 New York |
+| `WSCV.us` | Telemundo 51 (T) |
 
-## 🇺🇸美国地方台（EPGShare）
+## 🇺🇸美国Pluto TV / Peacock
 
 | tvg-id | tvg-name |
 | --- | --- |
-| `WNBC.us` | NBC 4 New York |
-| `WSCV.us` | Telemundo 51 (T) |
+| `GolazoNet.us` | Golazo Network |
+| `TC2.us` | Tennis Channel 2 |
+| `TDA.us` | Telemundo Deportes Ahora (T) |
