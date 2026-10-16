@@ -243,20 +243,7 @@ The current XMLTV output contains **181 channels**.
 | `telus.903` | TSN4 |
 | `telus.904` | TSN5 |
 
-## 🇺🇸 USA Peacock
-
-| tvg-id | tvg-name |
-| --- | --- |
-| `TC2.us` | Tennis Channel 2 |
-| `TDA.us` | Telemundo Deportes Ahora (T) |
-
-## 🇺🇸 USA Pluto TV
-
-| tvg-id | tvg-name |
-| --- | --- |
-| `GolazoNet.us` | Golazo Network |
-
-## 🇺🇸 USA NBC Sports Regional Networks (EPGShare)
+## 🇺🇸 USA NBC (EPGShare)
 
 | tvg-id | tvg-name |
 | --- | --- |
@@ -264,10 +251,13 @@ The current XMLTV output contains **181 channels**.
 | `NBCSpBos.us` | NBC Sports Boston |
 | `NBCSpCali.us` | NBC Sports California |
 | `NBCSpPhilly.us` | NBC Sports Philadelphia |
+| `WNBC.us` | NBC 4 New York |
+| `WSCV.us` | Telemundo 51 (T) |
 
-## 🇺🇸 USA Local Stations (EPGShare)
+## 🇺🇸 USA Pluto TV / Peacock
 
 | tvg-id | tvg-name |
 | --- | --- |
-| `WNBC.us` | NBC 4 New York |
-| `WSCV.us` | Telemundo 51 (T) |
+| `GolazoNet.us` | Golazo Network |
+| `TC2.us` | Tennis Channel 2 |
+| `TDA.us` | Telemundo Deportes Ahora (T) |
