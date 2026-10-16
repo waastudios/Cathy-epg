@@ -119,7 +119,7 @@ def _xmltv_channel_id(record: Programme) -> str:
         # channel_id 即用户指定 tvg-id（GolazoNet.us）
         return record.channel_id
     if record.provider == "epgshare":
-        # channel_id 即用户指定 tvg-id（NBCSpBay.us 等）
+        # channel_id 即用户指定 tvg-id（NBCSpBay.us、WSCV.us、WNBC.us 等）
         return record.channel_id
     return record.provider if not record.channel_number else f"{record.provider}.{record.channel_number}"
 
