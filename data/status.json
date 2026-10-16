@@ -1,15 +1,15 @@
 {
   "astro": {
     "status": "ok",
-    "records": 2209
+    "records": 2402
   },
   "now_hk": {
     "status": "ok",
-    "records": 4051
+    "records": 3639
   },
   "allente_se": {
     "status": "ok",
-    "records": 796
+    "records": 793
   },
   "allente_no": {
     "status": "stale",
@@ -19,41 +19,41 @@
   },
   "ee_uk": {
     "status": "ok",
-    "records": 7012,
+    "records": 7000,
     "notes": [
-      "tvguide.co.uk 采集 6801 条（6801 去重），其中有图 6764 条。"
+      "tvguide.co.uk 采集 6783 条（6783 去重），其中有图 6757 条。"
     ]
   },
   "sky_de": {
     "status": "ok",
-    "records": 1382
+    "records": 1366
   },
   "digi4k_ro": {
     "status": "ok",
-    "records": 102
+    "records": 122
   },
   "sbb_rs": {
     "status": "ok",
-    "records": 179
+    "records": 173
   },
   "virgin_uk": {
     "status": "ok",
-    "records": 83
+    "records": 80
   },
   "player_pl": {
     "status": "ok",
-    "records": 603
+    "records": 608
   },
   "canalplus_fr": {
     "status": "ok",
-    "records": 125,
+    "records": 122,
     "notes": [
       "Canal+ 官方 API 不可用（403 rate limited: https://hodor.canalplus.pro/api/v2/mycanal/authenticate.json/webapp/6.0?experiments=beta-test-one-tv-guide:control），回退到 epg.pw"
     ]
   },
   "telus_tvplus": {
     "status": "ok",
-    "records": 996,
+    "records": 1360,
     "notes": [
       "Telus Love Nature 的频道号为 15130（配置为 713），仍按频道名继续采集。",
       "Telus TV+（telus.prod.g.telustvplus.com）频道目录未找到 Travelxp 4K HDR，已跳过该频道。",
@@ -62,24 +62,32 @@
       "Telus TSN3 的频道号为 16200（配置为 902），仍按频道名继续采集。",
       "Telus TSN4 的频道号为 16201（配置为 903），仍按频道名继续采集。",
       "Telus TSN5 的频道号为 16202（配置为 904），仍按频道名继续采集。",
-      "Telus TV+ 未返回频道 telus.716 的节目条目。"
+      "Telus Love Nature 的频道号为 7333（配置为 713），仍按频道名继续采集。",
+      "Telus Travelxp 4K HDR 的频道号为 7619（配置为 716），仍按频道名继续采集。",
+      "Telus TSN1 的频道号为 7624（配置为 900），仍按频道名继续采集。",
+      "Telus TSN2 的频道号为 7627（配置为 901），仍按频道名继续采集。",
+      "Telus TV+ 频道 telus.716 由 QA 环境补齐（生产环境缺失或不可用）。"
     ]
   },
   "peacock": {
     "status": "ok",
-    "records": 120
+    "records": 113
   },
   "pluto_tv": {
     "status": "ok",
-    "records": 21
+    "records": 18
+  },
+  "epgshare": {
+    "status": "ok",
+    "records": 507
   },
   "xmltv": {
     "status": "ok",
-    "channels": 174,
-    "programmes": 18361,
+    "channels": 180,
+    "programmes": 18985,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-10-15T21:59:21Z",
-  "total_records": 18361
+  "generated_at": "2026-10-16T14:18:27Z",
+  "total_records": 18985
 }
