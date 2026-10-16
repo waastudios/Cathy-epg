@@ -2245,7 +2245,8 @@ def collect_player_pl(days: int = 7, pause_seconds: float = 0.4) -> list[Program
 
 # Telus TV+（Optik TV）官方网页指南的公开 EPG 接口（AVS 平台）。
 # 网页版指南 https://telustvplus.com/#/guide 可匿名加载节目数据；接口需
-# restful: yes 请求头。生产环境经 Cloudflare 保护，CI 若被拦截则回退 QA 环境。
+# restful: yes 请求头。生产环境经 Cloudflare 保护；频道按个回退：生产
+# 目录缺失的台由 QA 环境补齐（Travelxp 4K 即属此情况）。
 TELUS_TVPLUS_HOSTS = (
     "telus.prod.g.telustvplus.com",
     "telus.qa.watchoptiktv.com",
@@ -2358,39 +2359,16 @@ def _telus_tvplus_find_channels(host: str) -> dict[str, dict]:
     return found
 
 
-def collect_telus_tvplus(days: int = 7, pause_seconds: float = 1.0) -> list[Programme]:
-    """读取 Telus TV+ 官方指南中 Love Nature、Travelxp 4K 与 TSN 1–5 的节目单。
-
-    频道标题本身为英文，直接发布。生产环境优先；若被 Cloudflare 拦截则
-    回退 QA 环境（频道阵容为测试用，按频道名匹配，TSN3–TSN5 按实测
-    channelId 兜底）。单个频道缺失只跳过该频道并记入 notes，不会让整个
-    来源失败。
-    """
-    if days not in range(1, 8):
-        raise ValueError("Telus TV+ 采集天数必须为 1–7。")
-    channels: dict[str, dict] = {}
-    used_host = ""
-    last_error = ""
-    for host in TELUS_TVPLUS_HOSTS:
-        try:
-            channels = _telus_tvplus_find_channels(host)
-        except SourceUnavailable as exc:
-            last_error = str(exc)
-            note(f"Telus TV+（{host}）不可用：{exc}")
-            continue
-        if channels:
-            used_host = host
-            break
-        note(f"Telus TV+（{host}）未找到目标频道，尝试下一个环境。")
-    if not channels:
-        raise SourceUnavailable(f"Telus TV+ 所有环境均不可用：{last_error}")
-    if used_host != TELUS_TVPLUS_HOSTS[0]:
-        note(f"Telus TV+ 生产环境不可用，已回退至 {used_host}（测试频道阵容）。")
-
+def _telus_tvplus_fetch_records(
+    host: str,
+    channels: dict[str, dict],
+    days: int,
+    pause_seconds: float,
+    retrieved_at: str,
+) -> list[Programme]:
+    """在指定环境按 24 小时切片拉取给定频道的 EPG 记录。"""
     zone_utc = timezone.utc
     now = datetime.now(zone_utc)
-    # 按 24 小时切片拉取，避免单次响应过大。
-    retrieved_at = utc_now_iso()
     records: list[Programme] = []
     channel_ids = {str(meta.get("channelId")) for meta in channels.values()}
     for day_offset in range(days):
@@ -2400,7 +2378,7 @@ def collect_telus_tvplus(days: int = 7, pause_seconds: float = 1.0) -> list[Prog
         window_end = window_start + timedelta(days=1)
         try:
             data = _telus_tvplus_api(
-                used_host,
+                host,
                 "/TRAY/EPG",
                 {
                     "filter_startTime": str(int(window_start.timestamp() * 1000)),
@@ -2408,7 +2386,7 @@ def collect_telus_tvplus(days: int = 7, pause_seconds: float = 1.0) -> list[Prog
                 },
             )
         except SourceUnavailable as exc:
-            raise SourceUnavailable(f"Telus TV+（{used_host}）EPG 拉取失败：{exc}") from exc
+            raise SourceUnavailable(f"Telus TV+（{host}）EPG 拉取失败：{exc}") from exc
         containers = (data.get("resultObj") or {}).get("containers") or []
         for container in containers:
             channel_id = str((container.get("metadata") or {}).get("channelId") or "")
@@ -2460,7 +2438,74 @@ def collect_telus_tvplus(days: int = 7, pause_seconds: float = 1.0) -> list[Prog
                     )
                 )
         time.sleep(pause_seconds)
+    return records
 
+
+def collect_telus_tvplus(days: int = 7, pause_seconds: float = 1.0) -> list[Programme]:
+    """读取 Telus TV+ 官方指南中 Love Nature、Travelxp 4K 与 TSN 1–5 的节目单。
+
+    频道标题本身为英文，直接发布。环境按频道逐个选：生产环境优先，某台
+    在生产目录中缺失（或生产整体不可用）时由 QA 环境补齐该台——Travelxp
+    4K 在生产目录中的名称始终未能证实，QA 目录中为 "Travel XP 4K"
+    （callLetter TXP4KHDR，channelId 614），其实测 7 天节目单完整。QA
+    阵容为测试用，按频道名匹配，TSN3–TSN5 按实测 channelId 兜底。单个
+    频道在两个环境都缺失时只跳过并记入 notes，不会让整个来源失败。
+    """
+    if days not in range(1, 8):
+        raise ValueError("Telus TV+ 采集天数必须为 1–7。")
+    retrieved_at = utc_now_iso()
+    per_host: list[tuple[str, dict[str, dict]]] = []
+    last_error = ""
+    for host in TELUS_TVPLUS_HOSTS:
+        try:
+            found = _telus_tvplus_find_channels(host)
+        except SourceUnavailable as exc:
+            last_error = str(exc)
+            note(f"Telus TV+（{host}）不可用：{exc}")
+            continue
+        per_host.append((host, found))
+    assigned: dict[str, dict[str, dict]] = {}
+    for host, found in per_host:
+        for xmltv_id, meta in found.items():
+            if any(xmltv_id in group for group in assigned.values()):
+                continue
+            assigned.setdefault(host, {})[xmltv_id] = meta
+    if not assigned:
+        raise SourceUnavailable(f"Telus TV+ 所有环境均不可用：{last_error}")
+    qa_filled = sorted(
+        xmltv_id
+        for host, group in assigned.items()
+        if host != TELUS_TVPLUS_HOSTS[0]
+        for xmltv_id in group
+    )
+    if qa_filled:
+        note(f"Telus TV+ 频道 {', '.join(qa_filled)} 由 QA 环境补齐（生产环境缺失或不可用）。")
+    records: list[Programme] = []
+    pending: dict[str, dict[str, dict]] = {h: dict(g) for h, g in assigned.items()}
+    # 首轮按指派拉取；某环境 EPG 拉取失败时，其频道改由其它已找到该台的
+    # 环境重试一轮，避免「目录可达但 EPG 不可用」时整批丢台。
+    for attempt in range(2):
+        retry: dict[str, dict[str, dict]] = {}
+        for host, group in pending.items():
+            if not group:
+                continue
+            try:
+                records.extend(
+                    _telus_tvplus_fetch_records(
+                        host, group, days, pause_seconds, retrieved_at
+                    )
+                )
+            except SourceUnavailable as exc:
+                note(f"Telus TV+（{host}）EPG 拉取失败：{exc}")
+                if attempt == 0:
+                    for xmltv_id in group:
+                        for other_host, found in per_host:
+                            if other_host != host and xmltv_id in found:
+                                retry.setdefault(other_host, {})[xmltv_id] = found[xmltv_id]
+                                break
+        pending = retry
+        if not pending:
+            break
     records = _deduplicate(records)
     published = {record.channel_id for record in records}
     missing = [xmltv_id for _, _, xmltv_id, _ in TELUS_CHANNELS if xmltv_id not in published]
