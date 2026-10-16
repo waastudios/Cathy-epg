@@ -47,6 +47,7 @@ https://raw.githubusercontent.com/waastudios/Cathy-epg/master/data/epg.xml.gz
 | 美国 | Tennis Channel 2 与 Telemundo Deportes Ahora | [Peacock 频道指南](https://www.peacocktv.com/channels/tennis-channel-2/8969135442586836117)、[Telemundo Deportes Ahora](https://www.peacocktv.com/channels/telemundo-deportes-ahora/5923023667697108117) |
 | 美国 | CBS Sports Golazo Network | [Pluto TV 指南](https://pluto.tv/us/live-tv/golazo-network) |
 | 美国 | NBC Sports 湾区、波士顿、费城与加州 | [EPGShare 美国节目文件](https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz) |
+| 美国 | Telemundo 51（迈阿密）与 NBC 4 纽约 | [EPGShare 美国地方台节目文件](https://epgshare01.online/epgshare01/epg_ripper_US_LOCALS1.xml.gz) |
 
 ### 德国 Sky 与 MagentaTV
 
@@ -71,6 +72,8 @@ EE 范围包含 **Sky Mix、Sky Arts、Sky Witness、Sky Atlantic、Sky One、Sk
 **CBS Sports Golazo Network** 通过 Pluto TV 官方指南接口发布，XMLTV ID 为 `GolazoNet.us`。Pluto TV 是 Paramount 自家的免费流媒体平台，该频道在其阵容中名为 “Golazo Network”；指南接口可匿名查询，按 24 小时分窗拉取。（Paramount+ 自家的 apps-api 指南无法使用：匿名请求会被拒绝。）Pluto 对该频道只提前约 1–2 天发布逐节目明细，更远的日期只有其官方发布的整段 “Golazo Network” 占位块，如实收录。节目标题本身为英文，直接发布。
 
 **NBC Sports 湾区（Bay Area）、波士顿（Boston）、费城（Philadelphia）与加州（California）** 以 `NBCSpBay.us`、`NBCSpBos.us`、`NBCSpPhilly.us`、`NBCSpCali.us` 发布。这四个台在 Peacock 上为付费附加包，其官方指南不对匿名查询开放（已逐一核查官方指南接口、官网与站点地图），因此作为本项目官方源原则的一项明确例外，其节目单改用 EPGShare 的 US2 XMLTV 文件；该文件每日更新、约 4 天滚动覆盖。每台取主 feed（HD feed；加州在该文件中无 HD feed，取 SAT feed），不取 Outer Market 黑屏变体与 Plus 溢出频道。节目标题本身为英文，直接发布。
+
+**Telemundo 51（迈阿密）与 NBC 4 纽约（New York）** 以 `WSCV.us` 与 `WNBC.us` 发布。两台均为地方台，不在 Peacock 匿名官方指南内（该指南只含全国性线性频道），因此与 NBC Sports 四台同样作为本项目官方源原则的一项明确例外，其节目单改用 EPGShare 的 US_LOCALS1 XMLTV 文件；该文件每日更新、约 4 天滚动覆盖。Telemundo 51 的西班牙语标题按分级流水线译为英文发布（无法翻译的标题只跳过当条节目），在 [CHANNELS-CN.md](CHANNELS-CN.md) 中带（T）标记；NBC 4 纽约的标题本身为英文，直接发布。
 
 ### 波兰 Player.pl
 
@@ -120,6 +123,8 @@ epg preview --day tomorrow --provider allente_se --channel 50048
 ## 更新日志
 
 - **2026-10-16** —— Astro 体育白名单新增 Astro Badminton 2（`astro.816`），共 23 条。该台是 Astro 为并行羽毛球直播开设的 ad hoc 频道；本次按官方目录核查，现有 22 条 Astro 体育频道无改名、无下线。
+- **2026-10-17** —— 通过 EPGShare 的 US_LOCALS1 XMLTV 文件新增迈阿密 Telemundo 51（`WSCV.us`）与纽约 NBC 4（`WNBC.us`）。地方台不在 Peacock 匿名官方指南内，故这两台同样明确破例使用 EPGShare；约 4 天滚动覆盖。Telemundo 51 的西语标题按分级流水线译为英文发布；NBC 4 纽约的标题直接发布。
+
 - **2026-10-16** —— 通过 EPGShare 的 US2 XMLTV 文件新增四个 NBC Sports 地区频道（`NBCSpBay.us`、`NBCSpBos.us`、`NBCSpPhilly.us`、`NBCSpCali.us`）。这四个台是 Peacock 付费附加包、官方指南无法匿名取得，故为这四个台明确破例使用 EPGShare；只取主 feed，约 4 天滚动覆盖。
 - **2026-10-16** —— 修复 Travelxp 4K（`telus.716`）节目为空的问题：TELUS TV+ 采集器改为按频道回退（不再是整表二选一环境）。该台在生产目录中始终匹配不到，生产环境一旦可用它便一直为空；现在生产缺失（或拉取失败）的频道由 QA 环境逐台补齐——QA 目录中该台为 “Travel XP 4K”（callLetter TXP4KHDR），7 天节目单完整。
 - **2026-10-15** —— 通过 Peacock 官方 BFF 频道指南新增 Telemundo Deportes Ahora（`TDA.us`），可匿名查询，与 Tennis Channel 2 同一次采集完成。该频道节目标题为西班牙语，按分级流水线译为英文发布；无法翻译的标题只跳过当条节目。
