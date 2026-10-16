@@ -27,6 +27,7 @@ from .sources import (
     collect_peacock,
     collect_player_pl,
     collect_pluto_tv,
+    collect_epgshare_us_rsn,
     collect_sbb_eurosport,
     collect_telus_tvplus,
     collect_virgin_uk_ultra,
@@ -89,6 +90,9 @@ def _collect(args: argparse.Namespace) -> int:
         # Pluto TV（Paramount 自家平台）官方指南：Golazo Network（GolazoNet.us），
         # 标题本身为英文；按 24 小时分窗逐日拉取。
         ("pluto_tv", lambda: collect_pluto_tv(args.days)),
+        # EPGSHARE US2 公开 XMLTV（用户指定来源）：四个 NBC Sports 地区频道
+        # （NBCSpBay/Bos/Philly/Cali.us），标题本身为英文；文件约 4 天滚动。
+        ("epgshare", lambda: collect_epgshare_us_rsn(args.days)),
     )
     for provider, collector in collectors:
         try:
@@ -130,6 +134,7 @@ def _collect(args: argparse.Namespace) -> int:
             "telus_tvplus": ZoneInfo("UTC"),
             "peacock": ZoneInfo("UTC"),
             "pluto_tv": ZoneInfo("UTC"),
+            "epgshare": ZoneInfo("UTC"),
         }
 
         def local_date(row: Programme, zone: ZoneInfo):
