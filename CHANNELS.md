@@ -257,7 +257,7 @@ The current XMLTV output contains **180 channels**.
 | --- | --- |
 | `GolazoNet.us` | Golazo Network |
 
-## 🇺🇸 USA EPGShare
+## 🇺🇸 USA NBC Sports Regional Networks (EPGShare)
 
 | tvg-id | tvg-name |
 | --- | --- |
