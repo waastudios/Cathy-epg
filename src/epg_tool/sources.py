@@ -3,6 +3,8 @@
 from __future__ import annotations
 
 from datetime import date, datetime, time as clock_time, timedelta, timezone
+import gzip
+import io
 import json
 from importlib.resources import files
 import re
@@ -2825,4 +2827,112 @@ def collect_pluto_tv(days: int = 7, pause_seconds: float = 0.5) -> list[Programm
     records = _deduplicate(records)
     if not records:
         raise SourceUnavailable("Pluto TV 指南未返回 Golazo Network 的节目条目。")
+    return records
+
+
+# EPGSHARE（epgshare01.online）公开 XMLTV 聚合文件。此来源是用户指定的
+# 例外：四个 NBC Sports 地区频道（湾区／波士顿／费城／加州）虽在 Peacock
+# 上线，但其官方 BFF 指南仅对购买附加包的登录会话下发这四台，匿名无法
+# 取得；用户遂指定改用 EPGSHARE 的 US2 文件（其数据按日滚动更新，约
+# 4 天覆盖）。只提取这四个频道的主 feed：湾区／波士顿／费城取 HD feed，
+# 加州无 HD feed，取节目量并列最高的 SAT feed（Outer Market 为异地黑屏
+# 变体、Plus 为溢出频道，均不取）。用户指定 tvg-id 为 NBCSpBay.us 等。
+EPGSHARE_US2_URL = "https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz"
+EPGSHARE_CHANNELS: tuple[tuple[str, str, str], ...] = (
+    ("NBC.Sports.Bay.Area.HD.us2", "NBCSpBay.us", "NBC Sports Bay Area"),
+    ("NBC.Sports.Boston.HD.us2", "NBCSpBos.us", "NBC Sports Boston"),
+    ("NBC.Sports.Philadelphia.HD.us2", "NBCSpPhilly.us", "NBC Sports Philadelphia"),
+    ("NBC.Sports.California.SAT.us2", "NBCSpCali.us", "NBC Sports California"),
+)
+
+
+def _epgshare_xmltv_time(value: str) -> datetime:
+    """解析 XMLTV 时间（"20261015050000 +0000"）为带时区 datetime。"""
+    return datetime.strptime(value.strip(), "%Y%m%d%H%M%S %z")
+
+
+def collect_epgshare_us_rsn(days: int = 7, pause_seconds: float = 1.0) -> list[Programme]:
+    """读取 EPGSHARE US2 文件中四个 NBC Sports 地区频道的节目单。
+
+    标题本身为英文，直接发布。整文件为 gzip 压缩的 XMLTV（约 4 天滚动
+    窗口，每日更新），下载后流式解析，只保留目标频道在
+    [昨日 00:00 UTC, 今日 00:00 UTC + days) 内的条目。单个频道缺失只
+    记入 notes；全部缺失才视为来源失败。
+    """
+    if days not in range(1, 8):
+        raise ValueError("EPGSHARE 采集天数必须为 1–7。")
+    session = _session()
+    try:
+        response = session.get(EPGSHARE_US2_URL, timeout=120)
+        response.raise_for_status()
+        xml_bytes = gzip.decompress(response.content)
+    except (requests.RequestException, OSError) as exc:
+        raise SourceUnavailable(f"EPGSHARE US2 文件下载失败：{exc}") from exc
+
+    targets = {source_id: (xmltv_id, name) for source_id, xmltv_id, name in EPGSHARE_CHANNELS}
+    zone_utc = timezone.utc
+    today = datetime.now(zone_utc).replace(hour=0, minute=0, second=0, microsecond=0)
+    window_start = today - timedelta(days=1)
+    window_end = today + timedelta(days=days)
+    retrieved_at = utc_now_iso()
+    records: list[Programme] = []
+    try:
+        context = ET.iterparse(io.BytesIO(xml_bytes), events=("end",))
+        for _event, element in context:
+            if element.tag != "programme":
+                continue
+            source_id = element.get("channel") or ""
+            if source_id in targets:
+                xmltv_id, channel_name = targets[source_id]
+                title_node = element.find("title")
+                title = (title_node.text or "").strip() if title_node is not None else ""
+                if title:
+                    try:
+                        start = _epgshare_xmltv_time(element.get("start") or "")
+                        stop = _epgshare_xmltv_time(element.get("stop") or "")
+                    except ValueError:
+                        start = stop = None
+                    if start is not None and stop is not None and stop > start \
+                            and window_start <= start < window_end:
+                        sub_node = element.find("sub-title")
+                        sub_title = (sub_node.text or "").strip() if sub_node is not None else ""
+                        desc_node = element.find("desc")
+                        description = (desc_node.text or "").strip() if desc_node is not None else ""
+                        category = None
+                        for cat_node in element.findall("category"):
+                            if cat_node.text and cat_node.text.strip():
+                                category = cat_node.text.strip()
+                                break
+                        icon_node = element.find("icon")
+                        image_url = (icon_node.get("src") or "").strip() if icon_node is not None else ""
+                        records.append(
+                            Programme(
+                                provider="epgshare",
+                                country="US",
+                                timezone="UTC",
+                                channel_id=xmltv_id,
+                                channel_number="",
+                                channel_name=channel_name,
+                                title=title,
+                                start_at=start.isoformat(),
+                                end_at=stop.isoformat(),
+                                source_url=EPGSHARE_US2_URL,
+                                retrieved_at=retrieved_at,
+                                image_url=image_url or None,
+                                description=description or None,
+                                category=category,
+                                sub_title=sub_title if sub_title and sub_title != title else None,
+                            )
+                        )
+            element.clear()
+    except ET.ParseError as exc:
+        raise SourceUnavailable(f"EPGSHARE US2 文件解析失败：{exc}") from exc
+
+    records = _deduplicate(records)
+    published = {record.channel_id for record in records}
+    missing = [xmltv_id for _, xmltv_id, _ in EPGSHARE_CHANNELS if xmltv_id not in published]
+    if missing:
+        note(f"EPGSHARE US2 未返回频道 {', '.join(missing)} 的节目条目。")
+    if not records:
+        raise SourceUnavailable("EPGSHARE US2 未返回目标频道的节目条目。")
     return records
