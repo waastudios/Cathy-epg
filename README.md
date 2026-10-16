@@ -46,6 +46,7 @@ Every XMLTV `display-name` is the provider’s official channel name unless an e
 | Canada | Love Nature, Travelxp 4K and TSN 1–5 | [TELUS TV+ guide](https://telustvplus.com/#/guide) |
 | United States | Tennis Channel 2 and Telemundo Deportes Ahora | [Peacock channel guide](https://www.peacocktv.com/channels/tennis-channel-2/8969135442586836117), [Telemundo Deportes Ahora](https://www.peacocktv.com/channels/telemundo-deportes-ahora/5923023667697108117) |
 | United States | CBS Sports Golazo Network | [Pluto TV guide](https://pluto.tv/us/live-tv/golazo-network) |
+| United States | NBC Sports Bay Area, Boston, Philadelphia and California | [EPGShare US guide](https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz) |
 
 ### Sky Germany via MagentaTV
 
@@ -68,6 +69,8 @@ The EE scope includes **Sky Mix, Sky Arts, Sky Witness, Sky Atlantic, Sky One, S
 **Telemundo Deportes Ahora** is published from the same Peacock BFF channel guide as `TDA.us`, collected in the same anonymous pass as Tennis Channel 2. Each Spanish source title is converted to English through the tiered pipeline described below (curated Spanish sports-show mapping, then the translation memory, then online services); a title that cannot be translated skips that single programme instead of failing the Peacock source. In [CHANNELS.md](CHANNELS.md) this channel carries a (T) mark to indicate its guide is translated into English.
 
 **CBS Sports Golazo Network** is published from Pluto TV’s official guide API as `GolazoNet.us`. Pluto TV is Paramount’s own free streaming platform and carries the channel as “Golazo Network”; its guide API is queried anonymously in 24-hour windows. (Paramount+’s own apps-api guide is not usable here: it rejects anonymous requests.) Pluto publishes full per-programme detail only about one to two days ahead; beyond that it publishes whole-day “Golazo Network” blocks, which are reproduced as-is. Programme titles arrive in English and are published as-is.
+
+**NBC Sports Bay Area, NBC Sports Boston, NBC Sports Philadelphia and NBC Sports California** are published as `NBCSpBay.us`, `NBCSpBos.us`, `NBCSpPhilly.us` and `NBCSpCali.us`. On Peacock the four networks are paid add-ons whose guide data is not exposed to anonymous queries (checked against the official guide API, the website and the sitemap), so, as a deliberate exception to this project’s official-source rule, their schedules are taken from EPGShare’s US2 XMLTV file, which is regenerated daily with about four days of rolling coverage. Each network uses its main feed (the HD feed; California has no HD feed in the file, so its SAT feed is used); Outer Market blackout variants and Plus overflow feeds are excluded. Programme titles arrive in English and are published as-is.
 
 ### Poland via Player.pl
 
@@ -116,6 +119,7 @@ For Serbia’s SBB Eurosport schedules, titles are converted during collection u
 
 ## Changelog
 
+- **2026-10-16** — Added the four NBC Sports regional networks (`NBCSpBay.us`, `NBCSpBos.us`, `NBCSpPhilly.us`, `NBCSpCali.us`) from EPGShare’s US2 XMLTV file. The networks are Peacock add-ons whose official guide is not available anonymously, so EPGShare is used as a deliberate exception for these channels; main feeds only, about four days of rolling coverage.
 - **2026-10-16** — Fixed Travelxp 4K (`telus.716`) returning no programmes: the TELUS TV+ collector now falls back per channel instead of picking one environment for the whole lineup. The channel could not be matched in the production guide listing, so it silently stayed empty whenever production answered; any channel missing (or failing) in production is now filled from the QA environment, whose listing carries it as "Travel XP 4K" (call sign TXP4KHDR) with a full 7-day schedule.
 - **2026-10-15** — Added Telemundo Deportes Ahora (`TDA.us`) from Peacock's official BFF channel guide, collected anonymously in the same pass as Tennis Channel 2. The channel's Spanish programme titles are converted to English through the tiered translation pipeline; a title that cannot be translated skips that single programme.
 - **2026-10-14** — Added CBS Sports Golazo Network (`GolazoNet.us`) from Pluto TV's official guide API, queried anonymously in 24-hour windows. Pluto TV is Paramount's own free streaming platform (Paramount+'s own apps-api guide rejects anonymous requests, so it cannot be used). Pluto publishes full programme detail about one to two days ahead; later days carry its published whole-day "Golazo Network" blocks.
