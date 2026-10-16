@@ -32,7 +32,7 @@ https://raw.githubusercontent.com/waastudios/Cathy-epg/master/data/epg.xml.gz
 
 | 市场 | 已发布服务 | 官方来源 |
 | --- | --- | --- |
-| 马来西亚 | Astro：22 条明确白名单体育频道 | [Astro Content Guide](https://www.astro.com.my/content/channels) |
+| 马来西亚 | Astro：23 条明确白名单体育频道 | [Astro Content Guide](https://www.astro.com.my/content/channels) |
 | 香港 | now TV：37 条明确白名单体育频道 | [now TV Guide](https://nowplayer.now.com/tvguide) 与 [官方中文频道目录](https://nowplayer.now.com/channels?lang=zh&filterType=all) |
 | 德国 | 29 条 Sky Sport 与 Sky Sport Bundesliga 频道，包含 UHD | [Telekom MagentaTV](https://www.magenta.tv/) 正常公开节目表 |
 | 瑞典 | 13 条 V Sport 服务，包含 V Sport UltraHD | [Allente TV Guide](https://www.allente.se/tv-guide/) |
@@ -119,6 +119,7 @@ epg preview --day tomorrow --provider allente_se --channel 50048
 
 ## 更新日志
 
+- **2026-10-16** —— Astro 体育白名单新增 Astro Badminton 2（`astro.816`），共 23 条。该台是 Astro 为并行羽毛球直播开设的 ad hoc 频道；本次按官方目录核查，现有 22 条 Astro 体育频道无改名、无下线。
 - **2026-10-16** —— 通过 EPGShare 的 US2 XMLTV 文件新增四个 NBC Sports 地区频道（`NBCSpBay.us`、`NBCSpBos.us`、`NBCSpPhilly.us`、`NBCSpCali.us`）。这四个台是 Peacock 付费附加包、官方指南无法匿名取得，故为这四个台明确破例使用 EPGShare；只取主 feed，约 4 天滚动覆盖。
 - **2026-10-16** —— 修复 Travelxp 4K（`telus.716`）节目为空的问题：TELUS TV+ 采集器改为按频道回退（不再是整表二选一环境）。该台在生产目录中始终匹配不到，生产环境一旦可用它便一直为空；现在生产缺失（或拉取失败）的频道由 QA 环境逐台补齐——QA 目录中该台为 “Travel XP 4K”（callLetter TXP4KHDR），7 天节目单完整。
 - **2026-10-15** —— 通过 Peacock 官方 BFF 频道指南新增 Telemundo Deportes Ahora（`TDA.us`），可匿名查询，与 Tennis Channel 2 同一次采集完成。该频道节目标题为西班牙语，按分级流水线译为英文发布；无法翻译的标题只跳过当条节目。
