@@ -50,12 +50,12 @@ SECTIONS: list[tuple[str, str, str, bool]] = [
     ("eurosport4.pl", "🇵🇱 Poland Player.pl", "🇵🇱波兰 Player.pl", True),
     ("ElevenSp.1", "🇵🇱 Poland Player.pl", "🇵🇱波兰 Player.pl", True),
     ("telus.", "🇨🇦 Canada Telus TV+", "🇨🇦加拿大 Telus TV+", False),
-    ("TC2.us", "🇺🇸 USA Peacock", "🇺🇸美国 Peacock", False),
-    ("TDA.us", "🇺🇸 USA Peacock", "🇺🇸美国 Peacock", True),
-    ("GolazoNet.us", "🇺🇸 USA Pluto TV", "🇺🇸美国 Pluto TV", False),
-    ("NBCSp", "🇺🇸 USA NBC Sports Regional Networks (EPGShare)", "🇺🇸美国NBC Sports地方台（EPGShare）", False),
-    ("WSCV", "🇺🇸 USA Local Stations (EPGShare)", "🇺🇸美国地方台（EPGShare）", True),
-    ("WNBC", "🇺🇸 USA Local Stations (EPGShare)", "🇺🇸美国地方台（EPGShare）", False),
+    ("TC2.us", "🇺🇸 USA Pluto TV / Peacock", "🇺🇸美国Pluto TV / Peacock", False),
+    ("TDA.us", "🇺🇸 USA Pluto TV / Peacock", "🇺🇸美国Pluto TV / Peacock", True),
+    ("GolazoNet.us", "🇺🇸 USA Pluto TV / Peacock", "🇺🇸美国Pluto TV / Peacock", False),
+    ("NBCSp", "🇺🇸 USA NBC (EPGShare)", "🇺🇸美国NBC（EPGShare）", False),
+    ("WSCV", "🇺🇸 USA NBC (EPGShare)", "🇺🇸美国NBC（EPGShare）", True),
+    ("WNBC", "🇺🇸 USA NBC (EPGShare)", "🇺🇸美国NBC（EPGShare）", False),
 ]
 
 # ee_uk channel numbers that belong to the "Sky Sports" section; the rest go
@@ -76,8 +76,7 @@ SECTION_ORDER_EN = [
     "Virgin Media UK", "Sky Entertainment", "France Canal+",
     "🇷🇸 Serbia SBB", "Digi 4K", "🇵🇱 Poland Player.pl",
     "Allente Sweden", "Allente Norway", "🇨🇦 Canada Telus TV+",
-    "🇺🇸 USA Peacock", "🇺🇸 USA Pluto TV", "🇺🇸 USA NBC Sports Regional Networks (EPGShare)",
-    "🇺🇸 USA Local Stations (EPGShare)", "Other",
+    "🇺🇸 USA NBC (EPGShare)", "🇺🇸 USA Pluto TV / Peacock", "Other",
 ]
 CN_TITLE = {
     "Astro Malaysia": "🇲🇾马来西亚 Astro",
@@ -93,10 +92,8 @@ CN_TITLE = {
     "Allente Norway": "🇳🇴挪威 Allente",
     "🇵🇱 Poland Player.pl": "🇵🇱波兰 Player.pl",
     "🇨🇦 Canada Telus TV+": "🇨🇦加拿大 Telus TV+",
-    "🇺🇸 USA Peacock": "🇺🇸美国 Peacock",
-    "🇺🇸 USA Pluto TV": "🇺🇸美国 Pluto TV",
-    "🇺🇸 USA NBC Sports Regional Networks (EPGShare)": "🇺🇸美国NBC Sports地方台（EPGShare）",
-    "🇺🇸 USA Local Stations (EPGShare)": "🇺🇸美国地方台（EPGShare）",
+    "🇺🇸 USA Pluto TV / Peacock": "🇺🇸美国Pluto TV / Peacock",
+    "🇺🇸 USA NBC (EPGShare)": "🇺🇸美国NBC（EPGShare）",
     "Other": "其他",
 }
 
