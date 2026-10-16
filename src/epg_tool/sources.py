@@ -2936,3 +2936,157 @@ def collect_epgshare_us_rsn(days: int = 7, pause_seconds: float = 1.0) -> list[P
     if not records:
         raise SourceUnavailable("EPGSHARE US2 未返回目标频道的节目条目。")
     return records
+
+
+# EPGSHARE US_LOCALS1（与 US2 同一来源的用户指定例外）：地方台文件，
+# 只提取迈阿密 Telemundo 51（WSCV-DT）与纽约 NBC 4（WNBC-DT）两台。
+# 地方台不在 Peacock 匿名官方指南内（指南只含全国性线性频道），用户
+# 指定与 NBC Sports 地方台同样改走 EPGSHARE。文件为 gzip 压缩的
+# XMLTV（约 59 MB、约 4 天滚动、每日更新），下载后以 gzip 流式解析，
+# 不整包解压。用户指定 tvg-id 为 WSCV.us 与 WNBC.us。WSCV 节目标题
+# 为西班牙语，逐条经分层管线译为英文；WNBC 标题本身为英文，直接发布。
+EPGSHARE_LOCALS1_URL = "https://epgshare01.online/epgshare01/epg_ripper_US_LOCALS1.xml.gz"
+EPGSHARE_LOCALS_CHANNELS: tuple[tuple[str, str, str, str | None], ...] = (
+    ("WSCV-DT.us_locals1", "WSCV.us", "Telemundo 51", "es"),
+    ("WNBC-DT.us_locals1", "WNBC.us", "NBC 4 New York", None),
+)
+
+# WSCV 的常驻节目名确定性映射；未覆盖的标题继续走翻译记忆与在线
+# 服务，仍无法译出时跳过该条（与其它翻译源一致）。
+EPGSHARE_WSCV_ES_TITLE_TRANSLATIONS = {
+    "Programa pagado": "Paid Programming",
+}
+
+
+def _translate_epgshare_wscv_es_title(title: str) -> str | None:
+    """WSCV 西语标题的确定性英文映射；未覆盖返回 None。"""
+    normalised = re.sub(r"\s+", " ", title).strip()
+    return EPGSHARE_WSCV_ES_TITLE_TRANSLATIONS.get(normalised)
+
+
+def collect_epgshare_us_locals(days: int = 7, pause_seconds: float = 1.0) -> list[Programme]:
+    """读取 EPGSHARE US_LOCALS1 文件中 WSCV 与 WNBC 两台地方台的节目单。
+
+    WSCV（WSCV.us，台名 Telemundo 51）标题为西班牙语，逐条译为英文
+    后发布；WNBC（WNBC.us，台名 NBC 4 New York）标题本身为英文，
+    直接发布。整文件为 gzip 压缩的 XMLTV（约 4 天滚动窗口，每日
+    更新），以流式方式解析，只保留目标频道在
+    [昨日 00:00 UTC, 今日 00:00 UTC + days) 内的条目。单个频道缺失
+    只记入 notes；全部缺失才视为来源失败。
+    """
+    if days not in range(1, 8):
+        raise ValueError("EPGSHARE 采集天数必须为 1–7。")
+    session = _session()
+    try:
+        response = session.get(EPGSHARE_LOCALS1_URL, timeout=180)
+        response.raise_for_status()
+        xml_stream = gzip.GzipFile(fileobj=io.BytesIO(response.content))
+    except (requests.RequestException, OSError) as exc:
+        raise SourceUnavailable(f"EPGSHARE US_LOCALS1 文件下载失败：{exc}") from exc
+
+    targets = {
+        source_id: (xmltv_id, name, source_lang)
+        for source_id, xmltv_id, name, source_lang in EPGSHARE_LOCALS_CHANNELS
+    }
+    zone_utc = timezone.utc
+    today = datetime.now(zone_utc).replace(hour=0, minute=0, second=0, microsecond=0)
+    window_start = today - timedelta(days=1)
+    window_end = today + timedelta(days=days)
+    retrieved_at = utc_now_iso()
+    records: list[Programme] = []
+    # 同一标题在本轮内只走一次翻译管线：结果（含失败）按标题备忘，
+    # 避免同一标题在多条节目上重复触发在线服务。
+    title_memo: dict[str, str | None] = {}
+    try:
+        context = ET.iterparse(xml_stream, events=("end",))
+        for _event, element in context:
+            if element.tag != "programme":
+                continue
+            source_id = element.get("channel") or ""
+            if source_id in targets:
+                xmltv_id, channel_name, source_lang = targets[source_id]
+                title_node = element.find("title")
+                title = (title_node.text or "").strip() if title_node is not None else ""
+                if title:
+                    if source_lang is not None:
+                        if title in title_memo:
+                            translated = title_memo[title]
+                        else:
+                            try:
+                                translated = translate_programme_title(
+                                    title, source_lang, _translate_epgshare_wscv_es_title
+                                )
+                            except TitleUntranslatable:
+                                translated = None
+                            title_memo[title] = translated
+                        if translated is None:
+                            note(f"EPGSHARE {channel_name} 跳过无法翻译的标题：{title!r}")
+                            element.clear()
+                            continue
+                        title = translated
+                    try:
+                        start = _epgshare_xmltv_time(element.get("start") or "")
+                        stop = _epgshare_xmltv_time(element.get("stop") or "")
+                    except ValueError:
+                        start = stop = None
+                    if start is not None and stop is not None and stop > start \
+                            and window_start <= start < window_end:
+                        sub_node = element.find("sub-title")
+                        sub_title = (sub_node.text or "").strip() if sub_node is not None else ""
+                        desc_node = element.find("desc")
+                        description = (desc_node.text or "").strip() if desc_node is not None else ""
+                        category = None
+                        for cat_node in element.findall("category"):
+                            if cat_node.text and cat_node.text.strip():
+                                category = cat_node.text.strip()
+                                break
+                        icon_node = element.find("icon")
+                        image_url = (icon_node.get("src") or "").strip() if icon_node is not None else ""
+                        records.append(
+                            Programme(
+                                provider="epgshare",
+                                country="US",
+                                timezone="UTC",
+                                channel_id=xmltv_id,
+                                channel_number="",
+                                channel_name=channel_name,
+                                title=title,
+                                start_at=start.isoformat(),
+                                end_at=stop.isoformat(),
+                                source_url=EPGSHARE_LOCALS1_URL,
+                                retrieved_at=retrieved_at,
+                                image_url=image_url or None,
+                                description=description or None,
+                                category=category,
+                                sub_title=sub_title if sub_title and sub_title != title else None,
+                            )
+                        )
+            element.clear()
+    except ET.ParseError as exc:
+        raise SourceUnavailable(f"EPGSHARE US_LOCALS1 文件解析失败：{exc}") from exc
+
+    records = _deduplicate(records)
+    published = {record.channel_id for record in records}
+    missing = [xmltv_id for _, xmltv_id, _, _ in EPGSHARE_LOCALS_CHANNELS if xmltv_id not in published]
+    if missing:
+        note(f"EPGSHARE US_LOCALS1 未返回频道 {', '.join(missing)} 的节目条目。")
+    if not records:
+        raise SourceUnavailable("EPGSHARE US_LOCALS1 未返回目标频道的节目条目。")
+    return records
+
+
+def collect_epgshare(days: int = 7, pause_seconds: float = 1.0) -> list[Programme]:
+    """EPGSHARE 统一入口：US2 的 NBC Sports 四台加 US_LOCALS1 的两台地方台。
+
+    两个文件相互独立：单个文件失败只记入 notes 并降级为部分结果，
+    两个都未返回条目时才视为来源失败。
+    """
+    records: list[Programme] = []
+    for collector in (collect_epgshare_us_rsn, collect_epgshare_us_locals):
+        try:
+            records.extend(collector(days, pause_seconds))
+        except SourceUnavailable as exc:
+            note(f"EPGSHARE 子来源失败：{exc}")
+    if not records:
+        raise SourceUnavailable("EPGSHARE 两个文件均未返回目标频道的节目条目。")
+    return _deduplicate(records)
