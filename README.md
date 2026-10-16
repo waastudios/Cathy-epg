@@ -47,6 +47,7 @@ Every XMLTV `display-name` is the provider’s official channel name unless an e
 | United States | Tennis Channel 2 and Telemundo Deportes Ahora | [Peacock channel guide](https://www.peacocktv.com/channels/tennis-channel-2/8969135442586836117), [Telemundo Deportes Ahora](https://www.peacocktv.com/channels/telemundo-deportes-ahora/5923023667697108117) |
 | United States | CBS Sports Golazo Network | [Pluto TV guide](https://pluto.tv/us/live-tv/golazo-network) |
 | United States | NBC Sports Bay Area, Boston, Philadelphia and California | [EPGShare US guide](https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz) |
+| United States | Telemundo 51 (Miami) and NBC 4 New York | [EPGShare US locals guide](https://epgshare01.online/epgshare01/epg_ripper_US_LOCALS1.xml.gz) |
 
 ### Sky Germany via MagentaTV
 
@@ -71,6 +72,8 @@ The EE scope includes **Sky Mix, Sky Arts, Sky Witness, Sky Atlantic, Sky One, S
 **CBS Sports Golazo Network** is published from Pluto TV’s official guide API as `GolazoNet.us`. Pluto TV is Paramount’s own free streaming platform and carries the channel as “Golazo Network”; its guide API is queried anonymously in 24-hour windows. (Paramount+’s own apps-api guide is not usable here: it rejects anonymous requests.) Pluto publishes full per-programme detail only about one to two days ahead; beyond that it publishes whole-day “Golazo Network” blocks, which are reproduced as-is. Programme titles arrive in English and are published as-is.
 
 **NBC Sports Bay Area, NBC Sports Boston, NBC Sports Philadelphia and NBC Sports California** are published as `NBCSpBay.us`, `NBCSpBos.us`, `NBCSpPhilly.us` and `NBCSpCali.us`. On Peacock the four networks are paid add-ons whose guide data is not exposed to anonymous queries (checked against the official guide API, the website and the sitemap), so, as a deliberate exception to this project’s official-source rule, their schedules are taken from EPGShare’s US2 XMLTV file, which is regenerated daily with about four days of rolling coverage. Each network uses its main feed (the HD feed; California has no HD feed in the file, so its SAT feed is used); Outer Market blackout variants and Plus overflow feeds are excluded. Programme titles arrive in English and are published as-is.
+
+**Telemundo 51 (Miami) and NBC 4 New York** are published as `WSCV.us` and `WNBC.us`. Both are local stations that do not appear in Peacock’s anonymous official guide (which carries only national linear channels), so, as a further deliberate exception to this project’s official-source rule, their schedules are taken from EPGShare’s US_LOCALS1 XMLTV file, which is regenerated daily with about four days of rolling coverage. Telemundo 51’s Spanish programme titles are converted to English through the tiered translation pipeline described below (a title that cannot be translated skips that single programme), and the channel carries a (T) mark in [CHANNELS.md](CHANNELS.md); NBC 4 New York’s titles arrive in English and are published as-is.
 
 ### Poland via Player.pl
 
@@ -120,6 +123,8 @@ For Serbia’s SBB Eurosport schedules, titles are converted during collection u
 ## Changelog
 
 - **2026-10-16** — Added Astro Badminton 2 (`astro.816`) to the Astro sports allow-list (now 23 channels). It is Astro’s ad hoc channel for concurrent live badminton matches; a check against the official directory also confirmed no renames or removals among the existing 22 Astro sports channels.
+- **2026-10-17** — Added Miami’s Telemundo 51 (`WSCV.us`) and NBC 4 New York (`WNBC.us`) from EPGShare’s US_LOCALS1 XMLTV file. Local stations are absent from Peacock’s anonymous official guide, so EPGShare is used as a deliberate exception for these two channels as well; about four days of rolling coverage. Telemundo 51’s Spanish titles are translated to English through the tiered pipeline; NBC 4 New York’s titles are published as-is.
+
 - **2026-10-16** — Added the four NBC Sports regional networks (`NBCSpBay.us`, `NBCSpBos.us`, `NBCSpPhilly.us`, `NBCSpCali.us`) from EPGShare’s US2 XMLTV file. The networks are Peacock add-ons whose official guide is not available anonymously, so EPGShare is used as a deliberate exception for these channels; main feeds only, about four days of rolling coverage.
 - **2026-10-16** — Fixed Travelxp 4K (`telus.716`) returning no programmes: the TELUS TV+ collector now falls back per channel instead of picking one environment for the whole lineup. The channel could not be matched in the production guide listing, so it silently stayed empty whenever production answered; any channel missing (or failing) in production is now filled from the QA environment, whose listing carries it as "Travel XP 4K" (call sign TXP4KHDR) with a full 7-day schedule.
 - **2026-10-15** — Added Telemundo Deportes Ahora (`TDA.us`) from Peacock's official BFF channel guide, collected anonymously in the same pass as Tennis Channel 2. The channel's Spanish programme titles are converted to English through the tiered translation pipeline; a title that cannot be translated skips that single programme.
