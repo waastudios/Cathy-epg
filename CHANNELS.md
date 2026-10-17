@@ -24,7 +24,7 @@ The current XMLTV output contains **181 channels**.
 | `astro.815` | Astro Badminton |
 | `astro.816` | Astro Badminton 2 |
 | `astro.817` | Astro Sports Plus |
-| `astro.818` | Astro Sports Plus 2 |
+| `astro.818` | Astro Tennis 2 |
 | `astro.819` | Astro Tennis |
 | `astro.820` | beIN SPORTS 1 |
 | `astro.821` | beIN SPORTS 2 |

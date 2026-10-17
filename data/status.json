@@ -1,15 +1,15 @@
 {
   "astro": {
     "status": "ok",
-    "records": 2389
+    "records": 2568
   },
   "now_hk": {
     "status": "ok",
-    "records": 4075
+    "records": 4141
   },
   "allente_se": {
     "status": "ok",
-    "records": 793
+    "records": 791
   },
   "allente_no": {
     "status": "stale",
@@ -19,14 +19,14 @@
   },
   "ee_uk": {
     "status": "ok",
-    "records": 7000,
+    "records": 6969,
     "notes": [
-      "tvguide.co.uk 采集 6783 条（6783 去重），其中有图 6757 条。"
+      "tvguide.co.uk 采集 6754 条（6754 去重），其中有图 6730 条。"
     ]
   },
   "sky_de": {
     "status": "ok",
-    "records": 1372
+    "records": 1353
   },
   "digi4k_ro": {
     "status": "ok",
@@ -34,26 +34,26 @@
   },
   "sbb_rs": {
     "status": "ok",
-    "records": 174
+    "records": 163
   },
   "virgin_uk": {
     "status": "ok",
-    "records": 84
+    "records": 86
   },
   "player_pl": {
     "status": "ok",
-    "records": 608
+    "records": 616
   },
   "canalplus_fr": {
     "status": "ok",
-    "records": 122,
+    "records": 133,
     "notes": [
       "Canal+ 官方 API 不可用（403 rate limited: https://hodor.canalplus.pro/api/v2/mycanal/authenticate.json/webapp/6.0?experiments=beta-test-one-tv-guide:control），回退到 epg.pw"
     ]
   },
   "telus_tvplus": {
     "status": "ok",
-    "records": 1023,
+    "records": 1030,
     "notes": [
       "Telus Love Nature 的频道号为 15130（配置为 713），仍按频道名继续采集。",
       "Telus TV+（telus.prod.g.telustvplus.com）频道目录未找到 Travelxp 4K HDR，已跳过该频道。",
@@ -73,23 +73,23 @@
   },
   "peacock": {
     "status": "ok",
-    "records": 113
+    "records": 110
   },
   "pluto_tv": {
     "status": "ok",
-    "records": 21
+    "records": 17
   },
   "epgshare": {
     "status": "ok",
-    "records": 744
+    "records": 742
   },
   "xmltv": {
     "status": "ok",
     "channels": 181,
-    "programmes": 19322,
+    "programmes": 19523,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-10-16T21:56:10Z",
-  "total_records": 19322
+  "generated_at": "2026-10-17T21:15:11Z",
+  "total_records": 19523
 }
