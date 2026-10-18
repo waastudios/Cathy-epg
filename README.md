@@ -122,6 +122,7 @@ For Serbia’s SBB Eurosport schedules, titles are converted during collection u
 
 ## Changelog
 
+- **2026-10-18** — Fixed mixed-language programme titles on the translated channels (notably Eurosport via SBB and Player.pl): every translation tier — the curated maps, the persistent translation memory and the online services — is now checked by a deterministic English-output gate, so a result that still carries source-language wording (Serbian "Svetska turneja", Polish "Skoki narciarskie", …) falls through to the next tier or is skipped instead of being published or memorised. The Serbian and Polish Eurosport maps were extended (World Tour, Olympic Games, Hall of Fame, ski jumping, athletics, …) and 13 stale memory entries that had memorised untranslated titles were removed.
 - **2026-10-16** — Added Astro Badminton 2 (`astro.816`) to the Astro sports allow-list (now 23 channels). It is Astro’s ad hoc channel for concurrent live badminton matches; a check against the official directory also confirmed no renames or removals among the existing 22 Astro sports channels.
 - **2026-10-17** — Added Miami’s Telemundo 51 (`WSCV.us`) and NBC 4 New York (`WNBC.us`) from EPGShare’s US_LOCALS1 XMLTV file. Local stations are absent from Peacock’s anonymous official guide, so EPGShare is used as a deliberate exception for these two channels as well; about four days of rolling coverage. Telemundo 51’s Spanish titles are translated to English through the tiered pipeline; NBC 4 New York’s titles are published as-is.
 
