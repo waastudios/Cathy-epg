@@ -122,6 +122,7 @@ epg preview --day tomorrow --provider allente_se --channel 50048
 
 ## 更新日志
 
+- **2026-10-18** —— 修复翻译类频道（尤其是经 SBB 与 Player.pl 的 Eurosport）节目单混入源语言的问题：三层翻译（受控映射、翻译记忆、在线服务）的结果现在都要通过一道确定性的英文校验门，仍带源语言措辞的结果（如塞尔维亚语 "Svetska turneja"、波兰语 "Skoki narciarskie"）会转入下一层重试，全部不过则跳过该条，绝不发布、也不写入记忆。塞尔维亚语与波兰语 Eurosport 映射同步扩充（World Tour、Olympic Games、Hall of Fame、跳台滑雪、田径等），并清除了 13 条已把未翻译标题存入记忆的毒化条目。
 - **2026-10-16** —— Astro 体育白名单新增 Astro Badminton 2（`astro.816`），共 23 条。该台是 Astro 为并行羽毛球直播开设的 ad hoc 频道；本次按官方目录核查，现有 22 条 Astro 体育频道无改名、无下线。
 - **2026-10-17** —— 通过 EPGShare 的 US_LOCALS1 XMLTV 文件新增迈阿密 Telemundo 51（`WSCV.us`）与纽约 NBC 4（`WNBC.us`）。地方台不在 Peacock 匿名官方指南内，故这两台同样明确破例使用 EPGShare；约 4 天滚动覆盖。Telemundo 51 的西语标题按分级流水线译为英文发布；NBC 4 纽约的标题直接发布。
 
