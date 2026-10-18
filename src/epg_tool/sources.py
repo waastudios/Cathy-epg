@@ -1180,6 +1180,17 @@ def _translate_sbb_eurosport_title(title: str) -> str | None:
 
     translated = normalised
     replacements = (
+        ("Olimpijske igre", "Olympic Games"),
+        ("olimpijske igre", "Olympic Games"),
+        ("Dom olimpijade", "Home of the Olympics"),
+        ("dom olimpijade", "Home of the Olympics"),
+        ("Dvorana Slavnih", "Hall of Fame"),
+        ("Dvorana slavnih", "Hall of Fame"),
+        ("Svetska turneja", "World Tour"),
+        ("svetska turneja", "World Tour"),
+        ("Pariz", "Paris"),
+        ("Rim", "Rome"),
+        ("Tokio", "Tokyo"),
         ("Brdski biciklizam", "Mountain Biking"),
         ("Biciklizam", "Cycling"),
         ("Drumska trka", "Road Race"),
@@ -1227,7 +1238,7 @@ def _translate_sbb_eurosport_title(title: str) -> str | None:
     translated = re.sub(r"\bsata\b", "hours", translated)
     translated = re.sub(r"\s+", " ", translated).strip(" ,")
     untranslated = re.search(
-        r"[čćđšžČĆĐŠŽ]|\b(?:Ahen|Biciklizam|Brdski|Dubl|Etapa|finala|Jedrenje|Konjički|Majami|Meksiko|Mešovito|Pregled|pregled|Runda|Skakanje|Snuker|Spust|Svetski|Svetsko|Šampionat|Tenis|Triatlon|Tur|Žene|Muškarci)\b",
+        r"[čćđšžČĆĐŠŽ]|\b(?:Ahen|Biciklizam|Brdski|Dubl|Etapa|finala|Jedrenje|Konjički|Majami|Meksiko|Mešovito|Pregled|pregled|Runda|Skakanje|Snuker|Spust|Svetski|Svetsko|Svetska|turneja|Olimpijske|olimpijske|igre|Dvorana|Slavnih|olimpijade|Šampionat|Tenis|Triatlon|Tur|Žene|Muškarci)\b",
         translated,
     )
     if untranslated:
@@ -2057,6 +2068,24 @@ def _translate_player_pl_title(title: str) -> str | None:
         ("Igrzyska Olimpijskie:", "Olympic Games:"),
         ("Letnie Igrzyska Olimpijskie", "Summer Olympic Games"),
         ("Zimowe Igrzyska Olimpijskie", "Winter Olympic Games"),
+        ("Igrzyska Olimpijskie", "Olympic Games"),
+        ("Igrzyska olimpijskie", "Olympic Games"),
+        ("igrzyska olimpijskie", "Olympic Games"),
+        ("Konkurs na skoczni normalnej", "Normal hill competition"),
+        ("konkurs na skoczni normalnej", "normal hill competition"),
+        ("na skoczni normalnej", "on the normal hill"),
+        ("skocznia normalna", "normal hill"),
+        ("Skoki narciarskie", "Ski Jumping"),
+        ("skoki narciarskie", "ski jumping"),
+        ("Konkurs", "Competition"),
+        ("konkurs", "competition"),
+        ("Lekkoatletyka", "Athletics"),
+        ("Narciarstwo", "Skiing"),
+        ("Kolarstwo", "Cycling"),
+        ("Siatkówka", "Volleyball"),
+        ("Koszykówka", "Basketball"),
+        ("Pływanie", "Swimming"),
+        ("Tenis", "Tennis"),
         ("Mistrzostwa świata", "World Championship"),
         ("Mistrzostwa Europy", "European Championship"),
         ("Mistrzostwa", "Championship"),
@@ -2139,7 +2168,7 @@ def _translate_player_pl_title(title: str) -> str | None:
     translated = re.sub(r"\s+", " ", translated).strip(" ,")
     # 仍含波兰语变音符号或常见未覆盖波兰语词 → 交给翻译记忆／在线翻译。
     untranslated = re.search(
-        r"[ąćęłńóśźżĄĆĘŁŃÓŚŹŻ]|\b(?:Piłka|Kolarstwo|Mistrzostwa|Zawody|mecz|wyścig|etap|dzień|sekret|sekrety|sukces|sukcesu|zjazd|Turniej|turniej|oraz|drużyna|podsumowanie|zapowiedź|relacja|studio|gość|goście)\b",
+        r"[ąćęłńóśźżĄĆĘŁŃÓŚŹŻ]|\b(?:Piłka|Kolarstwo|Mistrzostwa|Zawody|mecz|wyścig|etap|dzień|sekret|sekrety|sukces|sukcesu|zjazd|Turniej|turniej|oraz|drużyna|podsumowanie|zapowiedź|relacja|studio|gość|goście|igrzyska|olimpijskie|skoki|narciarskie|konkurs|skoczni)\b",
         translated,
         flags=re.IGNORECASE,
     )
