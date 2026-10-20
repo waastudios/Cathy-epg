@@ -1,65 +1,67 @@
 {
   "astro": {
     "status": "ok",
-    "records": 2564
+    "records": 2566
   },
   "now_hk": {
     "status": "ok",
-    "records": 4324
+    "records": 4393
   },
   "allente_se": {
-    "status": "stale",
-    "records": 780,
-    "message": "Allente 官方 EPG 响应中未找到任何预期的 V Sport 体育频道。",
-    "fallback": "previous_snapshot"
+    "status": "ok",
+    "records": 784
   },
   "allente_no": {
-    "status": "stale",
-    "records": 682,
-    "message": "Allente Norway 官方 EPG 响应中未找到预期的 TV Norge、REX、FEM、Eurosport Norge 或 Eurosport 1。",
-    "fallback": "previous_snapshot"
+    "status": "ok",
+    "records": 694,
+    "notes": [
+      "Allente Norway 10010 跳过无法翻译的标题：\"Ferske husfiksere: Roto'til Death Do Us Part\""
+    ]
   },
   "ee_uk": {
     "status": "ok",
-    "records": 6923,
+    "records": 6933,
     "notes": [
-      "tvguide.co.uk 采集 6731 条（6731 去重），其中有图 6699 条。"
+      "tvguide.co.uk 采集 6738 条（6738 去重），其中有图 6712 条。"
     ]
   },
   "sky_de": {
     "status": "ok",
-    "records": 1405
+    "records": 1404,
+    "notes": [
+      "MagentaTV Sky Germany 206 跳过无法翻译的标题：'WTA 250: A. Li (USA) - E. Jones (AUS), Kinoshita Group Japan Open in Osaka (JAP), 2. Tag'",
+      "MagentaTV Sky Germany 206 跳过无法翻译的标题：'WTA 250: A. Li (USA) - E. Jones (AUS), Kinoshita Group Japan Open in Osaka (JAP), 2. Tag'"
+    ]
   },
   "digi4k_ro": {
     "status": "ok",
-    "records": 120
+    "records": 123
   },
   "sbb_rs": {
     "status": "ok",
-    "records": 121
+    "records": 124
   },
   "virgin_uk": {
     "status": "ok",
-    "records": 81
+    "records": 85
   },
   "player_pl": {
     "status": "ok",
-    "records": 636,
+    "records": 634,
     "notes": [
-      "Player.pl Eleven Sports 1 跳过无法翻译的标题：'Piłka nożna: Liga Portugal Betclic: SL Benfica - Vitória SC'",
       "Player.pl Eleven Sports 1 跳过无法翻译的标题：'Piłka nożna: Liga Portugal Betclic: SL Benfica - Vitória SC'"
     ]
   },
   "canalplus_fr": {
     "status": "ok",
-    "records": 137,
+    "records": 135,
     "notes": [
       "Canal+ 官方 API 不可用（403 rate limited: https://hodor.canalplus.pro/api/v2/mycanal/authenticate.json/webapp/6.0?experiments=beta-test-one-tv-guide:control），回退到 epg.pw"
     ]
   },
   "telus_tvplus": {
     "status": "ok",
-    "records": 1373,
+    "records": 1022,
     "notes": [
       "Telus Love Nature 的频道号为 15130（配置为 713），仍按频道名继续采集。",
       "Telus TV+（telus.prod.g.telustvplus.com）频道目录未找到 Travelxp 4K HDR，已跳过该频道。",
@@ -72,16 +74,18 @@
       "Telus Travelxp 4K HDR 的频道号为 7619（配置为 716），仍按频道名继续采集。",
       "Telus TSN1 的频道号为 7624（配置为 900），仍按频道名继续采集。",
       "Telus TSN2 的频道号为 7627（配置为 901），仍按频道名继续采集。",
-      "Telus TV+ 频道 telus.716 由 QA 环境补齐（生产环境缺失或不可用）。"
+      "Telus TV+ 频道 telus.716 由 QA 环境补齐（生产环境缺失或不可用）。",
+      "Telus TV+（telus.qa.watchoptiktv.com）EPG 拉取失败：Telus TV+（telus.qa.watchoptiktv.com）EPG 拉取失败：Telus TV+ 接口 telus.qa.watchoptiktv.com 返回 HTTP 503。",
+      "Telus TV+ 未返回频道 telus.716 的节目条目。"
     ]
   },
   "peacock": {
     "status": "ok",
-    "records": 116
+    "records": 127
   },
   "pluto_tv": {
     "status": "ok",
-    "records": 21
+    "records": 18
   },
   "epgshare": {
     "status": "ok",
@@ -89,11 +93,11 @@
   },
   "xmltv": {
     "status": "ok",
-    "channels": 182,
-    "programmes": 19962,
+    "channels": 181,
+    "programmes": 19721,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-10-19T22:50:33Z",
-  "total_records": 19962
+  "generated_at": "2026-10-20T22:07:21Z",
+  "total_records": 19721
 }
