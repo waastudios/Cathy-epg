@@ -2866,12 +2866,17 @@ def collect_pluto_tv(days: int = 7, pause_seconds: float = 0.5) -> list[Programm
 # 4 天覆盖）。只提取这四个频道的主 feed：湾区／波士顿／费城取 HD feed，
 # 加州无 HD feed，取节目量并列最高的 SAT feed（Outer Market 为异地黑屏
 # 变体、Plus 为溢出频道，均不取）。用户指定 tvg-id 为 NBCSpBay.us 等。
+# 2026-10-21 用户再指定同走此例外的 Tennis Channel 主台（TC.us）：
+# Peacock 官方指南只有二台（TC2），主台不在其中；Tennis Channel 官网
+# 的公开接口仅下发正在播出／下一档两档节目，整段节目表不开放。US2
+# 中该台为 Gracenote 数据，已与官网的正在播出／下一档逐分钟核对一致。
 EPGSHARE_US2_URL = "https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz"
 EPGSHARE_CHANNELS: tuple[tuple[str, str, str], ...] = (
     ("NBC.Sports.Bay.Area.HD.us2", "NBCSpBay.us", "NBC Sports Bay Area"),
     ("NBC.Sports.Boston.HD.us2", "NBCSpBos.us", "NBC Sports Boston"),
     ("NBC.Sports.Philadelphia.HD.us2", "NBCSpPhilly.us", "NBC Sports Philadelphia"),
     ("NBC.Sports.California.SAT.us2", "NBCSpCali.us", "NBC Sports California"),
+    ("Tennis.Channel.HD.us2", "TC.us", "Tennis Channel"),
 )
 
 
@@ -2881,7 +2886,7 @@ def _epgshare_xmltv_time(value: str) -> datetime:
 
 
 def collect_epgshare_us_rsn(days: int = 7, pause_seconds: float = 1.0) -> list[Programme]:
-    """读取 EPGSHARE US2 文件中四个 NBC Sports 地区频道的节目单。
+    """读取 EPGSHARE US2 文件中四个 NBC Sports 地区频道与 Tennis Channel 主台的节目单。
 
     标题本身为英文，直接发布。整文件为 gzip 压缩的 XMLTV（约 4 天滚动
     窗口，每日更新），下载后流式解析，只保留目标频道在
