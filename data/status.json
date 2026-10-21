@@ -1,15 +1,17 @@
 {
   "astro": {
     "status": "ok",
-    "records": 2567
+    "records": 2583
   },
   "now_hk": {
     "status": "ok",
-    "records": 4073
+    "records": 4431
   },
   "allente_se": {
-    "status": "ok",
-    "records": 762
+    "status": "stale",
+    "records": 762,
+    "message": "Allente 官方 EPG 响应中未找到任何预期的 V Sport 体育频道。",
+    "fallback": "previous_snapshot"
   },
   "allente_no": {
     "status": "stale",
@@ -19,34 +21,30 @@
   },
   "ee_uk": {
     "status": "ok",
-    "records": 6933,
+    "records": 6934,
     "notes": [
       "tvguide.co.uk 采集 6756 条（6756 去重），其中有图 6733 条。"
     ]
   },
   "sky_de": {
     "status": "ok",
-    "records": 1444,
-    "notes": [
-      "MagentaTV Sky Germany 206 跳过无法翻译的标题：'WTA 250: A. Li (USA) - E. Jones (AUS), Kinoshita Group Japan Open in Osaka (JAP), 2. Tag'",
-      "MagentaTV Sky Germany 206 跳过无法翻译的标题：'WTA 250: A. Li (USA) - E. Jones (AUS), Kinoshita Group Japan Open in Osaka (JAP), 2. Tag'"
-    ]
+    "records": 1467
   },
   "digi4k_ro": {
     "status": "ok",
-    "records": 123
+    "records": 126
   },
   "sbb_rs": {
     "status": "ok",
-    "records": 177
+    "records": 124
   },
   "virgin_uk": {
     "status": "ok",
-    "records": 80
+    "records": 82
   },
   "player_pl": {
     "status": "ok",
-    "records": 634,
+    "records": 632,
     "notes": [
       "Player.pl Eleven Sports 1 跳过无法翻译的标题：'Piłka nożna: Liga Portugal Betclic: SL Benfica - Vitória SC'"
     ]
@@ -60,7 +58,7 @@
   },
   "telus_tvplus": {
     "status": "ok",
-    "records": 1344,
+    "records": 1006,
     "notes": [
       "Telus Love Nature 的频道号为 15130（配置为 713），仍按频道名继续采集。",
       "Telus TV+（telus.prod.g.telustvplus.com）频道目录未找到 Travelxp 4K HDR，已跳过该频道。",
@@ -73,16 +71,18 @@
       "Telus Travelxp 4K HDR 的频道号为 7619（配置为 716），仍按频道名继续采集。",
       "Telus TSN1 的频道号为 7624（配置为 900），仍按频道名继续采集。",
       "Telus TSN2 的频道号为 7627（配置为 901），仍按频道名继续采集。",
-      "Telus TV+ 频道 telus.716 由 QA 环境补齐（生产环境缺失或不可用）。"
+      "Telus TV+ 频道 telus.716 由 QA 环境补齐（生产环境缺失或不可用）。",
+      "Telus TV+（telus.qa.watchoptiktv.com）EPG 拉取失败：Telus TV+（telus.qa.watchoptiktv.com）EPG 拉取失败：Telus TV+ 接口 telus.qa.watchoptiktv.com 返回 HTTP 503。",
+      "Telus TV+ 未返回频道 telus.716 的节目条目。"
     ]
   },
   "peacock": {
     "status": "ok",
-    "records": 126
+    "records": 130
   },
   "pluto_tv": {
     "status": "ok",
-    "records": 18
+    "records": 19
   },
   "epgshare": {
     "status": "ok",
@@ -90,11 +90,11 @@
   },
   "xmltv": {
     "status": "ok",
-    "channels": 183,
-    "programmes": 19765,
+    "channels": 182,
+    "programmes": 19780,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-10-21T11:26:30Z",
-  "total_records": 19765
+  "generated_at": "2026-10-21T22:11:00Z",
+  "total_records": 19780
 }
