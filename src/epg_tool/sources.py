@@ -2870,14 +2870,30 @@ def collect_pluto_tv(days: int = 7, pause_seconds: float = 0.5) -> list[Programm
 # Peacock 官方指南只有二台（TC2），主台不在其中；Tennis Channel 官网
 # 的公开接口仅下发正在播出／下一档两档节目，整段节目表不开放。US2
 # 中该台为 Gracenote 数据，已与官网的正在播出／下一档逐分钟核对一致。
+# 2026-10-22 用户再指定同走此例外的 Universo（Universo.us）：NBCU
+# 旗下全国性西语娱乐频道，US2 文件中该台标题为西班牙语，逐条经分层
+# 管线译为英文后发布（与 WSCV 相同规则），其余五台标题为英文直发。
 EPGSHARE_US2_URL = "https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz"
-EPGSHARE_CHANNELS: tuple[tuple[str, str, str], ...] = (
-    ("NBC.Sports.Bay.Area.HD.us2", "NBCSpBay.us", "NBC Sports Bay Area"),
-    ("NBC.Sports.Boston.HD.us2", "NBCSpBos.us", "NBC Sports Boston"),
-    ("NBC.Sports.Philadelphia.HD.us2", "NBCSpPhilly.us", "NBC Sports Philadelphia"),
-    ("NBC.Sports.California.SAT.us2", "NBCSpCali.us", "NBC Sports California"),
-    ("Tennis.Channel.HD.us2", "TC.us", "Tennis Channel"),
+EPGSHARE_CHANNELS: tuple[tuple[str, str, str, str | None], ...] = (
+    ("NBC.Sports.Bay.Area.HD.us2", "NBCSpBay.us", "NBC Sports Bay Area", None),
+    ("NBC.Sports.Boston.HD.us2", "NBCSpBos.us", "NBC Sports Boston", None),
+    ("NBC.Sports.Philadelphia.HD.us2", "NBCSpPhilly.us", "NBC Sports Philadelphia", None),
+    ("NBC.Sports.California.SAT.us2", "NBCSpCali.us", "NBC Sports California", None),
+    ("Tennis.Channel.HD.us2", "TC.us", "Tennis Channel", None),
+    ("UNIVERSO.HD.us2", "Universo.us", "Universo", "es"),
 )
+
+# Universo 的常驻节目名确定性映射；未覆盖的标题继续走翻译记忆与
+# 在线服务，仍无法译出时跳过该条（与其它翻译源一致）。
+EPGSHARE_UNIVERSO_ES_TITLE_TRANSLATIONS = {
+    "Programa pagado": "Paid Programming",
+}
+
+
+def _translate_epgshare_universo_es_title(title: str) -> str | None:
+    """Universo 西语标题的确定性英文映射；未覆盖返回 None。"""
+    normalised = re.sub(r"\s+", " ", title).strip()
+    return EPGSHARE_UNIVERSO_ES_TITLE_TRANSLATIONS.get(normalised)
 
 
 def _epgshare_xmltv_time(value: str) -> datetime:
@@ -2886,10 +2902,12 @@ def _epgshare_xmltv_time(value: str) -> datetime:
 
 
 def collect_epgshare_us_rsn(days: int = 7, pause_seconds: float = 1.0) -> list[Programme]:
-    """读取 EPGSHARE US2 文件中四个 NBC Sports 地区频道与 Tennis Channel 主台的节目单。
+    """读取 EPGSHARE US2 文件中六个频道的节目单。
 
-    标题本身为英文，直接发布。整文件为 gzip 压缩的 XMLTV（约 4 天滚动
-    窗口，每日更新），下载后流式解析，只保留目标频道在
+    四个 NBC Sports 地区频道与 Tennis Channel 主台标题本身为英文，
+    直接发布；Universo（Universo.us）标题为西班牙语，逐条译为英文
+    后发布。整文件为 gzip 压缩的 XMLTV（约 4 天滚动窗口，每日更新），
+    下载后流式解析，只保留目标频道在
     [昨日 00:00 UTC, 今日 00:00 UTC + days) 内的条目。单个频道缺失只
     记入 notes；全部缺失才视为来源失败。
     """
@@ -2903,13 +2921,19 @@ def collect_epgshare_us_rsn(days: int = 7, pause_seconds: float = 1.0) -> list[P
     except (requests.RequestException, OSError) as exc:
         raise SourceUnavailable(f"EPGSHARE US2 文件下载失败：{exc}") from exc
 
-    targets = {source_id: (xmltv_id, name) for source_id, xmltv_id, name in EPGSHARE_CHANNELS}
+    targets = {
+        source_id: (xmltv_id, name, source_lang)
+        for source_id, xmltv_id, name, source_lang in EPGSHARE_CHANNELS
+    }
     zone_utc = timezone.utc
     today = datetime.now(zone_utc).replace(hour=0, minute=0, second=0, microsecond=0)
     window_start = today - timedelta(days=1)
     window_end = today + timedelta(days=days)
     retrieved_at = utc_now_iso()
     records: list[Programme] = []
+    # 同一标题在本轮内只走一次翻译管线：结果（含失败）按标题备忘，
+    # 避免同一标题在多条节目上重复触发在线服务。
+    title_memo: dict[str, str | None] = {}
     try:
         context = ET.iterparse(io.BytesIO(xml_bytes), events=("end",))
         for _event, element in context:
@@ -2917,10 +2941,26 @@ def collect_epgshare_us_rsn(days: int = 7, pause_seconds: float = 1.0) -> list[P
                 continue
             source_id = element.get("channel") or ""
             if source_id in targets:
-                xmltv_id, channel_name = targets[source_id]
+                xmltv_id, channel_name, source_lang = targets[source_id]
                 title_node = element.find("title")
                 title = (title_node.text or "").strip() if title_node is not None else ""
                 if title:
+                    if source_lang is not None:
+                        if title in title_memo:
+                            translated = title_memo[title]
+                        else:
+                            try:
+                                translated = translate_programme_title(
+                                    title, source_lang, _translate_epgshare_universo_es_title
+                                )
+                            except TitleUntranslatable:
+                                translated = None
+                            title_memo[title] = translated
+                        if translated is None:
+                            note(f"EPGSHARE {channel_name} 跳过无法翻译的标题：{title!r}")
+                            element.clear()
+                            continue
+                        title = translated
                     try:
                         start = _epgshare_xmltv_time(element.get("start") or "")
                         stop = _epgshare_xmltv_time(element.get("stop") or "")
@@ -2964,7 +3004,7 @@ def collect_epgshare_us_rsn(days: int = 7, pause_seconds: float = 1.0) -> list[P
 
     records = _deduplicate(records)
     published = {record.channel_id for record in records}
-    missing = [xmltv_id for _, xmltv_id, _ in EPGSHARE_CHANNELS if xmltv_id not in published]
+    missing = [xmltv_id for _, xmltv_id, _, _ in EPGSHARE_CHANNELS if xmltv_id not in published]
     if missing:
         note(f"EPGSHARE US2 未返回频道 {', '.join(missing)} 的节目条目。")
     if not records:
@@ -3116,7 +3156,7 @@ def collect_epgshare_us_locals(days: int = 7, pause_seconds: float = 1.0) -> lis
 
 
 def collect_epgshare(days: int = 7, pause_seconds: float = 1.0) -> list[Programme]:
-    """EPGSHARE 统一入口：US2 的 NBC Sports 四台加 US_LOCALS1 的四台地方台。
+    """EPGSHARE 统一入口：US2 的六台（NBC Sports 四台、Tennis Channel、Universo）加 US_LOCALS1 的四台地方台。
 
     两个文件相互独立：单个文件失败只记入 notes 并降级为部分结果，
     两个都未返回条目时才视为来源失败。
