@@ -47,7 +47,7 @@ https://raw.githubusercontent.com/waastudios/Cathy-epg/master/data/epg.xml.gz
 | 美国 | Tennis Channel 2 与 Telemundo Deportes Ahora | [Peacock 频道指南](https://www.peacocktv.com/channels/tennis-channel-2/8969135442586836117)、[Telemundo Deportes Ahora](https://www.peacocktv.com/channels/telemundo-deportes-ahora/5923023667697108117) |
 | 美国 | CBS Sports Golazo Network | [Pluto TV 指南](https://pluto.tv/us/live-tv/golazo-network) |
 | 美国 | NBC Sports 湾区、波士顿、费城与加州，以及 Tennis Channel | [EPGShare 美国节目文件](https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz) |
-| 美国 | Telemundo 51（迈阿密）与 NBC 4 纽约 | [EPGShare 美国地方台节目文件](https://epgshare01.online/epgshare01/epg_ripper_US_LOCALS1.xml.gz) |
+| 美国 | Telemundo 51（迈阿密）、NBC 4 纽约、NBC 4 洛杉矶与 NBC Bay Area（湾区） | [EPGShare 美国地方台节目文件](https://epgshare01.online/epgshare01/epg_ripper_US_LOCALS1.xml.gz) |
 
 ### 德国 Sky 与 MagentaTV
 
@@ -75,7 +75,7 @@ EE 范围包含 **Sky Mix、Sky Arts、Sky Witness、Sky Atlantic、Sky One、Sk
 
 **Tennis Channel** 以 `TC.us` 发布。Peacock 官方指南只有二台（Tennis Channel 2），主台不在其中；Tennis Channel 官网的公开接口仅下发正在播出与下一档两档节目，整段节目表并不开放。因此该台与上述四台同样作为明确例外，节目单取自同一份 EPGShare US2 XMLTV 文件；该文件为 Gracenote 数据，采用前已与官网的正在播出／下一档逐分钟核对一致。节目标题本身为英文，直接发布。
 
-**Telemundo 51（迈阿密）与 NBC 4 纽约（New York）** 以 `WSCV.us` 与 `WNBC.us` 发布。两台均为地方台，不在 Peacock 匿名官方指南内（该指南只含全国性线性频道），因此与 NBC Sports 四台同样作为本项目官方源原则的一项明确例外，其节目单改用 EPGShare 的 US_LOCALS1 XMLTV 文件；该文件每日更新、约 4 天滚动覆盖。Telemundo 51 的西班牙语标题按分级流水线译为英文发布（无法翻译的标题只跳过当条节目），在 [CHANNELS-CN.md](CHANNELS-CN.md) 中带（T）标记；NBC 4 纽约的标题本身为英文，直接发布。
+**Telemundo 51（迈阿密）、NBC 4 纽约（New York）、NBC 4 洛杉矶（Los Angeles）与 NBC Bay Area（旧金山湾区）** 以 `WSCV.us`、`WNBC-NY.us`、`WNBC-LA.us` 与 `KNTV.us` 发布。四台均为地方台，不在 Peacock 匿名官方指南内（该指南只含全国性线性频道），因此与 NBC Sports 四台同样作为本项目官方源原则的一项明确例外，其节目单改用 EPGShare 的 US_LOCALS1 XMLTV 文件；该文件每日更新、约 4 天滚动覆盖。Telemundo 51 的西班牙语标题按分级流水线译为英文发布（无法翻译的标题只跳过当条节目），在 [CHANNELS-CN.md](CHANNELS-CN.md) 中带（T）标记；其余三台的标题本身为英文，直接发布。
 
 ### 波兰 Player.pl
 
@@ -124,6 +124,7 @@ epg preview --day tomorrow --provider allente_se --channel 50048
 
 ## 更新日志
 
+- **2026-10-22** —— NBC 4 纽约的 XMLTV ID 由 `WNBC.us` 更名为 `WNBC-NY.us`，并通过同一 EPGShare US_LOCALS1 XMLTV 文件新增 NBC 4 洛杉矶（`WNBC-LA.us`）与 NBC Bay Area（`KNTV.us`）。US_LOCALS1 破例范围扩至四台地方台；约 4 天滚动覆盖，两台新台的标题本身为英文、直接发布。
 - **2026-10-21** —— 通过 EPGShare 的 US2 XMLTV 文件新增 Tennis Channel（`TC.us`）。Peacock 指南只有二台（Tennis Channel 2），Tennis Channel 官网的公开接口也只提供正在播出／下一档两档数据，故该台同样明确破例使用 EPGShare；其 Gracenote 数据已与官网的正在播出／下一档核对一致，约 4 天滚动覆盖，标题直接发布。
 - **2026-10-18** —— 修复翻译类频道（尤其是经 SBB 与 Player.pl 的 Eurosport）节目单混入源语言的问题：三层翻译（受控映射、翻译记忆、在线服务）的结果现在都要通过一道确定性的英文校验门，仍带源语言措辞的结果（如塞尔维亚语 "Svetska turneja"、波兰语 "Skoki narciarskie"）会转入下一层重试，全部不过则跳过该条，绝不发布、也不写入记忆。塞尔维亚语与波兰语 Eurosport 映射同步扩充（World Tour、Olympic Games、Hall of Fame、跳台滑雪、田径等），并清除了 13 条已把未翻译标题存入记忆的毒化条目。
 - **2026-10-16** —— Astro 体育白名单新增 Astro Badminton 2（`astro.816`），共 23 条。该台是 Astro 为并行羽毛球直播开设的 ad hoc 频道；本次按官方目录核查，现有 22 条 Astro 体育频道无改名、无下线。
