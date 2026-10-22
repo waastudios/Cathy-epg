@@ -2973,16 +2973,20 @@ def collect_epgshare_us_rsn(days: int = 7, pause_seconds: float = 1.0) -> list[P
 
 
 # EPGSHARE US_LOCALS1（与 US2 同一来源的用户指定例外）：地方台文件，
-# 只提取迈阿密 Telemundo 51（WSCV-DT）与纽约 NBC 4（WNBC-DT）两台。
+# 只提取迈阿密 Telemundo 51（WSCV-DT）、纽约 NBC 4（WNBC-DT）、
+# 洛杉矶 NBC 4（KNBC-DT）与旧金山湾区 NBC（KNTV-DT）四台。
 # 地方台不在 Peacock 匿名官方指南内（指南只含全国性线性频道），用户
 # 指定与 NBC Sports 地方台同样改走 EPGSHARE。文件为 gzip 压缩的
 # XMLTV（约 59 MB、约 4 天滚动、每日更新），下载后以 gzip 流式解析，
-# 不整包解压。用户指定 tvg-id 为 WSCV.us 与 WNBC.us。WSCV 节目标题
-# 为西班牙语，逐条经分层管线译为英文；WNBC 标题本身为英文，直接发布。
+# 不整包解压。用户指定 tvg-id 为 WSCV.us、WNBC-NY.us、WNBC-LA.us
+# 与 KNTV.us。WSCV 节目标题为西班牙语，逐条经分层管线译为英文；
+# 其余三台标题本身为英文，直接发布。
 EPGSHARE_LOCALS1_URL = "https://epgshare01.online/epgshare01/epg_ripper_US_LOCALS1.xml.gz"
 EPGSHARE_LOCALS_CHANNELS: tuple[tuple[str, str, str, str | None], ...] = (
     ("WSCV-DT.us_locals1", "WSCV.us", "Telemundo 51", "es"),
-    ("WNBC-DT.us_locals1", "WNBC.us", "NBC 4 New York", None),
+    ("WNBC-DT.us_locals1", "WNBC-NY.us", "NBC 4 New York", None),
+    ("KNBC-DT.us_locals1", "WNBC-LA.us", "NBC 4 Los Angeles", None),
+    ("KNTV-DT.us_locals1", "KNTV.us", "NBC Bay Area", None),
 )
 
 # WSCV 的常驻节目名确定性映射；未覆盖的标题继续走翻译记忆与在线
@@ -2999,11 +3003,13 @@ def _translate_epgshare_wscv_es_title(title: str) -> str | None:
 
 
 def collect_epgshare_us_locals(days: int = 7, pause_seconds: float = 1.0) -> list[Programme]:
-    """读取 EPGSHARE US_LOCALS1 文件中 WSCV 与 WNBC 两台地方台的节目单。
+    """读取 EPGSHARE US_LOCALS1 文件中四台地方台的节目单。
 
     WSCV（WSCV.us，台名 Telemundo 51）标题为西班牙语，逐条译为英文
-    后发布；WNBC（WNBC.us，台名 NBC 4 New York）标题本身为英文，
-    直接发布。整文件为 gzip 压缩的 XMLTV（约 4 天滚动窗口，每日
+    后发布；WNBC（WNBC-NY.us，台名 NBC 4 New York）、KNBC
+    （WNBC-LA.us，台名 NBC 4 Los Angeles）与 KNTV（KNTV.us，台名
+    NBC Bay Area）标题本身为英文，直接发布。整文件为 gzip 压缩的
+    XMLTV（约 4 天滚动窗口，每日
     更新），以流式方式解析，只保留目标频道在
     [昨日 00:00 UTC, 今日 00:00 UTC + days) 内的条目。单个频道缺失
     只记入 notes；全部缺失才视为来源失败。
@@ -3110,7 +3116,7 @@ def collect_epgshare_us_locals(days: int = 7, pause_seconds: float = 1.0) -> lis
 
 
 def collect_epgshare(days: int = 7, pause_seconds: float = 1.0) -> list[Programme]:
-    """EPGSHARE 统一入口：US2 的 NBC Sports 四台加 US_LOCALS1 的两台地方台。
+    """EPGSHARE 统一入口：US2 的 NBC Sports 四台加 US_LOCALS1 的四台地方台。
 
     两个文件相互独立：单个文件失败只记入 notes 并降级为部分结果，
     两个都未返回条目时才视为来源失败。
