@@ -1,34 +1,33 @@
 {
   "astro": {
     "status": "ok",
-    "records": 2583
+    "records": 2687
   },
   "now_hk": {
     "status": "ok",
-    "records": 4431
+    "records": 4045
   },
   "allente_se": {
-    "status": "stale",
-    "records": 762,
-    "message": "Allente 官方 EPG 响应中未找到任何预期的 V Sport 体育频道。",
-    "fallback": "previous_snapshot"
+    "status": "ok",
+    "records": 775
   },
   "allente_no": {
-    "status": "stale",
-    "records": 694,
-    "message": "Allente Norway 官方 EPG 响应中未找到预期的 TV Norge、REX、FEM、Eurosport Norge 或 Eurosport 1。",
-    "fallback": "previous_snapshot"
+    "status": "ok",
+    "records": 673,
+    "notes": [
+      "Allente Norway 10010 跳过无法翻译的标题：\"Ferske husfiksere: Roto'til Death Do Us Part\""
+    ]
   },
   "ee_uk": {
     "status": "ok",
-    "records": 6934,
+    "records": 6873,
     "notes": [
-      "tvguide.co.uk 采集 6756 条（6756 去重），其中有图 6733 条。"
+      "tvguide.co.uk 采集 6703 条（6703 去重），其中有图 6681 条。"
     ]
   },
   "sky_de": {
     "status": "ok",
-    "records": 1467
+    "records": 1471
   },
   "digi4k_ro": {
     "status": "ok",
@@ -36,29 +35,29 @@
   },
   "sbb_rs": {
     "status": "ok",
-    "records": 124
+    "records": 175
   },
   "virgin_uk": {
     "status": "ok",
-    "records": 82
+    "records": 79
   },
   "player_pl": {
     "status": "ok",
-    "records": 632,
+    "records": 631,
     "notes": [
       "Player.pl Eleven Sports 1 跳过无法翻译的标题：'Piłka nożna: Liga Portugal Betclic: SL Benfica - Vitória SC'"
     ]
   },
   "canalplus_fr": {
     "status": "ok",
-    "records": 87,
+    "records": 136,
     "notes": [
       "Canal+ 官方 API 不可用（403 rate limited: https://hodor.canalplus.pro/api/v2/mycanal/authenticate.json/webapp/6.0?experiments=beta-test-one-tv-guide:control），回退到 epg.pw"
     ]
   },
   "telus_tvplus": {
     "status": "ok",
-    "records": 1006,
+    "records": 982,
     "notes": [
       "Telus Love Nature 的频道号为 15130（配置为 713），仍按频道名继续采集。",
       "Telus TV+（telus.prod.g.telustvplus.com）频道目录未找到 Travelxp 4K HDR，已跳过该频道。",
@@ -78,23 +77,23 @@
   },
   "peacock": {
     "status": "ok",
-    "records": 130
+    "records": 124
   },
   "pluto_tv": {
     "status": "ok",
-    "records": 19
+    "records": 14
   },
   "epgshare": {
     "status": "ok",
-    "records": 703
+    "records": 755
   },
   "xmltv": {
     "status": "ok",
-    "channels": 182,
-    "programmes": 19780,
+    "channels": 184,
+    "programmes": 19546,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-10-21T22:11:00Z",
-  "total_records": 19780
+  "generated_at": "2026-10-22T14:16:36Z",
+  "total_records": 19546
 }
