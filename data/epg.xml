@@ -40,6 +40,10 @@
     <url>https://www.peacocktv.com/channels/telemundo-deportes-ahora/5923023667697108117</url>
     <display-name lang="en">Telemundo Deportes Ahora</display-name>
   </channel>
+  <channel id="Universo.us">
+    <url>https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz</url>
+    <display-name lang="en">Universo</display-name>
+  </channel>
   <channel id="WNBC-LA.us">
     <url>https://epgshare01.online/epgshare01/epg_ripper_US_LOCALS1.xml.gz</url>
     <display-name lang="en">NBC 4 Los Angeles</display-name>
@@ -53306,6 +53310,11 @@
     <category lang="en">Series</category>
     <icon src="http://dtil.tmsimg.com/assets/p33808297_b_h10_ac.jpg?w=960&amp;h=540" />
   </programme>
+  <programme channel="Universo.us" start="20261021080000 +0800" stop="20261021100000 +0800">
+    <title lang="en">Live: Mexican Football First Division</title>
+    <category lang="en">Sports</category>
+    <icon src="http://dtil.tmsimg.com/assets/GNLZZGG003BEH2B.jpg?w=960&amp;h=540" />
+  </programme>
   <programme channel="NBCSpPhilly.us" start="20261021083000 +0800" stop="20261021093000 +0800">
     <title lang="en">World Poker Tour</title>
     <sub-title lang="en">WPT Choctaw: Part 1</sub-title>
@@ -53358,6 +53367,12 @@
     <category lang="en">Sports</category>
     <icon src="http://dtil.tmsimg.com/assets/GNLZZGG003M44LG.jpg?w=960&amp;h=540" />
   </programme>
+  <programme channel="Universo.us" start="20261021100000 +0800" stop="20261021103000 +0800">
+    <title lang="en">Live: Liga MX All-Star Football: Extra</title>
+    <sub-title lang="en">Post</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p30680196_b_h8_ab.jpg?w=960&amp;h=540" />
+  </programme>
   <programme channel="NBCSpBos.us" start="20261021100000 +0800" stop="20261021110000 +0800">
     <title lang="en">Live: Boston Sports Tonight With Felger and Holley</title>
     <category lang="en">Sports talk</category>
@@ -53375,6 +53390,12 @@
     <category lang="en">Series</category>
     <icon src="http://dtil.tmsimg.com/assets/p14454942_b_h8_aa.jpg?w=960&amp;h=540" />
   </programme>
+  <programme channel="Universo.us" start="20261021103000 +0800" stop="20261021105500 +0800">
+    <title lang="en">Live: Liga MX All-Star Football: Extra</title>
+    <sub-title lang="en">Previa</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p30680196_b_h8_ab.jpg?w=960&amp;h=540" />
+  </programme>
   <programme channel="NBCSpPhilly.us" start="20261021103000 +0800" stop="20261021110000 +0800">
     <title lang="en">Birds Huddle</title>
     <category lang="en">Football</category>
@@ -53385,6 +53406,11 @@
     <sub-title lang="en">Brussels-ATP, Lyon-ATP, Almaty-ATP, Osaka-WTA &amp; Ningbo-WTA Early Rounds</sub-title>
     <category lang="en">Series</category>
     <icon src="http://dtil.tmsimg.com/assets/p21676880_b_h10_ab.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="Universo.us" start="20261021105500 +0800" stop="20261021130000 +0800">
+    <title lang="en">Live: Mexican Football First Division</title>
+    <category lang="en">Sports</category>
+    <icon src="http://dtil.tmsimg.com/assets/GNLZZGG003BE9WL.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="WSCV.us" start="20261021110000 +0800" stop="20261021113500 +0800">
     <title lang="en">Noticiero Telemundo 51 11PM</title>
@@ -53490,6 +53516,12 @@
     <category lang="en">Special</category>
     <icon src="http://dtil.tmsimg.com/assets/p34182344_b_h8_aa.jpg?w=960&amp;h=540" />
   </programme>
+  <programme channel="Universo.us" start="20261021130000 +0800" stop="20261021140000 +0800">
+    <title lang="en">Case closed</title>
+    <sub-title lang="en">Painlexxx; La pasión de Cristo</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p217714_b_h8_ak.jpg?w=960&amp;h=540" />
+  </programme>
   <programme channel="WNBC-LA.us" start="20261021130000 +0800" stop="20261021140000 +0800">
     <title lang="en">Dateline NBC</title>
     <sub-title lang="en">On the Outskirts of Town</sub-title>
@@ -53540,15 +53572,15 @@
     <category lang="en">Football</category>
     <icon src="http://dtil.tmsimg.com/assets/p28272530_b_h8_aa.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="NBCSpBos.us" start="20261021140000 +0800" stop="20261021143000 +0800">
-    <title lang="en">Paid Programming</title>
-    <category lang="en">Consumer</category>
-    <icon src="http://dtil.tmsimg.com/assets/p459763_b_h8_bq.jpg?w=960&amp;h=540" />
-  </programme>
   <programme channel="WSCV.us" start="20261021140000 +0800" stop="20261021143000 +0800">
     <title lang="en">Paid Programming</title>
     <category lang="en">Consumer</category>
     <icon src="http://dtil.tmsimg.com/assets/p459763_b_h8_bs.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="NBCSpBos.us" start="20261021140000 +0800" stop="20261021143000 +0800">
+    <title lang="en">Paid Programming</title>
+    <category lang="en">Consumer</category>
+    <icon src="http://dtil.tmsimg.com/assets/p459763_b_h8_bq.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="KNTV.us" start="20261021140000 +0800" stop="20261021143400 +0800">
     <title lang="en">NBC Bay Area News at 11</title>
@@ -53559,6 +53591,11 @@
     <title lang="en">NBC4 News at 11pm</title>
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p8781143_b_h10_ad.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="Universo.us" start="20261021140000 +0800" stop="20261021150000 +0800">
+    <title lang="en">12 Corazones</title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p198595_b_h10_ai.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpBay.us" start="20261021143000 +0800" stop="20261021150000 +0800">
     <title lang="en">49ers Now</title>
@@ -53597,15 +53634,20 @@
     <category lang="en">Football</category>
     <icon src="http://dtil.tmsimg.com/assets/p28272530_b_h8_aa.jpg?w=960&amp;h=540" />
   </programme>
+  <programme channel="WSCV.us" start="20261021150000 +0800" stop="20261021153000 +0800">
+    <title lang="en">Paid Programming</title>
+    <category lang="en">Consumer</category>
+    <icon src="http://dtil.tmsimg.com/assets/p459763_b_h8_bs.jpg?w=960&amp;h=540" />
+  </programme>
   <programme channel="NBCSpBos.us" start="20261021150000 +0800" stop="20261021153000 +0800">
     <title lang="en">Paid Programming</title>
     <category lang="en">Consumer</category>
     <icon src="http://dtil.tmsimg.com/assets/p459763_b_h8_bq.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WSCV.us" start="20261021150000 +0800" stop="20261021153000 +0800">
-    <title lang="en">Paid Programming</title>
-    <category lang="en">Consumer</category>
-    <icon src="http://dtil.tmsimg.com/assets/p459763_b_h8_bs.jpg?w=960&amp;h=540" />
+  <programme channel="Universo.us" start="20261021150000 +0800" stop="20261021160000 +0800">
+    <title lang="en">12 Corazones</title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p198595_b_h10_ai.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpBay.us" start="20261021150000 +0800" stop="20261021160000 +0800">
     <title lang="en">Legends</title>
@@ -53628,15 +53670,15 @@
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p8692580_b_h8_ac.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="NBCSpBos.us" start="20261021153000 +0800" stop="20261021160000 +0800">
-    <title lang="en">Paid Programming</title>
-    <category lang="en">Consumer</category>
-    <icon src="http://dtil.tmsimg.com/assets/p459763_b_h8_bq.jpg?w=960&amp;h=540" />
-  </programme>
   <programme channel="WSCV.us" start="20261021153000 +0800" stop="20261021160000 +0800">
     <title lang="en">Paid Programming</title>
     <category lang="en">Consumer</category>
     <icon src="http://dtil.tmsimg.com/assets/p459763_b_h8_bs.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="NBCSpBos.us" start="20261021153000 +0800" stop="20261021160000 +0800">
+    <title lang="en">Paid Programming</title>
+    <category lang="en">Consumer</category>
+    <icon src="http://dtil.tmsimg.com/assets/p459763_b_h8_bq.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="WNBC-LA.us" start="20261021153600 +0800" stop="20261021163700 +0800">
     <title lang="en">Late Night With Seth Meyers</title>
@@ -53664,6 +53706,12 @@
     <title lang="en">Paid Programming</title>
     <category lang="en">Consumer</category>
     <icon src="http://dtil.tmsimg.com/assets/p459763_b_h8_bq.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="Universo.us" start="20261021160000 +0800" stop="20261021170000 +0800">
+    <title lang="en">12 Corazones</title>
+    <sub-title lang="en">Gótico sensual</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p198595_b_h10_ai.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="WSCV.us" start="20261021160000 +0800" stop="20261021170000 +0800">
     <title lang="en">On the hot table)</title>
@@ -53714,6 +53762,12 @@
     <title lang="en">Paid Programming</title>
     <category lang="en">Consumer</category>
     <icon src="http://dtil.tmsimg.com/assets/p459763_b_h8_bq.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="Universo.us" start="20261021170000 +0800" stop="20261021180000 +0800">
+    <title lang="en">12 Corazones</title>
+    <sub-title lang="en">Bikinis</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p198595_b_h10_ai.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="WSCV.us" start="20261021170000 +0800" stop="20261021180000 +0800">
     <title lang="en">Noticiero Telemundo 51: First Edition</title>
@@ -53774,6 +53828,12 @@
     <title lang="en">Sharks Postgame</title>
     <category lang="en">Special</category>
     <icon src="http://dtil.tmsimg.com/assets/p901852_b_h8_ac.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="Universo.us" start="20261021180000 +0800" stop="20261021190000 +0800">
+    <title lang="en">12 Corazones</title>
+    <sub-title lang="en">Bikinis</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p198595_b_h10_ai.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpPhilly.us" start="20261021180000 +0800" stop="20261021190000 +0800">
     <title lang="en">Live: NBC10 News Today at 6a</title>
@@ -53841,6 +53901,12 @@
     <category lang="en">Basketball</category>
     <icon src="http://dtil.tmsimg.com/assets/p615355_b_h10_ad.jpg?w=960&amp;h=540" />
   </programme>
+  <programme channel="Universo.us" start="20261021190000 +0800" stop="20261021200000 +0800">
+    <title lang="en">Raid the Cage</title>
+    <sub-title lang="en">Luchadores grecorromanos</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p13650664_b_h8_ad.jpg?w=960&amp;h=540" />
+  </programme>
   <programme channel="NBCSpPhilly.us" start="20261021190000 +0800" stop="20261021200000 +0800">
     <title lang="en">SportsNet Central</title>
     <category lang="en">Sports talk</category>
@@ -53891,6 +53957,12 @@
     <category lang="en">Sports talk</category>
     <icon src="http://dtil.tmsimg.com/assets/p18770386_b_h8_aa.jpg?w=960&amp;h=540" />
   </programme>
+  <programme channel="Universo.us" start="20261021200000 +0800" stop="20261021210000 +0800">
+    <title lang="en">Raid the Cage</title>
+    <sub-title lang="en">El todo por el todo</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p13650664_b_h8_ad.jpg?w=960&amp;h=540" />
+  </programme>
   <programme channel="NBCSpPhilly.us" start="20261021200000 +0800" stop="20261021210000 +0800">
     <title lang="en">SportsNet Central</title>
     <category lang="en">Sports talk</category>
@@ -53936,6 +54008,12 @@
     <category lang="en">Sports talk</category>
     <icon src="http://dtil.tmsimg.com/assets/p19704176_b_h10_ab.jpg?w=960&amp;h=540" />
   </programme>
+  <programme channel="Universo.us" start="20261021210000 +0800" stop="20261021220000 +0800">
+    <title lang="en">Case closed</title>
+    <sub-title lang="en">Conchuda necesidad; Menores en conflicto</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p217714_b_h8_ak.jpg?w=960&amp;h=540" />
+  </programme>
   <programme channel="NBCSpPhilly.us" start="20261021210000 +0800" stop="20261021220000 +0800">
     <title lang="en">SportsNet Central</title>
     <category lang="en">Sports talk</category>
@@ -53970,6 +54048,12 @@
     <title lang="en">Warriors Season Preview</title>
     <category lang="en">Special</category>
     <icon src="http://dtil.tmsimg.com/assets/p34182344_b_h8_aa.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="Universo.us" start="20261021220000 +0800" stop="20261021230000 +0800">
+    <title lang="en">Case closed</title>
+    <sub-title lang="en">Chiquito rompecorazones; Solo quedan tres venas</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p217714_b_h8_ak.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpPhilly.us" start="20261021220000 +0800" stop="20261021230000 +0800">
     <title lang="en">SportsNet Central</title>
@@ -54016,6 +54100,12 @@
     <category lang="en">Consumer</category>
     <icon src="http://dtil.tmsimg.com/assets/p26665262_b_h8_aa.jpg?w=960&amp;h=540" />
   </programme>
+  <programme channel="Universo.us" start="20261021230000 +0800" stop="20261022000000 +0800">
+    <title lang="en">Case closed</title>
+    <sub-title lang="en">Ira en la carretera; La cazamaridos</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p217714_b_h8_ak.jpg?w=960&amp;h=540" />
+  </programme>
   <programme channel="NBCSpPhilly.us" start="20261021230000 +0800" stop="20261022000000 +0800">
     <title lang="en">SportsNet Central</title>
     <category lang="en">Sports talk</category>
@@ -54050,6 +54140,12 @@
     <title lang="en">NBC News Daily</title>
     <category lang="en">Series</category>
     <icon src="http://dtil.tmsimg.com/assets/p22712535_b_h8_ad.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="Universo.us" start="20261022000000 +0800" stop="20261022010000 +0800">
+    <title lang="en">Stories of the Dark Virgin</title>
+    <sub-title lang="en">Lazos de mi corazón</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p13334119_b_h8_aa.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="WNBC-LA.us" start="20261022000000 +0800" stop="20261022010000 +0800">
     <title lang="en">Today 3rd Hour</title>
@@ -54097,6 +54193,12 @@
     <category lang="en">Series</category>
     <icon src="http://dtil.tmsimg.com/assets/p31054010_b_h10_aa.jpg?w=960&amp;h=540" />
   </programme>
+  <programme channel="Universo.us" start="20261022010000 +0800" stop="20261022020000 +0800">
+    <title lang="en">Stories of the Dark Virgin</title>
+    <sub-title lang="en">Barrera de rencor</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p13334119_b_h8_aa.jpg?w=960&amp;h=540" />
+  </programme>
   <programme channel="WNBC-LA.us" start="20261022010000 +0800" stop="20261022020000 +0800">
     <title lang="en">Today With Jenna &amp; Sheinelle</title>
     <category lang="en">Series</category>
@@ -54142,6 +54244,12 @@
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p12892190_b_h10_ad.jpg?w=960&amp;h=540" />
   </programme>
+  <programme channel="Universo.us" start="20261022020000 +0800" stop="20261022030000 +0800">
+    <title lang="en">What we women keep quiet</title>
+    <sub-title lang="en">Giovanna, en la mira del peligro</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p431575_b_h10_aa.jpg?w=960&amp;h=540" />
+  </programme>
   <programme channel="NBCSpBos.us" start="20261022020000 +0800" stop="20261022060000 +0800">
     <title lang="en">Live: Felger &amp; Mazz Radio</title>
     <category lang="en">Sports talk</category>
@@ -54171,6 +54279,12 @@
     <title lang="en">Paid Programming</title>
     <category lang="en">Consumer</category>
     <icon src="http://dtil.tmsimg.com/assets/p459763_b_h8_bq.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="Universo.us" start="20261022030000 +0800" stop="20261022040000 +0800">
+    <title lang="en">Case closed</title>
+    <sub-title lang="en">Meditación tortuosa; El riñón es mío</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p217714_b_h8_ak.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="WNBC-NY.us" start="20261022030000 +0800" stop="20261022040000 +0800">
     <title lang="en">Live: News Zone</title>
@@ -54233,6 +54347,12 @@
     <category lang="en">Series</category>
     <icon src="http://dtil.tmsimg.com/assets/p326736_b_h8_an.jpg?w=960&amp;h=540" />
   </programme>
+  <programme channel="Universo.us" start="20261022040000 +0800" stop="20261022050000 +0800">
+    <title lang="en">Raid the Cage</title>
+    <sub-title lang="en">La casa de los espíritus</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p13650664_b_h8_ad.jpg?w=960&amp;h=540" />
+  </programme>
   <programme channel="NBCSpBay.us" start="20261022043000 +0800" stop="20261022050000 +0800">
     <title lang="en">49ers Now</title>
     <category lang="en">Football</category>
@@ -54267,6 +54387,12 @@
     <title lang="en">49ers Cal-Hi Sports Report</title>
     <category lang="en">Sports talk</category>
     <icon src="http://dtil.tmsimg.com/assets/p14484396_b_h10_ac.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="Universo.us" start="20261022050000 +0800" stop="20261022060000 +0800">
+    <title lang="en">A day to live</title>
+    <sub-title lang="en">Amnesia</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p20615912_b_h8_ac.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="WNBC-LA.us" start="20261022050000 +0800" stop="20261022060000 +0800">
     <title lang="en">Dateline</title>
@@ -54330,6 +54456,12 @@
     <category lang="en">Baseball</category>
     <icon src="http://dtil.tmsimg.com/assets/p29498577_b_h10_ac.jpg?w=960&amp;h=540" />
   </programme>
+  <programme channel="Universo.us" start="20261022060000 +0800" stop="20261022070000 +0800">
+    <title lang="en">Get closer to Rocío</title>
+    <sub-title lang="en">No me salen las cuentas, pero voy a ser papá</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p19628516_b_h8_ac.jpg?w=960&amp;h=540" />
+  </programme>
   <programme channel="KNTV.us" start="20261022060000 +0800" stop="20261022070000 +0800">
     <title lang="en">NBC Bay Area News at 3</title>
     <category lang="en">News</category>
@@ -54380,6 +54512,12 @@
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p18101773_b_h10_ad.jpg?w=960&amp;h=540" />
   </programme>
+  <programme channel="Universo.us" start="20261022070000 +0800" stop="20261022080000 +0800">
+    <title lang="en">Get closer to Rocío</title>
+    <sub-title lang="en">Por codo se va a quedar solo</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p19628516_b_h8_ac.jpg?w=960&amp;h=540" />
+  </programme>
   <programme channel="WNBC-LA.us" start="20261022070000 +0800" stop="20261022080000 +0800">
     <title lang="en">NBC4 News at 4pm</title>
     <category lang="en">News</category>
@@ -54429,6 +54567,12 @@
     <title lang="en">49ers Cal-Hi Sports Report</title>
     <category lang="en">Sports talk</category>
     <icon src="http://dtil.tmsimg.com/assets/p14484396_b_h10_ac.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="Universo.us" start="20261022080000 +0800" stop="20261022090000 +0800">
+    <title lang="en">Case closed</title>
+    <sub-title lang="en">Con mis mejores amigos; Defecando en el restaurante</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p217714_b_h8_ak.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="WNBC-NY.us" start="20261022080000 +0800" stop="20261022090000 +0800">
     <title lang="en">Chicago Med</title>
@@ -54485,6 +54629,12 @@
     <title lang="en">Tom Curran's Patriots Talk Podcast</title>
     <category lang="en">Sports talk</category>
     <icon src="http://dtil.tmsimg.com/assets/p18770386_b_h8_aa.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="Universo.us" start="20261022090000 +0800" stop="20261022100000 +0800">
+    <title lang="en">Case closed</title>
+    <sub-title lang="en">Odio latino; Metió preso a mi marido</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p217714_b_h8_ak.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="WNBC-NY.us" start="20261022090000 +0800" stop="20261022100000 +0800">
     <title lang="en">Chicago Fire</title>
@@ -54550,6 +54700,12 @@
     <sub-title lang="en">Under the Surface</sub-title>
     <category lang="en">Series</category>
     <icon src="http://dtil.tmsimg.com/assets/p9972948_b_h8_ck.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="Universo.us" start="20261022100000 +0800" stop="20261022110000 +0800">
+    <title lang="en">Get closer to Rocío</title>
+    <sub-title lang="en">Una vividora se aprovechó de mi hijo</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p19628516_b_h8_ac.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpBos.us" start="20261022100000 +0800" stop="20261022110000 +0800">
     <title lang="en">Live: Boston Sports Tonight With Felger and Holley</title>
@@ -54620,6 +54776,12 @@
     <category lang="en">Series</category>
     <icon src="http://dtil.tmsimg.com/assets/p33616368_b_h8_ac.jpg?w=960&amp;h=540" />
   </programme>
+  <programme channel="Universo.us" start="20261022110000 +0800" stop="20261022120000 +0800">
+    <title lang="en">The end of paradise</title>
+    <sub-title lang="en">Guerra a muerte</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p17090540_b_h8_aa.jpg?w=960&amp;h=540" />
+  </programme>
   <programme channel="NBCSpPhilly.us" start="20261022113000 +0800" stop="20261022120000 +0800">
     <title lang="en">Fair Territory with Ken Rosenthal</title>
     <category lang="en">Baseball</category>
@@ -54650,6 +54812,12 @@
     <title lang="en">Boston Sports Tonight With Felger and Holley</title>
     <category lang="en">Sports talk</category>
     <icon src="http://dtil.tmsimg.com/assets/p19704176_b_h10_ab.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="Universo.us" start="20261022120000 +0800" stop="20261022130000 +0800">
+    <title lang="en">Case closed</title>
+    <sub-title lang="en">Consentimiento sin conocimiento; Muy de malas</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p217714_b_h8_ak.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="WNBC-LA.us" start="20261022120000 +0800" stop="20261022130000 +0800">
     <title lang="en">Chicago Fire</title>
@@ -54695,6 +54863,12 @@
     <title lang="en">Fair Territory with Ken Rosenthal</title>
     <category lang="en">Baseball</category>
     <icon src="http://dtil.tmsimg.com/assets/p30123162_b_h8_aa.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="Universo.us" start="20261022130000 +0800" stop="20261022140000 +0800">
+    <title lang="en">Case closed</title>
+    <sub-title lang="en">Mi golpiza en evidencia; Sex in the air</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p217714_b_h8_ak.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="WNBC-LA.us" start="20261022130000 +0800" stop="20261022140000 +0800">
     <title lang="en">Chicago P.D.</title>
@@ -54746,15 +54920,15 @@
     <category lang="en">Football</category>
     <icon src="http://dtil.tmsimg.com/assets/p18733022_b_h8_ad.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="NBCSpBos.us" start="20261022140000 +0800" stop="20261022143000 +0800">
-    <title lang="en">Paid Programming</title>
-    <category lang="en">Consumer</category>
-    <icon src="http://dtil.tmsimg.com/assets/p459763_b_h8_bq.jpg?w=960&amp;h=540" />
-  </programme>
   <programme channel="WSCV.us" start="20261022140000 +0800" stop="20261022143000 +0800">
     <title lang="en">Paid Programming</title>
     <category lang="en">Consumer</category>
     <icon src="http://dtil.tmsimg.com/assets/p459763_b_h8_bs.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="NBCSpBos.us" start="20261022140000 +0800" stop="20261022143000 +0800">
+    <title lang="en">Paid Programming</title>
+    <category lang="en">Consumer</category>
+    <icon src="http://dtil.tmsimg.com/assets/p459763_b_h8_bq.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="KNTV.us" start="20261022140000 +0800" stop="20261022143400 +0800">
     <title lang="en">NBC Bay Area News at 11</title>
@@ -54765,6 +54939,12 @@
     <title lang="en">NBC4 News at 11pm</title>
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p8781143_b_h10_ad.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="Universo.us" start="20261022140000 +0800" stop="20261022150000 +0800">
+    <title lang="en">12 Corazones</title>
+    <sub-title lang="en">Hombres vestidos de mujer</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p198595_b_h10_ai.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpCali.us" start="20261022140000 +0800" stop="20261022160000 +0800">
     <title lang="en">NBA Basketball</title>
@@ -54781,15 +54961,15 @@
     <category lang="en">Football</category>
     <icon src="http://dtil.tmsimg.com/assets/p18733022_b_h8_ad.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="NBCSpBos.us" start="20261022143000 +0800" stop="20261022150000 +0800">
-    <title lang="en">Paid Programming</title>
-    <category lang="en">Consumer</category>
-    <icon src="http://dtil.tmsimg.com/assets/p459763_b_h8_bq.jpg?w=960&amp;h=540" />
-  </programme>
   <programme channel="WSCV.us" start="20261022143000 +0800" stop="20261022150000 +0800">
     <title lang="en">Paid Programming</title>
     <category lang="en">Consumer</category>
     <icon src="http://dtil.tmsimg.com/assets/p459763_b_h8_bs.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="NBCSpBos.us" start="20261022143000 +0800" stop="20261022150000 +0800">
+    <title lang="en">Paid Programming</title>
+    <category lang="en">Consumer</category>
+    <icon src="http://dtil.tmsimg.com/assets/p459763_b_h8_bq.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="WNBC-LA.us" start="20261022143400 +0800" stop="20261022153700 +0800">
     <title lang="en">The Tonight Show Starring Jimmy Fallon</title>
@@ -54818,6 +54998,12 @@
     <category lang="en">Consumer</category>
     <icon src="http://dtil.tmsimg.com/assets/p459763_b_h8_bq.jpg?w=960&amp;h=540" />
   </programme>
+  <programme channel="Universo.us" start="20261022150000 +0800" stop="20261022160000 +0800">
+    <title lang="en">12 Corazones</title>
+    <sub-title lang="en">Lo mejor: Hombres rudos</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p198595_b_h10_ai.jpg?w=960&amp;h=540" />
+  </programme>
   <programme channel="NBCSpBay.us" start="20261022150000 +0800" stop="20261022160000 +0800">
     <title lang="en">World Chase Tag</title>
     <category lang="en">Competition Reality</category>
@@ -54828,15 +55014,15 @@
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p34032729_b_h10_ab.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="NBCSpBos.us" start="20261022153000 +0800" stop="20261022160000 +0800">
-    <title lang="en">Paid Programming</title>
-    <category lang="en">Consumer</category>
-    <icon src="http://dtil.tmsimg.com/assets/p459763_b_h8_bq.jpg?w=960&amp;h=540" />
-  </programme>
   <programme channel="WSCV.us" start="20261022153000 +0800" stop="20261022160000 +0800">
     <title lang="en">Paid Programming</title>
     <category lang="en">Consumer</category>
     <icon src="http://dtil.tmsimg.com/assets/p459763_b_h8_bs.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="NBCSpBos.us" start="20261022153000 +0800" stop="20261022160000 +0800">
+    <title lang="en">Paid Programming</title>
+    <category lang="en">Consumer</category>
+    <icon src="http://dtil.tmsimg.com/assets/p459763_b_h8_bq.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="WNBC-LA.us" start="20261022153700 +0800" stop="20261022163700 +0800">
     <title lang="en">Late Night With Seth Meyers</title>
@@ -54864,6 +55050,12 @@
     <title lang="en">Paid Programming</title>
     <category lang="en">Consumer</category>
     <icon src="http://dtil.tmsimg.com/assets/p459763_b_h8_bq.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="Universo.us" start="20261022160000 +0800" stop="20261022170000 +0800">
+    <title lang="en">12 Corazones</title>
+    <sub-title lang="en">Lo mejor: Playero</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p198595_b_h10_ai.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpBay.us" start="20261022160000 +0800" stop="20261022170000 +0800">
     <title lang="en">Diggin' Deep</title>
@@ -54919,6 +55111,12 @@
     <title lang="en">The Short List</title>
     <category lang="en">Entertainment</category>
     <icon src="http://dtil.tmsimg.com/assets/p16484812_b_h10_aa.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="Universo.us" start="20261022170000 +0800" stop="20261022180000 +0800">
+    <title lang="en">12 Corazones</title>
+    <sub-title lang="en">Lo mejor: Chicas sexies</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p198595_b_h10_ai.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="WSCV.us" start="20261022170000 +0800" stop="20261022180000 +0800">
     <title lang="en">Noticiero Telemundo 51: First Edition</title>
@@ -54984,6 +55182,12 @@
     <title lang="en">Paid Programming</title>
     <category lang="en">Consumer</category>
     <icon src="http://dtil.tmsimg.com/assets/p459763_b_h8_bq.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="Universo.us" start="20261022180000 +0800" stop="20261022190000 +0800">
+    <title lang="en">12 Corazones</title>
+    <sub-title lang="en">Lo mejor: Hombres guapos</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p198595_b_h10_ai.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpPhilly.us" start="20261022180000 +0800" stop="20261022190000 +0800">
     <title lang="en">Live: NBC10 News Today at 6a</title>
@@ -55051,6 +55255,12 @@
     <category lang="en">Sports talk</category>
     <icon src="http://dtil.tmsimg.com/assets/p19704176_b_h10_ab.jpg?w=960&amp;h=540" />
   </programme>
+  <programme channel="Universo.us" start="20261022190000 +0800" stop="20261022200000 +0800">
+    <title lang="en">Raid the Cage</title>
+    <sub-title lang="en">La casa de los espíritus</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p13650664_b_h8_ad.jpg?w=960&amp;h=540" />
+  </programme>
   <programme channel="NBCSpPhilly.us" start="20261022190000 +0800" stop="20261022200000 +0800">
     <title lang="en">SportsNet Central</title>
     <category lang="en">Sports talk</category>
@@ -55102,6 +55312,12 @@
     <category lang="en">Football</category>
     <icon src="http://dtil.tmsimg.com/assets/p30949585_b_h8_aa.jpg?w=960&amp;h=540" />
   </programme>
+  <programme channel="Universo.us" start="20261022200000 +0800" stop="20261022210000 +0800">
+    <title lang="en">Raid the Cage</title>
+    <sub-title lang="en">Ecos de un bautizo</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p13650664_b_h8_ad.jpg?w=960&amp;h=540" />
+  </programme>
   <programme channel="NBCSpPhilly.us" start="20261022200000 +0800" stop="20261022210000 +0800">
     <title lang="en">SportsNet Central</title>
     <category lang="en">Sports talk</category>
@@ -55147,6 +55363,12 @@
     <category lang="en">Sports talk</category>
     <icon src="http://dtil.tmsimg.com/assets/p19704176_b_h10_ab.jpg?w=960&amp;h=540" />
   </programme>
+  <programme channel="Universo.us" start="20261022210000 +0800" stop="20261022220000 +0800">
+    <title lang="en">Case closed</title>
+    <sub-title lang="en">Vestido asesinado; La madrastra</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p217714_b_h8_ak.jpg?w=960&amp;h=540" />
+  </programme>
   <programme channel="NBCSpPhilly.us" start="20261022210000 +0800" stop="20261022220000 +0800">
     <title lang="en">SportsNet Central</title>
     <category lang="en">Sports talk</category>
@@ -55177,6 +55399,12 @@
     <category lang="en">Football</category>
     <icon src="http://dtil.tmsimg.com/assets/p18733022_b_h8_ad.jpg?w=960&amp;h=540" />
   </programme>
+  <programme channel="Universo.us" start="20261022220000 +0800" stop="20261022225500 +0800">
+    <title lang="en">Case closed</title>
+    <sub-title lang="en">Sandra, la enganchadora; Autocastigo</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p217714_b_h8_ak.jpg?w=960&amp;h=540" />
+  </programme>
   <programme channel="NBCSpPhilly.us" start="20261022220000 +0800" stop="20261022230000 +0800">
     <title lang="en">SportsNet Central</title>
     <category lang="en">Sports talk</category>
@@ -55206,6 +55434,12 @@
     <title lang="en">49ers Talk</title>
     <category lang="en">Football</category>
     <icon src="http://dtil.tmsimg.com/assets/p18733022_b_h8_ad.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="Universo.us" start="20261022225500 +0800" stop="20261022235500 +0800">
+    <title lang="en">Stories of the Dark Virgin</title>
+    <sub-title lang="en">Jardín seco</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p13334119_b_h8_aa.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpCali.us" start="20261022230000 +0800" stop="20261022233000 +0800">
     <title lang="en">Best Mattress Topper Ever!</title>
@@ -55247,6 +55481,12 @@
     <category lang="en">Consumer</category>
     <icon src="http://dtil.tmsimg.com/assets/p459763_b_h8_bq.jpg?w=960&amp;h=540" />
   </programme>
+  <programme channel="Universo.us" start="20261022235500 +0800" stop="20261023005500 +0800">
+    <title lang="en">Stories of the Dark Virgin</title>
+    <sub-title lang="en">Que no me olvide</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p13334119_b_h8_aa.jpg?w=960&amp;h=540" />
+  </programme>
   <programme channel="WSCV.us" start="20261023000000 +0800" stop="20261023003000 +0800">
     <title lang="en">Telemundo News 51: Midday</title>
     <category lang="en">News</category>
@@ -55287,6 +55527,12 @@
     <category lang="en">Series</category>
     <icon src="http://dtil.tmsimg.com/assets/p14971948_b_h8_aa.jpg?w=960&amp;h=540" />
   </programme>
+  <programme channel="Universo.us" start="20261023005500 +0800" stop="20261023015500 +0800">
+    <title lang="en">The end of paradise</title>
+    <sub-title lang="en">Guerra a muerte</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p17090540_b_h8_aa.jpg?w=960&amp;h=540" />
+  </programme>
   <programme channel="WSCV.us" start="20261023010000 +0800" stop="20261023020000 +0800">
     <title lang="en">At home with Telemundo</title>
     <category lang="en">Series</category>
@@ -55307,6 +55553,11 @@
     <title lang="en">Today With Jenna &amp; Sheinelle</title>
     <category lang="en">Series</category>
     <icon src="http://dtil.tmsimg.com/assets/p31933422_b_h8_ae.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="Universo.us" start="20261023015500 +0800" stop="20261023040000 +0800">
+    <title lang="en">Live: 2026 FIFA U-17 Women's World Cup</title>
+    <category lang="en">Sports</category>
+    <icon src="http://dtil.tmsimg.com/assets/p33329083_b_h10_ac.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="KNTV.us" start="20261023020000 +0800" stop="20261023023000 +0800">
     <title lang="en">NBC Bay Area News at 11</title>
@@ -55424,6 +55675,12 @@
     <category lang="en">Series</category>
     <icon src="http://dtil.tmsimg.com/assets/p326736_b_h8_an.jpg?w=960&amp;h=540" />
   </programme>
+  <programme channel="Universo.us" start="20261023040000 +0800" stop="20261023050000 +0800">
+    <title lang="en">Raid the Cage</title>
+    <sub-title lang="en">La risa de la victoria</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p13650664_b_h8_ad.jpg?w=960&amp;h=540" />
+  </programme>
   <programme channel="NBCSpBay.us" start="20261023043000 +0800" stop="20261023050000 +0800">
     <title lang="en">49ers Talk</title>
     <category lang="en">Football</category>
@@ -55458,6 +55715,12 @@
     <title lang="en">Noticiero Telemundo 51 5PM</title>
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p833056_b_h10_ab.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="Universo.us" start="20261023050000 +0800" stop="20261023060000 +0800">
+    <title lang="en">A day to live</title>
+    <sub-title lang="en">Tres muertes y un velorio</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p20615912_b_h8_ac.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpCali.us" start="20261023050000 +0800" stop="20261023060000 +0800">
     <title lang="en">Bathroom Makeover</title>
@@ -55526,6 +55789,12 @@
     <category lang="en">Sports talk</category>
     <icon src="http://dtil.tmsimg.com/assets/p30612602_b_h10_aa.jpg?w=960&amp;h=540" />
   </programme>
+  <programme channel="Universo.us" start="20261023060000 +0800" stop="20261023070000 +0800">
+    <title lang="en">Get closer to Rocío</title>
+    <sub-title lang="en">Una vividora se aprovechó de mi hijo</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p19628516_b_h8_ac.jpg?w=960&amp;h=540" />
+  </programme>
   <programme channel="NBCSpBos.us" start="20261023060000 +0800" stop="20261023070000 +0800">
     <title lang="en">Live: Early Edition</title>
     <category lang="en">Sports talk</category>
@@ -55583,6 +55852,11 @@
   </programme>
   <programme channel="WSCV.us" start="20261023070000 +0800" stop="20261023080000 +0800">
     <title lang="en">Billboard Latin Music Awards: The Carpet</title>
+    <category lang="en">Special</category>
+    <icon src="http://dtil.tmsimg.com/assets/p34024165_b_h8_ad.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="Universo.us" start="20261023070000 +0800" stop="20261023080000 +0800">
+    <title lang="en">Live: Billboard Latin Music Awards: The Carpet</title>
     <category lang="en">Special</category>
     <icon src="http://dtil.tmsimg.com/assets/p34024165_b_h8_ad.jpg?w=960&amp;h=540" />
   </programme>
@@ -55650,6 +55924,11 @@
   </programme>
   <programme channel="WSCV.us" start="20261023080000 +0800" stop="20261023110000 +0800">
     <title lang="en">Billboard Latin Music Awards</title>
+    <category lang="en">Special</category>
+    <icon src="http://dtil.tmsimg.com/assets/p33950565_b_h8_ab.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="Universo.us" start="20261023080000 +0800" stop="20261023110000 +0800">
+    <title lang="en">Live: Billboard Latin Music Awards</title>
     <category lang="en">Special</category>
     <icon src="http://dtil.tmsimg.com/assets/p33950565_b_h8_ab.jpg?w=960&amp;h=540" />
   </programme>
@@ -55836,6 +56115,12 @@
     <category lang="en">Series</category>
     <icon src="http://dtil.tmsimg.com/assets/p23661880_b_h8_as.jpg?w=960&amp;h=540" />
   </programme>
+  <programme channel="Universo.us" start="20261023110000 +0800" stop="20261023120000 +0800">
+    <title lang="en">The end of paradise</title>
+    <sub-title lang="en">Confesiones de pareja</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p17090540_b_h8_aa.jpg?w=960&amp;h=540" />
+  </programme>
   <programme channel="NBCSpCali.us" start="20261023113000 +0800" stop="20261023120000 +0800">
     <title lang="en">Hot Sheet by Baseball America</title>
     <category lang="en">Baseball</category>
@@ -55871,6 +56156,12 @@
     <title lang="en">The ball</title>
     <category lang="en">Series</category>
     <icon src="http://dtil.tmsimg.com/assets/p29532471_b_h10_aa.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="Universo.us" start="20261023120000 +0800" stop="20261023130000 +0800">
+    <title lang="en">Case closed</title>
+    <sub-title lang="en">Más perra que madre; Desnuda en Times Square</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p217714_b_h8_ak.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="WNBC-LA.us" start="20261023120000 +0800" stop="20261023130000 +0800">
     <title lang="en">Law &amp; Order: Special Victims Unit</title>
@@ -55925,6 +56216,12 @@
     <title lang="en">The Short List</title>
     <category lang="en">Entertainment</category>
     <icon src="http://dtil.tmsimg.com/assets/p16484812_b_h10_aa.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="Universo.us" start="20261023130000 +0800" stop="20261023140000 +0800">
+    <title lang="en">Case closed</title>
+    <sub-title lang="en">Envío costoso; Pervirtieron a mi hijo</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p217714_b_h8_ak.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="WNBC-LA.us" start="20261023130000 +0800" stop="20261023140000 +0800">
     <title lang="en">Law &amp; Order</title>
@@ -55995,6 +56292,12 @@
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p8781143_b_h10_ad.jpg?w=960&amp;h=540" />
   </programme>
+  <programme channel="Universo.us" start="20261023140000 +0800" stop="20261023145500 +0800">
+    <title lang="en">12 Corazones</title>
+    <sub-title lang="en">Lo mejor: Niños</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p198595_b_h10_ai.jpg?w=960&amp;h=540" />
+  </programme>
   <programme channel="WNBC-NY.us" start="20261023141200 +0800" stop="20261023144200 +0800">
     <title lang="en">NBC Nightly News With Tom Llamas</title>
     <category lang="en">Series</category>
@@ -56011,15 +56314,15 @@
     <category lang="en">Football</category>
     <icon src="http://dtil.tmsimg.com/assets/p31065351_b_h8_aa.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="NBCSpBos.us" start="20261023143000 +0800" stop="20261023150000 +0800">
-    <title lang="en">Paid Programming</title>
-    <category lang="en">Consumer</category>
-    <icon src="http://dtil.tmsimg.com/assets/p459763_b_h8_bq.jpg?w=960&amp;h=540" />
-  </programme>
   <programme channel="WSCV.us" start="20261023143000 +0800" stop="20261023150000 +0800">
     <title lang="en">Paid Programming</title>
     <category lang="en">Consumer</category>
     <icon src="http://dtil.tmsimg.com/assets/p459763_b_h8_bs.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="NBCSpBos.us" start="20261023143000 +0800" stop="20261023150000 +0800">
+    <title lang="en">Paid Programming</title>
+    <category lang="en">Consumer</category>
+    <icon src="http://dtil.tmsimg.com/assets/p459763_b_h8_bq.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="WNBC-LA.us" start="20261023143400 +0800" stop="20261023153700 +0800">
     <title lang="en">The Tonight Show Starring Jimmy Fallon</title>
@@ -56037,6 +56340,11 @@
     <title lang="en">Top Story With Tom Llamas</title>
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p23722920_b_h8_aa.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="Universo.us" start="20261023145500 +0800" stop="20261023170000 +0800">
+    <title lang="en">2026 FIFA U-17 Women's World Cup</title>
+    <category lang="en">Sports</category>
+    <icon src="http://dtil.tmsimg.com/assets/p33329083_b_h10_ac.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpCali.us" start="20261023150000 +0800" stop="20261023153000 +0800">
     <title lang="en">49ers Press Conference Live</title>
@@ -56068,15 +56376,15 @@
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p34032729_b_h10_ab.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="NBCSpBos.us" start="20261023153000 +0800" stop="20261023160000 +0800">
-    <title lang="en">Paid Programming</title>
-    <category lang="en">Consumer</category>
-    <icon src="http://dtil.tmsimg.com/assets/p459763_b_h8_bq.jpg?w=960&amp;h=540" />
-  </programme>
   <programme channel="WSCV.us" start="20261023153000 +0800" stop="20261023160000 +0800">
     <title lang="en">Paid Programming</title>
     <category lang="en">Consumer</category>
     <icon src="http://dtil.tmsimg.com/assets/p459763_b_h8_bs.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="NBCSpBos.us" start="20261023153000 +0800" stop="20261023160000 +0800">
+    <title lang="en">Paid Programming</title>
+    <category lang="en">Consumer</category>
+    <icon src="http://dtil.tmsimg.com/assets/p459763_b_h8_bq.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="WNBC-LA.us" start="20261023153700 +0800" stop="20261023163700 +0800">
     <title lang="en">Late Night With Seth Meyers</title>
@@ -56145,6 +56453,12 @@
     <category lang="en">Consumer</category>
     <icon src="http://dtil.tmsimg.com/assets/p459763_b_h8_bq.jpg?w=960&amp;h=540" />
   </programme>
+  <programme channel="Universo.us" start="20261023170000 +0800" stop="20261023180000 +0800">
+    <title lang="en">12 Corazones</title>
+    <sub-title lang="en">Especial de cabaret</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p198595_b_h10_ai.jpg?w=960&amp;h=540" />
+  </programme>
   <programme channel="WSCV.us" start="20261023170000 +0800" stop="20261023180000 +0800">
     <title lang="en">Noticiero Telemundo 51: First Edition</title>
     <category lang="en">News</category>
@@ -56204,6 +56518,12 @@
     <title lang="en">Sharks Postgame</title>
     <category lang="en">Special</category>
     <icon src="http://dtil.tmsimg.com/assets/p901852_b_h8_ac.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="Universo.us" start="20261023180000 +0800" stop="20261023190000 +0800">
+    <title lang="en">12 Corazones</title>
+    <sub-title lang="en">Especial bachelor</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p198595_b_h10_ai.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpPhilly.us" start="20261023180000 +0800" stop="20261023190000 +0800">
     <title lang="en">Live: NBC10 News Today at 6a</title>
@@ -56271,6 +56591,12 @@
     <category lang="en">Football</category>
     <icon src="http://dtil.tmsimg.com/assets/p14307481_b_h10_ae.jpg?w=960&amp;h=540" />
   </programme>
+  <programme channel="Universo.us" start="20261023190000 +0800" stop="20261023200000 +0800">
+    <title lang="en">Raid the Cage</title>
+    <sub-title lang="en">La risa de la victoria</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p13650664_b_h8_ad.jpg?w=960&amp;h=540" />
+  </programme>
   <programme channel="NBCSpPhilly.us" start="20261023190000 +0800" stop="20261023200000 +0800">
     <title lang="en">SportsNet Central</title>
     <category lang="en">Sports talk</category>
@@ -56322,6 +56648,12 @@
     <category lang="en">Football</category>
     <icon src="http://dtil.tmsimg.com/assets/p14307481_b_h10_ae.jpg?w=960&amp;h=540" />
   </programme>
+  <programme channel="Universo.us" start="20261023200000 +0800" stop="20261023210000 +0800">
+    <title lang="en">Raid the Cage</title>
+    <sub-title lang="en">Triunfos truncados</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p13650664_b_h8_ad.jpg?w=960&amp;h=540" />
+  </programme>
   <programme channel="NBCSpPhilly.us" start="20261023200000 +0800" stop="20261023210000 +0800">
     <title lang="en">SportsNet Central</title>
     <category lang="en">Sports talk</category>
@@ -56356,6 +56688,12 @@
     <title lang="en">49ers Press Conference Live</title>
     <category lang="en">Football</category>
     <icon src="http://dtil.tmsimg.com/assets/p23908168_b_h8_aa.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="Universo.us" start="20261023210000 +0800" stop="20261023220000 +0800">
+    <title lang="en">Case closed</title>
+    <sub-title lang="en">Patas quebradas; La bondadosa</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p217714_b_h8_ak.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpBos.us" start="20261023210000 +0800" stop="20261023220000 +0800">
     <title lang="en">Postgame Live</title>
@@ -56396,6 +56734,12 @@
     <title lang="en">49ers Press Conference Live</title>
     <category lang="en">Football</category>
     <icon src="http://dtil.tmsimg.com/assets/p23908168_b_h8_aa.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="Universo.us" start="20261023220000 +0800" stop="20261023230000 +0800">
+    <title lang="en">Case closed</title>
+    <sub-title lang="en">Dos vientres y una madre; Tiburón sangriento</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p217714_b_h8_ak.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpPhilly.us" start="20261023220000 +0800" stop="20261023230000 +0800">
     <title lang="en">SportsNet Central</title>
@@ -56442,6 +56786,11 @@
     <category lang="en">Consumer</category>
     <icon src="http://dtil.tmsimg.com/assets/p459763_b_h8_bq.jpg?w=960&amp;h=540" />
   </programme>
+  <programme channel="Universo.us" start="20261023230000 +0800" stop="20261024000000 +0800">
+    <title lang="en">Get closer to Rocío</title>
+    <category lang="en">Talk</category>
+    <icon src="http://dtil.tmsimg.com/assets/p19628516_b_h8_ac.jpg?w=960&amp;h=540" />
+  </programme>
   <programme channel="NBCSpPhilly.us" start="20261023230000 +0800" stop="20261024000000 +0800">
     <title lang="en">SportsNet Central</title>
     <category lang="en">Sports talk</category>
@@ -56481,6 +56830,12 @@
     <title lang="en">NBC News Daily</title>
     <category lang="en">Series</category>
     <icon src="http://dtil.tmsimg.com/assets/p22712535_b_h8_ad.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="Universo.us" start="20261024000000 +0800" stop="20261024010000 +0800">
+    <title lang="en">Stories of the Dark Virgin</title>
+    <sub-title lang="en">Perdóname mamá</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p13334119_b_h8_aa.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="WNBC-LA.us" start="20261024000000 +0800" stop="20261024010000 +0800">
     <title lang="en">Today 3rd Hour</title>
@@ -56528,6 +56883,12 @@
     <category lang="en">Series</category>
     <icon src="http://dtil.tmsimg.com/assets/p31054010_b_h10_aa.jpg?w=960&amp;h=540" />
   </programme>
+  <programme channel="Universo.us" start="20261024010000 +0800" stop="20261024020000 +0800">
+    <title lang="en">Stories of the Dark Virgin</title>
+    <sub-title lang="en">Hermanos por destino</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p13334119_b_h8_aa.jpg?w=960&amp;h=540" />
+  </programme>
   <programme channel="WNBC-LA.us" start="20261024010000 +0800" stop="20261024020000 +0800">
     <title lang="en">Today With Jenna &amp; Sheinelle</title>
     <category lang="en">Series</category>
@@ -56542,6 +56903,11 @@
     <title lang="en">Inside Cal Football</title>
     <category lang="en">Football</category>
     <icon src="http://dtil.tmsimg.com/assets/p31065351_b_h8_aa.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="Universo.us" start="20261024020000 +0800" stop="20261024022500 +0800">
+    <title lang="en">Live: All-Star Football</title>
+    <category lang="en">Soccer</category>
+    <icon src="http://dtil.tmsimg.com/assets/p33801156_b_h8_ad.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpCali.us" start="20261024020000 +0800" stop="20261024023000 +0800">
     <title lang="en">Best Mattress Topper Ever!</title>
@@ -56582,6 +56948,11 @@
     <title lang="en">Live: Unfiltered with Ricky Bo and Bill Colarulo</title>
     <category lang="en">Sports talk</category>
     <icon src="http://dtil.tmsimg.com/assets/p30392222_b_h10_aa.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="Universo.us" start="20261024022500 +0800" stop="20261024043000 +0800">
+    <title lang="en">Live: Bundesliga Football</title>
+    <category lang="en">Sports</category>
+    <icon src="http://dtil.tmsimg.com/assets/GNLZZGG003B0EFY.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="KNTV.us" start="20261024023000 +0800" stop="20261024030000 +0800">
     <title lang="en">Hollywood ReelTime</title>
@@ -56669,6 +57040,12 @@
     <category lang="en">Consumer</category>
     <icon src="http://dtil.tmsimg.com/assets/p30220270_b_h8_aa.jpg?w=960&amp;h=540" />
   </programme>
+  <programme channel="Universo.us" start="20261024043000 +0800" stop="20261024050000 +0800">
+    <title lang="en">Case closed</title>
+    <sub-title lang="en">Peligro en la carretera</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p217714_b_h8_ak.jpg?w=960&amp;h=540" />
+  </programme>
   <programme channel="NBCSpBay.us" start="20261024043000 +0800" stop="20261024050000 +0800">
     <title lang="en">Inside Cal Football</title>
     <category lang="en">Football</category>
@@ -56698,6 +57075,12 @@
     <title lang="en">Paid Programming</title>
     <category lang="en">Consumer</category>
     <icon src="http://dtil.tmsimg.com/assets/p459763_b_h8_bq.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="Universo.us" start="20261024050000 +0800" stop="20261024060000 +0800">
+    <title lang="en">A day to live</title>
+    <sub-title lang="en">La búsqueda</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p20615912_b_h8_ac.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="WNBC-LA.us" start="20261024050000 +0800" stop="20261024060000 +0800">
     <title lang="en">Dateline</title>
@@ -56766,6 +57149,11 @@
     <category lang="en">Basketball</category>
     <icon src="http://dtil.tmsimg.com/assets/p615357_b_h10_ad.jpg?w=960&amp;h=540" />
   </programme>
+  <programme channel="Universo.us" start="20261024060000 +0800" stop="20261024070000 +0800">
+    <title lang="en">Get closer to Rocío</title>
+    <category lang="en">Talk</category>
+    <icon src="http://dtil.tmsimg.com/assets/p19628516_b_h8_ac.jpg?w=960&amp;h=540" />
+  </programme>
   <programme channel="KNTV.us" start="20261024060000 +0800" stop="20261024070000 +0800">
     <title lang="en">NBC Bay Area News at 3</title>
     <category lang="en">News</category>
@@ -56820,6 +57208,12 @@
     <title lang="en">Pure Outdoor</title>
     <category lang="en">Outdoors</category>
     <icon src="http://dtil.tmsimg.com/assets/p17303222_b_h10_aa.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="Universo.us" start="20261024070000 +0800" stop="20261024080000 +0800">
+    <title lang="en">Get closer to Rocío</title>
+    <sub-title lang="en">Le endulza el odio para dejarme en la calle</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p19628516_b_h8_ac.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="WNBC-LA.us" start="20261024070000 +0800" stop="20261024080000 +0800">
     <title lang="en">NBC4 News at 4pm</title>
@@ -56888,6 +57282,12 @@
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p8776719_b_h10_ad.jpg?w=960&amp;h=540" />
   </programme>
+  <programme channel="Universo.us" start="20261024080000 +0800" stop="20261024090000 +0800">
+    <title lang="en">Case closed</title>
+    <sub-title lang="en">El amor no cree en ADN; Falsos culpables</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p217714_b_h8_ak.jpg?w=960&amp;h=540" />
+  </programme>
   <programme channel="WNBC-LA.us" start="20261024080000 +0800" stop="20261024090000 +0800">
     <title lang="en">NBC4 News at 5pm</title>
     <category lang="en">News</category>
@@ -56934,6 +57334,12 @@
     <title lang="en">The Short List</title>
     <category lang="en">Entertainment</category>
     <icon src="http://dtil.tmsimg.com/assets/p16484812_b_h10_aa.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="Universo.us" start="20261024090000 +0800" stop="20261024100000 +0800">
+    <title lang="en">Case closed</title>
+    <sub-title lang="en">Sin huevos; Castigo para el bullying</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p217714_b_h8_ak.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpCali.us" start="20261024090000 +0800" stop="20261024100000 +0800">
     <title lang="en">Major League Table Tennis</title>
@@ -56995,6 +57401,11 @@
     <title lang="en">USA Fencing</title>
     <category lang="en">Fencing</category>
     <icon src="http://dtil.tmsimg.com/assets/p30275782_b_h8_aa.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="Universo.us" start="20261024100000 +0800" stop="20261024110000 +0800">
+    <title lang="en">Get closer to Rocío</title>
+    <category lang="en">Talk</category>
+    <icon src="http://dtil.tmsimg.com/assets/p19628516_b_h8_ac.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="WSCV.us" start="20261024100000 +0800" stop="20261024110000 +0800">
     <title lang="en">out far away from you</title>
@@ -57068,6 +57479,12 @@
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p14266287_b_h10_aa.jpg?w=960&amp;h=540" />
   </programme>
+  <programme channel="Universo.us" start="20261024110000 +0800" stop="20261024120000 +0800">
+    <title lang="en">The end of paradise</title>
+    <sub-title lang="en">Enemiga número uno</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p17090540_b_h8_aa.jpg?w=960&amp;h=540" />
+  </programme>
   <programme channel="TC.us" start="20261024110000 +0800" stop="20261024150000 +0800">
     <title lang="en">Center Court Live</title>
     <sub-title lang="en">Osaka-WTA Semifinals</sub-title>
@@ -57126,6 +57543,12 @@
     <title lang="en">The ball</title>
     <category lang="en">Series</category>
     <icon src="http://dtil.tmsimg.com/assets/p29532471_b_h10_aa.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="Universo.us" start="20261024120000 +0800" stop="20261024130000 +0800">
+    <title lang="en">Case closed</title>
+    <sub-title lang="en">Dieta vegana; Amor presidiario</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p217714_b_h8_ak.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpCali.us" start="20261024120000 +0800" stop="20261024130000 +0800">
     <title lang="en">Fight Sports: In 60</title>
