@@ -8,6 +8,10 @@
     <url>https://pluto.tv/us/live-tv/golazo-network</url>
     <display-name lang="en">Golazo Network</display-name>
   </channel>
+  <channel id="KNTV.us">
+    <url>https://epgshare01.online/epgshare01/epg_ripper_US_LOCALS1.xml.gz</url>
+    <display-name lang="en">NBC Bay Area</display-name>
+  </channel>
   <channel id="NBCSpBay.us">
     <url>https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz</url>
     <display-name lang="en">NBC Sports Bay Area</display-name>
@@ -36,7 +40,11 @@
     <url>https://www.peacocktv.com/channels/telemundo-deportes-ahora/5923023667697108117</url>
     <display-name lang="en">Telemundo Deportes Ahora</display-name>
   </channel>
-  <channel id="WNBC.us">
+  <channel id="WNBC-LA.us">
+    <url>https://epgshare01.online/epgshare01/epg_ripper_US_LOCALS1.xml.gz</url>
+    <display-name lang="en">NBC 4 Los Angeles</display-name>
+  </channel>
+  <channel id="WNBC-NY.us">
     <url>https://epgshare01.online/epgshare01/epg_ripper_US_LOCALS1.xml.gz</url>
     <display-name lang="en">NBC 4 New York</display-name>
   </channel>
@@ -53036,22 +53044,10 @@
     <category lang="en">Sports</category>
     <icon src="http://dtil.tmsimg.com/assets/GNLZZGG003DF7S9.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WSCV.us" start="20261020123000 +0800" stop="20261020133000 +0800">
-    <title lang="en">you are my light</title>
-    <sub-title lang="en">Un amor espinoso</sub-title>
-    <category lang="en">Series</category>
-    <icon src="http://dtil.tmsimg.com/assets/p33501073_b_h10_ab.jpg?w=960&amp;h=540" />
-  </programme>
   <programme channel="NBCSpPhilly.us" start="20261020123000 +0800" stop="20261020150000 +0800">
     <title lang="en">NHL Hockey</title>
     <category lang="en">Sports</category>
     <icon src="http://dtil.tmsimg.com/assets/GNLZZGG003NP37N.jpg?w=960&amp;h=540" />
-  </programme>
-  <programme channel="WNBC.us" start="20261020123700 +0800" stop="20261020133700 +0800">
-    <title lang="en">Late Night With Seth Meyers</title>
-    <sub-title lang="en">Jenna Ortega; Ina Garten</sub-title>
-    <category lang="en">Series</category>
-    <icon src="http://dtil.tmsimg.com/assets/p34108821_b_h8_ab.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpBay.us" start="20261020130000 +0800" stop="20261020140000 +0800">
     <title lang="en">49ers Postgame Live</title>
@@ -53063,26 +53059,10 @@
     <category lang="en">Sports</category>
     <icon src="http://dtil.tmsimg.com/assets/p11340018_b_h10_ae.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WSCV.us" start="20261020133000 +0800" stop="20261020140000 +0800">
-    <title lang="en">Case closed</title>
-    <sub-title lang="en">Efecto invernadero</sub-title>
-    <category lang="en">Series</category>
-    <icon src="http://dtil.tmsimg.com/assets/p217714_b_h8_ak.jpg?w=960&amp;h=540" />
-  </programme>
-  <programme channel="WNBC.us" start="20261020133700 +0800" stop="20261020141200 +0800">
-    <title lang="en">News 4 NY at 11</title>
-    <category lang="en">News</category>
-    <icon src="http://dtil.tmsimg.com/assets/p10513206_b_h10_ae.jpg?w=960&amp;h=540" />
-  </programme>
   <programme channel="NBCSpBos.us" start="20261020140000 +0800" stop="20261020143000 +0800">
     <title lang="en">Paid Programming</title>
     <category lang="en">Consumer</category>
     <icon src="http://dtil.tmsimg.com/assets/p459763_b_h8_bq.jpg?w=960&amp;h=540" />
-  </programme>
-  <programme channel="WSCV.us" start="20261020140000 +0800" stop="20261020143000 +0800">
-    <title lang="en">Paid Programming</title>
-    <category lang="en">Consumer</category>
-    <icon src="http://dtil.tmsimg.com/assets/p459763_b_h8_bs.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpCali.us" start="20261020140000 +0800" stop="20261020143000 +0800">
     <title lang="en">Sharks Postgame</title>
@@ -53094,11 +53074,6 @@
     <category lang="en">Football</category>
     <icon src="http://dtil.tmsimg.com/assets/p25686739_b_h8_aa.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261020141200 +0800" stop="20261020144200 +0800">
-    <title lang="en">NBC Nightly News With Tom Llamas</title>
-    <category lang="en">Series</category>
-    <icon src="http://dtil.tmsimg.com/assets/p30141511_b_h8_aa.jpg?w=960&amp;h=540" />
-  </programme>
   <programme channel="NBCSpCali.us" start="20261020143000 +0800" stop="20261020150000 +0800">
     <title lang="en">Fight Sports Martial Arts</title>
     <sub-title lang="en">ISKA US Open - Men's Forms Championship</sub-title>
@@ -53109,16 +53084,6 @@
     <title lang="en">Paid Programming</title>
     <category lang="en">Consumer</category>
     <icon src="http://dtil.tmsimg.com/assets/p459763_b_h8_bq.jpg?w=960&amp;h=540" />
-  </programme>
-  <programme channel="WSCV.us" start="20261020143000 +0800" stop="20261020153000 +0800">
-    <title lang="en">Dr. Polo life without limits</title>
-    <category lang="en">Shopping</category>
-    <icon src="http://dtil.tmsimg.com/assets/p29058570_b_h8_aa.jpg?w=960&amp;h=540" />
-  </programme>
-  <programme channel="WNBC.us" start="20261020144200 +0800" stop="20261020153000 +0800">
-    <title lang="en">Top Story With Tom Llamas</title>
-    <category lang="en">News</category>
-    <icon src="http://dtil.tmsimg.com/assets/p23722920_b_h8_aa.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpPhilly.us" start="20261020150000 +0800" stop="20261020153000 +0800">
     <title lang="en">Birds Huddle</title>
@@ -53141,30 +53106,15 @@
     <category lang="en">Series</category>
     <icon src="http://dtil.tmsimg.com/assets/p8856623_b_h8_ad.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261020153000 +0800" stop="20261020160000 +0800">
-    <title lang="en">New York Live Tonight</title>
-    <category lang="en">News</category>
-    <icon src="http://dtil.tmsimg.com/assets/p34032729_b_h10_ab.jpg?w=960&amp;h=540" />
-  </programme>
   <programme channel="NBCSpBos.us" start="20261020153000 +0800" stop="20261020160000 +0800">
     <title lang="en">Paid Programming</title>
     <category lang="en">Consumer</category>
     <icon src="http://dtil.tmsimg.com/assets/p459763_b_h8_bq.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WSCV.us" start="20261020153000 +0800" stop="20261020160000 +0800">
-    <title lang="en">Paid Programming</title>
-    <category lang="en">Consumer</category>
-    <icon src="http://dtil.tmsimg.com/assets/p459763_b_h8_bs.jpg?w=960&amp;h=540" />
-  </programme>
   <programme channel="NBCSpPhilly.us" start="20261020153000 +0800" stop="20261020170000 +0800">
     <title lang="en">Paid Programming</title>
     <category lang="en">Consumer</category>
     <icon src="http://dtil.tmsimg.com/assets/p459763_b_h8_bq.jpg?w=960&amp;h=540" />
-  </programme>
-  <programme channel="WNBC.us" start="20261020160000 +0800" stop="20261020163000 +0800">
-    <title lang="en">Early Today</title>
-    <category lang="en">News</category>
-    <icon src="http://dtil.tmsimg.com/assets/p185301_b_h8_ah.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpBos.us" start="20261020160000 +0800" stop="20261020163000 +0800">
     <title lang="en">Paid Programming</title>
@@ -53176,12 +53126,6 @@
     <category lang="en">Series</category>
     <icon src="http://dtil.tmsimg.com/assets/p33808297_b_h10_ac.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WSCV.us" start="20261020160000 +0800" stop="20261020170000 +0800">
-    <title lang="en">On the hot table)</title>
-    <sub-title lang="en">Se apagan los fogones</sub-title>
-    <category lang="en">Series</category>
-    <icon src="http://dtil.tmsimg.com/assets/p21604468_b_h10_ag.jpg?w=960&amp;h=540" />
-  </programme>
   <programme channel="NBCSpCali.us" start="20261020160000 +0800" stop="20261020180000 +0800">
     <title lang="en">NHL Hockey</title>
     <category lang="en">Sports</category>
@@ -53191,11 +53135,6 @@
     <title lang="en">Paid Programming</title>
     <category lang="en">Consumer</category>
     <icon src="http://dtil.tmsimg.com/assets/p459763_b_h8_bq.jpg?w=960&amp;h=540" />
-  </programme>
-  <programme channel="WNBC.us" start="20261020163000 +0800" stop="20261020170000 +0800">
-    <title lang="en">Today in New York</title>
-    <category lang="en">News</category>
-    <icon src="http://dtil.tmsimg.com/assets/p960598_b_h10_ac.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpPhilly.us" start="20261020170000 +0800" stop="20261020173000 +0800">
     <title lang="en">Live: NBC10 News Today at 5A</title>
@@ -53211,16 +53150,6 @@
     <title lang="en">49ers Postgame Live</title>
     <category lang="en">Football</category>
     <icon src="http://dtil.tmsimg.com/assets/p25686739_b_h8_aa.jpg?w=960&amp;h=540" />
-  </programme>
-  <programme channel="WSCV.us" start="20261020170000 +0800" stop="20261020180000 +0800">
-    <title lang="en">Noticiero Telemundo 51: First Edition</title>
-    <category lang="en">News</category>
-    <icon src="http://dtil.tmsimg.com/assets/p13193432_b_h10_ab.jpg?w=960&amp;h=540" />
-  </programme>
-  <programme channel="WNBC.us" start="20261020170000 +0800" stop="20261020180000 +0800">
-    <title lang="en">Today in New York</title>
-    <category lang="en">News</category>
-    <icon src="http://dtil.tmsimg.com/assets/p960598_b_h10_ac.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpPhilly.us" start="20261020173000 +0800" stop="20261020180000 +0800">
     <title lang="en">Live: NBC10 News Today at 5:30a</title>
@@ -53251,16 +53180,6 @@
     <title lang="en">Live: NBC10 News Today at 6a</title>
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p815772_b_h10_ag.jpg?w=960&amp;h=540" />
-  </programme>
-  <programme channel="WSCV.us" start="20261020180000 +0800" stop="20261020190000 +0800">
-    <title lang="en">Noticiero Telemundo 51: First Edition</title>
-    <category lang="en">News</category>
-    <icon src="http://dtil.tmsimg.com/assets/p13193432_b_h10_ab.jpg?w=960&amp;h=540" />
-  </programme>
-  <programme channel="WNBC.us" start="20261020180000 +0800" stop="20261020190000 +0800">
-    <title lang="en">Today in New York @ 6AM</title>
-    <category lang="en">News</category>
-    <icon src="http://dtil.tmsimg.com/assets/p24315242_b_h10_aa.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="TC.us" start="20261020180000 +0800" stop="20261021050000 +0800">
     <title lang="en">Center Court Live</title>
@@ -53298,20 +53217,10 @@
     <category lang="en">Sports talk</category>
     <icon src="http://dtil.tmsimg.com/assets/p915764_b_h10_ad.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WSCV.us" start="20261020190000 +0800" stop="20261020200000 +0800">
-    <title lang="en">Telemundo News NOW</title>
-    <category lang="en">Series</category>
-    <icon src="http://dtil.tmsimg.com/assets/p27645723_b_h10_aa.jpg?w=960&amp;h=540" />
-  </programme>
   <programme channel="NBCSpBay.us" start="20261020190000 +0800" stop="20261020200000 +0800">
     <title lang="en">World Poker Tour</title>
     <category lang="en">Sports</category>
     <icon src="http://dtil.tmsimg.com/assets/p11340018_b_h10_ae.jpg?w=960&amp;h=540" />
-  </programme>
-  <programme channel="WNBC.us" start="20261020190000 +0800" stop="20261020210000 +0800">
-    <title lang="en">Today</title>
-    <category lang="en">Series</category>
-    <icon src="http://dtil.tmsimg.com/assets/p184072_b_h8_ag.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpCali.us" start="20261020193000 +0800" stop="20261020200000 +0800">
     <title lang="en">Sport Fishing TV</title>
@@ -53337,11 +53246,6 @@
     <title lang="en">SportsNet Central</title>
     <category lang="en">Sports talk</category>
     <icon src="http://dtil.tmsimg.com/assets/p915764_b_h10_ad.jpg?w=960&amp;h=540" />
-  </programme>
-  <programme channel="WSCV.us" start="20261020200000 +0800" stop="20261020233000 +0800">
-    <title lang="en">Today</title>
-    <category lang="en">Series</category>
-    <icon src="http://dtil.tmsimg.com/assets/p19473387_b_h8_ak.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpBay.us" start="20261020203000 +0800" stop="20261020210000 +0800">
     <title lang="en">Paid Programming</title>
@@ -53373,11 +53277,6 @@
     <category lang="en">Sports talk</category>
     <icon src="http://dtil.tmsimg.com/assets/p915764_b_h10_ad.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261020210000 +0800" stop="20261020220000 +0800">
-    <title lang="en">Today 3rd Hour</title>
-    <category lang="en">Series</category>
-    <icon src="http://dtil.tmsimg.com/assets/p16183023_b_h8_af.jpg?w=960&amp;h=540" />
-  </programme>
   <programme channel="NBCSpCali.us" start="20261020210000 +0800" stop="20261020230000 +0800">
     <title lang="en">NHL Hockey</title>
     <category lang="en">Sports</category>
@@ -53393,20 +53292,10 @@
     <category lang="en">Sports talk</category>
     <icon src="http://dtil.tmsimg.com/assets/p915764_b_h10_ad.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261020220000 +0800" stop="20261020230000 +0800">
-    <title lang="en">Today With Jenna &amp; Sheinelle</title>
-    <category lang="en">Series</category>
-    <icon src="http://dtil.tmsimg.com/assets/p31933422_b_h8_ae.jpg?w=960&amp;h=540" />
-  </programme>
   <programme channel="NBCSpBos.us" start="20261020220000 +0800" stop="20261021020000 +0800">
     <title lang="en">Live: Zolak and Bertrand</title>
     <category lang="en">Sports talk</category>
     <icon src="http://dtil.tmsimg.com/assets/p15679843_b_h10_ac.jpg?w=960&amp;h=540" />
-  </programme>
-  <programme channel="WNBC.us" start="20261020230000 +0800" stop="20261020233000 +0800">
-    <title lang="en">Live: News 4 NY at 11AM</title>
-    <category lang="en">News</category>
-    <icon src="http://dtil.tmsimg.com/assets/p10513203_b_h10_ae.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpBay.us" start="20261020230000 +0800" stop="20261020233000 +0800">
     <title lang="en">Paid Programming</title>
@@ -53428,35 +53317,15 @@
     <category lang="en">Consumer</category>
     <icon src="http://dtil.tmsimg.com/assets/p26665262_b_h8_aa.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WSCV.us" start="20261020233000 +0800" stop="20261021000000 +0800">
-    <title lang="en">Full Access</title>
-    <category lang="en">Newsmagazine</category>
-    <icon src="http://dtil.tmsimg.com/assets/p8340806_b_h8_ae.jpg?w=960&amp;h=540" />
-  </programme>
-  <programme channel="WNBC.us" start="20261020233000 +0800" stop="20261021000000 +0800">
-    <title lang="en">New York Live</title>
-    <category lang="en">News</category>
-    <icon src="http://dtil.tmsimg.com/assets/p8692580_b_h8_ac.jpg?w=960&amp;h=540" />
-  </programme>
   <programme channel="NBCSpBay.us" start="20261020233000 +0800" stop="20261021000000 +0800">
     <title lang="en">Paid Programming</title>
     <category lang="en">Consumer</category>
     <icon src="http://dtil.tmsimg.com/assets/p459763_b_h8_bq.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WSCV.us" start="20261021000000 +0800" stop="20261021003000 +0800">
-    <title lang="en">Telemundo 51 Miami Morning News</title>
-    <category lang="en">News</category>
-    <icon src="http://dtil.tmsimg.com/assets/p24581570_b_h10_ab.jpg?w=960&amp;h=540" />
-  </programme>
   <programme channel="NBCSpBay.us" start="20261021000000 +0800" stop="20261021010000 +0800">
     <title lang="en">49ers Postgame Live</title>
     <category lang="en">Football</category>
     <icon src="http://dtil.tmsimg.com/assets/p25686739_b_h8_aa.jpg?w=960&amp;h=540" />
-  </programme>
-  <programme channel="WNBC.us" start="20261021000000 +0800" stop="20261021010000 +0800">
-    <title lang="en">NBC News Daily</title>
-    <category lang="en">Series</category>
-    <icon src="http://dtil.tmsimg.com/assets/p22712535_b_h8_ad.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpCali.us" start="20261021000000 +0800" stop="20261021020000 +0800">
     <title lang="en">NHL Hockey</title>
@@ -53468,26 +53337,10 @@
     <category lang="en">Consumer</category>
     <icon src="http://dtil.tmsimg.com/assets/p459763_b_h8_bq.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WSCV.us" start="20261021003000 +0800" stop="20261021010000 +0800">
-    <title lang="en">Noon Telemundo News</title>
-    <category lang="en">Series</category>
-    <icon src="http://dtil.tmsimg.com/assets/p14971948_b_h8_aa.jpg?w=960&amp;h=540" />
-  </programme>
   <programme channel="NBCSpBay.us" start="20261021010000 +0800" stop="20261021020000 +0800">
     <title lang="en">49ers Postgame Live</title>
     <category lang="en">Football</category>
     <icon src="http://dtil.tmsimg.com/assets/p25686739_b_h8_aa.jpg?w=960&amp;h=540" />
-  </programme>
-  <programme channel="WSCV.us" start="20261021010000 +0800" stop="20261021020000 +0800">
-    <title lang="en">At home with Telemundo</title>
-    <category lang="en">Series</category>
-    <icon src="http://dtil.tmsimg.com/assets/p18150635_b_h8_af.jpg?w=960&amp;h=540" />
-  </programme>
-  <programme channel="WNBC.us" start="20261021010000 +0800" stop="20261021020000 +0800">
-    <title lang="en">Dateline</title>
-    <sub-title lang="en">Secrets of the Sliding Door</sub-title>
-    <category lang="en">Series</category>
-    <icon src="http://dtil.tmsimg.com/assets/p31054010_b_h10_aa.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpCali.us" start="20261021020000 +0800" stop="20261021023000 +0800">
     <title lang="en">Bathroom Makeover</title>
@@ -53499,20 +53352,10 @@
     <category lang="en">Consumer</category>
     <icon src="http://dtil.tmsimg.com/assets/p459763_b_h8_bq.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WSCV.us" start="20261021020000 +0800" stop="20261021030000 +0800">
-    <title lang="en">At home with Telemundo</title>
-    <category lang="en">Series</category>
-    <icon src="http://dtil.tmsimg.com/assets/p18150635_b_h8_af.jpg?w=960&amp;h=540" />
-  </programme>
   <programme channel="NBCSpBos.us" start="20261021020000 +0800" stop="20261021030000 +0800">
     <title lang="en">Celtics Pregame Live</title>
     <category lang="en">Basketball</category>
     <icon src="http://dtil.tmsimg.com/assets/p615357_b_h10_ad.jpg?w=960&amp;h=540" />
-  </programme>
-  <programme channel="WNBC.us" start="20261021020000 +0800" stop="20261021030000 +0800">
-    <title lang="en">NBC News Daily</title>
-    <category lang="en">Series</category>
-    <icon src="http://dtil.tmsimg.com/assets/p22712535_b_h8_ad.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpPhilly.us" start="20261021020000 +0800" stop="20261021060000 +0800">
     <title lang="en">Live: Unfiltered with Ricky Bo and Bill Colarulo</title>
@@ -53544,16 +53387,6 @@
     <category lang="en">Consumer</category>
     <icon src="http://dtil.tmsimg.com/assets/p26665262_b_h8_aa.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WSCV.us" start="20261021030000 +0800" stop="20261021040000 +0800">
-    <title lang="en">On the hot table)</title>
-    <category lang="en">Series</category>
-    <icon src="http://dtil.tmsimg.com/assets/p21604468_b_h10_ag.jpg?w=960&amp;h=540" />
-  </programme>
-  <programme channel="WNBC.us" start="20261021030000 +0800" stop="20261021053000 +0800">
-    <title lang="en">Live: NBA Basketball</title>
-    <category lang="en">Sports</category>
-    <icon src="http://dtil.tmsimg.com/assets/GNLZZGG003M43P6.jpg?w=960&amp;h=540" />
-  </programme>
   <programme channel="NBCSpBay.us" start="20261021033000 +0800" stop="20261021040000 +0800">
     <title lang="en">Paid Programming</title>
     <category lang="en">Consumer</category>
@@ -53579,11 +53412,6 @@
     <category lang="en">Football</category>
     <icon src="http://dtil.tmsimg.com/assets/p25686739_b_h8_aa.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WSCV.us" start="20261021040000 +0800" stop="20261021050000 +0800">
-    <title lang="en">Hot to Burn</title>
-    <category lang="en">Series</category>
-    <icon src="http://dtil.tmsimg.com/assets/p326736_b_h8_an.jpg?w=960&amp;h=540" />
-  </programme>
   <programme channel="NBCSpCali.us" start="20261021043000 +0800" stop="20261021050000 +0800">
     <title lang="en">Bathroom Makeover</title>
     <category lang="en">Consumer</category>
@@ -53593,11 +53421,6 @@
     <title lang="en">Invincible</title>
     <category lang="en">Documentary</category>
     <icon src="http://dtil.tmsimg.com/assets/p30663069_b_h10_aa.jpg?w=960&amp;h=540" />
-  </programme>
-  <programme channel="WSCV.us" start="20261021050000 +0800" stop="20261021053000 +0800">
-    <title lang="en">Noticiero Telemundo 51 5PM</title>
-    <category lang="en">News</category>
-    <icon src="http://dtil.tmsimg.com/assets/p833056_b_h10_ab.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpCali.us" start="20261021050000 +0800" stop="20261021053000 +0800">
     <title lang="en">Paid Programming</title>
@@ -53624,35 +53447,15 @@
     <category lang="en">Basketball</category>
     <icon src="http://dtil.tmsimg.com/assets/p615355_b_h10_ad.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261021053000 +0800" stop="20261021060000 +0800">
-    <title lang="en">Live: News 4 NY at 5:30</title>
-    <category lang="en">News</category>
-    <icon src="http://dtil.tmsimg.com/assets/p14883149_b_h10_ac.jpg?w=960&amp;h=540" />
-  </programme>
-  <programme channel="WSCV.us" start="20261021053000 +0800" stop="20261021060000 +0800">
-    <title lang="en">Noticiero Telemundo 51 5:30PM</title>
-    <category lang="en">News</category>
-    <icon src="http://dtil.tmsimg.com/assets/p14266272_b_h10_aa.jpg?w=960&amp;h=540" />
-  </programme>
   <programme channel="NBCSpCali.us" start="20261021053000 +0800" stop="20261021060000 +0800">
     <title lang="en">Paid Programming</title>
     <category lang="en">Consumer</category>
     <icon src="http://dtil.tmsimg.com/assets/p459763_b_h8_bq.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261021060000 +0800" stop="20261021063000 +0800">
-    <title lang="en">Knicks Pregame Show</title>
-    <category lang="en">Entertainment</category>
-    <icon src="http://dtil.tmsimg.com/assets/p8542093_b_h8_aa.jpg?w=960&amp;h=540" />
-  </programme>
   <programme channel="NBCSpBos.us" start="20261021060000 +0800" stop="20261021063000 +0800">
     <title lang="en">Live: Celtics Postgame Plus</title>
     <category lang="en">Basketball</category>
     <icon src="http://dtil.tmsimg.com/assets/p13677432_b_h10_ab.jpg?w=960&amp;h=540" />
-  </programme>
-  <programme channel="WSCV.us" start="20261021060000 +0800" stop="20261021063000 +0800">
-    <title lang="en">Noticiero Telemundo 51 6PM</title>
-    <category lang="en">News</category>
-    <icon src="http://dtil.tmsimg.com/assets/p14266280_b_h10_aa.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpCali.us" start="20261021060000 +0800" stop="20261021063000 +0800">
     <title lang="en">Pure Outdoor</title>
@@ -53675,20 +53478,10 @@
     <category lang="en">Series</category>
     <icon src="http://dtil.tmsimg.com/assets/p615474_b_h8_ad.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261021063000 +0800" stop="20261021070000 +0800">
-    <title lang="en">Live: NBA Showtime</title>
-    <category lang="en">Basketball</category>
-    <icon src="http://dtil.tmsimg.com/assets/p30949176_b_h8_ab.jpg?w=960&amp;h=540" />
-  </programme>
   <programme channel="NBCSpCali.us" start="20261021063000 +0800" stop="20261021070000 +0800">
     <title lang="en">Live: Sharks Pregame</title>
     <category lang="en">Hockey</category>
     <icon src="http://dtil.tmsimg.com/assets/p901853_b_h8_ac.jpg?w=960&amp;h=540" />
-  </programme>
-  <programme channel="WSCV.us" start="20261021063000 +0800" stop="20261021070000 +0800">
-    <title lang="en">Noticias Telemundo</title>
-    <category lang="en">Series</category>
-    <icon src="http://dtil.tmsimg.com/assets/p11350796_b_h8_an.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpBos.us" start="20261021063000 +0800" stop="20261021073000 +0800">
     <title lang="en">Live: Early Edition</title>
@@ -53704,16 +53497,6 @@
     <title lang="en">World Poker Tour</title>
     <category lang="en">Sports</category>
     <icon src="http://dtil.tmsimg.com/assets/p11340018_b_h10_ae.jpg?w=960&amp;h=540" />
-  </programme>
-  <programme channel="WSCV.us" start="20261021070000 +0800" stop="20261021090000 +0800">
-    <title lang="en">villain game</title>
-    <category lang="en">Competition Reality</category>
-    <icon src="http://dtil.tmsimg.com/assets/p33914243_b_h8_ab.jpg?w=960&amp;h=540" />
-  </programme>
-  <programme channel="WNBC.us" start="20261021070000 +0800" stop="20261021093000 +0800">
-    <title lang="en">Live: NBA Basketball</title>
-    <category lang="en">Sports</category>
-    <icon src="http://dtil.tmsimg.com/assets/GNLZZGG003M489V.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpCali.us" start="20261021070000 +0800" stop="20261021093000 +0800">
     <title lang="en">Live: NHL Hockey</title>
@@ -53777,7 +53560,17 @@
     <category lang="en">Basketball</category>
     <icon src="http://dtil.tmsimg.com/assets/p906591_b_h10_aa.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261021093000 +0800" stop="20261021120000 +0800">
+  <programme channel="WNBC-NY.us" start="20261021093000 +0800" stop="20261021120000 +0800">
+    <title lang="en">Live: NBA Basketball</title>
+    <category lang="en">Sports</category>
+    <icon src="http://dtil.tmsimg.com/assets/GNLZZGG003M44LG.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-LA.us" start="20261021093000 +0800" stop="20261021120000 +0800">
+    <title lang="en">Live: NBA Basketball</title>
+    <category lang="en">Sports</category>
+    <icon src="http://dtil.tmsimg.com/assets/GNLZZGG003M44LG.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261021093000 +0800" stop="20261021120000 +0800">
     <title lang="en">Live: NBA Basketball</title>
     <category lang="en">Sports</category>
     <icon src="http://dtil.tmsimg.com/assets/GNLZZGG003M44LG.jpg?w=960&amp;h=540" />
@@ -53845,7 +53638,17 @@
     <category lang="en">Football</category>
     <icon src="http://dtil.tmsimg.com/assets/p22078694_b_h10_aa.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261021120000 +0800" stop="20261021123000 +0800">
+  <programme channel="KNTV.us" start="20261021120000 +0800" stop="20261021123000 +0800">
+    <title lang="en">NBC Bay Area News</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p816176_b_h10_aa.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-LA.us" start="20261021120000 +0800" stop="20261021123000 +0800">
+    <title lang="en">NBC4 News</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p617653_b_h10_ad.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-NY.us" start="20261021120000 +0800" stop="20261021123000 +0800">
     <title lang="en">News 4 NY at 11</title>
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p10513206_b_h10_ae.jpg?w=960&amp;h=540" />
@@ -53871,13 +53674,23 @@
     <category lang="en">Series</category>
     <icon src="http://dtil.tmsimg.com/assets/p17167704_b_h8_ac.jpg?w=960&amp;h=540" />
   </programme>
+  <programme channel="WNBC-LA.us" start="20261021123000 +0800" stop="20261021130000 +0800">
+    <title lang="en">Hollywood ReelTime</title>
+    <category lang="en">Community</category>
+    <icon src="http://dtil.tmsimg.com/assets/p33972797_b_h10_ab.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261021123000 +0800" stop="20261021130000 +0800">
+    <title lang="en">Hollywood ReelTime</title>
+    <category lang="en">Community</category>
+    <icon src="http://dtil.tmsimg.com/assets/p33844225_b_h10_ab.jpg?w=960&amp;h=540" />
+  </programme>
   <programme channel="WSCV.us" start="20261021123000 +0800" stop="20261021133000 +0800">
     <title lang="en">you are my light</title>
     <sub-title lang="en">El miedo es mutuo</sub-title>
     <category lang="en">Series</category>
     <icon src="http://dtil.tmsimg.com/assets/p33501073_b_h10_ab.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261021123000 +0800" stop="20261021133200 +0800">
+  <programme channel="WNBC-NY.us" start="20261021123000 +0800" stop="20261021133200 +0800">
     <title lang="en">The Tonight Show Starring Jimmy Fallon</title>
     <sub-title lang="en">Sacha Baron Cohen; KJ Apa; Beck</sub-title>
     <category lang="en">Series</category>
@@ -53893,6 +53706,18 @@
     <title lang="en">Warriors Season Preview</title>
     <category lang="en">Special</category>
     <icon src="http://dtil.tmsimg.com/assets/p34182344_b_h8_aa.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-LA.us" start="20261021130000 +0800" stop="20261021140000 +0800">
+    <title lang="en">Dateline NBC</title>
+    <sub-title lang="en">On the Outskirts of Town</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p184061_b_h8_ab.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261021130000 +0800" stop="20261021140000 +0800">
+    <title lang="en">Dateline NBC</title>
+    <sub-title lang="en">On the Outskirts of Town</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p184061_b_h8_ab.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpBos.us" start="20261021130000 +0800" stop="20261021140000 +0800">
     <title lang="en">World Poker Tour</title>
@@ -53921,7 +53746,7 @@
     <category lang="en">Consumer</category>
     <icon src="http://dtil.tmsimg.com/assets/p459763_b_h8_bq.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261021133200 +0800" stop="20261021143300 +0800">
+  <programme channel="WNBC-NY.us" start="20261021133200 +0800" stop="20261021143300 +0800">
     <title lang="en">Late Night With Seth Meyers</title>
     <sub-title lang="en">Quinta Brunson; Stephen Graham; Owen Thiele</sub-title>
     <category lang="en">Series</category>
@@ -53942,6 +53767,16 @@
     <category lang="en">Consumer</category>
     <icon src="http://dtil.tmsimg.com/assets/p459763_b_h8_bs.jpg?w=960&amp;h=540" />
   </programme>
+  <programme channel="KNTV.us" start="20261021140000 +0800" stop="20261021143400 +0800">
+    <title lang="en">NBC Bay Area News at 11</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p8288160_b_h10_aa.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-LA.us" start="20261021140000 +0800" stop="20261021143400 +0800">
+    <title lang="en">NBC4 News at 11pm</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p8781143_b_h10_ad.jpg?w=960&amp;h=540" />
+  </programme>
   <programme channel="NBCSpBay.us" start="20261021143000 +0800" stop="20261021150000 +0800">
     <title lang="en">49ers Now</title>
     <category lang="en">Football</category>
@@ -53957,10 +53792,22 @@
     <category lang="en">Consumer</category>
     <icon src="http://dtil.tmsimg.com/assets/p459763_b_h8_bq.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261021143300 +0800" stop="20261021150300 +0800">
+  <programme channel="WNBC-NY.us" start="20261021143300 +0800" stop="20261021150300 +0800">
     <title lang="en">News 4 NY at 11</title>
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p10513206_b_h10_ae.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-LA.us" start="20261021143400 +0800" stop="20261021153600 +0800">
+    <title lang="en">The Tonight Show Starring Jimmy Fallon</title>
+    <sub-title lang="en">Sacha Baron Cohen; KJ Apa; Beck</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p9898935_b_h8_am.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261021143400 +0800" stop="20261021153700 +0800">
+    <title lang="en">The Tonight Show Starring Jimmy Fallon</title>
+    <sub-title lang="en">Sacha Baron Cohen; KJ Apa; Beck</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p9898935_b_h8_am.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpCali.us" start="20261021150000 +0800" stop="20261021153000 +0800">
     <title lang="en">49ers Now</title>
@@ -53983,7 +53830,7 @@
     <category lang="en">Series</category>
     <icon src="http://dtil.tmsimg.com/assets/p256835_b_h8_aa.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261021150300 +0800" stop="20261021153000 +0800">
+  <programme channel="WNBC-NY.us" start="20261021150300 +0800" stop="20261021153000 +0800">
     <title lang="en">Top Story With Tom Llamas</title>
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p23722920_b_h8_aa.jpg?w=960&amp;h=540" />
@@ -53993,7 +53840,7 @@
     <category lang="en">Football</category>
     <icon src="http://dtil.tmsimg.com/assets/p28272530_b_h8_aa.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261021153000 +0800" stop="20261021160000 +0800">
+  <programme channel="WNBC-NY.us" start="20261021153000 +0800" stop="20261021160000 +0800">
     <title lang="en">New York Live</title>
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p8692580_b_h8_ac.jpg?w=960&amp;h=540" />
@@ -54008,7 +53855,19 @@
     <category lang="en">Consumer</category>
     <icon src="http://dtil.tmsimg.com/assets/p459763_b_h8_bs.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261021160000 +0800" stop="20261021163000 +0800">
+  <programme channel="WNBC-LA.us" start="20261021153600 +0800" stop="20261021163700 +0800">
+    <title lang="en">Late Night With Seth Meyers</title>
+    <sub-title lang="en">Quinta Brunson; Stephen Graham; Owen Thiele</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p34108821_b_h8_ab.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261021153700 +0800" stop="20261021163700 +0800">
+    <title lang="en">Late Night With Seth Meyers</title>
+    <sub-title lang="en">Quinta Brunson; Stephen Graham; Owen Thiele</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p34108821_b_h8_ab.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-NY.us" start="20261021160000 +0800" stop="20261021163000 +0800">
     <title lang="en">Early Today</title>
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p185301_b_h8_ah.jpg?w=960&amp;h=540" />
@@ -54043,10 +53902,20 @@
     <category lang="en">Consumer</category>
     <icon src="http://dtil.tmsimg.com/assets/p459763_b_h8_bq.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261021163000 +0800" stop="20261021170000 +0800">
+  <programme channel="WNBC-NY.us" start="20261021163000 +0800" stop="20261021170000 +0800">
     <title lang="en">Today in New York</title>
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p960598_b_h10_ac.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261021163700 +0800" stop="20261021171200 +0800">
+    <title lang="en">NBC Bay Area News at 11</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p8288160_b_h10_aa.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-LA.us" start="20261021163700 +0800" stop="20261021171200 +0800">
+    <title lang="en">NBC4 News at 11pm</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p8781143_b_h10_ad.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpBay.us" start="20261021170000 +0800" stop="20261021173000 +0800">
     <title lang="en">49ers Now</title>
@@ -54068,10 +53937,20 @@
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p13193432_b_h10_ab.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261021170000 +0800" stop="20261021180000 +0800">
+  <programme channel="WNBC-NY.us" start="20261021170000 +0800" stop="20261021180000 +0800">
     <title lang="en">Today in New York</title>
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p960598_b_h10_ac.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261021171200 +0800" stop="20261021174200 +0800">
+    <title lang="en">1st Look</title>
+    <category lang="en">Travel</category>
+    <icon src="http://dtil.tmsimg.com/assets/p16039361_b_h8_aa.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-LA.us" start="20261021171200 +0800" stop="20261021174200 +0800">
+    <title lang="en">NBC Nightly News With Tom Llamas</title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p30141511_b_h8_aa.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpBay.us" start="20261021173000 +0800" stop="20261021180000 +0800">
     <title lang="en">49ers Now</title>
@@ -54087,6 +53966,16 @@
     <title lang="en">Paid Programming</title>
     <category lang="en">Consumer</category>
     <icon src="http://dtil.tmsimg.com/assets/p459763_b_h8_bq.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-LA.us" start="20261021174200 +0800" stop="20261021183000 +0800">
+    <title lang="en">Top Story With Tom Llamas</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p23722920_b_h8_aa.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261021174200 +0800" stop="20261021183000 +0800">
+    <title lang="en">Top Story With Tom Llamas</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p23722920_b_h8_aa.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpBay.us" start="20261021180000 +0800" stop="20261021183000 +0800">
     <title lang="en">Paid Programming</title>
@@ -54113,7 +54002,7 @@
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p13193432_b_h10_ab.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261021180000 +0800" stop="20261021190000 +0800">
+  <programme channel="WNBC-NY.us" start="20261021180000 +0800" stop="20261021190000 +0800">
     <title lang="en">Today in New York @ 6AM</title>
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p24315242_b_h10_aa.jpg?w=960&amp;h=540" />
@@ -54129,6 +54018,16 @@
     <category lang="en">Football</category>
     <icon src="http://dtil.tmsimg.com/assets/p28272530_b_h8_aa.jpg?w=960&amp;h=540" />
   </programme>
+  <programme channel="WNBC-LA.us" start="20261021183000 +0800" stop="20261021190000 +0800">
+    <title lang="en">Early Today</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p185301_b_h8_ah.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261021183000 +0800" stop="20261021190000 +0800">
+    <title lang="en">Early Today</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p185301_b_h8_ah.jpg?w=960&amp;h=540" />
+  </programme>
   <programme channel="NBCSpBay.us" start="20261021183000 +0800" stop="20261021190000 +0800">
     <title lang="en">Paid Programming</title>
     <category lang="en">Consumer</category>
@@ -54143,6 +54042,16 @@
     <title lang="en">A Fishing Story With Ronnie Green</title>
     <category lang="en">Fishing</category>
     <icon src="http://dtil.tmsimg.com/assets/p12966305_b_h8_ae.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261021190000 +0800" stop="20261021193000 +0800">
+    <title lang="en">Early Today</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p185301_b_h8_ah.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-LA.us" start="20261021190000 +0800" stop="20261021193000 +0800">
+    <title lang="en">Today in LA @ 4AM</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p18627049_b_h10_ab.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpBos.us" start="20261021190000 +0800" stop="20261021200000 +0800">
     <title lang="en">Celtics Postgame Live</title>
@@ -54164,15 +54073,25 @@
     <category lang="en">Sports</category>
     <icon src="http://dtil.tmsimg.com/assets/p11340018_b_h10_ae.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261021190000 +0800" stop="20261021210000 +0800">
+  <programme channel="WNBC-NY.us" start="20261021190000 +0800" stop="20261021210000 +0800">
     <title lang="en">Today</title>
     <category lang="en">Series</category>
     <icon src="http://dtil.tmsimg.com/assets/p184072_b_h8_ag.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261021193000 +0800" stop="20261021200000 +0800">
+    <title lang="en">Early Today</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p185301_b_h8_ah.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpCali.us" start="20261021193000 +0800" stop="20261021200000 +0800">
     <title lang="en">Sport Fishing With Dan Hernandez</title>
     <category lang="en">Fishing</category>
     <icon src="http://dtil.tmsimg.com/assets/p492673_b_h10_ab.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-LA.us" start="20261021193000 +0800" stop="20261021200000 +0800">
+    <title lang="en">Today in LA @ 4:30AM</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p18627053_b_h10_ab.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpCali.us" start="20261021200000 +0800" stop="20261021203000 +0800">
     <title lang="en">Charlie Moore: No Offense</title>
@@ -54193,6 +54112,16 @@
     <title lang="en">SportsNet Central</title>
     <category lang="en">Sports talk</category>
     <icon src="http://dtil.tmsimg.com/assets/p915764_b_h10_ad.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-LA.us" start="20261021200000 +0800" stop="20261021210000 +0800">
+    <title lang="en">Today in LA @ 5AM</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p18627056_b_h10_ab.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261021200000 +0800" stop="20261021210000 +0800">
+    <title lang="en">Today in the Bay</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p8288104_b_h8_ad.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="WSCV.us" start="20261021200000 +0800" stop="20261021233000 +0800">
     <title lang="en">Today</title>
@@ -54229,10 +54158,20 @@
     <category lang="en">Sports talk</category>
     <icon src="http://dtil.tmsimg.com/assets/p915764_b_h10_ad.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261021210000 +0800" stop="20261021220000 +0800">
+  <programme channel="WNBC-NY.us" start="20261021210000 +0800" stop="20261021220000 +0800">
     <title lang="en">Today 3rd Hour</title>
     <category lang="en">Series</category>
     <icon src="http://dtil.tmsimg.com/assets/p16183023_b_h8_af.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-LA.us" start="20261021210000 +0800" stop="20261021220000 +0800">
+    <title lang="en">Today in LA @ 6AM</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p18627061_b_h10_ab.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261021210000 +0800" stop="20261021220000 +0800">
+    <title lang="en">Today in the Bay</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p8288104_b_h8_ad.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpCali.us" start="20261021210000 +0800" stop="20261021230000 +0800">
     <title lang="en">NHL Hockey</title>
@@ -54254,10 +54193,20 @@
     <category lang="en">Sports talk</category>
     <icon src="http://dtil.tmsimg.com/assets/p915764_b_h10_ad.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261021220000 +0800" stop="20261021230000 +0800">
+  <programme channel="WNBC-NY.us" start="20261021220000 +0800" stop="20261021230000 +0800">
     <title lang="en">Today With Jenna &amp; Sheinelle</title>
     <category lang="en">Series</category>
     <icon src="http://dtil.tmsimg.com/assets/p31933422_b_h8_ae.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-LA.us" start="20261021220000 +0800" stop="20261022000000 +0800">
+    <title lang="en">Today</title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p184072_b_h8_ag.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261021220000 +0800" stop="20261022000000 +0800">
+    <title lang="en">Today</title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p184072_b_h8_ag.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpBos.us" start="20261021220000 +0800" stop="20261022020000 +0800">
     <title lang="en">Live: Zolak and Bertrand</title>
@@ -54269,7 +54218,7 @@
     <category lang="en">Baseball</category>
     <icon src="http://dtil.tmsimg.com/assets/p30840598_b_h8_aa.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261021230000 +0800" stop="20261021233000 +0800">
+  <programme channel="WNBC-NY.us" start="20261021230000 +0800" stop="20261021233000 +0800">
     <title lang="en">Live: News 4 NY at 11AM</title>
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p10513203_b_h10_ae.jpg?w=960&amp;h=540" />
@@ -54294,7 +54243,7 @@
     <category lang="en">Newsmagazine</category>
     <icon src="http://dtil.tmsimg.com/assets/p8340806_b_h8_ae.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261021233000 +0800" stop="20261022000000 +0800">
+  <programme channel="WNBC-NY.us" start="20261021233000 +0800" stop="20261022000000 +0800">
     <title lang="en">New York Live</title>
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p8692580_b_h8_ac.jpg?w=960&amp;h=540" />
@@ -54314,10 +54263,20 @@
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p24581570_b_h10_ab.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261022000000 +0800" stop="20261022010000 +0800">
+  <programme channel="WNBC-NY.us" start="20261022000000 +0800" stop="20261022010000 +0800">
     <title lang="en">NBC News Daily</title>
     <category lang="en">Series</category>
     <icon src="http://dtil.tmsimg.com/assets/p22712535_b_h8_ad.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-LA.us" start="20261022000000 +0800" stop="20261022010000 +0800">
+    <title lang="en">Today 3rd Hour</title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p16183023_b_h8_af.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261022000000 +0800" stop="20261022010000 +0800">
+    <title lang="en">Today 3rd Hour</title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p16183023_b_h8_af.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpCali.us" start="20261022000000 +0800" stop="20261022020000 +0800">
     <title lang="en">NHL Hockey</title>
@@ -54349,16 +54308,31 @@
     <category lang="en">Series</category>
     <icon src="http://dtil.tmsimg.com/assets/p18150635_b_h8_af.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261022010000 +0800" stop="20261022020000 +0800">
+  <programme channel="WNBC-NY.us" start="20261022010000 +0800" stop="20261022020000 +0800">
     <title lang="en">Dateline</title>
     <sub-title lang="en">Mystery in Los Lunas</sub-title>
     <category lang="en">Series</category>
     <icon src="http://dtil.tmsimg.com/assets/p31054010_b_h10_aa.jpg?w=960&amp;h=540" />
   </programme>
+  <programme channel="WNBC-LA.us" start="20261022010000 +0800" stop="20261022020000 +0800">
+    <title lang="en">Today With Jenna &amp; Sheinelle</title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p31933422_b_h8_ae.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261022010000 +0800" stop="20261022020000 +0800">
+    <title lang="en">Today With Jenna &amp; Sheinelle</title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p31933422_b_h8_ae.jpg?w=960&amp;h=540" />
+  </programme>
   <programme channel="NBCSpBay.us" start="20261022013000 +0800" stop="20261022020000 +0800">
     <title lang="en">Hot Sheet by Baseball America</title>
     <category lang="en">Baseball</category>
     <icon src="http://dtil.tmsimg.com/assets/p30840598_b_h8_aa.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261022020000 +0800" stop="20261022023000 +0800">
+    <title lang="en">NBC Bay Area News at 11</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p8288160_b_h10_aa.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpBay.us" start="20261022020000 +0800" stop="20261022023000 +0800">
     <title lang="en">Paid Programming</title>
@@ -54375,10 +54349,15 @@
     <category lang="en">Series</category>
     <icon src="http://dtil.tmsimg.com/assets/p18150635_b_h8_af.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261022020000 +0800" stop="20261022030000 +0800">
+  <programme channel="WNBC-NY.us" start="20261022020000 +0800" stop="20261022030000 +0800">
     <title lang="en">NBC News Daily</title>
     <category lang="en">Series</category>
     <icon src="http://dtil.tmsimg.com/assets/p22712535_b_h8_ad.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-LA.us" start="20261022020000 +0800" stop="20261022030000 +0800">
+    <title lang="en">NBC4 News at 11am</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p12892190_b_h10_ad.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpBos.us" start="20261022020000 +0800" stop="20261022060000 +0800">
     <title lang="en">Live: Felger &amp; Mazz Radio</title>
@@ -54389,6 +54368,11 @@
     <title lang="en">Live: Unfiltered with Ricky Bo and Bill Colarulo</title>
     <category lang="en">Sports talk</category>
     <icon src="http://dtil.tmsimg.com/assets/p30392222_b_h10_aa.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261022023000 +0800" stop="20261022030000 +0800">
+    <title lang="en">Hollywood ReelTime</title>
+    <category lang="en">Community</category>
+    <icon src="http://dtil.tmsimg.com/assets/p33844225_b_h10_ab.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpBay.us" start="20261022023000 +0800" stop="20261022030000 +0800">
     <title lang="en">Paid Programming</title>
@@ -54405,10 +54389,20 @@
     <category lang="en">Consumer</category>
     <icon src="http://dtil.tmsimg.com/assets/p459763_b_h8_bq.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261022030000 +0800" stop="20261022040000 +0800">
+  <programme channel="WNBC-NY.us" start="20261022030000 +0800" stop="20261022040000 +0800">
     <title lang="en">Live: News Zone</title>
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p30135145_b_h10_ad.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-LA.us" start="20261022030000 +0800" stop="20261022040000 +0800">
+    <title lang="en">NBC News Daily</title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p22712535_b_h8_ad.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261022030000 +0800" stop="20261022040000 +0800">
+    <title lang="en">NBC News Daily</title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p22712535_b_h8_ad.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="WSCV.us" start="20261022030000 +0800" stop="20261022040000 +0800">
     <title lang="en">On the hot table)</title>
@@ -54430,7 +54424,12 @@
     <category lang="en">Football</category>
     <icon src="http://dtil.tmsimg.com/assets/p28272530_b_h8_aa.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261022040000 +0800" stop="20261022043000 +0800">
+  <programme channel="WNBC-LA.us" start="20261022040000 +0800" stop="20261022043000 +0800">
+    <title lang="en">Hollywood ReelTime</title>
+    <category lang="en">Community</category>
+    <icon src="http://dtil.tmsimg.com/assets/p33972797_b_h10_ab.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-NY.us" start="20261022040000 +0800" stop="20261022043000 +0800">
     <title lang="en">Live: News 4 NY at 4</title>
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p12736826_b_h10_ae.jpg?w=960&amp;h=540" />
@@ -54439,6 +54438,12 @@
     <title lang="en">Best Mattress Topper Ever!</title>
     <category lang="en">Consumer</category>
     <icon src="http://dtil.tmsimg.com/assets/p26665262_b_h8_aa.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261022040000 +0800" stop="20261022050000 +0800">
+    <title lang="en">Dateline</title>
+    <sub-title lang="en">Mystery in Los Lunas</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p31054010_b_h10_aa.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="WSCV.us" start="20261022040000 +0800" stop="20261022050000 +0800">
     <title lang="en">Hot to Burn</title>
@@ -54450,12 +54455,17 @@
     <category lang="en">Football</category>
     <icon src="http://dtil.tmsimg.com/assets/p28272530_b_h8_aa.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261022043000 +0800" stop="20261022050000 +0800">
+  <programme channel="WNBC-NY.us" start="20261022043000 +0800" stop="20261022050000 +0800">
     <title lang="en">Live: News 4 NY at 4:30</title>
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p14883147_b_h10_ab.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261022050000 +0800" stop="20261022053000 +0800">
+  <programme channel="WNBC-LA.us" start="20261022043000 +0800" stop="20261022050000 +0800">
+    <title lang="en">NBC4 News Zone Live</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p33962717_b_h8_aa.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-NY.us" start="20261022050000 +0800" stop="20261022053000 +0800">
     <title lang="en">Live: News 4 NY at 5</title>
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p8846204_b_h10_ae.jpg?w=960&amp;h=540" />
@@ -54475,6 +54485,17 @@
     <category lang="en">Sports talk</category>
     <icon src="http://dtil.tmsimg.com/assets/p14484396_b_h10_ac.jpg?w=960&amp;h=540" />
   </programme>
+  <programme channel="WNBC-LA.us" start="20261022050000 +0800" stop="20261022060000 +0800">
+    <title lang="en">Dateline</title>
+    <sub-title lang="en">Mystery in Los Lunas</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p31054010_b_h10_aa.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261022050000 +0800" stop="20261022060000 +0800">
+    <title lang="en">Hallie Jackson NOW</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p20861983_b_h8_aa.jpg?w=960&amp;h=540" />
+  </programme>
   <programme channel="TC.us" start="20261022050000 +0800" stop="20261022080000 +0800">
     <title lang="en">Center Court</title>
     <sub-title lang="en">Brussels-ATP, Lyon-ATP, Almaty-ATP, Osaka-WTA &amp; Ningbo-WTA Early Rounds</sub-title>
@@ -54486,7 +54507,7 @@
     <category lang="en">Consumer</category>
     <icon src="http://dtil.tmsimg.com/assets/p30220270_b_h8_aa.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261022053000 +0800" stop="20261022060000 +0800">
+  <programme channel="WNBC-NY.us" start="20261022053000 +0800" stop="20261022060000 +0800">
     <title lang="en">Live: News 4 NY at 5:30</title>
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p14883149_b_h10_ac.jpg?w=960&amp;h=540" />
@@ -54501,7 +54522,7 @@
     <category lang="en">Football</category>
     <icon src="http://dtil.tmsimg.com/assets/p22078694_b_h10_aa.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261022060000 +0800" stop="20261022063000 +0800">
+  <programme channel="WNBC-NY.us" start="20261022060000 +0800" stop="20261022063000 +0800">
     <title lang="en">Live: News 4 NY at 6</title>
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p8846208_b_h10_ae.jpg?w=960&amp;h=540" />
@@ -54510,6 +54531,11 @@
     <title lang="en">Live: The Quick Snap Podcast</title>
     <category lang="en">Football</category>
     <icon src="http://dtil.tmsimg.com/assets/p30949585_b_h8_aa.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-LA.us" start="20261022060000 +0800" stop="20261022063000 +0800">
+    <title lang="en">NBC4 News at 3pm</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p15054848_b_h10_aa.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="WSCV.us" start="20261022060000 +0800" stop="20261022063000 +0800">
     <title lang="en">Noticiero Telemundo 51 6PM</title>
@@ -54521,12 +54547,22 @@
     <category lang="en">Baseball</category>
     <icon src="http://dtil.tmsimg.com/assets/p29498577_b_h10_ac.jpg?w=960&amp;h=540" />
   </programme>
+  <programme channel="KNTV.us" start="20261022060000 +0800" stop="20261022070000 +0800">
+    <title lang="en">NBC Bay Area News at 3</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p25180705_b_h10_aa.jpg?w=960&amp;h=540" />
+  </programme>
   <programme channel="NBCSpCali.us" start="20261022060000 +0800" stop="20261022080000 +0800">
     <title lang="en">Premier League Soccer</title>
     <category lang="en">Sports</category>
     <icon src="http://dtil.tmsimg.com/assets/GNLZZGG003RGZC8.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261022063000 +0800" stop="20261022070000 +0800">
+  <programme channel="WNBC-NY.us" start="20261022063000 +0800" stop="20261022070000 +0800">
+    <title lang="en">NBC Nightly News With Tom Llamas</title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p30141511_b_h8_aa.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-LA.us" start="20261022063000 +0800" stop="20261022070000 +0800">
     <title lang="en">NBC Nightly News With Tom Llamas</title>
     <category lang="en">Series</category>
     <icon src="http://dtil.tmsimg.com/assets/p30141511_b_h8_aa.jpg?w=960&amp;h=540" />
@@ -54551,10 +54587,20 @@
     <category lang="en">Football</category>
     <icon src="http://dtil.tmsimg.com/assets/p22078694_b_h10_aa.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261022070000 +0800" stop="20261022073000 +0800">
+  <programme channel="KNTV.us" start="20261022070000 +0800" stop="20261022073000 +0800">
+    <title lang="en">NBC Nightly News With Tom Llamas</title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p30141511_b_h8_aa.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-NY.us" start="20261022070000 +0800" stop="20261022073000 +0800">
     <title lang="en">News 4 NY at 7</title>
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p18101773_b_h10_ad.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-LA.us" start="20261022070000 +0800" stop="20261022080000 +0800">
+    <title lang="en">NBC4 News at 4pm</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p9358491_b_h10_ae.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpBay.us" start="20261022070000 +0800" stop="20261022080000 +0800">
     <title lang="en">World Poker Tour</title>
@@ -54571,7 +54617,12 @@
     <category lang="en">Sports talk</category>
     <icon src="http://dtil.tmsimg.com/assets/p20216116_b_h10_ab.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261022073000 +0800" stop="20261022080000 +0800">
+  <programme channel="KNTV.us" start="20261022073000 +0800" stop="20261022080000 +0800">
+    <title lang="en">NBC Bay Area News at 4:30</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p816178_b_h10_ab.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-NY.us" start="20261022073000 +0800" stop="20261022080000 +0800">
     <title lang="en">New York Live Tonight</title>
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p34032729_b_h10_ab.jpg?w=960&amp;h=540" />
@@ -54580,6 +54631,11 @@
     <title lang="en">Early Edition</title>
     <category lang="en">Sports talk</category>
     <icon src="http://dtil.tmsimg.com/assets/p10416789_b_h10_ac.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261022080000 +0800" stop="20261022083000 +0800">
+    <title lang="en">NBC Bay Area News at 5</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p8776719_b_h10_ad.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpCali.us" start="20261022080000 +0800" stop="20261022083000 +0800">
     <title lang="en">USA Fencing</title>
@@ -54591,11 +54647,16 @@
     <category lang="en">Sports talk</category>
     <icon src="http://dtil.tmsimg.com/assets/p14484396_b_h10_ac.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261022080000 +0800" stop="20261022090000 +0800">
+  <programme channel="WNBC-NY.us" start="20261022080000 +0800" stop="20261022090000 +0800">
     <title lang="en">Chicago Med</title>
     <sub-title lang="en">They Call Me Ms. Goodwin</sub-title>
     <category lang="en">Series</category>
     <icon src="http://dtil.tmsimg.com/assets/p33616368_b_h8_ac.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-LA.us" start="20261022080000 +0800" stop="20261022090000 +0800">
+    <title lang="en">NBC4 News at 5pm</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p8781144_b_h10_ad.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="TC.us" start="20261022080000 +0800" stop="20261022090000 +0800">
     <title lang="en">Race to the ATP &amp; WTA Finals</title>
@@ -54612,6 +54673,11 @@
     <category lang="en">Baseball</category>
     <icon src="http://dtil.tmsimg.com/assets/p30840598_b_h8_aa.jpg?w=960&amp;h=540" />
   </programme>
+  <programme channel="KNTV.us" start="20261022083000 +0800" stop="20261022090000 +0800">
+    <title lang="en">NBC Bay Area News at 5:30</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p15533330_b_h10_aa.jpg?w=960&amp;h=540" />
+  </programme>
   <programme channel="NBCSpBos.us" start="20261022083000 +0800" stop="20261022090000 +0800">
     <title lang="en">The Quick Snap Podcast</title>
     <category lang="en">Football</category>
@@ -54622,12 +54688,22 @@
     <category lang="en">Newsmagazine</category>
     <icon src="http://dtil.tmsimg.com/assets/p383155_b_h10_ae.jpg?w=960&amp;h=540" />
   </programme>
+  <programme channel="WNBC-LA.us" start="20261022090000 +0800" stop="20261022093000 +0800">
+    <title lang="en">NBC 4 News at 6pm</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p12394505_b_h10_aa.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261022090000 +0800" stop="20261022093000 +0800">
+    <title lang="en">NBC Bay Area News at 6</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p8776722_b_h10_ad.jpg?w=960&amp;h=540" />
+  </programme>
   <programme channel="NBCSpBos.us" start="20261022090000 +0800" stop="20261022093000 +0800">
     <title lang="en">Tom Curran's Patriots Talk Podcast</title>
     <category lang="en">Sports talk</category>
     <icon src="http://dtil.tmsimg.com/assets/p18770386_b_h8_aa.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261022090000 +0800" stop="20261022100000 +0800">
+  <programme channel="WNBC-NY.us" start="20261022090000 +0800" stop="20261022100000 +0800">
     <title lang="en">Chicago Fire</title>
     <sub-title lang="en">Take the Hit</sub-title>
     <category lang="en">Series</category>
@@ -54651,6 +54727,16 @@
     <category lang="en">Series</category>
     <icon src="http://dtil.tmsimg.com/assets/p14454942_b_h8_aa.jpg?w=960&amp;h=540" />
   </programme>
+  <programme channel="WNBC-LA.us" start="20261022093000 +0800" stop="20261022100000 +0800">
+    <title lang="en">NBC Nightly News With Tom Llamas</title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p30141511_b_h8_aa.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261022093000 +0800" stop="20261022100000 +0800">
+    <title lang="en">NBC Nightly News With Tom Llamas</title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p30141511_b_h8_aa.jpg?w=960&amp;h=540" />
+  </programme>
   <programme channel="NBCSpCali.us" start="20261022093000 +0800" stop="20261022100000 +0800">
     <title lang="en">The Iconic</title>
     <category lang="en">Soccer</category>
@@ -54666,7 +54752,17 @@
     <category lang="en">Football</category>
     <icon src="http://dtil.tmsimg.com/assets/p22078694_b_h10_aa.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261022100000 +0800" stop="20261022110000 +0800">
+  <programme channel="KNTV.us" start="20261022100000 +0800" stop="20261022103000 +0800">
+    <title lang="en">NBC Bay Area News Tonight</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p20036151_b_h10_aa.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-LA.us" start="20261022100000 +0800" stop="20261022103000 +0800">
+    <title lang="en">NBC4 News at 7 PM</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p18102973_b_h10_ab.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-NY.us" start="20261022100000 +0800" stop="20261022110000 +0800">
     <title lang="en">Chicago P.D.</title>
     <sub-title lang="en">Under the Surface</sub-title>
     <category lang="en">Series</category>
@@ -54688,6 +54784,16 @@
     <category lang="en">Sports</category>
     <icon src="http://dtil.tmsimg.com/assets/GNLZZGG003RGZC8.jpg?w=960&amp;h=540" />
   </programme>
+  <programme channel="WNBC-LA.us" start="20261022103000 +0800" stop="20261022110000 +0800">
+    <title lang="en">Hollywood ReelTime</title>
+    <category lang="en">Community</category>
+    <icon src="http://dtil.tmsimg.com/assets/p33972797_b_h10_ab.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261022103000 +0800" stop="20261022110000 +0800">
+    <title lang="en">Hollywood ReelTime</title>
+    <category lang="en">Community</category>
+    <icon src="http://dtil.tmsimg.com/assets/p33972797_b_h10_ab.jpg?w=960&amp;h=540" />
+  </programme>
   <programme channel="NBCSpPhilly.us" start="20261022103000 +0800" stop="20261022110000 +0800">
     <title lang="en">Inside Golf</title>
     <category lang="en">Sports talk</category>
@@ -54704,7 +54810,7 @@
     <category lang="en">Fencing</category>
     <icon src="http://dtil.tmsimg.com/assets/p30275782_b_h8_aa.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261022110000 +0800" stop="20261022113400 +0800">
+  <programme channel="WNBC-NY.us" start="20261022110000 +0800" stop="20261022113400 +0800">
     <title lang="en">Live: News 4 NY at 11</title>
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p10513206_b_h10_ae.jpg?w=960&amp;h=540" />
@@ -54719,12 +54825,24 @@
     <category lang="en">Sports talk</category>
     <icon src="http://dtil.tmsimg.com/assets/p19704176_b_h10_ab.jpg?w=960&amp;h=540" />
   </programme>
+  <programme channel="WNBC-LA.us" start="20261022110000 +0800" stop="20261022120000 +0800">
+    <title lang="en">Chicago Med</title>
+    <sub-title lang="en">They Call Me Ms. Goodwin</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p33616368_b_h8_ac.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261022110000 +0800" stop="20261022120000 +0800">
+    <title lang="en">Chicago Med</title>
+    <sub-title lang="en">They Call Me Ms. Goodwin</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p33616368_b_h8_ac.jpg?w=960&amp;h=540" />
+  </programme>
   <programme channel="NBCSpPhilly.us" start="20261022113000 +0800" stop="20261022120000 +0800">
     <title lang="en">Fair Territory with Ken Rosenthal</title>
     <category lang="en">Baseball</category>
     <icon src="http://dtil.tmsimg.com/assets/p30123162_b_h8_aa.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261022113400 +0800" stop="20261022123700 +0800">
+  <programme channel="WNBC-NY.us" start="20261022113400 +0800" stop="20261022123700 +0800">
     <title lang="en">The Tonight Show Starring Jimmy Fallon</title>
     <sub-title lang="en">Uma Thurman; Josh Charles; Queens of the Stone Age</sub-title>
     <category lang="en">Series</category>
@@ -54750,6 +54868,18 @@
     <category lang="en">Sports talk</category>
     <icon src="http://dtil.tmsimg.com/assets/p19704176_b_h10_ab.jpg?w=960&amp;h=540" />
   </programme>
+  <programme channel="WNBC-LA.us" start="20261022120000 +0800" stop="20261022130000 +0800">
+    <title lang="en">Chicago Fire</title>
+    <sub-title lang="en">Take the Hit</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p33616388_b_h8_ab.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261022120000 +0800" stop="20261022130000 +0800">
+    <title lang="en">Chicago Fire</title>
+    <sub-title lang="en">Take the Hit</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p33616388_b_h8_ab.jpg?w=960&amp;h=540" />
+  </programme>
   <programme channel="NBCSpCali.us" start="20261022120000 +0800" stop="20261022130000 +0800">
     <title lang="en">World Championship Kickboxing</title>
     <sub-title lang="en">Non-O Hama vs. Saempaetch Fairtex</sub-title>
@@ -54772,7 +54902,7 @@
     <category lang="en">Series</category>
     <icon src="http://dtil.tmsimg.com/assets/p33408374_b_h10_ab.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261022123700 +0800" stop="20261022133700 +0800">
+  <programme channel="WNBC-NY.us" start="20261022123700 +0800" stop="20261022133700 +0800">
     <title lang="en">Late Night With Seth Meyers</title>
     <sub-title lang="en">Liam Neeson</sub-title>
     <category lang="en">Series</category>
@@ -54782,6 +54912,18 @@
     <title lang="en">Fair Territory with Ken Rosenthal</title>
     <category lang="en">Baseball</category>
     <icon src="http://dtil.tmsimg.com/assets/p30123162_b_h8_aa.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-LA.us" start="20261022130000 +0800" stop="20261022140000 +0800">
+    <title lang="en">Chicago P.D.</title>
+    <sub-title lang="en">Under the Surface</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p9972948_b_h8_ck.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261022130000 +0800" stop="20261022140000 +0800">
+    <title lang="en">Chicago P.D.</title>
+    <sub-title lang="en">Under the Surface</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p9972948_b_h8_ck.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpCali.us" start="20261022130000 +0800" stop="20261022140000 +0800">
     <title lang="en">United Fight Alliance</title>
@@ -54811,7 +54953,7 @@
     <category lang="en">Consumer</category>
     <icon src="http://dtil.tmsimg.com/assets/p459763_b_h8_bq.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261022133700 +0800" stop="20261022141200 +0800">
+  <programme channel="WNBC-NY.us" start="20261022133700 +0800" stop="20261022141200 +0800">
     <title lang="en">News 4 NY at 11</title>
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p10513206_b_h10_ae.jpg?w=960&amp;h=540" />
@@ -54831,12 +54973,22 @@
     <category lang="en">Consumer</category>
     <icon src="http://dtil.tmsimg.com/assets/p459763_b_h8_bs.jpg?w=960&amp;h=540" />
   </programme>
+  <programme channel="KNTV.us" start="20261022140000 +0800" stop="20261022143400 +0800">
+    <title lang="en">NBC Bay Area News at 11</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p8288160_b_h10_aa.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-LA.us" start="20261022140000 +0800" stop="20261022143400 +0800">
+    <title lang="en">NBC4 News at 11pm</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p8781143_b_h10_ad.jpg?w=960&amp;h=540" />
+  </programme>
   <programme channel="NBCSpCali.us" start="20261022140000 +0800" stop="20261022160000 +0800">
     <title lang="en">NBA Basketball</title>
     <category lang="en">Sports</category>
     <icon src="http://dtil.tmsimg.com/assets/GNLZZGG003M49CR.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261022141200 +0800" stop="20261022144200 +0800">
+  <programme channel="WNBC-NY.us" start="20261022141200 +0800" stop="20261022144200 +0800">
     <title lang="en">NBC Nightly News With Tom Llamas</title>
     <category lang="en">Series</category>
     <icon src="http://dtil.tmsimg.com/assets/p30141511_b_h8_aa.jpg?w=960&amp;h=540" />
@@ -54856,7 +55008,19 @@
     <category lang="en">Consumer</category>
     <icon src="http://dtil.tmsimg.com/assets/p459763_b_h8_bs.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261022144200 +0800" stop="20261022153000 +0800">
+  <programme channel="WNBC-LA.us" start="20261022143400 +0800" stop="20261022153700 +0800">
+    <title lang="en">The Tonight Show Starring Jimmy Fallon</title>
+    <sub-title lang="en">Uma Thurman; Josh Charles; Queens of the Stone Age</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p9898935_b_h8_am.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261022143400 +0800" stop="20261022153700 +0800">
+    <title lang="en">The Tonight Show Starring Jimmy Fallon</title>
+    <sub-title lang="en">Uma Thurman; Josh Charles; Queens of the Stone Age</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p9898935_b_h8_am.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-NY.us" start="20261022144200 +0800" stop="20261022153000 +0800">
     <title lang="en">Top Story With Tom Llamas</title>
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p23722920_b_h8_aa.jpg?w=960&amp;h=540" />
@@ -54876,7 +55040,7 @@
     <category lang="en">Competition Reality</category>
     <icon src="http://dtil.tmsimg.com/assets/p22445479_b_h10_aa.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261022153000 +0800" stop="20261022160000 +0800">
+  <programme channel="WNBC-NY.us" start="20261022153000 +0800" stop="20261022160000 +0800">
     <title lang="en">New York Live Tonight</title>
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p34032729_b_h10_ab.jpg?w=960&amp;h=540" />
@@ -54891,7 +55055,19 @@
     <category lang="en">Consumer</category>
     <icon src="http://dtil.tmsimg.com/assets/p459763_b_h8_bs.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261022160000 +0800" stop="20261022163000 +0800">
+  <programme channel="WNBC-LA.us" start="20261022153700 +0800" stop="20261022163700 +0800">
+    <title lang="en">Late Night With Seth Meyers</title>
+    <sub-title lang="en">Liam Neeson</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p34108821_b_h8_ab.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261022153700 +0800" stop="20261022163700 +0800">
+    <title lang="en">Late Night With Seth Meyers</title>
+    <sub-title lang="en">Liam Neeson</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p34108821_b_h8_ab.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-NY.us" start="20261022160000 +0800" stop="20261022163000 +0800">
     <title lang="en">Early Today</title>
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p185301_b_h8_ah.jpg?w=960&amp;h=540" />
@@ -54926,10 +55102,20 @@
     <category lang="en">Consumer</category>
     <icon src="http://dtil.tmsimg.com/assets/p459763_b_h8_bq.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261022163000 +0800" stop="20261022170000 +0800">
+  <programme channel="WNBC-NY.us" start="20261022163000 +0800" stop="20261022170000 +0800">
     <title lang="en">Today in New York</title>
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p960598_b_h10_ac.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261022163700 +0800" stop="20261022171200 +0800">
+    <title lang="en">NBC Bay Area News at 11</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p8288160_b_h10_aa.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-LA.us" start="20261022163700 +0800" stop="20261022171200 +0800">
+    <title lang="en">NBC4 News at 11pm</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p8781143_b_h10_ad.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpBay.us" start="20261022170000 +0800" stop="20261022173000 +0800">
     <title lang="en">49ers Talk</title>
@@ -54956,10 +55142,20 @@
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p13193432_b_h10_ab.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261022170000 +0800" stop="20261022180000 +0800">
+  <programme channel="WNBC-NY.us" start="20261022170000 +0800" stop="20261022180000 +0800">
     <title lang="en">Today in New York</title>
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p960598_b_h10_ac.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-LA.us" start="20261022171200 +0800" stop="20261022174200 +0800">
+    <title lang="en">NBC Nightly News With Tom Llamas</title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p30141511_b_h8_aa.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261022171200 +0800" stop="20261022174200 +0800">
+    <title lang="en">NBC Nightly News With Tom Llamas</title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p30141511_b_h8_aa.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpBay.us" start="20261022173000 +0800" stop="20261022180000 +0800">
     <title lang="en">49ers Talk</title>
@@ -54980,6 +55176,16 @@
     <title lang="en">Paid Programming</title>
     <category lang="en">Consumer</category>
     <icon src="http://dtil.tmsimg.com/assets/p459763_b_h8_bq.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-LA.us" start="20261022174200 +0800" stop="20261022183000 +0800">
+    <title lang="en">Top Story With Tom Llamas</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p23722920_b_h8_aa.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261022174200 +0800" stop="20261022183000 +0800">
+    <title lang="en">Top Story With Tom Llamas</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p23722920_b_h8_aa.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpCali.us" start="20261022180000 +0800" stop="20261022183000 +0800">
     <title lang="en">49ers Talk</title>
@@ -55006,7 +55212,7 @@
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p13193432_b_h10_ab.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261022180000 +0800" stop="20261022190000 +0800">
+  <programme channel="WNBC-NY.us" start="20261022180000 +0800" stop="20261022190000 +0800">
     <title lang="en">Today in New York @ 6AM</title>
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p24315242_b_h10_aa.jpg?w=960&amp;h=540" />
@@ -55022,6 +55228,16 @@
     <category lang="en">Football</category>
     <icon src="http://dtil.tmsimg.com/assets/p18733022_b_h8_ad.jpg?w=960&amp;h=540" />
   </programme>
+  <programme channel="WNBC-LA.us" start="20261022183000 +0800" stop="20261022190000 +0800">
+    <title lang="en">Early Today</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p185301_b_h8_ah.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261022183000 +0800" stop="20261022190000 +0800">
+    <title lang="en">Early Today</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p185301_b_h8_ah.jpg?w=960&amp;h=540" />
+  </programme>
   <programme channel="NBCSpBay.us" start="20261022183000 +0800" stop="20261022190000 +0800">
     <title lang="en">Paid Programming</title>
     <category lang="en">Consumer</category>
@@ -55032,10 +55248,20 @@
     <category lang="en">Consumer</category>
     <icon src="http://dtil.tmsimg.com/assets/p459763_b_h8_bq.jpg?w=960&amp;h=540" />
   </programme>
+  <programme channel="KNTV.us" start="20261022190000 +0800" stop="20261022193000 +0800">
+    <title lang="en">Early Today</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p185301_b_h8_ah.jpg?w=960&amp;h=540" />
+  </programme>
   <programme channel="NBCSpCali.us" start="20261022190000 +0800" stop="20261022193000 +0800">
     <title lang="en">Spanish Fly</title>
     <category lang="en">Fishing</category>
     <icon src="http://dtil.tmsimg.com/assets/p912518_b_h11_aa.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-LA.us" start="20261022190000 +0800" stop="20261022193000 +0800">
+    <title lang="en">Today in LA @ 4AM</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p18627049_b_h10_ab.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpBos.us" start="20261022190000 +0800" stop="20261022200000 +0800">
     <title lang="en">Boston Sports Tonight With Felger and Holley</title>
@@ -55058,15 +55284,25 @@
     <category lang="en">Series</category>
     <icon src="http://dtil.tmsimg.com/assets/p9112528_b_h8_aa.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261022190000 +0800" stop="20261022210000 +0800">
+  <programme channel="WNBC-NY.us" start="20261022190000 +0800" stop="20261022210000 +0800">
     <title lang="en">Today</title>
     <category lang="en">Series</category>
     <icon src="http://dtil.tmsimg.com/assets/p184072_b_h8_ag.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261022193000 +0800" stop="20261022200000 +0800">
+    <title lang="en">Early Today</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p185301_b_h8_ah.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpCali.us" start="20261022193000 +0800" stop="20261022200000 +0800">
     <title lang="en">Sport Fishing TV</title>
     <category lang="en">Nature</category>
     <icon src="http://dtil.tmsimg.com/assets/p29735204_b_h8_aa.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-LA.us" start="20261022193000 +0800" stop="20261022200000 +0800">
+    <title lang="en">Today in LA @ 4:30AM</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p18627053_b_h10_ab.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpCali.us" start="20261022200000 +0800" stop="20261022203000 +0800">
     <title lang="en">Florida Adventure Quest</title>
@@ -55087,6 +55323,16 @@
     <title lang="en">SportsNet Central</title>
     <category lang="en">Sports talk</category>
     <icon src="http://dtil.tmsimg.com/assets/p915764_b_h10_ad.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-LA.us" start="20261022200000 +0800" stop="20261022210000 +0800">
+    <title lang="en">Today in LA @ 5AM</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p18627056_b_h10_ab.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261022200000 +0800" stop="20261022210000 +0800">
+    <title lang="en">Today in the Bay</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p8288104_b_h8_ad.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="WSCV.us" start="20261022200000 +0800" stop="20261022233000 +0800">
     <title lang="en">Today</title>
@@ -55123,10 +55369,20 @@
     <category lang="en">Sports talk</category>
     <icon src="http://dtil.tmsimg.com/assets/p915764_b_h10_ad.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261022210000 +0800" stop="20261022220000 +0800">
+  <programme channel="WNBC-NY.us" start="20261022210000 +0800" stop="20261022220000 +0800">
     <title lang="en">Today 3rd Hour</title>
     <category lang="en">Series</category>
     <icon src="http://dtil.tmsimg.com/assets/p16183023_b_h8_af.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-LA.us" start="20261022210000 +0800" stop="20261022220000 +0800">
+    <title lang="en">Today in LA @ 6AM</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p18627061_b_h10_ab.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261022210000 +0800" stop="20261022220000 +0800">
+    <title lang="en">Today in the Bay</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p8288104_b_h8_ad.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpCali.us" start="20261022210000 +0800" stop="20261022230000 +0800">
     <title lang="en">NBA Basketball</title>
@@ -55143,10 +55399,20 @@
     <category lang="en">Sports talk</category>
     <icon src="http://dtil.tmsimg.com/assets/p915764_b_h10_ad.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261022220000 +0800" stop="20261022230000 +0800">
+  <programme channel="WNBC-NY.us" start="20261022220000 +0800" stop="20261022230000 +0800">
     <title lang="en">Today With Jenna &amp; Sheinelle</title>
     <category lang="en">Series</category>
     <icon src="http://dtil.tmsimg.com/assets/p31933422_b_h8_ae.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-LA.us" start="20261022220000 +0800" stop="20261023000000 +0800">
+    <title lang="en">Today</title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p184072_b_h8_ag.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261022220000 +0800" stop="20261023000000 +0800">
+    <title lang="en">Today</title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p184072_b_h8_ag.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpBos.us" start="20261022220000 +0800" stop="20261023020000 +0800">
     <title lang="en">Live: Zolak and Bertrand</title>
@@ -55163,7 +55429,7 @@
     <category lang="en">Consumer</category>
     <icon src="http://dtil.tmsimg.com/assets/p26665262_b_h8_aa.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261022230000 +0800" stop="20261022233000 +0800">
+  <programme channel="WNBC-NY.us" start="20261022230000 +0800" stop="20261022233000 +0800">
     <title lang="en">Live: News 4 NY at 11AM</title>
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p10513203_b_h10_ae.jpg?w=960&amp;h=540" />
@@ -55183,7 +55449,7 @@
     <category lang="en">Newsmagazine</category>
     <icon src="http://dtil.tmsimg.com/assets/p8340806_b_h8_ae.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261022233000 +0800" stop="20261023000000 +0800">
+  <programme channel="WNBC-NY.us" start="20261022233000 +0800" stop="20261023000000 +0800">
     <title lang="en">New York Live</title>
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p8692580_b_h8_ac.jpg?w=960&amp;h=540" />
@@ -55199,14 +55465,24 @@
     <icon src="http://dtil.tmsimg.com/assets/p459763_b_h8_bq.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="WSCV.us" start="20261023000000 +0800" stop="20261023003000 +0800">
-    <title lang="en">Telemundo News 51: Midday</title>
+    <title lang="en">Telemundo 51 News: Noon</title>
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p15091311_b_h10_aa.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261023000000 +0800" stop="20261023010000 +0800">
+  <programme channel="WNBC-NY.us" start="20261023000000 +0800" stop="20261023010000 +0800">
     <title lang="en">NBC News Daily</title>
     <category lang="en">Series</category>
     <icon src="http://dtil.tmsimg.com/assets/p22712535_b_h8_ad.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-LA.us" start="20261023000000 +0800" stop="20261023010000 +0800">
+    <title lang="en">Today 3rd Hour</title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p16183023_b_h8_af.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261023000000 +0800" stop="20261023010000 +0800">
+    <title lang="en">Today 3rd Hour</title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p16183023_b_h8_af.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpCali.us" start="20261023000000 +0800" stop="20261023020000 +0800">
     <title lang="en">NBA Basketball</title>
@@ -55233,11 +55509,26 @@
     <category lang="en">Series</category>
     <icon src="http://dtil.tmsimg.com/assets/p18150635_b_h8_af.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261023010000 +0800" stop="20261023020000 +0800">
+  <programme channel="WNBC-NY.us" start="20261023010000 +0800" stop="20261023020000 +0800">
     <title lang="en">Dateline</title>
     <sub-title lang="en">A Murder in Aspen</sub-title>
     <category lang="en">Series</category>
     <icon src="http://dtil.tmsimg.com/assets/p31054010_b_h10_aa.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-LA.us" start="20261023010000 +0800" stop="20261023020000 +0800">
+    <title lang="en">Today With Jenna &amp; Sheinelle</title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p31933422_b_h8_ae.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261023010000 +0800" stop="20261023020000 +0800">
+    <title lang="en">Today With Jenna &amp; Sheinelle</title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p31933422_b_h8_ae.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261023020000 +0800" stop="20261023023000 +0800">
+    <title lang="en">NBC Bay Area News at 11</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p8288160_b_h10_aa.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpBay.us" start="20261023020000 +0800" stop="20261023023000 +0800">
     <title lang="en">Paid Programming</title>
@@ -55254,10 +55545,15 @@
     <category lang="en">Consumer</category>
     <icon src="http://dtil.tmsimg.com/assets/p26665262_b_h8_aa.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261023020000 +0800" stop="20261023030000 +0800">
+  <programme channel="WNBC-NY.us" start="20261023020000 +0800" stop="20261023030000 +0800">
     <title lang="en">NBC News Daily</title>
     <category lang="en">Series</category>
     <icon src="http://dtil.tmsimg.com/assets/p22712535_b_h8_ad.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-LA.us" start="20261023020000 +0800" stop="20261023030000 +0800">
+    <title lang="en">NBC4 News at 11am</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p12892190_b_h10_ad.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpBos.us" start="20261023020000 +0800" stop="20261023053000 +0800">
     <title lang="en">Live: Felger &amp; Mazz Radio</title>
@@ -55268,6 +55564,11 @@
     <title lang="en">Live: Unfiltered with Ricky Bo and Bill Colarulo</title>
     <category lang="en">Sports talk</category>
     <icon src="http://dtil.tmsimg.com/assets/p30392222_b_h10_aa.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261023023000 +0800" stop="20261023030000 +0800">
+    <title lang="en">Hollywood ReelTime</title>
+    <category lang="en">Community</category>
+    <icon src="http://dtil.tmsimg.com/assets/p33844225_b_h10_ab.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpBay.us" start="20261023023000 +0800" stop="20261023030000 +0800">
     <title lang="en">Paid Programming</title>
@@ -55284,10 +55585,20 @@
     <category lang="en">Consumer</category>
     <icon src="http://dtil.tmsimg.com/assets/p459763_b_h8_bq.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261023030000 +0800" stop="20261023040000 +0800">
+  <programme channel="WNBC-NY.us" start="20261023030000 +0800" stop="20261023040000 +0800">
     <title lang="en">Live: News Zone</title>
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p30135145_b_h10_ad.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-LA.us" start="20261023030000 +0800" stop="20261023040000 +0800">
+    <title lang="en">NBC News Daily</title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p22712535_b_h8_ad.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261023030000 +0800" stop="20261023040000 +0800">
+    <title lang="en">NBC News Daily</title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p22712535_b_h8_ad.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="WSCV.us" start="20261023030000 +0800" stop="20261023040000 +0800">
     <title lang="en">On the hot table)</title>
@@ -55309,10 +55620,21 @@
     <category lang="en">Football</category>
     <icon src="http://dtil.tmsimg.com/assets/p18733022_b_h8_ad.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261023040000 +0800" stop="20261023043000 +0800">
+  <programme channel="WNBC-LA.us" start="20261023040000 +0800" stop="20261023043000 +0800">
+    <title lang="en">Hollywood ReelTime</title>
+    <category lang="en">Community</category>
+    <icon src="http://dtil.tmsimg.com/assets/p33972797_b_h10_ab.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-NY.us" start="20261023040000 +0800" stop="20261023043000 +0800">
     <title lang="en">Live: News 4 NY at 4</title>
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p12736826_b_h10_ae.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261023040000 +0800" stop="20261023050000 +0800">
+    <title lang="en">Dateline</title>
+    <sub-title lang="en">A Murder in Aspen</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p31054010_b_h10_aa.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="WSCV.us" start="20261023040000 +0800" stop="20261023050000 +0800">
     <title lang="en">Hot to Burn</title>
@@ -55324,10 +55646,15 @@
     <category lang="en">Football</category>
     <icon src="http://dtil.tmsimg.com/assets/p18733022_b_h8_ad.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261023043000 +0800" stop="20261023050000 +0800">
+  <programme channel="WNBC-NY.us" start="20261023043000 +0800" stop="20261023050000 +0800">
     <title lang="en">Live: News 4 NY at 4:30</title>
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p14883147_b_h10_ab.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-LA.us" start="20261023043000 +0800" stop="20261023050000 +0800">
+    <title lang="en">NBC4 News Zone Live</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p33962717_b_h8_aa.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpCali.us" start="20261023043000 +0800" stop="20261023050000 +0800">
     <title lang="en">Paid Programming</title>
@@ -55339,7 +55666,7 @@
     <category lang="en">Golf</category>
     <icon src="http://dtil.tmsimg.com/assets/p15209837_b_h8_aa.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261023050000 +0800" stop="20261023053000 +0800">
+  <programme channel="WNBC-NY.us" start="20261023050000 +0800" stop="20261023053000 +0800">
     <title lang="en">Live: News 4 NY at 5</title>
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p8846204_b_h10_ae.jpg?w=960&amp;h=540" />
@@ -55354,13 +55681,24 @@
     <category lang="en">Consumer</category>
     <icon src="http://dtil.tmsimg.com/assets/p30220270_b_h8_aa.jpg?w=960&amp;h=540" />
   </programme>
+  <programme channel="WNBC-LA.us" start="20261023050000 +0800" stop="20261023060000 +0800">
+    <title lang="en">Dateline</title>
+    <sub-title lang="en">A Murder in Aspen</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p31054010_b_h10_aa.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261023050000 +0800" stop="20261023060000 +0800">
+    <title lang="en">Hallie Jackson NOW</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p20861983_b_h8_aa.jpg?w=960&amp;h=540" />
+  </programme>
   <programme channel="TC.us" start="20261023050000 +0800" stop="20261023103000 +0800">
     <title lang="en">Center Court</title>
     <sub-title lang="en">Brussels-ATP, Lyon-ATP, Almaty-ATP, Osaka-WTA &amp; Ningbo-WTA Early Rounds</sub-title>
     <category lang="en">Series</category>
     <icon src="http://dtil.tmsimg.com/assets/p615474_b_h8_ad.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261023053000 +0800" stop="20261023060000 +0800">
+  <programme channel="WNBC-NY.us" start="20261023053000 +0800" stop="20261023060000 +0800">
     <title lang="en">Live: News 4 NY at 5:30</title>
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p14883149_b_h10_ac.jpg?w=960&amp;h=540" />
@@ -55385,10 +55723,15 @@
     <category lang="en">Football</category>
     <icon src="http://dtil.tmsimg.com/assets/p18733022_b_h8_ad.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261023060000 +0800" stop="20261023063000 +0800">
+  <programme channel="WNBC-NY.us" start="20261023060000 +0800" stop="20261023063000 +0800">
     <title lang="en">Live: News 4 NY at 6</title>
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p8846208_b_h10_ae.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-LA.us" start="20261023060000 +0800" stop="20261023063000 +0800">
+    <title lang="en">NBC4 News at 3pm</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p15054848_b_h10_aa.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="WSCV.us" start="20261023060000 +0800" stop="20261023063000 +0800">
     <title lang="en">Noticiero Telemundo 51 6PM</title>
@@ -55405,6 +55748,11 @@
     <category lang="en">Sports talk</category>
     <icon src="http://dtil.tmsimg.com/assets/p10416789_b_h10_ac.jpg?w=960&amp;h=540" />
   </programme>
+  <programme channel="KNTV.us" start="20261023060000 +0800" stop="20261023070000 +0800">
+    <title lang="en">NBC Bay Area News at 3</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p25180705_b_h10_aa.jpg?w=960&amp;h=540" />
+  </programme>
   <programme channel="NBCSpPhilly.us" start="20261023060000 +0800" stop="20261023070000 +0800">
     <title lang="en">Sixers Pregame Live</title>
     <category lang="en">Basketball</category>
@@ -55420,7 +55768,12 @@
     <category lang="en">Hockey</category>
     <icon src="http://dtil.tmsimg.com/assets/p901853_b_h8_ac.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261023063000 +0800" stop="20261023070000 +0800">
+  <programme channel="WNBC-NY.us" start="20261023063000 +0800" stop="20261023070000 +0800">
+    <title lang="en">NBC Nightly News With Tom Llamas</title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p30141511_b_h8_aa.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-LA.us" start="20261023063000 +0800" stop="20261023070000 +0800">
     <title lang="en">NBC Nightly News With Tom Llamas</title>
     <category lang="en">Series</category>
     <icon src="http://dtil.tmsimg.com/assets/p30141511_b_h8_aa.jpg?w=960&amp;h=540" />
@@ -55435,7 +55788,12 @@
     <category lang="en">Football</category>
     <icon src="http://dtil.tmsimg.com/assets/p22078694_b_h10_aa.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261023070000 +0800" stop="20261023073000 +0800">
+  <programme channel="KNTV.us" start="20261023070000 +0800" stop="20261023073000 +0800">
+    <title lang="en">NBC Nightly News With Tom Llamas</title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p30141511_b_h8_aa.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-NY.us" start="20261023070000 +0800" stop="20261023073000 +0800">
     <title lang="en">News 4 NY at 7</title>
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p18101773_b_h10_ad.jpg?w=960&amp;h=540" />
@@ -55444,6 +55802,11 @@
     <title lang="en">Billboard Latin Music Awards: The Carpet</title>
     <category lang="en">Special</category>
     <icon src="http://dtil.tmsimg.com/assets/p34024165_b_h8_ad.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-LA.us" start="20261023070000 +0800" stop="20261023080000 +0800">
+    <title lang="en">NBC4 News at 4pm</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p9358491_b_h10_ae.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpBos.us" start="20261023070000 +0800" stop="20261023080000 +0800">
     <title lang="en">Pregame Live</title>
@@ -55461,7 +55824,12 @@
     <category lang="en">Sports</category>
     <icon src="http://dtil.tmsimg.com/assets/GNLZZGG003DFF65.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261023073000 +0800" stop="20261023080000 +0800">
+  <programme channel="KNTV.us" start="20261023073000 +0800" stop="20261023080000 +0800">
+    <title lang="en">NBC Bay Area News at 4:30</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p816178_b_h10_ab.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-NY.us" start="20261023073000 +0800" stop="20261023080000 +0800">
     <title lang="en">New York Live Tonight</title>
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p34032729_b_h10_ab.jpg?w=960&amp;h=540" />
@@ -55476,12 +55844,22 @@
     <category lang="en">Football</category>
     <icon src="http://dtil.tmsimg.com/assets/p31065351_b_h8_aa.jpg?w=960&amp;h=540" />
   </programme>
+  <programme channel="KNTV.us" start="20261023080000 +0800" stop="20261023083000 +0800">
+    <title lang="en">NBC Bay Area News at 5</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p8776719_b_h10_ad.jpg?w=960&amp;h=540" />
+  </programme>
   <programme channel="NBCSpBos.us" start="20261023080000 +0800" stop="20261023083000 +0800">
     <title lang="en">Pure Outdoor</title>
     <category lang="en">Outdoors</category>
     <icon src="http://dtil.tmsimg.com/assets/p17303222_b_h10_aa.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261023080000 +0800" stop="20261023090000 +0800">
+  <programme channel="WNBC-LA.us" start="20261023080000 +0800" stop="20261023090000 +0800">
+    <title lang="en">NBC4 News at 5pm</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p8781144_b_h10_ad.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-NY.us" start="20261023080000 +0800" stop="20261023090000 +0800">
     <title lang="en">The Traitors</title>
     <sub-title lang="en">It's Like Fighting Two Pigs Under a Blanket</sub-title>
     <category lang="en">Series</category>
@@ -55502,6 +55880,11 @@
     <title lang="en">Inside Cal Football</title>
     <category lang="en">Football</category>
     <icon src="http://dtil.tmsimg.com/assets/p31065351_b_h8_aa.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261023083000 +0800" stop="20261023090000 +0800">
+    <title lang="en">NBC Bay Area News at 5:30</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p15533330_b_h10_aa.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpBos.us" start="20261023083000 +0800" stop="20261023090000 +0800">
     <title lang="en">The Iconic</title>
@@ -55524,7 +55907,17 @@
     <category lang="en">Documentary</category>
     <icon src="http://dtil.tmsimg.com/assets/p30663069_b_h10_aa.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261023090000 +0800" stop="20261023100000 +0800">
+  <programme channel="WNBC-LA.us" start="20261023090000 +0800" stop="20261023093000 +0800">
+    <title lang="en">NBC 4 News at 6pm</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p12394505_b_h10_aa.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261023090000 +0800" stop="20261023093000 +0800">
+    <title lang="en">NBC Bay Area News at 6</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p8776722_b_h10_ad.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-NY.us" start="20261023090000 +0800" stop="20261023100000 +0800">
     <title lang="en">Law &amp; Order: Special Victims Unit</title>
     <sub-title lang="en">Anonymity</sub-title>
     <category lang="en">Series</category>
@@ -55540,6 +55933,16 @@
     <category lang="en">Special</category>
     <icon src="http://dtil.tmsimg.com/assets/p901852_b_h8_ac.jpg?w=960&amp;h=540" />
   </programme>
+  <programme channel="WNBC-LA.us" start="20261023093000 +0800" stop="20261023100000 +0800">
+    <title lang="en">NBC Nightly News With Tom Llamas</title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p30141511_b_h8_aa.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261023093000 +0800" stop="20261023100000 +0800">
+    <title lang="en">NBC Nightly News With Tom Llamas</title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p30141511_b_h8_aa.jpg?w=960&amp;h=540" />
+  </programme>
   <programme channel="NBCSpBay.us" start="20261023093000 +0800" stop="20261023100000 +0800">
     <title lang="en">The Swing Clinic</title>
     <category lang="en">Golf</category>
@@ -55549,6 +55952,16 @@
     <title lang="en">Sixers Postgame Live</title>
     <category lang="en">Basketball</category>
     <icon src="http://dtil.tmsimg.com/assets/p906591_b_h10_aa.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261023100000 +0800" stop="20261023103000 +0800">
+    <title lang="en">NBC Bay Area News Tonight</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p20036151_b_h10_aa.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-LA.us" start="20261023100000 +0800" stop="20261023103000 +0800">
+    <title lang="en">NBC4 News at 7 PM</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p18102973_b_h10_ab.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpCali.us" start="20261023100000 +0800" stop="20261023103000 +0800">
     <title lang="en">Outdoor Eats</title>
@@ -55561,7 +55974,7 @@
     <category lang="en">Entertainment</category>
     <icon src="http://dtil.tmsimg.com/assets/p16484812_b_h10_aa.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261023100000 +0800" stop="20261023110000 +0800">
+  <programme channel="WNBC-NY.us" start="20261023100000 +0800" stop="20261023110000 +0800">
     <title lang="en">Law &amp; Order</title>
     <sub-title lang="en">Bad News</sub-title>
     <category lang="en">Series</category>
@@ -55576,6 +55989,16 @@
     <title lang="en">Birds Huddle</title>
     <category lang="en">Football</category>
     <icon src="http://dtil.tmsimg.com/assets/p22078694_b_h10_aa.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-LA.us" start="20261023103000 +0800" stop="20261023110000 +0800">
+    <title lang="en">Hollywood ReelTime</title>
+    <category lang="en">Community</category>
+    <icon src="http://dtil.tmsimg.com/assets/p33972797_b_h10_ab.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261023103000 +0800" stop="20261023110000 +0800">
+    <title lang="en">Hollywood ReelTime</title>
+    <category lang="en">Community</category>
+    <icon src="http://dtil.tmsimg.com/assets/p33972797_b_h10_ab.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpBos.us" start="20261023103000 +0800" stop="20261023110000 +0800">
     <title lang="en">Pure Outdoor</title>
@@ -55608,7 +56031,7 @@
     <category lang="en">Sports talk</category>
     <icon src="http://dtil.tmsimg.com/assets/p22932616_b_h10_aa.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261023110000 +0800" stop="20261023113400 +0800">
+  <programme channel="WNBC-NY.us" start="20261023110000 +0800" stop="20261023113400 +0800">
     <title lang="en">Live: News 4 NY at 11</title>
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p10513206_b_h10_ae.jpg?w=960&amp;h=540" />
@@ -55617,6 +56040,18 @@
     <title lang="en">Noticiero Telemundo 51 11PM</title>
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p14266287_b_h10_aa.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-LA.us" start="20261023110000 +0800" stop="20261023120000 +0800">
+    <title lang="en">The Traitors</title>
+    <sub-title lang="en">It's Like Fighting Two Pigs Under a Blanket</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p23661880_b_h8_as.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261023110000 +0800" stop="20261023120000 +0800">
+    <title lang="en">The Traitors</title>
+    <sub-title lang="en">It's Like Fighting Two Pigs Under a Blanket</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p23661880_b_h8_as.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpCali.us" start="20261023113000 +0800" stop="20261023120000 +0800">
     <title lang="en">Hot Sheet by Baseball America</title>
@@ -55633,7 +56068,7 @@
     <category lang="en">Basketball</category>
     <icon src="http://dtil.tmsimg.com/assets/p906591_b_h10_aa.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261023113400 +0800" stop="20261023123700 +0800">
+  <programme channel="WNBC-NY.us" start="20261023113400 +0800" stop="20261023123700 +0800">
     <title lang="en">The Tonight Show Starring Jimmy Fallon</title>
     <sub-title lang="en">Kristen Bell; Joe Manganiello</sub-title>
     <category lang="en">Series</category>
@@ -55653,6 +56088,18 @@
     <title lang="en">The ball</title>
     <category lang="en">Series</category>
     <icon src="http://dtil.tmsimg.com/assets/p29532471_b_h10_aa.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-LA.us" start="20261023120000 +0800" stop="20261023130000 +0800">
+    <title lang="en">Law &amp; Order: Special Victims Unit</title>
+    <sub-title lang="en">Anonymity</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p33616434_b_h8_ag.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261023120000 +0800" stop="20261023130000 +0800">
+    <title lang="en">Law &amp; Order: Special Victims Unit</title>
+    <sub-title lang="en">Anonymity</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p33616434_b_h8_ag.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpCali.us" start="20261023120000 +0800" stop="20261023140000 +0800">
     <title lang="en">NHL Hockey</title>
@@ -55680,7 +56127,7 @@
     <category lang="en">Series</category>
     <icon src="http://dtil.tmsimg.com/assets/p33501073_b_h10_ab.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261023123700 +0800" stop="20261023133700 +0800">
+  <programme channel="WNBC-NY.us" start="20261023123700 +0800" stop="20261023133700 +0800">
     <title lang="en">Late Night With Seth Meyers</title>
     <sub-title lang="en">Helen Mirren; John Turturro</sub-title>
     <category lang="en">Series</category>
@@ -55695,6 +56142,18 @@
     <title lang="en">The Short List</title>
     <category lang="en">Entertainment</category>
     <icon src="http://dtil.tmsimg.com/assets/p16484812_b_h10_aa.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-LA.us" start="20261023130000 +0800" stop="20261023140000 +0800">
+    <title lang="en">Law &amp; Order</title>
+    <sub-title lang="en">Bad News</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p183983_b_h8_cg.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261023130000 +0800" stop="20261023140000 +0800">
+    <title lang="en">Law &amp; Order</title>
+    <sub-title lang="en">Bad News</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p183983_b_h8_cg.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpBos.us" start="20261023130000 +0800" stop="20261023140000 +0800">
     <title lang="en">World Poker Tour</title>
@@ -55718,7 +56177,7 @@
     <category lang="en">Consumer</category>
     <icon src="http://dtil.tmsimg.com/assets/p459763_b_h8_bq.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261023133700 +0800" stop="20261023141200 +0800">
+  <programme channel="WNBC-NY.us" start="20261023133700 +0800" stop="20261023141200 +0800">
     <title lang="en">News 4 NY at 11</title>
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p10513206_b_h10_ae.jpg?w=960&amp;h=540" />
@@ -55743,7 +56202,17 @@
     <category lang="en">Special</category>
     <icon src="http://dtil.tmsimg.com/assets/p901852_b_h8_ac.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261023141200 +0800" stop="20261023144200 +0800">
+  <programme channel="KNTV.us" start="20261023140000 +0800" stop="20261023143400 +0800">
+    <title lang="en">NBC Bay Area News at 11</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p8288160_b_h10_aa.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-LA.us" start="20261023140000 +0800" stop="20261023143400 +0800">
+    <title lang="en">NBC4 News at 11pm</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p8781143_b_h10_ad.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-NY.us" start="20261023141200 +0800" stop="20261023144200 +0800">
     <title lang="en">NBC Nightly News With Tom Llamas</title>
     <category lang="en">Series</category>
     <icon src="http://dtil.tmsimg.com/assets/p30141511_b_h8_aa.jpg?w=960&amp;h=540" />
@@ -55769,7 +56238,19 @@
     <category lang="en">Consumer</category>
     <icon src="http://dtil.tmsimg.com/assets/p459763_b_h8_bs.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261023144200 +0800" stop="20261023153000 +0800">
+  <programme channel="WNBC-LA.us" start="20261023143400 +0800" stop="20261023153700 +0800">
+    <title lang="en">The Tonight Show Starring Jimmy Fallon</title>
+    <sub-title lang="en">Kristen Bell; Joe Manganiello</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p9898935_b_h8_am.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261023143400 +0800" stop="20261023153700 +0800">
+    <title lang="en">The Tonight Show Starring Jimmy Fallon</title>
+    <sub-title lang="en">Kristen Bell; Joe Manganiello</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p9898935_b_h8_am.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-NY.us" start="20261023144200 +0800" stop="20261023153000 +0800">
     <title lang="en">Top Story With Tom Llamas</title>
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p23722920_b_h8_aa.jpg?w=960&amp;h=540" />
@@ -55799,7 +56280,7 @@
     <category lang="en">Football</category>
     <icon src="http://dtil.tmsimg.com/assets/p31065351_b_h8_aa.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261023153000 +0800" stop="20261023160000 +0800">
+  <programme channel="WNBC-NY.us" start="20261023153000 +0800" stop="20261023160000 +0800">
     <title lang="en">New York Live Tonight</title>
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p34032729_b_h10_ab.jpg?w=960&amp;h=540" />
@@ -55814,7 +56295,19 @@
     <category lang="en">Consumer</category>
     <icon src="http://dtil.tmsimg.com/assets/p459763_b_h8_bs.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261023160000 +0800" stop="20261023163000 +0800">
+  <programme channel="WNBC-LA.us" start="20261023153700 +0800" stop="20261023163700 +0800">
+    <title lang="en">Late Night With Seth Meyers</title>
+    <sub-title lang="en">Helen Mirren; John Turturro</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p34108821_b_h8_ab.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261023153700 +0800" stop="20261023163700 +0800">
+    <title lang="en">Late Night With Seth Meyers</title>
+    <sub-title lang="en">Helen Mirren; John Turturro</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p34108821_b_h8_ab.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-NY.us" start="20261023160000 +0800" stop="20261023163000 +0800">
     <title lang="en">Early Today</title>
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p185301_b_h8_ah.jpg?w=960&amp;h=540" />
@@ -55839,10 +56332,20 @@
     <category lang="en">Consumer</category>
     <icon src="http://dtil.tmsimg.com/assets/p459763_b_h8_bq.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261023163000 +0800" stop="20261023170000 +0800">
+  <programme channel="WNBC-NY.us" start="20261023163000 +0800" stop="20261023170000 +0800">
     <title lang="en">Today in New York</title>
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p960598_b_h10_ac.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261023163700 +0800" stop="20261023171200 +0800">
+    <title lang="en">NBC Bay Area News at 11</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p8288160_b_h10_aa.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-LA.us" start="20261023163700 +0800" stop="20261023171200 +0800">
+    <title lang="en">NBC4 News at 11pm</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p8781143_b_h10_ad.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpBay.us" start="20261023170000 +0800" stop="20261023173000 +0800">
     <title lang="en">49ers Press Conference Live</title>
@@ -55864,10 +56367,20 @@
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p13193432_b_h10_ab.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261023170000 +0800" stop="20261023180000 +0800">
+  <programme channel="WNBC-NY.us" start="20261023170000 +0800" stop="20261023180000 +0800">
     <title lang="en">Today in New York</title>
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p960598_b_h10_ac.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-LA.us" start="20261023171200 +0800" stop="20261023174200 +0800">
+    <title lang="en">NBC Nightly News With Tom Llamas</title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p30141511_b_h8_aa.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261023171200 +0800" stop="20261023174200 +0800">
+    <title lang="en">NBC Nightly News With Tom Llamas</title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p30141511_b_h8_aa.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpBay.us" start="20261023173000 +0800" stop="20261023180000 +0800">
     <title lang="en">Inside Cal Football</title>
@@ -55883,6 +56396,16 @@
     <title lang="en">Paid Programming</title>
     <category lang="en">Consumer</category>
     <icon src="http://dtil.tmsimg.com/assets/p459763_b_h8_bq.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-LA.us" start="20261023174200 +0800" stop="20261023183000 +0800">
+    <title lang="en">Top Story With Tom Llamas</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p23722920_b_h8_aa.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261023174200 +0800" stop="20261023183000 +0800">
+    <title lang="en">Top Story With Tom Llamas</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p23722920_b_h8_aa.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpBay.us" start="20261023180000 +0800" stop="20261023183000 +0800">
     <title lang="en">Paid Programming</title>
@@ -55909,7 +56432,7 @@
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p13193432_b_h10_ab.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261023180000 +0800" stop="20261023190000 +0800">
+  <programme channel="WNBC-NY.us" start="20261023180000 +0800" stop="20261023190000 +0800">
     <title lang="en">Today in New York @ 6AM</title>
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p24315242_b_h10_aa.jpg?w=960&amp;h=540" />
@@ -55925,6 +56448,16 @@
     <category lang="en">Football</category>
     <icon src="http://dtil.tmsimg.com/assets/p23908168_b_h8_aa.jpg?w=960&amp;h=540" />
   </programme>
+  <programme channel="WNBC-LA.us" start="20261023183000 +0800" stop="20261023190000 +0800">
+    <title lang="en">Early Today</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p185301_b_h8_ah.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261023183000 +0800" stop="20261023190000 +0800">
+    <title lang="en">Early Today</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p185301_b_h8_ah.jpg?w=960&amp;h=540" />
+  </programme>
   <programme channel="NBCSpBay.us" start="20261023183000 +0800" stop="20261023190000 +0800">
     <title lang="en">Paid Programming</title>
     <category lang="en">Consumer</category>
@@ -55939,6 +56472,16 @@
     <title lang="en">A Fishing Story With Ronnie Green</title>
     <category lang="en">Fishing</category>
     <icon src="http://dtil.tmsimg.com/assets/p12966305_b_h8_ae.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261023190000 +0800" stop="20261023193000 +0800">
+    <title lang="en">Early Today</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p185301_b_h8_ah.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-LA.us" start="20261023190000 +0800" stop="20261023193000 +0800">
+    <title lang="en">Today in LA @ 4AM</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p18627049_b_h10_ab.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpBos.us" start="20261023190000 +0800" stop="20261023200000 +0800">
     <title lang="en">Postgame Live</title>
@@ -55961,15 +56504,25 @@
     <category lang="en">Series</category>
     <icon src="http://dtil.tmsimg.com/assets/p9112528_b_h8_aa.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261023190000 +0800" stop="20261023210000 +0800">
+  <programme channel="WNBC-NY.us" start="20261023190000 +0800" stop="20261023210000 +0800">
     <title lang="en">Today</title>
     <category lang="en">Series</category>
     <icon src="http://dtil.tmsimg.com/assets/p184072_b_h8_ag.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261023193000 +0800" stop="20261023200000 +0800">
+    <title lang="en">Early Today</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p185301_b_h8_ah.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpCali.us" start="20261023193000 +0800" stop="20261023200000 +0800">
     <title lang="en">Florida Adventure Quest</title>
     <category lang="en">Nature</category>
     <icon src="http://dtil.tmsimg.com/assets/p33776046_b_h8_aa.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-LA.us" start="20261023193000 +0800" stop="20261023200000 +0800">
+    <title lang="en">Today in LA @ 4:30AM</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p18627053_b_h10_ab.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpCali.us" start="20261023200000 +0800" stop="20261023203000 +0800">
     <title lang="en">Angler West</title>
@@ -55990,6 +56543,16 @@
     <title lang="en">SportsNet Central</title>
     <category lang="en">Sports talk</category>
     <icon src="http://dtil.tmsimg.com/assets/p915764_b_h10_ad.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-LA.us" start="20261023200000 +0800" stop="20261023210000 +0800">
+    <title lang="en">Today in LA @ 5AM</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p18627056_b_h10_ab.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261023200000 +0800" stop="20261023210000 +0800">
+    <title lang="en">Today in the Bay</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p8288104_b_h8_ad.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="WSCV.us" start="20261023200000 +0800" stop="20261023233000 +0800">
     <title lang="en">Today</title>
@@ -56021,10 +56584,20 @@
     <category lang="en">Sports talk</category>
     <icon src="http://dtil.tmsimg.com/assets/p915764_b_h10_ad.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261023210000 +0800" stop="20261023220000 +0800">
+  <programme channel="WNBC-NY.us" start="20261023210000 +0800" stop="20261023220000 +0800">
     <title lang="en">Today 3rd Hour</title>
     <category lang="en">Series</category>
     <icon src="http://dtil.tmsimg.com/assets/p16183023_b_h8_af.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-LA.us" start="20261023210000 +0800" stop="20261023220000 +0800">
+    <title lang="en">Today in LA @ 6AM</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p18627061_b_h10_ab.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261023210000 +0800" stop="20261023220000 +0800">
+    <title lang="en">Today in the Bay</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p8288104_b_h8_ad.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpCali.us" start="20261023210000 +0800" stop="20261023230000 +0800">
     <title lang="en">NHL Hockey</title>
@@ -56046,10 +56619,20 @@
     <category lang="en">Sports talk</category>
     <icon src="http://dtil.tmsimg.com/assets/p915764_b_h10_ad.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261023220000 +0800" stop="20261023230000 +0800">
+  <programme channel="WNBC-NY.us" start="20261023220000 +0800" stop="20261023230000 +0800">
     <title lang="en">Today With Jenna &amp; Sheinelle</title>
     <category lang="en">Series</category>
     <icon src="http://dtil.tmsimg.com/assets/p31933422_b_h8_ae.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-LA.us" start="20261023220000 +0800" stop="20261024000000 +0800">
+    <title lang="en">Today</title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p184072_b_h8_ag.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261023220000 +0800" stop="20261024000000 +0800">
+    <title lang="en">Today</title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p184072_b_h8_ag.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpBos.us" start="20261023220000 +0800" stop="20261024020000 +0800">
     <title lang="en">Live: Zolak and Bertrand</title>
@@ -56061,7 +56644,7 @@
     <category lang="en">Football</category>
     <icon src="http://dtil.tmsimg.com/assets/p31065351_b_h8_aa.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261023230000 +0800" stop="20261023233000 +0800">
+  <programme channel="WNBC-NY.us" start="20261023230000 +0800" stop="20261023233000 +0800">
     <title lang="en">Live: News 4 NY at 11AM</title>
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p10513203_b_h10_ae.jpg?w=960&amp;h=540" />
@@ -56091,7 +56674,7 @@
     <category lang="en">Newsmagazine</category>
     <icon src="http://dtil.tmsimg.com/assets/p8340806_b_h8_ae.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261023233000 +0800" stop="20261024000000 +0800">
+  <programme channel="WNBC-NY.us" start="20261023233000 +0800" stop="20261024000000 +0800">
     <title lang="en">New York Live</title>
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p8692580_b_h8_ac.jpg?w=960&amp;h=540" />
@@ -56111,10 +56694,20 @@
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p24581570_b_h10_ab.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261024000000 +0800" stop="20261024010000 +0800">
+  <programme channel="WNBC-NY.us" start="20261024000000 +0800" stop="20261024010000 +0800">
     <title lang="en">NBC News Daily</title>
     <category lang="en">Series</category>
     <icon src="http://dtil.tmsimg.com/assets/p22712535_b_h8_ad.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-LA.us" start="20261024000000 +0800" stop="20261024010000 +0800">
+    <title lang="en">Today 3rd Hour</title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p16183023_b_h8_af.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261024000000 +0800" stop="20261024010000 +0800">
+    <title lang="en">Today 3rd Hour</title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p16183023_b_h8_af.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpCali.us" start="20261024000000 +0800" stop="20261024020000 +0800">
     <title lang="en">NHL Hockey</title>
@@ -56146,11 +56739,21 @@
     <category lang="en">Series</category>
     <icon src="http://dtil.tmsimg.com/assets/p18150635_b_h8_af.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261024010000 +0800" stop="20261024020000 +0800">
+  <programme channel="WNBC-NY.us" start="20261024010000 +0800" stop="20261024020000 +0800">
     <title lang="en">Dateline</title>
     <sub-title lang="en">A Brother's Secret</sub-title>
     <category lang="en">Series</category>
     <icon src="http://dtil.tmsimg.com/assets/p31054010_b_h10_aa.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-LA.us" start="20261024010000 +0800" stop="20261024020000 +0800">
+    <title lang="en">Today With Jenna &amp; Sheinelle</title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p31933422_b_h8_ae.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261024010000 +0800" stop="20261024020000 +0800">
+    <title lang="en">Today With Jenna &amp; Sheinelle</title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p31933422_b_h8_ae.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpBay.us" start="20261024013000 +0800" stop="20261024020000 +0800">
     <title lang="en">Inside Cal Football</title>
@@ -56162,6 +56765,11 @@
     <category lang="en">Consumer</category>
     <icon src="http://dtil.tmsimg.com/assets/p26665262_b_h8_aa.jpg?w=960&amp;h=540" />
   </programme>
+  <programme channel="KNTV.us" start="20261024020000 +0800" stop="20261024023000 +0800">
+    <title lang="en">NBC Bay Area News at 11</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p8288160_b_h10_aa.jpg?w=960&amp;h=540" />
+  </programme>
   <programme channel="NBCSpBay.us" start="20261024020000 +0800" stop="20261024023000 +0800">
     <title lang="en">Paid Programming</title>
     <category lang="en">Consumer</category>
@@ -56172,10 +56780,15 @@
     <category lang="en">Series</category>
     <icon src="http://dtil.tmsimg.com/assets/p18150635_b_h8_af.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261024020000 +0800" stop="20261024030000 +0800">
+  <programme channel="WNBC-NY.us" start="20261024020000 +0800" stop="20261024030000 +0800">
     <title lang="en">NBC News Daily</title>
     <category lang="en">Series</category>
     <icon src="http://dtil.tmsimg.com/assets/p22712535_b_h8_ad.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-LA.us" start="20261024020000 +0800" stop="20261024030000 +0800">
+    <title lang="en">NBC4 News at 11am</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p12892190_b_h10_ad.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpBos.us" start="20261024020000 +0800" stop="20261024060000 +0800">
     <title lang="en">Live: Felger &amp; Mazz Radio</title>
@@ -56186,6 +56799,11 @@
     <title lang="en">Live: Unfiltered with Ricky Bo and Bill Colarulo</title>
     <category lang="en">Sports talk</category>
     <icon src="http://dtil.tmsimg.com/assets/p30392222_b_h10_aa.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261024023000 +0800" stop="20261024030000 +0800">
+    <title lang="en">Hollywood ReelTime</title>
+    <category lang="en">Community</category>
+    <icon src="http://dtil.tmsimg.com/assets/p33844225_b_h10_ab.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpBay.us" start="20261024023000 +0800" stop="20261024030000 +0800">
     <title lang="en">Paid Programming</title>
@@ -56207,10 +56825,20 @@
     <category lang="en">Consumer</category>
     <icon src="http://dtil.tmsimg.com/assets/p26665262_b_h8_aa.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261024030000 +0800" stop="20261024040000 +0800">
+  <programme channel="WNBC-NY.us" start="20261024030000 +0800" stop="20261024040000 +0800">
     <title lang="en">Live: News Zone</title>
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p30135145_b_h10_ad.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-LA.us" start="20261024030000 +0800" stop="20261024040000 +0800">
+    <title lang="en">NBC News Daily</title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p22712535_b_h8_ad.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261024030000 +0800" stop="20261024040000 +0800">
+    <title lang="en">NBC News Daily</title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p22712535_b_h8_ad.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="WSCV.us" start="20261024030000 +0800" stop="20261024040000 +0800">
     <title lang="en">On the hot table)</title>
@@ -56227,7 +56855,12 @@
     <category lang="en">Football</category>
     <icon src="http://dtil.tmsimg.com/assets/p23908168_b_h8_aa.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261024040000 +0800" stop="20261024043000 +0800">
+  <programme channel="WNBC-LA.us" start="20261024040000 +0800" stop="20261024043000 +0800">
+    <title lang="en">Hollywood ReelTime</title>
+    <category lang="en">Community</category>
+    <icon src="http://dtil.tmsimg.com/assets/p33972797_b_h10_ab.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-NY.us" start="20261024040000 +0800" stop="20261024043000 +0800">
     <title lang="en">Live: News 4 NY at 4</title>
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p12736826_b_h10_ae.jpg?w=960&amp;h=540" />
@@ -56236,6 +56869,12 @@
     <title lang="en">Paid Programming</title>
     <category lang="en">Consumer</category>
     <icon src="http://dtil.tmsimg.com/assets/p459763_b_h8_bq.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261024040000 +0800" stop="20261024050000 +0800">
+    <title lang="en">Dateline</title>
+    <sub-title lang="en">A Brother's Secret</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p31054010_b_h10_aa.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="WSCV.us" start="20261024040000 +0800" stop="20261024050000 +0800">
     <title lang="en">Hot to Burn</title>
@@ -56252,12 +56891,17 @@
     <category lang="en">Football</category>
     <icon src="http://dtil.tmsimg.com/assets/p31065351_b_h8_aa.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261024043000 +0800" stop="20261024050000 +0800">
+  <programme channel="WNBC-NY.us" start="20261024043000 +0800" stop="20261024050000 +0800">
     <title lang="en">Live: News 4 NY at 4:30</title>
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p14883147_b_h10_ab.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261024050000 +0800" stop="20261024053000 +0800">
+  <programme channel="WNBC-LA.us" start="20261024043000 +0800" stop="20261024050000 +0800">
+    <title lang="en">NBC4 News Zone Live</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p33962717_b_h8_aa.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-NY.us" start="20261024050000 +0800" stop="20261024053000 +0800">
     <title lang="en">Live: News 4 NY at 5</title>
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p8846204_b_h10_ae.jpg?w=960&amp;h=540" />
@@ -56272,10 +56916,21 @@
     <category lang="en">Consumer</category>
     <icon src="http://dtil.tmsimg.com/assets/p459763_b_h8_bq.jpg?w=960&amp;h=540" />
   </programme>
+  <programme channel="WNBC-LA.us" start="20261024050000 +0800" stop="20261024060000 +0800">
+    <title lang="en">Dateline</title>
+    <sub-title lang="en">A Brother's Secret</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p31054010_b_h10_aa.jpg?w=960&amp;h=540" />
+  </programme>
   <programme channel="NBCSpBay.us" start="20261024050000 +0800" stop="20261024060000 +0800">
     <title lang="en">Diggin' Deep</title>
     <category lang="en">Baseball</category>
     <icon src="http://dtil.tmsimg.com/assets/p29498577_b_h10_ac.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261024050000 +0800" stop="20261024060000 +0800">
+    <title lang="en">Hallie Jackson NOW</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p20861983_b_h8_aa.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="TC.us" start="20261024050000 +0800" stop="20261024110000 +0800">
     <title lang="en">Center Court</title>
@@ -56283,7 +56938,7 @@
     <category lang="en">Series</category>
     <icon src="http://dtil.tmsimg.com/assets/p615474_b_h8_ad.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261024053000 +0800" stop="20261024060000 +0800">
+  <programme channel="WNBC-NY.us" start="20261024053000 +0800" stop="20261024060000 +0800">
     <title lang="en">Live: News 4 NY at 5:30</title>
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p14883149_b_h10_ac.jpg?w=960&amp;h=540" />
@@ -56308,10 +56963,15 @@
     <category lang="en">Football</category>
     <icon src="http://dtil.tmsimg.com/assets/p22078694_b_h10_aa.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261024060000 +0800" stop="20261024063000 +0800">
+  <programme channel="WNBC-NY.us" start="20261024060000 +0800" stop="20261024063000 +0800">
     <title lang="en">Live: News 4 NY at 6</title>
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p8846208_b_h10_ae.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-LA.us" start="20261024060000 +0800" stop="20261024063000 +0800">
+    <title lang="en">NBC4 News at 3pm</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p15054848_b_h10_aa.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="WSCV.us" start="20261024060000 +0800" stop="20261024063000 +0800">
     <title lang="en">Noticiero Telemundo 51 6PM</title>
@@ -56323,6 +56983,11 @@
     <category lang="en">Basketball</category>
     <icon src="http://dtil.tmsimg.com/assets/p615357_b_h10_ad.jpg?w=960&amp;h=540" />
   </programme>
+  <programme channel="KNTV.us" start="20261024060000 +0800" stop="20261024070000 +0800">
+    <title lang="en">NBC Bay Area News at 3</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p25180705_b_h10_aa.jpg?w=960&amp;h=540" />
+  </programme>
   <programme channel="NBCSpCali.us" start="20261024060000 +0800" stop="20261024080000 +0800">
     <title lang="en">NHL Hockey</title>
     <category lang="en">Sports</category>
@@ -56333,7 +56998,12 @@
     <category lang="en">Baseball</category>
     <icon src="http://dtil.tmsimg.com/assets/p30840598_b_h8_aa.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261024063000 +0800" stop="20261024070000 +0800">
+  <programme channel="WNBC-NY.us" start="20261024063000 +0800" stop="20261024070000 +0800">
+    <title lang="en">NBC Nightly News With Tom Llamas</title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p30141511_b_h8_aa.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-LA.us" start="20261024063000 +0800" stop="20261024070000 +0800">
     <title lang="en">NBC Nightly News With Tom Llamas</title>
     <category lang="en">Series</category>
     <icon src="http://dtil.tmsimg.com/assets/p30141511_b_h8_aa.jpg?w=960&amp;h=540" />
@@ -56348,7 +57018,7 @@
     <category lang="en">Football</category>
     <icon src="http://dtil.tmsimg.com/assets/p33608406_b_h10_ab.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261024070000 +0800" stop="20261024071500 +0800">
+  <programme channel="WNBC-NY.us" start="20261024070000 +0800" stop="20261024071500 +0800">
     <title lang="en">News 4 NY at 7</title>
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p18101773_b_h10_ad.jpg?w=960&amp;h=540" />
@@ -56358,10 +57028,20 @@
     <category lang="en">Football</category>
     <icon src="http://dtil.tmsimg.com/assets/p31578676_i_h8_aa.jpg?w=960&amp;h=540" />
   </programme>
+  <programme channel="KNTV.us" start="20261024070000 +0800" stop="20261024073000 +0800">
+    <title lang="en">NBC Nightly News With Tom Llamas</title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p30141511_b_h8_aa.jpg?w=960&amp;h=540" />
+  </programme>
   <programme channel="NBCSpBos.us" start="20261024070000 +0800" stop="20261024073000 +0800">
     <title lang="en">Pure Outdoor</title>
     <category lang="en">Outdoors</category>
     <icon src="http://dtil.tmsimg.com/assets/p17303222_b_h10_aa.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-LA.us" start="20261024070000 +0800" stop="20261024080000 +0800">
+    <title lang="en">NBC4 News at 4pm</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p9358491_b_h10_ae.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpBay.us" start="20261024070000 +0800" stop="20261024080000 +0800">
     <title lang="en">World Poker Tour</title>
@@ -56374,12 +57054,17 @@
     <category lang="en">Competition Reality</category>
     <icon src="http://dtil.tmsimg.com/assets/p33914243_b_h8_ab.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261024071500 +0800" stop="20261024073000 +0800">
+  <programme channel="WNBC-NY.us" start="20261024071500 +0800" stop="20261024073000 +0800">
     <title lang="en">Good Seats</title>
     <category lang="en">Special</category>
     <icon src="http://dtil.tmsimg.com/assets/p34082189_st_h10_aa.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261024073000 +0800" stop="20261024080000 +0800">
+  <programme channel="KNTV.us" start="20261024073000 +0800" stop="20261024080000 +0800">
+    <title lang="en">NBC Bay Area News at 4:30</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p816178_b_h10_ab.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-NY.us" start="20261024073000 +0800" stop="20261024080000 +0800">
     <title lang="en">New York Live Tonight</title>
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p34032729_b_h10_ab.jpg?w=960&amp;h=540" />
@@ -56409,11 +57094,21 @@
     <category lang="en">Baseball</category>
     <icon src="http://dtil.tmsimg.com/assets/p30123162_b_h8_aa.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261024080000 +0800" stop="20261024083000 +0800">
+  <programme channel="WNBC-NY.us" start="20261024080000 +0800" stop="20261024083000 +0800">
     <title lang="en">Happy's Place</title>
     <sub-title lang="en">Office/Space</sub-title>
     <category lang="en">Series</category>
     <icon src="http://dtil.tmsimg.com/assets/p33832021_b_h8_ab.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261024080000 +0800" stop="20261024083000 +0800">
+    <title lang="en">NBC Bay Area News at 5</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p8776719_b_h10_ad.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-LA.us" start="20261024080000 +0800" stop="20261024090000 +0800">
+    <title lang="en">NBC4 News at 5pm</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p8781144_b_h10_ad.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpCali.us" start="20261024083000 +0800" stop="20261024090000 +0800">
     <title lang="en">Hot Sheet by Baseball America</title>
@@ -56431,11 +57126,26 @@
     <category lang="en">Series</category>
     <icon src="http://dtil.tmsimg.com/assets/p256835_b_h8_aa.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261024083000 +0800" stop="20261024090100 +0800">
+  <programme channel="KNTV.us" start="20261024083000 +0800" stop="20261024090000 +0800">
+    <title lang="en">NBC Bay Area News at 5:30</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p15533330_b_h10_aa.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-NY.us" start="20261024083000 +0800" stop="20261024090100 +0800">
     <title lang="en">Newlyweds</title>
     <sub-title lang="en">Pilot</sub-title>
     <category lang="en">Series</category>
     <icon src="http://dtil.tmsimg.com/assets/p33832078_b_h8_aa.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-LA.us" start="20261024090000 +0800" stop="20261024093000 +0800">
+    <title lang="en">NBC 4 News at 6pm</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p12394505_b_h10_aa.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261024090000 +0800" stop="20261024093000 +0800">
+    <title lang="en">NBC Bay Area News at 6</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p8776722_b_h10_ad.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpBos.us" start="20261024090000 +0800" stop="20261024093000 +0800">
     <title lang="en">The Short List</title>
@@ -56458,7 +57168,7 @@
     <category lang="en">Basketball</category>
     <icon src="http://dtil.tmsimg.com/assets/p24675410_b_h10_aa.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261024090100 +0800" stop="20261024110000 +0800">
+  <programme channel="WNBC-NY.us" start="20261024090100 +0800" stop="20261024110000 +0800">
     <title lang="en">Dateline NBC</title>
     <category lang="en">Newsmagazine</category>
     <icon src="http://dtil.tmsimg.com/assets/p27896067_b_h8_ab.jpg?w=960&amp;h=540" />
@@ -56467,6 +57177,16 @@
     <title lang="en">Celtics Postgame Live</title>
     <category lang="en">Basketball</category>
     <icon src="http://dtil.tmsimg.com/assets/p615355_b_h10_ad.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-LA.us" start="20261024093000 +0800" stop="20261024100000 +0800">
+    <title lang="en">NBC Nightly News With Tom Llamas</title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p30141511_b_h8_aa.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261024093000 +0800" stop="20261024100000 +0800">
+    <title lang="en">NBC Nightly News With Tom Llamas</title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p30141511_b_h8_aa.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpPhilly.us" start="20261024100000 +0800" stop="20261024103000 +0800">
     <title lang="en">Birds Huddle</title>
@@ -56477,6 +57197,16 @@
     <title lang="en">Live: Celtics Postgame Plus</title>
     <category lang="en">Basketball</category>
     <icon src="http://dtil.tmsimg.com/assets/p13677432_b_h10_ab.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261024100000 +0800" stop="20261024103000 +0800">
+    <title lang="en">NBC Bay Area News Tonight</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p20036151_b_h10_aa.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-LA.us" start="20261024100000 +0800" stop="20261024103000 +0800">
+    <title lang="en">NBC4 News at 7 PM</title>
+    <category lang="en">News</category>
+    <icon src="http://dtil.tmsimg.com/assets/p18102973_b_h10_ab.jpg?w=960&amp;h=540" />
   </programme>
   <programme channel="NBCSpCali.us" start="20261024100000 +0800" stop="20261024103000 +0800">
     <title lang="en">USA Fencing</title>
@@ -56498,6 +57228,16 @@
     <category lang="en">Football</category>
     <icon src="http://dtil.tmsimg.com/assets/p31578676_i_h8_aa.jpg?w=960&amp;h=540" />
   </programme>
+  <programme channel="WNBC-LA.us" start="20261024103000 +0800" stop="20261024110000 +0800">
+    <title lang="en">Hollywood ReelTime</title>
+    <category lang="en">Community</category>
+    <icon src="http://dtil.tmsimg.com/assets/p33972797_b_h10_ab.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261024103000 +0800" stop="20261024110000 +0800">
+    <title lang="en">Hollywood ReelTime</title>
+    <category lang="en">Community</category>
+    <icon src="http://dtil.tmsimg.com/assets/p33972797_b_h10_ab.jpg?w=960&amp;h=540" />
+  </programme>
   <programme channel="NBCSpCali.us" start="20261024103000 +0800" stop="20261024110000 +0800">
     <title lang="en">Inside Cal Football</title>
     <category lang="en">Football</category>
@@ -56513,6 +57253,18 @@
     <category lang="en">Series</category>
     <icon src="http://dtil.tmsimg.com/assets/p34000302_b_h10_ab.jpg?w=960&amp;h=540" />
   </programme>
+  <programme channel="WNBC-LA.us" start="20261024110000 +0800" stop="20261024113000 +0800">
+    <title lang="en">Happy's Place</title>
+    <sub-title lang="en">Office/Space</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p33832021_b_h8_ab.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261024110000 +0800" stop="20261024113000 +0800">
+    <title lang="en">Happy's Place</title>
+    <sub-title lang="en">Office/Space</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p33832021_b_h8_ab.jpg?w=960&amp;h=540" />
+  </programme>
   <programme channel="NBCSpBos.us" start="20261024110000 +0800" stop="20261024113000 +0800">
     <title lang="en">Live: Quick Slants</title>
     <category lang="en">Football</category>
@@ -56523,7 +57275,7 @@
     <category lang="en">Football</category>
     <icon src="http://dtil.tmsimg.com/assets/p469386_b_h10_ab.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261024110000 +0800" stop="20261024113400 +0800">
+  <programme channel="WNBC-NY.us" start="20261024110000 +0800" stop="20261024113400 +0800">
     <title lang="en">Live: News 4 NY at 11</title>
     <category lang="en">News</category>
     <icon src="http://dtil.tmsimg.com/assets/p10513206_b_h10_ae.jpg?w=960&amp;h=540" />
@@ -56554,7 +57306,19 @@
     <category lang="en">Football</category>
     <icon src="http://dtil.tmsimg.com/assets/p33608406_b_h10_ab.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261024113400 +0800" stop="20261024123700 +0800">
+  <programme channel="WNBC-LA.us" start="20261024113000 +0800" stop="20261024120100 +0800">
+    <title lang="en">Newlyweds</title>
+    <sub-title lang="en">Pilot</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p33832078_b_h8_aa.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261024113000 +0800" stop="20261024120100 +0800">
+    <title lang="en">Newlyweds</title>
+    <sub-title lang="en">Pilot</sub-title>
+    <category lang="en">Series</category>
+    <icon src="http://dtil.tmsimg.com/assets/p33832078_b_h8_aa.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="WNBC-NY.us" start="20261024113400 +0800" stop="20261024123700 +0800">
     <title lang="en">The Tonight Show Starring Jimmy Fallon</title>
     <sub-title lang="en">John Cena; Emma D'Arcy; Sam Smith; Meredith Hayden</sub-title>
     <category lang="en">Series</category>
@@ -56586,6 +57350,16 @@
     <category lang="en">Series</category>
     <icon src="http://dtil.tmsimg.com/assets/p9254584_b_h10_ab.jpg?w=960&amp;h=540" />
   </programme>
+  <programme channel="WNBC-LA.us" start="20261024120100 +0800" stop="20261024140000 +0800">
+    <title lang="en">Dateline NBC</title>
+    <category lang="en">Newsmagazine</category>
+    <icon src="http://dtil.tmsimg.com/assets/p27896067_b_h8_ab.jpg?w=960&amp;h=540" />
+  </programme>
+  <programme channel="KNTV.us" start="20261024120100 +0800" stop="20261024140000 +0800">
+    <title lang="en">Dateline NBC</title>
+    <category lang="en">Newsmagazine</category>
+    <icon src="http://dtil.tmsimg.com/assets/p27896067_b_h8_ab.jpg?w=960&amp;h=540" />
+  </programme>
   <programme channel="NBCSpBos.us" start="20261024123000 +0800" stop="20261024130000 +0800">
     <title lang="en">Quick Slants</title>
     <category lang="en">Football</category>
@@ -56608,7 +57382,7 @@
     <category lang="en">Series</category>
     <icon src="http://dtil.tmsimg.com/assets/p33408374_b_h10_ab.jpg?w=960&amp;h=540" />
   </programme>
-  <programme channel="WNBC.us" start="20261024123700 +0800" stop="20261024133700 +0800">
+  <programme channel="WNBC-NY.us" start="20261024123700 +0800" stop="20261024133700 +0800">
     <title lang="en">Late Night With Seth Meyers</title>
     <sub-title lang="en">Dakota Johnson; Mike Tomlin</sub-title>
     <category lang="en">Series</category>
