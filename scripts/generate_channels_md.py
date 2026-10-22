@@ -58,7 +58,24 @@ SECTIONS: list[tuple[str, str, str, bool]] = [
     ("WSCV", "🇺🇸 USA NBC (EPGShare)", "🇺🇸美国NBC（EPGShare）", True),
     ("WNBC", "🇺🇸 USA NBC (EPGShare)", "🇺🇸美国NBC（EPGShare）", False),
     ("KNTV", "🇺🇸 USA NBC (EPGShare)", "🇺🇸美国NBC（EPGShare）", False),
+    ("Universo", "🇺🇸 USA NBC (EPGShare)", "🇺🇸美国NBC（EPGShare）", True),
 ]
+
+# 用户指定的分区内排序（仅用于下列分区）：未列出的频道排在其后，
+# 仍按默认 tvg-id 规则排序。
+SECTION_CUSTOM_ORDER: dict[str, list[str]] = {
+    "🇺🇸 USA NBC (EPGShare)": [
+        "WNBC-NY.us",
+        "WNBC-LA.us",
+        "KNTV.us",
+        "WSCV.us",
+        "Universo.us",
+        "NBCSpBay.us",
+        "NBCSpBos.us",
+        "NBCSpCali.us",
+        "NBCSpPhilly.us",
+    ],
+}
 
 # ee_uk channel numbers that belong to the "Sky Sports" section; the rest go
 # to "Sky Entertainment" / "🇬🇧英国综合类频道".
@@ -139,8 +156,17 @@ def main() -> None:
         if not matched:
             add_row("Other", channel_id, name, False)
 
-    for rows in groups.values():
-        rows.sort(key=lambda item: sort_key(item[0]))
+    for section, rows in groups.items():
+        custom = SECTION_CUSTOM_ORDER.get(section)
+        if custom:
+            rank = {channel_id: index for index, channel_id in enumerate(custom)}
+            rows.sort(
+                key=lambda item: (0, rank[item[0]], 0, 0, "")
+                if item[0] in rank
+                else (1, 0) + sort_key(item[0])
+            )
+        else:
+            rows.sort(key=lambda item: sort_key(item[0]))
 
     def render(header: str, order: list[str], title_map: dict[str, str]) -> str:
         lines = [header.format(count=len(channels)).rstrip(), ""]
