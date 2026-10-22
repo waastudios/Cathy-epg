@@ -57,6 +57,7 @@ SECTIONS: list[tuple[str, str, str, bool]] = [
     ("NBCSp", "🇺🇸 USA NBC (EPGShare)", "🇺🇸美国NBC（EPGShare）", False),
     ("WSCV", "🇺🇸 USA NBC (EPGShare)", "🇺🇸美国NBC（EPGShare）", True),
     ("WNBC", "🇺🇸 USA NBC (EPGShare)", "🇺🇸美国NBC（EPGShare）", False),
+    ("KNTV", "🇺🇸 USA NBC (EPGShare)", "🇺🇸美国NBC（EPGShare）", False),
 ]
 
 # ee_uk channel numbers that belong to the "Sky Sports" section; the rest go
