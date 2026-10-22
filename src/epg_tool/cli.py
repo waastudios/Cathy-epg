@@ -93,7 +93,8 @@ def _collect(args: argparse.Namespace) -> int:
         # EPGSHARE 公开 XMLTV（用户指定来源）：US2 的四个 NBC Sports 地区
         # 频道（NBCSpBay/Bos/Philly/Cali.us，标题英文）与 US_LOCALS1 的
         # 迈阿密 Telemundo 51（WSCV.us，西语标题译为英文）、纽约 NBC 4
-        # （WNBC.us，标题英文）；文件均约 4 天滚动。
+        # （WNBC-NY.us）、洛杉矶 NBC 4（WNBC-LA.us）与旧金山湾区 NBC
+        # （KNTV.us），后三台标题均为英文；文件均约 4 天滚动。
         ("epgshare", lambda: collect_epgshare(args.days)),
     )
     for provider, collector in collectors:
