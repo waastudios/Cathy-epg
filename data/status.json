@@ -1,41 +1,38 @@
 {
   "astro": {
     "status": "ok",
-    "records": 2670
+    "records": 2609
   },
   "now_hk": {
     "status": "ok",
-    "records": 4493
+    "records": 4559
   },
   "allente_se": {
     "status": "ok",
-    "records": 775
+    "records": 778
   },
   "allente_no": {
     "status": "ok",
-    "records": 673,
-    "notes": [
-      "Allente Norway 10010 跳过无法翻译的标题：\"Ferske husfiksere: Roto'til Death Do Us Part\""
-    ]
+    "records": 685
   },
   "ee_uk": {
     "status": "ok",
-    "records": 6873,
+    "records": 6878,
     "notes": [
-      "tvguide.co.uk 采集 6703 条（6703 去重），其中有图 6681 条。"
+      "tvguide.co.uk 采集 6730 条（6730 去重），其中有图 6709 条。"
     ]
   },
   "sky_de": {
     "status": "ok",
-    "records": 1467
+    "records": 1451
   },
   "digi4k_ro": {
     "status": "ok",
-    "records": 127
+    "records": 126
   },
   "sbb_rs": {
     "status": "ok",
-    "records": 129
+    "records": 190
   },
   "virgin_uk": {
     "status": "ok",
@@ -43,18 +40,18 @@
   },
   "player_pl": {
     "status": "ok",
-    "records": 618
+    "records": 617
   },
   "canalplus_fr": {
     "status": "ok",
-    "records": 136,
+    "records": 89,
     "notes": [
       "Canal+ 官方 API 不可用（403 rate limited: https://hodor.canalplus.pro/api/v2/mycanal/authenticate.json/webapp/6.0?experiments=beta-test-one-tv-guide:control），回退到 epg.pw"
     ]
   },
   "telus_tvplus": {
     "status": "ok",
-    "records": 1319,
+    "records": 962,
     "notes": [
       "Telus Love Nature 的频道号为 15130（配置为 713），仍按频道名继续采集。",
       "Telus TV+（telus.prod.g.telustvplus.com）频道目录未找到 Travelxp 4K HDR，已跳过该频道。",
@@ -67,28 +64,30 @@
       "Telus Travelxp 4K HDR 的频道号为 7619（配置为 716），仍按频道名继续采集。",
       "Telus TSN1 的频道号为 7624（配置为 900），仍按频道名继续采集。",
       "Telus TSN2 的频道号为 7627（配置为 901），仍按频道名继续采集。",
-      "Telus TV+ 频道 telus.716 由 QA 环境补齐（生产环境缺失或不可用）。"
+      "Telus TV+ 频道 telus.716 由 QA 环境补齐（生产环境缺失或不可用）。",
+      "Telus TV+（telus.qa.watchoptiktv.com）EPG 拉取失败：Telus TV+（telus.qa.watchoptiktv.com）EPG 拉取失败：Telus TV+ 接口 telus.qa.watchoptiktv.com 返回 HTTP 503。",
+      "Telus TV+ 未返回频道 telus.716 的节目条目。"
     ]
   },
   "peacock": {
     "status": "ok",
-    "records": 125
+    "records": 118
   },
   "pluto_tv": {
     "status": "ok",
-    "records": 20
+    "records": 21
   },
   "epgshare": {
     "status": "ok",
-    "records": 827
+    "records": 585
   },
   "xmltv": {
     "status": "ok",
-    "channels": 186,
-    "programmes": 20336,
+    "channels": 185,
+    "programmes": 19752,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-10-22T22:07:41Z",
-  "total_records": 20336
+  "generated_at": "2026-10-23T21:53:05Z",
+  "total_records": 19752
 }
