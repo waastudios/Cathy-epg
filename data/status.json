@@ -1,42 +1,42 @@
 {
   "astro": {
     "status": "ok",
-    "records": 2536
+    "records": 2461
   },
   "now_hk": {
     "status": "ok",
-    "records": 4540
+    "records": 4506
   },
   "allente_se": {
     "status": "ok",
-    "records": 783
+    "records": 780
   },
   "allente_no": {
     "status": "ok",
-    "records": 688
+    "records": 710
   },
   "ee_uk": {
     "status": "ok",
-    "records": 6873,
+    "records": 6870,
     "notes": [
-      "tvguide.co.uk 采集 6729 条（6729 去重），其中有图 6709 条。"
+      "tvguide.co.uk 采集 6721 条（6721 去重），其中有图 6700 条。"
     ]
   },
   "sky_de": {
     "status": "ok",
-    "records": 1483
+    "records": 1509
   },
   "digi4k_ro": {
     "status": "ok",
-    "records": 130
+    "records": 123
   },
   "sbb_rs": {
     "status": "ok",
-    "records": 195
+    "records": 190
   },
   "virgin_uk": {
     "status": "ok",
-    "records": 82
+    "records": 86
   },
   "player_pl": {
     "status": "ok",
@@ -44,14 +44,14 @@
   },
   "canalplus_fr": {
     "status": "ok",
-    "records": 40,
+    "records": 7,
     "notes": [
       "Canal+ 官方 API 不可用（403 rate limited: https://hodor.canalplus.pro/api/v2/mycanal/authenticate.json/webapp/6.0?experiments=beta-test-one-tv-guide:control），回退到 epg.pw"
     ]
   },
   "telus_tvplus": {
     "status": "ok",
-    "records": 962,
+    "records": 971,
     "notes": [
       "Telus Love Nature 的频道号为 15130（配置为 713），仍按频道名继续采集。",
       "Telus TV+（telus.prod.g.telustvplus.com）频道目录未找到 Travelxp 4K HDR，已跳过该频道。",
@@ -71,11 +71,11 @@
   },
   "peacock": {
     "status": "ok",
-    "records": 115
+    "records": 117
   },
   "pluto_tv": {
     "status": "ok",
-    "records": 17
+    "records": 21
   },
   "epgshare": {
     "status": "ok",
@@ -83,11 +83,11 @@
   },
   "xmltv": {
     "status": "ok",
-    "channels": 184,
-    "programmes": 20087,
+    "channels": 183,
+    "programmes": 19994,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-10-24T21:24:49Z",
-  "total_records": 20087
+  "generated_at": "2026-10-25T21:25:30Z",
+  "total_records": 19994
 }
