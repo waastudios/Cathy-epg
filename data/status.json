@@ -1,57 +1,57 @@
 {
   "astro": {
     "status": "ok",
-    "records": 2461
+    "records": 2551
   },
   "now_hk": {
     "status": "ok",
-    "records": 4506
+    "records": 4495
   },
   "allente_se": {
     "status": "ok",
-    "records": 780
+    "records": 918
   },
   "allente_no": {
     "status": "ok",
-    "records": 710
+    "records": 815
   },
   "ee_uk": {
     "status": "ok",
-    "records": 6870,
+    "records": 6882,
     "notes": [
-      "tvguide.co.uk 采集 6721 条（6721 去重），其中有图 6700 条。"
+      "tvguide.co.uk 采集 6733 条（6733 去重），其中有图 6710 条。"
     ]
   },
   "sky_de": {
     "status": "ok",
-    "records": 1509
+    "records": 1508
   },
   "digi4k_ro": {
     "status": "ok",
-    "records": 123
+    "records": 110
   },
   "sbb_rs": {
     "status": "ok",
-    "records": 190
+    "records": 183
   },
   "virgin_uk": {
     "status": "ok",
-    "records": 86
+    "records": 83
   },
   "player_pl": {
     "status": "ok",
-    "records": 606
+    "records": 604
   },
   "canalplus_fr": {
     "status": "ok",
-    "records": 7,
+    "records": 169,
     "notes": [
       "Canal+ 官方 API 不可用（403 rate limited: https://hodor.canalplus.pro/api/v2/mycanal/authenticate.json/webapp/6.0?experiments=beta-test-one-tv-guide:control），回退到 epg.pw"
     ]
   },
   "telus_tvplus": {
     "status": "ok",
-    "records": 971,
+    "records": 976,
     "notes": [
       "Telus Love Nature 的频道号为 15130（配置为 713），仍按频道名继续采集。",
       "Telus TV+（telus.prod.g.telustvplus.com）频道目录未找到 Travelxp 4K HDR，已跳过该频道。",
@@ -71,23 +71,23 @@
   },
   "peacock": {
     "status": "ok",
-    "records": 117
+    "records": 119
   },
   "pluto_tv": {
     "status": "ok",
-    "records": 21
+    "records": 20
   },
   "epgshare": {
     "status": "ok",
-    "records": 1037
+    "records": 1044
   },
   "xmltv": {
     "status": "ok",
-    "channels": 183,
-    "programmes": 19994,
+    "channels": 184,
+    "programmes": 20477,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-10-25T21:25:30Z",
-  "total_records": 19994
+  "generated_at": "2026-10-26T23:04:57Z",
+  "total_records": 20477
 }
