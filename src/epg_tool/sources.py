@@ -49,6 +49,9 @@ NOW_HK_CHANNELS_ZH = "https://nowplayer.now.com/channels?lang=zh&filterType=all"
 NOW_HK_EPG = "https://nowplayer.now.com/tvguide/epglist"
 # NOW TV 官方目录的体育区频道号；保留官方中英文频道名称和稳定频道 ID。
 NOW_HK_SPORT_CHANNEL_NUMBERS = frozenset({"611", "612", "613", "620", "621", "622", "623", "624", "625", "626", "627", "630", "631", "632", "633", "634", "635", "636", "637", "638", "639", "640", "641", "642", "643", "644", "645", "646", "647", "651", "652", "668", "674", "679", "680", "683", "684"})
+# 用户 2026-10-27 指定新增的非体育频道：ViuTV（099）与 ViuTVsix（096）；
+# 体育白名单保持不变，这两台走独立的指定清单。
+NOW_HK_EXTRA_CHANNEL_NUMBERS = frozenset({"096", "099"})
 ALLENTE_GUIDE = "https://www.allente.se/tv-guide/"
 ALLENTE_EPG = "https://www.allente.se/api/epg/refetch-epg-data"
 # 用户确认的 Allente Sweden V Sport 显示名及 XMLTV ID 后缀。内部频道 ID 仍只用于
@@ -427,11 +430,12 @@ def _now_hk_channels_zh(session: requests.Session) -> dict[str, str]:
 
 
 def collect_now_hk(days: int = 7, chunk_size: int = 25, pause_seconds: float = 0.25) -> list[Programme]:
-    """读取 NOW TV 香港官网 EPG，并将频道显示名规范化为官方中文名称。"""
+    """读取 NOW TV 香港官网 EPG（体育白名单频道与用户指定的 ViuTV/ViuTVsix），并将频道显示名规范化为官方名称。"""
     session = _session()
     zone = ZoneInfo("Asia/Hong_Kong")
     channel_names = _now_hk_channels_zh(session)
-    channel_names = {number: name for number, name in channel_names.items() if number in NOW_HK_SPORT_CHANNEL_NUMBERS}
+    allowed = NOW_HK_SPORT_CHANNEL_NUMBERS | NOW_HK_EXTRA_CHANNEL_NUMBERS
+    channel_names = {number: name for number, name in channel_names.items() if number in allowed}
     if not channel_names:
         raise SourceUnavailable("NOW TV 香港官方频道目录未返回预期的体育频道。")
     channels = sorted(channel_names, key=int)
