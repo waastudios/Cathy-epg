@@ -35,6 +35,7 @@ HEADER_CN = """# 已发布频道清单
 SECTIONS: list[tuple[str, str, str, bool]] = [
     ("astro.", "Astro Malaysia", "🇲🇾马来西亚 Astro", False),
     ("now_hk.", "now TV Hong Kong", "🇭🇰香港 now TV", False),
+    ("viutv", "now TV Hong Kong", "🇭🇰香港 now TV", False),
     ("sky_de.", "Sky Germany", "🇩🇪德国 Sky Sport", True),
     ("ee_uk.", "Sky Sports", "🇬🇧英国体育类频道", False),  # refined below into sports / entertainment
     ("virgin_uk.", "Virgin Media UK", "🇬🇧英国Virgin Media", False),
