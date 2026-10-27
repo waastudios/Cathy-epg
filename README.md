@@ -33,7 +33,7 @@ Every XMLTV `display-name` is the provider’s official channel name unless an e
 | Market | Published services | Official source |
 | --- | --- | --- |
 | Malaysia | Astro: 23 explicitly allow-listed sports channels | [Astro Content Guide](https://www.astro.com.my/content/channels) |
-| Hong Kong | now TV: 37 explicitly allow-listed sports channels | [now TV Guide](https://nowplayer.now.com/tvguide) and [official Chinese channel directory](https://nowplayer.now.com/channels?lang=zh&filterType=all) |
+| Hong Kong | now TV: 37 explicitly allow-listed sports channels, plus ViuTV and ViuTVsix | [now TV Guide](https://nowplayer.now.com/tvguide) and [official Chinese channel directory](https://nowplayer.now.com/channels?lang=zh&filterType=all) |
 | Germany | 29 Sky Sport and Sky Sport Bundesliga channels, including UHD | [Telekom MagentaTV](https://www.magenta.tv/) public programme guide |
 | Sweden | 13 V Sport services, including V Sport UltraHD | [Allente TV Guide](https://www.allente.se/tv-guide/) |
 | Norway | TV Norge, REX, FEM, Eurosport Norge, Eurosport 1 | [Allente Norway TV Guide](https://www.allente.no/tv-guide/) |
@@ -102,7 +102,7 @@ A title that no tier can translate skips that single programme (recorded in `dat
 
 The GitHub Actions workflow in `.github/workflows/refresh-epg.yml` runs daily at **19:00 UTC**, which is **03:00 China Standard Time (UTC+8) on the following calendar day**. It runs `epg collect --days 7` across **every configured official channel source**, writes the complete snapshot and XMLTV files (`data/epg.xml` and `data/epg.xml.gz`), and commits only when the results change. If an official source is temporarily unavailable, the workflow records that failure in `data/status.json` rather than substituting third-party data.
 
-A current release is considered valid only when `data/epg.xml.gz` decompresses exactly to `data/epg.xml`, all XMLTV channel display names are official names, the Astro and now TV channel IDs are within their explicit sports allow-lists, and prohibited US provider IDs are absent.
+A current release is considered valid only when `data/epg.xml.gz` decompresses exactly to `data/epg.xml`, all XMLTV channel display names are official names, the Astro and now TV channel IDs are within their explicit allow-lists (now TV: the sports allow-list plus the user-designated ViuTV and ViuTVsix), and prohibited US provider IDs are absent.
 
 ## Local use
 
@@ -127,6 +127,7 @@ For Serbia’s SBB Eurosport schedules, titles are converted during collection u
 
 ## Changelog
 
+- **2026-10-27** — Added ViuTV (`viutv`) and ViuTVsix (`viutv6`) from Hong Kong now TV’s official guide, as user-designated additions alongside the 37-channel sports allow-list (which is unchanged). Display names follow now TV’s official directory (ViuTV on 099, ViuTVsix on 096); programme titles are published as-is, like the other now TV channels.
 - **2026-10-27** — Moved the USA Network inventory entry into the USA Pluto TV / Peacock section (source unchanged: Sling TV).
 - **2026-10-27** — Removed Telemundo Deportes Ahora (`TDA.us`) from the Peacock source. Pluto TV was also checked for a USA Network equivalent before keeping the Sling TV source: Pluto’s 442-channel lineup contains no USA Network channel, and its closest single-franchise channels (Law & Order, Dateline 24/7, Universal Crime, NBC Sports NOW) do not match USA Network’s multi-franchise schedule in the same 24-hour window, so USA Network stays on Sling TV.
 - **2026-10-27** — Added USA Network (`usanetwork.us`) from Sling TV’s official CMS guide: the national USA Network feed (USAHD) is resolved from Sling’s published channel summary and collected in 24-hour windows with seven days of rolling coverage. Programme titles arrive in English and are published as-is.
