@@ -59,6 +59,7 @@ SECTIONS: list[tuple[str, str, str, bool]] = [
     ("WNBC", "🇺🇸 USA NBC (EPGShare)", "🇺🇸美国NBC（EPGShare）", False),
     ("KNTV", "🇺🇸 USA NBC (EPGShare)", "🇺🇸美国NBC（EPGShare）", False),
     ("Universo", "🇺🇸 USA NBC (EPGShare)", "🇺🇸美国NBC（EPGShare）", True),
+    ("usanetwork", "🇺🇸 USA Sling TV", "🇺🇸美国Sling TV", False),
 ]
 
 # 用户指定的分区内排序（仅用于下列分区）：未列出的频道排在其后，
@@ -95,7 +96,8 @@ SECTION_ORDER_EN = [
     "Virgin Media UK", "Sky Entertainment", "France Canal+",
     "🇷🇸 Serbia SBB", "Digi 4K", "🇵🇱 Poland Player.pl",
     "Allente Sweden", "Allente Norway", "🇨🇦 Canada Telus TV+",
-    "🇺🇸 USA NBC (EPGShare)", "🇺🇸 USA Pluto TV / Peacock", "Other",
+    "🇺🇸 USA NBC (EPGShare)", "🇺🇸 USA Pluto TV / Peacock",
+    "🇺🇸 USA Sling TV", "Other",
 ]
 CN_TITLE = {
     "Astro Malaysia": "🇲🇾马来西亚 Astro",
@@ -113,6 +115,7 @@ CN_TITLE = {
     "🇨🇦 Canada Telus TV+": "🇨🇦加拿大 Telus TV+",
     "🇺🇸 USA Pluto TV / Peacock": "🇺🇸美国Pluto TV / Peacock",
     "🇺🇸 USA NBC (EPGShare)": "🇺🇸美国NBC（EPGShare）",
+    "🇺🇸 USA Sling TV": "🇺🇸美国Sling TV",
     "Other": "其他",
 }
 
