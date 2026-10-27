@@ -263,9 +263,4 @@
 | `GolazoNet.us` | Golazo Network |
 | `TC.us` | Tennis Channel |
 | `TC2.us` | Tennis Channel 2 |
-
-## 🇺🇸美国Sling TV
-
-| tvg-id | tvg-name |
-| --- | --- |
 | `usanetwork.us` | USA Network |
