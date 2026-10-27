@@ -127,6 +127,7 @@ epg preview --day tomorrow --provider allente_se --channel 50048
 
 ## 更新日志
 
+- **2026-10-27** —— 清单中 USA Network 条目并入美国 Pluto TV / Peacock 分区（数据源不变，仍为 Sling TV）。
 - **2026-10-27** —— 从 Peacock 来源删除 Telemundo Deportes Ahora（`TDA.us`）。同期核查了 Pluto TV 是否有与 USA Network 相同的节目单以便优先改用 Pluto 版：Pluto 442 个频道中没有 USA Network 频道，其最接近的单一系列频道（Law & Order、Dateline 24/7、Universal Crime、NBC Sports NOW）在同一 24 小时窗口内的节目单与 USA Network 的多系列混合排播均不一致，因此 USA Network 仍保留 Sling TV 版本。
 - **2026-10-27** —— 通过 Sling TV 官方 CMS 节目指南新增 USA Network（`usanetwork.us`）：全国主 feed（USAHD）从 Sling 发布的频道总表动态解析，按 24 小时分窗拉取、7 天滚动覆盖。标题本身为英文，直接发布。
 - **2026-10-22** —— NBC 4 纽约的 XMLTV ID 由 `WNBC.us` 更名为 `WNBC-NY.us`，并通过同一 EPGShare US_LOCALS1 XMLTV 文件新增 NBC 4 洛杉矶（`WNBC-LA.us`）与 NBC Bay Area（`KNTV.us`）。US_LOCALS1 破例范围扩至四台地方台；约 4 天滚动覆盖，两台新台的标题本身为英文、直接发布。并通过 EPGShare US2 文件新增 Universo（`Universo.us`），其西语标题按分级流水线译为英文。CHANNELS 清单的 NBC（EPGShare）分区改为固定顺序：NBC 4 纽约、NBC 4 洛杉矶、NBC Bay Area、Telemundo 51、Universo，其后为四个 NBC Sports 地区台。
