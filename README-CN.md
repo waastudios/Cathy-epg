@@ -33,7 +33,7 @@ https://raw.githubusercontent.com/waastudios/Cathy-epg/master/data/epg.xml.gz
 | 市场 | 已发布服务 | 官方来源 |
 | --- | --- | --- |
 | 马来西亚 | Astro：23 条明确白名单体育频道 | [Astro Content Guide](https://www.astro.com.my/content/channels) |
-| 香港 | now TV：37 条明确白名单体育频道，另加 ViuTV 与 ViuTVsix | [now TV Guide](https://nowplayer.now.com/tvguide) 与 [官方中文频道目录](https://nowplayer.now.com/channels?lang=zh&filterType=all) |
+| 香港 | now TV：29 条明确白名单体育频道，另加 ViuTV 与 ViuTVsix | [now TV Guide](https://nowplayer.now.com/tvguide) 与 [官方中文频道目录](https://nowplayer.now.com/channels?lang=zh&filterType=all) |
 | 德国 | 29 条 Sky Sport 与 Sky Sport Bundesliga 频道，包含 UHD | [Telekom MagentaTV](https://www.magenta.tv/) 正常公开节目表 |
 | 瑞典 | 13 条 V Sport 服务，包含 V Sport UltraHD | [Allente TV Guide](https://www.allente.se/tv-guide/) |
 | 挪威 | TV Norge、REX、FEM、Eurosport Norge、Eurosport 1 | [Allente Norway TV Guide](https://www.allente.no/tv-guide/) |
@@ -127,6 +127,7 @@ epg preview --day tomorrow --provider allente_se --channel 50048
 
 ## 更新日志
 
+- **2026-10-27** —— 删除 8 条已停播的 now TV 体育频道：Now Sports 4K 3（613）、Now Sports 英超6台（626）、英超7台（627）、beIN SPORTS 5（645）与 6（646）、Now Sports 651/652、Now Sports Plus（680）。依据：2026-08-26 至 2026-10-27 的 10 次周采样中，前 7 台从未播出过真实节目（整周只有“請留意下場播映賽事”占位），Now Sports Plus 在 2026-08-26 仍有完整节目表、此后连续 8 周为零；beIN SPORTS 4（644）因 9、10 月播过欧战溢出直播而保留。体育白名单：37 → 29 条。
 - **2026-10-27** —— 通过香港 now TV 官方指南新增 ViuTV（`viutv`）与 ViuTVsix（`viutv6`），作为用户指定的补充频道列入 37 条体育白名单之外（白名单本身不变）。显示名按 now TV 官方目录（099 为 ViuTV、096 为 ViuTVsix）；节目标题与其他 now TV 频道一样保持原样发布。
 - **2026-10-27** —— 清单中 USA Network 条目并入美国 Pluto TV / Peacock 分区（数据源不变，仍为 Sling TV）。
 - **2026-10-27** —— 从 Peacock 来源删除 Telemundo Deportes Ahora（`TDA.us`）。同期核查了 Pluto TV 是否有与 USA Network 相同的节目单以便优先改用 Pluto 版：Pluto 442 个频道中没有 USA Network 频道，其最接近的单一系列频道（Law & Order、Dateline 24/7、Universal Crime、NBC Sports NOW）在同一 24 小时窗口内的节目单与 USA Network 的多系列混合排播均不一致，因此 USA Network 仍保留 Sling TV 版本。
