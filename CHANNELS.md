@@ -263,9 +263,4 @@ The current XMLTV output contains **184 channels**.
 | `GolazoNet.us` | Golazo Network |
 | `TC.us` | Tennis Channel |
 | `TC2.us` | Tennis Channel 2 |
-
-## 🇺🇸 USA Sling TV
-
-| tvg-id | tvg-name |
-| --- | --- |
 | `usanetwork.us` | USA Network |
