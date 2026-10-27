@@ -52,7 +52,6 @@ SECTIONS: list[tuple[str, str, str, bool]] = [
     ("telus.", "🇨🇦 Canada Telus TV+", "🇨🇦加拿大 Telus TV+", False),
     ("TC.us", "🇺🇸 USA Pluto TV / Peacock", "🇺🇸美国Pluto TV / Peacock", False),
     ("TC2.us", "🇺🇸 USA Pluto TV / Peacock", "🇺🇸美国Pluto TV / Peacock", False),
-    ("TDA.us", "🇺🇸 USA Pluto TV / Peacock", "🇺🇸美国Pluto TV / Peacock", True),
     ("GolazoNet.us", "🇺🇸 USA Pluto TV / Peacock", "🇺🇸美国Pluto TV / Peacock", False),
     ("NBCSp", "🇺🇸 USA NBC (EPGShare)", "🇺🇸美国NBC（EPGShare）", False),
     ("WSCV", "🇺🇸 USA NBC (EPGShare)", "🇺🇸美国NBC（EPGShare）", True),
