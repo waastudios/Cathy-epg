@@ -28,6 +28,7 @@ from .sources import (
     collect_player_pl,
     collect_pluto_tv,
     collect_epgshare,
+    collect_sling,
     collect_sbb_eurosport,
     collect_telus_tvplus,
     collect_virgin_uk_ultra,
@@ -98,6 +99,9 @@ def _collect(args: argparse.Namespace) -> int:
         # （WNBC-NY.us）、洛杉矶 NBC 4（WNBC-LA.us）与旧金山湾区 NBC
         # （KNTV.us），后三台标题均为英文；文件均约 4 天滚动。
         ("epgshare", lambda: collect_epgshare(args.days)),
+        # Sling TV 官方 CMS：USA Network（usanetwork.us），标题本身为英文；
+        # 按 24 小时分窗逐日拉取。
+        ("sling", lambda: collect_sling(args.days)),
     )
     for provider, collector in collectors:
         try:
@@ -140,6 +144,7 @@ def _collect(args: argparse.Namespace) -> int:
             "peacock": ZoneInfo("UTC"),
             "pluto_tv": ZoneInfo("UTC"),
             "epgshare": ZoneInfo("UTC"),
+            "sling": ZoneInfo("UTC"),
         }
 
         def local_date(row: Programme, zone: ZoneInfo):
