@@ -2859,6 +2859,112 @@ def collect_pluto_tv(days: int = 7, pause_seconds: float = 0.5) -> list[Programm
     return records
 
 
+# Sling TV 是美国 Live TV 服务；其节目指南由平台方 MoveTV 的 CMS 以公开
+# CDN 文件形式发布（Kodi 的 Sling TV 插件同款数据源），频道清单与 24 小时
+# 节目窗接口均可匿名访问、无需登录。本采集器只取 USA Network 全国主
+# feed（清单中的 USAHD，Gracenote 58452）：USA 4K 为独立 4K 频道、
+# ZOOMUSA 为隐藏频道，均不取。标题本身为英文，直接发布。
+SLING_CMS_URL = "https://cbd46b77.cdn.cms.movetv.com"
+SLING_CHANNELS_URL = SLING_CMS_URL + "/cms/publish3/domain/summary/ums/1.json"
+SLING_USA_XMLTV_ID = "usanetwork.us"
+
+
+def _sling_schedule_window(session: requests.Session, guid: str, window_start: datetime) -> list[dict]:
+    """拉取 Sling CMS 的一个 24 小时节目窗（窗口起点为给定 UTC 时间）。"""
+    timestamp = window_start.strftime("%y%m%d%H%M")
+    url = f"{SLING_CMS_URL}/cms/publish3/channel/schedule/24/{timestamp}/1/{guid}.json"
+    response = session.get(url, timeout=30)
+    response.raise_for_status()
+    data = response.json()
+    schedule = data.get("schedule") or {}
+    return schedule.get("scheduleList") or []
+
+
+def collect_sling(days: int = 7, pause_seconds: float = 0.5) -> list[Programme]:
+    """读取 Sling TV 官方 CMS 中 USA Network 的节目单（tvg-id：usanetwork.us）。
+
+    标题本身为英文，直接发布。频道 guid 从官方频道清单动态解析（CDN
+    发布文件会轮换，写死会过期）；接口按 24 小时分窗返回，逐日拉取
+    days 天并去重合并。
+    """
+    if days not in range(1, 8):
+        raise ValueError("Sling TV 采集天数必须为 1–7。")
+    session = _session()
+    now = datetime.now(timezone.utc)
+    retrieved_at = utc_now_iso()
+    try:
+        listing = session.get(SLING_CHANNELS_URL, timeout=30)
+        listing.raise_for_status()
+        channels = listing.json().get("channels") or []
+    except (requests.RequestException, ValueError) as exc:
+        raise SourceUnavailable(f"Sling TV 频道清单拉取失败：{exc}") from exc
+    guid = None
+    for channel in channels:
+        if channel.get("title") == "USAHD":
+            guid = channel.get("channel_guid")
+            break
+    if not guid:
+        raise SourceUnavailable("Sling TV 频道清单中未找到 USAHD。")
+    records: list[Programme] = []
+    for day_offset in range(days):
+        window_start = now + timedelta(days=day_offset)
+        try:
+            slots = _sling_schedule_window(session, guid, window_start)
+        except (requests.RequestException, ValueError) as exc:
+            raise SourceUnavailable(
+                f"Sling TV USA Network 第 {day_offset + 1} 天节目窗拉取失败：{exc}"
+            ) from exc
+        for slot in slots:
+            title = str(slot.get("title") or "").strip()
+            if not title:
+                continue
+            try:
+                raw_start = str(slot["schedule_start"]).replace(".000", "")
+                raw_stop = str(slot["schedule_stop"]).replace(".000", "")
+                start = datetime.fromtimestamp(int(raw_start), tz=timezone.utc)
+                stop = datetime.fromtimestamp(int(raw_stop), tz=timezone.utc)
+            except (KeyError, TypeError, ValueError):
+                continue
+            if stop <= start:
+                continue
+            meta = slot.get("metadata") or {}
+            episode_name = str(meta.get("episode_title") or "").strip()
+            sub_title = episode_name if episode_name and episode_name != title else None
+            description = (
+                str(meta.get("description") or meta.get("short_description") or "").strip()
+                or None
+            )
+            genres = meta.get("genre") or slot.get("genre") or []
+            category = str(genres[0]).strip() if genres else None
+            thumbnail = slot.get("thumbnail") or {}
+            image_url = str(thumbnail.get("url") or "").strip() or None
+            records.append(
+                Programme(
+                    provider="sling",
+                    country="US",
+                    timezone="UTC",
+                    channel_id=SLING_USA_XMLTV_ID,
+                    channel_number="",
+                    channel_name="USA Network",
+                    title=title,
+                    start_at=start.isoformat(),
+                    end_at=stop.isoformat(),
+                    source_url=SLING_CHANNELS_URL,
+                    retrieved_at=retrieved_at,
+                    image_url=image_url,
+                    description=description,
+                    category=category,
+                    sub_title=sub_title,
+                )
+            )
+        time.sleep(pause_seconds)
+
+    records = _deduplicate(records)
+    if not records:
+        raise SourceUnavailable("Sling TV 指南未返回 USA Network 的节目条目。")
+    return records
+
+
 # EPGSHARE（epgshare01.online）公开 XMLTV 聚合文件。此来源是用户指定的
 # 例外：四个 NBC Sports 地区频道（湾区／波士顿／费城／加州）虽在 Peacock
 # 上线，但其官方 BFF 指南仅对购买附加包的登录会话下发这四台，匿名无法
