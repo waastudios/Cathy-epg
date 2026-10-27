@@ -44,7 +44,7 @@ https://raw.githubusercontent.com/waastudios/Cathy-epg/master/data/epg.xml.gz
 | 波兰 | Eurosport 1–4 与 Eleven Sports 1（标题已译为英文） | [Player.pl](https://player.pl/) 公开 EPG 接口 |
 | 法国 | CANAL+ 主频道与 CANAL+ FOOT（标题已译为英文） | [Canal+ 官方 EPG 接口](https://www.canalplus.com/programme-tv/) |
 | 加拿大 | 爱自然（Love Nature）、Travelxp 4K 与 TSN 1–5 | [TELUS TV+ 节目指南](https://telustvplus.com/#/guide) |
-| 美国 | Tennis Channel 2 与 Telemundo Deportes Ahora | [Peacock 频道指南](https://www.peacocktv.com/channels/tennis-channel-2/8969135442586836117)、[Telemundo Deportes Ahora](https://www.peacocktv.com/channels/telemundo-deportes-ahora/5923023667697108117) |
+| 美国 | Tennis Channel 2 | [Peacock 频道指南](https://www.peacocktv.com/channels/tennis-channel-2/8969135442586836117) |
 | 美国 | CBS Sports Golazo Network | [Pluto TV 指南](https://pluto.tv/us/live-tv/golazo-network) |
 | 美国 | NBC Sports 湾区、波士顿、费城与加州，Tennis Channel 与 Universo | [EPGShare 美国节目文件](https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz) |
 | 美国 | Telemundo 51（迈阿密）、NBC 4 纽约、NBC 4 洛杉矶与 NBC Bay Area（湾区） | [EPGShare 美国地方台节目文件](https://epgshare01.online/epgshare01/epg_ripper_US_LOCALS1.xml.gz) |
@@ -67,8 +67,6 @@ EE 范围包含 **Sky Mix、Sky Arts、Sky Witness、Sky Atlantic、Sky One、Sk
 **爱自然（Love Nature）**、**Travelxp 4K** 与 **TSN 1–5** 通过加拿大 TELUS TV+（Optik TV）官方网页指南发布，XMLTV ID 分别为 `telus.713`、`telus.716` 与 `telus.900`–`telus.904`。指南的公开 AVS 接口可匿名查询（优先生产环境，失败回退 QA 环境）；按官方频道名匹配频道，绝不使用 TSN 的地区黑屏（Blackout）变体。节目标题本身为英文，直接发布。
 
 **Tennis Channel 2** 通过 Peacock 官方 BFF 频道指南发布，XMLTV ID 为 `TC2.us`。该指南携带 Peacock 自家客户端使用的 Sky OTT 平台请求头即可匿名查询，无需账号。接口的起始时间只能在过去 1 天至未来 2 天之间、单次返回约 30 小时，采集器以四个错开的窗口拼接（约 4 天滚动覆盖），而非一次拉满 7 天。节目标题本身为英文，直接发布。
-
-**Telemundo Deportes Ahora** 通过同一个 Peacock BFF 频道指南发布，XMLTV ID 为 `TDA.us`，与 Tennis Channel 2 在同一次匿名采集内完成。每条原始西班牙语标题均通过下文的分级流水线转换成英文（西语体育节目名精确映射 → 翻译记忆 → 在线服务）；无法翻译的标题只会跳过当条节目，不会导致整个 Peacock 来源失败。在 [CHANNELS-CN.md](CHANNELS-CN.md) 中该频道带有（T）标记，表示节目单已翻译为英文。
 
 **CBS Sports Golazo Network** 通过 Pluto TV 官方指南接口发布，XMLTV ID 为 `GolazoNet.us`。Pluto TV 是 Paramount 自家的免费流媒体平台，该频道在其阵容中名为 “Golazo Network”；指南接口可匿名查询，按 24 小时分窗拉取。（Paramount+ 自家的 apps-api 指南无法使用：匿名请求会被拒绝。）Pluto 对该频道只提前约 1–2 天发布逐节目明细，更远的日期只有其官方发布的整段 “Golazo Network” 占位块，如实收录。节目标题本身为英文，直接发布。
 
@@ -129,6 +127,7 @@ epg preview --day tomorrow --provider allente_se --channel 50048
 
 ## 更新日志
 
+- **2026-10-27** —— 从 Peacock 来源删除 Telemundo Deportes Ahora（`TDA.us`）。同期核查了 Pluto TV 是否有与 USA Network 相同的节目单以便优先改用 Pluto 版：Pluto 442 个频道中没有 USA Network 频道，其最接近的单一系列频道（Law & Order、Dateline 24/7、Universal Crime、NBC Sports NOW）在同一 24 小时窗口内的节目单与 USA Network 的多系列混合排播均不一致，因此 USA Network 仍保留 Sling TV 版本。
 - **2026-10-27** —— 通过 Sling TV 官方 CMS 节目指南新增 USA Network（`usanetwork.us`）：全国主 feed（USAHD）从 Sling 发布的频道总表动态解析，按 24 小时分窗拉取、7 天滚动覆盖。标题本身为英文，直接发布。
 - **2026-10-22** —— NBC 4 纽约的 XMLTV ID 由 `WNBC.us` 更名为 `WNBC-NY.us`，并通过同一 EPGShare US_LOCALS1 XMLTV 文件新增 NBC 4 洛杉矶（`WNBC-LA.us`）与 NBC Bay Area（`KNTV.us`）。US_LOCALS1 破例范围扩至四台地方台；约 4 天滚动覆盖，两台新台的标题本身为英文、直接发布。并通过 EPGShare US2 文件新增 Universo（`Universo.us`），其西语标题按分级流水线译为英文。CHANNELS 清单的 NBC（EPGShare）分区改为固定顺序：NBC 4 纽约、NBC 4 洛杉矶、NBC Bay Area、Telemundo 51、Universo，其后为四个 NBC Sports 地区台。
 - **2026-10-21** —— 通过 EPGShare 的 US2 XMLTV 文件新增 Tennis Channel（`TC.us`）。Peacock 指南只有二台（Tennis Channel 2），Tennis Channel 官网的公开接口也只提供正在播出／下一档两档数据，故该台同样明确破例使用 EPGShare；其 Gracenote 数据已与官网的正在播出／下一档核对一致，约 4 天滚动覆盖，标题直接发布。
