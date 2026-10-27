@@ -48,6 +48,7 @@ Every XMLTV `display-name` is the provider’s official channel name unless an e
 | United States | CBS Sports Golazo Network | [Pluto TV guide](https://pluto.tv/us/live-tv/golazo-network) |
 | United States | NBC Sports Bay Area, Boston, Philadelphia and California, Tennis Channel and Universo | [EPGShare US guide](https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz) |
 | United States | Telemundo 51 (Miami), NBC 4 New York, NBC 4 Los Angeles and NBC Bay Area | [EPGShare US locals guide](https://epgshare01.online/epgshare01/epg_ripper_US_LOCALS1.xml.gz) |
+| United States | USA Network | [Sling TV](https://www.sling.com/) |
 
 ### Sky Germany via MagentaTV
 
@@ -78,6 +79,8 @@ The EE scope includes **Sky Mix, Sky Arts, Sky Witness, Sky Atlantic, Sky One, S
 **Universo** is published as `Universo.us`. The NBCUniversal Spanish-language entertainment network is not carried in Peacock’s anonymous official guide either, so, under the same deliberate exception, its schedule is taken from the same EPGShare US2 XMLTV file. Each Spanish source title is converted to English through the tiered translation pipeline described below (a title that cannot be translated skips that single programme), and the channel carries a (T) mark in [CHANNELS.md](CHANNELS.md).
 
 **Telemundo 51 (Miami), NBC 4 New York, NBC 4 Los Angeles and NBC Bay Area** are published as `WSCV.us`, `WNBC-NY.us`, `WNBC-LA.us` and `KNTV.us`. All four are local stations that do not appear in Peacock’s anonymous official guide (which carries only national linear channels), so, as a further deliberate exception to this project’s official-source rule, their schedules are taken from EPGShare’s US_LOCALS1 XMLTV file, which is regenerated daily with about four days of rolling coverage. Telemundo 51’s Spanish programme titles are converted to English through the tiered translation pipeline described below (a title that cannot be translated skips that single programme), and the channel carries a (T) mark in [CHANNELS.md](CHANNELS.md); the other three stations’ titles arrive in English and are published as-is.
+
+**USA Network** is published as `usanetwork.us` from Sling TV’s official CMS guide (the same data source the Sling TV Kodi add-on reads): the channel list is resolved from Sling’s published channel summary, and the national USA Network feed (USAHD) is collected in 24-hour windows with seven days of rolling coverage. Programme titles arrive in English and are published as-is.
 
 ### Poland via Player.pl
 
@@ -126,6 +129,7 @@ For Serbia’s SBB Eurosport schedules, titles are converted during collection u
 
 ## Changelog
 
+- **2026-10-27** — Added USA Network (`usanetwork.us`) from Sling TV’s official CMS guide: the national USA Network feed (USAHD) is resolved from Sling’s published channel summary and collected in 24-hour windows with seven days of rolling coverage. Programme titles arrive in English and are published as-is.
 - **2026-10-22** — Renamed NBC 4 New York’s XMLTV ID from `WNBC.us` to `WNBC-NY.us`, and added NBC 4 Los Angeles (`WNBC-LA.us`) and NBC Bay Area (`KNTV.us`) from the same EPGShare US_LOCALS1 XMLTV file. The US_LOCALS1 exception now covers four local stations; about four days of rolling coverage. The two new stations’ titles arrive in English and are published as-is. Also added Universo (`Universo.us`) from EPGShare’s US2 file, its Spanish titles translated to English through the tiered pipeline. The CHANNELS inventory now lists the NBC (EPGShare) section in a fixed order: NBC 4 New York, NBC 4 Los Angeles, NBC Bay Area, Telemundo 51, Universo, then the four NBC Sports networks.
 - **2026-10-21** — Added Tennis Channel (`TC.us`) from EPGShare’s US2 XMLTV file. Peacock’s guide carries only Tennis Channel 2, and the channel’s own website publishes only current/next programme data through its public API, so EPGShare is used as a deliberate exception for this channel as well; the feed’s Gracenote data was verified against the official website’s current/next entries, about four days of rolling coverage, titles published as-is.
 - **2026-10-18** — Fixed mixed-language programme titles on the translated channels (notably Eurosport via SBB and Player.pl): every translation tier — the curated maps, the persistent translation memory and the online services — is now checked by a deterministic English-output gate, so a result that still carries source-language wording (Serbian "Svetska turneja", Polish "Skoki narciarskie", …) falls through to the next tier or is skipped instead of being published or memorised. The Serbian and Polish Eurosport maps were extended (World Tour, Olympic Games, Hall of Fame, ski jumping, athletics, …) and 13 stale memory entries that had memorised untranslated titles were removed.
