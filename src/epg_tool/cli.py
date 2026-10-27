@@ -84,8 +84,7 @@ def _collect(args: argparse.Namespace) -> int:
         ("canalplus_fr", lambda: collect_canalplus_fr(args.days)),
         # Telus TV+（Optik TV）官方指南：Love Nature、Travelxp 4K 与 TSN 1–5，标题本身为英文。
         ("telus_tvplus", lambda: collect_telus_tvplus(args.days)),
-        # Peacock 官方 BFF 指南：Tennis Channel 2（TC2.us，标题本身为英文）与
-        # Telemundo Deportes Ahora（TDA.us，西语标题译为英文）；
+        # Peacock 官方 BFF 指南：Tennis Channel 2（TC2.us，标题本身为英文）；
         # 接口单次窗口约 30 小时，靠四个错开起点拼接滚动覆盖。
         ("peacock", lambda: collect_peacock(args.days)),
         # Pluto TV（Paramount 自家平台）官方指南：Golazo Network（GolazoNet.us），
