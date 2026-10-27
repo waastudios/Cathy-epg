@@ -5,7 +5,7 @@
   },
   "now_hk": {
     "status": "ok",
-    "records": 4077
+    "records": 4071
   },
   "allente_se": {
     "status": "ok",
@@ -73,7 +73,7 @@
   },
   "pluto_tv": {
     "status": "ok",
-    "records": 18
+    "records": 19
   },
   "epgshare": {
     "status": "ok",
@@ -85,11 +85,11 @@
   },
   "xmltv": {
     "status": "ok",
-    "channels": 185,
-    "programmes": 20135,
+    "channels": 179,
+    "programmes": 20130,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-10-27T14:38:12Z",
-  "total_records": 20135
+  "generated_at": "2026-10-27T15:23:05Z",
+  "total_records": 20130
 }
