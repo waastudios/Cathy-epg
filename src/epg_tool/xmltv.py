@@ -73,6 +73,12 @@ _PLAYER_PL_XMLTV_IDS = {
     "eurosport4.pl": "eurosport4.pl",
     "ElevenSp.1": "ElevenSp.1",
 }
+# 用户指定：NOW TV 的 ViuTV（099）与 ViuTVsix（096）使用固定 tvg-id，
+# 而非默认的 now_hk.<频道号> 形式。
+_NOW_HK_XMLTV_IDS = {
+    "096": "viutv6",
+    "099": "viutv",
+}
 
 
 def _xmltv_channel_id(record: Programme) -> str:
@@ -107,6 +113,10 @@ def _xmltv_channel_id(record: Programme) -> str:
             return configured_id
     if record.provider == "player_pl":
         configured_id = _PLAYER_PL_XMLTV_IDS.get(record.channel_id)
+        if configured_id:
+            return configured_id
+    if record.provider == "now_hk":
+        configured_id = _NOW_HK_XMLTV_IDS.get(record.channel_id)
         if configured_id:
             return configured_id
     if record.provider == "telus_tvplus":
