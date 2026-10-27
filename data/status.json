@@ -1,11 +1,11 @@
 {
   "astro": {
     "status": "ok",
-    "records": 2570
+    "records": 2512
   },
   "now_hk": {
     "status": "ok",
-    "records": 4071
+    "records": 4532
   },
   "allente_se": {
     "status": "ok",
@@ -17,7 +17,7 @@
   },
   "ee_uk": {
     "status": "ok",
-    "records": 6839,
+    "records": 6844,
     "notes": [
       "tvguide.co.uk 采集 6697 条（6697 去重），其中有图 6672 条。"
     ]
@@ -28,7 +28,7 @@
   },
   "digi4k_ro": {
     "status": "ok",
-    "records": 124
+    "records": 104
   },
   "sbb_rs": {
     "status": "ok",
@@ -36,7 +36,7 @@
   },
   "virgin_uk": {
     "status": "ok",
-    "records": 75
+    "records": 82
   },
   "player_pl": {
     "status": "ok",
@@ -51,7 +51,7 @@
   },
   "telus_tvplus": {
     "status": "ok",
-    "records": 1313,
+    "records": 980,
     "notes": [
       "Telus Love Nature 的频道号为 15130（配置为 713），仍按频道名继续采集。",
       "Telus TV+（telus.prod.g.telustvplus.com）频道目录未找到 Travelxp 4K HDR，已跳过该频道。",
@@ -64,7 +64,9 @@
       "Telus Travelxp 4K HDR 的频道号为 7619（配置为 716），仍按频道名继续采集。",
       "Telus TSN1 的频道号为 7624（配置为 900），仍按频道名继续采集。",
       "Telus TSN2 的频道号为 7627（配置为 901），仍按频道名继续采集。",
-      "Telus TV+ 频道 telus.716 由 QA 环境补齐（生产环境缺失或不可用）。"
+      "Telus TV+ 频道 telus.716 由 QA 环境补齐（生产环境缺失或不可用）。",
+      "Telus TV+（telus.qa.watchoptiktv.com）EPG 拉取失败：Telus TV+（telus.qa.watchoptiktv.com）EPG 拉取失败：Telus TV+ 接口 telus.qa.watchoptiktv.com 返回 HTTP 503。",
+      "Telus TV+ 未返回频道 telus.716 的节目条目。"
     ]
   },
   "peacock": {
@@ -73,23 +75,23 @@
   },
   "pluto_tv": {
     "status": "ok",
-    "records": 19
+    "records": 21
   },
   "epgshare": {
     "status": "ok",
-    "records": 1044
+    "records": 1054
   },
   "sling": {
     "status": "ok",
-    "records": 156
+    "records": 163
   },
   "xmltv": {
     "status": "ok",
-    "channels": 179,
-    "programmes": 20130,
+    "channels": 178,
+    "programmes": 20211,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-10-27T15:23:05Z",
-  "total_records": 20130
+  "generated_at": "2026-10-27T22:50:20Z",
+  "total_records": 20211
 }
