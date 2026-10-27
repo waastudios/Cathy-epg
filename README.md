@@ -33,7 +33,7 @@ Every XMLTV `display-name` is the provider’s official channel name unless an e
 | Market | Published services | Official source |
 | --- | --- | --- |
 | Malaysia | Astro: 23 explicitly allow-listed sports channels | [Astro Content Guide](https://www.astro.com.my/content/channels) |
-| Hong Kong | now TV: 37 explicitly allow-listed sports channels, plus ViuTV and ViuTVsix | [now TV Guide](https://nowplayer.now.com/tvguide) and [official Chinese channel directory](https://nowplayer.now.com/channels?lang=zh&filterType=all) |
+| Hong Kong | now TV: 29 explicitly allow-listed sports channels, plus ViuTV and ViuTVsix | [now TV Guide](https://nowplayer.now.com/tvguide) and [official Chinese channel directory](https://nowplayer.now.com/channels?lang=zh&filterType=all) |
 | Germany | 29 Sky Sport and Sky Sport Bundesliga channels, including UHD | [Telekom MagentaTV](https://www.magenta.tv/) public programme guide |
 | Sweden | 13 V Sport services, including V Sport UltraHD | [Allente TV Guide](https://www.allente.se/tv-guide/) |
 | Norway | TV Norge, REX, FEM, Eurosport Norge, Eurosport 1 | [Allente Norway TV Guide](https://www.allente.no/tv-guide/) |
@@ -127,6 +127,7 @@ For Serbia’s SBB Eurosport schedules, titles are converted during collection u
 
 ## Changelog
 
+- **2026-10-27** — Removed 8 now TV sports channels that have stopped airing: Now Sports 4K 3 (613), Now Sports 英超6台 (626), 英超7台 (627), beIN SPORTS 5 (645) and 6 (646), Now Sports 651/652, and Now Sports Plus (680). Evidence: 10 weekly snapshots from 2026-08-26 to 2026-10-27 show zero real programmes for the first seven (only the “請留意下場播映賽事” filler all week), and Now Sports Plus went from a full schedule on 2026-08-26 to zero for 8 straight weeks; beIN SPORTS 4 (644) is kept because it aired live UEFA overflow matches in September and October. Sports allow-list: 37 → 29.
 - **2026-10-27** — Added ViuTV (`viutv`) and ViuTVsix (`viutv6`) from Hong Kong now TV’s official guide, as user-designated additions alongside the 37-channel sports allow-list (which is unchanged). Display names follow now TV’s official directory (ViuTV on 099, ViuTVsix on 096); programme titles are published as-is, like the other now TV channels.
 - **2026-10-27** — Moved the USA Network inventory entry into the USA Pluto TV / Peacock section (source unchanged: Sling TV).
 - **2026-10-27** — Removed Telemundo Deportes Ahora (`TDA.us`) from the Peacock source. Pluto TV was also checked for a USA Network equivalent before keeping the Sling TV source: Pluto’s 442-channel lineup contains no USA Network channel, and its closest single-franchise channels (Law & Order, Dateline 24/7, Universal Crime, NBC Sports NOW) do not match USA Network’s multi-franchise schedule in the same 24-hour window, so USA Network stays on Sling TV.
