@@ -2,7 +2,7 @@
 
 This inventory is generated directly from the currently published `data/epg.xml`. Every row is an actual XMLTV `<channel>` node: **tvg-id** is `channel/@id` and **tvg-name** is `display-name`.
 
-The current XMLTV output contains **187 channels**.
+The current XMLTV output contains **179 channels**.
 
 > **Note:** `(T)` means **Translated**. The channel's schedule originates in a non-English market and programme titles are translated into English before publication. This marker appears **only in this inventory**; it is never written to `data/epg.xml`, `data/epg.xml.gz`, or the programme snapshot. XMLTV `display-name` values remain the official provider names.
 
@@ -39,15 +39,12 @@ The current XMLTV output contains **187 channels**.
 | --- | --- |
 | `now_hk.611` | Now Sports 4K 1 |
 | `now_hk.612` | Now Sports 4K 2 |
-| `now_hk.613` | Now Sports 4K 3 |
 | `now_hk.620` | Now Sports Premier League TV |
 | `now_hk.621` | Now Sports 英超1台 |
 | `now_hk.622` | Now Sports 英超2台 |
 | `now_hk.623` | Now Sports 英超3台 |
 | `now_hk.624` | Now Sports 英超4台 |
 | `now_hk.625` | Now Sports 英超5台 |
-| `now_hk.626` | Now Sports 英超6台 |
-| `now_hk.627` | Now Sports 英超7台 |
 | `now_hk.630` | Now Sports 精選 |
 | `now_hk.631` | Now Sports 1 |
 | `now_hk.632` | Now Sports 2 |
@@ -63,15 +60,10 @@ The current XMLTV output contains **187 channels**.
 | `now_hk.642` | NBA TV |
 | `now_hk.643` | beIN SPORTS 3 |
 | `now_hk.644` | beIN SPORTS 4 |
-| `now_hk.645` | beIN SPORTS 5 |
-| `now_hk.646` | beIN SPORTS 6 |
 | `now_hk.647` | Now Sports 647 |
-| `now_hk.651` | Now Sports 651 |
-| `now_hk.652` | Now Sports 652 |
 | `now_hk.668` | Now668 |
 | `now_hk.674` | Cricbuzz |
 | `now_hk.679` | Premier Sports |
-| `now_hk.680` | Now Sports Plus |
 | `now_hk.683` | Now Golf 2 |
 | `now_hk.684` | Now Golf 3 |
 | `viutv` | ViuTV |
