@@ -33,7 +33,7 @@ https://raw.githubusercontent.com/waastudios/Cathy-epg/master/data/epg.xml.gz
 | 市场 | 已发布服务 | 官方来源 |
 | --- | --- | --- |
 | 马来西亚 | Astro：23 条明确白名单体育频道 | [Astro Content Guide](https://www.astro.com.my/content/channels) |
-| 香港 | now TV：37 条明确白名单体育频道 | [now TV Guide](https://nowplayer.now.com/tvguide) 与 [官方中文频道目录](https://nowplayer.now.com/channels?lang=zh&filterType=all) |
+| 香港 | now TV：37 条明确白名单体育频道，另加 ViuTV 与 ViuTVsix | [now TV Guide](https://nowplayer.now.com/tvguide) 与 [官方中文频道目录](https://nowplayer.now.com/channels?lang=zh&filterType=all) |
 | 德国 | 29 条 Sky Sport 与 Sky Sport Bundesliga 频道，包含 UHD | [Telekom MagentaTV](https://www.magenta.tv/) 正常公开节目表 |
 | 瑞典 | 13 条 V Sport 服务，包含 V Sport UltraHD | [Allente TV Guide](https://www.allente.se/tv-guide/) |
 | 挪威 | TV Norge、REX、FEM、Eurosport Norge、Eurosport 1 | [Allente Norway TV Guide](https://www.allente.no/tv-guide/) |
@@ -102,7 +102,7 @@ EE 范围包含 **Sky Mix、Sky Arts、Sky Witness、Sky Atlantic、Sky One、Sk
 
 `.github/workflows/refresh-epg.yml` 中的 GitHub Actions 工作流每天在 **19:00 UTC** 运行，即北京时间（UTC+8）**次日 03:00**。工作流会对**全部已配置的官方频道来源**运行 `epg collect --days 7`，写入完整节目快照和 XMLTV 文件（`data/epg.xml` 与 `data/epg.xml.gz`），并且只在结果变化时提交。若官网暂时无法访问，`data/status.json` 会记录来源失败，绝不使用第三方数据替代。
 
-当前发布只有在以下条件同时满足时才视为有效：`data/epg.xml.gz` 解压后与 `data/epg.xml` 完全一致；所有 XMLTV 频道显示名为官方频道名；Astro 与 now TV 频道都属于明确体育白名单；被禁止的美国服务商 ID 不存在。
+当前发布只有在以下条件同时满足时才视为有效：`data/epg.xml.gz` 解压后与 `data/epg.xml` 完全一致；所有 XMLTV 频道显示名为官方频道名；Astro 与 now TV 频道都属于明确白名单（now TV 为体育白名单另加用户指定的 ViuTV 与 ViuTVsix）；被禁止的美国服务商 ID 不存在。
 
 ## 本地使用
 
@@ -127,6 +127,7 @@ epg preview --day tomorrow --provider allente_se --channel 50048
 
 ## 更新日志
 
+- **2026-10-27** —— 通过香港 now TV 官方指南新增 ViuTV（`viutv`）与 ViuTVsix（`viutv6`），作为用户指定的补充频道列入 37 条体育白名单之外（白名单本身不变）。显示名按 now TV 官方目录（099 为 ViuTV、096 为 ViuTVsix）；节目标题与其他 now TV 频道一样保持原样发布。
 - **2026-10-27** —— 清单中 USA Network 条目并入美国 Pluto TV / Peacock 分区（数据源不变，仍为 Sling TV）。
 - **2026-10-27** —— 从 Peacock 来源删除 Telemundo Deportes Ahora（`TDA.us`）。同期核查了 Pluto TV 是否有与 USA Network 相同的节目单以便优先改用 Pluto 版：Pluto 442 个频道中没有 USA Network 频道，其最接近的单一系列频道（Law & Order、Dateline 24/7、Universal Crime、NBC Sports NOW）在同一 24 小时窗口内的节目单与 USA Network 的多系列混合排播均不一致，因此 USA Network 仍保留 Sling TV 版本。
 - **2026-10-27** —— 通过 Sling TV 官方 CMS 节目指南新增 USA Network（`usanetwork.us`）：全国主 feed（USAHD）从 Sling 发布的频道总表动态解析，按 24 小时分窗拉取、7 天滚动覆盖。标题本身为英文，直接发布。
