@@ -1,57 +1,69 @@
 {
   "astro": {
     "status": "ok",
-    "records": 2512
+    "records": 2495
   },
   "now_hk": {
     "status": "ok",
-    "records": 4532
+    "records": 4415
   },
   "allente_se": {
     "status": "ok",
-    "records": 798
+    "records": 783
   },
   "allente_no": {
-    "status": "ok",
-    "records": 697
+    "status": "stale",
+    "records": 697,
+    "message": "Allente Norway 官方 EPG 响应中未找到预期的 TV Norge、REX、FEM、Eurosport Norge 或 Eurosport 1。",
+    "fallback": "previous_snapshot"
   },
   "ee_uk": {
     "status": "ok",
-    "records": 6844,
+    "records": 6845,
     "notes": [
-      "tvguide.co.uk 采集 6697 条（6697 去重），其中有图 6672 条。"
+      "tvguide.co.uk 采集 6700 条（6700 去重），其中有图 6675 条。"
     ]
   },
   "sky_de": {
     "status": "ok",
-    "records": 1481
+    "records": 1435,
+    "notes": [
+      "MagentaTV Sky Germany 206 跳过无法翻译的标题：'WTA 500: A. Eala (PHI) - T. Gibson (AUS), Toray Pan Pacific Open Tennis in Tokio (JPN), 3. Tag'"
+    ]
   },
   "digi4k_ro": {
     "status": "ok",
-    "records": 104
+    "records": 117
   },
   "sbb_rs": {
     "status": "ok",
-    "records": 170
+    "records": 173
   },
   "virgin_uk": {
     "status": "ok",
-    "records": 82
+    "records": 81
   },
   "player_pl": {
     "status": "ok",
-    "records": 596
+    "records": 604,
+    "notes": [
+      "Player.pl Eurosport 3 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
+      "Player.pl Eurosport 4 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
+      "Player.pl Eurosport 4 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
+      "Player.pl Eurosport 3 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
+      "Player.pl Eurosport 3 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'"
+    ]
   },
   "canalplus_fr": {
     "status": "ok",
-    "records": 133,
+    "records": 120,
     "notes": [
       "Canal+ 官方 API 不可用（403 rate limited: https://hodor.canalplus.pro/api/v2/mycanal/authenticate.json/webapp/6.0?experiments=beta-test-one-tv-guide:control），回退到 epg.pw"
     ]
   },
   "telus_tvplus": {
     "status": "ok",
-    "records": 980,
+    "records": 963,
     "notes": [
       "Telus Love Nature 的频道号为 15130（配置为 713），仍按频道名继续采集。",
       "Telus TV+（telus.prod.g.telustvplus.com）频道目录未找到 Travelxp 4K HDR，已跳过该频道。",
@@ -71,15 +83,15 @@
   },
   "peacock": {
     "status": "ok",
-    "records": 44
+    "records": 42
   },
   "pluto_tv": {
     "status": "ok",
-    "records": 21
+    "records": 19
   },
   "epgshare": {
     "status": "ok",
-    "records": 1054
+    "records": 1046
   },
   "sling": {
     "status": "ok",
@@ -88,10 +100,10 @@
   "xmltv": {
     "status": "ok",
     "channels": 178,
-    "programmes": 20211,
+    "programmes": 19998,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-10-27T22:50:20Z",
-  "total_records": 20211
+  "generated_at": "2026-10-28T23:03:16Z",
+  "total_records": 19998
 }
