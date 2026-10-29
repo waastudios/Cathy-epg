@@ -2,7 +2,7 @@
 
 This inventory is generated directly from the currently published `data/epg.xml`. Every row is an actual XMLTV `<channel>` node: **tvg-id** is `channel/@id` and **tvg-name** is `display-name`.
 
-The current XMLTV output contains **178 channels**.
+The current XMLTV output contains **179 channels**.
 
 > **Note:** `(T)` means **Translated**. The channel's schedule originates in a non-English market and programme titles are translated into English before publication. This marker appears **only in this inventory**; it is never written to `data/epg.xml`, `data/epg.xml.gz`, or the programme snapshot. XMLTV `display-name` values remain the official provider names.
 
@@ -138,6 +138,8 @@ The current XMLTV output contains **178 channels**.
 | --- | --- |
 | `virgin_uk.2258` | Sky Sports Ultra HD 1 |
 | `virgin_uk.2265` | Sky Sports Ultra HD 2 |
+| `virgin_uk.1761` | Premier Sports 1 |
+| `virgin_uk.1961` | Premier Sports 2 |
 
 ## Sky Entertainment
 
@@ -230,6 +232,7 @@ The current XMLTV output contains **178 channels**.
 | tvg-id | tvg-name |
 | --- | --- |
 | `telus.713` | Love Nature |
+| `telus.716` | Travelxp 4K |
 | `telus.900` | TSN1 |
 | `telus.901` | TSN2 |
 | `telus.902` | TSN3 |
