@@ -38,7 +38,7 @@ Every XMLTV `display-name` is the provider’s official channel name unless an e
 | Sweden | 13 V Sport services, including V Sport UltraHD | [Allente TV Guide](https://www.allente.se/tv-guide/) |
 | Norway | TV Norge, REX, FEM, Eurosport Norge, Eurosport 1 | [Allente Norway TV Guide](https://www.allente.no/tv-guide/) |
 | United Kingdom | Selected Sky Sports, TNT Sports, BBC, ITV, Channel 4 and Sky Entertainment services | [EE TV Player Live TV Schedule](https://player.ee.co.uk/#/livetv/schedule) |
-| United Kingdom | Sky Sports Ultra HD 1 and 2 | [Virgin Media TV Go Guide](https://virgintvgo.virginmedia.com/en/epg/initial) |
+| United Kingdom | Sky Sports Ultra HD 1 and 2, Premier Sports 1 and 2 | [Virgin Media TV Go Guide](https://virgintvgo.virginmedia.com/en/epg/initial) |
 | Romania | Digi 4K | [Digi 4K](https://www.digi4k.ro/) |
 | Serbia | Eurosport 1, Eurosport 2 and Eurosport 4K | [SBB / EON Public EPG](https://epg.sbb.rs/) |
 | Poland | Eurosport 1–4 and Eleven Sports 1 (titles translated to English) | [Player.pl](https://player.pl/) public EPG API |
@@ -127,6 +127,7 @@ For Serbia’s SBB Eurosport schedules, titles are converted during collection u
 
 ## Changelog
 
+- **2026-10-29** — Added Premier Sports 1 (`virgin_uk.1761`) and Premier Sports 2 (`virgin_uk.1961`) from the official Virgin Media TV Go guide. The two channels are absent from EE TV Player’s anonymous guide, so they are collected through the existing Virgin Media source (logical channels 528/529, HD); programme titles arrive in English and are published as-is.
 - **2026-10-27** — Removed 8 now TV sports channels that have stopped airing: Now Sports 4K 3 (613), Now Sports 英超6台 (626), 英超7台 (627), beIN SPORTS 5 (645) and 6 (646), Now Sports 651/652, and Now Sports Plus (680). Evidence: 10 weekly snapshots from 2026-08-26 to 2026-10-27 show zero real programmes for the first seven (only the “請留意下場播映賽事” filler all week), and Now Sports Plus went from a full schedule on 2026-08-26 to zero for 8 straight weeks; beIN SPORTS 4 (644) is kept because it aired live UEFA overflow matches in September and October. Sports allow-list: 37 → 29.
 - **2026-10-27** — Added ViuTV (`viutv`) and ViuTVsix (`viutv6`) from Hong Kong now TV’s official guide, as user-designated additions alongside the 37-channel sports allow-list (which is unchanged). Display names follow now TV’s official directory (ViuTV on 099, ViuTVsix on 096); programme titles are published as-is, like the other now TV channels.
 - **2026-10-27** — Moved the USA Network inventory entry into the USA Pluto TV / Peacock section (source unchanged: Sling TV).
