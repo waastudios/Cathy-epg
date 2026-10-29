@@ -1,19 +1,23 @@
 {
   "astro": {
     "status": "ok",
-    "records": 2375
+    "records": 2573
   },
   "now_hk": {
     "status": "ok",
-    "records": 3931
+    "records": 4352
   },
   "allente_se": {
-    "status": "ok",
-    "records": 784
+    "status": "stale",
+    "records": 784,
+    "message": "Allente 官方 EPG 响应中未找到任何预期的 V Sport 体育频道。",
+    "fallback": "previous_snapshot"
   },
   "allente_no": {
-    "status": "ok",
-    "records": 680
+    "status": "stale",
+    "records": 680,
+    "message": "Allente Norway 官方 EPG 响应中未找到预期的 TV Norge、REX、FEM、Eurosport Norge 或 Eurosport 1。",
+    "fallback": "previous_snapshot"
   },
   "ee_uk": {
     "status": "ok",
@@ -24,23 +28,23 @@
   },
   "sky_de": {
     "status": "ok",
-    "records": 1395
+    "records": 1421
   },
   "digi4k_ro": {
     "status": "ok",
-    "records": 117
+    "records": 113
   },
   "sbb_rs": {
     "status": "ok",
-    "records": 178
+    "records": 130
   },
   "virgin_uk": {
     "status": "ok",
-    "records": 337
+    "records": 344
   },
   "player_pl": {
     "status": "ok",
-    "records": 599,
+    "records": 609,
     "notes": [
       "Player.pl Eurosport 3 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
       "Player.pl Eurosport 4 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
@@ -78,27 +82,27 @@
   },
   "peacock": {
     "status": "ok",
-    "records": 38
+    "records": 37
   },
   "pluto_tv": {
     "status": "ok",
-    "records": 19
+    "records": 20
   },
   "epgshare": {
     "status": "ok",
-    "records": 1046
+    "records": 1035
   },
   "sling": {
     "status": "ok",
-    "records": 163
+    "records": 161
   },
   "xmltv": {
     "status": "ok",
     "channels": 180,
-    "programmes": 19636,
+    "programmes": 20233,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-10-29T16:21:10Z",
-  "total_records": 19636
+  "generated_at": "2026-10-29T23:11:26Z",
+  "total_records": 20233
 }
