@@ -1,35 +1,30 @@
 {
   "astro": {
     "status": "ok",
-    "records": 2495
+    "records": 2375
   },
   "now_hk": {
     "status": "ok",
-    "records": 4415
+    "records": 3931
   },
   "allente_se": {
     "status": "ok",
-    "records": 783
+    "records": 784
   },
   "allente_no": {
-    "status": "stale",
-    "records": 697,
-    "message": "Allente Norway 官方 EPG 响应中未找到预期的 TV Norge、REX、FEM、Eurosport Norge 或 Eurosport 1。",
-    "fallback": "previous_snapshot"
+    "status": "ok",
+    "records": 680
   },
   "ee_uk": {
     "status": "ok",
-    "records": 6845,
+    "records": 6908,
     "notes": [
-      "tvguide.co.uk 采集 6700 条（6700 去重），其中有图 6675 条。"
+      "tvguide.co.uk 采集 6750 条（6750 去重），其中有图 6733 条。"
     ]
   },
   "sky_de": {
     "status": "ok",
-    "records": 1435,
-    "notes": [
-      "MagentaTV Sky Germany 206 跳过无法翻译的标题：'WTA 500: A. Eala (PHI) - T. Gibson (AUS), Toray Pan Pacific Open Tennis in Tokio (JPN), 3. Tag'"
-    ]
+    "records": 1395
   },
   "digi4k_ro": {
     "status": "ok",
@@ -37,15 +32,15 @@
   },
   "sbb_rs": {
     "status": "ok",
-    "records": 173
+    "records": 178
   },
   "virgin_uk": {
     "status": "ok",
-    "records": 81
+    "records": 337
   },
   "player_pl": {
     "status": "ok",
-    "records": 604,
+    "records": 599,
     "notes": [
       "Player.pl Eurosport 3 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
       "Player.pl Eurosport 4 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
@@ -56,14 +51,14 @@
   },
   "canalplus_fr": {
     "status": "ok",
-    "records": 120,
+    "records": 110,
     "notes": [
       "Canal+ 官方 API 不可用（403 rate limited: https://hodor.canalplus.pro/api/v2/mycanal/authenticate.json/webapp/6.0?experiments=beta-test-one-tv-guide:control），回退到 epg.pw"
     ]
   },
   "telus_tvplus": {
     "status": "ok",
-    "records": 963,
+    "records": 956,
     "notes": [
       "Telus Love Nature 的频道号为 15130（配置为 713），仍按频道名继续采集。",
       "Telus TV+（telus.prod.g.telustvplus.com）频道目录未找到 Travelxp 4K HDR，已跳过该频道。",
@@ -83,7 +78,7 @@
   },
   "peacock": {
     "status": "ok",
-    "records": 42
+    "records": 38
   },
   "pluto_tv": {
     "status": "ok",
@@ -99,11 +94,11 @@
   },
   "xmltv": {
     "status": "ok",
-    "channels": 178,
-    "programmes": 19998,
+    "channels": 180,
+    "programmes": 19636,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-10-28T23:03:16Z",
-  "total_records": 19998
+  "generated_at": "2026-10-29T16:21:10Z",
+  "total_records": 19636
 }
