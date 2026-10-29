@@ -226,6 +226,12 @@ VIRGIN_UK_ULTRA_CHANNELS: dict[str, str] = {
     "2258": "Sky Sports Ultra HD 1",
     "2265": "Sky Sports Ultra HD 2",
 }
+# 2026-10-29 用户指定接入：Premier Sports 1／2（Virgin 528／529，HD）。
+# 同为 Virgin Media TV Go 官方频道目录的可见频道，走同一时间片 EPG 接口。
+VIRGIN_UK_PREMIER_CHANNELS: dict[str, str] = {
+    "1761": "Premier Sports 1",
+    "1961": "Premier Sports 2",
+}
 
 # Telekom MagentaTV 的公开前端配置引用 ThePlatform 官方频道目录与节目表服务。
 # ``source name`` 为目录返回的正式名称；导出时依用户要求移除末尾 HD，而保留 UHD。
@@ -1747,14 +1753,16 @@ def collect_canalplus_fr(days: int = 7, pause_seconds: float = 90.0) -> list[Pro
 
 
 def collect_virgin_uk_ultra(days: int = 7, pause_seconds: float = 0.02) -> list[Programme]:
-    """读取 Virgin Media TV Go 正常 Guide 页面加载的 Sky Sports Ultra HD 1／2 EPG。
+    """读取 Virgin Media TV Go 正常 Guide 页面加载的 Sky Sports Ultra HD 1／2 与
+    Premier Sports 1／2 的 EPG。
 
-    两台仅采用频道目录中可见的标准内部 ID ``2258``／``2265``；明确排除目录中
-    标记为 hidden 的 ``Duplicate`` 镜像。节目事件来自同一官方 Guide 正常请求的
-    静态六小时时间片，返回 Unix 秒级 start/end，因此不会推断节目时间。
+    各台仅采用频道目录中可见的标准内部 ID（2258／2265／1761／1961）；明确排除
+    目录中标记为 hidden 的 ``Duplicate`` 镜像。节目事件来自同一官方 Guide 正常
+    请求的静态六小时时间片，返回 Unix 秒级 start/end，因此不会推断节目时间。
     """
     if days not in range(1, 8):
         raise ValueError("Virgin Media TV Guide 采集天数必须为 1–7。")
+    tracked_channels: dict[str, str] = {**VIRGIN_UK_ULTRA_CHANNELS, **VIRGIN_UK_PREMIER_CHANNELS}
     session = _session()
     channel_response = session.get(
         VIRGIN_UK_CHANNELS,
@@ -1775,15 +1783,16 @@ def collect_virgin_uk_ultra(days: int = 7, pause_seconds: float = 0.02) -> list[
             continue
         channel_id = str(channel.get("id") or "")
         name = (channel.get("name") or "").strip()
-        if channel_id in VIRGIN_UK_ULTRA_CHANNELS and not channel.get("isHidden"):
-            expected_name = VIRGIN_UK_ULTRA_CHANNELS[channel_id]
+        if channel_id in tracked_channels and not channel.get("isHidden"):
+            expected_name = tracked_channels[channel_id]
             if name != expected_name:
                 raise SourceUnavailable(
                     f"Virgin Media 官方频道目录中 {channel_id} 的名称为 {name!r}，与预期的 {expected_name!r} 不一致。"
                 )
             channel_names[channel_id] = name
-    if set(channel_names) != set(VIRGIN_UK_ULTRA_CHANNELS):
-        raise SourceUnavailable("Virgin Media 官方频道目录未同时返回可见的 Sky Sports Ultra HD 1／2。")
+    if set(channel_names) != set(tracked_channels):
+        missing = sorted(set(tracked_channels) - set(channel_names))
+        raise SourceUnavailable(f"Virgin Media 官方频道目录未同时返回可见的跟踪频道：{missing}。")
 
     zone = ZoneInfo("Europe/London")
     today = datetime.now(zone).date()
@@ -1840,7 +1849,7 @@ def collect_virgin_uk_ultra(days: int = 7, pause_seconds: float = 0.02) -> list[
         time.sleep(pause_seconds)
     records = _deduplicate(records)
     if not records:
-        raise SourceUnavailable("Virgin Media 官方 EPG 未返回 Sky Sports Ultra HD 1／2 的目标日期节目记录。")
+        raise SourceUnavailable("Virgin Media 官方 EPG 未返回跟踪频道的目标日期节目记录。")
     return records
 
 
