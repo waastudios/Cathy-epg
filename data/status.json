@@ -1,17 +1,15 @@
 {
   "astro": {
     "status": "ok",
-    "records": 2573
+    "records": 2276
   },
   "now_hk": {
     "status": "ok",
-    "records": 4352
+    "records": 4357
   },
   "allente_se": {
-    "status": "stale",
-    "records": 784,
-    "message": "Allente 官方 EPG 响应中未找到任何预期的 V Sport 体育频道。",
-    "fallback": "previous_snapshot"
+    "status": "ok",
+    "records": 810
   },
   "allente_no": {
     "status": "stale",
@@ -21,30 +19,30 @@
   },
   "ee_uk": {
     "status": "ok",
-    "records": 6908,
+    "records": 6918,
     "notes": [
-      "tvguide.co.uk 采集 6750 条（6750 去重），其中有图 6733 条。"
+      "tvguide.co.uk 采集 6747 条（6747 去重），其中有图 6730 条。"
     ]
   },
   "sky_de": {
     "status": "ok",
-    "records": 1421
+    "records": 1423
   },
   "digi4k_ro": {
     "status": "ok",
-    "records": 113
+    "records": 115
   },
   "sbb_rs": {
     "status": "ok",
-    "records": 130
+    "records": 177
   },
   "virgin_uk": {
     "status": "ok",
-    "records": 344
+    "records": 348
   },
   "player_pl": {
     "status": "ok",
-    "records": 609,
+    "records": 611,
     "notes": [
       "Player.pl Eurosport 3 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
       "Player.pl Eurosport 4 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
@@ -55,7 +53,7 @@
   },
   "canalplus_fr": {
     "status": "ok",
-    "records": 110,
+    "records": 109,
     "notes": [
       "Canal+ 官方 API 不可用（403 rate limited: https://hodor.canalplus.pro/api/v2/mycanal/authenticate.json/webapp/6.0?experiments=beta-test-one-tv-guide:control），回退到 epg.pw"
     ]
@@ -82,7 +80,7 @@
   },
   "peacock": {
     "status": "ok",
-    "records": 37
+    "records": 32
   },
   "pluto_tv": {
     "status": "ok",
@@ -90,19 +88,19 @@
   },
   "epgshare": {
     "status": "ok",
-    "records": 1035
+    "records": 1027
   },
   "sling": {
     "status": "ok",
-    "records": 161
+    "records": 159
   },
   "xmltv": {
     "status": "ok",
     "channels": 180,
-    "programmes": 20233,
+    "programmes": 20018,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-10-29T23:11:26Z",
-  "total_records": 20233
+  "generated_at": "2026-10-30T22:51:12Z",
+  "total_records": 20018
 }
