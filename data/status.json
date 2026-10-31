@@ -1,32 +1,35 @@
 {
   "astro": {
     "status": "ok",
-    "records": 2276
+    "records": 1902
   },
   "now_hk": {
     "status": "ok",
-    "records": 4357
+    "records": 4387
   },
   "allente_se": {
     "status": "ok",
-    "records": 810
+    "records": 787
   },
   "allente_no": {
-    "status": "stale",
-    "records": 680,
-    "message": "Allente Norway 官方 EPG 响应中未找到预期的 TV Norge、REX、FEM、Eurosport Norge 或 Eurosport 1。",
-    "fallback": "previous_snapshot"
+    "status": "ok",
+    "records": 683
   },
   "ee_uk": {
     "status": "ok",
-    "records": 6918,
+    "records": 6908,
     "notes": [
-      "tvguide.co.uk 采集 6747 条（6747 去重），其中有图 6730 条。"
+      "tvguide.co.uk 采集 6737 条（6737 去重），其中有图 6722 条。"
     ]
   },
   "sky_de": {
     "status": "ok",
-    "records": 1423
+    "records": 1415,
+    "notes": [
+      "MagentaTV Sky Germany 206 跳过无法翻译的标题：'Live ATP 500: A. Zverev (GER) - A. de Minaur (AUS), Erste Bank Open in Wien (Österreich), Halbfinale 2'",
+      "MagentaTV Sky Germany 206 跳过无法翻译的标题：'ATP 500: A. Zverev (GER) - A. de Minaur (AUS), Erste Bank Open in Wien (Österreich), Halbfinale 2'",
+      "MagentaTV Sky Germany 206 跳过无法翻译的标题：'ATP 500: A. Zverev (GER) - A. de Minaur (AUS), Erste Bank Open in Wien (Österreich), Halbfinale 2'"
+    ]
   },
   "digi4k_ro": {
     "status": "ok",
@@ -34,15 +37,15 @@
   },
   "sbb_rs": {
     "status": "ok",
-    "records": 177
+    "records": 168
   },
   "virgin_uk": {
     "status": "ok",
-    "records": 348
+    "records": 366
   },
   "player_pl": {
     "status": "ok",
-    "records": 611,
+    "records": 620,
     "notes": [
       "Player.pl Eurosport 3 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
       "Player.pl Eurosport 4 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
@@ -53,14 +56,14 @@
   },
   "canalplus_fr": {
     "status": "ok",
-    "records": 109,
+    "records": 161,
     "notes": [
       "Canal+ 官方 API 不可用（403 rate limited: https://hodor.canalplus.pro/api/v2/mycanal/authenticate.json/webapp/6.0?experiments=beta-test-one-tv-guide:control），回退到 epg.pw"
     ]
   },
   "telus_tvplus": {
     "status": "ok",
-    "records": 956,
+    "records": 949,
     "notes": [
       "Telus Love Nature 的频道号为 15130（配置为 713），仍按频道名继续采集。",
       "Telus TV+（telus.prod.g.telustvplus.com）频道目录未找到 Travelxp 4K HDR，已跳过该频道。",
@@ -80,27 +83,27 @@
   },
   "peacock": {
     "status": "ok",
-    "records": 32
+    "records": 26
   },
   "pluto_tv": {
     "status": "ok",
-    "records": 20
+    "records": 18
   },
   "epgshare": {
     "status": "ok",
-    "records": 1027
+    "records": 1011
   },
   "sling": {
     "status": "ok",
-    "records": 159
+    "records": 161
   },
   "xmltv": {
     "status": "ok",
     "channels": 180,
-    "programmes": 20018,
+    "programmes": 19677,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-10-30T22:51:12Z",
-  "total_records": 20018
+  "generated_at": "2026-10-31T22:07:11Z",
+  "total_records": 19677
 }
