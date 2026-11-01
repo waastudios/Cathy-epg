@@ -1,51 +1,56 @@
 {
   "astro": {
     "status": "ok",
-    "records": 1902
+    "records": 1518
   },
   "now_hk": {
     "status": "ok",
-    "records": 4387
+    "records": 4308
   },
   "allente_se": {
     "status": "ok",
-    "records": 787
+    "records": 779
   },
   "allente_no": {
     "status": "ok",
-    "records": 683
+    "records": 690
   },
   "ee_uk": {
     "status": "ok",
-    "records": 6908,
+    "records": 6867,
     "notes": [
-      "tvguide.co.uk 采集 6737 条（6737 去重），其中有图 6722 条。"
+      "tvguide.co.uk 采集 6699 条（6699 去重），其中有图 6682 条。"
     ]
   },
   "sky_de": {
     "status": "ok",
-    "records": 1415,
+    "records": 1365,
     "notes": [
-      "MagentaTV Sky Germany 206 跳过无法翻译的标题：'Live ATP 500: A. Zverev (GER) - A. de Minaur (AUS), Erste Bank Open in Wien (Österreich), Halbfinale 2'",
       "MagentaTV Sky Germany 206 跳过无法翻译的标题：'ATP 500: A. Zverev (GER) - A. de Minaur (AUS), Erste Bank Open in Wien (Österreich), Halbfinale 2'",
-      "MagentaTV Sky Germany 206 跳过无法翻译的标题：'ATP 500: A. Zverev (GER) - A. de Minaur (AUS), Erste Bank Open in Wien (Österreich), Halbfinale 2'"
+      "MagentaTV Sky Germany 206 跳过无法翻译的标题：'ATP 500: A. Zverev (GER) - A. de Minaur (AUS), Erste Bank Open in Wien (Österreich), Halbfinale 2'",
+      "MagentaTV Sky Germany 206 跳过无法翻译的标题：'Live ATP 500: A. de Minaur (AUS) - C. Alcaraz (ESP), Erste Bank Open in Wien (Österreich), Finale'",
+      "MagentaTV Sky Germany 206 跳过无法翻译的标题：'ATP 500: A. de Minaur (AUS) - C. Alcaraz (ESP), Erste Bank Open in Wien (Österreich), Finale'",
+      "MagentaTV Sky Germany 206 跳过无法翻译的标题：'ATP 500: A. de Minaur (AUS) - C. Alcaraz (ESP), Erste Bank Open in Wien (Österreich), Finale'",
+      "MagentaTV Sky Germany 206 跳过无法翻译的标题：'ATP 500: A. de Minaur (AUS) - C. Alcaraz (ESP), Erste Bank Open in Wien (Österreich), Finale'",
+      "MagentaTV Sky Germany 206 跳过无法翻译的标题：'ATP 500: A. de Minaur (AUS) - C. Alcaraz (ESP), Erste Bank Open in Wien (Österreich), Finale'",
+      "MagentaTV Sky Germany 206 跳过无法翻译的标题：'ATP 500: A. de Minaur (AUS) - C. Alcaraz (ESP), Erste Bank Open in Wien (Österreich), Finale'"
     ]
   },
   "digi4k_ro": {
     "status": "ok",
-    "records": 115
+    "records": 109
   },
   "sbb_rs": {
     "status": "ok",
-    "records": 168
+    "records": 169
   },
   "virgin_uk": {
     "status": "ok",
-    "records": 366
+    "records": 379
   },
   "player_pl": {
     "status": "ok",
-    "records": 620,
+    "records": 622,
     "notes": [
       "Player.pl Eurosport 3 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
       "Player.pl Eurosport 4 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
@@ -56,14 +61,14 @@
   },
   "canalplus_fr": {
     "status": "ok",
-    "records": 161,
+    "records": 143,
     "notes": [
       "Canal+ 官方 API 不可用（403 rate limited: https://hodor.canalplus.pro/api/v2/mycanal/authenticate.json/webapp/6.0?experiments=beta-test-one-tv-guide:control），回退到 epg.pw"
     ]
   },
   "telus_tvplus": {
     "status": "ok",
-    "records": 949,
+    "records": 941,
     "notes": [
       "Telus Love Nature 的频道号为 15130（配置为 713），仍按频道名继续采集。",
       "Telus TV+（telus.prod.g.telustvplus.com）频道目录未找到 Travelxp 4K HDR，已跳过该频道。",
@@ -83,27 +88,27 @@
   },
   "peacock": {
     "status": "ok",
-    "records": 26
+    "records": 28
   },
   "pluto_tv": {
     "status": "ok",
-    "records": 18
+    "records": 21
   },
   "epgshare": {
     "status": "ok",
-    "records": 1011
+    "records": 1007
   },
   "sling": {
     "status": "ok",
-    "records": 161
+    "records": 157
   },
   "xmltv": {
     "status": "ok",
-    "channels": 180,
-    "programmes": 19677,
+    "channels": 179,
+    "programmes": 19103,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-10-31T22:07:11Z",
-  "total_records": 19677
+  "generated_at": "2026-11-01T22:39:08Z",
+  "total_records": 19103
 }
