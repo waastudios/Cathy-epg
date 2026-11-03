@@ -1,57 +1,54 @@
 {
   "astro": {
     "status": "ok",
-    "records": 1357
+    "records": 2443
   },
   "now_hk": {
     "status": "ok",
-    "records": 4116
+    "records": 4114
   },
   "allente_se": {
-    "status": "ok",
-    "records": 799
+    "status": "stale",
+    "records": 799,
+    "message": "Allente 官方 EPG 响应中未找到任何预期的 V Sport 体育频道。",
+    "fallback": "previous_snapshot"
   },
   "allente_no": {
-    "status": "ok",
-    "records": 691
+    "status": "stale",
+    "records": 691,
+    "message": "Allente Norway 官方 EPG 响应中未找到预期的 TV Norge、REX、FEM、Eurosport Norge 或 Eurosport 1。",
+    "fallback": "previous_snapshot"
   },
   "ee_uk": {
     "status": "ok",
-    "records": 6880,
+    "records": 6886,
     "notes": [
-      "tvguide.co.uk 采集 6715 条（6715 去重），其中有图 6686 条。"
+      "tvguide.co.uk 采集 6723 条（6723 去重），其中有图 6695 条。"
     ]
   },
   "sky_de": {
     "status": "ok",
-    "records": 1372,
+    "records": 1396,
     "notes": [
-      "MagentaTV Sky Germany 206 跳过无法翻译的标题：'ATP 500: A. de Minaur (AUS) - C. Alcaraz (ESP), Erste Bank Open in Wien (Österreich), Finale'",
-      "MagentaTV Sky Germany 206 跳过无法翻译的标题：'ATP 500: A. de Minaur (AUS) - C. Alcaraz (ESP), Erste Bank Open in Wien (Österreich), Finale'",
       "MagentaTV Sky Germany 206 跳过无法翻译的标题：'ATP 500: A. de Minaur (AUS) - C. Alcaraz (ESP), Erste Bank Open in Wien (Österreich), Finale'"
     ]
   },
   "digi4k_ro": {
     "status": "ok",
-    "records": 105
+    "records": 130
   },
   "sbb_rs": {
     "status": "ok",
-    "records": 177
+    "records": 131
   },
   "virgin_uk": {
     "status": "ok",
-    "records": 374
+    "records": 378
   },
   "player_pl": {
     "status": "ok",
-    "records": 605,
+    "records": 618,
     "notes": [
-      "Player.pl Eurosport 3 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
-      "Player.pl Eurosport 4 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
-      "Player.pl Eurosport 4 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
-      "Player.pl Eurosport 3 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
-      "Player.pl Eurosport 3 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
       "Player.pl Eurosport 4 跳过无法翻译的标题：'Tenis: Turniej French Open 2024 - mecz finałowy gry pojedynczej kobiet: Iga Świątek - Jasmine Paolini'",
       "Player.pl Eleven Sports 1 跳过无法翻译的标题：'Piłka nożna: Liga Portugal Betclic: Vitória SC - FC Porto'",
       "Player.pl Eurosport 3 跳过无法翻译的标题：'Tenis: Turniej French Open 2024 - mecz finałowy gry pojedynczej kobiet: Iga Świątek - Jasmine Paolini'",
@@ -71,7 +68,7 @@
   },
   "telus_tvplus": {
     "status": "ok",
-    "records": 923,
+    "records": 929,
     "notes": [
       "Telus Love Nature 的频道号为 15130（配置为 713），仍按频道名继续采集。",
       "Telus TV+（telus.prod.g.telustvplus.com）频道目录未找到 Travelxp 4K HDR，已跳过该频道。",
@@ -91,11 +88,11 @@
   },
   "peacock": {
     "status": "ok",
-    "records": 30
+    "records": 33
   },
   "pluto_tv": {
     "status": "ok",
-    "records": 20
+    "records": 18
   },
   "epgshare": {
     "status": "ok",
@@ -107,11 +104,11 @@
   },
   "xmltv": {
     "status": "ok",
-    "channels": 178,
-    "programmes": 18744,
+    "channels": 179,
+    "programmes": 19861,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-11-03T01:32:26Z",
-  "total_records": 18744
+  "generated_at": "2026-11-03T23:55:41Z",
+  "total_records": 19861
 }
