@@ -1,36 +1,31 @@
 {
   "astro": {
     "status": "ok",
-    "records": 1518
+    "records": 1357
   },
   "now_hk": {
     "status": "ok",
-    "records": 4308
+    "records": 4116
   },
   "allente_se": {
     "status": "ok",
-    "records": 779
+    "records": 799
   },
   "allente_no": {
     "status": "ok",
-    "records": 690
+    "records": 691
   },
   "ee_uk": {
     "status": "ok",
-    "records": 6867,
+    "records": 6880,
     "notes": [
-      "tvguide.co.uk 采集 6699 条（6699 去重），其中有图 6682 条。"
+      "tvguide.co.uk 采集 6715 条（6715 去重），其中有图 6686 条。"
     ]
   },
   "sky_de": {
     "status": "ok",
-    "records": 1365,
+    "records": 1372,
     "notes": [
-      "MagentaTV Sky Germany 206 跳过无法翻译的标题：'ATP 500: A. Zverev (GER) - A. de Minaur (AUS), Erste Bank Open in Wien (Österreich), Halbfinale 2'",
-      "MagentaTV Sky Germany 206 跳过无法翻译的标题：'ATP 500: A. Zverev (GER) - A. de Minaur (AUS), Erste Bank Open in Wien (Österreich), Halbfinale 2'",
-      "MagentaTV Sky Germany 206 跳过无法翻译的标题：'Live ATP 500: A. de Minaur (AUS) - C. Alcaraz (ESP), Erste Bank Open in Wien (Österreich), Finale'",
-      "MagentaTV Sky Germany 206 跳过无法翻译的标题：'ATP 500: A. de Minaur (AUS) - C. Alcaraz (ESP), Erste Bank Open in Wien (Österreich), Finale'",
-      "MagentaTV Sky Germany 206 跳过无法翻译的标题：'ATP 500: A. de Minaur (AUS) - C. Alcaraz (ESP), Erste Bank Open in Wien (Österreich), Finale'",
       "MagentaTV Sky Germany 206 跳过无法翻译的标题：'ATP 500: A. de Minaur (AUS) - C. Alcaraz (ESP), Erste Bank Open in Wien (Österreich), Finale'",
       "MagentaTV Sky Germany 206 跳过无法翻译的标题：'ATP 500: A. de Minaur (AUS) - C. Alcaraz (ESP), Erste Bank Open in Wien (Österreich), Finale'",
       "MagentaTV Sky Germany 206 跳过无法翻译的标题：'ATP 500: A. de Minaur (AUS) - C. Alcaraz (ESP), Erste Bank Open in Wien (Österreich), Finale'"
@@ -38,37 +33,45 @@
   },
   "digi4k_ro": {
     "status": "ok",
-    "records": 109
+    "records": 105
   },
   "sbb_rs": {
     "status": "ok",
-    "records": 169
+    "records": 177
   },
   "virgin_uk": {
     "status": "ok",
-    "records": 379
+    "records": 374
   },
   "player_pl": {
     "status": "ok",
-    "records": 622,
+    "records": 605,
     "notes": [
       "Player.pl Eurosport 3 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
       "Player.pl Eurosport 4 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
       "Player.pl Eurosport 4 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
       "Player.pl Eurosport 3 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
-      "Player.pl Eurosport 3 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'"
+      "Player.pl Eurosport 3 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
+      "Player.pl Eurosport 4 跳过无法翻译的标题：'Tenis: Turniej French Open 2024 - mecz finałowy gry pojedynczej kobiet: Iga Świątek - Jasmine Paolini'",
+      "Player.pl Eleven Sports 1 跳过无法翻译的标题：'Piłka nożna: Liga Portugal Betclic: Vitória SC - FC Porto'",
+      "Player.pl Eurosport 3 跳过无法翻译的标题：'Tenis: Turniej French Open 2024 - mecz finałowy gry pojedynczej kobiet: Iga Świątek - Jasmine Paolini'",
+      "Player.pl Eurosport 4 跳过无法翻译的标题：'Tenis: Turniej French Open 2024 - mecz finałowy gry pojedynczej kobiet: Iga Świątek - Jasmine Paolini'",
+      "Player.pl Eurosport 3 跳过无法翻译的标题：'Tenis: Turniej French Open 2024 - mecz finałowy gry pojedynczej kobiet: Iga Świątek - Jasmine Paolini'",
+      "Player.pl Eurosport 3 跳过无法翻译的标题：'Tenis: Turniej French Open 2024 - mecz finałowy gry pojedynczej kobiet: Iga Świątek - Jasmine Paolini'",
+      "Player.pl Eurosport 4 跳过无法翻译的标题：'Tenis: Turniej French Open 2024 - mecz finałowy gry pojedynczej kobiet: Iga Świątek - Jasmine Paolini'",
+      "Player.pl Eurosport 4 跳过无法翻译的标题：'Tenis: Turniej French Open 2024 - mecz finałowy gry pojedynczej kobiet: Iga Świątek - Jasmine Paolini'"
     ]
   },
   "canalplus_fr": {
     "status": "ok",
-    "records": 143,
+    "records": 135,
     "notes": [
       "Canal+ 官方 API 不可用（403 rate limited: https://hodor.canalplus.pro/api/v2/mycanal/authenticate.json/webapp/6.0?experiments=beta-test-one-tv-guide:control），回退到 epg.pw"
     ]
   },
   "telus_tvplus": {
     "status": "ok",
-    "records": 941,
+    "records": 923,
     "notes": [
       "Telus Love Nature 的频道号为 15130（配置为 713），仍按频道名继续采集。",
       "Telus TV+（telus.prod.g.telustvplus.com）频道目录未找到 Travelxp 4K HDR，已跳过该频道。",
@@ -88,15 +91,15 @@
   },
   "peacock": {
     "status": "ok",
-    "records": 28
+    "records": 30
   },
   "pluto_tv": {
     "status": "ok",
-    "records": 21
+    "records": 20
   },
   "epgshare": {
     "status": "ok",
-    "records": 1007
+    "records": 1003
   },
   "sling": {
     "status": "ok",
@@ -104,11 +107,11 @@
   },
   "xmltv": {
     "status": "ok",
-    "channels": 179,
-    "programmes": 19103,
+    "channels": 178,
+    "programmes": 18744,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-11-01T22:39:08Z",
-  "total_records": 19103
+  "generated_at": "2026-11-03T01:32:26Z",
+  "total_records": 18744
 }
