@@ -1,41 +1,46 @@
 {
   "astro": {
     "status": "ok",
-    "records": 2365
+    "records": 2319
   },
   "now_hk": {
     "status": "ok",
-    "records": 4096
+    "records": 4081
   },
   "allente_se": {
-    "status": "ok",
-    "records": 812
+    "status": "stale",
+    "records": 812,
+    "message": "Allente 官方 EPG 响应中未找到任何预期的 V Sport 体育频道。",
+    "fallback": "previous_snapshot"
   },
   "allente_no": {
-    "status": "ok",
-    "records": 686
+    "status": "stale",
+    "records": 686,
+    "message": "Allente Norway 官方 EPG 响应中未找到预期的 TV Norge、REX、FEM、Eurosport Norge 或 Eurosport 1。",
+    "fallback": "previous_snapshot"
   },
   "ee_uk": {
     "status": "ok",
-    "records": 6984,
+    "records": 7000,
     "notes": [
-      "tvguide.co.uk 采集 6828 条（6828 去重），其中有图 6793 条。"
+      "tvguide.co.uk 采集 6838 条（6838 去重），其中有图 6810 条。"
     ]
   },
   "sky_de": {
     "status": "ok",
-    "records": 1411,
+    "records": 1400,
     "notes": [
-      "MagentaTV Sky Germany 206 跳过无法翻译的标题：'ATP 500: A. de Minaur (AUS) - C. Alcaraz (ESP), Erste Bank Open in Wien (Österreich), Finale'"
+      "MagentaTV Sky Germany 206 跳过无法翻译的标题：'ATP 500: A. de Minaur (AUS) - C. Alcaraz (ESP), Erste Bank Open in Wien (Österreich), Finale'",
+      "MagentaTV Sky Germany 206 跳过无法翻译的标题：'Live WTA Finals: C. Bucsa (ESP)/N. Melichar-Martinez (USA) - E. Perez (AUS)/D. Schuurs (NED), FAGE WTA Finals in Indian Wells (USA), 1. Tag'"
     ]
   },
   "digi4k_ro": {
     "status": "ok",
-    "records": 113
+    "records": 129
   },
   "sbb_rs": {
     "status": "ok",
-    "records": 202,
+    "records": 135,
     "notes": [
       "SBB Eurosport 1 跳过无法翻译的标题：'Tadej Pogačar G. O. A. T. Anatomija'",
       "SBB Eurosport 2 跳过无法翻译的标题：'Tadej Pogačar G. O. A. T. Anatomija'",
@@ -44,11 +49,11 @@
   },
   "virgin_uk": {
     "status": "ok",
-    "records": 372
+    "records": 371
   },
   "player_pl": {
     "status": "ok",
-    "records": 632,
+    "records": 633,
     "notes": [
       "Player.pl Eurosport 4 跳过无法翻译的标题：'Tenis: Turniej French Open 2024 - mecz finałowy gry pojedynczej kobiet: Iga Świątek - Jasmine Paolini'",
       "Player.pl Eleven Sports 1 跳过无法翻译的标题：'Piłka nożna: Liga Portugal Betclic: Vitória SC - FC Porto'",
@@ -63,14 +68,14 @@
   },
   "canalplus_fr": {
     "status": "ok",
-    "records": 130,
+    "records": 151,
     "notes": [
       "Canal+ 官方 API 不可用（403 rate limited: https://hodor.canalplus.pro/api/v2/mycanal/authenticate.json/webapp/6.0?experiments=beta-test-one-tv-guide:control），回退到 epg.pw"
     ]
   },
   "telus_tvplus": {
     "status": "ok",
-    "records": 936,
+    "records": 938,
     "notes": [
       "Telus Love Nature 的频道号为 15130（配置为 713），仍按频道名继续采集。",
       "Telus TV+（telus.prod.g.telustvplus.com）频道目录未找到 Travelxp 4K HDR，已跳过该频道。",
@@ -90,27 +95,27 @@
   },
   "peacock": {
     "status": "ok",
-    "records": 36
+    "records": 37
   },
   "pluto_tv": {
     "status": "ok",
-    "records": 17
+    "records": 20
   },
   "epgshare": {
     "status": "ok",
-    "records": 1024
+    "records": 1028
   },
   "sling": {
     "status": "ok",
-    "records": 157
+    "records": 156
   },
   "xmltv": {
     "status": "ok",
     "channels": 179,
-    "programmes": 19973,
+    "programmes": 19896,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-11-05T00:09:03Z",
-  "total_records": 19973
+  "generated_at": "2026-11-06T00:01:31Z",
+  "total_records": 19896
 }
