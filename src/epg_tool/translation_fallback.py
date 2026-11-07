@@ -98,6 +98,15 @@ PHRASES = {
 # legitimate English guide text: German "am" (the "Pirelli AM" racing
 # class), Norwegian "er" (the series "ER"), French articles ("Tour de
 # France", "Le Mans") and German articles ("Die Hard").
+# 2026-11-07: a second leak class surfaced -- country/city names in source
+# spelling (Swedish "Mexiko"/"Brasiliens"/"Qatars", Serbian "Njujork"/
+# "Sidnej") and ASCII-only EPG vocabulary (Polish "sesja treningowa",
+# "Legendy", "Najlepsi bramkarze"; Serbian "Atletika", "maraton",
+# "Vrhunci") carry no diacritics and no function words, so the original
+# lists were blind to them.  The lists now carry source-spelled place names
+# (only spellings that differ from English, so e.g. "Malaysia" and "Zagreb"
+# stay out) plus the missing vocabulary; the per-source exact maps translate
+# the recurring titles instead of merely blocking them.
 _SOURCE_DIACRITICS_HARD = {
     "sr": "čćđšž",
     "pl": "ąćęłńóśźż",
@@ -123,6 +132,8 @@ _RESIDUAL_WORDS: dict[str, frozenset[str]] = {
         kuca ahen snuker tenis triatlon evropska evropski evropsko evrope
         evropi ceremonija ceremonije otvaranje otvaranja zatvaranje
         zatvaranja dnevnik vesti pariz rim tokio
+        atletika maraton maratona njujork sidnej sidneja vrhunci vrhunac
+        melburn beograd karling sezone sezona
     """.split()),
     "pl": frozenset("""
         oraz lub ale dla przez przed przeciwko między także już jeszcze
@@ -148,6 +159,13 @@ _RESIDUAL_WORDS: dict[str, frozenset[str]] = {
         łyżwiarstwo lyzwiarstwo hokej hokeja żużel zuzel skrót skróty skrot
         magazyn gość goście sekrety sukces sukcesu najlepszy najlepsze
         najlepsza światowy światowa światowe pucharowy
+        sesja sesji treningowa treningowy treningowe trening
+        kwalifikacyjna kwalifikacyjny dramatyczne dramatyczny rzuty karne
+        karny legendy ligi niemieckiej niemieckiego niemiecka
+        najlepsi najlepszych najlepszym bramkarze bramkarzy napastnicy
+        napastników pomocnicy pomocników najszybsze najszybszy gole goli
+        lat historie historia bohaterowie bohaterów moje moich
+        pierwsze pierwszych kroki kroków raceu meksyk
     """.split()),
     "no": frozenset("""
         og eller fra med mot til på av som det den dette denne sesong
@@ -157,6 +175,7 @@ _RESIDUAL_WORDS: dict[str, frozenset[str]] = {
         skiskyting alpint kvinner kvinners menn menns damer damers herrer
         herrers utfor slalåm hopp kombinert sending sendingen sendinger
         magasin nyheter kollega skadet hemmelig merkelig bagasje ferske
+        brasil sverige
     """.split()),
     "sv": frozenset("""
         och eller från med mot till på av är som det den detta denna säsong
@@ -165,6 +184,11 @@ _RESIDUAL_WORDS: dict[str, frozenset[str]] = {
         sammandrag fotboll ishockey längdskidåkning skidskytte alpint
         kvinnor kvinnors damer damers herrar herrars magasin nyheter
         sändning direkt repris ingen
+        mexiko mexikos brasiliens brasilien qatars cupen spanien spaniens
+        italien italiens österrike österrikes frankrike frankrikes
+        nederländerna nederländernas storbritannien storbritanniens kanada
+        kina azerbajdzjan saudiarabien tyskland tysklands belgien ungern
+        danmark norge sverige finalen kvartsfinal förlängning
     """.split()),
     "fr": frozenset("""
         avec saison saisons épisode épisodes invité invités invitée
@@ -172,6 +196,7 @@ _RESIDUAL_WORDS: dict[str, frozenset[str]] = {
         mondiale mondiaux résumé émission émissions inédit inédits différé
         rediffusion natation cyclisme athlétisme escrime aviron canoë
         équitation equitation voile quotidien quotidienne hebdomadaire chez
+        mexique brésil espagne italie allemagne angleterre pays-bas autriche
     """.split()),
     "ro": frozenset("""
         și cel cea cei cele din pentru cu campionat campionatul campionate
@@ -179,6 +204,7 @@ _RESIDUAL_WORDS: dict[str, frozenset[str]] = {
         tenis cursa cursă curse finala finală semifinala semifinală magazin
         emisiune emisiunea știri stiri cupa cupei divizia sezon sezonul
         episod episodul
+        mexic brazilia spania italia franța germania austria olanda
     """.split()),
     "de": frozenset("""
         und im vom zum zur bei nach vor aus für über meisterschaft
@@ -186,11 +212,14 @@ _RESIDUAL_WORDS: dict[str, frozenset[str]] = {
         zusammenfassung qualifikation qualifikationen weltcup
         weltmeisterschaft europameisterschaft höhepunkte magazin direkt
         wiederholung heute
+        mexiko brasilien spanien italien frankreich österreich
+        großbritannien niederlande
     """.split()),
     "es": frozenset("""
         temporada episodio capítulo campeonato partido partidos carrera
         carreras mundo mundial resumen directo diferido fútbol baloncesto
         balonmano ciclismo natación atletismo hombres mujeres
+        méxico brasil españa italia francia alemania austria inglaterra
     """.split()),
 }
 
