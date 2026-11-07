@@ -537,7 +537,30 @@ def _translate_allente_se_title(title: str) -> str | None:
         ("Storbritanniens GP", "British Grand Prix"),
         ("Tyska Supercupen:", "German Super Cup:"),
         ("Aten", "Athens"),
+        # 大奖赛地名：所有格形式必须排在裸地名之前，否则 "Mexikos" 会被
+        # 裸替换切成 "Mexicos"（2026-11-07 漏网：Mexiko/Brasiliens/Qatars）。
+        ("Mexikos GP", "Mexico GP"),
+        ("Brasiliens GP", "Brazil GP"),
+        ("Qatars GP", "Qatar GP"),
+        ("Spaniens GP", "Spanish GP"),
+        ("Italiens GP", "Italian GP"),
+        ("Österrikes GP", "Austrian GP"),
+        ("Frankrikes GP", "French GP"),
+        ("Nederländernas GP", "Dutch GP"),
+        ("Mexiko", "Mexico"),
+        ("Brasilien", "Brazil"),
+        ("Spanien", "Spain"),
+        ("Italien", "Italy"),
+        ("Österrike", "Austria"),
+        ("Frankrike", "France"),
         ("Nederländerna", "Netherlands"),
+        # "Stryktipset" 直译是 "Ironing Tip"；必须整词组替换，否则在线
+        # 翻译会把字面意思写进缓存（2026-11-07 已清一条毒化缓存）。
+        ("med Stryktipset", "with Football Pool"),
+        ("Med Stryktipset", "With Football Pool"),
+        ("Stryktipset", "Football Pool"),
+        ("FA-Cupen", "FA Cup"),
+        ("Cupen", "Cup"),
     )
     for source, target in replacements:
         translated = translated.replace(source, target)
@@ -546,7 +569,7 @@ def _translate_allente_se_title(title: str) -> str | None:
     # Use vocabulary rather than generic Nordic diacritics: Mönchengladbach,
     # Nürnberg and Bodö/Glimt are official foreign proper names, not Swedish residue.
     untranslated = re.search(
-        r"\b(?:Aten|Avsnitt|Direkt|Efterstudio|Finalen|Formel|Förstudio|Höjdpunkter|Kval|Ligacupen|Mästerskap|Med|Mot|Nederländerna|Sändningsuppehåll|Säsong|Storbritanniens|Stryktipset|Svenska|Svensk|Träning|Tyska|Världscupen|avsnitt|direkt|efterstudio|finalen|förstudio|höjdpunkter|kval|ligacupen|mästerskap|med|mot|nederländerna|sändningsuppehåll|säsong|storbritanniens|stryk|svenska|svensk|träning|tyska|världscupen)\b",
+        r"\b(?:Aten|Avsnitt|Direkt|Efterstudio|Finalen|Formel|Förstudio|Höjdpunkter|Kval|Ligacupen|Mästerskap|Med|Mot|Nederländerna|Nederländernas|Sändningsuppehåll|Säsong|Storbritanniens|Stryktipset|Svenska|Svensk|Träning|Tyska|Världscupen|Mexiko|Mexikos|Brasiliens|Brasilien|Qatars|Cupen|Spanien|Spaniens|Italien|Italiens|Österrike|Österrikes|Frankrike|Frankrikes|avsnitt|direkt|efterstudio|finalen|förstudio|höjdpunkter|kval|ligacupen|mästerskap|med|mot|nederländerna|sändningsuppehåll|säsong|storbritanniens|stryk|svenska|svensk|träning|tyska|världscupen)\b",
         translated,
         flags=re.IGNORECASE,
     )
@@ -1206,6 +1229,20 @@ def _translate_sbb_eurosport_title(title: str) -> str | None:
         ("Pariz", "Paris"),
         ("Rim", "Rome"),
         ("Tokio", "Tokyo"),
+        # 2026-11-07 漏网：源拼写地名与运动词（Njujork/Sidnej/Atletika/
+        # maraton/Vrhunci）无变音符号，门与守卫都看不见。
+        ("Njujork", "New York"),
+        ("njujork", "New York"),
+        ("Sidnej", "Sydney"),
+        ("sidnej", "Sydney"),
+        ("Atletika", "Athletics"),
+        ("atletika", "athletics"),
+        ("Vrhunci", "Highlights"),
+        ("vrhunci", "highlights"),
+        ("Maraton", "Marathon"),
+        ("maraton", "marathon"),
+        ("Međunarodno prvenstvo", "International Championship"),
+        ("međunarodno prvenstvo", "International Championship"),
         ("Brdski biciklizam", "Mountain Biking"),
         ("Biciklizam", "Cycling"),
         ("Drumska trka", "Road Race"),
@@ -1222,11 +1259,21 @@ def _translate_sbb_eurosport_title(title: str) -> str | None:
         ("Svetski kup", "World Cup"),
         ("Tur Portugala", "Tour of Portugal"),
         ("Tur Beneluksa", "Benelux Tour"),
+        # 通用 "Tur X"（如 Tur Lombardije）：排在专名之后；"Turneja" 不含
+        # "Tur "（无空格）故不受影响。
+        ("Tur ", "Tour "),
+        ("tur ", "tour "),
+        ("Lombardije", "Lombardy"),
+        ("Lombardija", "Lombardy"),
         ("Meksiko Siti", "Mexico City"),
         ("Majami", "Miami"),
         ("Džeda", "Jeddah"),
         ("Endurance auto trka", "Endurance car race"),
         ("auto trka", "car race"),
+        # 裸 "Trka"（如结尾的 ": Trka"）须映射，否则整标题会因残留词
+        # 被门挡下而落到在线层（2026-11-07："6 hours Fuji: Race" 走在线层）。
+        ("Trka", "Race"),
+        ("trka", "race"),
         ("sati Fudžija", "hours of Fuji"),
         ("Fudžija", "Fuji"),
         ("Le Mana", "Le Mans"),
@@ -1243,17 +1290,46 @@ def _translate_sbb_eurosport_title(title: str) -> str | None:
         ("Žene", "Women"),
         ("(M)", "(Men)"),
         ("(Ž)", "(Women)"),
+        ("(M, Ž)", "(Men, Women)"),
+        ("(M,Ž)", "(Men, Women)"),
+        # 2026-11-07 续漏：SBB 实际用 "Internacionalni šampionat" 而非
+        # "Međunarodno prvenstvo"；"sezone"（赛季属格）与 "Karling"（冰壶）
+        # 同样无变音符号、门与守卫都看不见。
+        ("Internacionalni šampionat", "International Championship"),
+        ("Internacionalni", "International"),
+        ("Šampionat Evrope", "European Championship"),
+        ("Šampionat", "Championship"),
+        ("šampionat", "championship"),
+        ("Karling", "Curling"),
+        ("karling", "curling"),
+        ("Highlights sezone", "Season Highlights"),
+        ("highlights sezone", "season highlights"),
+        ("sezone", "of the season"),
+        # 循环赛事地名/队名（带变音符号，不映射会直接触发守卫落到在线层）。
+        ("Šenzen", "Shenzhen"),
+        ("Šefild", "Sheffield"),
+        ("Švajcarska", "Switzerland"),
+        ("Škotska", "Scotland"),
+        ("Švedska", "Sweden"),
+        ("Španija", "Spain"),
+        ("Nemačka", "Germany"),
     )
     for source, target in replacements:
         translated = translated.replace(source, target)
+    # "1/2 finala" 先归一化为 "1 2"，否则斜杠会让下面的半决赛规则失效
+    # （2026-11-07 漏网：在线层产出 "1 2 finals"）。
+    translated = re.sub(r"\b1\s*/\s*2\b", "1 2", translated)
+    translated = re.sub(r"\b1\s*/\s*4\b", "1 4", translated)
     translated = re.sub(r"\b1\s*4 finals\b", "Quarter-finals", translated)
     translated = re.sub(r"\b1\s*2 finals\b", "Semi-finals", translated)
+    translated = re.sub(r"\b1\s*4 final\b", "Quarter-final", translated)
+    translated = re.sub(r"\b1\s*2 final\b", "Semi-final", translated)
     # "6 sati" / "24 sata" 都是"小时"的塞尔维亚语形式；用词边界替换避免误伤。
     translated = re.sub(r"\bsati\b", "hours", translated)
     translated = re.sub(r"\bsata\b", "hours", translated)
     translated = re.sub(r"\s+", " ", translated).strip(" ,")
     untranslated = re.search(
-        r"[čćđšžČĆĐŠŽ]|\b(?:Ahen|Biciklizam|Brdski|Dubl|Etapa|finala|Jedrenje|Konjički|Majami|Meksiko|Mešovito|Pregled|pregled|Runda|Skakanje|Snuker|Spust|Svetski|Svetsko|Svetska|turneja|Olimpijske|olimpijske|igre|Dvorana|Slavnih|olimpijade|Šampionat|Tenis|Triatlon|Tur|Žene|Muškarci)\b",
+        r"[čćđšžČĆĐŠŽ]|\b(?:Ahen|Biciklizam|Brdski|Dubl|Etapa|finala|Jedrenje|Konjički|Majami|Meksiko|Mešovito|Pregled|pregled|Runda|Skakanje|Snuker|Spust|Svetski|Svetsko|Svetska|turneja|Olimpijske|olimpijske|igre|Dvorana|Slavnih|olimpijade|Šampionat|Tenis|Triatlon|Tur|Žene|Muškarci|Atletika|atletika|maraton|Njujork|Sidnej|Vrhunci|Međunarodno|Karling|karling|sezone|sezona|Internacionalni|internacionalni)\b",
         translated,
     )
     if untranslated:
@@ -2070,6 +2146,17 @@ def _translate_player_pl_title(title: str) -> str | None:
         ("Snooker:", "Snooker:"),
         ("Formuła 1:", "Formula 1:"),
         ("Formuła 2:", "Formula 2:"),
+        # F1 练习赛/排位赛：序数形式优先于通用词组（2026-11-07 漏网：
+        # "1. sesja treningowa" 整段残留波兰语）。
+        ("1. sesja treningowa", "Practice 1"),
+        ("2. sesja treningowa", "Practice 2"),
+        ("3. sesja treningowa", "Practice 3"),
+        ("Sesja treningowa", "Practice session"),
+        ("sesja treningowa", "practice session"),
+        ("Sesja kwalifikacyjna", "Qualifying session"),
+        ("sesja kwalifikacyjna", "qualifying session"),
+        ("sesja", "session"),
+        ("Sesja", "Session"),
         ("Wyścigi samochodowe:", "Motorsport:"),
         ("Żużel:", "Speedway:"),
         ("Boks:", "Boxing:"),
@@ -2116,8 +2203,37 @@ def _translate_player_pl_title(title: str) -> str | None:
         ("Półfinał", "Semi-final"),
         ("ćwierćfinał", "quarter-final"),
         ("Ćwierćfinał", "Quarter-final"),
+        # 属格 "wyścigu" 必须排在原形之前：子串替换会把 "wyścigu" 切成
+        # 毒化产物 "raceu"（2026-11-07 漏网：Highlights raceu）。
+        ("Wyścigu", "Of the race"),
+        ("wyścigu", "of the race"),
         ("Wyścig", "Race"),
         ("wyścig", "race"),
+        # Eleven 杂志节目整标题（2026-11-07 漏网：整段波兰语原样发布）。
+        ("Dramatyczne rzuty karne", "Dramatic Penalty Shootouts"),
+        ("Legendy Bundesligi", "Bundesliga Legends"),
+        ("Legendy ligi niemieckiej", "Legends of the German League"),
+        ("Najlepsi bramkarze Bundesligi lat 90.", "Best Bundesliga Goalkeepers of the 90s"),
+        ("Najlepsi napastnicy Bundesligi lat 90.", "Best Bundesliga Forwards of the 90s"),
+        ("Najlepsi pomocnicy Bundesligi lat 90.", "Best Bundesliga Midfielders of the 90s"),
+        ("Najszybsze gole Bundesligi", "Fastest Bundesliga Goals"),
+        ("Historie Serie A", "Serie A Stories"),
+        ("Moi bohaterowie", "My Heroes"),
+        ("pierwsze kroki", "first steps"),
+        ("Pierwsze kroki", "First Steps"),
+        # 通用回退：属格形式排前，避免 "Najlepszych" 被切成 "Bestych"。
+        ("Najlepszych", "Best"),
+        ("Najlepszym", "Best"),
+        ("Najlepsi", "Best"),
+        ("Najlepsze", "Best"),
+        ("Najlepsza", "Best"),
+        ("Legendy", "Legends"),
+        ("Historie", "Stories"),
+        ("bohaterów", "heroes"),
+        ("bohaterowie", "heroes"),
+        ("treningowa", "practice"),
+        ("treningowy", "practice"),
+        ("treningowe", "practice"),
         ("Grand Prix", "Grand Prix"),
         ("etap", "stage"),
         ("Etap", "Stage"),
@@ -2186,7 +2302,7 @@ def _translate_player_pl_title(title: str) -> str | None:
     translated = re.sub(r"\s+", " ", translated).strip(" ,")
     # 仍含波兰语变音符号或常见未覆盖波兰语词 → 交给翻译记忆／在线翻译。
     untranslated = re.search(
-        r"[ąćęłńóśźżĄĆĘŁŃÓŚŹŻ]|\b(?:Piłka|Kolarstwo|Mistrzostwa|Zawody|mecz|wyścig|etap|dzień|sekret|sekrety|sukces|sukcesu|zjazd|Turniej|turniej|oraz|drużyna|podsumowanie|zapowiedź|relacja|studio|gość|goście|igrzyska|olimpijskie|skoki|narciarskie|konkurs|skoczni)\b",
+        r"[ąćęłńóśźżĄĆĘŁŃÓŚŹŻ]|\b(?:Piłka|Kolarstwo|Mistrzostwa|Zawody|mecz|wyścig|wyścigu|etap|dzień|sekret|sekrety|sukces|sukcesu|zjazd|Turniej|turniej|oraz|drużyna|podsumowanie|zapowiedź|relacja|studio|gość|goście|igrzyska|olimpijskie|skoki|narciarskie|konkurs|skoczni|sesja|sesji|treningowa|dramatyczne|rzuty|karne|legendy|ligi|niemieckiej|najlepsi|bramkarze|napastnicy|pomocnicy|najszybsze|gole|lat|historie|bohaterowie|pierwsze|kroki|raceu)\b",
         translated,
         flags=re.IGNORECASE,
     )
