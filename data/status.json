@@ -1,17 +1,15 @@
 {
   "astro": {
     "status": "ok",
-    "records": 2437
+    "records": 2436
   },
   "now_hk": {
     "status": "ok",
-    "records": 4063
+    "records": 3864
   },
   "allente_se": {
-    "status": "stale",
-    "records": 812,
-    "message": "Allente 官方 EPG 响应中未找到任何预期的 V Sport 体育频道。",
-    "fallback": "previous_snapshot"
+    "status": "ok",
+    "records": 811
   },
   "allente_no": {
     "status": "stale",
@@ -21,14 +19,14 @@
   },
   "ee_uk": {
     "status": "ok",
-    "records": 7050,
+    "records": 7072,
     "notes": [
-      "tvguide.co.uk 采集 6904 条（6904 去重），其中有图 6880 条。"
+      "tvguide.co.uk 采集 6925 条（6925 去重），其中有图 6897 条。"
     ]
   },
   "sky_de": {
     "status": "ok",
-    "records": 1371,
+    "records": 1369,
     "notes": [
       "MagentaTV Sky Germany 206 跳过无法翻译的标题：'ATP 1000: L. van Assche (FRA) - R. Hijikata (AUS), Rolex Paris Masters in Paris (FRA), Viertelfinale 2'",
       "MagentaTV Sky Germany 206 跳过无法翻译的标题：'ATP 1000: L. van Assche (FRA) - R. Hijikata (AUS), Rolex Paris Masters in Paris (FRA), Viertelfinale 2'",
@@ -41,7 +39,7 @@
   },
   "sbb_rs": {
     "status": "ok",
-    "records": 120,
+    "records": 169,
     "notes": [
       "SBB Eurosport 1 跳过无法翻译的标题：'Tadej Pogačar G. O. A. T. Anatomija'",
       "SBB Eurosport 1 跳过无法翻译的标题：'Tadej Pogačar G. O. A. T. Anatomija'",
@@ -53,11 +51,11 @@
   },
   "virgin_uk": {
     "status": "ok",
-    "records": 371
+    "records": 352
   },
   "player_pl": {
     "status": "ok",
-    "records": 624,
+    "records": 623,
     "notes": [
       "Player.pl Eurosport 4 跳过无法翻译的标题：'Tenis: Turniej French Open 2024 - mecz finałowy gry pojedynczej kobiet: Iga Świątek - Jasmine Paolini'",
       "Player.pl Eleven Sports 1 跳过无法翻译的标题：'Piłka nożna: Liga Portugal Betclic: Vitória SC - FC Porto'",
@@ -73,14 +71,14 @@
   },
   "canalplus_fr": {
     "status": "ok",
-    "records": 134,
+    "records": 139,
     "notes": [
       "Canal+ 官方 API 不可用（403 rate limited: https://hodor.canalplus.pro/api/v2/mycanal/authenticate.json/webapp/6.0?experiments=beta-test-one-tv-guide:control），回退到 epg.pw"
     ]
   },
   "telus_tvplus": {
     "status": "ok",
-    "records": 1271,
+    "records": 921,
     "notes": [
       "Telus Love Nature 的频道号为 15130（配置为 713），仍按频道名继续采集。",
       "Telus TV+（telus.prod.g.telustvplus.com）频道目录未找到 Travelxp 4K HDR，已跳过该频道。",
@@ -93,16 +91,18 @@
       "Telus Travelxp 4K HDR 的频道号为 7619（配置为 716），仍按频道名继续采集。",
       "Telus TSN1 的频道号为 7624（配置为 900），仍按频道名继续采集。",
       "Telus TSN2 的频道号为 7627（配置为 901），仍按频道名继续采集。",
-      "Telus TV+ 频道 telus.716 由 QA 环境补齐（生产环境缺失或不可用）。"
+      "Telus TV+ 频道 telus.716 由 QA 环境补齐（生产环境缺失或不可用）。",
+      "Telus TV+（telus.qa.watchoptiktv.com）EPG 拉取失败：Telus TV+（telus.qa.watchoptiktv.com）EPG 拉取失败：Telus TV+ 接口 telus.qa.watchoptiktv.com 返回 HTTP 503。",
+      "Telus TV+ 未返回频道 telus.716 的节目条目。"
     ]
   },
   "peacock": {
     "status": "ok",
-    "records": 40
+    "records": 39
   },
   "pluto_tv": {
     "status": "ok",
-    "records": 21
+    "records": 19
   },
   "epgshare": {
     "status": "ok",
@@ -114,11 +114,11 @@
   },
   "xmltv": {
     "status": "ok",
-    "channels": 180,
-    "programmes": 20300,
+    "channels": 179,
+    "programmes": 19800,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-11-06T23:46:02Z",
-  "total_records": 20300
+  "generated_at": "2026-11-07T06:52:38Z",
+  "total_records": 19800
 }
