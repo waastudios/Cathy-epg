@@ -128,6 +128,7 @@ epg preview --day tomorrow --provider allente_se --channel 50048
 ## 更新日志
 
 - **2026-10-29** —— 通过 Virgin Media TV Go 官方指南新增 Premier Sports 1（`virgin_uk.1761`）与 Premier Sports 2（`virgin_uk.1961`）。两台不在 EE TV Player 匿名指南内，因此改走已有的 Virgin Media 来源（逻辑频道号 528／529，HD）；标题本身为英文，直接发布。
+- **2026-11-07** —— 修复第二类翻译漏网：源语言拼写的国家/城市名（瑞典语“Mexiko”/“Brasiliens”/“Qatars”、塞尔维亚语“Njujork”/“Sidnej”）与纯 ASCII 节目词汇（波兰语“sesja treningowa”、“Legendy”、“Najlepsi bramkarze”；塞尔维亚语“Atletika”、“maraton”、“Vrhunci”、“sezone”）不带变音符号，2026-10-18 的英文输出门看不见它们。现已把各语种残余词表补上源拼写地名与缺失词汇；Allente 瑞典、SBB、Player.pl 的精确映射直接翻好高频标题（墨西哥/巴西/卡塔尔大奖赛、“Studio with Football Pool”替代已入缓存的“Ironing Tip”、“Bundesliga Legends”、“Semi-finals”替代“1 2 finals”）；清理毒化与过期翻译记忆 11 条。Allente 瑞典（811 条，0 漏网）与 SBB（169 条，0 漏网）已实跑验证；Player.pl 因接口两次超时未能实跑，单元测试通过。
 - **2026-10-27** —— 删除 8 条已停播的 now TV 体育频道：Now Sports 4K 3（613）、Now Sports 英超6台（626）、英超7台（627）、beIN SPORTS 5（645）与 6（646）、Now Sports 651/652、Now Sports Plus（680）。依据：2026-08-26 至 2026-10-27 的 10 次周采样中，前 7 台从未播出过真实节目（整周只有“請留意下場播映賽事”占位），Now Sports Plus 在 2026-08-26 仍有完整节目表、此后连续 8 周为零；beIN SPORTS 4（644）因 9、10 月播过欧战溢出直播而保留。体育白名单：37 → 29 条。
 - **2026-10-27** —— 通过香港 now TV 官方指南新增 ViuTV（`viutv`）与 ViuTVsix（`viutv6`），作为用户指定的补充频道列入 37 条体育白名单之外（白名单本身不变）。显示名按 now TV 官方目录（099 为 ViuTV、096 为 ViuTVsix）；节目标题与其他 now TV 频道一样保持原样发布。
 - **2026-10-27** —— 清单中 USA Network 条目并入美国 Pluto TV / Peacock 分区（数据源不变，仍为 Sling TV）。
