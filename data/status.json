@@ -1,11 +1,11 @@
 {
   "astro": {
     "status": "ok",
-    "records": 2436
+    "records": 2434
   },
   "now_hk": {
     "status": "ok",
-    "records": 3864
+    "records": 4030
   },
   "allente_se": {
     "status": "ok",
@@ -19,14 +19,14 @@
   },
   "ee_uk": {
     "status": "ok",
-    "records": 7072,
+    "records": 7065,
     "notes": [
       "tvguide.co.uk 采集 6925 条（6925 去重），其中有图 6897 条。"
     ]
   },
   "sky_de": {
     "status": "ok",
-    "records": 1369,
+    "records": 1371,
     "notes": [
       "MagentaTV Sky Germany 206 跳过无法翻译的标题：'ATP 1000: L. van Assche (FRA) - R. Hijikata (AUS), Rolex Paris Masters in Paris (FRA), Viertelfinale 2'",
       "MagentaTV Sky Germany 206 跳过无法翻译的标题：'ATP 1000: L. van Assche (FRA) - R. Hijikata (AUS), Rolex Paris Masters in Paris (FRA), Viertelfinale 2'",
@@ -35,11 +35,11 @@
   },
   "digi4k_ro": {
     "status": "ok",
-    "records": 129
+    "records": 113
   },
   "sbb_rs": {
     "status": "ok",
-    "records": 169,
+    "records": 171,
     "notes": [
       "SBB Eurosport 1 跳过无法翻译的标题：'Tadej Pogačar G. O. A. T. Anatomija'",
       "SBB Eurosport 1 跳过无法翻译的标题：'Tadej Pogačar G. O. A. T. Anatomija'",
@@ -98,11 +98,11 @@
   },
   "peacock": {
     "status": "ok",
-    "records": 39
+    "records": 41
   },
   "pluto_tv": {
     "status": "ok",
-    "records": 19
+    "records": 17
   },
   "epgshare": {
     "status": "ok",
@@ -110,15 +110,15 @@
   },
   "sling": {
     "status": "ok",
-    "records": 155
+    "records": 156
   },
   "xmltv": {
     "status": "ok",
     "channels": 179,
-    "programmes": 19800,
+    "programmes": 19946,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-11-07T06:52:38Z",
-  "total_records": 19800
+  "generated_at": "2026-11-07T22:32:34Z",
+  "total_records": 19946
 }
