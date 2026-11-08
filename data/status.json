@@ -1,61 +1,58 @@
 {
   "astro": {
     "status": "ok",
-    "records": 2434
+    "records": 2392
   },
   "now_hk": {
     "status": "ok",
-    "records": 4030
+    "records": 4021
   },
   "allente_se": {
     "status": "ok",
-    "records": 811
+    "records": 795
   },
   "allente_no": {
-    "status": "stale",
-    "records": 686,
-    "message": "Allente Norway 官方 EPG 响应中未找到预期的 TV Norge、REX、FEM、Eurosport Norge 或 Eurosport 1。",
-    "fallback": "previous_snapshot"
+    "status": "ok",
+    "records": 819
   },
   "ee_uk": {
     "status": "ok",
-    "records": 7065,
+    "records": 7127,
     "notes": [
-      "tvguide.co.uk 采集 6925 条（6925 去重），其中有图 6897 条。"
+      "tvguide.co.uk 采集 6983 条（6983 去重），其中有图 6954 条。"
     ]
   },
   "sky_de": {
     "status": "ok",
-    "records": 1371,
+    "records": 1344,
     "notes": [
-      "MagentaTV Sky Germany 206 跳过无法翻译的标题：'ATP 1000: L. van Assche (FRA) - R. Hijikata (AUS), Rolex Paris Masters in Paris (FRA), Viertelfinale 2'",
-      "MagentaTV Sky Germany 206 跳过无法翻译的标题：'ATP 1000: L. van Assche (FRA) - R. Hijikata (AUS), Rolex Paris Masters in Paris (FRA), Viertelfinale 2'",
-      "MagentaTV Sky Germany 206 跳过无法翻译的标题：'Live WTA Finals: C. Bucsa (ESP)/N. Melichar-Martinez (USA) - E. Perez (AUS)/D. Schuurs (NED), FAGE WTA Finals in Indian Wells (USA), 1. Tag'"
+      "MagentaTV Sky Germany 206 跳过无法翻译的标题：'Live WTA Finals: C. Bucsa (ESP) / N. Melichar-Martinez (USA) - E. Perez (AUS) / D. Schuurs (NED), FAGE WTA Finals in Indian Wells (USA), 1. Tag'"
     ]
   },
   "digi4k_ro": {
     "status": "ok",
-    "records": 113
+    "records": 133
   },
   "sbb_rs": {
     "status": "ok",
-    "records": 171,
+    "records": 175,
     "notes": [
       "SBB Eurosport 1 跳过无法翻译的标题：'Tadej Pogačar G. O. A. T. Anatomija'",
       "SBB Eurosport 1 跳过无法翻译的标题：'Tadej Pogačar G. O. A. T. Anatomija'",
+      "SBB Eurosport 1 跳过无法翻译的标题：'Tadej Pogačar G. O. A. T. Anatomija'",
       "SBB Eurosport 2 跳过无法翻译的标题：'Tadej Pogačar G. O. A. T. Anatomija'",
-      "SBB Eurosport 2 跳过无法翻译的标题：'Tadej Pogačar G. O. A. T. Anatomija'",
+      "SBB Eurosport 4K 跳过无法翻译的标题：'Tadej Pogačar G. O. A. T. Anatomija'",
       "SBB Eurosport 4K 跳过无法翻译的标题：'Tadej Pogačar G. O. A. T. Anatomija'",
       "SBB Eurosport 4K 跳过无法翻译的标题：'Tadej Pogačar G. O. A. T. Anatomija'"
     ]
   },
   "virgin_uk": {
     "status": "ok",
-    "records": 352
+    "records": 339
   },
   "player_pl": {
     "status": "ok",
-    "records": 623,
+    "records": 621,
     "notes": [
       "Player.pl Eurosport 4 跳过无法翻译的标题：'Tenis: Turniej French Open 2024 - mecz finałowy gry pojedynczej kobiet: Iga Świątek - Jasmine Paolini'",
       "Player.pl Eleven Sports 1 跳过无法翻译的标题：'Piłka nożna: Liga Portugal Betclic: Vitória SC - FC Porto'",
@@ -66,19 +63,22 @@
       "Player.pl Eurosport 4 跳过无法翻译的标题：'Tenis: Turniej French Open 2024 - mecz finałowy gry pojedynczej kobiet: Iga Świątek - Jasmine Paolini'",
       "Player.pl Eurosport 4 跳过无法翻译的标题：'Tenis: Turniej French Open 2024 - mecz finałowy gry pojedynczej kobiet: Iga Świątek - Jasmine Paolini'",
       "Player.pl Eleven Sports 1 跳过无法翻译的标题：'Piłka nożna: Liga Portugal Betclic: Vitória SC - FC Porto'",
-      "Player.pl Eleven Sports 1 跳过无法翻译的标题：'Piłka nożna: Liga Portugal Betclic: Vitória SC - FC Porto'"
+      "Player.pl Eleven Sports 1 跳过无法翻译的标题：'Piłka nożna: Liga Portugal Betclic: Vitória SC - FC Porto'",
+      "Player.pl Eurosport 4 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
+      "Player.pl Eurosport 4 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
+      "Player.pl Eurosport 3 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'"
     ]
   },
   "canalplus_fr": {
     "status": "ok",
-    "records": 139,
+    "records": 141,
     "notes": [
       "Canal+ 官方 API 不可用（403 rate limited: https://hodor.canalplus.pro/api/v2/mycanal/authenticate.json/webapp/6.0?experiments=beta-test-one-tv-guide:control），回退到 epg.pw"
     ]
   },
   "telus_tvplus": {
     "status": "ok",
-    "records": 921,
+    "records": 934,
     "notes": [
       "Telus Love Nature 的频道号为 15130（配置为 713），仍按频道名继续采集。",
       "Telus TV+（telus.prod.g.telustvplus.com）频道目录未找到 Travelxp 4K HDR，已跳过该频道。",
@@ -102,23 +102,23 @@
   },
   "pluto_tv": {
     "status": "ok",
-    "records": 17
+    "records": 21
   },
   "epgshare": {
     "status": "ok",
-    "records": 1016
+    "records": 1009
   },
   "sling": {
     "status": "ok",
-    "records": 156
+    "records": 158
   },
   "xmltv": {
     "status": "ok",
-    "channels": 179,
-    "programmes": 19946,
+    "channels": 178,
+    "programmes": 20070,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-11-07T22:32:34Z",
-  "total_records": 19946
+  "generated_at": "2026-11-08T22:43:28Z",
+  "total_records": 20070
 }
