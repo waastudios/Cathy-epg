@@ -1,52 +1,58 @@
 {
   "astro": {
     "status": "ok",
-    "records": 2342
+    "records": 2290
   },
   "now_hk": {
     "status": "ok",
-    "records": 4009
+    "records": 4052
   },
   "allente_se": {
-    "status": "ok",
-    "records": 781
+    "status": "stale",
+    "records": 781,
+    "message": "Allente 官方 EPG 响应中未找到任何预期的 V Sport 体育频道。",
+    "fallback": "previous_snapshot"
   },
   "allente_no": {
-    "status": "ok",
-    "records": 701
+    "status": "stale",
+    "records": 701,
+    "message": "Allente Norway 官方 EPG 响应中未找到预期的 TV Norge、REX、FEM、Eurosport Norge 或 Eurosport 1。",
+    "fallback": "previous_snapshot"
   },
   "ee_uk": {
     "status": "ok",
-    "records": 7126,
+    "records": 7118,
     "notes": [
-      "tvguide.co.uk 采集 6976 条（6976 去重），其中有图 6942 条。"
+      "tvguide.co.uk 采集 6967 条（6967 去重），其中有图 6931 条。"
     ]
   },
   "sky_de": {
     "status": "ok",
-    "records": 1296
+    "records": 1283,
+    "notes": [
+      "MagentaTV Sky Germany 201 跳过无法翻译的标题：'Live WTA Finals: K. Siniakova (CZE) / T. Townsend (USA) - E. Perez (AUS) / D. Schuurs (NED), FAGE WTA Finals in Indian Wells (USA), 3. Tag'",
+      "MagentaTV Sky Germany 206 跳过无法翻译的标题：'Live WTA Finals: K. Siniakova (CZE) / T. Townsend (USA) - E. Perez (AUS) / D. Schuurs (NED), FAGE WTA Finals in Indian Wells (USA), 3. Tag'"
+    ]
   },
   "digi4k_ro": {
     "status": "ok",
-    "records": 118
+    "records": 138
   },
   "sbb_rs": {
     "status": "ok",
-    "records": 189,
+    "records": 134,
     "notes": [
       "SBB Eurosport 1 跳过无法翻译的标题：'Tadej Pogačar G. O. A. T. Anatomija'",
-      "SBB Eurosport 1 跳过无法翻译的标题：'Tadej Pogačar G. O. A. T. Anatomija'",
-      "SBB Eurosport 4K 跳过无法翻译的标题：'Tadej Pogačar G. O. A. T. Anatomija'",
       "SBB Eurosport 4K 跳过无法翻译的标题：'Tadej Pogačar G. O. A. T. Anatomija'"
     ]
   },
   "virgin_uk": {
     "status": "ok",
-    "records": 349
+    "records": 342
   },
   "player_pl": {
     "status": "ok",
-    "records": 659,
+    "records": 668,
     "notes": [
       "Player.pl Eleven Sports 1 跳过无法翻译的标题：'Piłka nożna: Liga Portugal Betclic: Vitória SC - FC Porto'",
       "Player.pl Eleven Sports 1 跳过无法翻译的标题：'Piłka nożna: Liga Portugal Betclic: Vitória SC - FC Porto'",
@@ -55,12 +61,15 @@
       "Player.pl Eurosport 3 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
       "Player.pl Eleven Sports 1 跳过无法翻译的标题：'Piłka nożna: Liga Portugal Betclic: Vitória SC - FC Porto'",
       "Player.pl Eleven Sports 1 跳过无法翻译的标题：'Piłka nożna: Liga Portugal Betclic: Vitória SC - FC Porto'",
+      "Player.pl Eurosport 3 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
+      "Player.pl Eurosport 4 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
+      "Player.pl Eurosport 3 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
       "Player.pl Eurosport 3 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'"
     ]
   },
   "canalplus_fr": {
     "status": "ok",
-    "records": 137,
+    "records": 139,
     "notes": [
       "Canal+ 官方 API 不可用（403 rate limited: https://hodor.canalplus.pro/api/v2/mycanal/authenticate.json/webapp/6.0?experiments=beta-test-one-tv-guide:control），回退到 epg.pw"
     ]
@@ -87,15 +96,15 @@
   },
   "peacock": {
     "status": "ok",
-    "records": 41
+    "records": 35
   },
   "pluto_tv": {
     "status": "ok",
-    "records": 20
+    "records": 21
   },
   "epgshare": {
     "status": "ok",
-    "records": 1021
+    "records": 1055
   },
   "sling": {
     "status": "ok",
@@ -104,10 +113,10 @@
   "xmltv": {
     "status": "ok",
     "channels": 178,
-    "programmes": 19876,
+    "programmes": 19844,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-11-10T01:58:27Z",
-  "total_records": 19876
+  "generated_at": "2026-11-10T23:57:38Z",
+  "total_records": 19844
 }
