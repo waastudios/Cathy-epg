@@ -1,84 +1,73 @@
 {
   "astro": {
     "status": "ok",
-    "records": 2392
+    "records": 2342
   },
   "now_hk": {
     "status": "ok",
-    "records": 4021
+    "records": 4009
   },
   "allente_se": {
     "status": "ok",
-    "records": 795
+    "records": 781
   },
   "allente_no": {
     "status": "ok",
-    "records": 819
+    "records": 701
   },
   "ee_uk": {
     "status": "ok",
-    "records": 7127,
+    "records": 7126,
     "notes": [
-      "tvguide.co.uk 采集 6983 条（6983 去重），其中有图 6954 条。"
+      "tvguide.co.uk 采集 6976 条（6976 去重），其中有图 6942 条。"
     ]
   },
   "sky_de": {
     "status": "ok",
-    "records": 1344,
-    "notes": [
-      "MagentaTV Sky Germany 206 跳过无法翻译的标题：'Live WTA Finals: C. Bucsa (ESP) / N. Melichar-Martinez (USA) - E. Perez (AUS) / D. Schuurs (NED), FAGE WTA Finals in Indian Wells (USA), 1. Tag'"
-    ]
+    "records": 1296
   },
   "digi4k_ro": {
     "status": "ok",
-    "records": 133
+    "records": 118
   },
   "sbb_rs": {
     "status": "ok",
-    "records": 175,
+    "records": 189,
     "notes": [
       "SBB Eurosport 1 跳过无法翻译的标题：'Tadej Pogačar G. O. A. T. Anatomija'",
       "SBB Eurosport 1 跳过无法翻译的标题：'Tadej Pogačar G. O. A. T. Anatomija'",
-      "SBB Eurosport 1 跳过无法翻译的标题：'Tadej Pogačar G. O. A. T. Anatomija'",
-      "SBB Eurosport 2 跳过无法翻译的标题：'Tadej Pogačar G. O. A. T. Anatomija'",
-      "SBB Eurosport 4K 跳过无法翻译的标题：'Tadej Pogačar G. O. A. T. Anatomija'",
       "SBB Eurosport 4K 跳过无法翻译的标题：'Tadej Pogačar G. O. A. T. Anatomija'",
       "SBB Eurosport 4K 跳过无法翻译的标题：'Tadej Pogačar G. O. A. T. Anatomija'"
     ]
   },
   "virgin_uk": {
     "status": "ok",
-    "records": 339
+    "records": 349
   },
   "player_pl": {
     "status": "ok",
-    "records": 621,
+    "records": 659,
     "notes": [
-      "Player.pl Eurosport 4 跳过无法翻译的标题：'Tenis: Turniej French Open 2024 - mecz finałowy gry pojedynczej kobiet: Iga Świątek - Jasmine Paolini'",
-      "Player.pl Eleven Sports 1 跳过无法翻译的标题：'Piłka nożna: Liga Portugal Betclic: Vitória SC - FC Porto'",
-      "Player.pl Eurosport 3 跳过无法翻译的标题：'Tenis: Turniej French Open 2024 - mecz finałowy gry pojedynczej kobiet: Iga Świątek - Jasmine Paolini'",
-      "Player.pl Eurosport 4 跳过无法翻译的标题：'Tenis: Turniej French Open 2024 - mecz finałowy gry pojedynczej kobiet: Iga Świątek - Jasmine Paolini'",
-      "Player.pl Eurosport 3 跳过无法翻译的标题：'Tenis: Turniej French Open 2024 - mecz finałowy gry pojedynczej kobiet: Iga Świątek - Jasmine Paolini'",
-      "Player.pl Eurosport 3 跳过无法翻译的标题：'Tenis: Turniej French Open 2024 - mecz finałowy gry pojedynczej kobiet: Iga Świątek - Jasmine Paolini'",
-      "Player.pl Eurosport 4 跳过无法翻译的标题：'Tenis: Turniej French Open 2024 - mecz finałowy gry pojedynczej kobiet: Iga Świątek - Jasmine Paolini'",
-      "Player.pl Eurosport 4 跳过无法翻译的标题：'Tenis: Turniej French Open 2024 - mecz finałowy gry pojedynczej kobiet: Iga Świątek - Jasmine Paolini'",
       "Player.pl Eleven Sports 1 跳过无法翻译的标题：'Piłka nożna: Liga Portugal Betclic: Vitória SC - FC Porto'",
       "Player.pl Eleven Sports 1 跳过无法翻译的标题：'Piłka nożna: Liga Portugal Betclic: Vitória SC - FC Porto'",
       "Player.pl Eurosport 4 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
       "Player.pl Eurosport 4 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
+      "Player.pl Eurosport 3 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
+      "Player.pl Eleven Sports 1 跳过无法翻译的标题：'Piłka nożna: Liga Portugal Betclic: Vitória SC - FC Porto'",
+      "Player.pl Eleven Sports 1 跳过无法翻译的标题：'Piłka nożna: Liga Portugal Betclic: Vitória SC - FC Porto'",
       "Player.pl Eurosport 3 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'"
     ]
   },
   "canalplus_fr": {
     "status": "ok",
-    "records": 141,
+    "records": 137,
     "notes": [
       "Canal+ 官方 API 不可用（403 rate limited: https://hodor.canalplus.pro/api/v2/mycanal/authenticate.json/webapp/6.0?experiments=beta-test-one-tv-guide:control），回退到 epg.pw"
     ]
   },
   "telus_tvplus": {
     "status": "ok",
-    "records": 934,
+    "records": 929,
     "notes": [
       "Telus Love Nature 的频道号为 15130（配置为 713），仍按频道名继续采集。",
       "Telus TV+（telus.prod.g.telustvplus.com）频道目录未找到 Travelxp 4K HDR，已跳过该频道。",
@@ -102,11 +91,11 @@
   },
   "pluto_tv": {
     "status": "ok",
-    "records": 21
+    "records": 20
   },
   "epgshare": {
     "status": "ok",
-    "records": 1009
+    "records": 1021
   },
   "sling": {
     "status": "ok",
@@ -115,10 +104,10 @@
   "xmltv": {
     "status": "ok",
     "channels": 178,
-    "programmes": 20070,
+    "programmes": 19876,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-11-08T22:43:28Z",
-  "total_records": 20070
+  "generated_at": "2026-11-10T01:58:27Z",
+  "total_records": 19876
 }
