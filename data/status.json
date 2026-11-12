@@ -1,61 +1,48 @@
 {
   "astro": {
     "status": "ok",
-    "records": 2290
+    "records": 2383
   },
   "now_hk": {
     "status": "ok",
-    "records": 4052
+    "records": 4056
   },
   "allente_se": {
-    "status": "stale",
-    "records": 781,
-    "message": "Allente 官方 EPG 响应中未找到任何预期的 V Sport 体育频道。",
-    "fallback": "previous_snapshot"
+    "status": "ok",
+    "records": 788
   },
   "allente_no": {
-    "status": "stale",
-    "records": 701,
-    "message": "Allente Norway 官方 EPG 响应中未找到预期的 TV Norge、REX、FEM、Eurosport Norge 或 Eurosport 1。",
-    "fallback": "previous_snapshot"
+    "status": "ok",
+    "records": 705
   },
   "ee_uk": {
     "status": "ok",
-    "records": 7118,
+    "records": 7128,
     "notes": [
-      "tvguide.co.uk 采集 6967 条（6967 去重），其中有图 6931 条。"
+      "tvguide.co.uk 采集 6978 条（6978 去重），其中有图 6946 条。"
     ]
   },
   "sky_de": {
     "status": "ok",
-    "records": 1283,
-    "notes": [
-      "MagentaTV Sky Germany 201 跳过无法翻译的标题：'Live WTA Finals: K. Siniakova (CZE) / T. Townsend (USA) - E. Perez (AUS) / D. Schuurs (NED), FAGE WTA Finals in Indian Wells (USA), 3. Tag'",
-      "MagentaTV Sky Germany 206 跳过无法翻译的标题：'Live WTA Finals: K. Siniakova (CZE) / T. Townsend (USA) - E. Perez (AUS) / D. Schuurs (NED), FAGE WTA Finals in Indian Wells (USA), 3. Tag'"
-    ]
+    "records": 1283
   },
   "digi4k_ro": {
     "status": "ok",
-    "records": 138
+    "records": 118
   },
   "sbb_rs": {
     "status": "ok",
-    "records": 134,
-    "notes": [
-      "SBB Eurosport 1 跳过无法翻译的标题：'Tadej Pogačar G. O. A. T. Anatomija'",
-      "SBB Eurosport 4K 跳过无法翻译的标题：'Tadej Pogačar G. O. A. T. Anatomija'"
-    ]
+    "records": 191
   },
   "virgin_uk": {
     "status": "ok",
-    "records": 342
+    "records": 327
   },
   "player_pl": {
     "status": "ok",
-    "records": 668,
+    "records": 672,
     "notes": [
       "Player.pl Eleven Sports 1 跳过无法翻译的标题：'Piłka nożna: Liga Portugal Betclic: Vitória SC - FC Porto'",
-      "Player.pl Eleven Sports 1 跳过无法翻译的标题：'Piłka nożna: Liga Portugal Betclic: Vitória SC - FC Porto'",
       "Player.pl Eurosport 4 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
       "Player.pl Eurosport 4 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
       "Player.pl Eurosport 3 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
@@ -64,19 +51,20 @@
       "Player.pl Eurosport 3 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
       "Player.pl Eurosport 4 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
       "Player.pl Eurosport 3 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
-      "Player.pl Eurosport 3 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'"
+      "Player.pl Eurosport 3 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
+      "Player.pl Eleven Sports 1 跳过无法翻译的标题：'Piłka nożna: Liga Portugal Betclic: Vitória SC - FC Porto'"
     ]
   },
   "canalplus_fr": {
     "status": "ok",
-    "records": 139,
+    "records": 136,
     "notes": [
       "Canal+ 官方 API 不可用（403 rate limited: https://hodor.canalplus.pro/api/v2/mycanal/authenticate.json/webapp/6.0?experiments=beta-test-one-tv-guide:control），回退到 epg.pw"
     ]
   },
   "telus_tvplus": {
     "status": "ok",
-    "records": 929,
+    "records": 947,
     "notes": [
       "Telus Love Nature 的频道号为 15130（配置为 713），仍按频道名继续采集。",
       "Telus TV+（telus.prod.g.telustvplus.com）频道目录未找到 Travelxp 4K HDR，已跳过该频道。",
@@ -96,15 +84,15 @@
   },
   "peacock": {
     "status": "ok",
-    "records": 35
+    "records": 30
   },
   "pluto_tv": {
     "status": "ok",
-    "records": 21
+    "records": 20
   },
   "epgshare": {
     "status": "ok",
-    "records": 1055
+    "records": 1071
   },
   "sling": {
     "status": "ok",
@@ -113,10 +101,10 @@
   "xmltv": {
     "status": "ok",
     "channels": 178,
-    "programmes": 19844,
+    "programmes": 20013,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-11-10T23:57:38Z",
-  "total_records": 19844
+  "generated_at": "2026-11-12T01:15:59Z",
+  "total_records": 20013
 }
