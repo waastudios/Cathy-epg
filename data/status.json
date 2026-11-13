@@ -1,46 +1,54 @@
 {
   "astro": {
     "status": "ok",
-    "records": 2383
+    "records": 2041
   },
   "now_hk": {
     "status": "ok",
-    "records": 4056
+    "records": 4112
   },
   "allente_se": {
-    "status": "ok",
-    "records": 788
+    "status": "stale",
+    "records": 788,
+    "message": "Allente 官方 EPG 响应中未找到任何预期的 V Sport 体育频道。",
+    "fallback": "previous_snapshot"
   },
   "allente_no": {
-    "status": "ok",
-    "records": 705
+    "status": "stale",
+    "records": 705,
+    "message": "Allente Norway 官方 EPG 响应中未找到预期的 TV Norge、REX、FEM、Eurosport Norge 或 Eurosport 1。",
+    "fallback": "previous_snapshot"
   },
   "ee_uk": {
     "status": "ok",
-    "records": 7128,
+    "records": 7134,
     "notes": [
-      "tvguide.co.uk 采集 6978 条（6978 去重），其中有图 6946 条。"
+      "tvguide.co.uk 采集 6984 条（6984 去重），其中有图 6957 条。"
     ]
   },
   "sky_de": {
     "status": "ok",
-    "records": 1283
+    "records": 1275,
+    "notes": [
+      "MagentaTV Sky Germany 206 跳过无法翻译的标题：'Live WTA Finals: E. Perez (AUS) / D. Schuurs (NED) - S. Errani (ITA) / J. Paolini (ITA), FAGE WTA Finals in Indian Wells (USA), 5. Tag'",
+      "MagentaTV Sky Germany 206 跳过无法翻译的标题：'WTA Finals: E. Perez (AUS) / D. Schuurs (NED) - S. Errani (ITA) / J. Paolini (ITA), FAGE WTA Finals in Indian Wells (USA), 5. Tag'"
+    ]
   },
   "digi4k_ro": {
     "status": "ok",
-    "records": 118
+    "records": 140
   },
   "sbb_rs": {
     "status": "ok",
-    "records": 191
+    "records": 136
   },
   "virgin_uk": {
     "status": "ok",
-    "records": 327
+    "records": 332
   },
   "player_pl": {
     "status": "ok",
-    "records": 672,
+    "records": 687,
     "notes": [
       "Player.pl Eleven Sports 1 跳过无法翻译的标题：'Piłka nożna: Liga Portugal Betclic: Vitória SC - FC Porto'",
       "Player.pl Eurosport 4 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
@@ -64,7 +72,7 @@
   },
   "telus_tvplus": {
     "status": "ok",
-    "records": 947,
+    "records": 974,
     "notes": [
       "Telus Love Nature 的频道号为 15130（配置为 713），仍按频道名继续采集。",
       "Telus TV+（telus.prod.g.telustvplus.com）频道目录未找到 Travelxp 4K HDR，已跳过该频道。",
@@ -84,7 +92,7 @@
   },
   "peacock": {
     "status": "ok",
-    "records": 30
+    "records": 31
   },
   "pluto_tv": {
     "status": "ok",
@@ -92,19 +100,19 @@
   },
   "epgshare": {
     "status": "ok",
-    "records": 1071
+    "records": 1060
   },
   "sling": {
     "status": "ok",
-    "records": 158
+    "records": 155
   },
   "xmltv": {
     "status": "ok",
     "channels": 178,
-    "programmes": 20013,
+    "programmes": 19726,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-11-12T01:15:59Z",
-  "total_records": 20013
+  "generated_at": "2026-11-13T00:04:16Z",
+  "total_records": 19726
 }
