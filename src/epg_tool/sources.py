@@ -497,33 +497,33 @@ def collect_now_hk(days: int = 7, chunk_size: int = 25, pause_seconds: float = 0
 
 
 # ELTA OTT（愛爾達 OTT）官方节目单：每天一个静态 JSON，匿名可取，含全部
-# 频道。用户 2026-11-13 指定新增的 15 个体育频道：体育 1–4 台、体育
-# MAX 1–10 台与宠物运动台；中文标题按项目规则原样发布，不翻译。
+# 频道。用户 2026-11-13 指定新增的 14 个体育频道：体育 1–4 台与体育
+# MAX 1–10 台（宠物运动台用户明确不加）；显示名用官方中文名，中文标题
+# 按项目规则原样发布，不翻译。
 # 每日文件覆盖当天 23:30（前一日）至 24:00，相邻两日文件在 23:30–24:00
 # 有重叠，靠 _deduplicate 去重。发布窗口为当天起 +7 天（第 8 天起 404）。
 ELTA_PROGRAM_LIST_URL = "https://piceltaott-elta.cdn.hinet.net/production/json/program_list/program_list_{date}.json"
 ELTA_GUIDE = "https://eltaott.tv/channel/"
 ELTA_CHANNELS: dict[str, str] = {
-    "101": "ELTA Sports 1",
-    "105": "ELTA Sports 2",
-    "110": "ELTA Sports 3",
-    "115": "ELTA Sports 4",
-    "104": "ELTA Pet Sports",
-    "540": "ELTA Sports Max 1",
-    "541": "ELTA Sports Max 2",
-    "542": "ELTA Sports Max 3",
-    "543": "ELTA Sports Max 4",
-    "544": "ELTA Sports Max 5",
-    "545": "ELTA Sports Max 6",
-    "546": "ELTA Sports Max 7",
-    "547": "ELTA Sports Max 8",
-    "548": "ELTA Sports Max 9",
-    "549": "ELTA Sports Max 10",
+    "101": "愛爾達體育1台",
+    "105": "愛爾達體育2台",
+    "110": "愛爾達體育3台",
+    "115": "愛爾達體育4台",
+    "540": "愛爾達體育MAX1台",
+    "541": "愛爾達體育MAX2台",
+    "542": "愛爾達體育MAX3台",
+    "543": "愛爾達體育MAX4台",
+    "544": "愛爾達體育MAX5台",
+    "545": "愛爾達體育MAX6台",
+    "546": "愛爾達體育MAX7台",
+    "547": "愛爾達體育MAX8台",
+    "548": "愛爾達體育MAX9台",
+    "549": "愛爾達體育MAX10台",
 }
 
 
 def collect_elta(days: int = 7, pause_seconds: float = 0.25) -> list[Programme]:
-    """读取 ELTA OTT 官方 CDN 每日节目单 JSON（15 个体育频道）。
+    """读取 ELTA OTT 官方 CDN 每日节目单 JSON（14 个体育频道）。
 
     MAX 台在无赛事直播的时段会发布占位条目（如“【非賽事直播時段】
     英超：全台獨家 每輪精選直播”），属官方原样发布的排播，如实收录。
