@@ -68,8 +68,8 @@ def _collect(args: argparse.Namespace) -> int:
     collectors = (
         ("astro", lambda: collect_astro(args.days)),
         ("now_hk", lambda: collect_now_hk(args.days)),
-        # ELTA OTT（愛爾達）官方 CDN 每日节目单 JSON：体育 1–4 台、
-        # 体育 MAX 1–10 台与宠物运动台，中文标题原样发布。
+        # ELTA OTT（愛爾達）官方 CDN 每日节目单 JSON：体育 1–4 台与
+        # 体育 MAX 1–10 台（宠物运动台不加），中文显示名与标题原样发布。
         ("elta", lambda: collect_elta(args.days)),
         ("allente_se", lambda: collect_allente_v_sport(args.days)),
         ("allente_no", lambda: collect_allente_no(args.days)),
