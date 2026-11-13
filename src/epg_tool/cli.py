@@ -22,6 +22,7 @@ from .sources import (
     collect_canalplus_fr,
     collect_digi4k,
     collect_ee_uk_with_tvguide,
+    collect_elta,
     collect_magenta_tv_sky_de,
     collect_now_hk,
     collect_peacock,
@@ -67,6 +68,9 @@ def _collect(args: argparse.Namespace) -> int:
     collectors = (
         ("astro", lambda: collect_astro(args.days)),
         ("now_hk", lambda: collect_now_hk(args.days)),
+        # ELTA OTT（愛爾達）官方 CDN 每日节目单 JSON：体育 1–4 台、
+        # 体育 MAX 1–10 台与宠物运动台，中文标题原样发布。
+        ("elta", lambda: collect_elta(args.days)),
         ("allente_se", lambda: collect_allente_v_sport(args.days)),
         ("allente_no", lambda: collect_allente_no(args.days)),
         # EE TV 系列改走 tvguide.co.uk（40 频道，节目自带背景图）；tvguide 未收录的
@@ -130,6 +134,7 @@ def _collect(args: argparse.Namespace) -> int:
         provider_zones = {
             "astro": ZoneInfo("Asia/Kuala_Lumpur"),
             "now_hk": ZoneInfo("Asia/Hong_Kong"),
+            "elta": ZoneInfo("Asia/Taipei"),
             "allente_se": ZoneInfo("Europe/Stockholm"),
             "allente_no": ZoneInfo("Europe/Oslo"),
             "ee_uk": ZoneInfo("Europe/London"),
