@@ -496,6 +496,100 @@ def collect_now_hk(days: int = 7, chunk_size: int = 25, pause_seconds: float = 0
     return _deduplicate(records)
 
 
+# ELTA OTT（愛爾達 OTT）官方节目单：每天一个静态 JSON，匿名可取，含全部
+# 频道。用户 2026-11-13 指定新增的 15 个体育频道：体育 1–4 台、体育
+# MAX 1–10 台与宠物运动台；中文标题按项目规则原样发布，不翻译。
+# 每日文件覆盖当天 23:30（前一日）至 24:00，相邻两日文件在 23:30–24:00
+# 有重叠，靠 _deduplicate 去重。发布窗口为当天起 +7 天（第 8 天起 404）。
+ELTA_PROGRAM_LIST_URL = "https://piceltaott-elta.cdn.hinet.net/production/json/program_list/program_list_{date}.json"
+ELTA_GUIDE = "https://eltaott.tv/channel/"
+ELTA_CHANNELS: dict[str, str] = {
+    "101": "ELTA Sports 1",
+    "105": "ELTA Sports 2",
+    "110": "ELTA Sports 3",
+    "115": "ELTA Sports 4",
+    "104": "ELTA Pet Sports",
+    "540": "ELTA Sports Max 1",
+    "541": "ELTA Sports Max 2",
+    "542": "ELTA Sports Max 3",
+    "543": "ELTA Sports Max 4",
+    "544": "ELTA Sports Max 5",
+    "545": "ELTA Sports Max 6",
+    "546": "ELTA Sports Max 7",
+    "547": "ELTA Sports Max 8",
+    "548": "ELTA Sports Max 9",
+    "549": "ELTA Sports Max 10",
+}
+
+
+def collect_elta(days: int = 7, pause_seconds: float = 0.25) -> list[Programme]:
+    """读取 ELTA OTT 官方 CDN 每日节目单 JSON（15 个体育频道）。
+
+    MAX 台在无赛事直播的时段会发布占位条目（如“【非賽事直播時段】
+    英超：全台獨家 每輪精選直播”），属官方原样发布的排播，如实收录。
+    """
+    if days not in range(1, 8):
+        raise ValueError("ELTA 采集天数必须为 1–7。")
+    session = _session()
+    zone = ZoneInfo("Asia/Taipei")
+    today = datetime.now(zone).date()
+    retrieved_at = utc_now_iso()
+    records: list[Programme] = []
+    for day_offset in range(days):
+        day = today + timedelta(days=day_offset)
+        url = ELTA_PROGRAM_LIST_URL.format(date=day.isoformat())
+        try:
+            response = session.get(url, timeout=30)
+            response.raise_for_status()
+            payload = response.json()
+        except (requests.RequestException, ValueError) as exc:
+            raise SourceUnavailable(f"ELTA 第 {day_offset + 1} 天节目单拉取失败：{exc}") from exc
+        if not isinstance(payload, dict):
+            raise SourceUnavailable("ELTA 节目单响应格式发生变化。")
+        for channel_number, channel_name in ELTA_CHANNELS.items():
+            programmes = payload.get(channel_number)
+            if not isinstance(programmes, list):
+                note(f"ELTA {day.isoformat()} 缺少频道 {channel_number}（{channel_name}）。")
+                continue
+            for item in programmes:
+                title = str(item.get("program_desc") or "").strip()
+                start_ts = item.get("start_time")
+                end_ts = item.get("end_time")
+                if not (
+                    title
+                    and isinstance(start_ts, (int, float))
+                    and isinstance(end_ts, (int, float))
+                ):
+                    continue
+                start = datetime.fromtimestamp(start_ts, tz=zone)
+                end = datetime.fromtimestamp(end_ts, tz=zone)
+                if end <= start:
+                    continue
+                records.append(
+                    Programme(
+                        provider="elta",
+                        country="TW",
+                        timezone="Asia/Taipei",
+                        channel_id=channel_number,
+                        channel_number=channel_number,
+                        channel_name=channel_name,
+                        title=title,
+                        start_at=start.isoformat(),
+                        end_at=end.isoformat(),
+                        source_url=url,
+                        retrieved_at=retrieved_at,
+                    )
+                )
+        time.sleep(pause_seconds)
+    records = _deduplicate(records)
+    for channel_number, channel_name in ELTA_CHANNELS.items():
+        if not any(record.channel_number == channel_number for record in records):
+            raise SourceUnavailable(
+                f"ELTA 频道 {channel_number}（{channel_name}）在 {days} 天内无节目条目。"
+            )
+    return records
+
+
 def _to_local_iso(value: str, zone: ZoneInfo) -> str:
     """将运营商返回的含时区时间转换成来源市场的本地 ISO 时间。"""
     return datetime.fromisoformat(value).astimezone(zone).isoformat()
