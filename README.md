@@ -34,6 +34,7 @@ Every XMLTV `display-name` is the provider’s official channel name unless an e
 | --- | --- | --- |
 | Malaysia | Astro: 23 explicitly allow-listed sports channels | [Astro Content Guide](https://www.astro.com.my/content/channels) |
 | Hong Kong | now TV: 29 explicitly allow-listed sports channels, plus ViuTV and ViuTVsix | [now TV Guide](https://nowplayer.now.com/tvguide) and [official Chinese channel directory](https://nowplayer.now.com/channels?lang=zh&filterType=all) |
+| Taiwan | ELTA: 15 sports channels — ELTA Sports 1–4, ELTA Sports Max 1–10 and ELTA Pet Sports | [ELTA OTT channel guide](https://eltaott.tv/channel/) |
 | Germany | 29 Sky Sport and Sky Sport Bundesliga channels, including UHD | [Telekom MagentaTV](https://www.magenta.tv/) public programme guide |
 | Sweden | 13 V Sport services, including V Sport UltraHD | [Allente TV Guide](https://www.allente.se/tv-guide/) |
 | Norway | TV Norge, REX, FEM, Eurosport Norge, Eurosport 1 | [Allente Norway TV Guide](https://www.allente.no/tv-guide/) |
@@ -80,6 +81,8 @@ The EE scope includes **Sky Mix, Sky Arts, Sky Witness, Sky Atlantic, Sky One, S
 
 **USA Network** is published as `usanetwork.us` from Sling TV’s official CMS guide (the same data source the Sling TV Kodi add-on reads): the channel list is resolved from Sling’s published channel summary, and the national USA Network feed (USAHD) is collected in 24-hour windows with seven days of rolling coverage. Programme titles arrive in English and are published as-is.
 
+**ELTA Sports 1–4, ELTA Sports Max 1–10 and ELTA Pet Sports** are published as `elta.101`, `elta.105`, `elta.110`, `elta.115`, `elta.540`–`elta.549` and `elta.104` from ELTA OTT’s official programme guide. The guide is published as one static JSON file per day on ELTA’s own CDN, queried anonymously with no account; each file covers that day from 23:30 the previous day, and the published horizon runs seven days ahead. Programme titles are Chinese and are published as-is, like the now TV Hong Kong channels. The Max channels publish a placeholder entry outside live-event hours, which is reproduced as-is.
+
 ### Poland via Player.pl
 
 **Eurosport 1, Eurosport 2, Eurosport 3, Eurosport 4 and Eleven Sports 1** are published from Poland’s TVN Player.pl anonymous public EPG API. The user-designated XMLTV IDs are `eurosport1.pl`, `eurosport2.pl`, `eurosport3.pl`, `eurosport4.pl` and `ElevenSp.1`. Each Polish source title is converted to English through the tiered pipeline described below (curated Polish sports-term mapping, then the translation memory, then online services); a title that cannot be translated skips that single programme instead of failing the Player.pl source. In [CHANNELS.md](CHANNELS.md) these five channels carry a (T) mark to indicate their guides are translated into English.
@@ -90,7 +93,7 @@ The EE scope includes **Sky Mix, Sky Arts, Sky Witness, Sky Atlantic, Sky One, S
 
 ### English translation
 
-Programme titles from non-English markets (Swedish, Norwegian, German, Romanian, Serbian, Polish, French, Spanish) are published in English; Chinese titles from now TV Hong Kong are kept as-is. Translation runs inside each collector in three tiers:
+Programme titles from non-English markets (Swedish, Norwegian, German, Romanian, Serbian, Polish, French, Spanish) are published in English; Chinese titles from now TV Hong Kong and ELTA Taiwan are kept as-is. Translation runs inside each collector in three tiers:
 
 1. **Version-controlled exact mapping** in `src/epg_tool/sources.py` — curated deterministic rules per source.
 2. **Persistent translation memory** in `src/epg_tool/translation_cache.json` — every online translation is recorded here, so results are stable, auditable, and reused without another network call. The daily workflow commits this file, so the memory grows over time.
@@ -102,7 +105,7 @@ A title that no tier can translate skips that single programme (recorded in `dat
 
 The GitHub Actions workflow in `.github/workflows/refresh-epg.yml` runs daily at **19:00 UTC**, which is **03:00 China Standard Time (UTC+8) on the following calendar day**. It runs `epg collect --days 7` across **every configured official channel source**, writes the complete snapshot and XMLTV files (`data/epg.xml` and `data/epg.xml.gz`), and commits only when the results change. If an official source is temporarily unavailable, the workflow records that failure in `data/status.json` rather than substituting third-party data.
 
-A current release is considered valid only when `data/epg.xml.gz` decompresses exactly to `data/epg.xml`, all XMLTV channel display names are official names, the Astro and now TV channel IDs are within their explicit allow-lists (now TV: the sports allow-list plus the user-designated ViuTV and ViuTVsix), and prohibited US provider IDs are absent.
+A current release is considered valid only when `data/epg.xml.gz` decompresses exactly to `data/epg.xml`, all XMLTV channel display names are official names, the Astro, now TV and ELTA channel IDs are within their explicit allow-lists (now TV: the sports allow-list plus the user-designated ViuTV and ViuTVsix; ELTA: the fixed 15-channel list of Sports 1–4, Sports Max 1–10 and Pet Sports), and prohibited US provider IDs are absent.
 
 ## Local use
 
@@ -127,6 +130,7 @@ For Serbia’s SBB Eurosport schedules, titles are converted during collection u
 
 ## Changelog
 
+- **2026-11-13** — Added 15 ELTA Taiwan sports channels (`elta.101`, `elta.105`, `elta.110`, `elta.115`, `elta.104`, `elta.540`–`elta.549`) from ELTA OTT’s official daily programme JSON on its own CDN, queried anonymously. Chinese programme titles are published as-is, like the now TV Hong Kong channels. The new section sits between now TV Hong Kong and Sky Germany in CHANNELS.md. Total: 178 → 193 channels.
 - **2026-10-29** — Added Premier Sports 1 (`virgin_uk.1761`) and Premier Sports 2 (`virgin_uk.1961`) from the official Virgin Media TV Go guide. The two channels are absent from EE TV Player’s anonymous guide, so they are collected through the existing Virgin Media source (logical channels 528/529, HD); programme titles arrive in English and are published as-is.
 - **2026-11-07** — Fixed a second translation leak class: country/city names in source spelling (Swedish “Mexiko”/“Brasiliens”/“Qatars”, Serbian “Njujork”/“Sidnej”) and ASCII-only EPG vocabulary (Polish “sesja treningowa”, “Legendy”, “Najlepsi bramkarze”; Serbian “Atletika”, “maraton”, “Vrhunci”, “sezone”) carry no diacritics, so the 2026-10-18 English-output gate was blind to them. The gate’s per-language residual lists now cover source-spelled place names and the missing vocabulary; the Allente Sweden, SBB and Player.pl exact maps translate the recurring titles (Mexico/Brazil/Qatar GPs, “Studio with Football Pool” instead of the memorised “Ironing Tip”, “Bundesliga Legends”, “Semi-finals” instead of “1 2 finals”); 11 poisoned/stale translation-memory entries were removed. Verified live for Allente Sweden (811 programmes, 0 flagged) and SBB (169, 0 flagged); Player.pl live verification was blocked by two API timeouts, unit tests pass.
 - **2026-10-27** — Removed 8 now TV sports channels that have stopped airing: Now Sports 4K 3 (613), Now Sports 英超6台 (626), 英超7台 (627), beIN SPORTS 5 (645) and 6 (646), Now Sports 651/652, and Now Sports Plus (680). Evidence: 10 weekly snapshots from 2026-08-26 to 2026-10-27 show zero real programmes for the first seven (only the “請留意下場播映賽事” filler all week), and Now Sports Plus went from a full schedule on 2026-08-26 to zero for 8 straight weeks; beIN SPORTS 4 (644) is kept because it aired live UEFA overflow matches in September and October. Sports allow-list: 37 → 29.
