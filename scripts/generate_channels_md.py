@@ -36,6 +36,7 @@ SECTIONS: list[tuple[str, str, str, bool]] = [
     ("astro.", "Astro Malaysia", "🇲🇾马来西亚 Astro", False),
     ("now_hk.", "now TV Hong Kong", "🇭🇰香港 now TV", False),
     ("viutv", "now TV Hong Kong", "🇭🇰香港 now TV", False),
+    ("elta.", "ELTA Taiwan", "🇹🇼台湾愛爾達", False),
     ("sky_de.", "Sky Germany", "🇩🇪德国 Sky Sport", True),
     ("ee_uk.", "Sky Sports", "🇬🇧英国体育类频道", False),  # refined below into sports / entertainment
     ("virgin_uk.", "Virgin Media UK", "🇬🇧英国Virgin Media", False),
@@ -92,7 +93,7 @@ EE_ENT_CN = "🇬🇧英国综合类频道"
 
 # Section order is fixed; "Other" (unmatched) goes last.
 SECTION_ORDER_EN = [
-    "Astro Malaysia", "now TV Hong Kong", "Sky Germany", "Sky Sports",
+    "Astro Malaysia", "now TV Hong Kong", "ELTA Taiwan", "Sky Germany", "Sky Sports",
     "Virgin Media UK", "Sky Entertainment", "France Canal+",
     "🇷🇸 Serbia SBB", "Digi 4K", "🇵🇱 Poland Player.pl",
     "Allente Sweden", "Allente Norway", "🇨🇦 Canada Telus TV+",
@@ -101,6 +102,7 @@ SECTION_ORDER_EN = [
 CN_TITLE = {
     "Astro Malaysia": "🇲🇾马来西亚 Astro",
     "now TV Hong Kong": "🇭🇰香港 now TV",
+    "ELTA Taiwan": "🇹🇼台湾愛爾達",
     "Sky Germany": "🇩🇪德国 Sky Sport",
     "Sky Sports": "🇬🇧英国体育类频道",
     "Virgin Media UK": "🇬🇧英国Virgin Media",
