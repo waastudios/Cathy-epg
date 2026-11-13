@@ -1,34 +1,34 @@
 {
   "astro": {
     "status": "ok",
-    "records": 2041
+    "records": 2354
   },
   "now_hk": {
     "status": "ok",
-    "records": 4112
+    "records": 3815
+  },
+  "elta": {
+    "status": "ok",
+    "records": 836
   },
   "allente_se": {
-    "status": "stale",
-    "records": 788,
-    "message": "Allente 官方 EPG 响应中未找到任何预期的 V Sport 体育频道。",
-    "fallback": "previous_snapshot"
+    "status": "ok",
+    "records": 785
   },
   "allente_no": {
-    "status": "stale",
-    "records": 705,
-    "message": "Allente Norway 官方 EPG 响应中未找到预期的 TV Norge、REX、FEM、Eurosport Norge 或 Eurosport 1。",
-    "fallback": "previous_snapshot"
+    "status": "ok",
+    "records": 711
   },
   "ee_uk": {
     "status": "ok",
-    "records": 7134,
+    "records": 7125,
     "notes": [
-      "tvguide.co.uk 采集 6984 条（6984 去重），其中有图 6957 条。"
+      "tvguide.co.uk 采集 6975 条（6975 去重），其中有图 6951 条。"
     ]
   },
   "sky_de": {
     "status": "ok",
-    "records": 1275,
+    "records": 1274,
     "notes": [
       "MagentaTV Sky Germany 206 跳过无法翻译的标题：'Live WTA Finals: E. Perez (AUS) / D. Schuurs (NED) - S. Errani (ITA) / J. Paolini (ITA), FAGE WTA Finals in Indian Wells (USA), 5. Tag'",
       "MagentaTV Sky Germany 206 跳过无法翻译的标题：'WTA Finals: E. Perez (AUS) / D. Schuurs (NED) - S. Errani (ITA) / J. Paolini (ITA), FAGE WTA Finals in Indian Wells (USA), 5. Tag'"
@@ -40,15 +40,15 @@
   },
   "sbb_rs": {
     "status": "ok",
-    "records": 136
+    "records": 195
   },
   "virgin_uk": {
     "status": "ok",
-    "records": 332
+    "records": 329
   },
   "player_pl": {
     "status": "ok",
-    "records": 687,
+    "records": 686,
     "notes": [
       "Player.pl Eleven Sports 1 跳过无法翻译的标题：'Piłka nożna: Liga Portugal Betclic: Vitória SC - FC Porto'",
       "Player.pl Eurosport 4 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
@@ -65,14 +65,14 @@
   },
   "canalplus_fr": {
     "status": "ok",
-    "records": 136,
+    "records": 132,
     "notes": [
       "Canal+ 官方 API 不可用（403 rate limited: https://hodor.canalplus.pro/api/v2/mycanal/authenticate.json/webapp/6.0?experiments=beta-test-one-tv-guide:control），回退到 epg.pw"
     ]
   },
   "telus_tvplus": {
     "status": "ok",
-    "records": 974,
+    "records": 1318,
     "notes": [
       "Telus Love Nature 的频道号为 15130（配置为 713），仍按频道名继续采集。",
       "Telus TV+（telus.prod.g.telustvplus.com）频道目录未找到 Travelxp 4K HDR，已跳过该频道。",
@@ -85,9 +85,7 @@
       "Telus Travelxp 4K HDR 的频道号为 7619（配置为 716），仍按频道名继续采集。",
       "Telus TSN1 的频道号为 7624（配置为 900），仍按频道名继续采集。",
       "Telus TSN2 的频道号为 7627（配置为 901），仍按频道名继续采集。",
-      "Telus TV+ 频道 telus.716 由 QA 环境补齐（生产环境缺失或不可用）。",
-      "Telus TV+（telus.qa.watchoptiktv.com）EPG 拉取失败：Telus TV+（telus.qa.watchoptiktv.com）EPG 拉取失败：Telus TV+ 接口 telus.qa.watchoptiktv.com 返回 HTTP 503。",
-      "Telus TV+ 未返回频道 telus.716 的节目条目。"
+      "Telus TV+ 频道 telus.716 由 QA 环境补齐（生产环境缺失或不可用）。"
     ]
   },
   "peacock": {
@@ -96,7 +94,7 @@
   },
   "pluto_tv": {
     "status": "ok",
-    "records": 20
+    "records": 19
   },
   "epgshare": {
     "status": "ok",
@@ -104,15 +102,15 @@
   },
   "sling": {
     "status": "ok",
-    "records": 155
+    "records": 156
   },
   "xmltv": {
     "status": "ok",
-    "channels": 178,
-    "programmes": 19726,
+    "channels": 193,
+    "programmes": 20966,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-11-13T00:04:16Z",
-  "total_records": 19726
+  "generated_at": "2026-11-13T11:44:04Z",
+  "total_records": 20966
 }
