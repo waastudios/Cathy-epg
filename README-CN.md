@@ -34,6 +34,7 @@ https://raw.githubusercontent.com/waastudios/Cathy-epg/master/data/epg.xml.gz
 | --- | --- | --- |
 | 马来西亚 | Astro：23 条明确白名单体育频道 | [Astro Content Guide](https://www.astro.com.my/content/channels) |
 | 香港 | now TV：29 条明确白名单体育频道，另加 ViuTV 与 ViuTVsix | [now TV Guide](https://nowplayer.now.com/tvguide) 与 [官方中文频道目录](https://nowplayer.now.com/channels?lang=zh&filterType=all) |
+| 台湾 | 愛爾達：15 条体育频道——体育 1–4 台、体育 MAX 1–10 台与宠物运动台 | [ELTA OTT 频道指南](https://eltaott.tv/channel/) |
 | 德国 | 29 条 Sky Sport 与 Sky Sport Bundesliga 频道，包含 UHD | [Telekom MagentaTV](https://www.magenta.tv/) 正常公开节目表 |
 | 瑞典 | 13 条 V Sport 服务，包含 V Sport UltraHD | [Allente TV Guide](https://www.allente.se/tv-guide/) |
 | 挪威 | TV Norge、REX、FEM、Eurosport Norge、Eurosport 1 | [Allente Norway TV Guide](https://www.allente.no/tv-guide/) |
@@ -80,6 +81,8 @@ EE 范围包含 **Sky Mix、Sky Arts、Sky Witness、Sky Atlantic、Sky One、Sk
 
 **USA Network** 以 `usanetwork.us` 发布，取自 Sling TV 官方 CMS 节目指南（与 Sling TV Kodi 插件同款数据源）：频道清单从 Sling 发布的频道总表动态解析，全国主 feed（USAHD）按 24 小时分窗拉取、7 天滚动覆盖。标题本身为英文，直接发布。
 
+**愛爾達體育 1–4 台、體育 MAX 1–10 台与宠物运动台**以 `elta.101`、`elta.105`、`elta.110`、`elta.115`、`elta.540`–`elta.549` 与 `elta.104` 发布，取自 ELTA OTT 官方节目指南。节目表以每天一个静态 JSON 文件的形式发布在愛爾達自家 CDN 上，匿名可取、无需账户；每个文件覆盖当天自前一日 23:30 起的排播，发布窗口为往后 7 天。节目标题为中文，与香港 now TV 频道一样保持原样发布。MAX 台在无赛事直播的时段会发布占位条目，原样收录。
+
 ### 波兰 Player.pl
 
 **Eurosport 1、Eurosport 2、Eurosport 3、Eurosport 4 与 Eleven Sports 1** 均通过波兰 TVN Player.pl 的匿名公开 EPG 接口发布。用户指定的 XMLTV ID 为 `eurosport1.pl`、`eurosport2.pl`、`eurosport3.pl`、`eurosport4.pl` 与 `ElevenSp.1`。每条原始波兰语标题均通过下文的分级流水线转换成英文（波兰语体育术语精确映射 → 翻译记忆 → 在线服务）；无法翻译的标题只会跳过当条节目，不会导致整个 Player.pl 来源失败。在 [CHANNELS-CN.md](CHANNELS-CN.md) 中这五个频道带有（T）标记，表示节目单已翻译为英文。
@@ -90,7 +93,7 @@ EE 范围包含 **Sky Mix、Sky Arts、Sky Witness、Sky Atlantic、Sky One、Sk
 
 ### 英文翻译
 
-非英语市场（瑞典语、挪威语、德语、罗马尼亚语、塞尔维亚语、波兰语、法语、西班牙语）的节目标题均以英文发布；香港 now TV 的中文标题保持原样。翻译在各采集器内部按三级流水线进行：
+非英语市场（瑞典语、挪威语、德语、罗马尼亚语、塞尔维亚语、波兰语、法语、西班牙语）的节目标题均以英文发布；香港 now TV 与台湾愛爾達的中文标题保持原样。翻译在各采集器内部按三级流水线进行：
 
 1. **版本控制的精确映射**（`src/epg_tool/sources.py`）——按来源维护的确定性规则。
 2. **持久翻译记忆**（`src/epg_tool/translation_cache.json`）——每次在线翻译的结果都会记录在此，稳定、可审计，无需重复请求网络。每日工作流会提交该文件，记忆随时间增长。
@@ -102,7 +105,7 @@ EE 范围包含 **Sky Mix、Sky Arts、Sky Witness、Sky Atlantic、Sky One、Sk
 
 `.github/workflows/refresh-epg.yml` 中的 GitHub Actions 工作流每天在 **19:00 UTC** 运行，即北京时间（UTC+8）**次日 03:00**。工作流会对**全部已配置的官方频道来源**运行 `epg collect --days 7`，写入完整节目快照和 XMLTV 文件（`data/epg.xml` 与 `data/epg.xml.gz`），并且只在结果变化时提交。若官网暂时无法访问，`data/status.json` 会记录来源失败，绝不使用第三方数据替代。
 
-当前发布只有在以下条件同时满足时才视为有效：`data/epg.xml.gz` 解压后与 `data/epg.xml` 完全一致；所有 XMLTV 频道显示名为官方频道名；Astro 与 now TV 频道都属于明确白名单（now TV 为体育白名单另加用户指定的 ViuTV 与 ViuTVsix）；被禁止的美国服务商 ID 不存在。
+当前发布只有在以下条件同时满足时才视为有效：`data/epg.xml.gz` 解压后与 `data/epg.xml` 完全一致；所有 XMLTV 频道显示名为官方频道名；Astro、now TV 与愛爾達频道都属于明确白名单（now TV 为体育白名单另加用户指定的 ViuTV 与 ViuTVsix；愛爾達为固定的 15 台清单：体育 1–4 台、体育 MAX 1–10 台与宠物运动台）；被禁止的美国服务商 ID 不存在。
 
 ## 本地使用
 
@@ -127,6 +130,7 @@ epg preview --day tomorrow --provider allente_se --channel 50048
 
 ## 更新日志
 
+- **2026-11-13** —— 通过 ELTA OTT 官方每日节目 JSON（自家 CDN，匿名可取）新增台湾愛爾達 15 条体育频道（`elta.101`、`elta.105`、`elta.110`、`elta.115`、`elta.104`、`elta.540`–`elta.549`）。中文节目标题保持原样发布，与香港 now TV 频道一致。新分区位于 CHANNELS.md 的香港 now TV 与德国 Sky Sport 之间。总数：178 → 193 台。
 - **2026-10-29** —— 通过 Virgin Media TV Go 官方指南新增 Premier Sports 1（`virgin_uk.1761`）与 Premier Sports 2（`virgin_uk.1961`）。两台不在 EE TV Player 匿名指南内，因此改走已有的 Virgin Media 来源（逻辑频道号 528／529，HD）；标题本身为英文，直接发布。
 - **2026-11-07** —— 修复第二类翻译漏网：源语言拼写的国家/城市名（瑞典语“Mexiko”/“Brasiliens”/“Qatars”、塞尔维亚语“Njujork”/“Sidnej”）与纯 ASCII 节目词汇（波兰语“sesja treningowa”、“Legendy”、“Najlepsi bramkarze”；塞尔维亚语“Atletika”、“maraton”、“Vrhunci”、“sezone”）不带变音符号，2026-10-18 的英文输出门看不见它们。现已把各语种残余词表补上源拼写地名与缺失词汇；Allente 瑞典、SBB、Player.pl 的精确映射直接翻好高频标题（墨西哥/巴西/卡塔尔大奖赛、“Studio with Football Pool”替代已入缓存的“Ironing Tip”、“Bundesliga Legends”、“Semi-finals”替代“1 2 finals”）；清理毒化与过期翻译记忆 11 条。Allente 瑞典（811 条，0 漏网）与 SBB（169 条，0 漏网）已实跑验证；Player.pl 因接口两次超时未能实跑，单元测试通过。
 - **2026-10-27** —— 删除 8 条已停播的 now TV 体育频道：Now Sports 4K 3（613）、Now Sports 英超6台（626）、英超7台（627）、beIN SPORTS 5（645）与 6（646）、Now Sports 651/652、Now Sports Plus（680）。依据：2026-08-26 至 2026-10-27 的 10 次周采样中，前 7 台从未播出过真实节目（整周只有“請留意下場播映賽事”占位），Now Sports Plus 在 2026-08-26 仍有完整节目表、此后连续 8 周为零；beIN SPORTS 4（644）因 9、10 月播过欧战溢出直播而保留。体育白名单：37 → 29 条。
