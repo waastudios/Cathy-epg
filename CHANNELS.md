@@ -2,7 +2,7 @@
 
 This inventory is generated directly from the currently published `data/epg.xml`. Every row is an actual XMLTV `<channel>` node: **tvg-id** is `channel/@id` and **tvg-name** is `display-name`.
 
-The current XMLTV output contains **178 channels**.
+The current XMLTV output contains **193 channels**.
 
 > **Note:** `(T)` means **Translated**. The channel's schedule originates in a non-English market and programme titles are translated into English before publication. This marker appears **only in this inventory**; it is never written to `data/epg.xml`, `data/epg.xml.gz`, or the programme snapshot. XMLTV `display-name` values remain the official provider names.
 
@@ -66,6 +66,26 @@ The current XMLTV output contains **178 channels**.
 | `now_hk.684` | Now Golf 3 |
 | `viutv` | ViuTV |
 | `viutv6` | ViuTVsix |
+
+## ELTA Taiwan
+
+| tvg-id | tvg-name |
+| --- | --- |
+| `elta.101` | ELTA Sports 1 |
+| `elta.104` | ELTA Pet Sports |
+| `elta.105` | ELTA Sports 2 |
+| `elta.110` | ELTA Sports 3 |
+| `elta.115` | ELTA Sports 4 |
+| `elta.540` | ELTA Sports Max 1 |
+| `elta.541` | ELTA Sports Max 2 |
+| `elta.542` | ELTA Sports Max 3 |
+| `elta.543` | ELTA Sports Max 4 |
+| `elta.544` | ELTA Sports Max 5 |
+| `elta.545` | ELTA Sports Max 6 |
+| `elta.546` | ELTA Sports Max 7 |
+| `elta.547` | ELTA Sports Max 8 |
+| `elta.548` | ELTA Sports Max 9 |
+| `elta.549` | ELTA Sports Max 10 |
 
 ## Sky Germany
 
