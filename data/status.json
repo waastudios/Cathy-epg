@@ -1,58 +1,58 @@
 {
   "astro": {
     "status": "ok",
-    "records": 2373
+    "records": 2433
   },
   "now_hk": {
     "status": "ok",
-    "records": 4190
+    "records": 4173
   },
   "elta": {
     "status": "ok",
-    "records": 865
+    "records": 876
   },
   "allente_se": {
-    "status": "ok",
-    "records": 781
+    "status": "stale",
+    "records": 781,
+    "message": "Allente 官方 EPG 响应中未找到任何预期的 V Sport 体育频道。",
+    "fallback": "previous_snapshot"
   },
   "allente_no": {
-    "status": "ok",
-    "records": 711
+    "status": "stale",
+    "records": 711,
+    "message": "Allente Norway 官方 EPG 响应中未找到预期的 TV Norge、REX、FEM、Eurosport Norge 或 Eurosport 1。",
+    "fallback": "previous_snapshot"
   },
   "ee_uk": {
     "status": "ok",
-    "records": 7118,
+    "records": 7067,
     "notes": [
-      "tvguide.co.uk 采集 6987 条（6987 去重），其中有图 6966 条。"
+      "tvguide.co.uk 采集 6928 条（6928 去重），其中有图 6903 条。"
     ]
   },
   "sky_de": {
     "status": "ok",
-    "records": 1359,
+    "records": 1459,
     "notes": [
       "MagentaTV Sky Germany 206 跳过无法翻译的标题：'ATP 500: A. de Minaur (AUS) - C. Alcaraz (ESP), Erste Bank Open in Wien (Österreich), Finale'"
     ]
   },
   "digi4k_ro": {
     "status": "ok",
-    "records": 122
+    "records": 140
   },
   "sbb_rs": {
     "status": "ok",
-    "records": 204
+    "records": 165
   },
   "virgin_uk": {
     "status": "ok",
-    "records": 337
+    "records": 335
   },
   "player_pl": {
     "status": "ok",
-    "records": 704,
+    "records": 738,
     "notes": [
-      "Player.pl Eurosport 4 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
-      "Player.pl Eurosport 4 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
-      "Player.pl Eurosport 3 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
-      "Player.pl Eleven Sports 1 跳过无法翻译的标题：'Piłka nożna: Liga Portugal Betclic: Vitória SC - FC Porto'",
       "Player.pl Eleven Sports 1 跳过无法翻译的标题：'Piłka nożna: Liga Portugal Betclic: Vitória SC - FC Porto'",
       "Player.pl Eurosport 3 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
       "Player.pl Eurosport 4 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
@@ -64,14 +64,14 @@
   },
   "canalplus_fr": {
     "status": "ok",
-    "records": 131,
+    "records": 140,
     "notes": [
       "Canal+ 官方 API 不可用（403 rate limited: https://hodor.canalplus.pro/api/v2/mycanal/authenticate.json/webapp/6.0?experiments=beta-test-one-tv-guide:control），回退到 epg.pw"
     ]
   },
   "telus_tvplus": {
     "status": "ok",
-    "records": 998,
+    "records": 1327,
     "notes": [
       "Telus Love Nature 的频道号为 15130（配置为 713），仍按频道名继续采集。",
       "Telus TV+（telus.prod.g.telustvplus.com）频道目录未找到 Travelxp 4K HDR，已跳过该频道。",
@@ -84,34 +84,34 @@
       "Telus Travelxp 4K HDR 的频道号为 7619（配置为 716），仍按频道名继续采集。",
       "Telus TSN1 的频道号为 7624（配置为 900），仍按频道名继续采集。",
       "Telus TSN2 的频道号为 7627（配置为 901），仍按频道名继续采集。",
-      "Telus TV+ 频道 telus.716 由 QA 环境补齐（生产环境缺失或不可用）。",
-      "Telus TV+（telus.qa.watchoptiktv.com）EPG 拉取失败：Telus TV+（telus.qa.watchoptiktv.com）EPG 拉取失败：Telus TV+ 接口 telus.qa.watchoptiktv.com 返回 HTTP 503。",
-      "Telus TV+ 未返回频道 telus.716 的节目条目。"
+      "Telus TV+ 频道 telus.716 由 QA 环境补齐（生产环境缺失或不可用）。"
     ]
   },
   "peacock": {
     "status": "ok",
-    "records": 30
+    "records": 29
   },
   "pluto_tv": {
-    "status": "ok",
-    "records": 19
+    "status": "stale",
+    "records": 19,
+    "message": "Pluto TV 指南未包含 Golazo Network 频道。",
+    "fallback": "previous_snapshot"
   },
   "epgshare": {
     "status": "ok",
-    "records": 1066
+    "records": 1055
   },
   "sling": {
     "status": "ok",
-    "records": 155
+    "records": 158
   },
   "xmltv": {
     "status": "ok",
-    "channels": 193,
-    "programmes": 21163,
+    "channels": 194,
+    "programmes": 21606,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-11-14T22:56:01Z",
-  "total_records": 21163
+  "generated_at": "2026-11-15T23:24:07Z",
+  "total_records": 21606
 }
