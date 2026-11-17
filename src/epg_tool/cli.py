@@ -23,6 +23,7 @@ from .sources import (
     collect_digi4k,
     collect_ee_uk_with_tvguide,
     collect_elta,
+    collect_espn,
     collect_magenta_tv_sky_de,
     collect_now_hk,
     collect_peacock,
@@ -105,6 +106,9 @@ def _collect(args: argparse.Namespace) -> int:
         # Sling TV 官方 CMS：USA Network（usanetwork.us），标题本身为英文；
         # 按 24 小时分窗逐日拉取。
         ("sling", lambda: collect_sling(args.days)),
+        # ESPN 官方 Watch Graph：ESPN、ESPN2、ESPNEWS、ESPNU 四台线性频道，
+        # 标题本身为英文；按 UTC 日期逐日拉取。
+        ("espn", lambda: collect_espn(args.days)),
     )
     for provider, collector in collectors:
         try:
@@ -149,6 +153,7 @@ def _collect(args: argparse.Namespace) -> int:
             "pluto_tv": ZoneInfo("UTC"),
             "epgshare": ZoneInfo("UTC"),
             "sling": ZoneInfo("UTC"),
+            "espn": ZoneInfo("UTC"),
         }
 
         def local_date(row: Programme, zone: ZoneInfo):
