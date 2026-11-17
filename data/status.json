@@ -1,60 +1,54 @@
 {
   "astro": {
     "status": "ok",
-    "records": 2433
+    "records": 2335
   },
   "now_hk": {
     "status": "ok",
-    "records": 4173
+    "records": 4104
   },
   "elta": {
     "status": "ok",
-    "records": 876
+    "records": 884
   },
   "allente_se": {
-    "status": "stale",
-    "records": 781,
-    "message": "Allente 官方 EPG 响应中未找到任何预期的 V Sport 体育频道。",
-    "fallback": "previous_snapshot"
+    "status": "ok",
+    "records": 812
   },
   "allente_no": {
-    "status": "stale",
-    "records": 711,
-    "message": "Allente Norway 官方 EPG 响应中未找到预期的 TV Norge、REX、FEM、Eurosport Norge 或 Eurosport 1。",
-    "fallback": "previous_snapshot"
+    "status": "ok",
+    "records": 713
   },
   "ee_uk": {
     "status": "ok",
-    "records": 7067,
+    "records": 7106,
     "notes": [
-      "tvguide.co.uk 采集 6928 条（6928 去重），其中有图 6903 条。"
+      "tvguide.co.uk 采集 6951 条（6951 去重），其中有图 6924 条。"
     ]
   },
   "sky_de": {
     "status": "ok",
-    "records": 1459,
+    "records": 1496,
     "notes": [
       "MagentaTV Sky Germany 206 跳过无法翻译的标题：'ATP 500: A. de Minaur (AUS) - C. Alcaraz (ESP), Erste Bank Open in Wien (Österreich), Finale'"
     ]
   },
   "digi4k_ro": {
     "status": "ok",
-    "records": 140
+    "records": 120
   },
   "sbb_rs": {
     "status": "ok",
-    "records": 165
+    "records": 225
   },
   "virgin_uk": {
     "status": "ok",
-    "records": 335
+    "records": 334
   },
   "player_pl": {
     "status": "ok",
-    "records": 738,
+    "records": 743,
     "notes": [
-      "Player.pl Eleven Sports 1 跳过无法翻译的标题：'Piłka nożna: Liga Portugal Betclic: Vitória SC - FC Porto'",
-      "Player.pl Eurosport 3 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
       "Player.pl Eurosport 4 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
       "Player.pl Eurosport 3 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
       "Player.pl Eurosport 3 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
@@ -64,14 +58,14 @@
   },
   "canalplus_fr": {
     "status": "ok",
-    "records": 140,
+    "records": 142,
     "notes": [
       "Canal+ 官方 API 不可用（403 rate limited: https://hodor.canalplus.pro/api/v2/mycanal/authenticate.json/webapp/6.0?experiments=beta-test-one-tv-guide:control），回退到 epg.pw"
     ]
   },
   "telus_tvplus": {
     "status": "ok",
-    "records": 1327,
+    "records": 1030,
     "notes": [
       "Telus Love Nature 的频道号为 15130（配置为 713），仍按频道名继续采集。",
       "Telus TV+（telus.prod.g.telustvplus.com）频道目录未找到 Travelxp 4K HDR，已跳过该频道。",
@@ -84,22 +78,22 @@
       "Telus Travelxp 4K HDR 的频道号为 7619（配置为 716），仍按频道名继续采集。",
       "Telus TSN1 的频道号为 7624（配置为 900），仍按频道名继续采集。",
       "Telus TSN2 的频道号为 7627（配置为 901），仍按频道名继续采集。",
-      "Telus TV+ 频道 telus.716 由 QA 环境补齐（生产环境缺失或不可用）。"
+      "Telus TV+ 频道 telus.716 由 QA 环境补齐（生产环境缺失或不可用）。",
+      "Telus TV+（telus.qa.watchoptiktv.com）EPG 拉取失败：Telus TV+（telus.qa.watchoptiktv.com）EPG 拉取失败：Telus TV+ 接口 telus.qa.watchoptiktv.com 返回 HTTP 503。",
+      "Telus TV+ 未返回频道 telus.716 的节目条目。"
     ]
   },
   "peacock": {
     "status": "ok",
-    "records": 29
+    "records": 23
   },
   "pluto_tv": {
-    "status": "stale",
-    "records": 19,
-    "message": "Pluto TV 指南未包含 Golazo Network 频道。",
-    "fallback": "previous_snapshot"
+    "status": "ok",
+    "records": 22
   },
   "epgshare": {
     "status": "ok",
-    "records": 1055
+    "records": 1066
   },
   "sling": {
     "status": "ok",
@@ -107,11 +101,11 @@
   },
   "xmltv": {
     "status": "ok",
-    "channels": 194,
-    "programmes": 21606,
+    "channels": 193,
+    "programmes": 21313,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-11-15T23:24:07Z",
-  "total_records": 21606
+  "generated_at": "2026-11-17T02:20:40Z",
+  "total_records": 21313
 }
