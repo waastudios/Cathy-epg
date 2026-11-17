@@ -52,6 +52,7 @@ SECTIONS: list[tuple[str, str, str, bool]] = [
     ("eurosport4.pl", "🇵🇱 Poland Player.pl", "🇵🇱波兰 Player.pl", True),
     ("ElevenSp.1", "🇵🇱 Poland Player.pl", "🇵🇱波兰 Player.pl", True),
     ("telus.", "🇨🇦 Canada Telus TV+", "🇨🇦加拿大 Telus TV+", False),
+    ("ESPN", "🇺🇸 USA ESPN", "🇺🇸美国ESPN", False),
     ("TC.us", "🇺🇸 USA Pluto TV / Peacock", "🇺🇸美国Pluto TV / Peacock", False),
     ("TC2.us", "🇺🇸 USA Pluto TV / Peacock", "🇺🇸美国Pluto TV / Peacock", False),
     ("GolazoNet.us", "🇺🇸 USA Pluto TV / Peacock", "🇺🇸美国Pluto TV / Peacock", False),
@@ -97,7 +98,7 @@ SECTION_ORDER_EN = [
     "Virgin Media UK", "Sky Entertainment", "France Canal+",
     "🇷🇸 Serbia SBB", "Digi 4K", "🇵🇱 Poland Player.pl",
     "Allente Sweden", "Allente Norway", "🇨🇦 Canada Telus TV+",
-    "🇺🇸 USA NBC (EPGShare)", "🇺🇸 USA Pluto TV / Peacock", "Other",
+    "🇺🇸 USA NBC (EPGShare)", "🇺🇸 USA ESPN", "🇺🇸 USA Pluto TV / Peacock", "Other",
 ]
 CN_TITLE = {
     "Astro Malaysia": "🇲🇾马来西亚 Astro",
@@ -116,6 +117,7 @@ CN_TITLE = {
     "🇨🇦 Canada Telus TV+": "🇨🇦加拿大 Telus TV+",
     "🇺🇸 USA Pluto TV / Peacock": "🇺🇸美国Pluto TV / Peacock",
     "🇺🇸 USA NBC (EPGShare)": "🇺🇸美国NBC（EPGShare）",
+    "🇺🇸 USA ESPN": "🇺🇸美国ESPN",
     "Other": "其他",
 }
 
