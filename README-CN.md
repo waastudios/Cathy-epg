@@ -50,6 +50,7 @@ https://raw.githubusercontent.com/waastudios/Cathy-epg/master/data/epg.xml.gz
 | 美国 | NBC Sports 湾区、波士顿、费城与加州，Tennis Channel 与 Universo | [EPGShare 美国节目文件](https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz) |
 | 美国 | Telemundo 51（迈阿密）、NBC 4 纽约、NBC 4 洛杉矶与 NBC Bay Area（湾区） | [EPGShare 美国地方台节目文件](https://epgshare01.online/epgshare01/epg_ripper_US_LOCALS1.xml.gz) |
 | 美国 | USA Network | [Sling TV](https://www.sling.com/) |
+| 美国 | ESPN、ESPN2、ESPNEWS、ESPNU | [ESPN Watch 节目表](https://www.espn.com/watch/schedule) |
 
 ### 德国 Sky 与 MagentaTV
 
@@ -59,9 +60,7 @@ https://raw.githubusercontent.com/waastudios/Cathy-epg/master/data/epg.xml.gz
 
 EE 范围包含 **Sky Mix、Sky Arts、Sky Witness、Sky Atlantic、Sky One、Sky Comedy、Sky Sci-Fi、Sky Crime、Sky Documentaries、Sky History 与 Sky Nature**。若 EE 提供多个版本，Sky Mix 与 Sky Arts 优先选择 DVB／电视版；其余频道使用标准清晰度主服务。HD、+1、辅助服务和其他镜像均不会发布。精确 ID 和显示名见 [CHANNELS.md](CHANNELS.md)。
 
-### ESPN 状态
-
-**ESPN、ESPN2、ESPNEWS、ESPNU** 仍在评估未来可能加入。ABC、CBS、NBC、FOX、USA Network 和其他所有美国广播频道都已排除。DIRECTV 公开指南确认四个 ESPN 频道，但只提供当前节目；Spectrum 的详细节目表需要账户与服务地址；ESPN 官网排期没有稳定的逐频道结束时间。因此，**当前不发布任何 ESPN 记录**。如日后出现合规节目表，ID 会使用服务商前缀，例如 `directv_espn`。下文介绍实际发布的美国流媒体来源（Peacock）。
+**ESPN、ESPN2、ESPNEWS、ESPNU** 以 `ESPN.us`、`ESPN2.us`、`ESPNEWS.us`、`ESPNU.us` 发布，取自 ESPN 官方 Watch Graph API（espn.com/watch/schedule 背后的接口），匿名按 UTC 日期拉取、7 天滚动覆盖。该接口对四台线性频道均返回稳定的逐节目起止时间（已与官网节目表逐条核对），取代了此前“无合规节目表”的评估结论。标题本身为英文，直接发布。某日重试后仍失败时只跳过当日并记录，不会因此丢掉整周四台。
 
 **Eurosport 1、Eurosport 2 和 Eurosport 4K** 均通过塞尔维亚 SBB 的正常匿名 Public EPG 发布，XMLTV ID 分别为 `eurosport.1`、`eurosport.2` 和 `eurosport.4k`。该来源提供频道目录、节目标题、开始时间和结束时间。每条原始塞尔维亚语标题均通过下文的分级流水线转换成英文；无法翻译的标题只会跳过当条节目，不会导致整个 SBB 来源失败。
 
@@ -130,6 +129,7 @@ epg preview --day tomorrow --provider allente_se --channel 50048
 
 ## 更新日志
 
+- **2026-11-17** —— 通过 ESPN 官方 Watch Graph API（espn.com/watch/schedule 背后的接口）新增 ESPN、ESPN2、ESPNEWS、ESPNU（`ESPN.us`、`ESPN2.us`、`ESPNEWS.us`、`ESPNU.us`），匿名按 UTC 日期拉取、7 天滚动覆盖。新分区位于 CHANNELS.md 的美国 NBC（EPGShare）与美国 Pluto TV / Peacock 之间。首次全量刷新时接口对 2026-11-21 当日短暂返回 503、数分钟后自行恢复；采集器对每日重试，仍失败时只跳过当日、不丢整周四台。总数：192 → 198 台（同轮刷新还恢复了 Astro 813 与 Travelxp 4K `telus.716`，此前清单中均缺失）。
 - **2026-11-13** —— 通过 ELTA OTT 官方每日节目 JSON（自家 CDN，匿名可取）新增台湾愛爾達 14 条体育频道（`elta.101`、`elta.105`、`elta.110`、`elta.115`、`elta.540`–`elta.549`）。显示名用官方中文频道名，中文节目标题保持原样发布，与香港 now TV 频道一致；宠物运动台按用户要求不加。新分区位于 CHANNELS.md 的香港 now TV 与德国 Sky Sport 之间。总数：178 → 192 台。
 - **2026-10-29** —— 通过 Virgin Media TV Go 官方指南新增 Premier Sports 1（`virgin_uk.1761`）与 Premier Sports 2（`virgin_uk.1961`）。两台不在 EE TV Player 匿名指南内，因此改走已有的 Virgin Media 来源（逻辑频道号 528／529，HD）；标题本身为英文，直接发布。
 - **2026-11-07** —— 修复第二类翻译漏网：源语言拼写的国家/城市名（瑞典语“Mexiko”/“Brasiliens”/“Qatars”、塞尔维亚语“Njujork”/“Sidnej”）与纯 ASCII 节目词汇（波兰语“sesja treningowa”、“Legendy”、“Najlepsi bramkarze”；塞尔维亚语“Atletika”、“maraton”、“Vrhunci”、“sezone”）不带变音符号，2026-10-18 的英文输出门看不见它们。现已把各语种残余词表补上源拼写地名与缺失词汇；Allente 瑞典、SBB、Player.pl 的精确映射直接翻好高频标题（墨西哥/巴西/卡塔尔大奖赛、“Studio with Football Pool”替代已入缓存的“Ironing Tip”、“Bundesliga Legends”、“Semi-finals”替代“1 2 finals”）；清理毒化与过期翻译记忆 11 条。Allente 瑞典（811 条，0 漏网）与 SBB（169 条，0 漏网）已实跑验证；Player.pl 因接口两次超时未能实跑，单元测试通过。
