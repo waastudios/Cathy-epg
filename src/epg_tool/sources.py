@@ -3147,6 +3147,143 @@ def collect_sling(days: int = 7, pause_seconds: float = 0.5) -> list[Programme]:
     return records
 
 
+# ESPN 官方 Watch Graph（watch.graph.api.espn.com）：espn.com/watch/schedule
+# 背后的节目表接口，匿名可取。GraphQL Airings 查询按 UTC 日期逐日拉取
+# days 天；四台线性频道以 network.id 区分：espn1 / espn2 / espnews /
+# espnu。apiKey 为 ESPN 网页端公开客户端 key（同款 key 亦见于多个开源
+# 客户端的常量文件），不含任何账号凭据。标题本身为英文，直接发布。
+# 2026-11-17 实测：单日四台合计约 80 档，逐日首尾严丝合缝（上一日的
+# 末档结束时刻即下一日的首档开始时刻）；与 watch/schedule 页面逐条
+# 核对一致。description 字段上游常年为空，XMLTV 不输出 <desc>（项目
+# 惯例），简介仍保留在 JSONL 快照中备查。
+ESPN_WATCH_GRAPH_URL = "https://watch.graph.api.espn.com/api"
+ESPN_WATCH_GRAPH_API_KEY = "0dbf88e8-cc6d-41da-aa83-18b5c630bc5c"
+ESPN_WATCH_SCHEDULE_URL = "https://www.espn.com/watch/schedule"
+# Watch Graph network.id -> (XMLTV ID, 展示名)
+ESPN_CHANNELS: dict[str, tuple[str, str]] = {
+    "espn1": ("ESPN.us", "ESPN"),
+    "espn2": ("ESPN2.us", "ESPN2"),
+    "espnews": ("ESPNEWS.us", "ESPNEWS"),
+    "espnu": ("ESPNU.us", "ESPNU"),
+}
+ESPN_AIRINGS_QUERY = """query($day:String!,$tz:String!){ airings(countryCode:"us", deviceType:SETTOP, tz:$tz, day:$day, limit:3000){
+  id name shortName type startDateTime endDateTime description isReAir
+  network{ id adobeResource } authTypes sport{ name } league{ name sportwareSlug } category{ name } subcategory{ name }
+  program{ isStudio } eventId
+  image{ url } source{ playbackId }
+  packages{ name } feedName feedType language } }"""
+
+
+def collect_espn(days: int = 7, pause_seconds: float = 0.5) -> list[Programme]:
+    """读取 ESPN 官方 Watch Graph 中四台线性频道的节目单。
+
+    标题本身为英文，直接发布。接口按 UTC 日期返回当日排播（以开播日期
+    归属，跨午夜节目只出现在开播日），逐日拉取 days 天并去重合并。
+    """
+    if days not in range(1, 8):
+        raise ValueError("ESPN 采集天数必须为 1–7。")
+    session = _session()
+    session.headers.update(
+        {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+            "Origin": "https://www.espn.com",
+            "Referer": "https://www.espn.com/",
+        }
+    )
+    today = datetime.now(timezone.utc).date()
+    retrieved_at = utc_now_iso()
+    records: list[Programme] = []
+    for day_offset in range(days):
+        schedule_date = (today + timedelta(days=day_offset)).isoformat()
+        # 单日接口偶发 503（2026-11-17 全量采集时 11-21 当日连续失败约
+        # 7 分钟后自行恢复）：每日起 3 次重试仍失败时只跳过当日并记 note，
+        # 其余六日照常发布，不让一次上游抖动抹掉整周四台；全周皆空时才报错。
+        airings: list[dict] = []
+        last_error: str | None = None
+        for attempt in range(3):
+            try:
+                response = session.post(
+                    ESPN_WATCH_GRAPH_URL,
+                    params={"apiKey": ESPN_WATCH_GRAPH_API_KEY, "features": "pbov7"},
+                    json={"query": ESPN_AIRINGS_QUERY, "variables": {"day": schedule_date, "tz": "UTC"}},
+                    timeout=30,
+                )
+                response.raise_for_status()
+                payload = response.json()
+            except (requests.RequestException, ValueError) as exc:
+                last_error = str(exc)
+                if attempt < 2:
+                    time.sleep(5)
+                continue
+            if payload.get("errors"):
+                last_error = str(payload["errors"][0].get("message", "GraphQL error"))
+                if attempt < 2:
+                    time.sleep(5)
+                continue
+            airings = ((payload.get("data") or {}).get("airings")) or []
+            last_error = None
+            break
+        if last_error is not None:
+            note(f"ESPN {schedule_date} 拉取失败，已跳过当日：{last_error}")
+            continue
+        seen_channels: set[str] = set()
+        for airing in airings:
+            network = airing.get("network") or {}
+            channel = ESPN_CHANNELS.get(str(network.get("id") or ""))
+            if channel is None:
+                continue
+            seen_channels.add(channel[0])
+            title = str(airing.get("name") or airing.get("shortName") or "").strip()
+            if not title:
+                continue
+            try:
+                start = datetime.fromisoformat(str(airing["startDateTime"]).replace("Z", "+00:00"))
+                stop = datetime.fromisoformat(str(airing["endDateTime"]).replace("Z", "+00:00"))
+            except (KeyError, TypeError, ValueError):
+                continue
+            if stop <= start:
+                continue
+            short_name = str(airing.get("shortName") or "").strip()
+            sub_title = short_name if short_name and short_name != title else None
+            description = str(airing.get("description") or "").strip() or None
+            category_name = (
+                (airing.get("category") or {}).get("name")
+                or (airing.get("sport") or {}).get("name")
+                or ""
+            )
+            category = str(category_name).strip() or None
+            image = airing.get("image") or {}
+            image_url = str(image.get("url") or "").strip() or None
+            records.append(
+                Programme(
+                    provider="espn",
+                    country="US",
+                    timezone="UTC",
+                    channel_id=channel[0],
+                    channel_number="",
+                    channel_name=channel[1],
+                    title=title,
+                    start_at=start.isoformat(),
+                    end_at=stop.isoformat(),
+                    source_url=ESPN_WATCH_SCHEDULE_URL,
+                    retrieved_at=retrieved_at,
+                    image_url=image_url,
+                    description=description,
+                    category=category,
+                    sub_title=sub_title,
+                )
+            )
+        for channel_id, _channel_name in ESPN_CHANNELS.values():
+            if channel_id not in seen_channels:
+                note(f"ESPN {schedule_date}：{channel_id} 当日无排播。")
+        time.sleep(pause_seconds)
+
+    records = _deduplicate(records)
+    if not records:
+        raise SourceUnavailable("ESPN Watch Graph 未返回四台线性频道的节目条目。")
+    return records
+
+
 # EPGSHARE（epgshare01.online）公开 XMLTV 聚合文件。此来源是用户指定的
 # 例外：四个 NBC Sports 地区频道（湾区／波士顿／费城／加州）虽在 Peacock
 # 上线，但其官方 BFF 指南仅对购买附加包的登录会话下发这四台，匿名无法
