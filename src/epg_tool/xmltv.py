@@ -131,6 +131,9 @@ def _xmltv_channel_id(record: Programme) -> str:
     if record.provider == "sling":
         # channel_id 即用户指定 tvg-id（usanetwork.us）
         return record.channel_id
+    if record.provider == "espn":
+        # channel_id 即用户指定 tvg-id（ESPN.us、ESPN2.us、ESPNEWS.us、ESPNU.us）
+        return record.channel_id
     if record.provider == "epgshare":
         # channel_id 即用户指定 tvg-id（NBCSpBay.us、WSCV.us、WNBC-NY.us 等）
         return record.channel_id
