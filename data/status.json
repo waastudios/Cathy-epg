@@ -1,84 +1,75 @@
 {
   "astro": {
     "status": "ok",
-    "records": 2333
+    "records": 2274
   },
   "now_hk": {
     "status": "ok",
-    "records": 3984
+    "records": 4142
   },
   "elta": {
     "status": "ok",
-    "records": 882
+    "records": 892
   },
   "allente_se": {
     "status": "ok",
-    "records": 812
+    "records": 808
   },
   "allente_no": {
     "status": "ok",
-    "records": 713
+    "records": 705
   },
   "ee_uk": {
     "status": "ok",
-    "records": 7108,
+    "records": 7060,
     "notes": [
-      "tvguide.co.uk 采集 6953 条（6953 去重），其中有图 6930 条。"
+      "tvguide.co.uk 采集 6894 条（6894 去重），其中有图 6873 条。"
     ]
   },
   "sky_de": {
     "status": "ok",
-    "records": 1507,
+    "records": 1488,
     "notes": [
       "MagentaTV Sky Germany 206 跳过无法翻译的标题：'ATP 500: A. de Minaur (AUS) - C. Alcaraz (ESP), Erste Bank Open in Wien (Österreich), Finale'"
     ]
   },
   "digi4k_ro": {
     "status": "ok",
-    "records": 120
+    "records": 118
   },
   "sbb_rs": {
     "status": "ok",
-    "records": 225
+    "records": 228
   },
   "virgin_uk": {
     "status": "ok",
-    "records": 329
+    "records": 350
   },
   "player_pl": {
     "status": "ok",
-    "records": 743,
+    "records": 752,
     "notes": [
-      "Player.pl Eurosport 4 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
-      "Player.pl Eurosport 3 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
-      "Player.pl Eurosport 3 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
       "Player.pl Eleven Sports 1 跳过无法翻译的标题：'Piłka nożna: Liga Portugal Betclic: Vitória SC - FC Porto'",
       "Player.pl Eleven Sports 1 跳过无法翻译的标题：'Piłka nożna: Liga Portugal Betclic: Vitória SC - FC Porto'"
     ]
   },
   "canalplus_fr": {
     "status": "ok",
-    "records": 145,
+    "records": 144,
     "notes": [
       "Canal+ 官方 API 不可用（403 rate limited: https://hodor.canalplus.pro/api/v2/mycanal/authenticate.json/webapp/6.0?experiments=beta-test-one-tv-guide:control），回退到 epg.pw"
     ]
   },
   "telus_tvplus": {
     "status": "ok",
-    "records": 1374,
+    "records": 1381,
     "notes": [
-      "Telus Love Nature 的频道号为 15130（配置为 713），仍按频道名继续采集。",
-      "Telus TV+（telus.prod.g.telustvplus.com）频道目录未找到 Travelxp 4K HDR，已跳过该频道。",
-      "Telus TSN1 的频道号为 15225（配置为 900），仍按频道名继续采集。",
-      "Telus TSN2 的频道号为 15227（配置为 901），仍按频道名继续采集。",
-      "Telus TSN3 的频道号为 16200（配置为 902），仍按频道名继续采集。",
-      "Telus TSN4 的频道号为 16201（配置为 903），仍按频道名继续采集。",
-      "Telus TSN5 的频道号为 16202（配置为 904），仍按频道名继续采集。",
+      "Telus TV+（telus.prod.g.telustvplus.com）不可用：Telus TV+ 接口 telus.prod.g.telustvplus.com 拒绝访问（HTTP 403）。",
       "Telus Love Nature 的频道号为 7333（配置为 713），仍按频道名继续采集。",
       "Telus Travelxp 4K HDR 的频道号为 7619（配置为 716），仍按频道名继续采集。",
       "Telus TSN1 的频道号为 7624（配置为 900），仍按频道名继续采集。",
       "Telus TSN2 的频道号为 7627（配置为 901），仍按频道名继续采集。",
-      "Telus TV+ 频道 telus.716 由 QA 环境补齐（生产环境缺失或不可用）。"
+      "Telus TV+ 频道 telus.713, telus.716, telus.900, telus.901, telus.902, telus.903, telus.904 由 QA 环境补齐（生产环境缺失或不可用）。"
     ]
   },
   "peacock": {
@@ -87,11 +78,11 @@
   },
   "pluto_tv": {
     "status": "ok",
-    "records": 21
+    "records": 19
   },
   "epgshare": {
     "status": "ok",
-    "records": 1066
+    "records": 1075
   },
   "sling": {
     "status": "ok",
@@ -99,15 +90,15 @@
   },
   "espn": {
     "status": "ok",
-    "records": 580
+    "records": 579
   },
   "xmltv": {
     "status": "ok",
     "channels": 198,
-    "programmes": 22123,
+    "programmes": 22196,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-11-17T07:28:48Z",
-  "total_records": 22123
+  "generated_at": "2026-11-18T01:32:44Z",
+  "total_records": 22196
 }
