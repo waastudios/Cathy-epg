@@ -1,46 +1,50 @@
 {
   "astro": {
     "status": "ok",
-    "records": 2459
+    "records": 2454
   },
   "now_hk": {
     "status": "ok",
-    "records": 4055
+    "records": 4075
   },
   "elta": {
     "status": "ok",
-    "records": 963
+    "records": 928
   },
   "allente_se": {
-    "status": "ok",
-    "records": 817
+    "status": "stale",
+    "records": 817,
+    "message": "Allente 官方 EPG 响应中未找到任何预期的 V Sport 体育频道。",
+    "fallback": "previous_snapshot"
   },
   "allente_no": {
-    "status": "ok",
-    "records": 716
+    "status": "stale",
+    "records": 716,
+    "message": "Allente Norway 官方 EPG 响应中未找到预期的 TV Norge、REX、FEM、Eurosport Norge 或 Eurosport 1。",
+    "fallback": "previous_snapshot"
   },
   "ee_uk": {
     "status": "ok",
-    "records": 7115,
+    "records": 7129,
     "notes": [
-      "tvguide.co.uk 采集 6930 条（6930 去重），其中有图 6906 条。"
+      "tvguide.co.uk 采集 6945 条（6945 去重），其中有图 6922 条。"
     ]
   },
   "sky_de": {
     "status": "ok",
-    "records": 1496
+    "records": 1484
   },
   "digi4k_ro": {
     "status": "ok",
-    "records": 118
+    "records": 103
   },
   "sbb_rs": {
     "status": "ok",
-    "records": 241
+    "records": 182
   },
   "virgin_uk": {
     "status": "ok",
-    "records": 379
+    "records": 378
   },
   "player_pl": {
     "status": "ok",
@@ -49,12 +53,14 @@
       "Player.pl Eurosport 3 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
       "Player.pl Eurosport 3 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
       "Player.pl Eurosport 4 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
-      "Player.pl Eurosport 3 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'"
+      "Player.pl Eurosport 3 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
+      "Player.pl Eleven Sports 1 跳过无法翻译的标题：'Formuła 2: Grand Prix Kataru: Sprint'",
+      "Player.pl Eurosport 1 跳过无法翻译的标题：'Biegi narciarskie: Zawody Pucharu Świata w Ruce - kwalifikacje do biegów sprinterskich stylem klasycznym kobiet i mężczyzn'"
     ]
   },
   "canalplus_fr": {
     "status": "ok",
-    "records": 143,
+    "records": 141,
     "notes": [
       "Canal+ 官方 API 不可用（403 rate limited: https://hodor.canalplus.pro/api/v2/mycanal/authenticate.json/webapp/6.0?experiments=beta-test-one-tv-guide:control），回退到 epg.pw"
     ]
@@ -81,31 +87,31 @@
   },
   "peacock": {
     "status": "ok",
-    "records": 32
+    "records": 34
   },
   "pluto_tv": {
     "status": "ok",
-    "records": 21
+    "records": 19
   },
   "epgshare": {
     "status": "ok",
-    "records": 1065
+    "records": 1060
   },
   "sling": {
     "status": "ok",
-    "records": 170
+    "records": 168
   },
   "espn": {
     "status": "ok",
-    "records": 547
+    "records": 546
   },
   "xmltv": {
     "status": "ok",
-    "channels": 197,
-    "programmes": 22114,
+    "channels": 198,
+    "programmes": 22011,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-11-21T00:35:42Z",
-  "total_records": 22114
+  "generated_at": "2026-11-21T23:47:24Z",
+  "total_records": 22011
 }
