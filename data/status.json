@@ -1,55 +1,51 @@
 {
   "astro": {
     "status": "ok",
-    "records": 2458
+    "records": 2459
   },
   "now_hk": {
     "status": "ok",
-    "records": 4091
+    "records": 4055
   },
   "elta": {
     "status": "ok",
-    "records": 908
+    "records": 963
   },
   "allente_se": {
     "status": "ok",
-    "records": 821
+    "records": 817
   },
   "allente_no": {
     "status": "ok",
-    "records": 708
+    "records": 716
   },
   "ee_uk": {
     "status": "ok",
-    "records": 7094,
+    "records": 7115,
     "notes": [
-      "tvguide.co.uk 采集 6911 条（6911 去重），其中有图 6890 条。"
+      "tvguide.co.uk 采集 6930 条（6930 去重），其中有图 6906 条。"
     ]
   },
   "sky_de": {
     "status": "ok",
-    "records": 1506,
-    "notes": [
-      "MagentaTV Sky Germany 206 跳过无法翻译的标题：'ATP 500: A. de Minaur (AUS) - C. Alcaraz (ESP), Erste Bank Open in Wien (Österreich), Finale'"
-    ]
+    "records": 1496
   },
   "digi4k_ro": {
     "status": "ok",
-    "records": 117
+    "records": 118
   },
   "sbb_rs": {
     "status": "ok",
-    "records": 238
+    "records": 241
   },
   "virgin_uk": {
     "status": "ok",
-    "records": 378
+    "records": 379
   },
   "player_pl": {
     "status": "ok",
-    "records": 758,
+    "records": 768,
     "notes": [
-      "Player.pl Eleven Sports 1 跳过无法翻译的标题：'Piłka nożna: Liga Portugal Betclic: Vitória SC - FC Porto'",
       "Player.pl Eurosport 3 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
       "Player.pl Eurosport 3 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
       "Player.pl Eurosport 4 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
@@ -58,14 +54,14 @@
   },
   "canalplus_fr": {
     "status": "ok",
-    "records": 141,
+    "records": 143,
     "notes": [
       "Canal+ 官方 API 不可用（403 rate limited: https://hodor.canalplus.pro/api/v2/mycanal/authenticate.json/webapp/6.0?experiments=beta-test-one-tv-guide:control），回退到 epg.pw"
     ]
   },
   "telus_tvplus": {
     "status": "ok",
-    "records": 1019,
+    "records": 1009,
     "notes": [
       "Telus Love Nature 的频道号为 15130（配置为 713），仍按频道名继续采集。",
       "Telus TV+（telus.prod.g.telustvplus.com）频道目录未找到 Travelxp 4K HDR，已跳过该频道。",
@@ -85,31 +81,31 @@
   },
   "peacock": {
     "status": "ok",
-    "records": 27
+    "records": 32
   },
   "pluto_tv": {
     "status": "ok",
-    "records": 19
+    "records": 21
   },
   "epgshare": {
     "status": "ok",
-    "records": 1082
+    "records": 1065
   },
   "sling": {
     "status": "ok",
-    "records": 162
+    "records": 170
   },
   "espn": {
     "status": "ok",
-    "records": 555
+    "records": 547
   },
   "xmltv": {
     "status": "ok",
     "channels": 197,
-    "programmes": 22082,
+    "programmes": 22114,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-11-20T01:08:21Z",
-  "total_records": 22082
+  "generated_at": "2026-11-21T00:35:42Z",
+  "total_records": 22114
 }
