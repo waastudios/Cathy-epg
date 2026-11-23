@@ -1,15 +1,15 @@
 {
   "astro": {
     "status": "ok",
-    "records": 2454
+    "records": 2466
   },
   "now_hk": {
     "status": "ok",
-    "records": 4075
+    "records": 4079
   },
   "elta": {
     "status": "ok",
-    "records": 928
+    "records": 923
   },
   "allente_se": {
     "status": "stale",
@@ -25,49 +25,54 @@
   },
   "ee_uk": {
     "status": "ok",
-    "records": 7129,
+    "records": 7172,
     "notes": [
-      "tvguide.co.uk 采集 6945 条（6945 去重），其中有图 6922 条。"
+      "tvguide.co.uk 采集 6972 条（6972 去重），其中有图 6943 条。"
     ]
   },
   "sky_de": {
     "status": "ok",
-    "records": 1484
+    "records": 1493
   },
   "digi4k_ro": {
     "status": "ok",
-    "records": 103
+    "records": 109
   },
   "sbb_rs": {
     "status": "ok",
-    "records": 182
+    "records": 180,
+    "notes": [
+      "SBB Eurosport 1 跳过无法翻译的标题：'Tadej Pogačar G. O. A. T. Anatomija'",
+      "SBB Eurosport 4K 跳过无法翻译的标题：'Tadej Pogačar G. O. A. T. Anatomija'"
+    ]
   },
   "virgin_uk": {
     "status": "ok",
-    "records": 378
+    "records": 381
   },
   "player_pl": {
     "status": "ok",
-    "records": 768,
+    "records": 767,
     "notes": [
       "Player.pl Eurosport 3 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
       "Player.pl Eurosport 3 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
       "Player.pl Eurosport 4 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
       "Player.pl Eurosport 3 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
       "Player.pl Eleven Sports 1 跳过无法翻译的标题：'Formuła 2: Grand Prix Kataru: Sprint'",
-      "Player.pl Eurosport 1 跳过无法翻译的标题：'Biegi narciarskie: Zawody Pucharu Świata w Ruce - kwalifikacje do biegów sprinterskich stylem klasycznym kobiet i mężczyzn'"
+      "Player.pl Eurosport 1 跳过无法翻译的标题：'Biegi narciarskie: Zawody Pucharu Świata w Ruce - kwalifikacje do biegów sprinterskich stylem klasycznym kobiet i mężczyzn'",
+      "Player.pl Eleven Sports 1 跳过无法翻译的标题：'Formuła 2: Grand Prix Kataru: Sprint'"
     ]
   },
   "canalplus_fr": {
     "status": "ok",
-    "records": 141,
+    "records": 135,
     "notes": [
       "Canal+ 官方 API 不可用（403 rate limited: https://hodor.canalplus.pro/api/v2/mycanal/authenticate.json/webapp/6.0?experiments=beta-test-one-tv-guide:control），回退到 epg.pw"
     ]
   },
   "telus_tvplus": {
     "status": "ok",
-    "records": 1009,
+    "records": 1335,
     "notes": [
       "Telus Love Nature 的频道号为 15130（配置为 713），仍按频道名继续采集。",
       "Telus TV+（telus.prod.g.telustvplus.com）频道目录未找到 Travelxp 4K HDR，已跳过该频道。",
@@ -80,38 +85,36 @@
       "Telus Travelxp 4K HDR 的频道号为 7619（配置为 716），仍按频道名继续采集。",
       "Telus TSN1 的频道号为 7624（配置为 900），仍按频道名继续采集。",
       "Telus TSN2 的频道号为 7627（配置为 901），仍按频道名继续采集。",
-      "Telus TV+ 频道 telus.716 由 QA 环境补齐（生产环境缺失或不可用）。",
-      "Telus TV+（telus.qa.watchoptiktv.com）EPG 拉取失败：Telus TV+（telus.qa.watchoptiktv.com）EPG 拉取失败：Telus TV+ 接口 telus.qa.watchoptiktv.com 返回 HTTP 503。",
-      "Telus TV+ 未返回频道 telus.716 的节目条目。"
+      "Telus TV+ 频道 telus.716 由 QA 环境补齐（生产环境缺失或不可用）。"
     ]
   },
   "peacock": {
     "status": "ok",
-    "records": 34
+    "records": 38
   },
   "pluto_tv": {
     "status": "ok",
-    "records": 19
+    "records": 21
   },
   "epgshare": {
     "status": "ok",
-    "records": 1060
+    "records": 1047
   },
   "sling": {
     "status": "ok",
-    "records": 168
+    "records": 167
   },
   "espn": {
     "status": "ok",
-    "records": 546
+    "records": 538
   },
   "xmltv": {
     "status": "ok",
-    "channels": 198,
-    "programmes": 22011,
+    "channels": 199,
+    "programmes": 22384,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-11-21T23:47:24Z",
-  "total_records": 22011
+  "generated_at": "2026-11-23T00:05:37Z",
+  "total_records": 22384
 }
