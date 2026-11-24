@@ -1,58 +1,58 @@
 {
   "astro": {
     "status": "ok",
-    "records": 2466
+    "records": 2409
   },
   "now_hk": {
     "status": "ok",
-    "records": 4079
+    "records": 3931
   },
   "elta": {
     "status": "ok",
-    "records": 923
+    "records": 907
   },
   "allente_se": {
-    "status": "stale",
-    "records": 817,
-    "message": "Allente 官方 EPG 响应中未找到任何预期的 V Sport 体育频道。",
-    "fallback": "previous_snapshot"
+    "status": "ok",
+    "records": 815
   },
   "allente_no": {
-    "status": "stale",
-    "records": 716,
-    "message": "Allente Norway 官方 EPG 响应中未找到预期的 TV Norge、REX、FEM、Eurosport Norge 或 Eurosport 1。",
-    "fallback": "previous_snapshot"
+    "status": "ok",
+    "records": 707
   },
   "ee_uk": {
     "status": "ok",
-    "records": 7172,
+    "records": 7194,
     "notes": [
-      "tvguide.co.uk 采集 6972 条（6972 去重），其中有图 6943 条。"
+      "tvguide.co.uk 采集 6962 条（6962 去重），其中有图 6923 条。"
     ]
   },
   "sky_de": {
     "status": "ok",
-    "records": 1493
+    "records": 1480,
+    "notes": [
+      "MagentaTV Sky Germany 206 跳过无法翻译的标题：'ATP 500: A. De Minaur (AUS) - F. Auger-Aliassime (CAN), ABN AMRO Open in Rotterdam (NLD), Finale'"
+    ]
   },
   "digi4k_ro": {
     "status": "ok",
-    "records": 109
+    "records": 117
   },
   "sbb_rs": {
     "status": "ok",
-    "records": 180,
+    "records": 242,
     "notes": [
       "SBB Eurosport 1 跳过无法翻译的标题：'Tadej Pogačar G. O. A. T. Anatomija'",
+      "SBB Eurosport 2 跳过无法翻译的标题：'Tadej Pogačar G. O. A. T. Anatomija'",
       "SBB Eurosport 4K 跳过无法翻译的标题：'Tadej Pogačar G. O. A. T. Anatomija'"
     ]
   },
   "virgin_uk": {
     "status": "ok",
-    "records": 381
+    "records": 382
   },
   "player_pl": {
     "status": "ok",
-    "records": 767,
+    "records": 756,
     "notes": [
       "Player.pl Eurosport 3 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
       "Player.pl Eurosport 3 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
@@ -65,14 +65,14 @@
   },
   "canalplus_fr": {
     "status": "ok",
-    "records": 135,
+    "records": 137,
     "notes": [
       "Canal+ 官方 API 不可用（403 rate limited: https://hodor.canalplus.pro/api/v2/mycanal/authenticate.json/webapp/6.0?experiments=beta-test-one-tv-guide:control），回退到 epg.pw"
     ]
   },
   "telus_tvplus": {
     "status": "ok",
-    "records": 1335,
+    "records": 994,
     "notes": [
       "Telus Love Nature 的频道号为 15130（配置为 713），仍按频道名继续采集。",
       "Telus TV+（telus.prod.g.telustvplus.com）频道目录未找到 Travelxp 4K HDR，已跳过该频道。",
@@ -85,20 +85,22 @@
       "Telus Travelxp 4K HDR 的频道号为 7619（配置为 716），仍按频道名继续采集。",
       "Telus TSN1 的频道号为 7624（配置为 900），仍按频道名继续采集。",
       "Telus TSN2 的频道号为 7627（配置为 901），仍按频道名继续采集。",
-      "Telus TV+ 频道 telus.716 由 QA 环境补齐（生产环境缺失或不可用）。"
+      "Telus TV+ 频道 telus.716 由 QA 环境补齐（生产环境缺失或不可用）。",
+      "Telus TV+（telus.qa.watchoptiktv.com）EPG 拉取失败：Telus TV+（telus.qa.watchoptiktv.com）EPG 拉取失败：Telus TV+ 接口 telus.qa.watchoptiktv.com 返回 HTTP 503。",
+      "Telus TV+ 未返回频道 telus.716 的节目条目。"
     ]
   },
   "peacock": {
     "status": "ok",
-    "records": 38
+    "records": 42
   },
   "pluto_tv": {
     "status": "ok",
-    "records": 21
+    "records": 19
   },
   "epgshare": {
     "status": "ok",
-    "records": 1047
+    "records": 1007
   },
   "sling": {
     "status": "ok",
@@ -106,15 +108,15 @@
   },
   "espn": {
     "status": "ok",
-    "records": 538
+    "records": 534
   },
   "xmltv": {
     "status": "ok",
-    "channels": 199,
-    "programmes": 22384,
+    "channels": 198,
+    "programmes": 21840,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-11-23T00:05:37Z",
-  "total_records": 22384
+  "generated_at": "2026-11-24T04:15:55Z",
+  "total_records": 21840
 }
