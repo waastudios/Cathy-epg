@@ -1,58 +1,61 @@
 {
   "astro": {
     "status": "ok",
-    "records": 2409
+    "records": 2313
   },
   "now_hk": {
     "status": "ok",
-    "records": 3931
+    "records": 3924
   },
   "elta": {
     "status": "ok",
-    "records": 907
+    "records": 908
   },
   "allente_se": {
     "status": "ok",
-    "records": 815
+    "records": 802
   },
   "allente_no": {
     "status": "ok",
-    "records": 707
+    "records": 700
   },
   "ee_uk": {
     "status": "ok",
-    "records": 7194,
+    "records": 7186,
     "notes": [
-      "tvguide.co.uk 采集 6962 条（6962 去重），其中有图 6923 条。"
+      "tvguide.co.uk 采集 6961 条（6961 去重），其中有图 6920 条。"
     ]
   },
   "sky_de": {
     "status": "ok",
-    "records": 1480,
+    "records": 1492,
     "notes": [
-      "MagentaTV Sky Germany 206 跳过无法翻译的标题：'ATP 500: A. De Minaur (AUS) - F. Auger-Aliassime (CAN), ABN AMRO Open in Rotterdam (NLD), Finale'"
+      "MagentaTV Sky Germany 206 跳过无法翻译的标题：'ATP 500: A. De Minaur (AUS) - F. Auger-Aliassime (CAN), ABN AMRO Open in Rotterdam (NLD), Finale'",
+      "MagentaTV Sky Germany 206 跳过无法翻译的标题：'ATP 500: N. Djokovic (SRB) - A. de Minaur (AUS), China Open in Peking (China), Finale'",
+      "MagentaTV Sky Germany 206 跳过无法翻译的标题：'ATP 500: A. de Minaur (AUS) - C. Alcaraz (ESP), Erste Bank Open in Wien (Österreich), Finale'"
     ]
   },
   "digi4k_ro": {
     "status": "ok",
-    "records": 117
+    "records": 120
   },
   "sbb_rs": {
     "status": "ok",
-    "records": 242,
+    "records": 244,
     "notes": [
       "SBB Eurosport 1 跳过无法翻译的标题：'Tadej Pogačar G. O. A. T. Anatomija'",
+      "SBB Eurosport 2 跳过无法翻译的标题：'Tadej Pogačar G. O. A. T. Anatomija'",
       "SBB Eurosport 2 跳过无法翻译的标题：'Tadej Pogačar G. O. A. T. Anatomija'",
       "SBB Eurosport 4K 跳过无法翻译的标题：'Tadej Pogačar G. O. A. T. Anatomija'"
     ]
   },
   "virgin_uk": {
     "status": "ok",
-    "records": 382
+    "records": 384
   },
   "player_pl": {
     "status": "ok",
-    "records": 756,
+    "records": 749,
     "notes": [
       "Player.pl Eurosport 3 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
       "Player.pl Eurosport 3 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
@@ -72,7 +75,7 @@
   },
   "telus_tvplus": {
     "status": "ok",
-    "records": 994,
+    "records": 1005,
     "notes": [
       "Telus Love Nature 的频道号为 15130（配置为 713），仍按频道名继续采集。",
       "Telus TV+（telus.prod.g.telustvplus.com）频道目录未找到 Travelxp 4K HDR，已跳过该频道。",
@@ -96,27 +99,27 @@
   },
   "pluto_tv": {
     "status": "ok",
-    "records": 19
+    "records": 18
   },
   "epgshare": {
     "status": "ok",
-    "records": 1007
+    "records": 1024
   },
   "sling": {
     "status": "ok",
-    "records": 167
+    "records": 166
   },
   "espn": {
     "status": "ok",
-    "records": 534
+    "records": 537
   },
   "xmltv": {
     "status": "ok",
     "channels": 198,
-    "programmes": 21840,
+    "programmes": 21751,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-11-24T04:15:55Z",
-  "total_records": 21840
+  "generated_at": "2026-11-25T03:01:29Z",
+  "total_records": 21751
 }
