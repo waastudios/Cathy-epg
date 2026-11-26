@@ -1,34 +1,36 @@
 {
   "astro": {
     "status": "ok",
-    "records": 2313
+    "records": 2363
   },
   "now_hk": {
     "status": "ok",
-    "records": 3924
+    "records": 3950
   },
   "elta": {
     "status": "ok",
-    "records": 908
+    "records": 899
   },
   "allente_se": {
-    "status": "ok",
-    "records": 802
+    "status": "stale",
+    "records": 802,
+    "message": "HTTPSConnectionPool(host='www.allente.se', port=443): Read timed out. (read timeout=60)",
+    "fallback": "previous_snapshot"
   },
   "allente_no": {
     "status": "ok",
-    "records": 700
+    "records": 688
   },
   "ee_uk": {
     "status": "ok",
-    "records": 7186,
+    "records": 7151,
     "notes": [
-      "tvguide.co.uk 采集 6961 条（6961 去重），其中有图 6920 条。"
+      "tvguide.co.uk 采集 6928 条（6928 去重），其中有图 6883 条。"
     ]
   },
   "sky_de": {
     "status": "ok",
-    "records": 1492,
+    "records": 1499,
     "notes": [
       "MagentaTV Sky Germany 206 跳过无法翻译的标题：'ATP 500: A. De Minaur (AUS) - F. Auger-Aliassime (CAN), ABN AMRO Open in Rotterdam (NLD), Finale'",
       "MagentaTV Sky Germany 206 跳过无法翻译的标题：'ATP 500: N. Djokovic (SRB) - A. de Minaur (AUS), China Open in Peking (China), Finale'",
@@ -37,27 +39,24 @@
   },
   "digi4k_ro": {
     "status": "ok",
-    "records": 120
+    "records": 121
   },
   "sbb_rs": {
     "status": "ok",
-    "records": 244,
+    "records": 236,
     "notes": [
-      "SBB Eurosport 1 跳过无法翻译的标题：'Tadej Pogačar G. O. A. T. Anatomija'",
       "SBB Eurosport 2 跳过无法翻译的标题：'Tadej Pogačar G. O. A. T. Anatomija'",
-      "SBB Eurosport 2 跳过无法翻译的标题：'Tadej Pogačar G. O. A. T. Anatomija'",
-      "SBB Eurosport 4K 跳过无法翻译的标题：'Tadej Pogačar G. O. A. T. Anatomija'"
+      "SBB Eurosport 2 跳过无法翻译的标题：'Tadej Pogačar G. O. A. T. Anatomija'"
     ]
   },
   "virgin_uk": {
     "status": "ok",
-    "records": 384
+    "records": 377
   },
   "player_pl": {
     "status": "ok",
-    "records": 749,
+    "records": 741,
     "notes": [
-      "Player.pl Eurosport 3 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
       "Player.pl Eurosport 3 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
       "Player.pl Eurosport 4 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
       "Player.pl Eurosport 3 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
@@ -68,14 +67,14 @@
   },
   "canalplus_fr": {
     "status": "ok",
-    "records": 137,
+    "records": 112,
     "notes": [
       "Canal+ 官方 API 不可用（403 rate limited: https://hodor.canalplus.pro/api/v2/mycanal/authenticate.json/webapp/6.0?experiments=beta-test-one-tv-guide:control），回退到 epg.pw"
     ]
   },
   "telus_tvplus": {
     "status": "ok",
-    "records": 1005,
+    "records": 985,
     "notes": [
       "Telus Love Nature 的频道号为 15130（配置为 713），仍按频道名继续采集。",
       "Telus TV+（telus.prod.g.telustvplus.com）频道目录未找到 Travelxp 4K HDR，已跳过该频道。",
@@ -95,31 +94,31 @@
   },
   "peacock": {
     "status": "ok",
-    "records": 42
+    "records": 44
   },
   "pluto_tv": {
     "status": "ok",
-    "records": 18
+    "records": 20
   },
   "epgshare": {
     "status": "ok",
-    "records": 1024
+    "records": 1041
   },
   "sling": {
     "status": "ok",
-    "records": 166
+    "records": 165
   },
   "espn": {
     "status": "ok",
-    "records": 537
+    "records": 545
   },
   "xmltv": {
     "status": "ok",
     "channels": 198,
-    "programmes": 21751,
+    "programmes": 21739,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-11-25T03:01:29Z",
-  "total_records": 21751
+  "generated_at": "2026-11-26T02:09:01Z",
+  "total_records": 21739
 }
