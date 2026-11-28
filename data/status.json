@@ -1,34 +1,34 @@
 {
   "astro": {
     "status": "ok",
-    "records": 2509
+    "records": 2564
   },
   "now_hk": {
     "status": "ok",
-    "records": 4067
+    "records": 4187
   },
   "elta": {
     "status": "ok",
-    "records": 895
+    "records": 874
   },
   "allente_se": {
     "status": "ok",
-    "records": 822
+    "records": 806
   },
   "allente_no": {
     "status": "ok",
-    "records": 693
+    "records": 695
   },
   "ee_uk": {
     "status": "ok",
-    "records": 7145,
+    "records": 7118,
     "notes": [
-      "tvguide.co.uk 采集 6955 条（6955 去重），其中有图 6894 条。"
+      "tvguide.co.uk 采集 6922 条（6922 去重），其中有图 6877 条。"
     ]
   },
   "sky_de": {
     "status": "ok",
-    "records": 1453,
+    "records": 1443,
     "notes": [
       "MagentaTV Sky Germany 206 跳过无法翻译的标题：'ATP 500: A. De Minaur (AUS) - F. Auger-Aliassime (CAN), ABN AMRO Open in Rotterdam (NLD), Finale'",
       "MagentaTV Sky Germany 206 跳过无法翻译的标题：'ATP 500: N. Djokovic (SRB) - A. de Minaur (AUS), China Open in Peking (China), Finale'",
@@ -37,26 +37,32 @@
   },
   "digi4k_ro": {
     "status": "ok",
-    "records": 122
+    "records": 103
   },
   "sbb_rs": {
     "status": "ok",
-    "records": 226,
-    "notes": [
-      "SBB Eurosport 2 跳过无法翻译的标题：'Tadej Pogačar G. O. A. T. Anatomija'"
-    ]
+    "records": 210
   },
   "virgin_uk": {
     "status": "ok",
-    "records": 369
+    "records": 365
   },
   "player_pl": {
     "status": "ok",
-    "records": 730,
+    "records": 710,
     "notes": [
       "Player.pl Eleven Sports 1 跳过无法翻译的标题：'Formuła 2: Grand Prix Kataru: Sprint'",
       "Player.pl Eurosport 1 跳过无法翻译的标题：'Biegi narciarskie: Zawody Pucharu Świata w Ruce - kwalifikacje do biegów sprinterskich stylem klasycznym kobiet i mężczyzn'",
       "Player.pl Eleven Sports 1 跳过无法翻译的标题：'Formuła 2: Grand Prix Kataru: Sprint'",
+      "Player.pl Eurosport 3 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
+      "Player.pl Eurosport 3 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
+      "Player.pl Eurosport 4 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'",
+      "Player.pl Eurosport 1 跳过无法翻译的标题：'Skoki narciarskie kobiet: Zawody Pucharu Świata w Wiśle - studio'",
+      "Player.pl Eurosport 1 跳过无法翻译的标题：'Skoki narciarskie: Zawody Pucharu Świata w Wiśle - studio'",
+      "Player.pl Eurosport 1 跳过无法翻译的标题：'Skoki narciarskie: Zawody Pucharu Świata w Wiśle - kwalifikacje'",
+      "Player.pl Eurosport 1 跳过无法翻译的标题：'Skoki narciarskie kobiet: Zawody Pucharu Świata w Wiśle'",
+      "Player.pl Eurosport 1 跳过无法翻译的标题：'Skoki narciarskie: Zawody Pucharu Świata w Wiśle - studio'",
+      "Player.pl Eurosport 2 跳过无法翻译的标题：'Skoki narciarskie: Zawody Pucharu Świata w Wiśle - kwalifikacje'",
       "Player.pl Eurosport 3 跳过无法翻译的标题：'Tenis: Turniej French Open 2026 - mecz finałowy gry pojedynczej kobiet: Maja Chwalińska - Mirra Andriejewa'"
     ]
   },
@@ -69,7 +75,7 @@
   },
   "telus_tvplus": {
     "status": "ok",
-    "records": 987,
+    "records": 1012,
     "notes": [
       "Telus Love Nature 的频道号为 15130（配置为 713），仍按频道名继续采集。",
       "Telus TV+（telus.prod.g.telustvplus.com）频道目录未找到 Travelxp 4K HDR，已跳过该频道。",
@@ -89,31 +95,31 @@
   },
   "peacock": {
     "status": "ok",
-    "records": 46
+    "records": 44
   },
   "pluto_tv": {
     "status": "ok",
-    "records": 20
+    "records": 19
   },
   "epgshare": {
     "status": "ok",
-    "records": 1039
+    "records": 1074
   },
   "sling": {
     "status": "ok",
-    "records": 161
+    "records": 156
   },
   "espn": {
     "status": "ok",
-    "records": 553
+    "records": 563
   },
   "xmltv": {
     "status": "ok",
     "channels": 198,
-    "programmes": 21945,
+    "programmes": 22051,
     "xml_file": "data/epg.xml",
     "gzip_file": "data/epg.xml.gz"
   },
-  "generated_at": "2026-11-27T02:08:51Z",
-  "total_records": 21945
+  "generated_at": "2026-11-28T01:52:17Z",
+  "total_records": 22051
 }
